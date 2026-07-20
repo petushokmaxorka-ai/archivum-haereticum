@@ -1,0 +1,32 @@
+name: build-corpus
+on:
+  push:
+    branches: [main]
+    paths-ignore: ['docs/**']
+  workflow_dispatch:
+permissions:
+  contents: write
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Fetch sources (Q1)
+        run: bash corpus/tools/fetch_sources.sh
+      - name: Build Quran
+        run: python3 corpus/tools/build_quran.py --src quran_uthmani.txt --out /tmp/build
+      - name: Verify integrity
+        run: python3 corpus/tools/verify.py quran_uthmani.txt 6236
+      - name: Assemble docs/
+        run: |
+          rm -rf docs
+          cp -r /tmp/build/site docs
+          mkdir -p docs/scriptorium
+          cp scriptorium/index.html docs/scriptorium/index.html
+      - name: Commit site
+        run: |
+          git config user.name "archivum-bot"
+          git config user.email "archivum-bot@users.noreply.github.com"
+          git add docs
+          git commit -m "AUTO: пересборка сайта корпуса" || echo "no changes"
+          git push
