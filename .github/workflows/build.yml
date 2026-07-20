@@ -19,8 +19,9 @@ jobs:
         run: python3 corpus/tools/verify.py quran_uthmani.txt 6236
       - name: Assemble docs/
         run: |
-          rm -rf docs
-          cp -r /tmp/build/site docs
+          mkdir -p docs
+          rm -rf docs/quran
+          cp -r /tmp/build/site/quran docs/quran
           mkdir -p docs/scriptorium
           cp scriptorium/index.html docs/scriptorium/index.html
       - name: Commit site
