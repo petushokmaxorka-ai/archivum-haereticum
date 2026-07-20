@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>SCRIPTORIUM PARALLELLA · Архив Империума Человечества</title>
+<style>
+:root{--bg:#0a0a0c;--bg2:#101014;--panel:#15151a;--line:#2a2a33;--red:#c8102e;--darkred:#7a0a1d;--gold:#c9a227;--ink:#e8e2d5;--dim:#9a937f;--orig:#f2ead6}
+*{box-sizing:border-box;margin:0;padding:0}
+body{background:var(--bg);color:var(--ink);font-family:Georgia,'Times New Roman',serif;line-height:1.55}
+.banner{background:linear-gradient(180deg,#1a0007 0%,#0a0a0c 100%);border-bottom:3px solid var(--red);padding:2.2rem 1.4rem 1.6rem;text-align:center}
+.banner .sig{font-size:2rem;color:var(--red);letter-spacing:.5em}
+.banner h1{font-size:clamp(1.4rem,4vw,2.4rem);letter-spacing:.18em;color:var(--orig);margin:.4rem 0 .2rem}
+.banner .sub{color:var(--gold);letter-spacing:.3em;font-size:.8rem;text-transform:uppercase}
+.banner .motto{color:var(--dim);font-style:italic;margin-top:.7rem;font-size:.95rem}
+.meta{display:flex;gap:1rem;justify-content:center;flex-wrap:wrap;margin-top:.9rem;font-size:.78rem;color:var(--dim)}
+nav{background:var(--bg2);border-bottom:1px solid var(--line);padding:.7rem 1rem;display:flex;gap:.55rem;flex-wrap:wrap;justify-content:center;position:sticky;top:0;z-index:10}
+nav a{color:var(--dim);text-decoration:none;font-size:.78rem;letter-spacing:.08em;border:1px solid var(--line);padding:.3rem .65rem;border-radius:2px;transition:.2s}
+nav a:hover{color:var(--orig);border-color:var(--red);background:#1c0a0e}
+main{max-width:1200px;margin:0 auto;padding:1.6rem 1rem 4rem}
+section.zal{margin:2.4rem 0}
+h2.zalt{font-size:1.05rem;letter-spacing:.22em;color:var(--gold);border-left:4px solid var(--red);padding-left:.8rem;margin-bottom:.3rem;text-transform:uppercase}
+p.zald{color:var(--dim);font-size:.85rem;font-style:italic;margin-bottom:1.1rem;padding-left:.8rem}
+article.caput{background:var(--panel);border:1px solid var(--line);border-radius:3px;margin-bottom:1.4rem;overflow:hidden}
+article.caput>header{display:flex;align-items:center;justify-content:space-between;gap:.8rem;flex-wrap:wrap;background:var(--bg2);border-bottom:1px solid var(--line);padding:.65rem .95rem}
+article.caput h3{font-size:1.02rem;color:var(--orig);font-weight:normal;letter-spacing:.04em}
+.locus{display:block;font-size:.68rem;color:var(--dim);letter-spacing:.2em;margin-top:.15rem}
+.stamp{font-size:.68rem;letter-spacing:.15em;padding:.28rem .6rem;border:1px solid;border-radius:2px;white-space:nowrap}
+.fidelis{color:#8fc98f;border-color:#3c5c3c;background:#0e140e}
+.suspectus{color:var(--gold);border-color:#5c4d1c;background:#171307}
+.damnatus{color:#ff7b7b;border-color:#6e1f1f;background:#170b0b}
+.row{display:grid;grid-template-columns:2.8rem 1fr 1fr;border-bottom:1px solid #1d1d24}
+.row:last-of-type{border-bottom:none}
+.num{color:var(--dim);font-size:.75rem;padding:.75rem .5rem;text-align:right;border-right:1px solid #1d1d24;user-select:none}
+.orig{color:var(--orig);padding:.75rem .95rem;font-size:1.06rem;border-right:1px solid #1d1d24;word-break:break-word}
+.rus{color:var(--ink);padding:.75rem .95rem;font-size:.97rem;word-break:break-word}
+.lang{display:inline-block;font-size:.62rem;letter-spacing:.15em;color:var(--dim);border:1px solid var(--line);padding:.05rem .4rem;border-radius:2px;margin-bottom:.35rem;text-transform:uppercase}
+.he{font-family:'SBL Hebrew','Ezra SIL','Taamey Frank CLM','David Libre','Times New Roman',serif;font-size:1.25rem;line-height:1.7;direction:rtl;text-align:right}
+.grc{font-family:'SBL Greek','Galatia SIL','Palatino Linotype','Times New Roman',serif;font-size:1.12rem;line-height:1.7}
+.ar{font-family:'Amiri','Scheherazade New','Traditional Arabic','Sakkal Majalla','Times New Roman',serif;font-size:1.35rem;line-height:1.9;direction:rtl;text-align:right}
+.cu{font-family:'Monomakh Unicode','Izhitsa','CyrillicOld',Georgia,serif;font-size:1.12rem;line-height:1.7}
+.sa{font-family:'Noto Serif Devanagari','Nirmala UI','Mangal',serif;font-size:1.12rem;line-height:1.8}
+.zh{font-family:'Noto Serif CJK SC','Noto Serif SC','SimSun','Songti SC',serif;font-size:1.15rem;line-height:1.8}
+.av{font-style:italic;font-size:1.02rem}
+.ru-folk{font-size:1.05rem;line-height:1.7}
+.scholion{padding:.7rem .95rem;font-size:.84rem;color:var(--dim);font-style:italic;border-top:1px dashed #26262e;background:#121217}
+.scholion b{color:var(--gold);font-style:normal;font-weight:normal}
+.legend{background:var(--panel);border:1px solid var(--line);border-radius:3px;padding:1rem 1.2rem;margin:1.6rem 0;font-size:.9rem}
+.legend h4{color:var(--gold);letter-spacing:.15em;font-size:.8rem;margin-bottom:.5rem;text-transform:uppercase}
+.legend p{margin:.3rem 0;color:var(--dim)}
+.legend .stamp{margin-right:.4rem}
+footer{border-top:3px solid var(--red);background:var(--bg2);text-align:center;padding:1.6rem 1rem;color:var(--dim);font-size:.8rem;font-style:italic}
+@media(max-width:760px){.row{grid-template-columns:2rem 1fr}.num{border-right:none}.orig{border-right:none;border-bottom:1px dashed #26262e}.rus{grid-column:2}}
+</style>
+</head>
+<body>
+
+<header class="banner">
+ <div class="sig">✠ ✠ ✠</div>
+ <h1>SCRIPTORIUM PARALLELLA</h1>
+ <p class="sub">Архив Империума Человечества · Параллельные Писания Корпуса</p>
+ <p class="motto">«Слева — оригинал. Справа — дословный перевод. Каждая глава — под печатью.»</p>
+ <div class="meta"><span>DATUM: 020.M3</span><span>·</span><span>ORDO DIALOGUS</span><span>·</span><span>EX ARCHIVO HAERETICO</span></div>
+</header>
+
+<nav>
+ <a href="#babel">I · Babel</a><a href="#filii">II · Filii Dei</a><a href="#vigiles">III · Vigiles</a><a href="#persia">IV · Persia</a><a href="#rigveda">V · Rigveda</a><a href="#isa">VI · Isa</a><a href="#sinum">VII · Sinum</a><a href="#pentecoste">VIII · Pentecoste</a><a href="#columba">IX · Columba</a>
+</nav>
+
+<main>
+
+<div class="legend">
+ <h4>Sigilla Veritatis — печати</h4>
+ <p><span class="stamp fidelis">◆ FIDELIS</span> оригинал по критическим изданиям; факт подтверждён</p>
+ <p><span class="stamp suspectus">◇ SUSPECTUS</span> прочтение/атрибуция обсуждаемы</p>
+ <p><span class="stamp damnatus">✠ DAMNATUS</span> опровергнуто (в этой читалке отсутствует по определению)</p>
+ <p style="margin-top:.6rem">Переводы <b>дословные рабочие</b> — не Синодальный и не Крачковский: сохранён порядок слов оригинала, чтобы были видны швы корпуса.</p>
+</div>
+
+<section class="zal" id="babel">
+<h2 class="zalt">Зал I · Eventus Babel</h2>
+<p class="zald">Вавилонский инцидент и его предыстория: единая речь, башня, сыны Божиих.</p>
+
+<article class="caput">
+ <header><h3>Бытие 11:1–9 — Вавилонская башня<span class="locus">TORAH · HEBRAICA · BHS</span></h3><span class="stamp fidelis">◆ FIDELIS</span></header>
+ <div class="row"><span class="num">11:1</span><div class="orig he" dir="rtl" lang="he">וַיְהִי כָל־הָאָרֶץ שָׂפָה אֶחָת וּדְבָרִים אֲחָדִים׃</div><div class="rus">И была вся земля — язык один и слова одни.</div></div>
+ <div class="row"><span class="num">11:4</span><div class="orig he" dir="rtl" lang="he">וַיֹּאמְרוּ הָבָה נִבְנֶה־לָּנוּ עִיר וּמִגְדָּל וְרֹאשׁוֹ בַשָּׁמַיִם וְנַעֲשֶׂה־לָּנוּ שֵׁם פֶּן־נָפוּץ עַל־פְּנֵי כָל־הָאָרֶץ׃</div><div class="rus">И сказали: «Давай построим себе город и башню, а вершина её — до небес, и сделаем себе имя, чтобы не рассеяться по лицу всей земли».</div></div>
+ <div class="row"><span class="num">11:6</span><div class="orig he" dir="rtl" lang="he">וַיֹּאמֶר יְהוָה הֵן עַם אֶחָד וְשָׂפָה אַחַת לְכֻלָּם וְזֶה הַחִלָּם לַעֲשׂוֹת וְעַתָּה לֹא־יִבָּצֵר מֵהֶם כֹּל אֲשֶׁר יָזְמוּ לַעֲשׂוֹת׃</div><div class="rus">И сказал Господь: «Вот — народ один, и язык один у всех них, и вот начало их делания; и теперь не удержится от них ничто из того, что замыслят сделать».</div></div>
+ <div class="row"><span class="num">11:7</span><div class="orig he" dir="rtl" lang="he">הָבָה נֵרְדָה וְנָבְלָה שָׁם שְׂפָתָם אֲשֶׁר לֹא יִשְׁמְעוּ אִישׁ שְׂפַת רֵעֵהוּ׃</div><div class="rus">«Давай сойдём и смешаем там язык их, чтобы не понимал человек языка ближнего своего».</div></div>
+ <div class="row"><span class="num">11:9</span><div class="orig he" dir="rtl" lang="he">עַל־כֵּן קָרָא שְׁמָהּ בָּבֶל כִּי־שָׁם בָּלַל יְהוָה שְׂפַת כָּל־הָאָרֶץ וּמִשָּׁם הֱפִיצָם יְהוָה עַל־פְּנֵי כָל־הָאָרֶץ׃</div><div class="rus">Потому наречено имя ей — Бавел [Вавилон], ибо там смешал [балаль] Господь язык всей земли, и оттуда рассеял их Господь по лицу всей земли.</div></div>
+ <p class="scholion"><b>Схолия:</b> «башня» — зиккурат Этеменанки в Вавилоне; игра слов <i>балаль</i> «смешивать» полемична. У шумеров — свой сюжет о едином языке (эпос об Энмеркаре): память глубже Библии.</p>
+</article>
+
+<article class="caput">
+ <header><h3>Бытие 6:1–4 — Сыны Божиих и нефилимы<span class="locus">TORAH · HEBRAICA · BHS</span></h3><span class="stamp fidelis">◆ FIDELIS</span></header>
+ <div class="row"><span class="num">6:1</span><div class="orig he" dir="rtl" lang="he">וַיְהִי כִּי־הֵחֵל הָאָדָם לָרֹב עַל־פְּנֵי הָאֲדָמָה וּבָנוֹת יֻלְּדוּ לָהֶם׃</div><div class="rus">И было, когда начал человек умножаться на лице земли, и дочери родились у них,</div></div>
+ <div class="row"><span class="num">6:2</span><div class="orig he" dir="rtl" lang="he">וַיִּרְאוּ בְנֵי־הָאֱלֹהִים אֶת־בְּנוֹת הָאָדָם כִּי טֹבֹת הֵנָּה וַיִּקְחוּ לָהֶם נָשִׁים מִכֹּל אֲשֶׁר בָּחָרוּ׃</div><div class="rus">и увидели сыны Божиих [<i>бней hа-Элоhим</i>] дочерей человеческих, что хороши они, и взяли себе жён из всех, которых избрали.</div></div>
+ <div class="row"><span class="num">6:3</span><div class="orig he" dir="rtl" lang="he">וַיֹּאמֶר יְהוָה לֹא־יָדוֹן רוּחִי בָאָדָם לְעֹלָם בְּשַׁגַּם הוּא בָשָׂר וְהָיוּ יָמָיו מֵאָה וְעֶשְׂרִים שָׁנָה׃</div><div class="rus">И сказал Господь: «Не будет дух Мой судиться за человека вовек, ибо он — плоть; и будут дни его — сто двадцать лет».</div></div>
+ <div class="row"><span class="num">6:4</span><div class="orig he" dir="rtl" lang="he">הַנְּפִלִים הָיוּ בָאָרֶץ בַּיָּמִים הָהֵם וְגַם אַחֲרֵי־כֵן אֲשֶׁר יָבֹאוּ בְּנֵי הָאֱלֹהִים אֶל־בְּנוֹת הָאָדָם וְיָלְדוּ לָהֶם הֵמָּה הַגִּבֹּרִים אֲשֶׁר מֵעוֹלָם אַנְשֵׁי הַשֵּׁם׃</div><div class="rus">Нефилимы были на земле в те дни — и также после, когда сыны Божиих входили к дочерям человеческим и те рождали им: это — силачи [<i>гибборим</i>], что испокон веков — люди имени.</div></div>
+ <p class="scholion"><b>Схолия:</b> четыре стиха, из которых выросла вся литература Смотрителей. «Сыны Божиих» — так же названы ангелы в Иове 1:6; 2:1; 38:7. Августин заменит их «потомками Сифа» — и Запад пойдёт за ним.</p>
+</article>
+</section>
+
+<section class="zal" id="filii">
+<h2 class="zalt">Зал II · Filii Dei — Администрация народов</h2>
+<p class="zald">Ключевые тексты рамки «Втор 32»: народы розданы, боги народов — демоны.</p>
+
+<article class="caput">
+ <header><h3>Второзаконие 32:8–9 — по числу ангелов Божиих<span class="locus">LXX · GRAECA SEPTUAGINTA</span></h3><span class="stamp fidelis">◆ FIDELIS</span></header>
+ <div class="row"><span class="num">32:8</span><div class="orig grc" lang="grc">ὅτε διεμέριζεν ὁ ὕψιστος ἔθνη, ὡς διέσπειρεν υἱοὺς Ἀδάμ, ἔστησεν ὅρια ἐθνῶν κατὰ ἀριθμὸν ἀγγέλων θεοῦ,</div><div class="rus">Когда Всевышний разделял народы, когда расселял сынов Адама, поставил пределы народов — <b>по числу ангелов Божиих</b>,</div></div>
+ <div class="row"><span class="num">32:9</span><div class="orig grc" lang="grc">καὶ ἐγενήθη μερὶς κυρίου λαὸς αὐτοῦ Ἰακώβ, σχοίνισμα κληρονομίας αὐτοῦ Ἰσραήλ.</div><div class="rus">и стал удел Господень — народ Его, Иаков; жребий наследия Его — Израиль.</div></div>
+ <p class="scholion"><b>Схолия:</b> масоретский текст смягчил: «по числу сынов Израилевых» (בְּנֵי יִשְׂרָאֵל). Кумран 4QDeut: בני אלוהים — «сыны Божиих». LXX + Кумран против поздней редакции: народы розданы духовным администраторам — при Вавилоне (Быт 11).</p>
+</article>
+
+<article class="caput">
+ <header><h3>Псалом 81(82) — суд над богами<span class="locus">TEHILLIM · HEBRAICA · BHS</span></h3><span class="stamp fidelis">◆ FIDELIS</span></header>
+ <div class="row"><span class="num">82:1</span><div class="orig he" dir="rtl" lang="he">מִזְמוֹר לְאָסָף אֱלֹהִים נִצָּב בַּעֲדַת־אֵל בְּקֶרֶב אֱלֹהִים יִשְׁפֹּט׃</div><div class="rus">Псалом Асафа. Элохим стоит в сонме Эля; среди элохимов Он судит.</div></div>
+ <div class="row"><span class="num">82:6</span><div class="orig he" dir="rtl" lang="he">אֲנִי־אָמַרְתִּי אֱלֹהִים אַתֶּם וּבְנֵי עֶלְיוֹן כֻּלְּכֶם׃</div><div class="rus">Я сказал: боги — вы, и сыны Всевышнего — все вы;</div></div>
+ <div class="row"><span class="num">82:7</span><div class="orig he" dir="rtl" lang="he">אָכֵן כְּאָדָם תְּמוּתוּן וּכְאַחַד הַשָּׂרִים תִּפֹּלוּ׃</div><div class="rus">однако как человек умрёте вы, и как один из князей — падёте.</div></div>
+ <p class="scholion"><b>Схолия:</b> «божественный совет» в каноне: боги смертны — приговор администрации. Христос цитирует 82:6 в Ин 10:34.</p>
+</article>
+
+<article class="caput">
+ <header><h3>Псалом 95(96):5 — боги народов = демоны<span class="locus">LXX + SLAVONICA · два оригинала</span></h3><span class="stamp fidelis">◆ FIDELIS</span></header>
+ <div class="row"><span class="num">95:5</span><div class="orig"><span class="lang">LXX · греч.</span><br><span class="grc" lang="grc">ὅτι πάντες οἱ θεοὶ τῶν ἐθνῶν δαιμόνια, ὁ δὲ κύριος τοὺς οὐρανοὺς ἐποίησεν.</span></div><div class="rus">Ибо все боги народов — <b>демоны</b>; Господь же небеса сотворил.</div></div>
+ <div class="row"><span class="num">95:5</span><div class="orig"><span class="lang">SLAV · ц.-слав.</span><br><span class="cu" lang="cu">вси бо бо́зи язы́къ бесе́, Госпо́дь же небеса́ сотвори́.</span></div><div class="rus">Все боги язык — бесе; Господь же небеса сотворил.</div></div>
+ <p class="scholion"><b>Схолия:</b> масоретский оригинал мягче: כי כל־אלהי העמים אלילים — «все боги народов — пустышки» (элилим). Семьдесят толковников перевели <i>даймония</i> — и православная Псалтирь поёт это до сих пор.</p>
+</article>
+
+<article class="caput">
+ <header><h3>1 Коринфянам 10:20 — Павел подтверждает<span class="locus">NT · GRAECA · NA28</span></h3><span class="stamp fidelis">◆ FIDELIS</span></header>
+ <div class="row"><span class="num">10:20</span><div class="orig grc" lang="grc">ἀλλ' ὅτι ἃ θύει, δαιμονίοις καὶ οὐ θεῷ θύει· οὐ θέλω δὲ ὑμᾶς κοινωνοὺς τῶν δαιμονίων γίνεσθαι.</div><div class="rus">Нет — [говорю,] что жертвуемое ими — демонам жертвуется, а не Богу; и не хочу, чтобы вы входили в общение с демонами.</div></div>
+ <p class="scholion"><b>Схолия:</b> апостол язычества не «развенчивает» — он называет его адресатом. Рамка Втор 32 удержана: жертва уходит среднему звену.</p>
+</article>
+</section>
+
+<section class="zal" id="vigiles">
+<h2 class="zalt">Зал III · Vigiles — Книга Еноха и её след в каноне</h2>
+<p class="zald">Удалённый модуль с живыми вызовами: Енох цитируется внутри Нового Завета.</p>
+
+<article class="caput">
+ <header><h3>1 Енох 1:9 — пророчество о суде<span class="locus">ENOCH · GRAECA · CODEX PANOPOLITANUS (Ахмим)</span></h3><span class="stamp fidelis">◆ FIDELIS</span></header>
+ <div class="row"><span class="num">1:9</span><div class="orig grc" lang="grc">ἰδοὺ ἔρχεται σὺν ταῖς μυριάσιν αὐτοῦ καὶ τοῖς ἁγίοις αὐτοῦ ποιῆσαι κρίσιν κατὰ πάντων καὶ ἀπολέσαι πάντας τοὺς ἀσεβεῖς καὶ ἐλέγξαι πᾶσαν σάρκα περὶ πάντων τῶν ἔργων τῆς ἀσεβείας αὐτῶν ὧν ἠσέβησαν καὶ σκληρῶν ὧν ἐλάλησαν λόγων καὶ περὶ πάντων ὧν κατελάλησαν κατ' αὐτοῦ ἁμαρτωλοὶ ἀσεβεῖς.</div><div class="rus">Вот, грядёт Он со тьмами Своими и со святыми Своими — сотворить суд над всеми, и погубить всех нечестивых, и обличить всякую плоть о всех делах нечестия их, что они нечестиво соделали, и о жестоких словах, что говорили, и обо всём, что наговорили на Него грешники нечестивые.</div></div>
+ <p class="scholion"><b>Схолия:</b> полный текст книги — только на геэзе (канон Эфиопии, 81 книга); подлинность подтверждена арамейскими фрагментами Кумрана. Греческий — по Ахмимскому кодексу (1 Ен 1–32).</p>
+</article>
+
+<article class="caput">
+ <header><h3>Послание Иуды 1:14–15 — цитата внутри канона<span class="locus">NT · GRAECA · NA28</span></h3><span class="stamp fidelis">◆ FIDELIS</span></header>
+ <div class="row"><span class="num">1:14</span><div class="orig grc" lang="grc">Ἐπροφήτευσεν δὲ καὶ τούτοις ἕβδομος ἀπὸ Ἀδὰμ Ἑνὼχ λέγων·</div><div class="rus">Пророчествовал же и о них седьмой от Адама Енох, говоря:</div></div>
+ <div class="row"><span class="num">1:15</span><div class="orig grc" lang="grc">Ἰδοὺ ἦλθεν κύριος ἐν μυριάσιν ἁγίαις αὐτοῦ ποιῆσαι κρίσιν κατὰ πάντων καὶ ἐλέγξαι πᾶσαν ψυχὴν περὶ πάντων τῶν ἔργων ἀσεβείας αὐτῶν ὧν ἠσέβησαν καὶ περὶ πάντων τῶν σκληρῶν ὧν ἐλάλησαν κατ' αὐτοῦ ἁμαρτωλοὶ ἀσεβεῖς.</div><div class="rus">«Вот, пришёл Господь со святыми тьмами Своими — сотворить суд над всеми и обличить всякую душу о всех делах нечестия их, что нечестиво соделали, и о всех жестоких словах, что наговорили на Него грешники нечестивые».</div></div>
+ <p class="scholion"><b>Схолия:</b> сличите с левой карточкой: предложение то же самое. Западный канон выбросил книгу — вызовы к ней остались в коде.</p>
+</article>
+
+<article class="caput">
+ <header><h3>2 Енох 22 — призвание небесного писца<span class="locus">ENOCH SLAVONICUS · ц.-слав. · изд. Соколова</span></h3><span class="stamp fidelis">◆ FIDELIS</span></header>
+ <div class="row"><span class="num">22</span><div class="orig cu" lang="cu">И падох ницъ, и поклоних ся Господеви. И Господь усты своими възва мя: «Дръзай, Еноше, не бойся! Востани и стани пред лицемъ моимъ въ вѣкы».</div><div class="rus">И пал я ниц, и поклонился Господу. И Господь устами Своими воззвал меня: «Дерзай, Енох, не бойся! Восстань и стань пред лицом Моим во веки».</div></div>
+ <p class="scholion"><b>Схолия:</b> 2 Енох сохранилась <b>только по-церковнославянски</b> — славянская ветвь корпуса держит свою страницу. Далее (22:8–10): Енох помазан миром, облачён в одежду Славы и «стал подобен одному из славных ангелов Его».</p>
+</article>
+</section>
+
+<section class="zal" id="persia">
+<h2 class="zalt">Зал IV · Persia — пакет, вшитый в Библию</h2>
+<p class="zald">Кир — помазанник; воскресение; два духа-близнеца Гат.</p>
+
+<article class="caput">
+ <header><h3>Исаия 45:1 — Кир, Мессия<span class="locus">JESAJA · HEBRAICA · BHS</span></h3><span class="stamp fidelis">◆ FIDELIS</span></header>
+ <div class="row"><span class="num">45:1</span><div class="orig he" dir="rtl" lang="he">כֹּה־אָמַר יְהוָה לִמְשִׁיחוֹ לְכֹורֶשׁ אֲשֶׁר־הֶחֱזַקְתִּי בִימִינוֹ לְרַד־לְפָנָיו גֹּויִם וּמָתְנֵי מְלָכִים אֲפַתֵּחַ לִפְתֹּחַ לְפָנָיו דְּלָתַיִם וּשְׁעָרִים לֹא יִסָּגֵרוּ׃</div><div class="rus">Так говорит Господь — <b>Своему помазаннику</b> [<i>машиах</i>], Киру, за правую руку которого Я взялся, чтобы повергнуть пред ним народы, и чресла царей разпоясать, чтобы отворить пред ним двери, и ворота не затворятся.</div></div>
+ <p class="scholion"><b>Схолия:</b> единственный неиудей, названный в Библии «помазанником». Зороастрийский царь освобождает Иуду — и получает титул из еврейской теологии.</p>
+</article>
+
+<article class="caput">
+ <header><h3>Даниил 12:2 — воскресение<span class="locus">DANIEL · HEBRAICA · BHS</span></h3><span class="stamp fidelis">◆ FIDELIS</span></header>
+ <div class="row"><span class="num">12:2</span><div class="orig he" dir="rtl" lang="he">וְרַבִּים מִיְּשֵׁנֵי אַדְמַת־עָפָר יָקִיצוּ אֵלֶּה לְחַיֵּי עוֹלָם וְאֵלֶּה לַחֲרָפוֹת לְדִרְאוֹן עוֹלָם׃</div><div class="rus">И многие из спящих в прахе земли пробудятся: эти — к жизни вечной, а эти — к посрамлению, к вечному презрению.</div></div>
+ <p class="scholion"><b>Схолия:</b> первое полное воскресение мёртвых в Танахе — поздний слой (II в. до н.э.), после персидского контакта. Ср. Фрашокерети у зороастрийцев.</p>
+</article>
+
+<article class="caput">
+ <header><h3>Йасна 30:3 — два духа-близнеца<span class="locus">AVESTA · изд. Гельднера (1896)</span></h3><span class="stamp fidelis">◆ FIDELIS</span></header>
+ <div class="row"><span class="num">30:3</span><div class="orig av" lang="ae">at tâ mainyû pouruyê ýâ ýêmâ hvafenâ asrvâtem manahicâ vacahicâ shyaothanôi hî vahyô akemcâ åscâ hudånghô eresh vîshyâtâ nôit duzhdånghô.</div><div class="rus">И вот два изначальных духа, что близнецами известны, — [их] две [устремлённости] в мысли, слове и деле: лучшая и злая; и из них благодетельные избрали верно, а злодетельные — нет.</div></div>
+ <p class="scholion"><b>Схолия:</b> «строфа близнецов» Гат — ядро зороастрийского выбора: Аша (истина) против Друдж (лжи). Этическая рамка, которую унаследует иудаизм Второго Храма.</p>
+</article>
+</section>
+
+<section class="zal" id="rigveda">
+<h2 class="zalt">Зал V · Rigveda — Истина одна</h2>
+<p class="zald">Самая ранняя формула единого свода — за тысячелетия до споров о нём.</p>
+
+<article class="caput">
+ <header><h3>Ригведа 1.164.46 — Экам сат<span class="locus">ṚGVEDA · संस्कृतम् + IAST</span></h3><span class="stamp fidelis">◆ FIDELIS</span></header>
+ <div class="row"><span class="num">dév.</span><div class="orig sa" lang="sa">इन्द्रं मित्रं वरुणमग्निमाहुरथो दिव्यः स सुपर्णो गरुत्मान् ।<br>एकं सद्विप्रा बहुधा वदन्त्यग्निं यमं मातरिश्वानमाहुः ॥</div><div class="rus">Индрой, Митрой, Варуной, Агни зовут [Его], и [говорят, что] Он — божественная, прекраснокрылая птица Гарутман.<br>Единое Сущее мудрецы называют многими именами: Агни, Ямой, Матаришваном.</div></div>
+ <div class="row"><span class="num">IAST</span><div class="orig" style="font-style:italic">indraṃ mitraṃ varuṇam agnim āhur atho divyaḥ sa suparṇo garutmān |<br>ekaṃ sad viprā bahudhā vadanty agniṃ yamaṃ mātariśvānam āhuḥ ॥</div><div class="rus">[транслитерация IAST для сверки произношения]</div></div>
+ <p class="scholion"><b>Схолия:</b> «экам сат випра бахудха ваданти» — гимн Диргхатамасу (Ашьямья-сукта), ~1500–1200 до н.э. Не «все боги одинаковы», а: одно Сущее — много имён.</p>
+</article>
+</section>
+
+<section class="zal" id="isa">
+<h2 class="zalt">Зал VI · Isa — Иса в Коране</h2>
+<p class="zald">Персонаж общий, сюжет переписан: наследование с оспариванием.</p>
+
+<article class="caput">
+ <header><h3>Коран 4:157–158 — «не убили и не распяли»<span class="locus">QUR'AN · عربي · сура ан-Ниса</span></h3><span class="stamp fidelis">◆ FIDELIS</span></header>
+ <div class="row"><span class="num">4:157</span><div class="orig ar" dir="rtl" lang="ar">وَقَوْلِهِمْ إِنَّا قَتَلْنَا الْمَسِيحَ عِيسَى ابْنَ مَرْيَمَ رَسُولَ اللَّهِ وَمَا قَتَلُوهُ وَمَا صَلَبُوهُ وَلَٰكِن شُبِّهَ لَهُمْ ۚ وَإِنَّ الَّذِينَ اخْتَلَفُوا فِيهِ لَفِي شَكٍّ مِّنْهُ ۚ مَا لَهُم بِهِ مِنْ عِلْمٍ إِلَّا اتِّبَاعَ الظَّنِّ ۚ وَمَا قَتَلُوهُ يَقِينًا</div><div class="rus">И за их слова: «Мы убили Мессию, Ису, сына Марьям, посланника Аллаха», — [но] они не убили его и не распяли его, а [лишь] это было уподоблено им; и, поистине, разногласящие о нём — в сомнении о нём; нет у них о нём знания, только следование за предположением; и они не убили его достоверно.</div></div>
+ <div class="row"><span class="num">4:158</span><div class="orig ar" dir="rtl" lang="ar">بَل رَّفَعَهُ اللَّهُ إِلَيْهِ ۚ وَكَانَ اللَّهُ عَزِيزًا حَكِيمًا</div><div class="rus">Но Аллах вознёс его к Себе; и был Аллах могущественен, мудр.</div></div>
+ <p class="scholion"><b>Схолия:</b> центральный разрыв корпуса: для Павла «если Христос не воскрес — вера тщетна» (1 Кор 15:14); для Корана распятия не было вовсе. Конфликт не в толковании события — в самом событии.</p>
+</article>
+
+<article class="caput">
+ <header><h3>Коран 19:19–21 — благовещение Марьям<span class="locus">QUR'AN · عربي · сура Марьям</span></h3><span class="stamp fidelis">◆ FIDELIS</span></header>
+ <div class="row"><span class="num">19:19</span><div class="orig ar" dir="rtl" lang="ar">قَالَ إِنَّمَا أَنَا رَسُولُ رَبِّكِ لِأَهَبَ لَكِ غُلَامًا زَكِيًّا</div><div class="rus">Сказал [ангел]: «Я — лишь посланник Господа твоего, чтобы даровать тебе отрока чистого».</div></div>
+ <div class="row"><span class="num">19:20</span><div class="orig ar" dir="rtl" lang="ar">قَالَتْ أَنَّىٰ يَكُونُ لِي غُلَامٌ وَلَمْ يَمْسَسْنِي بَشَرٌ وَلَمْ أَكُ بَغِيًّا</div><div class="rus">Сказала [она]: «Как может быть у меня отрок, когда меня не касался человек, и я не была блудницей?»</div></div>
+ <div class="row"><span class="num">19:21</span><div class="orig ar" dir="rtl" lang="ar">قَالَ كَذَٰلِكِ قَالَ رَبُّكِ هُوَ عَلَيَّ هَيِّنٌ ۖ وَلِنَجْعَلَهُ آيَةً لِّلنَّاسِ وَرَحْمَةً مِّنَّا ۚ وَكَانَ أَمْرًا مَّقْضِيًّا</div><div class="rus">Сказал [он]: «Так [будет]; сказал Господь твой: это для Меня легко, и [это] — чтобы сделать его знамением для людей и милостью от Нас; и было [это] делом решённым».</div></div>
+ <p class="scholion"><b>Схолия:</b> девственное рождение сохранено. Суре 19 посвящена Марьям — она упомянута в Коране чаще, чем в Новом Завете.</p>
+</article>
+
+<article class="caput">
+ <header><h3>Коран 3:45 — Слово от Него<span class="locus">QUR'AN · عربي · сура Ал Имран</span></h3><span class="stamp fidelis">◆ FIDELIS</span></header>
+ <div class="row"><span class="num">3:45</span><div class="orig ar" dir="rtl" lang="ar">إِذْ قَالَتِ الْمَلَائِكَةُ يَا مَرْيَمُ إِنَّ اللَّهَ يُبَشِّرُكِ بِكَلِمَةٍ مِّنْهُ اسْمُهُ الْمَسِيحُ عِيسَى ابْنُ مَرْيَمَ وَجِيهًا فِي الدُّنْيَا وَالْآخِرَةِ وَمِنَ الْمُقَرَّبِينَ</div><div class="rus">Вот сказали ангелы: «О Марьям! Поистине, Аллах благовествует тебе <b>Словом</b> от Него; имя которому — Мессия, Иса, сын Марьям, славный в ближнем и последнем [мирах] и из приближённых».</div></div>
+ <p class="scholion"><b>Схолия:</b> титулы сохранены: аль-Масих, «Слово от Него» (Калиматуллах), «Дух от Него» (4:171). Формула общая — содержание иное.</p>
+</article>
+
+<article class="caput">
+ <header><h3>Коран 71:23 — идолы времён Ноя<span class="locus">QUR'AN · عربي · сура Нух</span></h3><span class="stamp fidelis">◆ FIDELIS</span></header>
+ <div class="row"><span class="num">71:23</span><div class="orig ar" dir="rtl" lang="ar">وَقَالُوا لَا تَذَرُنَّ آلِهَتَكُمْ وَلَا تَذَرُنَّ وَدًّا وَلَا سُوَاعًا وَلَا يَغُوثَ وَيَعُوقَ وَنَسْرًا</div><div class="rus">И сказали [они]: «Не оставляйте богов ваших и не оставляйте ни Вадда, ни Суваа, ни Йагуса, ни Йаука, ни Насра!»</div></div>
+ <p class="scholion"><b>Схолия:</b> Коран сам датирует идолов «временами Ноя»; толкователи (ибн Исхак): это были обожествлённые праведники допотопной эпохи — эвгемеризм внутри ислама.</p>
+</article>
+
+<article class="caput">
+ <header><h3>Коран 39:3 — «покровители-приближатели»<span class="locus">QUR'AN · عربي · сура аз-Зумар</span></h3><span class="stamp fidelis">◆ FIDELIS</span></header>
+ <div class="row"><span class="num">39:3</span><div class="orig ar" dir="rtl" lang="ar">وَالَّذِينَ اتَّخَذُوا مِن دُونِهِ أَوْلِيَاءَ مَا نَعْبُدُهُمْ إِلَّا لِيُقَرِّبُونَا إِلَى اللَّهِ زُلْفَىٰ</div><div class="rus">А те, которые взяли себе помимо Него покровителей, [говорят:] «Мы поклоняемся им только для того, чтобы они приблизили нас к Аллаху на близость».</div></div>
+ <p class="scholion"><b>Схолия:</b> ширк = поклонение среднему звену управления. Та же диагностика, что Втор 32:8 и Пс 95:5 LXX: проблема не в отрицании Верховного — Верховный признан, — а в культе администраторов.</p>
+</article>
+
+<article class="caput">
+ <header><h3>Коран 89:6–8 — Ад и Ирам<span class="locus">QUR'AN · عربي · сура аль-Фаджр</span></h3><span class="stamp fidelis">◆ FIDELIS</span></header>
+ <div class="row"><span class="num">89:6</span><div class="orig ar" dir="rtl" lang="ar">أَلَمْ تَرَ كَيْفَ فَعَلَ رَبُّكَ بِعَادٍ</div><div class="rus">Не видел ли ты, как поступил Господь твой с [народом] Ад —</div></div>
+ <div class="row"><span class="num">89:7</span><div class="orig ar" dir="rtl" lang="ar">إِرَمَ ذَاتِ الْعِمَادِ</div><div class="rus">с Ирамом, [владельцем] столпов, —</div></div>
+ <div class="row"><span class="num">89:8</span><div class="orig ar" dir="rtl" lang="ar">الَّتِي لَمْ يُخْلَقْ مِثْلُهَا فِي الْبِلَادِ</div><div class="rus">подобного которому не было создано в [других] странах?</div></div>
+ <p class="scholion"><b>Схолия:</b> Ад и Тамуд — уничтоженные народы-великаны арабской памяти: «слой гигантов» корпуса (ср. Рефаимы, фоморы, ётунны, Туниит).</p>
+</article>
+</section>
+
+<section class="zal" id="sinum">
+<h2 class="zalt">Зал VII · Sinum — Сианьская стела, 781.M1</h2>
+<p class="zald">Корпус, перекодированный в китайскую идиому: крест на лотосе.</p>
+
+<article class="caput">
+ <header><h3>大秦景教流行中國碑 — фрагменты<span class="locus">STELA SINENSIS · 中文 · Цзинцзин (Адам)</span></h3><span class="stamp fidelis">◆ FIDELIS</span></header>
+ <div class="row"><span class="num">загл.</span><div class="orig zh" lang="zh">大秦景教流行中國碑</div><div class="rus">Стела о распространении в Срединном государстве Светлого учения Да-Цинь [Римского Востока].</div></div>
+ <div class="row"><span class="num">1</span><div class="orig zh" lang="zh">粵若常然真寂。先先而無元。窅然靈虛。後後而妙有。</div><div class="rus">О, вечно таков Он, истинно безмолвен; прежде всякого начала — без корня; таинственно духовно-пустотен; после всякого конца — чудесно сущ.</div></div>
+ <div class="row"><span class="num">2</span><div class="orig zh" lang="zh">其唯我三一妙身無元真主阿羅訶歟。</div><div class="rus">Это и есть наш Триединый, чудесно-телесный, бескорневой Истинный Владыка — <b>Алохо</b> [сирийск. Alāhā, «Бог»].</div></div>
+ <div class="row"><span class="num">3</span><div class="orig zh" lang="zh">判十字以定四方。鼓元風而生二氣。</div><div class="rus">Начертав крест, определил четыре стороны [мира]; дунув изначальным ветром, родил две субстанции [инь и ян].</div></div>
+ <div class="row"><span class="num">4</span><div class="orig zh" lang="zh">神天宣慶。室女誕聖於大秦。景宿告祥。波斯睹耀以來貢。</div><div class="rus">Духовные небеса возвестили радость: Дева родила Святого в Да-Цинь. Светлая звезда объявила благо: персы увидели сияние и пришли с дарами.</div></div>
+ <div class="row"><span class="num">5</span><div class="orig zh" lang="zh">經留二十七部。張元化以發靈關。</div><div class="rus">Писаний оставлено — <b>двадцать семь частей</b>, раскрывающих изначальное преображение, дабы открыть духовные врата.</div></div>
+ <div class="row"><span class="num">6</span><div class="orig zh" lang="zh">不蓄臧獲。均貴賤於人。不聚貨財。示罄遺於我。</div><div class="rus">[Они] не держат рабов — уравнивая знатных и простых; не копят богатств — являя, что всё оставляют мне.</div></div>
+ <div class="row"><span class="num">7</span><div class="orig zh" lang="zh">七時禮讚。大庇存亡。七日一薦。洗心反素。</div><div class="rus">Семь раз в день — хвалебная служба, великое покровение живым и мёртвым; раз в семь дней — приношение, омовение сердца и возврат к простоте.</div></div>
+ <p class="scholion"><b>Схолия:</b> установлена 781.M1, найдена 1625.M2. Текст — Цзинцзин (Адам), монах Церкви Востока; сирийские строки внизу — имена клириков. Подлинность подтверждена дуньхуанскими рукописями Цзинцзяо.</p>
+</article>
+</section>
+
+<section class="zal" id="pentecoste">
+<h2 class="zalt">Зал VIII · Pentecoste — контр-Вавилон</h2>
+<p class="zald">Языки разделились на огненные: возвращение народов.</p>
+
+<article class="caput">
+ <header><h3>Деяния 2:1–4 — Пятидесятница<span class="locus">ACTA · GRAECA · NA28</span></h3><span class="stamp fidelis">◆ FIDELIS</span></header>
+ <div class="row"><span class="num">2:1</span><div class="orig grc" lang="grc">Καὶ ἐν τῷ συμπληροῦσθαι τὴν ἡμέραν τῆς πεντηκοστῆς ἦσαν πάντες ὁμοῦ ἐπὶ τὸ αὐτό.</div><div class="rus">И когда наступил день Пятидесятницы, были все вместе на одном [месте].</div></div>
+ <div class="row"><span class="num">2:2</span><div class="orig grc" lang="grc">καὶ ἐγένετο ἄφνω ἐκ τοῦ οὐρανοῦ ἦχος ὥσπερ φερομένης πνοῆς βιαίας καὶ ἐπλήρωσεν ὅλον τὸν οἶκον οὗ ἦσαν καθήμενοι,</div><div class="rus">и раздался внезапно с неба звук, как от несущегося сильного дыхания, и наполнил весь дом, где они сидели,</div></div>
+ <div class="row"><span class="num">2:3</span><div class="orig grc" lang="grc">καὶ ὤφθησαν αὐτοῖς διαμεριζόμεναι γλῶσσαι ὡσεὶ πυρός, ἐκάθισέν τε ἐφ' ἕνα ἕκαστον αὐτῶν,</div><div class="rus">и явились им разделяющиеся языки, как огненные, и опустился на каждого одного из них,</div></div>
+ <div class="row"><span class="num">2:4</span><div class="orig grc" lang="grc">καὶ ἐπλήσθησαν πάντες πνεύματος ἁγίου καὶ ἤρξαντο λαλεῖν ἑτέραις γλώσσαις καθὼς τὸ πνεῦμα ἐδίδου ἀποφθέγγεσθαι αὐτοῖς.</div><div class="rus">и исполнились все Духа Святого и начали говорить на иных языках, как Дух давал им провещевать.</div></div>
+ <p class="scholion"><b>Схолия:</b> Быт 11: языки смешались — народы разошлись под князей. Деян 2: языки разделились на огненные — каждый слышит своё. Тот же глагол διαμερίζω, что в Втор 32:8 LXX («разделял народы»).</p>
+</article>
+
+<article class="caput">
+ <header><h3>Лука 10:1, 17–18 — семьдесят и падение сатаны<span class="locus">EV. LUCAS · GRAECA · NA28</span></h3><span class="stamp fidelis">◆ FIDELIS</span></header>
+ <div class="row"><span class="num">10:1</span><div class="orig grc" lang="grc">Μετὰ δὲ ταῦτα ἀνέδειξεν ὁ κύριος ἑτέρους ἑβδομήκοντα καὶ ἀπέστειλεν αὐτοὺς ἀνὰ δύο πρὸ προσώπου αὐτοῦ εἰς πᾶσαν πόλιν καὶ τόπον οὗ ἤμελλεν αὐτὸς ἔρχεσθαι.</div><div class="rus">После же этого назначил Господь и других — <b>семьдесят</b>, и послал их по два пред лицом Своим во всякий город и место, куда Сам собирался идти.</div></div>
+ <div class="row"><span class="num">10:17</span><div class="orig grc" lang="grc">Ὑπέστρεψαν δὲ οἱ ἑβδομήκοντα μετὰ χαρᾶς λέγοντες· Κύριε, καὶ τὰ δαιμόνια ὑποτάσσεται ἡμῖν ἐν τῷ ὀνόματί σου.</div><div class="rus">Вернулись же семьдесят с радостью, говоря: «Господи, и демоны повинуются нам именем Твоим».</div></div>
+ <div class="row"><span class="num">10:18</span><div class="orig grc" lang="grc">εἶπεν δὲ αὐτοῖς· Ἐθεώρουν τὸν σατανᾶν ὡς ἀστραπὴν ἐκ τοῦ οὐρανοῦ πεσόντα.</div><div class="rus">Сказал же им: «Я видел сатану, как молнию, с неба упавшего».</div></div>
+ <p class="scholion"><b>Схолия:</b> семьдесят ≈ число народов Быт 10 и «сынов Божиих» Втор 32:8: миссия идёт по числу уделов павшей администрации — и администратор падает.</p>
+</article>
+
+<article class="caput">
+ <header><h3>Деяния 17:26–30 — пределы народов и конец попущения<span class="locus">ACTA · GRAECA · NA28</span></h3><span class="stamp fidelis">◆ FIDELIS</span></header>
+ <div class="row"><span class="num">17:26</span><div class="orig grc" lang="grc">ἐποίησέν τε ἐξ ἑνὸς πᾶν ἔθνος ἀνθρώπων κατοικεῖν ἐπὶ παντὸς προσώπου τῆς γῆς, ὁρίσας προτεταγμένους καιροὺς καὶ τὰς ὁροθεσίας τῆς κατοικίας αὐτῶν,</div><div class="rus">И сотворил от одного всякий народ человеческий, чтобы жить на всём лице земли, определив назначенные времена и <b>пределы их обитания</b>,</div></div>
+ <div class="row"><span class="num">17:27</span><div class="orig grc" lang="grc">ζητεῖν τὸν θεόν, εἰ ἄρα γε ψηλαφήσειαν αὐτὸν καὶ εὕροιεν, καίγε οὐ μακρὰν ἀπὸ ἑνὸς ἑκάστου ἡμῶν ὑπάρχοντα.</div><div class="rus">чтобы искали Бога — не ощупью ли найдут Его, хотя Он недалеко от каждого одного из нас.</div></div>
+ <div class="row"><span class="num">17:30</span><div class="orig grc" lang="grc">τοὺς μὲν οὖν χρόνους τῆς ἀγνοίας ὑπεριδὼν ὁ θεὸς τὰ νῦν παραγγέλλει τοῖς ἀνθρώποις πάντας πανταχοῦ μετανοεῖν,</div><div class="rus">Итак, времена неведения Бог <b>оставил без внимания</b>, [а] ныне повелевает людям всем везде каяться.</div></div>
+ <p class="scholion"><b>Схолия:</b> Ареопаг: «пределы обитания» — эхо Втор 32:8; «времена неведения» — статус языческой эпохи как временной администрации, срок которой вышел.</p>
+</article>
+</section>
+
+<section class="zal" id="columba">
+<h2 class="zalt">Зал IX · Columba — Голубиная книга</h2>
+<p class="zald">Народная космогония славянской ветви: единая небесная книга внутри самой традиции.</p>
+
+<article class="caput">
+ <header><h3>Голубиная книга — зачин и вопросы<span class="locus">Усть-Цильма · запись Н. Е. Ончукова, 1904, № 56 · исп. Е. Ф. Торопова</span></h3><span class="stamp fidelis">◆ FIDELIS</span></header>
+ <div class="row"><span class="num">1</span><div class="orig ru-folk" lang="ru">А на ту-де на матушку Савор-гору<br>Выпадала ведь книга голубинная.</div><div class="rus">А на самую мать-гору Савор-гору выпадала [с неба] книга Голубиная.</div></div>
+ <div class="row"><span class="num">2</span><div class="orig ru-folk" lang="ru">От цего тут зацялся вольной белой свет?<br>От цего зацялось да сонцо красное?</div><div class="rus">Отчего зачался вольный белый свет? Отчего зачалось солнце красное?</div></div>
+ <div class="row"><span class="num">3</span><div class="orig ru-folk" lang="ru">Да зацялся белой свет от Воспода,<br>Красно солнышко зацялось да из оцей Его.</div><div class="rus">Белый свет зачался — от Господа; красное солнышко зачалось — из очей Его.</div></div>
+ <div class="row"><span class="num">4</span><div class="orig ru-folk" lang="ru">Блад светел месяц зацялса от ушей Его,<br>Звёзды цясты зацялись да как от рук Его.</div><div class="rus">Бледный светлый месяц зачался — от ушей Его; звёзды частые зачались — от рук Его.</div></div>
+ <p class="scholion"><b>Схолия:</b> мир рождается эманацией из тела Царя Небесного — без глагола «сотворил» (замечено Г. П. Федотовым). Книга с неба, читают Давыд, Исаия и Соломон: гипотеза единого свода живёт в фольклоре самой ветви.</p>
+</article>
+</section>
+
+</main>
+
+<footer>
+ ARCHIVUM HAERETICUM IMPERII HUMANITATIS · SCRIPTORIUM PARALLELLA · 020.M3<br>
+ Corpus est unum. Rami pugnant. Archivum meminit. · github.com/petushokmaxorka-ai/archivum-haereticum
+</footer>
+
+</body>
+</html>
