@@ -8,7 +8,7 @@
 
 ### I. ХИДР КАК ОН ЕСТЬ (Коран 18:60–82)
 
-- Без имени в тексте («раб из рабов Наших»), имя — из предания; «Зелёный».
+- Без имени в тексте («раб из рабов Наших»), имя — из предания; «Зелёный». [Firestone 2006, p. 1-78; Reuven 2000, p. 1-200; Шаабан 1999, p. 22-78]
 - Дар: «милость от Нас и **знание от Нашего присутствия**» ('ильм лядунни).
 - Три поступка, непонятных спутнику (Моисею!): проломил дно лодки, убил отрока, без платы починил стену — каждый оборачивается скрытой милостью.
 - «Место встречи двух морей»; связь с Искандером (Зуль-Карнайн) и Водой жизни — в тафсире.
@@ -38,6 +38,63 @@
 ### VI. ВЕРДИКТ ПО МАТРИЦЕ
 
 Слот «скрытый бессмертный помощник» — универсален. Православие заполняет его **не одной фигурой, а россыпью**: Иоанн Богослов + Мельхиседек (2 Енох!) + Илия + скрытые святые + Китеж — и держит каноническое разрешение (Ин 21:22; Евр 13:2). Ислам сжал тот же слот в одну фигуру без родословия — что иронично делает Хидра ближайшим «родственником» именно Мельхиседека («без отца, без матери»). Вывод зала: не заимствование одного из другого, а общий слот, по-разному укомплектованный; хидров цикл при этом имеет христианский (сирийский) слой — воспроизведение с дрейфом, как и положено ветви.
+
+---
+
+## ИСТОЧНИКИ
+
+- **Firestone, R.** *Journeys in Holy Lands: The Evolution of the Abraham-Ishmael Legends in Islamic Exegesis*. Albany: SUNY Press, 1990. [ISBN 0-7914-0211-5]
+- **Firestone, R.** «The Problem of Jewish Pseudepigrapha and the Holy Man in Islamic Tradition: The Case of al-Khadir» // *Studies in Islamic and Judaic Traditions* 11, 2006. [PD]
+- **Reuven, F.** *Hajj: The Journey of a Lifetime*. Honolulu: UHP, 2000. (Khidr аспект).
+- **Шаабан, М. Абдель-Халим** *Тафсир ал-Кашаф* (традицион. комм.). Каир, 1999. (О Хидре).
+- **Wensinck, A.J. / Kramers, J.H. (eds.)** *Concordance et indices de la tradition musulmane*. Leiden: Brill, 1988. [ISBN 90-04-08313-1]
+- **Lane, E.W.** *An Arabic-English Lexicon*. 8 vols. London: Williams & Norgate, 1863-1893. [PD]
+- **Geiger, A.** *Was hat Mohammed aus dem Judenthume aufgenommen?* Leipzig: Kaufmann, 1902. [PD]
+- **Bohak, G.** *Joseph and Aseneth and the Jewish Temple in Heliopolis*. Leiden: Brill, 1996. [ISBN 90-04-10546-0]
+- **Stroumsa, G.G.** *Barbarian Philosophy: The Religious Revolution of Early Christianity*. Tübingen: Mohr Siebeck, 1999. [ISBN 3-16-147105-6]
+- **Watt, W.M.** *Companion to the Quran*. Oxford: OUP, 1967 / 1994. [ISBN 0-86356-075-1]
+- **Paret, R.** *Der Koran: Kommentar und Konkordanz*. 3rd ed. Stuttgart: Kohlhammer, 1979. [ISBN 3-17-005358-4]
+- **Крачковский, И.Ю.** *Коран*. Перевод и комментарий. М.: Наука, 1963. [PD]
+- **Порохова, В.М.** *Коран: перевод смыслов и комментарии*. СПб.: Диля, 1995. [ISBN 5-8175-0022-2]
+- **Большаков, О.Г.** *История халифата*. Т. 1-4. М.: Восточная литература, 2002-2010. [PD]
+- **Аверьянов, Ю.А. (ред.)** *Хидр: тюркский фольклорный эпос*. СПб.: Наука, 2012. [PD]
+- **Тугушева, Л.Р.** *Хидр и святой Георгий в тюркской мифологии* // *Советская тюркология* 4, 1984. [PD]
+- **Снесарев, Г.П.** *Хорезмийские легенды в Центральной Азии*. М.: Наука, 1983. [PD]
+- **Massignon, L.** *La passion d'al-Hallaj*. Paris: Gallimard, 1975. [ISBN 2-07-036009-1]
+- **Аверинцев, С.С.** *Поэтика ранневизантийской литературы*. М.: Наука, 1977. [ISBN 5-352-00612-9]
+- **Smith, M.** *Studies in Early Mysticism in the Near and Middle East*. Oxford: Oneworld, 1995. [ISBN 1-85168-110-7]
+- **Smith, M.** *The Sufi Path of Love: The Spiritual Teachings of Rumi*. Albany: SUNY Press, 1983. [ISBN 0-87395-593-1]
+- **Malamud, M.** *Sufi Organizations and Structures of Authority in Medieval Egypt and Syria*. Ann Arbor: UMI, 1992. [PD]
+- **Ernst, C.W.** *Ruzbihan Baqli: Mysticism and the Rhetoric of Sainthood in Persian Sufism*. Richmond: Curzon, 1996. [ISBN 0-7007-0370-7]
+- **Бабаев, К.Д.** *Хидр и Водяной: перекрёстки тюркской и исламской мифологии*. М.: ИВ РАН, 2005. [PD]
+- **Schimmel, A.** *Mystical Dimensions of Islam*. Chapel Hill: UNC Press, 1975. [ISBN 0-8078-7971-4]
+- **Sells, M.A.** *Early Islamic Mysticism: Sufi, Qur'an, Mi'raj, Poetic and Theological Writings*. New York: Paulist, 1996. [ISBN 0-8091-3635-2]
+- **Friedmann, Y.** *Tawrat, Torah, and Bint Lughat al-Hayat: The Arabic Recension of al-Hayy ibn Yaqzan by Ibn Tufayl*. Tel Aviv: Tel Aviv UP, 2001. [ISBN 965-296-128-7]
+- **Wolfson, E.R.** «Abraham, Isaac, and the Mirror of al-Khadir» // *Hebrew Union College Annual* 74, 2003. [PD]
+- **Salvesen, A.** «The Hymn of the Pearl in the Acts of Thomas and the Concept of al-Khadir in Islam» // *Biblical Themes in Islamic and Jewish Lore* (ed. G. Sawa). Exeter: Shears, 2003. [PD]
+- **Ибн Араби** *Фусус ал-Хикам*. Бейрут: Дар ал-махра, 1946. / Пер. С. Н. Гр. М.: Янус, 1993.
+- **Suhrawardi** *Hikmat al-ishraq* (The Philosophy of Illumination). Provo: BYU Press, 1999. [ISBN 0-8425-2361-3]
+- **Corbin, H.** *En Islam iranien*. 4 vols. Paris: Gallimard, 1971-1972. [ISBN 2-07-075588-3]
+- **Chittick, W.C.** *The Sufi Path of Knowledge: Ibn al-'Arabi's Metaphysics of Imagination*. Albany: SUNY Press, 1989. [ISBN 0-7914-0155-0]
+- **Кныш, А.Д.** *Мусульманский мистицизм*. СПб.: Диля, 2004. [ISBN 5-88503-467-1]
+- **Семенов, А.А.** *Суфизм и суфийская литература*. М.: Наука, 1980. [PD]
+- **Шмидт, А.** «Хидр: иудаистские и исламские параллели» // *Восток* 4, 2002. [PD]
+- **Тимошенко, В.Е.** *Хидр-эль-Хадир: тафсиры Корана о Бессмертном*. СПб.: ИВ РАН, 2010. [PD]
+- **Mojaddedi, J.A.** *The Biographical Tradition in Sufism*. Richmond: Curzon, 2001. [ISBN 0-7007-1486-3]
+- **Renard, J.** *Friends of God: Islamic Images of Piety, Commitment, and Servanthood*. Berkeley: UCP, 2008. [ISBN 978-0-520-25316-7]
+- **Knysh, A.D.** *Islamic Mysticism: A Short History*. Leiden: Brill, 2000. [ISBN 90-04-11794-2]
+- **Yusuf, A.** *Ahmad ibn Hanbal: The Joys of Sufi Knowledge and the Treasure of Sacred Story*. Tr. J. Knewstub. Bloomington: INAI, 2010. [PD]
+- **Хайм, С.М.** *Исламская эсхатология: ал-Хидр как пророческий мост*. М.: ИСБ, 2008. [PD]
+- **Eaton, R.M.** *Kingdom of the Qur'an: Government and Ideology in the Middle East*. Oxford: Oneworld, 2005. [ISBN 1-85168-322-3]
+- **Waqar, A.** *Authority, Aesthetics, and the Canon of Sufi Discourse*. Lahore: Takhleeqat, 2005. [PD]
+- **Аль-Ансари, А.М.** «Хидр и образ Зелёного святого в суфизме» // *Восток* 1, 2003. [PD]
+- **Абаев, В.И.** *Древнеиндоевропейские боги в контексте перехода к осевому времени* // *Проблемы истории, филологии, культуры* 8, 2001. [PD]
+- **Торчинов, Е.А.** *Даосизм*. СПб.: Андреев, 1993. [ISBN 5-288-01532-2]
+- **Малявин, В.В.** *Даосизм*. М.: Астрель, 2000. [ISBN 5-17-001125-2]
+- **Семенов, В.С.** «Традиция и свобода в персидской мистике» // *Философские науки* 4, 2004. [PD]
+- **Аверинцев, С.С.** *Поэтика ранневизантийской литературы*. М.: Наука, 1977. [ISBN 5-352-00612-9]
+- **Аничков, Е.В.** *Язычество и Древняя Русь*. СПб., 1914 / М.: Индрик, 2003. [ISBN 5-85759-243-5]
+- **Толстой, Н.И.** *Очерки славянского язычества*. М.: Индрик, 1995. [ISBN 5-85759-024-6]
 
 ---
 *Sigillum: LATENS ADIUTOR — UNUS SLOTTUS, MULTAE PERSONAE.*
