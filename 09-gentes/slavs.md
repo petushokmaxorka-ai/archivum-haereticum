@@ -273,7 +273,7 @@ graph TB
 - **Итого** **«**карпатских** **славян**»** **в** **XXI** **в.** **—** **~10–12** **млн** **(украинцы** **5–6**, **поляки** **3–4**, **словаки** **0,5**, **румыны** **3–4**, **русины** **0,1–0,2**, **венгры** **0,001**)**;
 - **См.** `slavs/carpitoslavi.md` **(полное** **досье** — 820 строк, 10 разделов, ИСТОЧНИКИ)**.
 
-**См. также** `slavjane.md`, `moravia-magna.md`, `bulgaria-prima.md`, `slavica-xix.md`, `brizinski-spomenici.md`, `methodius-abc.md`, `slavs/carpitoslavi.md` **(новая** **«**горная**»** **ветвь** **Славии** — тиверцы, уличи, лемки, бойки, гуцулы, русины)**.
+**См. также** `slavjane.md`, `slavs/moravia-magna.md`, `slavs/bulgaria-prima.md`, `slavs/slavica-xix.md`, `brizinski-spomenici.md`, `slavs/methodius-abc.md`, `slavs/carpitoslavi.md` **(новая** **«**горная**»** **ветвь** **Славии** — тиверцы, уличи, лемки, бойки, гуцулы, русины)**.
 
 ### IV. ВОСТОЧНЫЙ БУКЕТ — РУСЬ, УКРАИНА, БЕЛАРУСЬ
 
@@ -326,17 +326,17 @@ graph TB
 - **Белорусы** — **~10** **млн**;
 - **Язык** — **белорусский** **(восточнославянский**)**.
 
-**См. также** `slavjane.md`, `slavica-xix.md`, `carantania-paganitas.md`, `scythae-donum.md`, `bulgaria-prima.md`, `austro-yahve.md`.
+**См. также** `slavjane.md`, `slavs/slavica-xix.md`, `carantania-paganitas.md`, `scythae-donum.md`, `slavs/bulgaria-prima.md`, `austro-yahve.md`.
 
 ### V. ЮЖНЫЙ БУКЕТ — СЛОВЕНИЯ, ХОРВАТИЯ, БОСНИЯ, СЕРБИЯ, ЧЕРНОГОРИЯ, МАКЕДОНИЯ
 
-**Словения** — **см.** `carantania.md` **(Carantanian arc, 11 досье)**;
-**Хорватия** — **см.** `croatia-glagolitica.md` **+** `bosnia-regnum.md`;
+**Словения** — **см.** `slavs/carantania.md` **(Carantanian arc, 11 досье)**;
+**Хорватия** — **см.** `slavs/croatia-glagolitica.md` **+** `slavs/bosnia-regnum.md`;
 **Босния** — **см.** `bosnia-paganitas.md` **(Bosnian arc, 8 досье)**;
-**Сербия** — **см.** `serbia-rashka.md` **(базовое** **досье**)**;
+**Сербия** — **см.** `slavs/serbia-rashka.md` **(базовое** **досье**)**;
 **Черногория** — **отдельного** **досье** **нет** **(дыра** **в** **Архиве**)**;
 **Македония** — **отдельного** **досье** **нет** **(дыра** **в** **Архиве**)**;
-**Болгария** — **см.** `bulgaria-prima.md` **(Bulgarian arc, 2 досье)**.
+**Болгария** — **см.** `slavs/bulgaria-prima.md` **(Bulgarian arc, 2 досье)**.
 
 **См. также** `slavjane.md`, `bulgaria-paganitas.md`, `valachia-paganitas.md`, `bosnia-paganitas.md`, `carantania-paganitas.md`.
 
@@ -350,7 +350,7 @@ graph TB
 - **«**Цанталь**»** **(Zentag)** — **словенцы** **в** **Румынии** **(Сибиу**, **Брашов**);
 - **Словенское** **национальное** **меньшинство** — **~20 000**–**50 000**;
 - **«**Цантальские** **словенцы**»** **=** **«**румынские** **словенцы**»** — **диалект** **словенского**;
-- **См.** `carantania.md`, `austria-occulta.md`, `hungaria-occulta.md`.
+- **См.** `slavs/carantania.md`, `austria-occulta.md`, `hungaria-occulta.md`.
 
 ### VII. МОЛИТВЕННАЯ СЛАВЯНСКАЯ МАТРИЦА
 
@@ -365,7 +365,7 @@ graph TB
 - **«**Сербские** **памятники**»** — **«**Мирославлево** **евангелие**»** **(1180)**, **«**Вуканово** **евангелие**»**;
 - **«**Болгарские** **памятники**»** — **«**Супрасальская** **летопись**»** **(X** **в.**)**, **«**Энинский** **апостол**»**, **«**Драгомирово** **евангелие**»**;
 - **Славянская** **письменность** — **древнейшая** **кириллица** **из** **Преслава** **(Болгария** **~893)** **→** **древнерусский** **(«**Остромирово** **евангелие**»** **~1056–1057**)** **→** **церковнославянский** **(**XIV**–**XVII** **вв.**, **Москва**)** **→** **гражданский** **шрифт** **(**Пётр** **I, 1708**)** **→** **современный** **русский** **язык**;
-- **См.** `methodius-abc.md`, `brizinski-spomenici.md`, `slavjane.md`.
+- **См.** `slavs/methodius-abc.md`, `brizinski-spomenici.md`, `slavjane.md`.
 
 ### VIII. ЯЗЫКОВАЯ КАРТА СЛАВЯН
 
@@ -465,7 +465,7 @@ graph TB
 - **Литва** — **«**литваки**»** **(евреи** **в** **Литве** + **Беларуси** + **Польше**)**;
 - **«**Славяне**»** **не** **были** **«**иудеями**»** **(кроме** **«**хазарского**»** **мифа**)**.
 
-**См. также** `bulgaria-paganitas.md`, `carantania-paganitas.md`, `valachia-paganitas.md`, `bosnia-paganitas.md`, `dvoeverie.md`, `bulgaria-prima.md`, `bosnia-musulmana.md`, `bessarabia.md`, `carantania.md`, `brizinski-spomenici.md`.
+**См. также** `bulgaria-paganitas.md`, `carantania-paganitas.md`, `valachia-paganitas.md`, `bosnia-paganitas.md`, `dvoeverie.md`, `slavs/bulgaria-prima.md`, `slavs/bosnia-musulmana.md`, `bessarabia.md`, `slavs/carantania.md`, `brizinski-spomenici.md`.
 
 ### X. КУЛЬТУРНАЯ КАРТА СЛАВЯН
 
@@ -547,7 +547,7 @@ graph TB
 - **«**Владимир** **Арсениевич**» **(«**In** **the** **Time** **of** **War** »**)**;
 - **«**Горан** **Петрович** **(«**Days** **of** **the** **Caterpillars** »**)**.
 
-[Sedov 2002; **Славянские** **древности** 1995–2014; **Ловмянский** 2003; **Vernadsky** 1943/1996; **См. также** `slavica-xix.md`, `valachia-litteratura.md`, `bosnia-musulmana.md`, `carantania.md`, `bulgaria-prima.md`]
+[Sedov 2002; **Славянские** **древности** 1995–2014; **Ловмянский** 2003; **Vernadsky** 1943/1996; **См. также** `slavs/slavica-xix.md`, `valachia-litteratura.md`, `slavs/bosnia-musulmana.md`, `slavs/carantania.md`, `slavs/bulgaria-prima.md`]
 
 ### XI. ВЕРДИКТ И МАТРИЦА
 
@@ -671,7 +671,7 @@ graph TB
 - **Токарев, С.А. (ред.)** *Мифы народов мира*. 2 т. М.: СЭ, 1980-1982 / 2000. [ISBN 5-200-00437-2]
 - **Крачковский, И.Ю.** *Коран*. М.: Наука, 1963. [PD]
 - **Пиотровский, М.Б.** *Коранические сказания*. М.: Наука, 1991. [ISBN 5-02-016874-3]
-- **См. также** все источники из `slavjane.md`, `slavica-xix.md`, `carantania.md`, `bulgaria-prima.md`, `moravia-magna.md`, `croatia-glagolitica.md`, `bosnia-regnum.md`, `bosnia-musulmana.md`, `bosnia-paganitas.md`, `bogomili.md`, `illyria-bosnia.md`, `serbia-rashka.md`, `bulgaria-paganitas.md`, `carantania-paganitas.md`, `valachia-paganitas.md`, `valachia-basarab.md`, `bessarabia.md`, `moldavia-sclavica.md`, `brizinski-spomenici.md`, `methodius-abc.md`, `stranski-pravljice.md`, `conversio-bagoariorum.md`, `lingua-bosnica.md`, `samo-ducatus.md`, `austria-occulta.md`, `hungaria-occulta.md`, `scythae-donum.md`, `austro-yahve.md`, `dvoeverie.md`, `slavjane-cosmica.md`, `macedonia-balgarska.md` **(если** **создан)**, `montenegro-crnagora.md` **(если** **создан)**, `serbia-nemanjici.md` **(если** **создан)**, `bulgaria-prima.md`, `meridiones-bulgaria.md`.
+- **См. также** все источники из `slavjane.md`, `slavs/slavica-xix.md`, `slavs/carantania.md`, `slavs/bulgaria-prima.md`, `slavs/moravia-magna.md`, `slavs/croatia-glagolitica.md`, `slavs/bosnia-regnum.md`, `slavs/bosnia-musulmana.md`, `bosnia-paganitas.md`, `slavs/bogomili.md`, `slavs/illyria-bosnia.md`, `slavs/serbia-rashka.md`, `bulgaria-paganitas.md`, `carantania-paganitas.md`, `valachia-paganitas.md`, `valachia-basarab.md`, `bessarabia.md`, `moldavia-sclavica.md`, `brizinski-spomenici.md`, `slavs/methodius-abc.md`, `stranski-pravljice.md`, `conversio-bagoariorum.md`, `slavs/lingua-bosnica.md`, `slavs/samo-ducatus.md`, `austria-occulta.md`, `hungaria-occulta.md`, `scythae-donum.md`, `austro-yahve.md`, `dvoeverie.md`, `slavjane-cosmica.md`, `macedonia-balgarska.md` **(если** **создан)**, `montenegro-crnagora.md` **(если** **создан)**, `serbia-nemanjici.md` **(если** **создан)**, `slavs/bulgaria-prima.md`, `slavs/meridiones-bulgaria.md`.
 
 ---
 *Sigillum: SLAVIA VIGET — LINGUA SCLAVICA FLORET — DEUS SCLAVUS SERVAT — BOG SLOVESNIH HRANIT — БОГ СЛОВЕСН ХРАНІТ — BÓG SŁOWIAŃSKI CHRONI — SLOVANSKÝ BŮH CHRÁNÍ — SLAVENSKI BOG ČUVA — SLAVJANSKI BOG ČUVA — СЛОВЕНСКИ БОГ ЧУВА — SLAVJANSKI BOG ČUVA — СЛОВЯНСКИ БОГ ЧУВА — SLAVJANSKI BOG ČUVA — SLAVJANSKI BOG ČUVA — СЛОВЕНСКИ БОГ ЧУВА — СЛОВЕНСКИ БОГ ЧУВА — СЛОВЯНСКИЙ БОГ ХРАНИТ — СЛОВЯНСЬКИЙ БОГ БЕРЕЖЕ — СЛОВЯНСКІ БОГ БЕРАЖЭ — SLAVJANSKI BOG ČUVA — СЛОВЯНСКИ БОГ ХРАНИТ — СЛОВЯНСКИ БОГ ХРАНИ — SLAVJANSKI BOG ČUVA — СЛОВЯНСКИ БОГ ЧУВА — СЛОВЯНСКИ БОГ ХРАНИ — СЛОВЯНСКИЙ БОГ ХРАНИТ — SLAVJANSKI BOG ČUVA — СЛОВЯНСКИ БОГ ЧУВА — СЛОВЯНСКИ БОГ ХРАНИ — SLAVJANSKI BOG ČUVA — СЛОВЯНСКИ БОГ ЧУВА.*

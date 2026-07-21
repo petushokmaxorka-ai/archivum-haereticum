@@ -6,7 +6,7 @@ Datum: 021.M3
 
 > *Заявление владельца: **боснийское** **язычество** — **не** **богомильство** (**богомилы** — **дуалисты-**христиане** **X–XV** **вв.**, **не** **язычники**), **не** **«**истинно** **славянское**»** **(язычники-**славяне** **были** **повсюду** **в** **Славии**), **не** **«**истинно** **иллирийское**»** **(иллирийский** **субстрат** — **не** **«**истинный**»**, **а** **субстратный**). **DAMNATA** **к** **попыткам** **национализировать** **языческий** **слой** **Боснии** **и** **отождествлять** **его** **с** **богомильством** — **это** **две** **разные** **страницы** **истории**. Полное исповедание — в `00/CREDO.md`.*
 
-> *См. также: `bosnia-regnum.md` (средневековая Босния), `bosnia-musulmana.md` (Босния мусульманская), `bogomili.md` (богомилы — **еретики-**христиане**, **не** **язычники**), `illyria-bosnia.md` (Иллирия, **до-** **славянский** **субстрат**), `stecci-bosancica.md` (стечки — **язык** **средневековой** **Боснии**), `serbia-rashka.md` (Сербия, **параллельная** **линия**), `croatia-glagolitica.md` (Хорватия, **параллельная** **линия**), `lingua-bosnica.md` (боснийский язык), `valachia-paganitas.md` (валашское язычество — **параллель**), `carantania-paganitas.md` (карантанское язычество — **параллель**), `slavjane.md` (общая сводка славянского **язычества**), `scythae-donum.md` (Скифия, ◇-параллель).*
+> *См. также: `../09-gentes/slavs/bosnia-regnum.md` (средневековая Босния), `../09-gentes/slavs/bosnia-musulmana.md` (Босния мусульманская), `../09-gentes/slavs/bogomili.md` (богомилы — **еретики-**христиане**, **не** **язычники**), `../09-gentes/slavs/illyria-bosnia.md` (Иллирия, **до-** **славянский** **субстрат**), `../09-gentes/slavs/stecci-bosancica.md` (стечки — **язык** **средневековой** **Боснии**), `../09-gentes/slavs/serbia-rashka.md` (Сербия, **параллельная** **линия**), `../09-gentes/slavs/croatia-glagolitica.md` (Хорватия, **параллельная** **линия**), `../09-gentes/slavs/lingua-bosnica.md` (боснийский язык), `valachia-paganitas.md` (валашское язычество — **параллель**), `carantania-paganitas.md` (карантанское язычество — **параллель**), `slavjane.md` (общая сводка славянского **язычества**), `scythae-donum.md` (Скифия, ◇-параллель).*
 
 ---
 
@@ -27,7 +27,7 @@ Datum: 021.M3
 - **Исламский** (**XV–XIX** **вв.**, **с** **турецкими** **заимствованиями**);
 - **Христианский** **(православный** + **католический**, **с** **XIV** **в.**)**.
 
-[Polybius, Strabo, Pliny, Appianus; Procopius; Constantine Porphyrogenitus De administrando imperio; Cosmas the Presbyter X в.; Fine 1983/1987; Čremošnik 1981; Mandić 1965; Vlasto 1970; Fine 1975; **см. также** `bogomili.md`]
+[Polybius, Strabo, Pliny, Appianus; Procopius; Constantine Porphyrogenitus De administrando imperio; Cosmas the Presbyter X в.; Fine 1983/1987; Čremošnik 1981; Mandić 1965; Vlasto 1970; Fine 1975; **см. также** `../09-gentes/slavs/bogomili.md`]
 
 ### II. ИЛЛИРИЙСКИЙ СУБСТРАТ (ДО Н.Э. — I В. Н.Э.)
 
@@ -68,7 +68,7 @@ Datum: 021.M3
 - **Бойогна**(**Boiogna**) — **«**богиня**»**;
 - **Царица**(**Carica**) — **«**царица**»**.
 
-[Polybius; Strabo VII; Pliny NH III; Appianus Illyrica; Čremošnik 1981; Bojanovski 1988; Ceka 2002; Papazoglu 1969; West 2007; **см. также** `illyria-bosnia.md`]
+[Polybius; Strabo VII; Pliny NH III; Appianus Illyrica; Čremošnik 1981; Bojanovski 1988; Ceka 2002; Papazoglu 1969; West 2007; **см. также** `../09-gentes/slavs/illyria-bosnia.md`]
 
 ### III. РИМСКИЙ СУБСТРАТ (I–V ВВ.)
 
@@ -107,7 +107,7 @@ Datum: 021.M3
 - **VI** **в.** — **христианизация** **деревни** **(вместе** **с** **Юстинианом**)**;
 - **VII** **в.** — **христианизация** **славянских** **пришельцев** **(в** **процессе** **их** **оседания**)**.
 
-[Čremošnik 1981; Bojanovski 1988; Ceka 2002; Papazoglu 1969; **см. также** `noricum-carantania.md`; **см. также** `illyria-bosnia.md`]
+[Čremošnik 1981; Bojanovski 1988; Ceka 2002; Papazoglu 1969; **см. также** `../09-gentes/slavs/noricum-carantania.md`; **см. также** `../09-gentes/slavs/illyria-bosnia.md`]
 
 ### IV. СЛАВЯНСКИЙ СУБСТРАТ (VI–X ВВ.)
 
@@ -118,7 +118,7 @@ Datum: 021.M3
 - **Константин** **Багрянородный** (X в.) — **«**De** **administrando** **imperio**»**: **описание** **сербов** **и** **хорватов**, **их** **переселения**;
 - **«**Повесть** **временных** **лет**»** (XII в.) — **«**речь** **философа**»**, **«**волохи**»**;
 - **Богомильские** **тексты** **(X–XV** **вв.**) — **возвращают** **к** **дохристианским** **сюжетам**;
-- **Стечки** **(XII–XVI** **вв.**) — **боснийские** **средневековые** **надгробия** **(см.** **`stecci-bosancica.md`**)**.
+- **Стечки** **(XII–XVI** **вв.**) — **боснийские** **средневековые** **надгробия** **(см.** **`../09-gentes/slavs/stecci-bosancica.md`**)**.
 
 **Славянское** **переселение**:
 - **VI** **в.** — **первые** **волны** **славян** **в** **Боснию** **с** **севера** **(из** **Моравии**, **Паннонии**)** **и** **с** **юга** **(из** **Македонии**, **Фракии**)**;
@@ -183,7 +183,7 @@ Datum: 021.M3
 - **Альтернативная** **гипотеза** **(**John** **Fine**, **1975**)**: **богомилы** **не** **перешли** **в** **ислам** **массово** **в** **XV–XVI** **вв.**, **а** **исламизация** **шла** **через** **другие** **механизмы** **(экономические**, **политические**, **демографические**)**;
 - **Консенсус** **(2010-е)**: **богомилы** **играли** **роль** **в** **исламизации**, **но** **не** **были** **единственным** **фактором**.
 
-[Cosmas the Presbyter X в.; Anna Comnena Alexiad XII в.; Baltasar Cod XV в.; Obolensky 1948; Runciman 1947; Fine 1975; Mandić 1965; Vlasto 1970; Obolensky 1971; **см. также** `bogomili.md`; **см. также** `bosnia-regnum.md`; **см. также** `bosnia-musulmana.md`]
+[Cosmas the Presbyter X в.; Anna Comnena Alexiad XII в.; Baltasar Cod XV в.; Obolensky 1948; Runciman 1947; Fine 1975; Mandić 1965; Vlasto 1970; Obolensky 1971; **см. также** `../09-gentes/slavs/bogomili.md`; **см. также** `../09-gentes/slavs/bosnia-regnum.md`; **см. также** `../09-gentes/slavs/bosnia-musulmana.md`]
 
 ### VI. ХРИСТИАНИЗАЦИЯ БОСНИИ (IX–XV ВВ.)
 
@@ -206,11 +206,11 @@ Datum: 021.M3
 - **После** **1463** — **исламская** **(суфийская** **и** **суннитская**)**;
 - **После** **XIX** **в.** — **все** **четыре** **в** **Боснии** **и** **Герцеговине**.
 
-[Fine 1975; Vlasto 1970; Mandić 1965; **см. также** `bogomili.md`; **см. также** `valachia-orthodoxa.md`]
+[Fine 1975; Vlasto 1970; Mandić 1965; **см. также** `../09-gentes/slavs/bogomili.md`; **см. также** `valachia-orthodoxa.md`]
 
 ### VII. СТЕЧКИ КАК СВИДЕТЕЛЬСТВО ЯЗЫЧЕСТВА (XII–XVI ВВ.)
 
-**Стечки** — **средневековые** **боснийские** **надгробия** **(XII–XVI** **вв.**, **около** **70 000** **сохранившихся**)** — **уникальный** **источник** **по** **боснийскому** **язычеству** **и** **богомильству** **(см.** **`stecci-bosancica.md`**)**.
+**Стечки** — **средневековые** **боснийские** **надгробия** **(XII–XVI** **вв.**, **около** **70 000** **сохранившихся**)** — **уникальный** **источник** **по** **боснийскому** **язычеству** **и** **богомильству** **(см.** **`../09-gentes/slavs/stecci-bosancica.md`**)**.
 
 **Что** **говорят** **стечки** **о** **язычестве**:
 1. **Символы** **на** **стечках**:
@@ -248,7 +248,7 @@ Datum: 021.M3
    - **Хорватские** **(стечки** **в** **Далмации**)**;
    - **Черногорские** **(«**грчко** **гробище**»**)**.
 
-[Vego 1964; Kujundžić 1978; Wenzel 1965; **см. также** `stecci-bosancica.md`]
+[Vego 1964; Kujundžić 1978; Wenzel 1965; **см. также** `../09-gentes/slavs/stecci-bosancica.md`]
 
 ### VIII. СТЕЧКИ И БОГОМИЛЬСТВО
 
@@ -266,7 +266,7 @@ Datum: 021.M3
 - **«**Стечки** **=** **«**светский**»** **памятник**»** **(Gavro** **Škrivanić**, **1973**)** — **остроумно**, **но** **не** **подтверждено**;
 - **«**Стечки** **=** **двоеверие**»** **(Wenzel**, **1965**)** — **наиболее** **убедительно**.
 
-[Wenzel 1965; Kujundžić 1978; Vego 1964; Mandić 1965; **см. также** `stecci-bosancica.md`; **см. также** `bogomili.md`]
+[Wenzel 1965; Kujundžić 1978; Vego 1964; Mandić 1965; **см. также** `../09-gentes/slavs/stecci-bosancica.md`; **см. также** `../09-gentes/slavs/bogomili.md`]
 
 ### IX. ИСЛАМИЗАЦИЯ БОСНИИ (XV–XIX ВВ.)
 
@@ -286,7 +286,7 @@ Datum: 021.M3
 - **Хорваты** **—** **15.4%**;
 - **Другие** **(цыгане**, **албанцы**, **черногорцы**, **югославы**, **и** **др.**)** **—** **3.7%**.
 
-[Fine 1975; Vlasto 1970; **см. также** `bosnia-musulmana.md`]
+[Fine 1975; Vlasto 1970; **см. также** `../09-gentes/slavs/bosnia-musulmana.md`]
 
 ### X. ВЕРДИКТ И МАТРИЦА
 
@@ -432,7 +432,7 @@ Datum: 021.M3
 - **Stoyanov, Y.** *The Other God: Dualist Religions from Antiquity to the Cathar Heresy*. New Haven: YUP, 2000. [ISBN 0-300-08228-0]
 - **West, M.L.** (см. выше).
 - **Sedov, V.V.** (см. выше).
-- **См. также** все источники из `bogomili.md`, `valachia-paganitas.md`, `carantania-paganitas.md`, `illyria-bosnia.md`, `slavjane.md`.
+- **См. также** все источники из `../09-gentes/slavs/bogomili.md`, `valachia-paganitas.md`, `carantania-paganitas.md`, `../09-gentes/slavs/illyria-bosnia.md`, `slavjane.md`.
 
 ---
 *Sigillum: ILLYRIUS SUBSTERNITUR — SLAVUS SUPERADDITUR — BOGOMILUS TRANSIT — ISLAMUS OCCUPAT — STEĆAK TESTATUR — DEUS SCLAVUS TRANSFORMAT — DEUS SCLAVUS CHRISTIANUS EST — DEUS SCLAVUS MUSULMANUS EST — DEUS UNUS EST.*

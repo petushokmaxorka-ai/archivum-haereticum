@@ -176,7 +176,7 @@ python mcp/server.py
    - Ветвь церкви → `03-rami-ecclesiae/`
    - Мифологический сюжет → `04-pantheones/` (если бог/культ) или `00-manuscriptum-principale/concordantia.md` (если слот)
 
-2. **Имя файла.** Латинизированное, нижний регистр, дефис. Примеры: `buddhismus.md`, `taoismus.md`, `moravia-magna.md`.
+2. **Имя файла.** Латинизированное, нижний регистр, дефис. Примеры: `buddhismus.md`, `taoismus.md`, `09-gentes/slavs/moravia-magna.md`.
 
 3. **Структура досье.** По §III выше.
 
