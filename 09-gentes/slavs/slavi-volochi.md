@@ -6,7 +6,7 @@ Datum: 021.M3
 
 > *Заявление владельца: это досье — попытка **честного** ответа на один из самых **тонких** этногенетических вопросов Восточной Европы: **кто** были волохи до XIV в.? **«Чистые» потомки римлян? Славяне? Даки? Смесь?** Архив даёт **сложный** ответ. **DAMNATA** к упрощениям — как «волохи = славяне», так и «волохи = чистые римляне». Полное исповедание — в `00/CREDO.md`.*
 
-> *См. также: `moldavia-sclavica.md` (Молдавия — славянский период IX–XIV вв.), `valachia-sclavia.md` (Волохи и словене Дунайские), `valachia-basarab.md` (династия Басараб, валашский миф), `valachia-transhumantia.md` (механизм романизации), `bessarabia.md` (4 этноса), `carpitoslavi.md` (карпатские славяне), `dacia-traiana.md` (Дакия — римский фундамент), `slavs/README.md` (TABULA SLAVORUM).*
+> *См. также: `moldavia-sclavica.md` (Молдавия — славянский период IX–XIV вв.), `valachia-sclavia.md` (Волохи и словене Дунайские), `valachia-basarab.md` (династия Басараб, валашский миф), `valachia-transhumantia.md` (механизм романизации), `bessarabia.md` (4 этноса), `carpitoslavi.md` (карпатские славяне), `dacia-traiana.md` (Дакия — римский фундамент), `slavs/README.md` (TABULA SLAVORUM), **`slavi-martyrium.md` (ассимиляция волошских славян — один из 8+ случаев славянского мартириума: полабские, серболужицкие, русинские, помацкие, молизские, волошские, далматинские, кашубские — ассимилированы или вымерли за 1000 лет; контр-аргумент Марксу через 7 великих славянских империй)**.*
 
 ---
 
@@ -512,4 +512,4 @@ Datum: 021.M3
 
 ---
 
-[См. также: `moldavia-sclavica.md`, `valachia-sclavia.md`, `valachia-basarab.md`, `valachia-transhumantia.md`, `bessarabia.md`, `dacia-traiana.md`, `carpitoslavi.md`, `slavs/README.md`]
+[См. также: `moldavia-sclavica.md`, `valachia-sclavia.md`, `valachia-basarab.md`, `valachia-transhumantia.md`, `bessarabia.md`, `dacia-traiana.md`, `carpitoslavi.md`, `slavs/README.md`, `slavi-martyrium.md`]
