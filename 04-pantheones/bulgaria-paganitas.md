@@ -455,7 +455,7 @@ Datum: 021.M3
 - **Попов, Р.** *Култът към Свети Георги*. София: БАН, 1994. [PD]
 - **Петров, С.** (см. выше).
 - **Колев, Р.** (см. выше).
-- **См. также** все источники из `../09-gentes/slavs/bulgaria-prima.md`, `../09-gentes/slavs/meridiones-bulgaria.md`, `../09-gentes/slavs/bogomili.md`, `../09-gentes/slavs/methodius-abc.md`, `slavjane.md`, `valachia-paganitas.md`, `carantania-paganitas.md`, `bosnia-paganitas.md`, `slavjane-cosmica.md`, `macedonia-balgarska.md`, `../09-gentes/slavs/serbia-rashka.md`, `../09-gentes/slavs/croatia-glagolitica.md`, `bessarabia.md`, `valachia-basarab.md`, `moldavia-sclavica.md`, `austro-yahve.md`, `scythae-donum.md`, `../09-gentes/slavs/illyria-bosnia.md`.
+- **См. также** все источники из `../09-gentes/slavs/bulgaria-prima.md`, `../09-gentes/slavs/meridiones-bulgaria.md`, `../09-gentes/slavs/bogomili.md`, `../09-gentes/slavs/methodius-abc.md`, `slavjane.md`, `valachia-paganitas.md`, `carantania-paganitas.md`, `bosnia-paganitas.md`, `slavjane-cosmica.md`, `macedonia-balgarska.md`, `../09-gentes/slavs/serbia-rashka.md`, `../09-gentes/slavs/croatia-glagolitica.md`, `../09-gentes/slavs/bessarabia.md`, `valachia-basarab.md`, `../09-gentes/slavs/moldavia-sclavica.md`, `austro-yahve.md`, `scythae-donum.md`, `../09-gentes/slavs/illyria-bosnia.md`.
 
 ---
 *Sigillum: TANGRA TONAT — PERUN FULMINAT — VELES PASIT — MOKOŠ TEXIT — STRIGOB SPIRAT — SV. GEORGIUS MONTEM TENET — KUKERUS PERSONAM INDUIT — NESTINAR SALTAT SUPER IGNEM — DEUS SCLAVUS TRANSFORMAT — DEUS UNUS EST.*

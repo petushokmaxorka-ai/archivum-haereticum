@@ -50,7 +50,7 @@ Datum: 020.M3
 |---|---|
 | `dacia-traiana.md` | Дакия: геты, Траян, 165 лет, Аврелиан 271 |
 | `valachia-diaspora.md` | Кочевые волохи: 976, Пётр и Асень, ius valachicum |
-| `valachia-sclavia.md` | Волохи и словене: славянский скелет Румынии |
+| `09-gentes/slavs/valachia-sclavia.md` | Волохи и словене: славянский скелет Румынии |
 
 ---
 *Sigillum: GENTES VENIUNT — FATA MANENT.*

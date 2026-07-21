@@ -60,9 +60,9 @@ Datum: 021.M3 (CREDO-печать добавлена)
 
 **Боснийская арка**: `09-gentes/slavs/illyria-bosnia.md` → `09-gentes/slavs/bosna-media.md` → `09-gentes/slavs/bogomili.md` → `09-gentes/slavs/bosnia-ecclesia.md` → `09-gentes/slavs/bosnia-regnum.md` → `09-gentes/slavs/stecci-bosancica.md` → `09-gentes/slavs/bosnia-musulmana.md`
 
-**Волошская арка**: `dacia-traiana.md` → `valachia-diaspora.md` → `valachia-sclavia.md` → `valachia-basarab.md` (династия, Дракула) → `valachia-transhumantia.md` (пастушество как способ цивилизации) → `bessarabia.md` (имперский шов 1812, 4 этноса) → `moldavia-sclavica.md` (Молдавия, общий славянский субстрат)
+**Волошская арка**: `dacia-traiana.md` → `valachia-diaspora.md` → `09-gentes/slavs/valachia-sclavia.md` → `valachia-basarab.md` (династия, Дракула) → `valachia-transhumantia.md` (пастушество как способ цивилизации) → `09-gentes/slavs/bessarabia.md` (имперский шов 1812, 4 этноса) → `09-gentes/slavs/moldavia-sclavica.md` (Молдавия, общий славянский субстрат)
 
-**Молдавская линия**: `moldavia-sclavica.md` (Молдавия) + `bessarabia.md` (Бессарабия)
+**Молдавская линия**: `09-gentes/slavs/moldavia-sclavica.md` (Молдавия) + `09-gentes/slavs/bessarabia.md` (Бессарабия)
 
 ### V. РЕЕСТР: ПРОЧИЕ ЗАЛЫ
 
