@@ -36,25 +36,49 @@ Datum: 021.M3 · Sigillum: ANAFEMETRON · **ЕДИНЫЙ РЕПОЗИТОРИЙ:
 
 ```mermaid
 graph LR
-    A[Единый культурный ствол] --> B[Эфиопия]
-    A --> C[Армения]
-    A --> D[Славия]
-    A --> E[Гиберния]
-    A --> F[Аль-Андалус]
-    A --> G[Староверы]
-    A --> H[Церковь Востока]
-    A --> I[Зороастризм]
-    A --> J[Бактрия]
+    A["Единый культурный ствол<br/>(до Вавилона)"] --> B["Эфиопия<br/>ISOLATIO"]
+    A --> C["Армения<br/>RESISTENTIA"]
+    A --> D["Славия<br/>REPLICATIO"]
+    A --> E["Гиберния<br/>REDITUS"]
+    A --> F["Аль-Андалус<br/>CONCURRENTIA"]
+    A --> H["Церковь Востока<br/>TRANSMISSIO"]
+    A --> I["Зороастризм<br/>EDITIO"]
+    A --> J["Бактрия<br/>NODUS"]
 
-    B -.ISOLATIO.-> B1[изоляция<br/>сохранила 1 Енох,<br/>Юбилеи, Кебра]
-    C -.RESISTENTIA.-> C1[сопротивление<br/>сохранила Матенадаран,<br/>алфавит Маштоца]
-    D -.REPLICATIO.-> D1[копирование<br/>сохранила 2 Енох,<br/>Голубиную книгу]
-    E -.REDITUS.-> E1[возврат<br/>сохранила Келлскую<br/>книгу, исповедь]
-    F -.CONCURRENTIA.-> F1[сосуществование<br/>Толедо, конвивенсия,<br/>Ибн Хазм]
-    G -.RETENTIO.-> G1[удержание<br/>сохранила крюки,<br/>лестовку, Китеж]
-    H -.TRANSMISSIO.-> H1[экспансия<br/>от Самарканда до<br/>Пекина, Сиань 781]
-    I -.EDITIO.-> I1[редактура<br/>пакет экспортирован<br/>в иудаизм]
-    J -.NODUS.-> J1[узел<br/>Гандхара, Бамиан,<br/>Аполлон-Будда]
+    %% Подветви Славии — выжившие (×3)
+    D --> G["Староверы<br/>RETENTIO<br/>(подветвь)"]
+    D --> D1["Духоборы<br/>(подветвь)"]
+    D --> D2["Молокане<br/>(подветвь)"]
+
+    %% Подветви Славии — ВЫМЕРШИЕ (×3)
+    D -.->|ВЫМЕРЛА| D3["Боснийская церковь<br/>XII-XV вв.<br/>(геноцид 1463)"]
+    D -.->|ВЫМЕРЛА| D4["Богомилы<br/>X-XV вв."]
+    D -.->|ВЫМЕРЛА| D5["Катары<br/>XI-XIV вв."]
+
+    %% Подветви Зороастризма — вымершие
+    I -.->|ВЫМЕРЛА| I1["Манихейство<br/>III-XIV вв."]
+    I -.->|ВЫМЕРЛА| I2["Маздакиты<br/>V-VI вв."]
+
+    %% Подветви Церкви Востока — вымершие
+    H -.->|ВЫМЕРЛА| H1["Несторианство<br/>V-XIII вв."]
+    H -.->|ВЫМЕРЛА| H2["Монофизитство<br/>V-VII вв."]
+
+    %% Подветви Армении — вымершие
+    C -.->|ВЫМЕРЛА| C1["Павликиане<br/>VII-IX вв."]
+    C -.->|ВЫМЕРЛА| C2["Тондракийцы<br/>IX-XI вв."]
+
+    %% Подветви Эфиопии
+    B -.->|ВЫМЕРЛА| B1["Кушито-нубийские<br/>варианты<br/>мероитский язык"]
+
+    %% Подветви Бактрии — вымершие
+    J -.->|ВЫМЕРЛА| J1["Христианство<br/>Гандхары<br/>(пакт 411)"]
+
+    %% Пересечения (контакты)
+    I -.->|контакт<br/>Авеста| D
+    J -.->|контакт<br/>Аполлон-Будда| H
+    C -.->|контакт<br/>Тигр| H
+    E -.->|контакт<br/>Скифия| D
+    B -.->|контакт<br/>Кебра| F
 
     style A fill:#1a0007,stroke:#c8102e,stroke-width:3px,color:#c9a227
     style B fill:#101014,stroke:#3c5c3c,color:#8fc98f
@@ -62,22 +86,26 @@ graph LR
     style D fill:#101014,stroke:#3c5c3c,color:#8fc98f
     style E fill:#101014,stroke:#3c5c3c,color:#8fc98f
     style F fill:#101014,stroke:#3c5c3c,color:#8fc98f
-    style G fill:#101014,stroke:#3c5c3c,color:#8fc98f
     style H fill:#101014,stroke:#3c5c3c,color:#8fc98f
     style I fill:#101014,stroke:#3c5c3c,color:#8fc98f
     style J fill:#101014,stroke:#3c5c3c,color:#8fc98f
-    style B1 fill:#0a0a0c,stroke:#5c4d1c,color:#c9a227
-    style C1 fill:#0a0a0c,stroke:#5c4d1c,color:#c9a227
-    style D1 fill:#0a0a0c,stroke:#5c4d1c,color:#c9a227
-    style E1 fill:#0a0a0c,stroke:#5c4d1c,color:#c9a227
-    style F1 fill:#0a0a0c,stroke:#5c4d1c,color:#c9a227
-    style G1 fill:#0a0a0c,stroke:#5c4d1c,color:#c9a227
-    style H1 fill:#0a0a0c,stroke:#5c4d1c,color:#c9a227
-    style I1 fill:#0a0a0c,stroke:#5c4d1c,color:#c9a227
-    style J1 fill:#0a0a0c,stroke:#5c4d1c,color:#c9a227
+    style G fill:#1a1a1a,stroke:#3c5c3c,color:#8fc98f
+    style D1 fill:#1a1a1a,stroke:#3c5c3c,color:#8fc98f
+    style D2 fill:#1a1a1a,stroke:#3c5c3c,color:#8fc98f
+    style D3 fill:#1a1a1a,stroke:#5c5c5c,color:#5c5c5c,stroke-dasharray: 3 3
+    style D4 fill:#1a1a1a,stroke:#5c5c5c,color:#5c5c5c,stroke-dasharray: 3 3
+    style D5 fill:#1a1a1a,stroke:#5c5c5c,color:#5c5c5c,stroke-dasharray: 3 3
+    style I1 fill:#1a1a1a,stroke:#5c5c5c,color:#5c5c5c,stroke-dasharray: 3 3
+    style I2 fill:#1a1a1a,stroke:#5c5c5c,color:#5c5c5c,stroke-dasharray: 3 3
+    style H1 fill:#1a1a1a,stroke:#5c5c5c,color:#5c5c5c,stroke-dasharray: 3 3
+    style H2 fill:#1a1a1a,stroke:#5c5c5c,color:#5c5c5c,stroke-dasharray: 3 3
+    style C1 fill:#1a1a1a,stroke:#5c5c5c,color:#5c5c5c,stroke-dasharray: 3 3
+    style C2 fill:#1a1a1a,stroke:#5c5c5c,color:#5c5c5c,stroke-dasharray: 3 3
+    style B1 fill:#1a1a1a,stroke:#5c5c5c,color:#5c5c5c,stroke-dasharray: 3 3
+    style J1 fill:#1a1a1a,stroke:#5c5c5c,color:#5c5c5c,stroke-dasharray: 3 3
 ```
 
-**Стратегии** — это способы, которыми ветвь **сохраняет** корпус в условиях давления центростремительных сил (империи, реформации, гонения). 9 стратегий — 9 залов и досье. См. `00/concordantia.md` и `GLOSSARY.md`.
+**Стратегии** — это способы, которыми ветвь **сохраняет** корпус в условиях давления центростремительных сил (империи, реформации, гонения). 9 залов и их стратегий + подветви (живые и **ВЫМЕРШИЕ**) + **пересечения** (контакты). **ВЫМЕРШИЕ** — это ветви, которые исчезли (геноцид, репрессии, ассимиляция), но оставили след в архиве. **Логика дерева**: чем дольше существует ветвь, тем больше у неё подветвей и пересечений. **См. также**: `bosnia-ecclesia.md` (Боснийская церковь, вымершая в XV в.), `starovers-retentio.md` (Староверы, RETENTIO), `bogomili.md` (Богомилы, вымершие), `09-gentes/valachia-basarab.md` (крест. ссылки).
 
 ### TABULA DEPARTAMENTORUM — КАРТА АРХИВА
 
