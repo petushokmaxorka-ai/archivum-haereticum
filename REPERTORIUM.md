@@ -108,7 +108,18 @@ Datum: 021.M3 (CREDO-печать добавлена)
 | `00/hypothesa-corporis.md` (§III casus Isa) | «редакционная претензия» | формулировка корректна, но недостаточна; мусульмане тоже несут корпус |
 | `08-matrix-orthodoxa/README.md` («полнота») | ◇ SUSPECTUS (рамка) | «полнота» — оценочное суждение, не исторический факт; каждая ветвь полна по-своему |
 
-**Все 4 CREDO-применения соответствуют 4 частным позициям в `00/CREDO.md` §III.**
+**Все CREDO-применения:**
+
+**Частные позиции (CREDO.md §III):**
+- velesova-kniga.md, damnata.md, hypothesa-corporis.md, orthodoxa-readme.md
+
+**Главные документы архива (CREDO общее):**
+- README.md, REPERTORIUM.md, PROOEMIUM.md, concordantia.md, hypothesa-corporis.md (общая), babel.md
+
+**Текстоцентричные места (архив строится на писаниях):**
+- 02/enoch-1.md (эфиопская «консерва»), 02/enoch-2.md (только славянская), 02/iubilaei-kebra.md (Юбилеи + Кебра), 02/golubinaya.md (народная космогония), 02/metatron-idris.md (три калибровки), 02/nag-hammadi.md (гностическая «консерва»), 07-scriptorium/README.md (параллельные писания), corpus/README.md (полные тексты)
+
+**Всего 16 документов с ✚ CREDO + 00/CREDO.md (источник манифеста) = 17 файлов.**
 
 ### X. ССЫЛКИ
 
