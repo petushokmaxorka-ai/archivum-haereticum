@@ -26,7 +26,7 @@ jobs:
       - name: Fetch sources (Q1)
         run: bash corpus/tools/fetch_sources.sh
       - name: Build Quran
-        run: python3 corpus/tools/build_quran.py --src quran_uthmani.txt --out .
+        run: python3 corpus/tools/build_quran.py --src quran_uthmani.txt --ru quran_ru_krachkovsky.txt --out .
       - name: Verify integrity
         run: python3 corpus/tools/verify.py quran_uthmani.txt 6236
       - name: Assemble Scriptorium
