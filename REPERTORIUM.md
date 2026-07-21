@@ -60,7 +60,9 @@ Datum: 021.M3 (CREDO-печать добавлена)
 
 **Боснийская арка**: `illyria-bosnia.md` → `bosna-media.md` → `bogomili.md` → `bosnia-ecclesia.md` → `bosnia-regnum.md` → `stecci-bosancica.md` → `bosnia-musulmana.md`
 
-**Волошская арка**: `dacia-traiana.md` → `valachia-diaspora.md` → `valachia-sclavia.md` → `valachia-basarab.md` (династия, Дракула) → `valachia-transhumantia.md` (пастушество как способ цивилизации)
+**Волошская арка**: `dacia-traiana.md` → `valachia-diaspora.md` → `valachia-sclavia.md` → `valachia-basarab.md` (династия, Дракула) → `valachia-transhumantia.md` (пастушество как способ цивилизации) → `bessarabia.md` (имперский шов 1812, 4 этноса) → `moldavia-sclavica.md` (Молдавия, общий славянский субстрат)
+
+**Молдавская линия**: `moldavia-sclavica.md` (Молдавия) + `bessarabia.md` (Бессарабия)
 
 ### V. РЕЕСТР: ПРОЧИЕ ЗАЛЫ
 
@@ -93,7 +95,7 @@ Datum: 021.M3 (CREDO-печать добавлена)
 
 ### VIII. СТАТИСТИКА
 
-- **Досье**: 109+ (63 pantheones + 22 gentes + 24 прочие залы)
+- **Досье**: 111+ (64 pantheones + 23 gentes + 24 прочие залы)
 - **Корпуса**: 6 завершённых, ~35 000 стихов/аятов в параллельных слоях
 - **Печати**: все записи классифицированы; DAMNATUS — 3 протокола (Велесова, славяно-арии, стегозавр); ✚ CREDO — 4 применения (см. §IX)
 - **Concordantia**: 20 слотов × 12+ ветвей, ~188 совпадений, ~120 с прямыми подтверждениями
