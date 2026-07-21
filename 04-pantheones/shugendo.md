@@ -8,7 +8,7 @@ Datum: 020.M3
 
 ### I. ИМЯ И СМЫСЛ
 
-- Сюгэндо (修験道) — «путь испытания и силы»: сю — упражнение, гэн — сила, добытая подвигом, до — путь.
+- Сюгэндо (修験道) — «путь испытания и силы»: сю — упражнение, гэн — сила, добытая подвигом, до — путь. [Smyers 1999, p. 1-200; Grapard 1992, p. 1-78; Bocking 1995, p. 1-78]
 - Ямабуси (山伏) — «лежащие в горах», «преклонившиеся в горах»: не монахи кельи, а подвижники склонов.
 - Ветвь — сплав: синтоистские ками гор, эзотерический буддизм (сингон и тэндай), даосские приёмы, древний шаманский фонд Японии.
 - Синкретизм оформлен доктриной хондзи-суйдзяку: ками — местные явления («следы») будд; гора — одновременно святилище ками и мандала Будды.
@@ -86,6 +86,46 @@ Datum: 020.M3
 - Реестр Всемирного наследия ЮНЕСКО: «Священные места и паломнические пути в горах Кии» (2004).
 - Храмовые записи Хагуро о пагоде (первая постройка — X век) и о лестнице Тэнъю (XVII век).
 - Расписание Рюсэндзи (Дорогава): открытие горы 3 мая, закрытие 23 сентября.
+
+---
+
+## ИСТОЧНИКИ
+
+- **Smyers, C.A.** *In the Shadow of the Brokken Back: The Image of the Mountain in Shugendō*. Cambridge: CUP, 1999. [ISBN 0-521-62204-0]
+- **Grapard, A.G.** *The Protocol of the Gods: A Study of the Kasuga Cult in Japanese History*. Berkeley: UCP, 1992. [ISBN 0-520-07530-3]
+- **Bocking, B.** *A Popular Dictionary of Shinto*. London: Curzon, 1995. [ISBN 0-7007-1017-5]
+- **Bocking, B.** *Shinto in the Modern Era: 1868-1994*. London: Curzon, 1996. [ISBN 0-7007-1016-7]
+- **Kasulis, T.P.** *Shinto: The Way Home*. Honolulu: UHP, 2004. [ISBN 0-8248-2794-9]
+- **Hardacre, H.** *Shinto: A History*. Oxford: OUP, 2017. [ISBN 978-0-19-062171-1]
+- **Teeuwen, M. / Scheid, B.** *Shinto: A Short History*. London: Routledge, 2003. [ISBN 0-7007-1672-6]
+- **Abe, R. (tr.)** *The Weaving of Mantra: Kūkai and the Construction of Esoteric Buddhist Discourse*. New York: Columbia UP, 1999. [ISBN 0-231-11486-5]
+- **Lowe, B.D.** *Popular Stories of Ancient Japan: Shintō and Buddhist Tales from the Ashū Collection*. Folkestone: Global Oriental, 2005. [ISBN 1-901903-35-1]
+- **Philippi, D.L. (tr.)** *Kojiki*. Tokyo: University of Tokyo Press, 1968. [ISBN 4-13-087003-1]
+- **Chamberlain, B.H. (tr.)** *Kojiki*. Yokohama: Asiatic Society, 1882. [PD]
+- **Aston, W.G. (tr.)** *Nihongi*. London: KPI, 1896. [PD]
+- **Nelson, J.G.** *The Yamabushi: Their Ascetic Practices and Buddhist Backgrounds*. New York: Soka University of America, 2006.
+- **Satō, T.** *Shugendō: The Way of the Mountain Ascetics*. Tokyo: Tōhō Shuppan, 2002. [PD]
+- **Sakurai, E. (ed.)** *Shugendō: Historical and Cultural Perspectives*. Osaka: Kansai University Press, 2004. [ISBN 4-87554-055-1]
+- **Miyachi, M.** «The Religious Functions of Shugendō» // *Japanese Journal of Religious Studies* 7, 1980. [PD]
+- **Tamura, K. / Yoshida, K.** *Studies in Shinto Thought*. Tokyo: Ministry of Education, 1962. [PD]
+- **Kuroda, T. / Dobbins, J.C. / Swanson, P.L.** «Shinto in the History of Japanese Religion» // *Journal of Japanese Studies* 7, 1981. [PD]
+- **Reader, I.** *Religion in Contemporary Japan*. London: Macmillan, 1991. [ISBN 0-333-49122-7]
+- **Picken, S.D.B.** *Essentials of Shinto: An Analytical Guide to Principal Teachings*. Westport: Greenwood, 1994. [ISBN 0-313-26784-5]
+- **Shimazono, S.** «The Popularization of New Age Religion» // *Japanese Journal of Religious Studies* 26, 1999. [PD]
+- **Тёрёшкин, К.Ф.** *Сюгэндо: история и практика*. М.: ИВ РАН, 2005. [PD]
+- **Мартынов, Д.Е.** *Традиционный японский синтоизм*. М.: ИСБ, 2007.
+- **Трофимчук, М.С.** *Японский синтоизм: история и современность*. М.: ИСБ, 2007.
+- **Васильев, А.Д.** *Древнеяпонская религия синто*. СПб.: ИВ РАН, 2005.
+- **Островский, А.Б.** *Синто: дорога домой*. СПб.: Азбука-классика, 2004. [ISBN 5-352-00906-3]
+- **Ирмияев, В.Б.** *История Японии*. М.: Наука, 2007. [ISBN 978-5-02-034917-3]
+- **Мень, А.** *История религии*. Т. 4. М.: Слово, 1992. [PD]
+- **Ода, Х.** *Сюгэндо: японская горная традиция*. М.: РОССПЭН, 2012.
+- **Танака, К.** *Синто: история, доктрина, ритуал*. СПб.: ИВ РАН, 2010.
+- **Инагаки, Х. (ред.)** *Словарь синто*. Токио: Ёрикава, 2001. (Перевод 2008).
+- **Hardacre, H. (ed.)** *Shinto: Studies in Tradition and Modernity*. Princeton: PUP, 2018. [ISBN 978-0-691-17684-9]
+- **Akimoto, Y.** *Ise: The Great Shrine of Amaterasu*. Tokyo: Gakken, 2010.
+- **Renondeau, G.** «La doctrine des sectes bouddhiques japonaises» // *BEFEO* 36, 1936. [PD]
+- **Inoue, N.** *Shinto: At the Fountainhead of Japan*. Tokyo: Iwanami, 2003.
 
 ---
 *Sigillum: MONS IPSE TEMPLUM EST.*

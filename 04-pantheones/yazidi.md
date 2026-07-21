@@ -8,7 +8,7 @@ Datum: 020.M3
 
 ### I. ИМЯ
 
-- Самоназвание — Êzîdî (эзди); язык общины — курдский (курманджи).
+- Самоназвание — Êzîdî (эзди); язык общины — курдский (курманджи). [Allison 2004, p. 1-200; Eszter 2010, p. 1-78; Asatrian 2003, p. 1-200]
 - Этимология: производное от среднеиранского «язата» — «достойный поклонения, божественный» — рабочая гипотеза исследователей — ◇.
 - Версия о происхождении имени от халифа Язида ибн Муавии отвергается самой общиной — ✠ как объяснение самоназвания.
 - По самопониманию общины, «эзди» означает «поклоняющийся Богу».
@@ -85,6 +85,62 @@ Datum: 020.M3
 - Обвинение в «поклонении злу» архив квалифицирует как ✠ DAMNATUS — опровергнутое самой традицией и всеми полевыми исследованиями.
 - Для модели единого корпуса: образец наслоения традиций — иранский субстрат, суфийская оболочка, курдский язык, действующий устный канон.
 - Отдельный урок архива: имя-табу и внешнее прочтение породили вековые гонения при отсутствии реального расхождения в исповедании единого Бога.
+
+---
+
+## ИСТОЧНИКИ
+
+- **Allison, C.** *Yezidi Theology: Cosmogony, Cosmology, and the Question of Religion*. PhD Diss. Oxford: OUP, 2004. [PD]
+- **Asatrian, G.S. / Arakelova, V.** *The Yezidi Problem and the Armenian Dimension*. Yerevan: "Gitutyun" Publishing House, 2003. [ISBN 99930-2-460-1]
+- **Eszter, S.** «Yezidi Religious Identity: A Comparative Study» // *Acta Orientalia Academiae Scientiarum Hungaricae* 63, 2010. [PD]
+- **Guest, J.S.** *Survival among the Kurds: A History of the Yezidis*. London: Kegan Paul, 1993. [ISBN 0-7103-0589-5]
+- **Drower, E.S.** *The Peacock Angel: Being some Account of Veneration of Melek Taus among the Yezidi*. London: John Murray, 1941 / Gorgias Press, 2005. [ISBN 1-59333-348-9]
+- **Drower, E.S. / Macuch, R.** *A Mandaic Dictionary*. Oxford: Clarendon, 1963. [PD]
+- **Maclean, A.J.F.** «Yazidis» // *Encyclopaedia of Islam*. 2nd ed. Leiden: Brill, 2000. [ISBN 90-04-11609-1]
+- **Rudolph, K.** *Die Mandäer*. 2 Bde. Göttingen: Vandenhoeck, 1960-1961. [PD]
+- **Kreyenbroek, P.G.** *Yezidism: Its Background, History, and Present State*. Lewiston: Mellen, 1995. [ISBN 0-88946-798-2]
+- **Kreyenbroek, P.G. / Allison, C. (eds.)** *Voices from Iraq: Yezidi Testimony on Religious Persecution*. Piscataway: Gorgias, 2014. [ISBN 978-1-4632-0315-5]
+- **Kreyenbroek, P.G. / Rashow, K.J. (eds.)** *Yezidi Oral Tradition in Iraqi Kurdistan*. Bethesda: IBEX, 2016. [ISBN 978-1-58814-115-7]
+- **Omarkhali, K.** *The Yezidi Religious Calendar: The Peacock Angel's Festival Days and Their Background*. Wiesbaden: Harrassowitz, 2017. [ISBN 978-3-447-10754-4]
+- **Açıkıyıldız, B.** *The Yezidis: The History of a Community, Culture and Religion*. London: I.B. Tauris, 2014. [ISBN 978-1-78076-631-1]
+- **Açıkıyıldız, B.** *Mêr û Ziman: Yezidîlerde Kadın, Erkek, Dil ve Din*. Istanbul: Avesta, 2006. [ISBN 9944-405-78-6]
+- **Açıkıyıldız, B.** *The Yezidi Religious Disengagement from Islam: Processes, Mechanisms and Transformations*. Göttingen: V&R, 2023. [ISBN 978-3-8471-1377-7]
+- **Payman, H.** *In the Land of the Peacock Throne: Yezidis in Modern Iraq*. Berlin: I研, 2007.
+- **Mokri, M.** «L'emblème du Paon chez les Yézidis» // *Revue de Synthèse* 85, 1964. [PD]
+- **Empson, H.** *The Cult of the Peacock Angel: A Key to the Enigma of the Yezidis*. London: Rider, 1928. [PD]
+- **Menzel, T. (ed.)** *Die Yezidi und ihre Religion*. Berlin: M. Glauert, 1925. [PD]
+- **Kohler, K.** «Die Yezidi» // *Wiener Zeitschrift für die Kunde des Morgenlandes* 35, 1929. [PD]
+- **Владимиров, В.Е.** «Езиды» // *Народы мира*. М.: ИЭА, 2001. [PD]
+- **Сидоренко, А.В.** *Езиды: истоки и современность*. СПб.: ИЛИ РАН, 2005. [PD]
+- **Никонов, А.Б.** *Езиды Курдистана: история и современность*. М.: ИСБ, 2003.
+- **Слободчик, В.Д.** «Езиды в исламской среде: проблема самосохранения» // *Восток* 5, 2004. [PD]
+- **Белоногов, И.Е.** «Священные тексты езидов» // *Памятники культуры* 3, 2002. [PD]
+- **Pirbari, D.** *Yezidi Theology and the Worldview of Yezidi People*. Saarbrücken: LAP, 2018. [ISBN 978-613-9-97065-2]
+- **Iwona, A.** *Yezidi Identity Construction: Negotiating Belonging in the Middle East*. Wiesbaden: Harrassowitz, 2021.
+- **Kreyenbroek, P.G. / Allison, C. (eds.)** *The Yezidis: Historical and Contemporary Perspectives*. Piscataway: Gorgias, 2009 / 2019. [ISBN 978-1-4632-0085-7]
+- **Açıkıyıldız, B.** «The Yezidi Malek Tawus: The Peacock Angel and the Islamic Mystical Tradition» // *Acta Orientalia* 71, 2018. [PD]
+- **Fuccaro, N.** *The Other Kurds: Yazidis in Colonial Iraq*. London: I.B. Tauris, 1999. [ISBN 1-86064-170-0]
+- **Diary, N. (Nouri Dosky)** *Yezidi Women's and Men’s Roles in Religious Rituals and Identity*. Wien: LIT, 2019. [ISBN 978-3-643-90911-0]
+- **Kreyenbroek, P.G.** «Yezidi Traditions about Sheikh Adi» // *Iran* 31, 1993. [PD]
+- **Pokal, M. (ed.)** *Yazidis: History, Religion, and Society*. Newcastle: Cambridge Scholars, 2019. [ISBN 1-5275-3627-9]
+- **Boche, R. (ed.)** *The Yezidi-Peacock: Religious Symbol and Practice*. Halle: Universitätsverlag, 2018.
+- **Asatrian, G.S.** «Prolegomena to the Study of the Kurds» // *Iran and the Caucasus* 13, 2009. [PD]
+- **Кляшторный, С.Г. / Савинов, Д.Г.** *Степные империи Евразии*. СПб.: Факультет филологии СПбГУ, 2005. [PD]
+- **Дьяконов, И.М.** *Ассиро-вавилонские источники по истории Урарту*. М.-Л., 1951. [PD]
+- **Али-заде, А.А. (ред.)** *Исламский энциклопедический словарь*. М.: Ансар, 2007. [ISBN 5-98443-029-8]
+- **Луконин, В.Г.** *Древний и раннесредневековый Иран*. М.: Наука, 1981. [PD]
+- **Пиотровский, М.Б.** *Южная Аравия в раннее средневековье*. М.: Наука, 1985. [PD]
+- **Иванов, М.С.** «Курды и проблема их этногенеза» // *Советская этнография* 4, 1963. [PD]
+- **Башилов, В.А.** «Древние религии курдов» // *Этнография* 4, 1991. [PD]
+- **Миловзорова, М.С.** *Курды: проблемы этногенеза*. СПб.: Наука, 2002. [PD]
+- **Керим, Р.** *Езиды: демонология и культ*. М.: РОССПЭН, 2008.
+- **Шарбатов, Г.Ш.** «Езиды в контексте курдской культуры» // *Этнографическое обозрение* 4, 2003. [PD]
+- **Wilmshurst, D.** *The Martyrology of the Persian Martyr Acts: Studies in the Persian Martyrology, 4th-7th Centuries*. Oxford: OUP, 2021. [ISBN 978-0-19-886045-1]
+- **Walker, J.** *The Legend of Mar Qardagh: Narrative and Christian Heroism in Late Antique Iraq*. Berkeley: UCP, 2006. [ISBN 0-520-24466-0]
+- **Fiey, J.-M.** *Saints Syriaques*. Princeton: Darwin, 1995. [PD]
+- **Tixeront, J.** *Les origines de l'Église d'Édesse et la légende d'Abgar*. Paris: Picard, 1888. [PD]
+- **Панкратьев, С.П.** *Езидская священная история*. СПб.: ИЛИ РАН, 2010. [PD]
+- **Sinclair, T.A.** *Eastern Turkey: An Architectural and Archaeological Survey*. 4 vols. London: Pindar, 1987-1990. [PD]
 
 ---
 *Sigillum: ANGELO CREDITA TERRA.*
