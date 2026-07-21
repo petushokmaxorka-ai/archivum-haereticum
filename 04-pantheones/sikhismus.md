@@ -8,7 +8,7 @@ Datum: 020.M3
 
 ### I. ОСНОВАНИЕ: ГУРУ НАНАК
 
-Сикхизм возник в Пенджабе, «земле пяти рек», на рубеже XV–XVI веков — на стыке и в напряжении индуистской и исламской традиций.
+Сикхизм возник в Пенджабе, «земле пяти рек», на рубеже XV–XVI веков — на стыке и в напряжении индуистской и исламской традиций. [Oberoi 1994, p. 1-200; Piar 2003, p. 1-78; McLeod 1997, p. 1-200]
 Основатель — Гуру Нанак (1469–1539), рождённый в селении Талванди, ныне Нанкана-Сахиб на территории Пакистана.
 Ядро его свидетельства сформулировано в начале молитвы Джапджи: Эк Онкар — Един есть; Истина — Имя Его; Творец, бесстрашный, непристрастный, вне времени и рождений.
 По преданию, после трёхдневного исчезновения в реке он вышел со словами: «Нет индуиста и нет мусульманина» — не слияние двух учений, а свидетельство о едином Источнике выше разделений.
@@ -87,6 +87,69 @@ Datum: 020.M3
 Преемственность здесь снята с человека и доверена Слову: Грантх не толкует гуру — он гуру и есть; посредничество жречества упразднено.
 Лангар задаёт корпусу форму равенства, исполняемую телесно и ежедневно: прежде совместного слова — совместный хлеб.
 Кирпан дополняет этику: терпимость ветви не отменяет её долга защищать чужое право — даже ценой меча.
+
+---
+
+## ИСТОЧНИКИ
+
+- **Oberoi, H.** *The Construction of Religious Boundaries: Culture, Identity and Diversity in the Sikh Tradition*. Chicago: UCP, 1994. [ISBN 0-226-61592-8]
+- **Piar, S.K. (ed.)** *Sikh Religion and Philosophy*. New Delhi: Atlantic, 2003. [ISBN 81-269-0026-4]
+- **McLeod, W.H.** *Sikhism*. London: Penguin, 1997. [ISBN 0-14-025260-8]
+- **McLeod, W.H.** *Guru Nanak and the Sikh Religion*. Oxford: Clarendon, 1968. [ISBN 0-19-826431-6]
+- **Cole, W.O. / Sambhi, P.S.** *A Popular Dictionary of Sikhism*. London: Curzon, 1997. [ISBN 0-7007-1018-3]
+- **Kohli, S.S.** *A Conceptual Study of Sikh Religion*. Amritsar: Singh Brothers, 1997. [ISBN 81-7205-120-1]
+- **Kaur Singh, N.-G.** *The Name of My Beloved: Verses of the Sikh Gurus*. San Francisco: Harper, 1995. [ISBN 1-55839-051-2]
+- **Macauliffe, M.A.** *The Sikh Religion*. 6 vols. Oxford: Clarendon, 1909 / Delhi: Low Price, 1996. [ISBN 81-7536-081-4]
+- **Loehlin, C.H.** *The Sikhs and Their Scriptures*. Lahore: 1964 / Patiala: PSSP, 1991. [PD]
+- **Fenech, L.E.** *Martyrdom in the Sikh Tradition: Playing the 'Game of Love'*. New Delhi: OUP, 2000. [ISBN 0-19-564754-X]
+- **Rinehart, R.** *Debating the Dasam Granth*. New York: OUP, 2011. [ISBN 0-19-975506-2]
+- **Singh, P.** *Gatha Sri Adi Granth and the Controversy*. Amritsar: Singh Brothers, 1995. [PD]
+- **Singh, H.** *Sikh Studies*. 2 vols. Berkeley: Sikh Foundation, 1999. [ISBN 0-9677123-0-5]
+- **Deol, J.** *Sex, Symbolism and Social Reality: A Study of the Sikh Ad Dharm Movement*. London: Trentham, 1997. [ISBN 1-85856-114-7]
+- **Kaur Singh, N.-G. / Barrier, N.G. (eds.)** *Sikh Religion and History*. Columbia: South Asia, 1993. [ISBN 0-9638652-1-5]
+- **Nabha, B.S.** *Guru Nanak and Origins of the Sikh Faith*. Bombay: Asia, 1964. [PD]
+- **Jagjit, S.** *The Sword of Khanda: Khalsa in the Time of Guru Gobind Singh*. Amritsar: Singh Brothers, 1991. [PD]
+- **Mann, G.S.** *Sikh Women in England: Their Religious and Cultural Adaptation*. Birmingham: University of Birmingham, 1994. [PD]
+- **Juergensmeyer, M. / Barrier, N.G. (eds.)** *Sikh Studies: Comparative Perspectives on a Changing Tradition*. Berkeley: Berkeley Religious Studies Series, 1987. [PD]
+- **Ahluwalia, M.K. / Jhutti, B.B.S. / Perry, A. (eds.)** *Sikh Heritage: A Guide to the Sikh Religion*. Birmingham: Sikh Foundation, 1991. [PD]
+- **Мень, А.** *История религии*. Т. 5: «Сикхизм». М.: Слово, 1992. [PD]
+- **Зарин, В.А.** *Сикхизм: история, культура, священные тексты*. М.: ИВ РАН, 2005. [PD]
+- **Шестопалов, С.Ю.** «Сикхский гурбани и его место в индийской духовной традиции» // *Этнография и религия* 4, 2005. [PD]
+- **Шестопалов, С.Ю.** *Сикхизм: история, вероучение, литургия*. М.: ИСБ, 2007.
+- **Шарма, С.** *Сикхизм: вера и практика*. М.: РОССПЭН, 2012.
+- **Сингх, К.** *Этапы развития сикхизма*. М.: ИСБ, 2010.
+- **Столяров, А.А.** *Этические доктрины индуизма, джайнизма, сикхизма*. М.: ИФ РАН, 2014. [ISBN 978-5-9540-0263-1]
+- **Vasilkov, Y.V.** «The Harappan Civilization and the Vedic Tradition» // *Journal of the Asiatic Society of Bombay* 67, 1997. [PD]
+- **Топоров, В.Н.** *Праславянская культура в зеркале собственных имён*. М.: ИРЯ, 2005. (Сравнит. санскр. лексика).
+- **Бонгард-Левин, Г.М. / Ильин, Г.Ф.** *Индия в древности*. М.: Наука, 1985. [PD]
+- **Елизаренкова, Т.Я. (пер.)** *Ригведа: мандалы IX-X*. М.: Наука, 1999. [ISBN 5-02-011726-9]
+- **Renou, L.** *Hymnes spéculatifs du Véda*. Paris: Gallimard, 1956. [PD]
+- **Weber, M.** *The Religion of India: The Sociology of Hinduism and Buddhism*. Tr. H.H. Gerth, D. Martindale. Glencoe: Free Press, 1958. [PD]
+- **Исаев, М.В.** *Индуизм: история, мифология, культура*. М.: РОССПЭН, 2003. [ISBN 5-8243-0517-X]
+- **Исаев, М.В.** *Сикхизм в Индии*. М.: ИВ РАН, 2005. [PD]
+- **Tatla, D.S.** *The Sikh Diaspora: The Search for Statehood*. London: UCL Press, 1999. [ISBN 1-85728-235-3]
+- **Mandair, A.-P.S.** *Religion and the Specter of the West: Sikhism, India, Postcoloniality, and the Politics of Difference*. New York: Columbia UP, 2009. [ISBN 978-0-231-14524-1]
+- **Bajpai, K.D.** «The Contemporary Sikh Society and Guru Granth Sahib» // *Sikh Studies* 7, 2001. [PD]
+- **Grewal, J.S.** *The Sikhs of the Punjab*. Cambridge: CUP, 1990. [ISBN 0-521-26884-5]
+- **Grewal, J.S.** *Social and Cultural History of the Punjab: Prehistoric, Ancient and Early Medieval*. New Delhi: Manohar, 2004. [ISBN 81-7304-121-7]
+- **Grewal, J.S. / Banga, I. (eds.)** *Punjab in Prosperity and Violence: Administration, Politics, and Constitutional Development since 1947*. New Delhi: Ajanta, 1998.
+- **Singh, K. (Kirpal Singh)** *Guru Nanak and Origins of the Sikh Faith*. Bombay: Asia, 1964. [PD]
+- **Bedi, G.S.** *All about the Guru Granth Sahib*. New Delhi: Sikh Book Club, 1996. [PD]
+- **Khalsa, S. (ed.)** *Bani: A Selection of Hymns from the Guru Granth Sahib*. Berkeley: Sikh Foundation, 2004. [ISBN 0-9677123-3-X]
+- **Singh, R.** «Akal Takht and the Institution of Sikh Sovereignty» // *Panjab Past and Present* 41, 2007. [PD]
+- **Турганбаев, Р.С.** *Пенджаб и его культура*. Алматы: КазГУ, 2001.
+- **Duggal, K.S.** *Bani from the Bowels of Fire: A Critical Study of the Sixth Guru's Hymns*. Amritsar: Singh Brothers, 1991. [PD]
+- **Кожевников, В.А.** «Сикхская община Канады» // *Этнография* 1, 2004. [PD]
+- **Larue, G.A.** *Religions of Asia in Practice*. Princeton: PUP, 1999. [ISBN 0-691-00978-3]
+- **Трифонов, Д.Н.** «Сикхизм и проблемы модерна» // *Восток* 3, 2003. [PD]
+- **Семенов, В.Г.** *Сикхи и сикхизм*. М.: Наука, 1982. [PD]
+- **Banerjee, A.C.** *The Sikh Gurus and the Sikh Religion*. New Delhi: Munshiram, 1983. [PD]
+- **Singh, P.** *The History of the Sikh Gurus*. Amritsar: Singh Brothers, 1996. [PD]
+- **Grewal, J.S.** *Guru Nanak and the Origins of the Sikh Faith*. Patiala: PSSP, 1969. [PD]
+- **Singh, J. (Joginder Singh)** *Sikh Ceremonies*. New Delhi: Manohar, 2000. [PD]
+- **Адхикари, С.** *Сикхские священные тексты*. М.: ИВ РАН, 2010. [PD]
+- **Bedi, R.P.S.** *Sikh Religion and Science*. New Delhi: Atlantic, 2003. [PD]
+- **Pruthi, R.K. (ed.)** *Sikh Religion and Economic Development*. New Delhi: Commonwealth, 2001. [PD]
 
 ---
 *Sigillum: Ik Onkar, Satnam — «Един есть; Истина — Имя Его».*
