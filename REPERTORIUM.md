@@ -48,6 +48,8 @@ Datum: 021.M3 (CREDO-печать добавлена)
 
 **Прочие народы и веры**: `baltica.md`, `fenno-ugrica.md`, `mediterranea.md`, `litterae.md`
 
+**Балкано-Карпатский мифологический пласт**: `valachia-mythologia.md` (zmeu, iele, sânziene, Miorița, colinde, mărtișor, solomonar, zburător, drac — индоевропейский генезис)
+
 ### IV. РЕЕСТР: 09-GENTES (народы и судьбы)
 
 **Ядро**: `tribus-slavica.md` (30+ племён), `scythae.md` (степь)
@@ -58,7 +60,7 @@ Datum: 021.M3 (CREDO-печать добавлена)
 
 **Боснийская арка**: `illyria-bosnia.md` → `bosna-media.md` → `bogomili.md` → `bosnia-ecclesia.md` → `bosnia-regnum.md` → `stecci-bosancica.md` → `bosnia-musulmana.md`
 
-**Волошская арка**: `dacia-traiana.md` → `valachia-diaspora.md` → `valachia-sclavia.md`
+**Волошская арка**: `dacia-traiana.md` → `valachia-diaspora.md` → `valachia-sclavia.md` → `valachia-basarab.md` (династия, Дракула) → `valachia-transhumantia.md` (пастушество как способ цивилизации)
 
 ### V. РЕЕСТР: ПРОЧИЕ ЗАЛЫ
 
@@ -91,7 +93,7 @@ Datum: 021.M3 (CREDO-печать добавлена)
 
 ### VIII. СТАТИСТИКА
 
-- **Досье**: 106+ (62 pantheones + 20 gentes + 24 прочие залы)
+- **Досье**: 109+ (63 pantheones + 22 gentes + 24 прочие залы)
 - **Корпуса**: 6 завершённых, ~35 000 стихов/аятов в параллельных слоях
 - **Печати**: все записи классифицированы; DAMNATUS — 3 протокола (Велесова, славяно-арии, стегозавр); ✚ CREDO — 4 применения (см. §IX)
 - **Concordantia**: 20 слотов × 12+ ветвей, ~188 совпадений, ~120 с прямыми подтверждениями
