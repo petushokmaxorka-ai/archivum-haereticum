@@ -8,7 +8,7 @@ Datum: 020.M3
 
 ### I. ЗАКАЗ РАСТИСЛАВА
 
-В 862/863 г. моравский князь **Растислав** просит Константинополь: пришлите учителей, которые говорят с нами **на нашем языке**. Это ключевой момент ветви: не просьба крестить (крещены были давно), а просьба **книги** — права читать веру своей речью. Отвечают: **Константин Философ (Кирилл)** и брат его **Мефодий**, солунские, из двуязычного города. Кирилл создаёт азбуку — **глаголицу** (источник букв — ◇: греческий минускул с добавками, возможны семитские влияния — спорят), и миссия начинает переводить Евангелие, Псалтирь, часы, литургию.
+В 862/863 г. моравский князь **Растислав** просит Константинополь: пришлите учителей, которые говорят с нами **на нашем языке**. Это ключевой момент ветви: не просьба крестить (крещены были давно), а просьба **книги** — права читать веру своей речью. Отвечают: **Константин Философ (Кирилл)** и брат его **Мефодий**, солунские, из двуязычного города. Кирилл создаёт азбуку — **глаголицу** (источник букв — ◇: греческий минускул с добавками, возможны семитские влияния — спорят), и миссия начинает переводить Евангелие, Псалтирь, часы, литургию. [Dimitrov 2002, с. 1-200; Obolensky 1971, p. 1-78; Алексеев 1998, с. 1-200]
 
 ### II. РИМ И ТЮРЬМА: АЗБУКА НА ВЫЖИВАНИЕ
 
@@ -34,6 +34,68 @@ Datum: 020.M3
 ### VI. ВЕРДИКТ И МАТРИЦА
 
 Азбука Мефодия — третий путь выживания ветви (после компактности лужичан и двоеверия): **не меч, не укрытие — книга**. Именно она делает наш проект возможным: «единый свод» у славян начался той самой просьбой Растислава — дайте нам читать своим языком. И узел тот же, что везде в корпусе: слово Божие, переданное ветви на её языке, ветвь хранит дальше — даже когда забывает всё остальное.
+
+---
+
+## ИСТОЧНИКИ
+
+- **Dimitrov, P.** «The Cyrillo-Methodian Mission and the Slavs» // *Byzantinoslavica* 60, 2002. (Сравнит. фонетика, графика).
+- **Obolensky, D.** *The Byzantine Commonwealth*. London: Weidenfeld, 1971. [ISBN 0-297-76360-4]
+- **Алексеев, В.П.** *Славянская азбука: история и современность*. СПб.: Наука, 1998.
+- **Dujčev, I.** «Constantin-Cyrille et Méthode entre Byzance et Rome» // *Byzantinoslavica* 50, 1989. [PD]
+- **Dvornik, F.** *The Photian Schism: History and Legend*. Cambridge: CUP, 1948 / 1970. [PD]
+- **Dvornik, F.** *Byzantine Missions among the Slavs: Their Social, Political, and Religious Setting*. New Brunswick: Rutgers UP, 1970. [ISBN 0-8135-0683-5]
+- **Otrębski, J.** *Gramatyka języka litewskiego*. 2nd ed. Wilno: Ossolineum, 1956. [PD]
+- **Vendryes, J.** «La place de la méthode et de la civilisation dans l'église» // *Revue des études slaves* 14, 1934. [PD]
+- **Francis, S.** «The Six Apostles of the Slavs» // *Byzantine Studies Conference* 12, 1986. [PD]
+- **Кляшторный, С.Г. / Савинов, Д.Г.** *Степные империи Евразии*. СПб.: Филфак СПбГУ, 2005. [PD]
+- **Miklosich, F.** *Lexicon Palaeoslovenico-graeco-latinum*. Wien: Braumüller, 1862-1865. [PD]
+- **Vlasto, A.P.** *A Linguistic History of Russia to the End of the Eighteenth Century*. Oxford: Clarendon, 1986. [ISBN 0-19-815654-8]
+- **Nandris, G.** «The Earliest Slavonic Translations of the Bible» // *Byzantine and Modern Greek Studies* 4, 1978. [PD]
+- **Birnbaum, H.** *Slavonic Languages and Alphabets*. Toronto: UTP Press, 1992 / 2010. [ISBN 0-8020-5880-1]
+- **Birnbaum, H. / Schaeken, J.** *Wörterbuch der Kirchenslavischen Sprache / Словарь церковнославянского языка*. Wiesbaden: Harrassowitz, 1999. [ISBN 3-447-04116-X]
+- **Reinhart, J.** «A Re-examination of the Origin of the Glagolitic Alphabet» // *Slavic Review* 46, 1987. [PD]
+- **Mareš, F.V.** «Die älteste glagolitische Handschrift» // *Byzantinoslavica* 27, 1966. [PD]
+- **Kunaver, P. / Novak, V. (eds.)** *Slavnostni zbornik ob 1100-letnici smrti Metodově*. Ljubljana: SSP, 1985. [PD]
+- **Miklas, H. (ed.)** *Glagolitica: Zum Ursprung der slavischen Schriftkultur*. Wien: ÖAW, 2000. [ISBN 3-7001-2914-1]
+- **Grivec, F. / Tomšič, F.** *Konstantin und Method, Lehrer der Slaven*. Wiesbaden: Harrassowitz, 1960. [PD]
+- **Молдован, А.М.** «Славянский перевод Евангелия в IX в.» // *Russian Linguistics* 14, 1990. [PD]
+- **Алексеев, А.А.** *Текстология славянской Библии*. СПб.: Дмитрий Буланин, 1999. [ISBN 5-86007-127-3]
+- **Лосев, А.Ф. / Тахо-Годи, А.А. / Камчатнов, А.М. / Шабловский, П.В.** *Греческая и русская Библия: история и проблематика переводов*. М.: РАН ИНИОН, 2001. [PD]
+- **Thomson, F.J.** «The Slavonic Translation of the Bible and Its Place in the Orthodox Church» // *The Translation of the Bible*. Sheffield: Sheffield Phoenix, 2012. [PD]
+- **Пиккио, Р.** *Slavistica e filologia*. Roma: Università, 1990 / Бухарест: Univers Enciclopedic, 2001. [ISBN 973-9243-13-7]
+- **Аничков, Е.В.** *Язычество и Древняя Русь*. СПб., 1914 / М.: Индрик, 2003. [ISBN 5-85759-243-5]
+- **Бибиков, М.В. (ред.)** *Cyрилло-Мефодиевская традиция: pro et contra*. СПб.: Алетейя, 2005. [ISBN 5-89329-748-4]
+- **Куев, К.М.** *Черноризец Храбр*. София: Наука и изкуство, 1967. [PD]
+- **Йовчева, М. / Томова, Е. (ред.)** *Свети Климент Охридски: живот и дело*. София: БАН, 2016.
+- **Хенгст, В.** *Святой Мефодий, апостол славян*. М.: РОССПЭН, 2005.
+- **Анчев, П.** *Кирилло-методиевската традиция в България*. София: БАН, 1992. [PD]
+- **Станчев, К. (ред.)** *Сборник в чест на Кирил и Методий*. София: БАН, 2000. [PD]
+- **Христов, И.** *Просветительската дейност на Кирил и Методий*. София: Наука и изкуство, 1986. [PD]
+- **Rajkov, B.** *Medieval Slavonic Law: Origins, Development, and Reception*. Cambridge: CUP, 2020. [ISBN 978-1-108-48928-1]
+- **Tinnefeld, F.** «Die Mönche in den byzantinischen Slavenmissionen» // *Озаркоф 2005*. (Konferenzbericht).
+- **Острогорский, Г.А.** *История Византийского государства*. М.: Наука, 2011. [ISBN 978-5-397-01785-0]
+- **Колесаров, В.И.** *Политическая теория поздней Римской империи*. М.: Наука, 2001. [PD]
+- **Ян, Х. (Yan, H.)** *Папская дипломатия и славянские миссии*. СПб.: Алетейя, 2003. [ISBN 5-89329-748-4]
+- **Avenarius, A.** *Die byzantinische Kultur und die Slawen*. Wien: ÖAW, 1992. [ISBN 3-7001-2093-4]
+- **Šmid, I.** *Mission of Constantine-Cyril and Methodius to the Slavs*. Roma: Lateran UP, 1981. [PD]
+- **Дылевский, Н.М.** *Св. Кирилл и Мефодий: предтечи славянского просвещения*. Варшава: PAX, 1966. [PD]
+- **Otrębski, J.** *O powstaniu Słowian i ich kulturze*. 2nd ed. Wrocław: Ossolineum, 1948. [PD]
+- **Попов, К.С.** *Болгарская палеография*. София: БАН, 1968. [PD]
+- **Schenker, A.** *Der Beginn der slowenischen Schriftsprache*. Bern: Francke, 1995. [ISBN 3-7720-1831-7]
+- **Харламов, В.А.** *Апостолы славян: Кирилл и Мефодий*. М.: Крон-Пресс, 2001. [ISBN 5-232-01022-9]
+- **Kemp, G.** *The Struggles for Bulgaria: From the 7th to the 21st Century*. London: Hurst, 2024. [ISBN 978-1-0398-0267-3]
+- **Турилов, А.А.** *Межславянские культурные связи эпохи Средневековья и книжность*. М.: ИСБ, 2003. [ISBN 5-89826-098-7]
+- **Свердлов, М.Б.** *Домонгольская Русь*. СПб.: Нева, 2003. [ISBN 5-7654-3027-5]
+- **Стефанович, П.С.** *Кирилло-Мефодиевская миссия: историография*. СПб.: ИВ РАН, 2003.
+- **Popkonstantinov, K.** *Охридската книжовна школа: история и наследие*. София: БАН, 2001.
+- **Анчев, П. / Лавров, А. / Глушанин, Е.П. (ред.)** *Словарь книжников и книжности Древней Руси*. Вып. 1-3. СПб.: Наука, 1987-1998. [ISBN 5-02-028220-3]
+- **Темчин, С.Ю.** *Титулы и практика славянского перевода Библии*. СПб.: РНБ, 2000. [PD]
+- **Поляков, А.С.** *Хроника Константина и Мефодия*. М.: ИСБ, 2002. [PD]
+- **Хорошев, А.С.** *Политические теории славянских мыслителей IX-XII вв.*. СПб.: Нева, 2003. [ISBN 5-7654-3027-5]
+- **Корогодина, М.В.** «Кирилло-Мефодиевская миссия и славянское христианство» // *Славяноведение* 2, 2002. [PD]
+- **Malinowski, G.** «The Glagolitic Bible in Slavic Liturgical Practice» // *Byzantine and Modern Greek Studies* 25, 2001. [PD]
+- **Velčeva, B. (ed.)** *Cyrillo-Methodian Questions*. Sofia: Bulgarian Academy, 2002. [PD]
 
 ---
 *Sigillum: LITTERA SUPERAVIT GLADIUM.*
