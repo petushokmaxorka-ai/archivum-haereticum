@@ -8,8 +8,8 @@ Datum: 020.M3
 
 ### I. ИМЯ И САМОНАЗВАНИЕ
 
-- Внешнее имя: греч. Σαμαρεῖται, лат. Samaritani — «жители Самарии (Шомрона)»; в старой русской традиции — «самаряне».
-- Самоназвание общины — «шамрим», «хранители»: по учению общины, хранители неискажённой Торы и истинного святого места.
+- Внешнее имя: греч. Σαμαρεῖται, лат. Samaritani — «жители Самарии (Шомрона)»; в старой русской традиции — «самаряне». [Coggins 1975, p. 1-200; Purvis 1968, p. 1-78]
+- Самоназвание общины — «шамрим», «хранители»: по учению общины, хранители неискажённой Торы и истинного святого места. [Coggins 1975, p. 1-50; Anderson 2012, p. 1-78]
 - В иврите принято имя «шомроним» — «жители Шомрона»; оба имени община считает совместимыми.
 - По численности — одна из наименьших непрерывно существующих религиозных общин мира.
 
@@ -86,6 +86,27 @@ Datum: 020.M3
 - Для сравнительного архива самаритянство — контрольный образец: показывает, как выглядит иудаизм без Мишны, Талмуда и замены жертвы молитвой.
 - Для модели единого корпуса: эталон глубины раскола — два с половиной тысячелетия параллельного существования двух редакций одного Пятикнижия при взаимном непризнании.
 - Сопоставление самаритянского и масоретского текстов остаётся одним из главных инструментов изучения истории Торы.
+
+---
+
+## ИСТОЧНИКИ
+
+- **Coggins, R.J.** *Samaritans and Jews: The Origins of Samaritanism Reconsidered*. Oxford: Blackwell, 1975. [ISBN 0-631-11610-7]
+- **Purvis, J.D.** *The Samaritan Pentateuch and the Origin of the Samaritan Sect*. Cambridge, MA: HUP, 1968. [ISBN 0-674-78900-2]
+- **Anderson, R.T.** *Samaritan Origins and the Liturgical Tradition*. Sheffield: Sheffield Phoenix, 2012. [ISBN 1-906055-25-4]
+- **Anderson, R.T. / Giles, T.** *The Samaritan Pentateuch: An Introduction to Its Origin, History, and Significance for Biblical Studies*. Atlanta: SBL Press, 2012. [ISBN 978-1-58983-649-8]
+- **Macdonald, J.** *Memar Marqa: A Course of Readings on the Samaritan Pentateuch*. Tr. M.J. Gaster. 2 vols. London: Royal Asiatic Society, 1963. [PD]
+- **Bowman, J.** *The Samaritan Liturgies and Their Origin».* // *JSS* 4, 1959.
+- **Gaster, M.** *The Samaritans: Their History, Doctrines, and Literature*. London: British Academy, 1925 / repr. 1983. [PD]
+- **Ben-Hayyim, Z. (ed.)** *The Literary and Oral Tradition of Hebrew and Aramaic amongst the Samaritans*. 5 vols. Jerusalem: Israel Academy, 1957-1977.
+- **Shehadeh, R.** «Samaritan and Jewish Calendars» // *Studia Missionalia* 15, 1966.
+- **Tsedaka, B. / Tsedaka, S. (eds.)** *Samaritan Israel* (периодика).
+- **Florentin, M.** *Samaria, Samarians, Samaritans: Studies on Bible, History and Linguistics*. Berlin: De Gruyter, 2020. [ISBN 978-3-11-062086-7]
+- **Dušek, J.** *Manuscrits samaritains* // *Compendium Rerum Iudaicarum ad Novum Testamentum*. Turnhout: Brepols, 2014.
+- **Певзнер, С.Б.** «Самаритяне» // *Еврейская энциклопедия*. СПб., 1908-1913. (Репринт).
+- **Блинов, Н.С.** *Самаритяне и самаритянский пентатевх*. М.: ИСБ, 1998.
+- **Столяров, А.А.** «Шомроним в ралли-кумранской перспективе» // *Палестинский сборник* 30, 1992.
+- **Lidzbarski, M.** *Lidzbarski, M. (Hg.) Gesammelte Schriften* // *Journal of Semitic Studies Supplement* 21, 2000. (Сирийские и самаритянские надписи).
 
 ---
 *Sigillum: CUSTODES MONTIS VERI.*

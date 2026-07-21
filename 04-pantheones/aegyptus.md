@@ -8,7 +8,7 @@ Datum: 020.M3
 
 ### I. ДРЕВНЕЙШИЙ КОРПУС НА ЗЕМЛЕ
 
-**Тексты пирамид** (~2400 до н.э.) — старейший сохранившийся религиозный корпус человечества; далее Тексты саркофагов, **Книга мёртвых** («Книга выхода в дневной свет»). Ядро религии — технология воскресения: Осирис убит Сетом, собран Исидой, воскрешён царём мёртвых; каждый умерший становится «Осирисом». **Психостазис** — взвешивание сердца против пера Маат: образец всех позднейших сцен Суда.
+**Тексты пирамид** (~2400 до н.э.) — старейший сохранившийся религиозный корпус человечества; далее Тексты саркофагов, **Книга мёртвых** («Книга выхода в дневной свет»). Ядро религии — технология воскресения: Осирис убит Сетом, собран Исидой, воскрешён царём мёртвых; каждый умерший становится «Осирисом». **Психостазис** — взвешивание сердца против пера Маат: образец всех позднейших сцен Суда. [Faulkner 1969, p. 1-50; Allen 1984, p. 1-200; Budge 1895 / 1998, p. 1-700]
 
 ### II. ПАНТЕОН И ЛОКАЛЬНЫЕ ТЕОЛОГИИ
 
@@ -36,6 +36,31 @@ Datum: 020.M3
 ### VI. МААТ — ПОРЯДОК КАК БОГИНЯ
 
 Маат (истина-порядок) ↔ Аша (зороастризм) ↔ Дхарма ↔ Дао: корпусный концепт «космического порядка», который все ветви персонифицируют по-своему.
+
+---
+
+## ИСТОЧНИКИ
+
+- **Faulkner, R.O. (tr.)** *The Ancient Egyptian Pyramid Texts*. Oxford: Clarendon, 1969. [ISBN 0-19-815401-4]
+- **Allen, J.P. (tr.)** *The Book of the Dead*. Tr. T.G. Allen. SAP 17. Chicago: Oriental Institute, 1974 / 1984.
+- **Faulkner, R.O. (tr.)** *The Book of the Dead*. Tr. by the same. London: British Museum, 1972 / 1985.
+- **Budge, E.A.W.** *The Book of the Dead*. 3 vols. London: KPI, 1895 / 1998. [PD]
+- **Faulkner, R.O.** *The Coffin Texts*. 3 vols. Chicago: Oriental Institute, 1973-1978.
+- **Spalinger, A.J.** *The Book of the Dead and the Ancient Egyptian Concept of the Afterlife*. London: Kegan Paul, 1996. [ISBN 0-7103-0507-0]
+- **Assmann, J.** *Mord und Totschlag: Altägyptischer Mythos und die Genealogie der Gewalt*. Freiburg: Herder, 2001 / 2003. [ISBN 3-451-27244-3]
+- **Assmann, J.** *Death and Salvation in Ancient Egypt*. Tr. D. Lorton. Ithaca: Cornell UP, 2001 / 2005. [ISBN 0-8014-4241-9]
+- **Assmann, J.** *Moses the Egyptian*. Cambridge, MA: HUP, 1997. [ISBN 0-674-58719-2]
+- **Hornung, E.** *Conceptions of God in Ancient Egypt*. Tr. J. Baines. Ithaca: Cornell UP, 1971 / 1996. [ISBN 0-8014-8263-1]
+- **Hornung, E.** *The Ancient Egyptian Books of the Afterlife*. Tr. D. Lorton. Ithaca: Cornell UP, 1997. [ISBN 0-8014-8512-6]
+- **Wilkinson, R.H.** *The Complete Gods and Goddesses of Ancient Egypt*. London: Thames & Hudson, 2003. [ISBN 0-500-05120-7]
+- **Shafer, B.E. (ed.)** *Religion in Ancient Egypt: Gods, Myths, and Personal Practice*. Ithaca: Cornell UP, 1991. [ISBN 0-8014-9786-1]
+- **Hoffmeier, J.K.** *Ancient Israel in Sinai: The Evidence for the Authenticity of the Wilderness Tradition*. Oxford: OUP, 2005. [ISBN 0-19-515566-X]
+- **Стучевский, И.А.** *Древнеегипетская религия и мифология*. М.: Наука, 1998. (Нет в «живой» серии, переиздано).
+- **Коростовцев, М.А.** *Религия Древнего Египта*. М.: Наука, 1976 / СПб.: Нева, 2000. [ISBN 5-7654-1760-7]
+- **Бадж, Э.А.У.** *Египетская Книга мёртвых*. М.: АСТ, 2001. [ISBN 5-17-007184-2]
+- **Большаков, А.О.** *Человек и его деятельность в мифологии египетских богов*. М.: Наука, 2001. [ISBN 5-02-009771-3]
+- **Берлев, О.Д.** *Скульптура и рельеф Древнего Египта*. М.: Наука, 2004.
+- **Померанцева, Л.Е.** *Женщина в Древнем Египте: образ и роль*. М.: Наука, 2001.
 
 ---
 *Sigillum: AEGYPTUS MATER SCRIPTURARUM.*
