@@ -4,7 +4,7 @@
 **CLASSIFICATIO: ◆ FIDELIS (летописные и языковые факты) · ◇ SUSPECTUS (механика ассимиляции)**
 Datum: 020.M3
 
-> *См. также: `moldavia-sclavica.md` (Молдавия — славянский период IX–XIV вв.), `valachia-basarab.md` (династия Басараб), `valachia-transhumantia.md` (механизм романизации), `valachia-mythologia.md` (общий славяно-румынский миф), `bessarabia.md` (Бессарабия), `09-gentes/carpitoslavi.md` (карпатские славяне — тиверцы, уличи, Галицкие хорваты, ◇-параллель для «карпатского славянского скелета Валахии и Молдавии»).*
+> *См. также: `moldavia-sclavica.md` (Молдавия — славянский период IX–XIV вв.), `valachia-basarab.md` (династия Басараб), `valachia-transhumantia.md` (механизм романизации), `valachia-mythologia.md` (общий славяно-румынский миф), `bessarabia.md` (Бессарабия), `09-gentes/slavs/carpitoslavi.md` (карпатские славяне — тиверцы, уличи, Галицкие хорваты, ◇-параллель для «карпатского славянского скелета Валахии и Молдавии»).*
 
 ---
 
