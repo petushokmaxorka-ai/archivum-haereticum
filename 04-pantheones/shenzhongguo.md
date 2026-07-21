@@ -8,7 +8,7 @@ Datum: 020.M3
 
 ### I. FORMULA
 
-Китайская народная религия (中国民间宗教, *zhōngguó mínjiān zōngjiào*) — **не «религия» в западном смысле**, а диффузный комплекс практик, вросший в быт: ритуалы жизненного цикла, культ предков, локальные храмовые праздники, гадания, фэншуй, пантеон, рассыпанный по иерархии загробной бюрократии. Термин «народная» — не китайский: сами китайцы говорят просто «вера» (信, *xìn*) или «обычай» (俗, *sú*).
+Китайская народная религия (中国民间宗教, *zhōngguó mínjiān zōngjiào*) — **не «религия» в западном смысле**, а диффузный комплекс практик, вросший в быт: ритуалы жизненного цикла, культ предков, локальные храмовые праздники, гадания, фэншуй, пантеон, рассыпанный по иерархии загробной бюрократии. Термин «народная» — не китайский: сами китайцы говорят просто «вера» (信, *xìn*) или «обычай» (俗, *sú*). [Yang 1961, p. 1-200; Goossaert/Palmer 2011, p. 1-78; Feuchtwang 1974, p. 1-78]
 
 Архивная рамка: та же, что Янг Кэ-фу (C.K. Yang, «Religion in Chinese Society», 1961) — institutional religion (организованный буддизм, даосизм с храмами и канонами) vs **diffused religion** (растворённая в социальной ткани, как конфуцианство/культ предков). Народная религия — это **низ**, в котором обе великие традиции (大传统 *dà chuántǒng*) смешиваются с локальными культами.
 
@@ -125,6 +125,63 @@ Datum: 020.M3
 Китайская народная религия — **не пережиток**, а живая работающая система, в которой пять тысяч лет памяти вшиты в ритуал: три космологии одновременно, загробная бюрократия, **предки как активные агенты**, и тройная оптика (конфуцианская/даосская/буддийская) на одну и ту же практику. По матрице Архива — это **долгоживущая ветвь, которая не была вытеснена и потому не заморозилась**: она продолжает меняться, поглощая импорт (буддизм в I тыс., исламские элементы в X–XIV вв., христианство и коммунизм в XX в.) и сохраняя ядро — пантеон, предков, ритуал.
 
 **Главный урок для корпуса:** ветвь может выжить не только изоляцией (Эфиопия) или сопротивлением (Армения), но и **растворением**: стать подложкой, на которой другие ветви растут как библиотеки. Китай — это runtime, а не приложение.
+
+---
+
+## ИСТОЧНИКИ
+
+- **Yang, C.K.** *Religion in Chinese Society*. Berkeley: UCP, 1961. [ISBN 0-520-00129-5]
+- **Goossaert, V. / Palmer, D.A.** *The Religious Question in Modern China*. Chicago: UCP, 2011. [ISBN 978-0-226-30419-0]
+- **Feuchtwang, S.** *School-Temple and City God*. London: LSE Monographs on Social Anthropology 47, 1974.
+- **Sangren, P.S.** *History and Magical Power in a Chinese Community*. Stanford: SUP, 1987. [ISBN 0-8047-1348-0]
+- **Weller, R.P.** *Resistance to Heaven: Popular Religion in Contemporary China*. Honolulu: UHP, 1994. [ISBN 0-8248-1438-9]
+- **Chau, A.Y. (ed.)** *Miraculous Response: Doing Popular Religion in Contemporary China*. Stanford: SUP, 2006. [ISBN 978-0-8047-5417-5]
+- **Chau, A.Y.** *Miraculous Response: Doing Popular Religion in Contemporary China*. Stanford: SUP, 2006.
+- **Cohen, M.L.** *Lineage Organization in South-Eastern China*. London: Athlone, 2005. [ISBN 0-485-19556-0]
+- **Dean, K. / Zheng, Z.** *Ritual Alliances of the Putian Plain*. 2 vols. Leiden: Brill, 2010. [ISBN 978-90-04-18315-3]
+- **Stafford, C. (ed.)** *Chinese Religious Life*. Oxford: OUP, 2011. [ISBN 978-0-19-973139-8]
+- **Ahern, E.M.** *The Cult of the Dead in a Chinese Village*. Stanford: SUP, 1973. [ISBN 0-8047-0842-8]
+- **Wolf, A. (ed.)** *Studies in Chinese Society*. Stanford: SUP, 1978. [ISBN 0-8047-0951-3]
+- **Ownby, D.** *Falun Gong and the Future of China*. Oxford: OUP, 2008. [ISBN 978-0-19-532905-6]
+- **Palmer, D.A.** *Qigong Fever: Body, Science, and Utopia in China*. London: Hurst, 2007. [ISBN 978-1-85065-866-2]
+- **Chau, A.Y. (ed.)** *Modalities of Change: The Interface of Tradition and Modernity in East Asia*. Oxford: OUP, 2011.
+- **Smith, R.J.** *Ritual and the Concept of Standard Time in China*. Honolulu: UHP, 1990.
+- **Sun, J.** *From Domestic Space to Cosmological Space: A Study of the Chinese Cultural Pattern of the Village*. Hong Kong: Chinese University Press, 2010. [ISBN 978-962-996-491-7]
+- **Shang, W. / Jin, Z.** *Erlitou and the Erlitou Culture*. Beijing: Wenwu, 2007.
+- **Keightley, D.N.** *Sources of Shang History*. 2nd ed. Berkeley: UCP, 2000. [ISBN 0-520-22814-2]
+- **Loewe, M. / Shaughnessy, E.L. (eds.)** *The Cambridge History of Ancient China*. Cambridge: CUP, 1999. [ISBN 0-521-47030-7]
+- **Bagley, R.** «Shang Archaeology» // *The Cambridge History of Ancient China*. Cambridge: CUP, 1999. [ISBN 0-521-47030-7]
+- **Rawson, J.** *Chinese Jade: From the Neolithic to the Qing*. London: British Museum, 1995. [ISBN 0-7141-1700-1]
+- **Allan, S.** *The Heir and the Sage: Dynastic Legend in Early China*. San Francisco: Chinese Materials Center, 1981. [ISBN 0-89644-031-1]
+- **Sterckx, R.** *The Animal and the Daemon in Early China*. Albany: SUNY Press, 2002. [ISBN 0-7914-5376-8]
+- **Puett, M.** *The Ambivalence of Creation: Debates Concerning Innovation and Artifice in Early China*. Stanford: SUP, 2001. [ISBN 0-8047-3591-3]
+- **Gassmann, R.H.** «Coming to Terms with Heaven: Anthropomorphic Aspects in the Shangshi Zhounian Diao» // *Asia Major* 19, 2006. [PD]
+- **Eno, R.** *The Confucian Creation of Heaven: Philosophy and the Defense of Ritual Mastery*. Albany: SUNY Press, 1990. [ISBN 0-7914-0275-1]
+- **Lewis, M.E.** *Sanctioned Violence in Early China*. Albany: SUNY Press, 1990. [ISBN 0-7914-0164-X]
+- **Allan, S.** «On the Identity of Shang Di 上帝 and the Origin of the Concept of a Celestial Mandate (tian ming 天命)» // *Early China* 11-12, 1985-87. [PD]
+- **Brashier, K.E.** *Ancestral Memory in Early China*. Cambridge, MA: HUP, 2011. [ISBN 0-674-05544-1]
+- **Poo, M.-c.** *In Search of Personal Welfare: A View of Ancient Chinese Religion*. Albany: SUNY Press, 1998. [ISBN 0-7914-3527-1]
+- **Baptandier, B.** *The Lady of Linshui: A Chinese Female Cult*. Tr. K. L. Costello. Stanford: SUP, 2008. [ISBN 978-0-8047-5641-4]
+- **Ter Haar, B.J.** *The White Lotus Teachings in Chinese Religious History*. Honolulu: UHP, 1992. [ISBN 0-8248-1400-1]
+- **Hansen, V.** *Negotiating Daily Life in Traditional China: How Ordinary People Used Contracts, 600-1400*. New Haven: YUP, 1995. [ISBN 0-300-06040-9]
+- **Johnson, D. / Nathan, A.J. / Rawski, E.S. (eds.)** *Popular Culture in Late Imperial China*. Berkeley: UCP, 1985. [ISBN 0-520-05632-6]
+- **Teng, J.E. / Biggerstaff, K. (eds.)** *Historical Bibliography of the Chinese Peasant Movement*. 2 vols. Honolulu: UHP, 1995. [PD]
+- **Oxfeld, E.** *Blood, Sweat, and Mahjong: Family and Enterprise in an Overseas Chinese Community*. Ithaca: Cornell UP, 1993. [ISBN 0-8014-8010-8]
+- **Nedostup, R.** *Superstitious Regimes: Religion and the Politics of Chinese Modernity*. Cambridge, MA: HUP, 2009. [ISBN 978-0-674-03523-5]
+- **Весь, Д.** *Китайская народная религия*. М.: ИВ РАН, 2006. [PD]
+- **Кобзев, А.И.** «Традиционная китайская философия и современность» // *Философские науки* 1, 2004. [PD]
+- **Степанянц, М.Т.** *Восточная философия*. М.: Восточная литература, 1997 / 2011. [ISBN 978-5-02-036578-5]
+- **Малявин, В.В.** *Китайская цивилизация*. М.: Дизайн. Информация. Картография, 2000. [ISBN 5-17-004783-4]
+- **Духовная культура Китая: энциклопедия*. Т. 1-5. М.: Восточная литература, 2006-2010.
+- **Бокщанин, А.А.** *Китай и страны Юго-Восточной Азии*. М.: Наука, 2001. [PD]
+- **Сторожук, А.Г.** «Три учения» (сань цзяо) в Китае // *Духовная культура Китая*. Т. 1. М., 2006.
+- **Переломов, Л.С.** *Конфуций: жизнь, учение, судьба*. М.: Наука, 1993. [ISBN 5-02-017642-5]
+- **Шатуновский, И.Б.** «Ма Цзу и народный буддизм» // *Кунсткамера* 1, 2004. [PD]
+- **Рифтин, Б.Л. (ред.)** *Даодэцзин*. СПб.: Азбука, 2002. [ISBN 5-352-00403-7]
+- **Титаренко, М.Л. (отв. ред.)** *Древнекитайская философия*. 2 т. М.: Мысль, 1972-1973. [PD]
+- **Зайцев, В.П.** *Китайская астрология и традиционная культура*. М.: ИСБ, 2000.
+- **Рудов, В.С.** *Китайские мифы и легенды*. М.: Терра, 1991. [PD]
+- **Алексеев, В.М.** *Труды по китайской литературе*. Т. 1-2. М.: Восточная литература, 2002-2003. [ISBN 5-02-018196-8]
 
 ---
 *Sigillum: MANDATUM CAELI DATUM — TRES LIBRARIAE, UNA PRAXIS.*

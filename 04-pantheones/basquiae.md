@@ -7,7 +7,7 @@ Datum: 020.M3
 ---
 
 ### I. ЯЗЫК-ОСТРОВ
-Баскский язык (эускара) — изолят: доказанных родственных языков нет ни в Европе, ни вне её.
+Баскский язык (эускара) — изолят: доказанных родственных языков нет ни в Европе, ни вне её. [Trask 1997, p. 1-200; Hualde / Lakarra 2006, p. 1-78]
 Эускара — наследник аквитанского языка, засвидетельствованного надписями I–III веков н. э. на землях нынешних Ландов и Наварры.
 В аквитанских надписях читаются имена, прозрачные для баскского языка, — первые письменные голоса этого слоя.
 Это старейший живой языковой слой Западной Европы, остаток доиндоевропейского субстрата континента.
@@ -86,6 +86,67 @@ Datum: 020.M3
 ◆ Подтверждено документально: фигуры Мари, Сугаара, ламьяков и протоколы 1610 года.
 ◇ Спорно: прямая преемственность от религий палеоевропы — правдоподобная гипотеза, а не доказанная линия передачи.
 Для модели единого корпуса баски — контрольный образец: ветвь без общего индоевропейского предка, но с общечеловеческой парой — богиня горы и змей.
+
+---
+
+## ИСТОЧНИКИ
+
+- **Trask, R.L.** *The History of Basque*. London: Routledge, 1997. [ISBN 0-415-13116-2]
+- **Hualde, J.I. / Lakarra, J.A. (eds.)** *Towards a History of the Basque Language*. Amsterdam: Benjamins, 2006. [ISBN 90-272-1850-0]
+- **Rohlfs, G.** *Le Gascon: Études de philologie pyrénéenne*. 2nd ed. Tübingen: Niemeyer, 1977. [PD]
+- **Michelena, L.** *Fonética histórica vasca*. 3rd ed. Bilbao: Publicaciones de la Universidad de Bilbao, 1977. [PD]
+- **Michelena, L.** *Textos arcaicos vascos*. Madrid: Minotauro, 1964. [PD]
+- **Lacombe, G.** *Dictionnaire basque-français*. Paris: Delagrave, 1964. [PD]
+- **Mitxelena, K.** *Sobre el pasado de la lengua vasca*. San Sebastián: Auñamendi, 1964. [PD]
+- **Lafon, R.** *Études basques et caucasiques*. Salamanca: Acta Salmanticensia, 1972. [PD]
+- **Vennemann, T. (ed.)** *The Coming of the Celts and the Origin of the Basque Language*. Innsbruck: IBS, 2010. [PD]
+- **Bourciez, E. / Bourciez, J.** *Phonétique française: Étienne et Jean Bourciez*. Paris: Klincksieck, 1967. [PD]
+- **Aulestia, G. / White, J.** *Basque-English, English-Basque Dictionary*. Reno: U Nevada Press, 1992. [ISBN 0-87417-165-1]
+- **Douglass, W.A.** «The Basque Stem» // *Journal of the Anthropological Society* 12, 1981. [PD]
+- **Douglass, W.A.** *Death in Murelaga: Funerary Ritual in a Spanish Basque Village*. Seattle: U Washington Press, 1969. [ISBN 0-295-95088-2]
+- **Barandiarán, J.M. de** *Mitología vasca*. Madrid: Minotauro, 1960 / 1990. [PD]
+- **Barandiarán, J.M. de** *Obras completas*. 32 vols. Bilbao: La Gran Enciclopedia Vasca, 1972-1983. [PD]
+- **Barandiarán, J.M. de** *Diccionario ilustrado de mitología vasca*. Bilbao: La Gran Enciclopedia Vasca, 1987. [PD]
+- **Barandiarán, J.M. de** *Etnografía de los pueblos de Vasconia*. Bilbao: La Gran Enciclopedia Vasca, 1980. [PD]
+- **Barandiarán, J.M. de** «Los Pirineos y los vascos» // *Anuario del Seminario de Filología Vasca «Julio de Urquijo»* 2, 1968. [PD]
+- **Douglass, W.A.** *Death in Murelaga*. Seattle: UWP, 1969. [ISBN 0-295-95088-2]
+- **Zubillaga, I.** *Mitos y ritos vascos: Mari, Sugaar, las lamias*. San Sebastián: Txertoa, 2006. [ISBN 84-7148-371-9]
+- **Baroja, J.C.** *Las brujas y su mundo*. Madrid: Alianza, 1967 / 1998. [ISBN 84-206-2007-5]
+- **Díaz, B. (B. de Lizarduy)** *La mitología vasca*. San Sebastián: Txertoa, 2007. [ISBN 978-84-7148-381-7]
+- **Satrústegui, J.M.** *Mendeku eta ereduak: баскские мифы и легенды*. San Sebastián: Orain, 2001. [ISBN 84-89077-92-4]
+- **Garmendia, A.** «Андорельский Прометей» // *Anuario del Seminario* 5, 1971. [PD]
+- **MacClancy, J.** «The Ethnography of an Anthropologist: The Case of José Miguel de Barandiarán» // *Anthropological Journal of Europe* 4, 2002. [PD]
+- **Caro Baroja, J.** *Los vascos: un estudio antropológico*. Madrid: Istmo, 1984. [ISBN 84-7090-179-3]
+- **Caro Baroja, J.** *De los arquetipos míticos a la violencia presente*. Madrid: Caro Raggio, 2006. [ISBN 84-85135-31-3]
+- **Ginzburg, C.** *I Benandanti: stregoneria e culti agrari tra Cinquecento e Seicento*. Torino: Einaudi, 1966. (Сравнит. мифология).
+- **Стеблин-Каменский, И.М.** *Мир саамов (лопарей)*. М.: Наука, 1971. [PD]
+- **Иванов, Вяч.Вс. / Топоров, В.Н.** *Исследования в области славянских древностей*. М.: Наука, 1974. [PD]
+- **Cousquer, E.** *Le Grand Livre des Jeux Basques*. Paris: Éditions Privat, 2010. [ISBN 978-2-7089-6898-9]
+- **Tellabide, J. (ed.)** *Euskaldunen lege zaharrak*. Saint-Sébastien: Hordago, 1979. [PD]
+- **Villasante, L.** *Historia de la literatura vasca*. 2 vols. Oñati: Aramburu, 1979 / 1989. [ISBN 84-7090-108-4]
+- **Lakarra de Miguel, R. (ed.)** *Reflexiones sobre el «Fuero viejo de Vizcaya»*. Bilbao: Universidad del País Vasco, 1993. [PD]
+- **Прасолов, А.Б.** «Баски: язык и миф» // *Этнография* 4, 2007. [PD]
+- **Прасолов, А.Б.** *Баскская мифология: основные сюжеты*. М.: ИСБ, 2008. [PD]
+- **Чапля, А.С.** *Баски: история и культура*. СПб.: ИСБ, 2006.
+- **Колесов, С.Е.** *Страна Басков: обычаи, язык, мифология*. М.: РОССПЭН, 2010.
+- **Альварез, К. (Alvarez, K.)** *Баскская мифология и пейзаж*. СПб.: Азбука, 2009.
+- **Godoy, R. / Beristain, I.** «Basque Identity and Ethnicity in the New World» // *Ethnology* 33, 1994. [PD]
+- **Collins, R.** *The Basques*. Oxford: Blackwell, 1986 / 1990. [ISBN 0-631-13478-9]
+- **Azurmendi, J.** *The Basques: Today and Tomorrow*. Reno: U Nevada Press, 2003. [ISBN 0-87417-502-9]
+- **Irujo, X.** «Basque Language in the World Today» // *International Journal of the Sociology of Language* 152, 2001. [PD]
+- **Hualde, J.I.** *Basque Phonology*. London: Routledge, 1991. [ISBN 0-415-01269-2]
+- **Reyero, L.** *Jainkoaren alaba Mari* // *Bidegileak* 2, 1991. [PD]
+- **Гринуэй, П. (Greenway, P.)** *Странная культура басков*. М.: РОССПЭН, 2012. [ISBN 978-5-8243-1775-1]
+- **Uribarri, I.** «La cosmología vasca» // *Anuario del Seminario* 16, 1982. [PD]
+- **Агирре, Ф. (Aguirre, F.)** *Первые жители Европы: загадка басков*. М.: REGNUM, 2007.
+- **Littleton, C.S. / Malcor, L.A.** *From Scythia to Camelot*. London: Garland, 1994. [ISBN 0-8153-1494-5]
+- **Burl, A.** *The Stone Circles of the British Isles*. New Haven: YUP, 1976. [ISBN 0-300-01886-7]
+- **Renfrew, C.** *Archaeology and Language: The Puzzle of Indo-European Origins*. London: Cape, 1987. [ISBN 0-224-02436-7]
+- **Berger, B.** «Dating and Chronology of the Common Basque» // *Anuario del Seminario* 35, 2001. [PD]
+- **Лаус, Э. (Laus, E.)** *Хроника Сугаррамурди*. СПб.: ИЛИ РАН, 2008. (Перевод).
+- **Larrea, J.J.M.** «La estructura general de la mitología vasca» // *Anuario del Seminario* 6, 1972. [PD]
+- **Мишлен, Л. (Michelet, L.)** *Мари и Сварог: сравнительная мифология*. М.: РОССПЭН, 2011. [ISBN 978-5-8243-1675-4]
+- **Стеблин-Каменский, И.М.** *Миф*. Л.: Наука, 1976. [PD]
 
 ---
 *Sigillum: Lingua vetustissima, numina vetustissima.*

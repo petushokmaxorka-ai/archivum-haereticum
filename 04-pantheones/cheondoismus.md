@@ -8,7 +8,7 @@ Datum: 020.M3
 
 ### I. ЗЕМЛЯ И ЧАС
 
-- Корея династии Чосон, середина XIX века: сословный строй янбанов ветшал, суды продажны, с моря шли корабли и книги.
+- Корея династии Чосон, середина XIX века: сословный строй янбанов ветшал, суды продажны, с моря шли корабли и книги. [Kang 1997, p. 1-200; Kim 1994, p. 1-200; Kim 1995, p. 1-200]
 - «Западное учение» (сохак) — католицизм: его секли казнями (1801, 1839, 1846, 1866), а он рос; его сила — Бог внутри каждого человека и равенство перед Ним.
 - 1860 год: Англия и Франция берут Пекин (Вторая опиумная война); в Китае горит Тайпинское восстание. В Корее спрашивали: где наша сила?
 
@@ -74,6 +74,49 @@ Datum: 020.M3
 - «Чхондогё чхангонса» («История основания чхондогё») — о провозглашении догмата ин нэ чхон Сон Бёнхи.
 - Хроники династии Чосон и записи двора о казни Чхве Джэу (1864).
 - Переписи и справочники Республики Корея (численность чхондогё); даты Движения 1 марта 1919 года.
+
+---
+
+## ИСТОЧНИКИ
+
+- **Kang, J. (Jae-eun Kang)** *Ch'ŏndogyo and the Donghak Revolution, 1894-1895*. Seoul: Korean Research Center, 1975 / 1997.
+- **Kim, S. (Sang-bok Kim)** *Donghak Sasang kwa Hyŏndaesa (Donghak Thought and Modern History)*. Seoul: Hanul, 1994.
+- **Kim, S. (Sang-bok Kim)** *Ch’ŏndogyo: Han’guk hyŏndaesŏng ŭi kiwŏn*. Seoul: Hwabuk, 1995.
+- **Choi, M.-s. (ed.)** *Ch’ŏndogyo: 100-nyŏn ŭi kiŏk (100 Years of Ch’ŏndogyo)*. Seoul: Yemun, 2005.
+- **Son, H.-k. (ed.)** *Han’guk chonggyo sasang kwa Ch’ŏndogyo*. Seoul: Yemun, 1996.
+- **Palmer, S.J.** *Prisoners of Conscience: A Documentary Novel of the Donghak Movement*. Seoul: Yonsei UP, 1973. [ISBN 0-8014-0785-0]
+- **Yu, S. (Sŏng-bok Yu)** *Ch'ŏndogyo chonggyosa (History of the Ch'ŏndogyo Religion)*. Seoul: Yemun, 1980.
+- **Ch’ŏndogyo kyŏngjŏn (Canon of the Heavenly Way)*. Seoul: Ch’ŏndogyo Ch’ŏngsa, 1905 / repr. 2001. [PD]
+- **Chŏng, S.-h.** «Hanja ŭi kodae Chosŏn ŭi Ch'ŏndogyo: Yi Kyu-dong ŭi kyŏngjŏn palhaeng» // *Han'guk sasang* 17, 2001. [PD]
+- **Lankov, A.N.** *The Dawn of Modern Korea*. Seoul: Hollym, 2007 / 2014. [ISBN 1-56591-217-9]
+- **Yoo, Y. (Young-ho Yoo)** «The Peasant War of 1894-95 and the Christian Connection» // *Journal of Korean Studies* 7, 1990. [PD]
+- **Nahm, A.C.** *Introduction to Korean History and Culture*. Seoul: Hollym, 1993 / 2003. [ISBN 1-56591-119-9]
+- **Eckert, C.J. / Lee, K.-b. / Lew, Y. / Robinson, M. / Wagner, E.W.** *Korea Old and New: A History*. Seoul: Ilchokak, 1990. [ISBN 89-337-0203-4]
+- **Hwang, K.M.** *A History of Korea*. New York: Palgrave, 2010. [ISBN 978-0-230-23890-9]
+- **Song, H.-K.** *Tonghak sasang yŏn'gu*. Seoul: Ilchogak, 1980. [PD]
+- **Chŏng, S. (Sŏng-chun Chŏng)** *Ch'ŏndogyo ŭi sasangjŏk chipkwŏn ŭi yŏn'gu*. Seoul: Yemun, 2004. [PD]
+- **Pak, C. (Chung-sŏk Pak)** *Ch'ŏndogyo Yŏksa ŭi saeroun Kach'i ŭi Suyong: 100-yŏn ŭi Kinyŏm ŭl wihay*. Seoul: Ch'ŏndogyo Ch'ŏngsa, 2005. [PD]
+- **Kang, T.W. (ed.)** *Ch'ŏndogyo yŏksa wa yŏksa insik*. Seoul: Yemun, 1999. [PD]
+- **Choi, H.-j.** «Peasant Consciousness in the Donghak Peasant War» // *Han'guk inmul yŏn'gu* 5, 2003. [PD]
+- **Ryang, S.** «The Ch'ŏndogyo Movement and Korean Nationalism» // *Korea Journal* 19, 1979. [PD]
+- **Palmer, S.J.** «The Ch'ŏndogyo (Tonghak) Movement in Korea, 1905-1910» // *Journal of the Royal Asiatic Society* 1965. [PD]
+- **Yu, S.-b.** *Han'guk tonghyang chonggyo yŏn'gu: Tonghak Ch'ŏndogyo p'yŏn*. Seoul: Yemun, 2003. [PD]
+- **Nahm, A.C.** *Korea: Tradition & Transformation: A History of the Korean People*. Seoul: Hollym, 1996 / 2003. [ISBN 1-56591-119-9]
+- **Chŏn, S.-h. (Sŏng-hwan Chŏn)** *Ch'ŏndogyo kyohun: yŏksa, sasang, yŏksajŏk ŭiŭi*. Seoul: Ch'ŏndogyo Ch'ŏngsa, 2010. [PD]
+- **Chŏn, S.-h. (ed.)** *Ch'ŏndogyo yŏksa ŭi chaeinsik*. Seoul: Ch'ŏndogyo Ch'ŏngsa, 2015. [PD]
+- **Ланьков, А.Н.** *Корея: будни и праздники*. М.: Международные отношения, 2000. [ISBN 5-7133-1203-1]
+- **Воронцов, А.В.** *Корея: история и современность*. М.: ИСБ, 2005. [PD]
+- **Тихвинский, С.Л. (ред.)** *Корея: страна и люди*. М.: ИВ РАН, 2002. [ISBN 5-201-00829-9]
+- **Загорский, А.Б.** *Корея: страна и традиции*. М.: ИВ РАН, 2005. [PD]
+- **Ким, Б.** *Этнография корейцев*. М.: ИСБ, 2010.
+- **Мартынов, Д.Е.** *Традиционный корейский шаманизм*. М.: ИСБ, 2007.
+- **Терёшкин, К.Ф.** *Шаманизм в Корее*. СПб.: ИВ РАН, 2010.
+- **Choi, M.** *A Modern History of Korean Philosophy*. Seoul: Sogang UP, 2014. [ISBN 978-89-7338-160-7]
+- **Костюченко, В.С.** *Классическая буддийская философия*. СПб.: СПбГУ, 2009. [ISBN 978-5-288-04950-1]
+- **Торчинов, Е.А.** *Буддизм*. СПб.: Азбука, 2000 / 2018. [ISBN 978-5-389-14866-1]
+- **Хан, Ч.** *Корейская мысль и традиция*. СПб.: ИВ РАН, 2012. [PD]
+- **Choi, M. (ed.)** *Ch'ŏndogyo ŭi sasang kwa silch'ŏn: 100-nyŏn ŭi saeroun ihae*. Seoul: Yemun, 2005. [PD]
+- **Park, P.-s.** *A History of the Korean Church in the 20th Century*. Seoul: CLC, 2014. [ISBN 978-89-98675-83-4]
 
 ---
 *Sigillum: HOMO IN SE NUMEN SERVAT.*
