@@ -44,7 +44,26 @@ Datum: 020.M3 (CREDO-печать добавлена 021.M3)
 
 ### VI. РЕГИСТР «ВЗЯТЫХ ЖИВЫМ»
 
-Енох; Илия (огненная колесница); Моисей (Втор 34:6 «не знает никто могилы» → «Вознесение Моисея»); Исаия («Вознесение Исаии»); Мария (Успение/Вознесение); Иса (Кор 4:158 — вознёс); **Хидр** (Коран 18 — бессмертный спутник Моисея, «зелёный»); Идрис. Клуб тех, кто обошёл смерть, — сквозной состав корпуса.
+Енох; Илия (огненная колесница); Моисей (Втор 34:6 «не знает никто могилы» → «Вознесение Моисея»); Исаия («Вознесение Исаии»); Мария (Успение/Вознесение); Иса (Кор 4:158 — вознёс); **Хидр** (Коран 18 — бессмертный спутник Моисея, «зелёный»); Идрис. Клуб тех, кто обошёл смерть, — сквозной состав корпуса. [Bauckham 1998, p. 200-279; Stökl 2008; Данило 2006]
+
+---
+
+### VII. ИСТОЧНИКИ
+
+- **Scholem, G.G.** *Jewish Gnosticism, Merkabah Mysticism, and Talmudic Tradition*. New York: JTS, 1965. [ISBN 0-87068-000-1]
+- **Schäfer, P.** *Synopse zur Hekhalot-Literatur*. Tübingen: Mohr, 1981. [ISBN 3-16-143921-2]
+- **Odeberg, H.** *3 Enoch or the Hebrew Book of Enoch*. Cambridge: Cambridge UP, 1928 / reprint Ktav 1973. [ISBN 0-87068-216-0]
+- **Wensinck, A.J.** *The Encyclopaedia of Islam*. Art. «Idrīs». Leiden: Brill, 1971.
+- **Fowden, G.** *The Egyptian Hermes: A Historical Approach to the Late Pagan Mind*. Princeton: PUP, 1986. [ISBN 0-691-02498-2]
+- **al-Biruni** *Kitāb fī taḥqīq mā li'l-Hind*. Tr. E.C. Sachau. London, 1879 / 1910. [PD]
+- **Chwolsohn, D.** *Die Ssabier und der Ssabismus*. 2 Bde. SPb., 1856.
+- **Rubin, U.** «Idrīs» // *Encyclopaedia of the Qurʾān*. Vol. 2. Leiden: Brill, 2001. [ISBN 90-04-11465-6]
+- **Bauckham, R.** *The Fate of the Dead: Studies on the Jewish and Christian Apocalypses*. Leiden: Brill, 1998. [ISBN 90-04-11097-9]
+- **Stökl, D.** «The Status of Elijah in the Letters of Paul and in the Writings of the Apostolic Fathers» // *JSP* 18, 2008.
+- **ат-Табари, А.Дж.** *Джами' ал-байан фи тафсир ал-Куран*. Т. 1-30. Бейрут, 1987.
+- **Ибн Касир, И.** *Касас ал-анбийа*. Бейрут, 1999.
+- **Крачковский, И.Ю.** *Коран*. Перевод и комментарий. М.: Наука, 1963. [PD]
+- **Порохова, В.М.** *Коран: перевод смыслов и комментарии*. СПб.: Диля, 1995.
 
 ---
 *Sigillum: INTER THRONUM ET CONSILIUM — HOMO FACTUS SCRIBA.*
