@@ -46,6 +46,10 @@ Datum: 022.M3 (LISTS добавлены: 🔮 FUTURE IDEAS + 🚀 MY STACK + ✨
 - **Albania** ✓ 7 досье (т.н. Albania Triptychon: 7 новых, BIBLIOGRAPHIA XCIII) — **6-й этнос**
 - **Serbia** ✗ ИСКЛЮЧЕНА по заданию пользователя
 
+**ОТДЕЛЬНЫЕ ДОСЬЕ ПО ГЕРОЯМ** (BIBLIOGRAPHIA XCIV–XCV):
+- **Skanderbeg** ✓ `09-gentes/slavs/albania-skanderbeg.md` (50 КБ, BIBLIOGRAPHIA XCIV) — Георгий Кастриоти Скандербег (1405-1468), албанский «успешный Влад Цепеш» (25 лет войны vs 6 лет); отдельное досье по запросу пользователя
+- **Vlad III Цепеш** ✓ в `09-gentes/slavs/valachia-medievalis.md` (раздел в основном досье Валахии)
+
 **4-слойные модели этногенеза**:
 - Montenegro: 30% иллирийский + 25% римский + 40% славянский + 5% сербский
 - Bosnia: 45% иллирийский + 15% римский + 35% славянский + 5% османский
