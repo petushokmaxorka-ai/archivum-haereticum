@@ -50,6 +50,10 @@ Datum: 022.M3 (LISTS добавлены: 🔮 FUTURE IDEAS + 🚀 MY STACK + ✨
 - **Skanderbeg** ✓ `09-gentes/slavs/albania-skanderbeg.md` (50 КБ, BIBLIOGRAPHIA XCIV) — Георгий Кастриоти Скандербег (1405-1468), албанский «успешный Влад Цепеш» (25 лет войны vs 6 лет); отдельное досье по запросу пользователя
 - **Vlad III Цепеш** ✓ в `09-gentes/slavs/valachia-medievalis.md` (раздел в основном досье Валахии)
 
+**ФОЛЬКЛОРНЫЕ ДОСЬЕ** (BIBLIOGRAPHIA XCVI–XCVII):
+- **Serbia folklore** ✓ `04-pantheones/slavic-paganism/serbia-folklore.md` (33 КБ, BIBLIOGRAPHIA XCVI) — Вук Караджич, Косовский эпос, Марко Кралевич, толкин-связи; отдельное досье по запросу пользователя («фольклер еще нужен их, в нужную папку»)
+- **Valachia mythologia** ✓ `04-pantheones/slavic-paganism/valachia-mythologia.md` (для сравнения)
+
 **4-слойные модели этногенеза**:
 - Montenegro: 30% иллирийский + 25% римский + 40% славянский + 5% сербский
 - Bosnia: 45% иллирийский + 15% римский + 35% славянский + 5% османский
