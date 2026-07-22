@@ -1,0 +1,129 @@
+name: Create Repository Labels
+# Автоматически создаёт/обновляет 3 GitHub Labels (✨ Inspiration / 🚀 My stack / 🔮 Future ideas)
+# Триггеры:
+#   1. push в этот файл или в LABELS.md
+#   2. ручной запуск через GitHub UI (Actions → Create Repository Labels → Run workflow)
+# Использует: GITHUB_TOKEN (автоматически) + gh CLI (предустановлен в ubuntu-latest)
+
+on:
+  push:
+    paths:
+      - '.github/workflows/create-labels.yml'
+      - '.github/LABELS.md'
+  workflow_dispatch:
+    inputs:
+      force:
+        description: 'Принудительно обновить все labels (даже если не изменились)'
+        required: false
+        default: 'false'
+        type: choice
+        options:
+          - 'false'
+          - 'true'
+
+jobs:
+  create-labels:
+    name: Create/Update 3 Lists labels
+    runs-on: ubuntu-latest
+    permissions:
+      issues: write       # нужно для gh label create/edit
+      contents: read      # нужно для actions/checkout
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Create/Update ✨ inspiration (gold)
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          gh label create "inspiration" \
+            --color "FFD700" \
+            --description "Источник вдохновения для Архива (книга, фильм, лекция, миф, человек)" \
+            2>/dev/null \
+            || gh label edit "inspiration" \
+                 --color "FFD700" \
+                 --description "Источник вдохновения для Архива (книга, фильм, лекция, миф, человек)"
+          echo "✅ inspiration (FFD700)"
+
+      - name: Create/Update ✨ inspiration (с эмодзи, жёлтый)
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          gh label create "✨ inspiration" \
+            --color "F1E05A" \
+            --description "Источник вдохновения (с эмодзи) — см. REPERTORIUM-INSPIRATION.md" \
+            2>/dev/null \
+            || gh label edit "✨ inspiration" \
+                 --color "F1E05A" \
+                 --description "Источник вдохновения (с эмодзи) — см. REPERTORIUM-INSPIRATION.md"
+          echo "✅ ✨ inspiration (F1E05A)"
+
+      - name: Create/Update 🚀 my-stack (green)
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          gh label create "my-stack" \
+            --color "0E8A16" \
+            --description "Завершённый артефакт Архива (досье / корпус / визуальная карта) — см. REPERTORIUM-MY-STACK.md" \
+            2>/dev/null \
+            || gh label edit "my-stack" \
+                 --color "0E8A16" \
+                 --description "Завершённый артефакт Архива (досье / корпус / визуальная карта) — см. REPERTORIUM-MY-STACK.md"
+          echo "✅ my-stack (0E8A16)"
+
+      - name: Create/Update 🚀 my-stack (с эмодзи, зелёный)
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          gh label create "🚀 my-stack" \
+            --color "0E8A16" \
+            --description "Завершённый артефакт (с эмодзи)" \
+            2>/dev/null \
+            || gh label edit "🚀 my-stack" \
+                 --color "0E8A16" \
+                 --description "Завершённый артефакт (с эмодзи)"
+          echo "✅ 🚀 my-stack (0E8A16)"
+
+      - name: Create/Update 🔮 future-ideas (purple)
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          gh label create "future-ideas" \
+            --color "5319E7" \
+            --description "Идея для будущего досье / артефакта (ещё НЕ реализовано) — см. REPERTORIUM-FUTURE-IDEAS.md" \
+            2>/dev/null \
+            || gh label edit "future-ideas" \
+                 --color "5319E7" \
+                 --description "Идея для будущего досье / артефакта (ещё НЕ реализовано) — см. REPERTORIUM-FUTURE-IDEAS.md"
+          echo "✅ future-ideas (5319E7)"
+
+      - name: Create/Update 🔮 future-ideas (с эмодзи, фиолетовый)
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          gh label create "🔮 future-ideas" \
+            --color "5319E7" \
+            --description "Идея для будущего (с эмодзи)" \
+            2>/dev/null \
+            || gh label edit "🔮 future-ideas" \
+                 --color "5319E7" \
+                 --description "Идея для будущего (с эмодзи)"
+          echo "✅ 🔮 future-ideas (5319E7)"
+
+      - name: Verify all 6 labels exist
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          echo
+          echo "════════════════════════════════════════"
+          echo "  ТЕКУЩИЕ LABELS В РЕПОЗИТОРИИ"
+          echo "════════════════════════════════════════"
+          gh label list --json name,color,description --jq '.[] | "  \(.name) (\(.color)) — \(.description)"' | grep -E "inspiration|my-stack|future-ideas" || echo "(ничего не найдено)"
+          echo
+          echo "✅ 6 labels создано/обновлено!"
+          echo
+          echo "Issue Templates будут автоматически использовать эти labels:"
+          echo "  - .github/ISSUE_TEMPLATE/inspiration.md → inspiration + ✨ inspiration"
+          echo "  - .github/ISSUE_TEMPLATE/my-stack.md → my-stack + 🚀 my-stack"
+          echo "  - .github/ISSUE_TEMPLATE/future-ideas.md → future-ideas + 🔮 future-ideas"

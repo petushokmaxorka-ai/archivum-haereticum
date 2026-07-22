@@ -23,10 +23,22 @@
 
 ## Создание labels
 
-### Вариант 1: через `gh` CLI (рекомендуется)
+### ✅ Автоматически через GitHub Actions
+
+Workflow **`.github/workflows/create-labels.yml`** автоматически создаёт/обновляет все 6 labels:
+
+- **Триггер 1**: push в `.github/workflows/create-labels.yml` или `.github/LABELS.md`
+- **Триггер 2**: ручной запуск через **GitHub UI → Actions → "Create Repository Labels" → Run workflow**
+
+**Никаких ручных действий не нужно** — workflow использует встроенный `GITHUB_TOKEN` и `gh CLI` (предустановлен в `ubuntu-latest`).
+
+### Вариант 2: вручную через GitHub UI
+
+`https://github.com/petushokmaxorka-ai/archivum-haereticum/labels`
+
+### Вариант 3: через `gh` CLI локально
 
 ```bash
-# После установки gh и авторизации
 gh label create "inspiration" --color "FFD700" --description "Источник вдохновения для Архива"
 gh label create "✨ inspiration" --color "F1E05A" --description "Источник вдохновения (с эмодзи)"
 gh label create "my-stack" --color "0E8A16" --description "Завершённый артефакт"
@@ -34,15 +46,6 @@ gh label create "🚀 my-stack" --color "0E8A16" --description "Завершён
 gh label create "future-ideas" --color "5319E7" --description "Идея для будущего"
 gh label create "🔮 future-ideas" --color "5319E7" --description "Идея для будущего (с эмодзи)"
 ```
-
-Или запустить скрипт:
-```bash
-bash scripts/create-github-labels.sh
-```
-
-### Вариант 2: вручную через GitHub UI
-
-`https://github.com/petushokmaxorka-ai/archivum-haereticum/labels`
 
 ## Связь с Issue Templates
 
