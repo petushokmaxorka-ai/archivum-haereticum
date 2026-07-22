@@ -36,19 +36,66 @@ Datum: 021.M3 (CREDO-печать добавлена)
 
 ### III. РЕЕСТР: 04-PANTHEONES (боги и культы)
 
-**Мастер-таблицы**: `tabula.md` (8 пантеонов), `schemata.md` (паттерны), `gigantes.md`, `septem-consilium.md` (совет семи), `octavus-archangelus.md` (восьмой), `triangulatio.md` (славянская триангуляция)
+**Структура**: 14 подпапок по этносам/регионам + мастер-таблицы на верхнем уровне. ~62 досье, ~180 КБ документации, все классифицированы по Tabula Strategiarum.
 
-**Ядро ветвей**: `mesopotamia.md`, `graecia.md`, `hinduismus.md`, `taoismus.md`, `shenzhongguo.md` (Китайская народная, вклад заказчика), `buddhismus.md` (вклад заказчика), `jainismus.md`, `sikhismus.md`, `bon-tibet.md`, `ainu.md`, `siberia-shamanismus.md`, `nagas.md`, `anito.md`, `shugendo.md`, `cheondoismus.md`, `bantu.md`, `malagasy.md`, `azteca.md`, `ayahuasca.md`, `sami.md`, `basquiae.md`, `balcania-strigoi.md`, `romani.md`
+**Мастер-таблицы (верхний уровень)**: `tabula.md` (8 пантеонов), `schemata.md` (паттерны), `gigantes.md`, `septem-consilium.md` (совет семи), `octavus-archangelus.md` (восьмой), `triangulatio.md` (славянская триангуляция), `anima.md`, `animus.md`, `basquae.md`, `gigantum.md`, `fenno-ugrica.md`, `scythia-donor.md` (частично)
 
-**Ближние к своду**: `aegyptus.md`, `thot-scriba.md`, `nomen-dei.md`, `yahve-austro.md`, `tetragrammaton-technologia.md`, `samaritani.md`, `karaitae.md`, `mandaei.md`, `yazidi.md`, `druzi.md`, `beta-israel.md`
+**III.1 Славянское язычество** `04-pantheones/slavic-paganism/` (22 досье, REPLICATIO)
+- `slavic-paganism/lapis-principis.md`, `pantheon-slavicum.md`, `sacra-loca.md`, `ritus-slavicus.md` (4 обобщающих)
+- `slavic-paganism/borussia-prus.md` (Перкунас, Ромова, Судовская), `polabia.md` (Ретра, Триглав, Яровит), `polabiae.md` (хроника войны), `rugia-arkona.md` (Святовид, 1168), `kiev-980.md` (пантеон Владимира), `zbruch-idolum.md` (каменный Триглав), `svarog-faber.md` (кузнец), `navia-rusalia.md` (заложные, русалки), `dvoevere.md` (преемство святых)
+- `slavic-paganism/calendarium-liber.md` (год-книга)
+- `slavic-paganism/valachia-mythologia.md` (zmeu, iele, sânziene, Miorița, colinde, mărtișor, solomonar, zburător, drac)
 
-**Тихоокеания и новые религии**: `pacifica.md`, `anima.md`, `ifa-santeria.md`, `mormonismus.md`, `caodaismus.md`, `rastafari.md`, `kimbangismus.md`, `baron-cyprianus.md`
+**III.2 Балто-финно-угорское** `04-pantheones/balto-finnic-paganism/` (3 досье, ISOLATIO)
+- `balto-finnic-paganism/baltica.md` (Балтика, Ромова, Судовская), `fenno-ugrica.md` (финно-угоры), `sami.md` (саамы, Сейд)
 
-**Славянское язычество (боги и ритуалы)**: `borussia-prus.md` (Перкунас, Ромова, Судовская), `polabia.md` (Ретра, Триглав, Яровит), `polabiae.md` (хроника войны), `rugia-arkona.md` (Святовид, 1168), `kiev-980.md` (пантеон Владимира), `zbruch-idolum.md` (каменный Триглав), `scythia-donor.md` (иранская линия), `calendarium-liber.md` (год-книга), `svarog-faber.md` (кузнец), `navia-rusalia.md` (заложные, русалки), `dvoevere.md` (преемство святых)
+**III.3 Средиземноморское** `04-pantheones/mediterranean-paganism/` (4 досье, CONCURRENTIA)
+- `mediterranean-paganism/graecia.md` (Греция, Зевс-Олимпийцы), `aegyptus.md` (Египет, Осирис/Исида), `mesopotamia.md` (Месопотамия, Мардук/Иштар), `mediterranea.md` (средиземноморский синкретизм)
 
-**Прочие народы и веры**: `baltica.md`, `fenno-ugrica.md`, `mediterranea.md`, `litterae.md`
+**III.4 Буддийское** `04-pantheones/buddhist-paganism/` (5 досье, NODUS)
+- `buddhist-paganism/buddhismus.md`, `bon-tibet.md` (бон-Тибет), `nagas.md` (наги), `shugendo.md` (Сюгэндо), `cheondoismus.md` (чхондогё)
 
-**Балкано-Карпатский мифологический пласт**: `valachia-mythologia.md` (zmeu, iele, sânziene, Miorița, colinde, mărtișor, solomonar, zburător, drac — индоевропейский генезис)
+**III.5 Индуистское** `04-pantheones/hindu-paganism/` (3 досье, NODUS)
+- `hindu-paganism/hinduismus.md` (Ригведа, Шива, Вишну, Брахма), `jainismus.md`, `sikhismus.md`
+
+**III.6 Дальневосточное** `04-pantheones/east-asian-paganism/` (4 досье, NODUS)
+- `east-asian-paganism/taoismus.md` (даосизм, Лао-цзы), `shenzhongguo.md` (Китайская народная), `sinae-vulgaris.md`, `litterae.md` (Конфуций)
+
+**III.7 Семитское изоляция/резистенция** `04-pantheones/semitic-paganism/` (6 досье, ISOLATIO/RESISTENTIA)
+- `semitic-paganism/samaritani.md` (самаритяне), `karaitae.md` (караимы), `beta-israel.md` (бета-Исраэль), `mandaei.md` (мандеи), `druzi.md` (друзы), `yazidi.md` (езиды)
+
+**III.8 Герметическое** `04-pantheones/hermetic-paganism/` (4 досье, CONCURRENTIA)
+- `hermetic-paganism/thot-scriba.md` (Тот-писарь), `nomen-dei.md` (Имя Бога), `yahve-austro.md` (Яхве Юга), `tetragrammaton-technologia.md` (Тетраграмматон-технология)
+
+**III.9 Шаманизм** `04-pantheones/shamanic-paganism/` (1 досье, NODUS)
+- `shamanic-paganism/siberia-shamanismus.md` (Сибирский шаманизм)
+
+**III.10 Африканское** `04-pantheones/african-paganism/` (3 досье, NODUS)
+- `african-paganism/bantu.md` (Банту), `malagasy.md` (малагасийцы), `ifa-santeria.md` (Ифа-Сантерия)
+
+**III.11 Американское** `04-pantheones/american-paganism/` (3 досье, NODUS)
+- `american-paganism/azteca.md` (ацтеки, майя, инки), `ayahuasca.md` (аяуаска), `pacifica.md` (Тангароа, Мауи, Полинезия, Гавайи)
+
+**III.12 Океанийское** `04-pantheones/oceanic-paganism/` (2 досье, NODUS/ISOLATIO)
+- `oceanic-paganism/ainu.md` (айны, Хоккайдо/Курилы/Сахалин/Камчатка), `anito.md` (филиппинские анито)
+
+**III.13 Новые религии XIX–XXI вв.** `04-pantheones/new-religions/` (4 досье, NODUS)
+- `new-religions/mormonismus.md` (мормонизм, Юта), `rastafari.md` (растафари, Ямайка), `kimbangismus.md` (кимбангизм, Вьетнам), `caodaismus.md` (каодаизм, Вьетнам)
+
+**III.14 Балканский фольклор** `04-pantheones/balkan-folklore/` (1 досье, NODUS/TRANSMISSIO)
+- `balkan-folklore/balcania-strigoi.md` (страгои, вампиры, русалии)
+
+**III.15 Ближние к своду (на верхнем уровне)**: `aegyptus.md` (египетская ветвь), `romani.md` (римская), `baron-cyprianus.md` (Барон Кипра)
+
+**Tabula Strategiarum (стратегии выживания ветвей):**
+- **ISOLATIO**: Эфиопия, балто-финно-угры, езиды, бета-Исраэль, самаритяне, караимы
+- **RESISTENTIA**: Армения, друзы, мандеи
+- **REDITUS**: Гиберния
+- **EDITIO**: Зороастризм
+- **NODUS**: Бактрия, буддизм, индуизм, дальневосточное, шаманизм, африканское, американское, океанийское, новые религии, балканское
+- **CONCURRENTIA**: Аль-Андалус, средиземноморье, герметизм
+- **TRANSMISSIO**: Церковь Востока
+- **REPLICATIO**: Славия (богомилы → катары → альбигойцы)
 
 ### IV. РЕЕСТР: 09-GENTES (народы и судьбы)
 
