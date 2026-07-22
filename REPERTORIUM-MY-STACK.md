@@ -24,7 +24,7 @@ Datum: 022.M3
 
 ## II. ЗАЛ 04-PANTHEONES (18 subfolders, 67 досье)
 
-### Славянское язычество (REPLICATIO) — 24 досье
+### Славянское язычество (REPLICATIO) — 25 досье
 - `slavic-paganism/lapis-principis.md` (4 обобщающих)
 - `slavic-paganism/borussia-prus.md` (Перкунас, Ромова, Судовская)
 - `slavic-paganism/polabia.md` (Ретра, Триглав, Яровит)
@@ -39,6 +39,7 @@ Datum: 022.M3
 - `slavic-paganism/valachia-mythologia.md` (zmeu, iele, sânziene)
 - `slavic-paganism/rod-prabog.md` ✚ (Прабог, 17 КБ)
 - `slavic-paganism/mokosh-dea.md` ✚ (Великая богиня, 18 КБ)
+- `slavic-paganism/macedonia-paganitas.md` ✚ (Македонское славянское язычество, 45 КБ)
 
 ### Балто-финно-угорское (ISOLATIO) — 3 досье
 - `balto-finnic-paganism/baltica.md`, `fenno-ugrica.md`, `sami.md`

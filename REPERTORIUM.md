@@ -61,11 +61,12 @@ Datum: 022.M3 (LISTS добавлены: 🔮 FUTURE IDEAS + 🚀 MY STACK + ✨
 
 **Мастер-таблицы (верхний уровень)**: `tabula.md` (8 пантеонов), `schemata.md` (паттерны), `gigantes.md`, `septem-consilium.md` (совет семи), `octavus-archangelus.md` (восьмой), `triangulatio.md` (славянская триангуляция), `anima.md`, `animus.md`, `basquae.md`, `gigantum.md`, `fenno-ugrica.md`, `scythia-donor.md` (частично)
 
-**III.1 Славянское язычество** `04-pantheones/slavic-paganism/` (22 досье, REPLICATIO)
+**III.1 Славянское язычество** `04-pantheones/slavic-paganism/` (25 досье, REPLICATIO)
 - `slavic-paganism/lapis-principis.md`, `pantheon-slavicum.md`, `sacra-loca.md`, `ritus-slavicus.md` (4 обобщающих)
 - `slavic-paganism/borussia-prus.md` (Перкунас, Ромова, Судовская), `polabia.md` (Ретра, Триглав, Яровит), `polabiae.md` (хроника войны), `rugia-arkona.md` (Святовид, 1168), `kiev-980.md` (пантеон Владимира), `zbruch-idolum.md` (каменный Триглав), `svarog-faber.md` (кузнец), `navia-rusalia.md` (заложные, русалки), `dvoevere.md` (преемство святых)
 - `slavic-paganism/calendarium-liber.md` (год-книга)
 - `slavic-paganism/valachia-mythologia.md` (zmeu, iele, sânziene, Miorița, colinde, mărtișor, solomonar, zburător, drac)
+- `slavic-paganism/macedonia-paganitas.md` ✚ (Македонское славянское язычество: 45 КБ; 13 секций; 12 главных богов — Род, Сварог, Мокошь, Велес, Даждьбог, Святовит, Триглав, Хорс, Стрибог, Семаргл, Морена, Карна; 10 священных мест — Охрид, Скопье, Велес, Битола, Кокино, Требениште, Дебарски извор, Мариово, Янкова Чука, Кожуф; священные камни, рощи, дубы; обряды — Коледа, Купала, Масленица, Свадьба, Похороны, календарные обряды; фольклор — Голубиная книга, былины, сказки, легенды, эпос; демонология — Стригои, Русалки, Вампиры, Ведьмы, духи природы; народная медицина и магия; народная музыка и танцы; костюм и орнаменты; македонское национальное возрождение XIX в. — ВМРО 1893, Стефан Веркович, Марко Цепенков, Илинденское восстание 1903)
 
 **III.2 Балто-финно-угорское** `04-pantheones/balto-finnic-paganism/` (3 досье, ISOLATIO)
 - `balto-finnic-paganism/baltica.md` (Балтика, Ромова, Судовская), `fenno-ugrica.md` (финно-угоры), `sami.md` (саамы, Сейд)

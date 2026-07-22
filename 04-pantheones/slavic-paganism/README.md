@@ -22,9 +22,9 @@ Datum: 022.M3
 - **Османские** **и** **венгерские** **влияния** (**XV–XVIII** **вв.**) — **эпосы** **о** **«**борьбе** **с** **неверными**»**
 - **Возрождение** **«**родноверия**»** (**XX–XXI** **вв.**) — **«**Круг** **языческой** **традиции**»** (**КЯТ**), **«**Союз** **славянских** **общин**»** (**ССО**)
 
-**22** **досье** **в** **папке**:
+**23** **досье** **в** **папке**:
 - **4** **обобщающих** (**lapis-principis**, **pantheon-slavicum**, **sacra-loca**, **ritus-slavicus**)
-- **18** **частных** (**borussia-prus**, **bosnia-paganitas**, **bulgaria-paganitas**, **calendarium-liber**, **carantania-mythologia**, **carantania-paganitas**, **dvoevere**, **kiev-980**, **navia-rusalia**, **polabia**, **polabiae**, **romani**, **rugia-arkona**, **scythia-donor**, **svarog-faber**, **valachia-mythologia**, **zbruch-idolum**, **zlatorog-krpan**)
+- **19** **частных** (**borussia-prus**, **bosnia-paganitas**, **bulgaria-paganitas**, **calendarium-liber**, **carantania-mythologia**, **carantania-paganitas**, **dvoevere**, **kiev-980**, **macedonia-paganitas**, **navia-rusalia**, **polabia**, **polabiae**, **romani**, **rugia-arkona**, **scythia-donor**, **svarog-faber**, **valachia-mythologia**, **zbruch-idolum**, **zlatorog-krpan**)
 
 **Вершина**:
 - **«**Кощей** **Бессмертный**»** — **«**хтонический** **бог** **смерти**»** (общий **с** **балтами** (**Велняс**))
