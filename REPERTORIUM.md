@@ -22,13 +22,13 @@ Datum: 021.M3 (CREDO-печать добавлена)
 |---|---|---|
 | `00-manuscriptum-principale/` | PROOEMIUM, hypothesа, concordantia, CREDO | 4 |
 | `01-eventus-babel/` | Башня, Втор 32, Смотрители | 2 |
-| `02-libri-deperditi/` | Утраченные книги | 6 |
+| `02-libri-deperditi/` | Утраченные книги (4 subfolders) | 6 |
 | `03-rami-ecclesiae/` | Ветви церквей | 9 |
-| `04-pantheones/` | **Боги и культы** | 63 |
+| `04-pantheones/` | **Боги и культы** (17 subfolders) | 62 |
 | `05-probatio/` | Протоколы верификации | 4 |
 | `06-quaestiones-apertae/` | Открытые вопросы | 1 |
 | `07-scriptorium/` | 24 параллельных экспоната | 1 |
-| `08-matrix-orthodoxa/` | Православная матрица + DAMNATA-NOSTRA | 10 |
+| `08-matrix-orthodoxa/` | Православная матрица + DAMNATA-NOSTRA (3 subfolders) | 10 |
 | `09-gentes/` | **Народы и судьбы** | 21 |
 | `corpus/` | Конвейер текстов | 79 |
 | `docs/` | Живой сайт | 205 |
@@ -82,10 +82,7 @@ Datum: 021.M3 (CREDO-печать добавлена)
 **III.13 Новые религии XIX–XXI вв.** `04-pantheones/new-religions/` (4 досье, NODUS)
 - `new-religions/mormonismus.md` (мормонизм, Юта), `rastafari.md` (растафари, Ямайка), `kimbangismus.md` (кимбангизм, Вьетнам), `caodaismus.md` (каодаизм, Вьетнам)
 
-**III.14 Балканский фольклор** `04-pantheones/balkan-folklore/` (1 досье, NODUS/TRANSMISSIO)
-- `balkan-folklore/balcania-strigoi.md` (страгои, вампиры, русалии)
-
-**III.15 Волошское (румынское/молдавское) язычество** `04-pantheones/valachia-paganism/` (2 досье, NODUS)
+**III.14 Волошское (румынское/молдавское) язычество** `04-pantheones/valachia-paganism/` (2 досье, NODUS)
 - `valachia-paganism/valachia-paganitas.md` (дако-славяно-романский субстрат, Геродот → Уреке)
 - `valachia-paganism/valachia-litteratura.md` (хроникари XVII в.: Уреке 1647, Костин 1675, Некульче 1746)
 
@@ -143,10 +140,22 @@ Datum: 021.M3 (CREDO-печать добавлена)
 ### V. РЕЕСТР: ПРОЧИЕ ЗАЛЫ
 
 - **01**: `babel.md`, `vigiles.md` (Смотрители)
-- **02**: `enoch-1.md`, `enoch-2.md`, `iubilaei-kebra.md`, `golubinaya.md`, `metatron-idris.md`, `nag-hammadi.md`
-- **03**: `aethiopia.md`, `armenia.md`, `ecclesia-orientis.md`, `slavia.md`, `hibernia.md`, `persia.md`, `bactria.md`, `al-andalus.md`, `islam-rami.md`
+- **02** (4 subfolders):
+  - `biblical-apocrypha/`: `enoch-1.md`, `enoch-2.md`, `iubilaei-kebra.md`, `metatron-idris.md`
+  - `gnostic/`: `nag-hammadi.md`
+  - `slavic-folklore/` (5 досье): `golubinaya.md`, `brizinski-spomenici.md`, `stranski-pravljice.md`, `daemonologia-moldavica.md`, `balcania-strigoi.md` (Corpus Inquietorum)
+  - `orthodox-legend/`: `conversio-bagoariorum.md`
+- **03** (5 subfolders):
+  - `oriental-orthodox/`: `aethiopia.md`, `armenia.md`, `ecclesia-orientis.md`
+  - `east-european/`: `slavia.md`, `valachia-orthodoxa.md`
+  - `islamic/`: `al-andalus.md`, `islam-rami.md`
+  - `celtic-catholic/`: `hibernia.md`
+  - `persian-bactrian/`: `persia.md`, `bactria.md`
 - **05**: `probata.md`, `damnata.md`, `velesova-kniga.md` ✠, `slavyano-arii.md` ✠
-- **08**: `hidr.md`, `melchisedec.md`, `kitezh.md`, `ioannes-qui-manet.md`, `septem-dormientes.md`, `starovers-retentio.md`, `belovodye.md`, `baron-cyprianus.md`, `README.md`
+- **08** (3 subfolders):
+  - `esoteric-orthodox/`: `hidr.md`, `ioannes-qui-manet.md`, `melchisedec.md`
+  - `utopian-sacred/`: `kitezh.md`, `belovodye.md`
+  - `heresy-and-damnata/`: `baron-cyprianus.md`, `DAMNATA-NOSTRA.md`, `septem-dormientes.md`, `starovers-retentio.md`
 
 ### VI. CORPUS DIVINUS — СТАТУС КОНВЕЙЕРА
 
