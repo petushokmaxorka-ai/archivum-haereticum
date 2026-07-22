@@ -20,6 +20,13 @@ Datum: 022.M3 (LISTS добавлены: 🔮 FUTURE IDEAS + 🚀 MY STACK + ✨
 
 **Метод**: идея из 🔮 → реализация → переход в 🚀 + BIBLIOGRAPHIA-номер; источник из ✨ → реализация → цитата в досье.
 
+**Зеркало в GitHub**: 
+- **GitHub Stars Lists** (`github.com/petushokmaxorka-ai/archivum-haereticum` → Lists) — **3 списка**: ✨ Inspiration, 🚀 My stack, 🔮 Future ideas
+- **GitHub Labels** — те же 3 цвета: золотой (`inspiration`), зелёный (`my-stack`), фиолетовый (`future-ideas`)
+- **Issue Templates** (`.github/ISSUE_TEMPLATE/`) — `inspiration.md`, `my-stack.md`, `future-ideas.md`
+- **Скрипт создания labels**: `scripts/create-github-labels.sh` (`bash scripts/create-github-labels.sh`)
+- **Документация labels**: `.github/LABELS.md`
+
 ---
 
 ### I. ПРОЕКТ (актуально)
