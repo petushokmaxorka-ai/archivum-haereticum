@@ -233,14 +233,15 @@ Datum: 022.M3
 **Файл уходит отсюда когда**:
 - Удалён (переходит в git history, не в `INSPIRATION`)
 
-**Всего файлов в стеке**: 130+ досье + 5 в 00 + 5 корпусов + 1 сайт
+**Всего файлов в стеке**: 140+ досье + 5 в 00 + 5 корпусов + 1 сайт
 
-**ЗАВЕРШЁННАЯ ПОЛНАЯ СИММЕТРИЯ MONTENEGRO** (5 этносов × 7 досье = 35 досье + sub-dossier):
+**ЗАВЕРШЁННАЯ ПОЛНАЯ СИММЕТРИЯ MONTENEGRO** (6 этносов × 7 досье = 42 досье + sub-dossier):
 - **Montenegro** ✓ 7 досье: montenegro-{antiqua,romana,migratio,medievalis,ottomana,paganitas,christianitas}
 - **Bosnia** ✓ 7 досье (BIBLIOGRAPHIA LXXXIX): bosnia-{antiqua,romana,migratio,medievalis,ottomana,paganitas,christianitas}
 - **Croatia** ✓ 7 досье (BIBLIOGRAPHIA XC): croatia-{antiqua,romana,migratio,medievalis,ottomana,paganitas,christianitas}
 - **Valachia** ✓ 7 досье (BIBLIOGRAPHIA XCI): valachia-{antiqua,romana,migratio,medievalis,ottomana,paganitas,christianitas}
 - **Carantania** ✓ 7 досье (BIBLIOGRAPHIA XCII): carantania-{antiqua,romana,migratio,medievalis,ottomana,paganitas,christianitas}
+- **Albania** ✓ 7 досье (BIBLIOGRAPHIA XCIII): albania-{antiqua,romana,migratio,medievalis,ottomana,paganitas,christianitas} — **6-й этнос**
 - **Serbia** ✗ ИСКЛЮЧЕНА по заданию пользователя
 
 [См. также: `REPERTORIUM.md` (главный реестр), `REPERTORIUM-FUTURE-IDEAS.md`, `REPERTORIUM-INSPIRATION.md`]
