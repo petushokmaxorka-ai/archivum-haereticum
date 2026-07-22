@@ -112,9 +112,10 @@ Datum: 022.M3
 - `daco-vlachia/valachia-transhumantia.md` (отгонное животноводство)
 - `daco-vlachia/valachia-xix.md` (XIX в.)
 
-### Античные македонцы (EDITIO + NODUS + TRANSMISSIO) — 2 досье
+### Античные македонцы (EDITIO + NODUS + TRANSMISSIO + REPLICATIO) — 3 досье
 - `macedones/macedonia-antiqua.md` ✚ (33 КБ; династия Аргеадов, Филипп II, Александр Великий, эллинизм)
 - `macedones/macedonia-romana.md` ✚ (35 КБ; римский + византийский период до славян, Via Egnatia, Апостол Павел, Юстиниан, Македонская династия 867-1056)
+- `macedones/macedonia-migratio.md` ✚ (38 КБ; славянская миграция VI-VII вв., 3 волны, 4 маршрута, 6 племён, ~400 топонимов, 3 версии этногенеза македонцев)
 
 **Итого зал 09**: **46 досье, ~150 КБ**
 
