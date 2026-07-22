@@ -7,7 +7,7 @@ Datum: 022.M3
 
 > *Заявление владельца: **MACEDONIA ROMANA** — **«**р**и**м**с**к**и**й** **и** **в**и**з**а**н**т**и**й**с**к**и**й** **М**а**к**е**д**о**н**и**и** **д**о** **п**р**и**х**о**д**а** **с**л**а**в**я**н**»** (**II** **в.** **д**о** **н.** **э.** — **VI** **в.** **н.** **э.**, **с** **э**к**с**к**у**р**с**о**м** **в** **М**а**к**е**д**о**н**с**к**у**ю** **д**и**н**а**с**т**и**ю** **X** **в.**). **Новое** **досье**, **д**о**п**о**л**н**я**ю**щ**е**е** **`macedonia-antiqua.md`** (**«**А**нтичная Македония**»**) **и** **`macedonia-slavica.md`** (**«**Славянская Македония**»**). **Помним** **цель**: **«**ч**е**р**е**з** **р**и**м**с**к**у**ю**/в**и**з**а**н**т**и**й**с**к**у**ю** **М**а**к**е**д**о**н**и**ю** **у**в**и**д**е**т**ь** **п**е**р**е**д**а**ч**у** **р**и**м**с**к**о**г**о**/в**и**з**а**н**т**и**й**с**к**о**г**о** **н**а**с**л**е**д**и**я** **с**л**а**в**я**н**а**м**»**.*
 >
-> *См. также: `00-manuscriptum-principale/CREDO.md`, `00/PROOEMIUM.md`, `00/concordantia.md`, `01-eventus-babel/babel.md`, `09-gentes/macedones/macedonia-antiqua.md` (античная Македония), `09-gentes/slavs/macedonia-slavica.md` (славянская Македония), `04-pantheones/mediterranean-paganism/graecia.md` (Греция), `04-pantheones/semitic-paganism/`, `08-matrix-orthodoxa/` (православная матрица), `02-libri-deperditi/biblical-apocrypha/`.*
+> *См. также: `00-manuscriptum-principale/CREDO.md`, `00/PROOEMIUM.md`, `00/concordantia.md`, `01-eventus-babel/babel.md`, `09-gentes/graeci/macedonia-antiqua.md` (античная Македония), `09-gentes/slavs/macedonia-slavica.md` (славянская Македония), `04-pantheones/mediterranean-paganism/graecia.md` (Греция), `04-pantheones/semitic-paganism/`, `08-matrix-orthodoxa/` (православная матрица), `02-libri-deperditi/biblical-apocrypha/`.*
 
 ---
 
@@ -402,4 +402,4 @@ Datum: 022.M3
 - **Dimitrov** **B.** *«The** **Macedonian** **Renaissance**»*, **Sofia**, **1998**
 - **Ostrogorsky** **G.** *History of the Byzantine State*, **Oxford**, **1980**
 
-[См. также: `00-manuscriptum-principale/CREDO.md`, `00/PROOEMIUM.md`, `00/concordantia.md`, `01-eventus-babel/babel.md`, `09-gentes/macedones/macedonia-antiqua.md` (античная Македония), `09-gentes/slavs/macedonia-slavica.md` (славянская Македония), `04-pantheones/mediterranean-paganism/graecia.md`, `04-pantheones/semitic-paganism/`, `08-matrix-orthodoxa/` (православная матрица), `02-libri-deperditi/biblical-apocrypha/`]
+[См. также: `00-manuscriptum-principale/CREDO.md`, `00/PROOEMIUM.md`, `00/concordantia.md`, `01-eventus-babel/babel.md`, `09-gentes/graeci/macedonia-antiqua.md` (античная Македония), `09-gentes/slavs/macedonia-slavica.md` (славянская Македония), `04-pantheones/mediterranean-paganism/graecia.md`, `04-pantheones/semitic-paganism/`, `08-matrix-orthodoxa/` (православная матрица), `02-libri-deperditi/biblical-apocrypha/`]
