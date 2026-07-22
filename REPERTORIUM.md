@@ -69,6 +69,22 @@ Datum: 022.M3 (LISTS добавлены: 🔮 FUTURE IDEAS + 🚀 MY STACK + ✨
 - **Polabia paganitas** ✓ `04-pantheones/slavic-paganism/polabia-paganitas.md` (38 КБ, BIBLIOGRAPHIA CIV) — пантеон полабских славян: **Свентовит** (Ретра, Аркона — верховный бог), **Яровит** (Вольгаст — бог войны), **Триглав** (Волин, Щецин — трёхглавый), **Радегаст** (Гавельберг — бог войны+гостеприимства), **Чернобог** (Черняхов — тёмный бог), **Сива/Жива** (мать богов), **Припегала** (богиня весны), **Поревит** (бог плодородия); 8 великих капищ; параллели с восточными славянами (Свентовит≈Даждьбог, Яровит≈Ярило, Триглав≈Троян, Радегаст≈Сварог, Сива≈Мокошь, Припегала≈Лада, Поревит≈Род)
 - **Polabia christianitas** ✓ `08-matrix-orthodoxa/polabia-christianitas.md` (35 КБ, BIBLIOGRAPHIA CV) — христианизация: Мейсенская епархия 968 → восстание 983 → Отто Бамбергский 1124–1128 → Северный крестовый поход 1147 → разрушение Арконы 1168 → разрушение Ретры 1180 → разрушение Бранибора 1227 → Bauerndeutsche XIII–XV → Реформация XVI → Тридцатилетняя война 1618–1648 → прусская колонизация; **двоеверие** = Свентовит = Св. Витий, Яровит = Св. Георгий, Триглав = Три царя, Сива = Дева Мария; **лужичане** = единственные живые полабские славяне (50 000 носителей)
 
+**ГОРОДСКОЙ ЦИКЛ ПОЛАБИИ** (BIBLIOGRAPHIA CVI–CXVII, 11 досье, ~216 КБ) — города славянского происхождения:
+- **Berlin Slavicum** ✓ `09-gentes/slavs/berlin-slavicum.md` (60 КБ, BIBLIOGRAPHIA CVI) — **ГЛАВНЫЙ КОЗЫРЬ** архива: Берлин = Бранибор (Берлин = славянское от «berl-» = медведь); 50+ районов Берлина со славянскими топонимами; 1000+ артефактов; 30+ городищ; лужичане в Берлине до XXI в. (20 000 чел.)
+- **Polabia Dresden** ✓ `09-gentes/slavs/polabia-dresden.md` (17 КБ, BIBLIOGRAPHIA CVII) — Drožd'any (от «дрозд»); 30+ районов, 100+ топонимов Саксонии
+- **Polabia Leipzig** ✓ `09-gentes/slavs/polabia-leipzig.md` (11 КБ, BIBLIOGRAPHIA CVIII) — Lipsk (от «липа»); сорбы в Лейпциге
+- **Polabia Magdeburg** ✓ `09-gentes/slavs/polabia-magdeburg.md` (17 КБ, BIBLIOGRAPHIA CIX) — Magedeburg (от «дева»); гаволяне
+- **Polabia Hamburg** ✓ `09-gentes/slavs/polabia-hamburg.md` (18 КБ, BIBLIOGRAPHIA CX) — Hammaburg (от «изгиб реки»); 50+ топонимов
+- **Polabia Potsdam** ✓ `09-gentes/slavs/polabia-potsdam.md` (18 КБ, BIBLIOGRAPHIA CXI) — Poztupimi (от «под дубами»)
+- **Polabia Brandenburg** ✓ `09-gentes/slavs/polabia-brandenburg.md` (21 КБ, BIBLIOGRAPHIA CXII) — Brandibor (от «защита»); 100+ топонимов
+- **Polabia Schwerin** ✓ `09-gentes/slavs/polabia-schwerin.md` (11 КБ, BIBLIOGRAPHIA CXIII) — Zwerin (от «зверь»)
+- **Polabia Rostock+Wismar** ✓ `09-gentes/slavs/polabia-rostock-wismar.md` (12 КБ, BIBLIOGRAPHIA CXIV) — Rastok + Wysmor; порты ободритов
+- **Polabia Lübeck+Stralsund** ✓ `09-gentes/slavs/polabia-lubeck-stralsund.md` (15 КБ, BIBLIOGRAPHIA CXV-CXVI) — Lybeke + Stréle; столицы Ганзы
+- **Polabia Cottbus** ✓ `09-gentes/slavs/polabia-cottbus.md` (16 КБ, BIBLIOGRAPHIA CXVII) — Chotěbuz (от «горячий дом»); лужичане до XXI в. (50 000)
+
+**CONCORDANTIA POLABIA** (BIBLIOGRAPHIA CXVIII, ~42 КБ) — **«Святой Грааль полабского архива»**:
+- **CONCORDANTIA POLABIA** ✓ `00-manuscriptum-principale/concordantia-polabia.md` (42 КБ, BIBLIOGRAPHIA CXVIII) — **главный артефакт полабского корпуса**: 8 великих племён (древляне, лютичи, бодричи, поморяне, лужичане, гаволяне, сорбы, полабцы), 8 верховных богов, 8 великих капищ, 13 крупных городов, 1000+ славянских топонимов, 200+ заимствований в немецком, двоеверие до XVIII в.; 1500+ лет полабской истории (V в. н.э. — XXI в. н.э.)
+
 **4-слойные модели этногенеза**:
 - Montenegro: 30% иллирийский + 25% римский + 40% славянский + 5% сербский
 - Bosnia: 45% иллирийский + 15% римский + 35% славянский + 5% османский
