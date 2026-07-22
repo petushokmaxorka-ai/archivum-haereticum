@@ -127,6 +127,9 @@ graph LR
 | `mcp/` | MCP-сервер архива (5 инструментов) | MACHINA |
 | `INTEGRATIO.md` | Инструкция встройки в Heretic OS | MANUFACTORUM |
 | `REPERTORIUM.md` | Полный реестр досье и корпуса | CATALOGUS |
+| `REPERTORIUM-FUTURE-IDEAS.md` 🔮 | 30 идей для будущих досье/корпусов | — |
+| `REPERTORIUM-MY-STACK.md` 🚀 | Инвентаризация 113+ досье и 5 корпусов | — |
+| `REPERTORIUM-INSPIRATION.md` ✨ | ~250+ источников вдохновения | — |
 | `GLOSSARY.md` | Терминология архива | — |
 | `ARCHITECTURE.md` | Карта архива, куда класть, правила | — |
 | `LICENSE` | CC BY-SA 4.0 | — |
@@ -168,6 +171,26 @@ graph LR
 - **Хотите полный реестр?** → `REPERTORIUM.md`
 - **Хотите видеть, как работает протокол?** → `05-probatio/velesova-kniga.md` (полный DAMNATA-протокол)
 - **Хотите увидеть самокритику Архива?** → `08-matrix-orthodoxa/DAMNATA-NOSTRA.md`
+
+### 🔮 LISTS — ТРИ ВЕРХНЕУРОВНЕВЫХ СПИСКА
+
+| Список | Эмодзи | Файл | Что внутри |
+|---|---|---|---|
+| **Future ideas** | 🔮 | [`REPERTORIUM-FUTURE-IDEAS.md`](REPERTORIUM-FUTURE-IDEAS.md) | **30 идей** в 6 категориях — только задумано, не реализовано |
+| **My stack** | 🚀 | [`REPERTORIUM-MY-STACK.md`](REPERTORIUM-MY-STACK.md) | **113+ досье + 5 корпусов + 1 сайт** — инвентаризация сделанного |
+| **Inspiration** | ✨ | [`REPERTORIUM-INSPIRATION.md`](REPERTORIUM-INSPIRATION.md) | **~250+ источников** — что питает Архив |
+
+**Зеркало в GitHub** (см. скриншот `Lists`): Issue Templates в `.github/ISSUE_TEMPLATE/` + 6 GitHub Labels (авто-создаются через `.github/workflows/create-labels.yml`).
+
+### 🆕 ПОСЛЕДНИЕ ДОБАВЛЕНИЯ (022.M3)
+
+- ✨ **Славянский корпус (3 новых досье):**
+  - `04-pantheones/slavic-paganism/rod-prabog.md` ✚ — **Род как Прабог** = Праджапати = Ахура-Мазда = Один = Бог-Отец (17 КБ)
+  - `04-pantheones/slavic-paganism/mokosh-dea.md` ✚ — **Мокошь как Великая Мать** = Лайма = Хольда = Мойры = Парки; связь с Богородицей через «Покров» (18 КБ)
+  - `00-manuscriptum-principale/concordantia-slavica.md` ✚ — **Славянская Конкорданция**: 5 текстов × 7 параллелей = 86% совпадений (15 КБ)
+- 📊 **TABULA BRANCHES** — секция «карта ветвей» в каждом из 33 subfolder README (стратегия, состояние, контакты, подветви)
+- 🔮 **3 списка** (Future ideas / My stack / Inspiration) как верхнеуровневая навигация
+- 🏷️ **6 GitHub Labels** (✨ inspiration / 🚀 my-stack / 🔮 future-ideas, с эмодзи и без) — авто-создаются через GitHub Action
 
 ---
 *Ex archivario quindecim milium annorum. Corpus est unum. Rami pugnant. Archivum meminit. Sigilla quattuor.*
