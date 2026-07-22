@@ -109,9 +109,25 @@ Datum: 021.M3 (CREDO-печать добавлена)
 
 ### IV. РЕЕСТР: 09-GENTES (народы и судьбы)
 
-**Ядро**: `09-gentes/slavs/tribus-slavica.md` (30+ племён), `scythae.md` (степь)
+**Структура**: 3 подпапки по этносам/регионам (slavs/scythae/daco-vlachia) + ~46 досье (~150 КБ).
 
-**Запад**: `09-gentes/slavs/luzicia-belog.md` (Белбог/Чернобог, выжившее племя), `09-gentes/slavs/carantania.md` (Камень, Брижинские листки, Кресник, 1414), `09-gentes/slavs/noricum-carantania.md` (Норик, Северин, Само), `09-gentes/slavs/moravia-magna.md` (828–906), `09-gentes/slavs/methodius-abc.md` (азбука)
+**IV.1 Славянские племена** `09-gentes/slavs/` (40 досье)
+- Ядро: `slavs/tribus-slavica.md` (30+ племён)
+- Запад: `slavs/luzicia-belog.md`, `slavs/carantania.md`, `slavs/noricum-carantania.md`, `slavs/moravia-magna.md`, `slavs/methodius-abc.md`, `slavs/carantania-marchia.md`, `slavs/samo-ducatus.md`
+- Юг: `slavs/meridiones-bulgaria.md`, `slavs/serbia-rashka.md`, `slavs/croatia-glagolitica.md`, `slavs/croatia-antiqua.md`, `slavs/croatia-regnum.md`, `slavs/croatia-religiosa.md`, `slavs/croatia-folklore.md`, `slavs/croatia-modern.md`, `slavs/bulgaria-prima.md`, `slavs/bulgaria-secunda.md`, `slavs/bulgaria-cultura.md`, `slavs/bulgaria-ecclesia.md`, `slavs/bulgaria-folklore.md`, `slavs/bulgaria-lingua.md`, `slavs/bulgaria-modern.md`, `slavs/bulgaria-renascentia.md`
+- Боснийская арка (7): `slavs/illyria-bosnia.md`, `slavs/bosna-media.md`, `slavs/bogomili.md`, `slavs/bosnia-ecclesia.md`, `slavs/bosnia-regnum.md`, `slavs/stecci-bosancica.md`, `slavs/bosnia-musulmana.md`
+- Волошская арка: `slavs/valachia-sclavia.md`, `slavs/bessarabia.md`, `slavs/moldavia-sclavica.md`
+- Общее: `slavs/lingua-bosnica.md`, `slavs/carpitoslavi.md`, `slavs/slavi-martyrium.md`, `slavs/slavi-volochi.md`, `slavs/slavica-xix.md`
+
+**IV.2 Скифы** `09-gentes/scythae/` (1 досье, NODUS)
+- `scythae/scythae.md` (степь, Геродот кн. IV/V, «скифский логос» Дария I ок. 513 до н.э., Курган Толстая Могила 1900 г. (Толстой И.И./Резніченко), Аржан 2 Тувы 2001 г., звериный стиль)
+
+**IV.3 Дако-влахи** `09-gentes/daco-vlachia/` (5 досье, NODUS)
+- `daco-vlachia/dacia-traiana.md` (Дакия-Трояна, 106-271 н.э., Траян, Сармизегетуза, Апулум, Ульпия Траяна)
+- `daco-vlachia/valachia-basarab.md` (династия Басараб 1310-1716, Влад III Дракула 1448-1476, Михай Храбрый 1593-1601)
+- `daco-vlachia/valachia-diaspora.md` (влахи в диаспоре: Аренатос/Волохи/Влахи/Аромауны/Мегленорумыны/Истро-румыны)
+- `daco-vlachia/valachia-transhumantia.md` (отгонное животноводство как механизм романизации)
+- `daco-vlachia/valachia-xix.md` (XIX в.: Тудор Владимиреску 1821, Революция 1848, объединение 1859, Королевство 1881)
 
 **Юг**: `09-gentes/slavs/meridiones-bulgaria.md`, `09-gentes/slavs/serbia-rashka.md`, `09-gentes/slavs/croatia-glagolitica.md`
 
