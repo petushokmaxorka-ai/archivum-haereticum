@@ -97,7 +97,7 @@ Datum: 022.M3
 ### Славяне (REPLICATIO) — 40 досье, 9 регионов
 - **Ядро**: `slavs/tribus-slavica.md` (30+ племён)
 - **Запад**: `luzicia-belog`, `carantania`, `noricum-carantania`, `moravia-magna`, `methodius-abc`, `carantania-marchia`, `samo-ducatus`
-- **Юг**: `meridiones-bulgaria`, `serbia-rashka`, `croatia-glagolitica`, `croatia-antiqua`, `croatia-regnum`, `croatia-religiosa`, `croatia-folklore`, `croatia-modern`, `bulgaria-prima/secunda/cultura/ecclesia/folklore/lingua/modern/renascentia`
+- **Юг**: `meridiones-bulgaria`, `serbia-rashka`, `macedonia-slavica` ✚, `croatia-glagolitica`, `croatia-antiqua`, `croatia-regnum`, `croatia-religiosa`, `croatia-folklore`, `croatia-modern`, `bulgaria-prima/secunda/cultura/ecclesia/folklore/lingua/modern/renascentia`
 - **Боснийская арка (7)**: `illyria-bosnia`, `bosna-media`, `bogomili`, `bosnia-ecclesia`, `bosnia-regnum`, `stecci-bosancica`, `bosnia-musulmana`
 - **Волошская арка**: `valachia-sclavia`, `bessarabia`, `moldavia-sclavica`
 - **Общее**: `lingua-bosnica`, `carpitoslavi`, `slavi-martyrium`, `slavi-volochi`, `slavica-xix`
