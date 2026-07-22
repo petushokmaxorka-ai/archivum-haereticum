@@ -135,7 +135,7 @@ Datum: 022.M3 (LISTS добавлены: 🔮 FUTURE IDEAS + 🚀 MY STACK + ✨
 **IV.1 Славянские племена** `09-gentes/slavs/` (40 досье)
 - Ядро: `slavs/tribus-slavica.md` (30+ племён)
 - Запад: `slavs/luzicia-belog.md`, `slavs/carantania.md`, `slavs/noricum-carantania.md`, `slavs/moravia-magna.md`, `slavs/methodius-abc.md`, `slavs/carantania-marchia.md`, `slavs/samo-ducatus.md`
-- Юг: `slavs/meridiones-bulgaria.md`, `slavs/serbia-rashka.md`, `slavs/croatia-glagolitica.md`, `slavs/croatia-antiqua.md`, `slavs/croatia-regnum.md`, `slavs/croatia-religiosa.md`, `slavs/croatia-folklore.md`, `slavs/croatia-modern.md`, `slavs/bulgaria-prima.md`, `slavs/bulgaria-secunda.md`, `slavs/bulgaria-cultura.md`, `slavs/bulgaria-ecclesia.md`, `slavs/bulgaria-folklore.md`, `slavs/bulgaria-lingua.md`, `slavs/bulgaria-modern.md`, `slavs/bulgaria-renascentia.md`
+- Юг: `slavs/meridiones-bulgaria.md`, `slavs/serbia-rashka.md`, `slavs/macedonia-slavica.md` ✚, `slavs/croatia-glagolitica.md`, `slavs/croatia-antiqua.md`, `slavs/croatia-regnum.md`, `slavs/croatia-religiosa.md`, `slavs/croatia-folklore.md`, `slavs/croatia-modern.md`, `slavs/bulgaria-prima.md`, `slavs/bulgaria-secunda.md`, `slavs/bulgaria-cultura.md`, `slavs/bulgaria-ecclesia.md`, `slavs/bulgaria-folklore.md`, `slavs/bulgaria-lingua.md`, `slavs/bulgaria-modern.md`, `slavs/bulgaria-renascentia.md`
 - Боснийская арка (7): `slavs/illyria-bosnia.md`, `slavs/bosna-media.md`, `slavs/bogomili.md`, `slavs/bosnia-ecclesia.md`, `slavs/bosnia-regnum.md`, `slavs/stecci-bosancica.md`, `slavs/bosnia-musulmana.md`
 - Волошская арка: `slavs/valachia-sclavia.md`, `slavs/bessarabia.md`, `slavs/moldavia-sclavica.md`
 - Общее: `slavs/lingua-bosnica.md`, `slavs/carpitoslavi.md`, `slavs/slavi-martyrium.md`, `slavs/slavi-volochi.md`, `slavs/slavica-xix.md`
@@ -150,7 +150,10 @@ Datum: 022.M3 (LISTS добавлены: 🔮 FUTURE IDEAS + 🚀 MY STACK + ✨
 - `daco-vlachia/valachia-transhumantia.md` (отгонное животноводство как механизм романизации)
 - `daco-vlachia/valachia-xix.md` (XIX в.: Тудор Владимиреску 1821, Революция 1848, объединение 1859, Королевство 1881)
 
-**Юг**: `09-gentes/slavs/meridiones-bulgaria.md`, `09-gentes/slavs/serbia-rashka.md`, `09-gentes/slavs/croatia-glagolitica.md`
+**IV.4 Античные македонцы** `09-gentes/macedones/` (1 досье, EDITIO + NODUS)
+- `macedones/macedonia-antiqua.md` ✚ (Античная Македония: 33 КБ; династия Аргеадов IX-IV вв. до н.э.; Филипп II — реформа армии, сариссофоры, Херонея 338; Александр III Великий — Граник 334, Исс 333, Гавгамелы 331, поход в Индию 327-325; эллинистические диадохи — Птолемеи, Селевкиды, Антигониды, Атталиды; Вергина 1977-1980, Андроникос, «маска Агамемнона» = Филипп II; сравнительная таблица 3 версий этноса; Арриан «Анабасис Александра», Плутарх, Геродот, Страбон)
+
+**Юг**: `09-gentes/slavs/meridiones-bulgaria.md`, `09-gentes/slavs/serbia-rashka.md`, `09-gentes/slavs/macedonia-slavica.md` ✚, `09-gentes/slavs/croatia-glagolitica.md`
 
 **Боснийская арка**: `09-gentes/slavs/illyria-bosnia.md` → `09-gentes/slavs/bosna-media.md` → `09-gentes/slavs/bogomili.md` → `09-gentes/slavs/bosnia-ecclesia.md` → `09-gentes/slavs/bosnia-regnum.md` → `09-gentes/slavs/stecci-bosancica.md` → `09-gentes/slavs/bosnia-musulmana.md`
 

@@ -112,6 +112,9 @@ Datum: 022.M3
 - `daco-vlachia/valachia-transhumantia.md` (отгонное животноводство)
 - `daco-vlachia/valachia-xix.md` (XIX в.)
 
+### Античные македонцы (EDITIO + NODUS) — 1 досье
+- `macedones/macedonia-antiqua.md` ✚ (33 КБ; династия Аргеадов, Филипп II, Александр Великий, эллинизм)
+
 **Итого зал 09**: **46 досье, ~150 КБ**
 
 ---
