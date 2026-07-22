@@ -601,6 +601,26 @@ graph TB
 
 ---
 
+---
+
+## TABULA BRANCHES — карта ветвей slavs
+
+**Состояние ветви на 022.M3** (только задокументированное):
+
+| **Маркер** | **Что** | **Досье** |
+|---|---|---|
+| **Стратегия** | **REPLICATIO** | — |
+| **Состояние** | **живая (40 досье, 9 ветвей)** | — |
+| **контакт** | контакт Балты (Лайма, Род) | — |
+| **контакт** | контакт Скифия (общее наследие) | — |
+| **контакт** | контакт Германцы (Один, Хольда) | — |
+| **подветвь** | подветвь Запад (Лужица, Карантания, Моравия, Хорватия) | — |
+| **подветвь** | подветвь Юг (Болгария, Сербия, Босния) | — |
+| **подветвь** | подветвь Восток (Русь, Волынь, Бессарабия, Молдавия) | — |
+| **Досье** | 40 досье по 9 регионам: tribus-slavica, luzicia-belog, carantania, moravia-magna, methodius-abc, samo-ducatus, meridiones-bulgaria, serbia-rashka, croatia-glagolitica, illiria-bosnia, bogomili, bosnia-ecclesia, valachia-sclavia, bessarabia, moldavia-sclavica, lingua-bosnica, carpitoslavi, slavi-martyrium, slavi-volochi, slavica-xix | `40 досье по 9 регионам: tribus-slavica, luzicia-belog, carantania, moravia-magna, methodius-abc, samo-ducatus, meridiones-bulgaria, serbia-rashka, croatia-glagolitica, illiria-bosnia, bogomili, bosnia-ecclesia, valachia-sclavia, bessarabia, moldavia-sclavica, lingua-bosnica, carpitoslavi, slavi-martyrium, slavi-volochi, slavica-xix.md` |
+
+**Главный вывод**: Славянский Авеста, Славяне до славян, Mappa Slavica, Concordantia Bohemica, Пра-Славь — все в REPERTORIUM §X
+
 ## ИСТОЧНИКИ
 
 - **Sedov, V.V.** *Славяне: историко-археологическое исследование*. М.: Языки славянской культуры, 2002. [ISBN 5-94457-073-3]
