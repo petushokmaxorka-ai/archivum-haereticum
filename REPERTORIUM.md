@@ -54,6 +54,11 @@ Datum: 022.M3 (LISTS добавлены: 🔮 FUTURE IDEAS + 🚀 MY STACK + ✨
 - **Serbia folklore** ✓ `04-pantheones/slavic-paganism/serbia-folklore.md` (33 КБ, BIBLIOGRAPHIA XCVI) — Вук Караджич, Косовский эпос, Марко Кралевич, толкин-связи; отдельное досье по запросу пользователя («фольклер еще нужен их, в нужную папку»)
 - **Valachia mythologia** ✓ `04-pantheones/slavic-paganism/valachia-mythologia.md` (для сравнения)
 
+**ЛИТУРГИЧЕСКИЙ КОРПУС** (BIBLIOGRAPHIA XCVII–XCIX):
+- **Slavic prayers** ✓ `04-pantheones/slavic-paganism/slavic-prayers.md` (31 КБ, BIBLIOGRAPHIA XCVII) — 12 молитв волхвов (Даждьбог, Сварог, Велес, Перун, Мокошь, Стрибог, Хорс, Род, Марена, Коляда, Купала, Лада) + 4 чина + 8 заговоров; старо-славянский + перевод
+- **Veles book** ✓ `04-pantheones/slavic-paganism/veles-book.md` (12 КБ, BIBLIOGRAPHIA XCVIII) — критический анализ «Велесовой книги» (подделка XX в.?)
+- **HTML на сайте** ✓ `docs/slavic-prayers/index.html` (36 КБ) — молитвы волхвов в стиле сайта (оригинал слева, перевод справа); добавлены в навигацию http://petushokmaxorka-ai.github.io/archivum-haereticum
+
 **4-слойные модели этногенеза**:
 - Montenegro: 30% иллирийский + 25% римский + 40% славянский + 5% сербский
 - Bosnia: 45% иллирийский + 15% римский + 35% славянский + 5% османский

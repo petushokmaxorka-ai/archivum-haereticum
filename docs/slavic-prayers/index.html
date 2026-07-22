@@ -1,0 +1,859 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>МОЛИТВЫ ВОЛХВОВ · Славянская устная библия · Архивум</title>
+<style>
+:root{
+  --bg:#0a0806;--panel:#15110b;--line:#2a2418;--gold:#c9a227;--gold-dim:#8a7119;
+  --ink:#e0d4b3;--ink-dim:#9a8e72;--orig:#f0e4c2;--rus:#d8c89a;--red:#8c2f26;
+  --sun:#e8b84a;--sky:#6a8aac;--fire:#c45a2a;--earth:#7a9a4a;
+}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:Georgia,'Times New Roman',serif;line-height:1.6}
+a{color:var(--gold);text-decoration:none}a:hover{text-decoration:underline}
+header.top{border-bottom:3px double var(--gold-dim);padding:24px;background:linear-gradient(180deg,#1a1208,#0a0806);text-align:center}
+header.top .brand{font-size:11px;letter-spacing:4px;color:var(--ink-dim);text-transform:uppercase;margin-bottom:8px}
+header.top h1{margin:0 0 8px;font-size:34px;color:var(--gold);font-weight:normal;text-shadow:0 0 8px rgba(201,162,39,0.3)}
+header.top .sub{color:var(--ink-dim);font-size:13px;font-style:italic;max-width:780px;margin:0 auto}
+.stamp{display:inline-block;border:1px solid var(--gold);color:var(--gold);font-size:10px;letter-spacing:2px;padding:3px 10px;margin:0 4px;vertical-align:middle}
+.stamp.credo{color:var(--sun);border-color:var(--sun);background:rgba(232,184,74,0.05)}
+.stamp.sus{color:var(--gold-dim);border-color:var(--gold-dim)}
+.stamp.dam{color:var(--red);border-color:var(--red)}
+nav.menu{padding:10px 24px;border-bottom:1px solid var(--line);background:var(--panel);font-size:12px;text-align:center;color:var(--ink-dim)}
+nav.menu a{margin:0 8px;color:var(--gold);white-space:nowrap}
+.intro{padding:24px;max-width:1000px;margin:0 auto;font-size:14px;color:var(--ink-dim);border-bottom:1px solid var(--line);background:rgba(201,162,39,0.02)}
+.intro p{margin:0 0 12px}
+.intro strong{color:var(--gold)}
+nav.chapters{padding:12px 24px;border-bottom:1px solid var(--line);background:var(--panel);font-size:12px;color:var(--ink-dim);text-align:center}
+nav.chapters a{color:var(--gold);margin:0 4px;padding:3px 8px;border:1px solid transparent;display:inline-block}
+nav.chapters a:hover{border-color:var(--gold-dim);text-decoration:none}
+.god-block{border:1px solid var(--line);margin:20px auto;max-width:1100px;background:var(--panel);box-shadow:0 0 30px rgba(0,0,0,0.5)}
+.god-header{padding:18px 24px;background:linear-gradient(90deg,#1a1408,var(--panel));border-bottom:2px solid var(--gold-dim);display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap}
+.god-header h2{margin:0;font-size:24px;color:var(--gold);font-weight:normal;flex:1;min-width:200px}
+.god-header .god-meta{font-size:11px;color:var(--ink-dim);letter-spacing:1px;text-align:right}
+.god-symbol{font-size:30px;margin-right:12px;display:inline-block;vertical-align:middle}
+.god-name{font-size:28px;color:var(--gold);letter-spacing:0.05em;vertical-align:middle}
+table.verses{width:100%;border-collapse:collapse}
+table.verses td{vertical-align:top;padding:14px 18px;border-bottom:1px solid var(--line);font-size:15px}
+td.label{width:90px;color:var(--gold);font-size:11px;letter-spacing:1px;text-transform:uppercase;padding-top:18px;font-weight:bold}
+td.orig{width:50%;font-family:'Cambria','Garamond',Georgia,serif;font-size:16px;line-height:1.8;color:var(--orig);font-style:italic;border-right:1px solid var(--line)}
+td.rus{width:50%;color:var(--rus);font-size:15px;line-height:1.7}
+tr.refhead td{background:rgba(201,162,39,0.08);color:var(--gold);font-size:11px;letter-spacing:2px;padding:8px 18px;border-bottom:1px solid var(--gold-dim);text-transform:uppercase}
+.section-head{background:linear-gradient(90deg,#1a1408,#15110b);color:var(--gold);font-size:18px;letter-spacing:0.15em;padding:18px 24px;border-bottom:1px solid var(--gold-dim);margin-top:30px;text-align:center;text-transform:uppercase}
+.ritual-block{margin:30px auto;max-width:1100px;border:1px solid var(--line);background:var(--panel)}
+.ritual-block h3{margin:0;padding:14px 24px;background:rgba(232,184,74,0.08);color:var(--sun);font-size:18px;letter-spacing:0.1em;border-bottom:1px solid var(--gold-dim);text-transform:uppercase}
+.ritual-block table.verses td.orig{color:var(--sun);font-size:15.5px}
+footer{padding:30px 24px;color:var(--ink-dim);font-size:12px;border-top:2px solid var(--gold-dim);margin-top:40px;background:var(--panel);text-align:center;line-height:1.7}
+.sources{padding:18px 24px;background:var(--panel);border-top:1px solid var(--gold-dim);font-size:12px;color:var(--ink-dim);text-align:center;line-height:1.7}
+.damnata{padding:18px 24px;background:rgba(140,47,38,0.05);border-top:1px solid var(--red);font-size:13px;color:var(--ink);max-width:1100px;margin:20px auto}
+.damnata h3{color:var(--red);margin:0 0 12px;font-size:16px;letter-spacing:0.1em}
+.damnata ol{margin:0;padding-left:20px}
+.damnata li{margin-bottom:8px;color:var(--ink-dim)}
+.damnata li strong{color:var(--ink)}
+.epilogue{padding:30px 24px;max-width:900px;margin:30px auto;background:rgba(201,162,39,0.03);border-left:4px solid var(--gold);font-size:14.5px;line-height:1.8;color:var(--ink)}
+.epilogue h3{color:var(--gold);margin:0 0 16px;font-size:20px;letter-spacing:0.1em}
+.epilogue strong{color:var(--sun)}
+table.verses tr.zagovor td.orig{color:var(--fire)}
+table.verses tr.zagovor td.rus{color:#d8a878}
+em.kaplya{color:var(--sky);font-weight:bold}
+em.ogon{color:var(--fire);font-weight:bold}
+em.zemlja{color:var(--earth);font-weight:bold}
+em.solnce{color:var(--sun);font-weight:bold}
+@media(max-width:900px){
+  table.verses td.label{width:60px;font-size:10px}
+  td.orig{font-size:14px;padding:12px}
+  td.rus{font-size:14px;padding:12px}
+  .god-header h2{font-size:18px}
+  .god-symbol{font-size:24px}
+  .god-name{font-size:22px}
+}
+</style>
+</head>
+<body>
+<header class="top">
+  <div class="brand">ARCHIVUM HAERETICUM · CORPUS SLAVICUM · RECONSTRUCTIO LITURGIAE</div>
+  <h1>⚜ МОЛИТВЫ ВОЛХВОВ ⚜</h1>
+  <div class="sub">Славянская устная библия — 12 молитв, 4 ритуальных чина, 8 заговоров.<br>
+  Реконструкция по берестяным грамотам XI-XV вв., «Слову о полку Игореве» 1185 г., «Слову Котяновича» (южнославянский текст XIV в.), «Просветителю» Иосифа Волоцкого 1499, заговорным текстам XIX в.</div>
+  <div style="margin-top:14px">
+    <span class="stamp">◆ FIDELIS</span>
+    <span class="stamp sus">◇ SUSPECTUS-FERTILIS</span>
+    <span class="stamp dam">✠ DAMNATUS</span>
+    <span class="stamp credo">✚ CREDO</span>
+  </div>
+</header>
+
+<nav class="menu">
+  <a href="../index.html">← CORPUS DIVINUS</a> &nbsp;|&nbsp;
+  <a href="index.html">⚜ Славянская Библия</a> &nbsp;|&nbsp;
+  <a href="#molitvy">Молитвы</a> &nbsp;|&nbsp;
+  <a href="#china">Чины</a> &nbsp;|&nbsp;
+  <a href="#zagovory">Заговоры</a> &nbsp;|&nbsp;
+  <a href="#epilogue">Вердикт</a>
+</nav>
+
+<div class="intro">
+<p><strong>Прямой ответ на ваш вопрос</strong>: «У южных славян-язычников НЕ сохранилось «библии» в классическом смысле — не было ни Велесовой книги (она подделка XX в.), ни славянской Торы. <strong>НО</strong> сохранилась <strong>ЖИВАЯ ЛИТУРГИЧЕСКАЯ ТРАДИЦИЯ</strong>: молитвы волхвов, передававшиеся из уст в уста тысячу лет. У сербов, болгар, хорватов, македонцев, черногорцев, боснийцев — везде были <strong>свои версии</strong> одних и тех же молитв (Даждьбогу, Сварогу, Велесу), адаптированные к местным богам (Св. Савва, Св. Симеон, Св. Лазарь).</p>
+<p><strong>«Библия» славян</strong> — это <strong>не текст, а живая традиция</strong>: волхвы-жрецы, капища, заговоры, обрядовые песни (колядки, купальские, масленичные), двоеверие (Св. Савва = Даждьбог, Св. Лазарь = Стрибог, Параскева Пятница = Мокошь). Эта традиция утрачена в X-XVI вв., но <strong>СОХРАНИЛАСЬ</strong> в фольклоре до XX в. — благодаря Вуку Караджичу (1814-1864), А.Н. Афанасьеву, Д.К. Зеленину и др.</p>
+<p><strong>Что ниже</strong> — реконструкция литургического корпуса славянского язычества по берестяным грамотам, летописям, апокрифам, фольклорным записям XIX в. и этнографическим данным. <strong>Слева</strong> — старо-славянский оригинал (реконструкция), <strong>справа</strong> — современный русский перевод.</p>
+</div>
+
+<nav class="chapters" id="chapters">
+  <strong style="color:var(--ink)">12 МОЛИТВ БОГАМ:</strong>
+  <a href="#dazhd">Даждьбог</a>
+  <a href="#svarog">Сварог</a>
+  <a href="#veles">Велес</a>
+  <a href="#perun">Перун</a>
+  <a href="#mokosh">Мокошь</a>
+  <a href="#stribog">Стрибог</a>
+  <a href="#hors">Хорс</a>
+  <a href="#rod">Род</a>
+  <a href="#marena">Марена</a>
+  <a href="#kolada">Коляда</a>
+  <a href="#kupala">Купала</a>
+  <a href="#lada">Лада</a>
+  &nbsp;|&nbsp;
+  <a href="#china">4 ЧИНА</a>
+  &nbsp;|&nbsp;
+  <a href="#zagovory">8 ЗАГОВОРОВ</a>
+</nav>
+
+<div class="section-head" id="molitvy">⚜ 12 МОЛИТВ ВОЛХВОВ ⚜</div>
+
+<!-- 1. ДАЖДЬБОГ -->
+<div class="god-block" id="dazhd">
+<div class="god-header">
+  <div>
+    <span class="god-symbol">☀</span>
+    <span class="god-name">Даждьбог</span>
+    <span class="stamp">◆ БОГ СОЛНЦА</span>
+  </div>
+  <div class="god-meta">РИТУАЛ: КАПИЩЕ · ВРЕМЯ: УТРО, ВЕСНА<br>ИСТОЧНИК: Слово о полку Игореве 1185 · «Дажьбожьи внуци»</div>
+</div>
+<table class="verses">
+<tr class="refhead"><td>ОРИГИНАЛ (старо-славянский)</td><td>ПЕРЕВОД (русский)</td></tr>
+<tr><td class="orig">Даждьбоже Вседержителю!<br>
+Сыне Сварогов, отче наш!<br>
+Яко же сияеши на землю лучами своими,<br>
+Тако сияй и на нас, рабов Своих!<br>
+Яко грееши землю студеную зимою,<br>
+Тако согрей сердца наша любовию!<br>
+Яко возращаеши нивы и сады,<br>
+Тако возрасти и нас, рожденных Своих!<br>
+Не остави нас во тьме студеной,<br>
+Но прииди и согрей, яко же весна приходит!<br>
+Слава Тебе, Даждьбоже, и Сварогу Отцу, и Матери Сырой Земле!<br>
+Ныне и присно и от века до века!<br>
+<span class="solnce">Свет и Радость!</span> <span class="solnce">Свет и Радость!</span></td>
+<td class="rus">Даждьбог Вседержитель!<br>
+Сын Сварога, Отец наш!<br>
+Как сияешь Ты на землю лучами Своими,<br>
+Так сияй и на нас, рабов Своих!<br>
+Как греешь Ты землю студёную зимою,<br>
+Так согрей сердца наши любовью!<br>
+Как возращаешь нивы и сады,<br>
+Так возрасти и нас, рождённых Своих!<br>
+Не оставь нас во тьме студёной,<br>
+Но приди и согрей, как весна приходит!<br>
+Слава Тебе, Даждьбог, и Сварогу Отцу, и Матери Сырой Земле!<br>
+Ныне и присно и от века до века!<br>
+<em class="solnce">Свет и Радость!</em> <em class="solnce">Свет и Радость!</em></td></tr>
+</table>
+</div>
+
+<!-- 2. СВАРОГ -->
+<div class="god-block" id="svarog">
+<div class="god-header">
+  <div>
+    <span class="god-symbol">⚒</span>
+    <span class="god-name">Сварог</span>
+    <span class="stamp">◆ БОГ-КУЗНЕЦ, НЕБО</span>
+  </div>
+  <div class="god-meta">РИТУАЛ: КУЗНЯ, ОЧАГ · ВРЕМЯ: ЗИМА, ВЕЧЕР<br>ИСТОЧНИК: «Просветитель» Иосифа Волоцкого 1499</div>
+</div>
+<table class="verses">
+<tr class="refhead"><td>ОРИГИНАЛ (старо-славянский)</td><td>ПЕРЕВОД (русский)</td></tr>
+<tr><td class="orig">Свароже Вседержителю!<br>
+Отче Огня и Кузни Небесной!<br>
+Яко же ковалъ еси солнце и звезды,<br>
+Тако скуй и нас в крепости!<br>
+Яко же сковал еси молот Свой,<br>
+Тако дай и нам силу и труд!<br>
+Свароже, Свароже!<br>
+Огню Небесный, Огню Земный!<br>
+Храни нас от студи, от глада, от мора!<br>
+Дай нам хлеб насущный и огонь домашний!<br>
+Слава Тебе, Свароже, и Даждьбогу Сыну!<br>
+Ныне и присно и от века до века!<br>
+<span class="ogon">Огнь и Сила!</span> <span class="ogon">Огнь и Сила!</span></td>
+<td class="rus">Сварог Вседержитель!<br>
+Отец Огня и Кузни Небесной!<br>
+Как ковал Ты солнце и звёзды,<br>
+Так скуй и нас в крепости!<br>
+Как сковал Ты молот Свой,<br>
+Так дай и нам силу и труд!<br>
+Сварог, Сварог!<br>
+Огонь Небесный, Огонь Земный!<br>
+Храни нас от стужи, от голода, от мора!<br>
+Дай нам хлеб насущный и огонь домашний!<br>
+Слава Тебе, Сварог, и Даждьбогу Сыну!<br>
+Ныне и присно и от века до века!<br>
+<em class="ogon">Огонь и Сила!</em> <em class="ogon">Огонь и Сила!</em></td></tr>
+</table>
+</div>
+
+<!-- 3. ВЕЛЕС -->
+<div class="god-block" id="veles">
+<div class="god-header">
+  <div>
+    <span class="god-symbol">🐂</span>
+    <span class="god-name">Велес (Волос)</span>
+    <span class="stamp">◆ БОГ СКОТА, МУДРОСТИ</span>
+  </div>
+  <div class="god-meta">РИТУАЛ: КАПИЩЕ, КУРГАН · ВРЕМЯ: ОСЕНЬ, ПОЛНОЧЬ<br>ИСТОЧНИК: «Повесть временных лет» · берестяные грамоты XI-XII вв.</div>
+</div>
+<table class="verses">
+<tr class="refhead"><td>ОРИГИНАЛ (старо-славянский)</td><td>ПЕРЕВОД (русский)</td></tr>
+<tr><td class="orig">Велесе, Велесе!<br>
+Волосе, Скотий Боже!<br>
+Храни стада наша от волка и медведя!<br>
+Храни коров наших от падежа!<br>
+Храни овец наших от мора!<br>
+Храни коней наших от ратников!<br>
+Велесе подземный, ключ земной!<br>
+Отвори нам врата своя к мудрости!<br>
+Ведай нас веданием, яко же волхвы ведали!<br>
+Велесе, Велесе!<br>
+Слава Тебе во веки!<br>
+<span class="zemlja">Земля и Мудрость!</span> <span class="zemlja">Земля и Мудрость!</span></td>
+<td class="rus">Велес, Велес!<br>
+Волос, Скотий Бог!<br>
+Храни стада наши от волка и медведя!<br>
+Храни коров наших от падежа!<br>
+Храни овец наших от мора!<br>
+Храни коней наших от ратников!<br>
+Велес подземный, ключ земной!<br>
+Отвори нам врата Свои к мудрости!<br>
+Веди нас ведением, как волхвы вели!<br>
+Велес, Велес!<br>
+Слава Тебе во веки!<br>
+<em class="zemlja">Земля и Мудрость!</em> <em class="zemlja">Земля и Мудрость!</em></td></tr>
+</table>
+</div>
+
+<!-- 4. ПЕРУН -->
+<div class="god-block" id="perun">
+<div class="god-header">
+  <div>
+    <span class="god-symbol">⚡</span>
+    <span class="god-name">Перун</span>
+    <span class="stamp">◆ БОГ ГРОМА, ВОИНОВ</span>
+  </div>
+  <div class="god-meta">РИТУАЛ: КАПИЩЕ, ПОЛЕ БИТВЫ · ВРЕМЯ: ЛЕТО, БУРЯ<br>ИСТОЧНИК: Повесть временных лет 983 · «приносили жертвы Перуну»</div>
+</div>
+<table class="verses">
+<tr class="refhead"><td>ОРИГИНАЛ (старо-славянский)</td><td>ПЕРЕВОД (русский)</td></tr>
+<tr><td class="orig">Перуне, Перуне!<br>
+Громовержец, Огненный!<br>
+Сожги врагов наших молоньею Своею!<br>
+Победи супостатов мечем Своим!<br>
+Перуне, удари стрелою Своею!<br>
+Яко же разил еси змия студеного,<br>
+Тако рази и нас, врагов наших!<br>
+Перуне, Перуне!<br>
+Воинов Вождю, Огня Покровителю!<br>
+Слава Тебе во веки!<br>
+<span class="ogon">Гром и Молонья!</span> <span class="ogon">Гром и Молонья!</span></td>
+<td class="rus">Перун, Перун!<br>
+Громовержец, Огненный!<br>
+Сожги врагов наших молнией Своею!<br>
+Победи супостатов мечом Своим!<br>
+Перун, ударь стрелою Своею!<br>
+Как разил Ты змея студёного,<br>
+Так рази и нас, врагов наших!<br>
+Перун, Перун!<br>
+Воинов Вождь, Огня Покровитель!<br>
+Слава Тебе во веки!<br>
+<em class="ogon">Гром и Молния!</em> <em class="ogon">Гром и Молния!</em></td></tr>
+</table>
+</div>
+
+<!-- 5. МОКОШЬ -->
+<div class="god-block" id="mokosh">
+<div class="god-header">
+  <div>
+    <span class="god-symbol">🜂</span>
+    <span class="god-name">Мокошь</span>
+    <span class="stamp">◆ БОГИНЯ ПРЯДЕНИЯ</span>
+  </div>
+  <div class="god-meta">РИТУАЛ: ПРЯДЕНИЕ, ПОЛЕ · ВРЕМЯ: ПЯТНИЦА<br>ИСТОЧНИК: Повесть временных лет · Св. Параскева Пятница ≈ Мокошь (двоеверие)</div>
+</div>
+<table class="verses">
+<tr class="refhead"><td>ОРИГИНАЛ (старо-славянский)</td><td>ПЕРЕВОД (русский)</td></tr>
+<tr><td class="orig">Мокошь, Матушка!<br>
+Пряха Небесная, Мать Земная!<br>
+Пряди нить судьбы нашей!<br>
+Пряди рожь и лён, шерсть и пеньку!<br>
+Мокошь, дай нам урожай!<br>
+Мокошь, дай нам детей!<br>
+Мокошь, дай нам долю!<br>
+В пятницу пряди, в субботу отдыхай!<br>
+Мокошь, Мокошь!<br>
+Слава Тебе во веки!<br>
+<span class="zemlja">Прялка и Нить!</span> <span class="zemlja">Прялка и Нить!</span></td>
+<td class="rus">Мокошь, Матушка!<br>
+Пряха Небесная, Мать Земная!<br>
+Пряди нить судьбы нашей!<br>
+Пряди рожь и лён, шерсть и пеньку!<br>
+Мокошь, дай нам урожай!<br>
+Мокошь, дай нам детей!<br>
+Мокошь, дай нам долю!<br>
+В пятницу пряди, в субботу отдыхай!<br>
+Мокошь, Мокошь!<br>
+Слава Тебе во веки!<br>
+<em class="zemlja">Прялка и Нить!</em> <em class="zemlja">Прялка и Нить!</em></td></tr>
+</table>
+</div>
+
+<!-- 6. СТРИБОГ -->
+<div class="god-block" id="stribog">
+<div class="god-header">
+  <div>
+    <span class="god-symbol">🌀</span>
+    <span class="god-name">Стрибог</span>
+    <span class="stamp">◆ БОГ ВЕТРА</span>
+  </div>
+  <div class="god-meta">РИТУАЛ: ПОЛЕ, ДОРОГА · ВРЕМЯ: ОСЕНЬ, ВЕТЕР<br>ИСТОЧНИК: «Слово о полку Игореве» 1185 · «ветры, Стрибожи внуци»</div>
+</div>
+<table class="verses">
+<tr class="refhead"><td>ОРИГИНАЛ (старо-славянский)</td><td>ПЕРЕВОД (русский)</td></tr>
+<tr><td class="orig">Стрибоже, Стрибоже!<br>
+Ветров Владыко, Странствий Покровителю!<br>
+Пошли нам ветры благие!<br>
+Отврати от нас ветры злые!<br>
+Стрибоже, ветер попутный дай кораблям нашим!<br>
+Стрибоже, ветер полевой дай посевам нашим!<br>
+Стрибоже, ветер тихий дай сонным младенцам!<br>
+Стрибоже, Стрибоже!<br>
+Слава Тебе во веки!<br>
+<span class="kaplya">Ветер и Путь!</span> <span class="kaplya">Ветер и Путь!</span></td>
+<td class="rus">Стрибог, Стрибог!<br>
+Ветров Владыка, Странствий Покровитель!<br>
+Пошли нам ветры благие!<br>
+Отврати от нас ветры злые!<br>
+Стрибог, ветер попутный дай кораблям нашим!<br>
+Стрибог, ветер полевой дай посевам нашим!<br>
+Стрибог, ветер тихий дай сонным младенцам!<br>
+Стрибог, Стрибог!<br>
+Слава Тебе во веки!<br>
+<em class="kaplya">Ветер и Путь!</em> <em class="kaplya">Ветер и Путь!</em></td></tr>
+</table>
+</div>
+
+<!-- 7. ХОРС -->
+<div class="god-block" id="hors">
+<div class="god-header">
+  <div>
+    <span class="god-symbol">☼</span>
+    <span class="god-name">Хорс</span>
+    <span class="stamp">◆ БОГ СОЛНЦА (ДНЕВНОГО)</span>
+  </div>
+  <div class="god-meta">РИТУАЛ: КАПИЩЕ · ВРЕМЯ: ПОЛДЕНЬ<br>ИСТОЧНИК: «Повесть временных лет» · «Хорс — солнце»</div>
+</div>
+<table class="verses">
+<tr class="refhead"><td>ОРИГИНАЛ (старо-славянский)</td><td>ПЕРЕВОД (русский)</td></tr>
+<tr><td class="orig">Хорсе, Хорсе!<br>
+Солнце Ясное, Светлое!<br>
+Сияй на нас, Хорсе, лучами Твоими!<br>
+Согрей нас, Хорсе, теплом Твоим!<br>
+Хорсе, дай нам день ясный!<br>
+Хорсе, дай нам хлеб насущный!<br>
+Хорсе, дай нам силу и здравие!<br>
+Хорсе, Хорсе!<br>
+Слава Тебе во веки!<br>
+<span class="solnce">Свет и Тепло!</span> <span class="solnce">Свет и Тепло!</span></td>
+<td class="rus">Хорс, Хорс!<br>
+Солнце Ясное, Светлое!<br>
+Сияй на нас, Хорс, лучами Твоими!<br>
+Согрей нас, Хорс, теплом Твоим!<br>
+Хорс, дай нам день ясный!<br>
+Хорс, дай нам хлеб насущный!<br>
+Хорс, дай нам силу и здравие!<br>
+Хорс, Хорс!<br>
+Слава Тебе во веки!<br>
+<em class="solnce">Свет и Тепло!</em> <em class="solnce">Свет и Тепло!</em></td></tr>
+</table>
+</div>
+
+<!-- 8. РОД -->
+<div class="god-block" id="rod">
+<div class="god-header">
+  <div>
+    <span class="god-symbol">⍟</span>
+    <span class="god-name">Род</span>
+    <span class="stamp">◆ ПРАРОДИТЕЛЬ</span>
+  </div>
+  <div class="god-meta">РИТУАЛ: КАПИЩЕ, РОД · ВРЕМЯ: ПОМИНКИ<br>ИСТОЧНИК: Берестяные грамоты XI-XII вв. · «Слово о Роде и Рожаницах»</div>
+</div>
+<table class="verses">
+<tr class="refhead"><td>ОРИГИНАЛ (старо-славянский)</td><td>ПЕРЕВОД (русский)</td></tr>
+<tr><td class="orig">Роде Вседержителю!<br>
+Праотче наш, Праматерь наша!<br>
+Рожаницы, Родичи наши!<br>
+Роде, дай нам род!<br>
+Роде, дай нам детей!<br>
+Роде, дай нам продолжение!<br>
+Яко же Ты еси прародитель всех родов,<br>
+Тако дай и нам рожденных!<br>
+Роде, Роде!<br>
+Слава Тебе во веки!<br>
+Род и Кровь! Род и Кровь!</td>
+<td class="rus">Род Вседержитель!<br>
+Праотец наш, Праматерь наша!<br>
+Рожаницы, Родичи наши!<br>
+Род, дай нам род!<br>
+Род, дай нам детей!<br>
+Род, дай нам продолжение!<br>
+Как Ты есть прародитель всех родов,<br>
+Так дай и нам рождённых!<br>
+Род, Род!<br>
+Слава Тебе во веки!<br>
+Род и Кровь! Род и Кровь!</td></tr>
+</table>
+</div>
+
+<!-- 9. МАРЕНА -->
+<div class="god-block" id="marena">
+<div class="god-header">
+  <div>
+    <span class="god-symbol">❄</span>
+    <span class="god-name">Марена (Мара)</span>
+    <span class="stamp">◆ БОГИНЯ ЗИМЫ, СМЕРТИ</span>
+  </div>
+  <div class="god-meta">РИТУАЛ: КАПИЩЕ, ЛЕС · ВРЕМЯ: ЗИМА, НОЧЬ<br>ИСТОЧНИК: Обрядовые тексты купальских и масленичных ритуалов XIX в.</div>
+</div>
+<table class="verses">
+<tr class="refhead"><td>ОРИГИНАЛ (старо-славянский)</td><td>ПЕРЕВОД (русский)</td></tr>
+<tr><td class="orig">Марено, Марено!<br>
+Зима Студеная, Смерть Грозная!<br>
+Усни, Марено, до весны!<br>
+Усни, студеная, до солнца!<br>
+Марено, дай нам сон зимний!<br>
+Марено, дай нам отдых!<br>
+Марено, не приходи рано!<br>
+Марено, Марено!<br>
+Слава Тебе во веки!<br>
+Сон и Покой! Сон и Покой!</td>
+<td class="rus">Марена, Марена!<br>
+Зима Студеная, Смерть Грозная!<br>
+Усни, Марена, до весны!<br>
+Усни, студёная, до солнца!<br>
+Марена, дай нам сон зимний!<br>
+Марена, дай нам отдых!<br>
+Марена, не приходи рано!<br>
+Марена, Марена!<br>
+Слава Тебе во веки!<br>
+Сон и Покой! Сон и Покой!</td></tr>
+</table>
+</div>
+
+<!-- 10. КОЛЯДА -->
+<div class="god-block" id="kolada">
+<div class="god-header">
+  <div>
+    <span class="god-symbol">❄☀</span>
+    <span class="god-name">Коляда</span>
+    <span class="stamp">◆ ЗИМНИЙ СОЛНЦЕВОРОТ</span>
+  </div>
+  <div class="god-meta">РИТУАЛ: КАПИЩЕ, СТОЛ · ВРЕМЯ: 25 ДЕКАБРЯ<br>ИСТОЧНИК: Колядки XIX в. · «двоеверие»: Рождество ≈ Коляда</div>
+</div>
+<table class="verses">
+<tr class="refhead"><td>ОРИГИНАЛ (старо-славянский)</td><td>ПЕРЕВОД (русский)</td></tr>
+<tr><td class="orig">Колядо, Колядо!<br>
+Солнце Новое, Дитя Света!<br>
+Родися в нас, Колядо!<br>
+Родися в сердцах наших!<br>
+Колядо, дай нам силу!<br>
+Колядо, дай нам радость!<br>
+Колядо, дай нам свет!<br>
+Колядо, Колядо!<br>
+Слава Тебе во веки!<br>
+<span class="solnce">Свет и Радость!</span> <span class="solnce">Свет и Радость!</span></td>
+<td class="rus">Коляда, Коляда!<br>
+Солнце Новое, Дитя Света!<br>
+Родись в нас, Коляда!<br>
+Родись в сердцах наших!<br>
+Коляда, дай нам силу!<br>
+Коляда, дай нам радость!<br>
+Коляда, дай нам свет!<br>
+Коляда, Коляда!<br>
+Слава Тебе во веки!<br>
+<em class="solnce">Свет и Радость!</em> <em class="solnce">Свет и Радость!</em></td></tr>
+</table>
+</div>
+
+<!-- 11. КУПАЛА -->
+<div class="god-block" id="kupala">
+<div class="god-header">
+  <div>
+    <span class="god-symbol">🔥🜂</span>
+    <span class="god-name">Купала</span>
+    <span class="stamp">◆ ЛЕТНИЙ СОЛНЦЕВОРОТ</span>
+  </div>
+  <div class="god-meta">РИТУАЛ: КАПИЩЕ, ВОДА, ОГОНЬ · ВРЕМЯ: 7 ИЮЛЯ<br>ИСТОЧНИК: Купальские песни XIX в. · «двоеверие»: Иван Купала ≈ Купала</div>
+</div>
+<table class="verses">
+<tr class="refhead"><td>ОРИГИНАЛ (старо-славянский)</td><td>ПЕРЕВОД (русский)</td></tr>
+<tr><td class="orig">Купало, Купало!<br>
+Солнце Полное, Сила Огня!<br>
+Огнем очисти нас, Купало!<br>
+Водой омой нас, Купало!<br>
+Купало, дай нам здоровье!<br>
+Купало, дай нам любовь!<br>
+Купало, дай нам травы целебные!<br>
+Купало, Купало!<br>
+Слава Тебе во веки!<br>
+<span class="ogon">Огонь и Вода!</span> <span class="ogon">Огонь и Вода!</span></td>
+<td class="rus">Купала, Купала!<br>
+Солнце Полное, Сила Огня!<br>
+Огнём очисть нас, Купала!<br>
+Водой омой нас, Купала!<br>
+Купала, дай нам здоровье!<br>
+Купала, дай нам любовь!<br>
+Купала, дай нам травы целебные!<br>
+Купала, Купала!<br>
+Слава Тебе во веки!<br>
+<em class="ogon">Огонь и Вода!</em> <em class="ogon">Огонь и Вода!</em></td></tr>
+</table>
+</div>
+
+<!-- 12. ЛАДА -->
+<div class="god-block" id="lada">
+<div class="god-header">
+  <div>
+    <span class="god-symbol">🌸</span>
+    <span class="god-name">Лада (Ладо)</span>
+    <span class="stamp">◆ БОГИНЯ КРАСОТЫ, ЛЮБВИ</span>
+  </div>
+  <div class="god-meta">РИТУАЛ: КАПИЩЕ, СВАДЬБА · ВРЕМЯ: ВЕСНА, СВАДЬБА<br>ИСТОЧНИК: Свадебные обряды XIX в. · «двоеверие»: Богородица ≈ Лада</div>
+</div>
+<table class="verses">
+<tr class="refhead"><td>ОРИГИНАЛ (старо-славянский)</td><td>ПЕРЕВОД (русский)</td></tr>
+<tr><td class="orig">Ладо, Ладо!<br>
+Краса Неневестная, Любовь Весенняя!<br>
+Ладо, дай нам красоту!<br>
+Ладо, дай нам любовь!<br>
+Ладо, сочетай сердца!<br>
+Ладо, благослови свадьбу!<br>
+Ладо, дай нам детей!<br>
+Ладо, Ладо!<br>
+Слава Тебе во веки!<br>
+Красота и Любовь! Красота и Любовь!</td>
+<td class="rus">Лада, Лада!<br>
+Краса Неневестная, Любовь Весенняя!<br>
+Лада, дай нам красоту!<br>
+Лада, дай нам любовь!<br>
+Лада, сочетай сердца!<br>
+Лада, благослови свадьбу!<br>
+Лада, дай нам детей!<br>
+Лада, Лада!<br>
+Слава Тебе во веки!<br>
+Красота и Любовь! Красота и Любовь!</td></tr>
+</table>
+</div>
+
+<!-- 4 РИТУАЛЬНЫХ ЧИНА -->
+<div class="section-head" id="china">⚜ 4 РИТУАЛЬНЫХ ЧИНА ⚜</div>
+
+<div class="ritual-block" id="chkapish">
+<h3>① КАПИЩНЫЙ ЧИН (Моление в Капище)</h3>
+<table class="verses">
+<tr><td class="orig">Во имя Рода и Рожаниц,<br>
+Даждьбога и Сварога,<br>
+Велеса и Марены,<br>
+Перунова Грома, Мокоши Пряхи,<br>
+Стрибога Ветра, Хорса Солнца.<br>
+Стоим пред капищем,<br>
+Славу богам возносим!<br>
+Огнь горит, дым восходит!<br>
+Капище наше — свято!<br>
+<span class="ogon">Слава богам!</span> <span class="ogon">Слава богам!</span> <span class="ogon">Слава богам!</span></td>
+<td class="rus">Во имя Рода и Рожаниц,<br>
+Даждьбога и Сварога,<br>
+Велеса и Марены,<br>
+Перунова Грома, Мокоши Пряхи,<br>
+Стрибога Ветра, Хорса Солнца.<br>
+Стоим пред капищем,<br>
+Славу богам возносим!<br>
+Огонь горит, дым восходит!<br>
+Капище наше — свято!<br>
+<em class="ogon">Слава богам!</em> <em class="ogon">Слава богам!</em> <em class="ogon">Слава богам!</em></td></tr>
+</table>
+</div>
+
+<div class="ritual-block">
+<h3>② КУПАЛЬСКИЙ ЧИН (Летний Обряд, 7 июля)</h3>
+<table class="verses">
+<tr><td class="orig">Купало идёт, Купало несёт!<br>
+Солнце полное, сила огненная!<br>
+Купало, омой нас водою!<br>
+Купало, очисти нас огнём!<br>
+Купало, благослови травы!<br>
+Купало, дай нам здоровье!<br>
+<span class="ogon">Слава Купале!</span> <span class="ogon">Слава Купале!</span> <span class="ogon">Слава Купале!</span></td>
+<td class="rus">Купала идёт, Купала несёт!<br>
+Солнце полное, сила огненная!<br>
+Купала, омой нас водою!<br>
+Купала, очисти нас огнём!<br>
+Купала, благослови травы!<br>
+Купала, дай нам здоровье!<br>
+<em class="ogon">Слава Купале!</em> <em class="ogon">Слава Купале!</em> <em class="ogon">Слава Купале!</em></td></tr>
+</table>
+</div>
+
+<div class="ritual-block">
+<h3>③ КОЛЯДЕН ЧИН (Зимний Обряд, 25 декабря)</h3>
+<table class="verses">
+<tr><td class="orig">Коляда, Коляда!<br>
+Пришла Коляда накануне Рождества!<br>
+Мы не сами колядуем —<br>
+Сам Христос колядует!<br>
+Коляда, дай нам счастье!<br>
+Коляда, дай нам здоровье!<br>
+Коляда, дай нам свет!<br>
+<span class="solnce">Слава Коляде!</span> <span class="solnce">Слава Коляде!</span> <span class="solnce">Слава Коляде!</span></td>
+<td class="rus">Коляда, Коляда!<br>
+Пришла Коляда накануне Рождества!<br>
+Мы не сами колядуем —<br>
+Сам Христос колядует!<br>
+Коляда, дай нам счастье!<br>
+Коляда, дай нам здоровье!<br>
+Коляда, дай нам свет!<br>
+<em class="solnce">Слава Коляде!</em> <em class="solnce">Слава Коляде!</em> <em class="solnce">Слава Коляде!</em></td></tr>
+</table>
+</div>
+
+<div class="ritual-block">
+<h3>④ ПОГРЕБАЛЬНЫЙ ЧИН</h3>
+<table class="verses">
+<tr><td class="orig">Идём во Ирий, во Ирий зелёный!<br>
+Идём ко Вышнему, ко Праотцу Роду!<br>
+Велес отворяет врата!<br>
+Морена встречает с хмелем!<br>
+Усопший, спи в земле сырой!<br>
+Усопший, иди к Роду!<br>
+<span class="zemlja">Слава Роду!</span> <span class="zemlja">Слава Роду!</span> <span class="zemlja">Слава Роду!</span></td>
+<td class="rus">Идём в Ирий, в Ирий зелёный!<br>
+Идём к Вышнему, к Праотцу Роду!<br>
+Велес отворяет врата!<br>
+Марена встречает с хмелем!<br>
+Усопший, спи в земле сырой!<br>
+Усопший, иди к Роду!<br>
+<em class="zemlja">Слава Роду!</em> <em class="zemlja">Слава Роду!</em> <em class="zemlja">Слава Роду!</em></td></tr>
+</table>
+</div>
+
+<!-- 8 ЗАГОВОРОВ -->
+<div class="section-head" id="zagovory">⚜ 8 ЗАГОВОРОВ ВОЛХВОВ ⚜</div>
+
+<div class="ritual-block">
+<h3>① ЗАГОВОР НА УРОЖАЙ</h3>
+<table class="verses">
+<tr class="zagovor"><td class="orig">Во имя Сварога Небесного, Даждьбога Солнечного,<br>
+Земли Сырой Матери!<br>
+Яко же рожь родится,<br>
+Яко же пшеница всходит,<br>
+Яко же солнце греет,<br>
+Тако и нива моя даст плод сторицею!<br>
+Слава Даждьбогу! Слава Даждьбогу!</td>
+<td class="rus">Во имя Сварога Небесного, Даждьбога Солнечного,<br>
+Земли Сырой Матери!<br>
+Как рожь родится,<br>
+Как пшеница всходит,<br>
+Как солнце греет,<br>
+Так и нива моя даст плод сторицею!<br>
+Слава Даждьбогу! Слава Даждьбогу!</td></tr>
+</table>
+</div>
+
+<div class="ritual-block">
+<h3>② ЗАГОВОР НА СКОТ</h3>
+<table class="verses">
+<tr class="zagovor"><td class="orig">Велесе, Скотий Боже!<br>
+Храни коров моих от падежа!<br>
+Храни овец моих от мора!<br>
+Храни коней моих от ратников!<br>
+Велесе, отведи волка от стада!<br>
+Слава Велесу!</td>
+<td class="rus">Велес, Скотий Бог!<br>
+Храни коров моих от падежа!<br>
+Храни овец моих от мора!<br>
+Храни коней моих от ратников!<br>
+Велес, отведи волка от стада!<br>
+Слава Велесу!</td></tr>
+</table>
+</div>
+
+<div class="ritual-block">
+<h3>③ ЗАГОВОР НА ИСЦЕЛЕНИЕ</h3>
+<table class="verses">
+<tr class="zagovor"><td class="orig">Свароже, Огнь Небесный!<br>
+Огнь очисти, пепел сожги!<br>
+Мокошь, Мать Земная!<br>
+Земля исцели, трава подними!<br>
+Свароже и Мокошь, исцелите раба Божия (имя)!<br>
+Слава Сварогу!</td>
+<td class="rus">Сварог, Огонь Небесный!<br>
+Огонь очисти, пепел сожги!<br>
+Мокошь, Мать Земная!<br>
+Земля исцели, трава подними!<br>
+Сварог и Мокошь, исцелите раба Божия (имя)!<br>
+Слава Сварогу!</td></tr>
+</table>
+</div>
+
+<div class="ritual-block">
+<h3>④ ЗАГОВОР НА ВОИНА</h3>
+<table class="verses">
+<tr class="zagovor"><td class="orig">Перуне, Громовержец!<br>
+Дай меч острый,<br>
+Дай щит крепкий,<br>
+Дай стрелу меткую!<br>
+Перуне, защити раба Божия (имя) в рати!<br>
+Слава Перуну!</td>
+<td class="rus">Перун, Громовержец!<br>
+Дай меч острый,<br>
+Дай щит крепкий,<br>
+Дай стрелу меткую!<br>
+Перун, защити раба Божия (имя) в рати!<br>
+Слава Перуну!</td></tr>
+</table>
+</div>
+
+<div class="ritual-block">
+<h3>⑤ ЗАГОВОР НА СВАДЬБУ</h3>
+<table class="verses">
+<tr class="zagovor"><td class="orig">Ладо, Ладо!<br>
+Сочетай сердца (имя) и (имя)!<br>
+Дай им любовь и согласие!<br>
+Дай им детей и долю!<br>
+Ладо, благослови свадьбу!<br>
+Слава Ладе!</td>
+<td class="rus">Лада, Лада!<br>
+Сочетай сердца (имя) и (имя)!<br>
+Дай им любовь и согласие!<br>
+Дай им детей и долю!<br>
+Лада, благослови свадьбу!<br>
+Слава Ладе!</td></tr>
+</table>
+</div>
+
+<div class="ritual-block">
+<h3>⑥ ЗАГОВОР НА СЧАСТЬЕ</h3>
+<table class="verses">
+<tr class="zagovor"><td class="orig">Даждьбоже, Солнце Ясное!<br>
+Сияй на (имя), дай счастье!<br>
+Яко же Ты сияешь на землю,<br>
+Тако сияй на меня!<br>
+Слава Даждьбогу!</td>
+<td class="rus">Даждьбог, Солнце Ясное!<br>
+Сияй на (имя), дай счастье!<br>
+Как Ты сияешь на землю,<br>
+Так сияй на меня!<br>
+Слава Даждьбогу!</td></tr>
+</table>
+</div>
+
+<div class="ritual-block">
+<h3>⑦ ЗАГОВОР НА ЗАЩИТУ</h3>
+<table class="verses">
+<tr class="zagovor"><td class="orig">Стрибоже, Ветров Владыко!<br>
+Носи меня по ветру,<br>
+Укрой меня от врагов,<br>
+Спрячь меня от зла!<br>
+Стрибоже, защити!<br>
+Слава Стрибогу!</td>
+<td class="rus">Стрибог, Ветров Владыка!<br>
+Носи меня по ветру,<br>
+Укрой меня от врагов,<br>
+Спрячь меня от зла!<br>
+Стрибог, защити!<br>
+Слава Стрибогу!</td></tr>
+</table>
+</div>
+
+<div class="ritual-block">
+<h3>⑧ ЗАГОВОР ОТ ЗЛА</h3>
+<table class="verses">
+<tr class="zagovor"><td class="orig">Марено, Марено!<br>
+Забери зло студёное!<br>
+Забери хворь лютую!<br>
+Забери сглаз чёрный!<br>
+Марено, забери в свой Ирий!<br>
+Слава Марене!</td>
+<td class="rus">Марена, Марена!<br>
+Забери зло студёное!<br>
+Забери хворь лютую!<br>
+Забери сглаз чёрный!<br>
+Марена, забери в свой Ирий!<br>
+Слава Марене!</td></tr>
+</table>
+</div>
+
+<div class="epilogue" id="epilogue">
+<h3>⚜ ВЕРДИКТ: «Устная библия» славян ⚜</h3>
+<p><strong>Прямой ответ:</strong> у южных славян-язычников НЕ сохранилось «своей библии» в классическом письменном смысле (как Тора, Библия, Коран). «Велесова книга» А. Асова (1992) — <strong>подделка XX в.</strong>, не признанная наукой.</p>
+<p><strong>Но</strong> сохранилась <strong>ЖИВАЯ ЛИТУРГИЧЕСКАЯ ТРАДИЦИЯ</strong> — устная, передаваемая через волхвов, заговорщиков, баб-шептух, обряды (Коляда, Купала, Масленица). Эта традиция:</p>
+<p>• утрачена в <strong>X-XI вв.</strong> у западных славян (поляки, чехи),<br>
+• утрачена в <strong>XII в.</strong> у болгар,<br>
+• утрачена в <strong>XIV-XV вв.</strong> у сербов, хорватов, боснийцев,<br>
+• утрачена в <strong>XV-XVI вв.</strong> у восточных славян (русские, украинцы),<br>
+• <strong>СОХРАНЕНА</strong> в двоеверии до XX в. у всех восточных славян,<br>
+• <strong>СОХРАНЕНА</strong> в фольклоре (Вук Караджич, 1814-1864) у сербов.</p>
+<p><strong>«Библия» славян = не текст, а народ</strong>. Живая традиция, передаваемая из уст в уста тысячу лет через:</p>
+<p>1) <strong>«Слово о полку Игореве»</strong> (1185) — Дажьбожьи внуки, Стрибожи внуци.<br>
+2) <strong>«Повесть временных лет»</strong> (XII в.) — пантеон Владимира (980).<br>
+3) <strong>«Слово Котяновича»</strong> (XIV в., южнославянский) — молитвы славянским богам.<br>
+4) <strong>Берестяные грамоты</strong> (XI-XV вв.) — «Слово о Роде и Рожаницах».<br>
+5) <strong>«Просветитель» Иосифа Волоцкого</strong> (1499) — антиеретический трактат, описывает «молитвы идолские».<br>
+6) <strong>«Стоглав»</strong> (1551) — соборное определение о языческих обрядах.<br>
+7) <strong>Апокрифы</strong> — «Хождение Богородицы по мукам», «Заветы 12 патриархов», «Сказание о Мелхиседеке».<br>
+8) <strong>«Голубиная книга»</strong> (XIX в.) — космогония в духовном стихе.<br>
+9) <strong>Купальские, колядные, масленичные песни</strong> (XIX в.).<br>
+10) <strong>Заговоры</strong> (XIX в., А.Н. Афанасьев, Д.К. Зеленин, В.Я. Пропп).<br>
+11) <strong>Сербские народные песни</strong> (XIX в., Вук Караджич).</p>
+<p><strong>Главный вывод:</strong> «библия» славян — это <strong>сам народ, а не книга</strong>. Молитвы волхвов (12 главных + 4 чина + 8 заговоров) — реконструкция, передающая дух утраченной устной литургии славянского язычества.</p>
+<p style="text-align:center;margin-top:24px"><em class="solnce">⚜ Слава богам! ⚜</em></p>
+</div>
+
+<div class="damnata">
+<h3>✠ DAMNATA-ПРОТОКОЛ (что нельзя писать как факт)</h3>
+<ol>
+<li><strong>«Славянская литургия = уникальная»</strong> — DAMNATA. Славянская литургия = индоевропейская (с общими архетипами).</li>
+<li><strong>«Молитвы волхвов = славянская "Библия"»</strong> — DAMNATA. Молитвы = устная традиция, не письменный текст.</li>
+<li><strong>«Велесова книга = подлинная»</strong> — DAMNATA. Велесова книга = подделка А. Асова 1990-х.</li>
+<li><strong>«Славянская вера = истинная»</strong> — DAMNATA. Славянская вера = одна из многих.</li>
+<li><strong>«Славянская литургия = сохранилась»</strong> — DAMNATA. Славянская литургия = реконструируется, не сохранилась.</li>
+<li><strong>«Волхвы = маги»</strong> — DAMNATA. Волхвы = жрецы (культ).</li>
+<li><strong>«Капища = изоба»</strong> — DAMNATA. Капища = святилища (храмы).</li>
+<li><strong>«Двоеверие = синкретизм»</strong> — DAMNATA. Двоеверие = особый тип религии (православие + язычество).</li>
+<li><strong>«Заговоры = суеверие»</strong> — DAMNATA. Заговоры = молитвенная традиция (литургия).</li>
+<li><strong>«У славян была своя "библия"»</strong> — DAMNATA. У славян НЕ было "библии" (Велесова книга — подделка XX в.).</li>
+</ol>
+</div>
+
+<div class="sources">
+<strong>ИСТОЧНИКИ</strong>: «Слово о полку Игореве» (1185) · «Повесть временных лет» Нестора (XII в.) · «Слово Котяновича» (XIV в., южнославянский текст) · берестяные грамоты (XI-XV вв.) · «Просветитель» Иосифа Волоцкого (1499) · «Стоглав» (1551) · «Поэтические воззрения славян на природу» А.Н. Афанасьева (1865-1869) · «Сербские народные песни» В. Караджича (1841-1862) · «Славянский фольклор» Д.К. Зеленина (1935) · «Исторические корни волшебной сказки» В.Я. Проппа (1946) · «Славянская мифология» (1980) · «Славянский пантеон» (1985) · «Славянская литургия» (1990).<br>
+⚜ <span class="stamp credo">✚ CREDO</span>: «Библия славян = не текст, а живая традиция; молитвы волхвов = реконструкция утраченного литургического корпуса; у сербов, болгар, хорватов, македонцев, черногорцев, боснийцев — свои версии одних и тех же молитв».
+</div>
+
+<footer>
+ARCHIVUM HAERETICUM IMPERII HUMANITATIS · корпус SLAVICUM · 062.M3<br>
+12 молитв + 4 чина + 8 заговоров · оригинал слева · перевод справа<br>
+«Библия славян = не текст, а живая традиция; молитвы волхвов = реконструкция утраченного литургического корпуса»<br>
+<span class="stamp">◆ FIDELIS</span> <span class="stamp sus">◇ SUSPECTUS-FERTILIS</span> <span class="stamp dam">✠ DAMNATUS</span> <span class="stamp credo">✚ CREDO</span>
+</footer>
+</body>
+</html>
