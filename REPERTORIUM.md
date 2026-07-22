@@ -36,7 +36,7 @@ Datum: 021.M3 (CREDO-печать добавлена)
 
 ### III. РЕЕСТР: 04-PANTHEONES (боги и культы)
 
-**Структура**: 14 подпапок по этносам/регионам + мастер-таблицы на верхнем уровне. ~62 досье, ~180 КБ документации, все классифицированы по Tabula Strategiarum.
+**Структура**: 17 подпапок по этносам/регионам + мастер-таблицы на верхнем уровне. ~65 досье, ~210 КБ документации, все классифицированы по Tabula Strategiarum.
 
 **Мастер-таблицы (верхний уровень)**: `tabula.md` (8 пантеонов), `schemata.md` (паттерны), `gigantes.md`, `septem-consilium.md` (совет семи), `octavus-archangelus.md` (восьмой), `triangulatio.md` (славянская триангуляция), `anima.md`, `animus.md`, `basquae.md`, `gigantum.md`, `fenno-ugrica.md`, `scythia-donor.md` (частично)
 
@@ -85,14 +85,24 @@ Datum: 021.M3 (CREDO-печать добавлена)
 **III.14 Балканский фольклор** `04-pantheones/balkan-folklore/` (1 досье, NODUS/TRANSMISSIO)
 - `balkan-folklore/balcania-strigoi.md` (страгои, вампиры, русалии)
 
-**III.15 Ближние к своду (на верхнем уровне)**: `aegyptus.md` (египетская ветвь), `romani.md` (римская), `baron-cyprianus.md` (Барон Кипра)
+**III.15 Волошское (румынское/молдавское) язычество** `04-pantheones/valachia-paganism/` (2 досье, NODUS)
+- `valachia-paganism/valachia-paganitas.md` (дако-славяно-романский субстрат, Геродот → Уреке)
+- `valachia-paganism/valachia-litteratura.md` (хроникари XVII в.: Уреке 1647, Костин 1675, Некульче 1746)
+
+**III.16 Иберийское (баскское) язычество** `04-pantheones/iberic-paganism/` (1 досье, ISOLATIO + NODUS)
+- `iberic-paganism/basquiae.md` (баски, Мари/Сугаар/ламьяки, Сугаррамурди, «язык-остров»)
+
+**III.17 Анимизм (подложка всех религий)** `04-pantheones/animistic-paganism/` (1 досье, NODUS)
+- `animistic-paganism/anima.md` (анимизм, аниматизм, мана, тотемизм, шаманизм, фетишизм)
+
+**III.18 Мастер-таблицы (на верхнем уровне)**: `tabula.md` (8 пантеонов), `schemata.md` (паттерны), `gigantes.md`, `septem-consilium.md` (совет семи), `octavus-archangelus.md` (восьмой), `triangulatio.md` (славянская триангуляция), `aegyptus.md` (египетская ветвь), `romani.md` (римская), `baron-cyprianus.md` (Барон Кипра)
 
 **Tabula Strategiarum (стратегии выживания ветвей):**
 - **ISOLATIO**: Эфиопия, балто-финно-угры, езиды, бета-Исраэль, самаритяне, караимы
 - **RESISTENTIA**: Армения, друзы, мандеи
 - **REDITUS**: Гиберния
 - **EDITIO**: Зороастризм
-- **NODUS**: Бактрия, буддизм, индуизм, дальневосточное, шаманизм, африканское, американское, океанийское, новые религии, балканское
+- **NODUS**: Бактрия, буддизм, индуизм, дальневосточное, шаманизм, африканское, американское, океанийское, новые религии, балканское, валашское, анимизм
 - **CONCURRENTIA**: Аль-Андалус, средиземноморье, герметизм
 - **TRANSMISSIO**: Церковь Востока
 - **REPLICATIO**: Славия (богомилы → катары → альбигойцы)
