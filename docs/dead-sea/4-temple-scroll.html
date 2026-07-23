@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>4. ХРАМОВЫЙ СВИТОК (11QT) — СВИТКИ МЁРТВОГО МОРЯ — Архивум</title>
+<style>
+:root{--bg:#0a0a0c;--bg2:#0d0d12;--panel:#13131a;--line:#2a2a33;--red:#c8102e;--red-dark:#8a0a1f;--gold:#c9a227;--gold-bright:#e8b84a;--gold-dim:#8a7119;--ink:#c8102e;--ink-dim:#c9a227;--orig:#c8102e;--accent:#d49a3a;--grid:#1d1d24}
+*{box-sizing:border-box;margin:0;padding:0}body{background:var(--bg);color:var(--ink);font-family:Georgia,'Times New Roman',serif;line-height:1.55}
+a{color:var(--gold);text-decoration:none}a:hover{color:var(--gold-bright);text-decoration:underline}
+header.hos{background:linear-gradient(180deg,var(--red-dark) 0%,#1a0007 30%,var(--bg) 100%);border-bottom:2px solid var(--red);padding:0;position:relative}
+header.hos::before{content:"";position:absolute;left:0;top:0;bottom:0;width:6px;background:var(--red)}
+.hos-strip{display:flex;justify-content:space-between;align-items:center;padding:6px 14px;background:rgba(0,0,0,0.5);border-bottom:1px solid var(--red-dark);font-family:'Courier New',monospace;font-size:10px;letter-spacing:2px;color:var(--ink-dim);text-transform:uppercase}
+.hos-strip .l{color:var(--gold)} .hos-strip .r{color:var(--red);font-weight:bold}
+.hos-body{padding:18px 22px 14px}
+.hos-h1{font-size:1.5rem;letter-spacing:.12em;color:var(--orig);font-weight:normal;margin-bottom:4px;line-height:1.2}
+.hos-h1 .q{color:var(--red);font-family:'Courier New',monospace;font-size:.7em;vertical-align:super;margin-right:6px;padding:3px 7px;background:rgba(200,16,46,0.15);border:1px solid var(--red-dark);letter-spacing:1px}
+.hos-h1 .sig{font-size:.55em;color:var(--gold);font-family:'Courier New',monospace;letter-spacing:2px;margin-left:10px;padding:3px 8px;border:1px solid var(--gold-dim);vertical-align:middle}
+.hos-sub{color:var(--ink-dim);font-size:13px;font-style:italic}
+.stamps{padding:7px 16px;background:var(--bg2);border-bottom:1px solid var(--line);text-align:center;font-family:'Courier New',monospace}
+.stamps span{display:inline-block;border:1px solid var(--gold-dim);color:var(--gold);font-size:9px;letter-spacing:2px;padding:2px 7px;margin:0 2px;text-transform:uppercase}
+.stamps span.fid{color:var(--gold-bright);border-color:var(--gold);background:rgba(201,162,39,0.05)}
+.stamps span.dam{color:var(--red);border-color:var(--red-dark);background:rgba(200,16,46,0.05)}
+.stamps span.cre{color:var(--accent);border-color:var(--accent);background:rgba(212,154,58,0.05)}
+nav.main{padding:8px 18px;background:var(--panel);border-bottom:1px solid var(--line);font-size:12px;text-align:center}
+nav.main a{color:var(--gold);margin:0 6px;letter-spacing:1px;padding:3px 6px}
+.toolbar{display:flex;justify-content:center;gap:6px;flex-wrap:wrap;margin:14px 0 8px;padding:8px;background:var(--panel);border:1px solid var(--line);font-family:'Courier New',monospace}
+.toolbar button{background:transparent;border:1px solid var(--gold-dim);color:var(--gold);padding:5px 11px;font-size:10px;letter-spacing:1px;cursor:pointer;font-family:inherit;text-transform:uppercase}
+.toolbar button:hover{background:var(--gold);color:var(--bg)}
+.meta{color:var(--ink-dim);font-size:11px;font-style:italic;padding:6px 16px;text-align:center;font-family:'Courier New',monospace;letter-spacing:1px}
+.meta b{color:var(--gold);font-style:normal;font-family:Georgia,serif}
+.chap{background:linear-gradient(90deg,var(--red-dark),transparent);color:var(--gold-bright);font-size:.85rem;letter-spacing:.2em;padding:9px 16px;border-bottom:1px solid var(--red-dark);border-top:1px solid var(--red-dark);font-family:'Courier New',monospace;text-transform:uppercase;margin-top:12px}
+main{max-width:1300px;margin:0 auto;padding:0 12px 40px}
+.row{display:grid;grid-template-columns:3rem 1fr 1.1fr;border-bottom:1px solid var(--grid);align-items:start;transition:background 0.15s}
+.row:hover{background:#15110b}
+.num{grid-column:1;color:var(--gold);font-size:12px;padding:10px 4px;text-align:right;font-family:'Courier New',monospace;font-weight:bold;align-self:start}
+.orig,.ar,.gr,.he,.grc,.sk,.dev,.av,.zh,.sa{grid-column:2;padding:10px 12px;font-size:1rem;line-height:1.7;color:var(--orig);background:rgba(201,162,39,0.025);border-right:1px solid var(--gold-dim);border-left:3px solid var(--gold-dim);font-style:italic}
+.ar{direction:rtl;text-align:right;font-family:'Amiri','Scheherazade New','Traditional Arabic',serif;font-size:1.25rem;line-height:1.85}
+.gr,.grc{direction:ltr;font-family:'SBL Greek','Palatino Linotype',Georgia,serif}
+.he{direction:rtl;text-align:right;font-family:'SBL Hebrew','Times New Roman',serif;font-size:1.1rem}
+.sk,.dev{direction:ltr;font-family:'Noto Sans Devanagari','Sanskrit Text',serif;font-size:1.05rem}
+.zh{font-family:'Noto Serif CJK SC','SimSun',serif}
+.ru,.rus{grid-column:3;padding:10px 12px;font-size:.95rem;line-height:1.65;text-align:justify;color:var(--ink)}
+.bismillah{text-align:center;padding:1.5rem 1rem;font-family:'Amiri','Scheherazade New','Traditional Arabic',serif;font-size:1.8rem;color:var(--gold);direction:rtl;background:linear-gradient(180deg,#1a1410,#0a0a0c);border-bottom:1px solid var(--red-dark);letter-spacing:0;margin:14px 16px;border:1px solid var(--red-dark)}
+.bismillah .label{display:block;font-family:'Courier New',monospace;font-size:.7rem;letter-spacing:.25em;color:var(--ink-dim);text-transform:uppercase;direction:ltr;margin-bottom:8px}
+footer{padding:18px;text-align:center;color:var(--ink-dim);font-size:10px;border-top:1px solid var(--line);font-family:'Courier New',monospace;letter-spacing:2px;background:var(--bg2)}
+footer .red{color:var(--red)} footer .gold{color:var(--gold)}
+@media(max-width:760px){
+  .hos-h1{font-size:1.2rem;letter-spacing:.05em;line-height:1.3}
+  .hos-sub{font-size:12px}
+  .hos-strip{font-size:9px;letter-spacing:1px;padding:4px 8px}
+  .stamps span{font-size:8px;letter-spacing:1px;padding:2px 5px;margin:0 1px}
+  
+  /* Stack verse vertically on mobile */
+  .verse,.row{grid-template-columns:1fr !important;display:block !important;padding:8px 10px;margin-bottom:8px;border:1px solid var(--line);background:var(--bg2)}
+  .verse .num,.row .num{display:inline-block;background:rgba(0,0,0,0.5);padding:2px 8px;margin-bottom:6px;width:auto;text-align:left;font-size:11px;border:1px solid var(--gold-dim);border-radius:2px}
+  
+  /* Original language - full width */
+  .verse .av,.verse .sk,.verse .he,.verse .grc,.verse .zh,.verse .sa,.verse .ar,.verse .dev,.verse .en,.verse .gr,.verse .egy,.verse .csl,.verse .fa,.verse .ak,.verse .bo,.verse .tib,
+  .row .av,.row .sk,.row .he,.row .grc,.row .zh,.row .sa,.row .ar,.row .dev,.row .en,.row .gr,.row .csl,.row .fa,.row .ak,.row .bo,.row .tib{font-size:1.05rem;line-height:1.7;padding:8px 10px;border-left:3px solid var(--gold-dim);margin:6px 0;background:rgba(201,162,39,0.04);font-style:italic;width:auto !important;display:block}
+  
+  /* Russian - full width */
+  .verse .ru,.row .ru{font-size:.95rem;line-height:1.6;padding:8px 10px;border-left:3px solid var(--red);background:rgba(200,16,46,0.04);margin:6px 0;width:auto !important;display:block;grid-column:1}
+  
+  /* Toolbar */
+  .toolbar{display:flex;flex-wrap:wrap;gap:4px;padding:6px;margin:8px 0}
+  .toolbar button{font-size:10px;padding:5px 8px;letter-spacing:0;flex:1 1 30%;min-width:60px}
+  
+  /* Container */
+  main{padding:0 8px}
+  nav.main{padding:6px 10px;font-size:11px}
+  nav.main a{margin:0 3px;padding:2px 4px}
+  
+  /* Book cards */
+  .book-grid{grid-template-columns:1fr;gap:6px}
+  .book-card{font-size:13px;padding:8px 10px;line-height:1.4}
+  
+  /* Note */
+  .note{font-size:14px;line-height:1.7;padding:14px 18px;margin:14px;color:var(--red);background:rgba(201,162,39,0.04);border:1px solid var(--gold-dim);border-left:4px solid var(--gold)}
+
+  
+  /* Footer */
+  footer{font-size:11px;padding:8px 10px}
+}
+  .row{grid-template-columns:2rem 1fr 1.1fr}
+  .num{font-size:.7rem;padding:.5rem .3rem}
+  .ar{font-size:1.1rem;line-height:1.7;padding:.5rem .4rem}
+  .ru{font-size:.85rem;line-height:1.4;padding:.5rem .4rem}
+}
+
+/* Q20 EGYPTIAN additions */
+.verse .egy{grid-column:1;font-family:'Papyrus','Segoe UI Historic',serif;font-size:1.05rem;line-height:1.8;direction:ltr;text-align:left;color:#e8b84a;background:rgba(232,184,74,0.04);border-right:3px solid var(--gold-dim);padding:12px 14px;font-style:italic}
+.verse .ru{grid-column:2;font-size:0.98rem;line-height:1.75;color:var(--ink);background:rgba(201,162,39,0.025);border-left:1px solid var(--gold-dim);padding:12px 14px}
+.verse .transl-note{grid-column:1/-1;padding:6px 14px;font-size:0.78rem;color:var(--ink-dim);font-style:italic;text-align:right;background:rgba(0,0,0,0.15);border-top:1px solid var(--line)}
+.verse .num,.verse .transl-note{color:var(--gold-bright)}
+
+.verse .av,.verse .sk,.verse .he,.verse .grc,.verse .zh,.verse .sa,.verse .ar,.verse .dev,.verse .en,.verse .gr,.verse .csl,.verse .fa,.verse .ak,.verse .bo,.verse .tib{font-family:'Times New Roman',Georgia,serif;font-size:1.05rem;line-height:1.7;color:var(--orig);background:rgba(201,162,39,0.04);border-right:3px solid var(--gold-dim);padding:12px 14px;direction:ltr;text-align:left;font-style:italic}
+.row .av,.row .sk,.row .he,.row .grc,.row .zh,.row .sa,.row .ar,.row .dev,.row .en,.row .gr,.row .csl,.row .fa,.row .ak,.row .bo,.row .tib{font-family:'Times New Roman',Georgia,serif;font-size:1.05rem;line-height:1.7;color:var(--orig);background:rgba(201,162,39,0.04);padding:10px 12px;direction:ltr;text-align:left}
+.verse{display:grid;grid-template-columns:3.2rem 1fr 1.1fr;border-bottom:1px solid var(--grid);align-items:start;transition:background 0.15s}
+.row{display:grid;grid-template-columns:3.2rem 1fr 1.1fr 1fr;border-bottom:1px solid var(--grid);align-items:start;transition:background 0.15s}
+.num{font-family:'Courier New',monospace;font-size:11px;color:var(--gold);text-align:center;padding:12px 4px;background:rgba(0,0,0,0.3);border-right:1px solid var(--line);font-weight:bold;align-self:start}
+.ru{font-size:.92rem;line-height:1.6;color:var(--ink);padding:10px 12px;background:rgba(255,255,255,0.01);border-left:1px solid var(--line);align-self:start;grid-column:3}
+
+.idx-group{margin:20px 14px;border-bottom:1px solid var(--line);padding-bottom:14px}
+.idx-group h2{color:var(--gold);font-size:1.05rem;letter-spacing:.22em;border-left:4px solid var(--red);padding-left:.8rem;margin-bottom:1rem;font-weight:normal}
+.book-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:8px;margin-top:6px}
+.book-card{border:1px solid var(--line);background:var(--bg2);padding:8px 12px;display:flex;flex-direction:column;gap:3px;text-decoration:none;color:var(--ink);transition:all 0.15s;font-size:13px}
+.book-card:hover{border-color:var(--gold);background:#1a1410;text-decoration:none;color:var(--gold-bright)}
+.book-card .ttl{color:var(--gold);font-size:14px;font-weight:bold}
+.book-card .s{color:var(--ink-dim);font-size:12px;line-height:1.45}
+.note{font-size:14px;line-height:1.7;padding:14px 18px;margin:14px;color:var(--red);background:rgba(201,162,39,0.04);border:1px solid var(--gold-dim);border-left:4px solid var(--gold)}
+.note p{margin-bottom:10px}
+.note ul{padding-left:24px;margin-bottom:10px}
+.note li{margin-bottom:4px}
+@media(max-width:760px){
+  .hos-h1{font-size:1.2rem;letter-spacing:.05em;line-height:1.3}
+  .book-grid{grid-template-columns:1fr;gap:6px}
+  .book-card{padding:10px;font-size:13px}
+  .note{font-size:13px;line-height:1.55;padding:10px 12px}
+  .idx-group{margin:14px 10px}
+}
+
+.verse .cop{font-family:'Segoe UI Historic','Cardo','Noto Serif',serif;font-size:1.05rem;line-height:1.85;direction:ltr;text-align:left;color:var(--orig);background:rgba(201,162,39,0.04);border-right:3px solid var(--gold-dim);padding:12px 14px;font-style:italic;grid-column:2}
+.verse{display:grid;grid-template-columns:3.2rem 1fr 1fr;border-bottom:1px solid var(--grid);align-items:start;transition:background 0.15s}
+.verse:hover{background:#15110b}
+.num{grid-column:1;color:var(--gold);font-size:12px;padding:10px 4px;text-align:right;font-family:'Courier New',monospace;font-weight:bold;align-self:start}
+.ru{grid-column:3;padding:10px 12px;font-size:.95rem;line-height:1.65;text-align:justify;color:var(--ink);border-left:1px solid var(--line)}
+.note{font-size:14px;line-height:1.7;padding:14px 18px;margin:14px;color:var(--red);background:rgba(201,162,39,0.04);border:1px solid var(--gold-dim);border-left:4px solid var(--gold)}
+.note p{margin-bottom:10px}
+@media(max-width:760px){
+  .verse{grid-template-columns:1fr !important;display:block !important;padding:8px 10px;margin-bottom:8px;border:1px solid var(--line);background:var(--bg2)}
+  .verse .cop,.verse .ru{font-size:1rem;line-height:1.6;padding:8px 10px;width:auto;display:block;grid-column:1}
+  .verse .num{display:inline-block;background:rgba(0,0,0,0.5);padding:2px 8px;margin-bottom:6px;width:auto;text-align:left;font-size:11px;border:1px solid var(--gold-dim);border-radius:2px}
+  .hos-h1{font-size:1.2rem;letter-spacing:.05em;line-height:1.3}
+}
+</style>
+</head>
+<body>
+<header class="hos">
+<div class="hos-strip"><span class="l">ARCHIVUM HAERETICUM — CORPUS DIVINUS</span><span class="r">Q27 — DEAD SEA SCROLLS</span></div>
+<div class="hos-body">
+<h1 class="hos-h1"><span class="q">Q27</span>4. ХРАМОВЫЙ СВИТОК (11QT)</h1>
+<div class="hos-sub">Свитки Мёртвого моря · 8 текстов · иврит/арам. + рус. · III в. до н.э. — I в. н.э. · Wise/Abegg/Cook 2005</div>
+</div>
+<div class="stamps">
+<span class="fid">— FIDELIS</span>
+<span class="cre">✚ MYSTICA</span>
+<span class="dam">✠ ANTIQUISSIMA</span>
+</div>
+</header>
+
+<nav class="main">
+<a href="../index.html">— CORPUS DIVINUS</a>
+  ·  <a href="index.html">— Q27 DEAD SEA SCROLLS</a>
+</nav>
+
+<main>
+<div class="toolbar">
+<button onclick="toggleAll(true)">РАЗВЕРНУТЬ</button>
+<button onclick="toggleAll(false)">СВЕРНУТЬ</button>
+<button onclick="toggleOrig()">☀ ОРИГИНАЛ</button>
+<button onclick="toggleRu()">☾ ПЕРЕВОД</button>
+<button onclick="resetView()">◉ ОБА</button>
+</div>
+
+<div class="note">
+<p><b>Храмовый Свиток (11QT).</b> Самый длинный из всех свитков Мёртвого моря (8.75 м, 66 колонок). Найден в 1956 г. в Пещере 11 Кумрана. Описывает <b>идеальный Иерусалимский Храм</b> с астрономически точными измерениями, праздниками, жертвоприношениями, законами чистоты и сектантскими предписаниями. Псевдоэпиграфический текст (приписан Моисею, II в. до н.э.).</p><p>Текст сочетает:</p><ul><li>Архитектурный план Иерусалимского Храма (точнее, чем в Библии)</li><li>Календарь 364-дневного солнечного года (отличается от лунного)</li><li>Законы чистоты (строже, чем в Библии)</li><li>Законы царя (ограничение количества жён и богатства)</li><li>Законы праздников (Пасха, Шавуот, Суккот)</li><li>Законы войны</li><li>Законы о ростовщичестве, рабах, иноплеменниках</li></ul><p>Параллели: Q3 Ветхий Завет (Иезекииль 40-48, описание нового Храма), Q18 Каббала (мистика Храма), Q2 Новый Завет (Иерусалим небесный). Источник: <b>Wise/Abegg/Cook 2005</b>.</p>
+</div>
+
+<div class="verse">
+<div class="num">1</div>
+<div class="cop">And the Lord said to Moses: Speak to the children of Israel, and let them take for Me an offering from every man whose heart moves him to give. And let them make Me a sanctuary, that I may dwell among them.</div>
+<div class="ru">И сказал Господь Моисею: скажи сынам Израилевым, чтобы они взяли Мне приношение от каждого, кого побудит сердце. И пусть сделают Мне святилище, чтобы Я мог обитать среди них.</div>
+</div>
+<div class="verse">
+<div class="num">2</div>
+<div class="cop">And the city shall be built in the midst of the sanctuary, and the holy of holies shall be in the center of the city, and the temple shall be the most holy building in all the land.</div>
+<div class="ru">И город будет построен посреди святилища, и святое святых будет в центре города, и храм будет святейшим зданием во всей земле.</div>
+</div>
+<div class="verse">
+<div class="num">3</div>
+<div class="cop">And the gates of the city shall be three on the north, three on the south, three on the east, and three on the west, and each gate shall be named after one of the tribes of Israel.</div>
+<div class="ru">И ворота города будут трое на севере, трое на юге, трое на востоке и трое на западе, и каждые ворота будут названы именем одного из колен Израилевых.</div>
+</div>
+<div class="verse">
+<div class="num">4</div>
+<div class="cop">And no unclean thing shall enter into the city, neither the foreigner who has not been circumcised, nor the Ammonite, nor the Moabite, nor the bastard, nor the one whose testicles are crushed.</div>
+<div class="ru">И никакая нечистая вещь не войдёт в город, ни иноплеменник, не обрезанный, ни аммонитянин, ни моавитянин, ни незаконнорождённый, ни тот, у кого раздавлены яички.</div>
+</div>
+<div class="verse">
+<div class="num">5</div>
+<div class="cop">And the holy city shall be measured six thousand six hundred and sixty-six cubits square, and the temple shall be at its center, and the entire city shall be holy to the Lord.</div>
+<div class="ru">И святой город будет отмерен шесть тысяч шестьсот шестьдесят шесть локтей в квадрате, и храм будет в его центре, и весь город будет свят для Господа.</div>
+</div>
+<div class="verse">
+<div class="num">6</div>
+<div class="cop">And in the temple there shall be a great altar of unhewn stone, on which all the offerings shall be made, and no iron tool shall be lifted up against it, for the altar is most holy.</div>
+<div class="ru">И в храме будет великий жертвенник из нетесаного камня, на котором будут приноситься все жертвы, и никакой железный инструмент не будет подниматься на него, ибо жертвенник святейший.</div>
+</div>
+<div class="verse">
+<div class="num">7</div>
+<div class="cop">And the priests shall wash their hands and their feet from the laver before they enter the temple, that they may be clean, and they shall not defile the holy place with their impurities.</div>
+<div class="ru">И священники омоют руки и ноги свои из умывальника, прежде чем войти в храм, чтобы быть чистыми, и не осквернят святое место нечистотами своими.</div>
+</div>
+<div class="verse">
+<div class="num">8</div>
+<div class="cop">And the king shall be a prince of the whole congregation of Israel, and he shall sit upon the throne of David for ever, and his sons shall rule after him, according to the law of the Lord.</div>
+<div class="ru">И царь будет князем всей общины Израилевой, и сядет на престоле Давидовом навеки, и сыновья его будут править после него по закону Господа.</div>
+</div>
+<div class="verse">
+<div class="num">9</div>
+<div class="cop">And the people shall dwell in the city according to their tribes, and each tribe shall have its appointed place, and they shall not encroach upon one another, for the Lord is the inheritance of His people.</div>
+<div class="ru">И народ будет жить в городе по коленам своим, и каждое колено будет иметь своё назначенное место, и не будут посягать друг на друга, ибо Господь есть наследие народа Своего.</div>
+</div>
+<div class="verse">
+<div class="num">10</div>
+<div class="cop">And the feasts of the Lord shall be observed in their appointed times, and the new moons and the sabbaths shall be kept holy, and the people shall rejoice before the Lord at the festivals.</div>
+<div class="ru">И праздники Господни будут соблюдаться в назначенные сроки, и новомесячия и субботы будут храниться свято, и народ будет радоваться пред Господом в праздники.</div>
+</div>
+<div class="verse">
+<div class="num">11</div>
+<div class="cop">And the first fruits of the land shall be brought to the temple, and the tithes shall be given to the priests and the Levites, and the poor and the stranger shall not be forgotten, for the Lord is the God of the widow and the orphan.</div>
+<div class="ru">И первые плоды земли будут приносимы в храм, и десятины будут даны священникам и левитам, и бедный и пришелец не будут забыты, ибо Господь есть Бог вдовы и сироты.</div>
+</div>
+<div class="verse">
+<div class="num">12</div>
+<div class="cop">And the sanctuary shall be most holy, and no unclean person shall enter into it, no one with a blemish, no one with a cut, no one whose beard is shaven, no one whose garments are torn.</div>
+<div class="ru">И святилище будет святейшим, и никакой нечистый человек не войдёт в него, никто с увечьем, никто с порезом, никто с бритой бородой, никто с разодранной одеждой.</div>
+</div>
+<div class="verse">
+<div class="num">13</div>
+<div class="cop">And the Lord shall dwell in the midst of His people, and they shall be His people, and He shall be their God, and they shall walk in His statutes and keep His commandments for ever.</div>
+<div class="ru">И Господь будет обитать среди народа Своего, и они будут народом Его, и Он будет их Богом, и будут ходить по уставам Его и хранить заповеди Его вовеки.</div>
+</div>
+<div class="verse">
+<div class="num">14</div>
+<div class="cop">And the city shall be called by the name of the Lord, and the temple shall be the dwelling place of the Most High, and His glory shall fill the whole earth as the waters cover the sea.</div>
+<div class="ru">И город будет назван именем Господа, и храм будет обителью Всевышнего, и слава Его наполнит всю землю, как воды покрывают море.</div>
+</div>
+<div class="verse">
+<div class="num">15</div>
+<div class="cop">And the prince shall not multiply wives to himself, that his heart turn not away, nor shall he greatly multiply silver and gold to himself, that he be not lifted up in pride.</div>
+<div class="ru">И князь не должен умножать себе жён, чтобы сердце его не уклонилось, и не должен чрезмерно умножать себе серебра и золота, чтобы не возгордился.</div>
+</div>
+<div class="verse">
+<div class="num">16</div>
+<div class="cop">And the feast of unleavened bread shall be kept seven days, in the first month, and the passover shall be sacrificed in the evening, according to all the statutes of the Lord.</div>
+<div class="ru">И праздник опресноков будет соблюдаться семь дней, в первом месяце, и пасха будет закалываться вечером, по всем уставам Господа.</div>
+</div>
+<div class="verse">
+<div class="num">17</div>
+<div class="cop">And in the seventh year shall be a sabbath of rest for the land, and the vine and the olive shall be left untended, and the poor shall eat the spontaneous growth of the field.</div>
+<div class="ru">И на седьмой год будет суббота покоя для земли, и виноградник и маслина будут оставлены без ухода, и бедные будут есть самопроизвольные всходы поля.</div>
+</div>
+<div class="verse">
+<div class="num">18</div>
+<div class="cop">And the Lord shall bless His people and the land, and the heavens shall drop down dew, and the earth shall bring forth her fruit in abundance, and the people shall dwell in safety.</div>
+<div class="ru">И Господь благословит народ Свой и землю, и небеса пошлют росу, и земля принесёт плоды свои в изобилии, и народ будет жить в безопасности.</div>
+</div>
+<div class="verse">
+<div class="num">19</div>
+<div class="cop">And the kingdom shall be the Lord's, and He shall reign over all the earth, and all nations shall serve Him, and His name shall be one, and His glory shall fill the whole earth.</div>
+<div class="ru">И царство будет Господа, и Он будет царствовать над всей землёй, и все народы будут служить Ему, и имя Его будет единым, и слава Его наполнит всю землю.</div>
+</div>
+<div class="verse">
+<div class="num">20</div>
+<div class="cop">And the sanctuary of the Lord shall be in the midst of the city, and the glory of the Lord shall be upon it, and the nations shall come to it from all the ends of the earth, to worship before the Lord and to glorify His name.</div>
+<div class="ru">И святилище Господне будет среди города, и слава Господня будет на нём, и народы придут к нему со всех краёв земли, чтобы поклониться пред Господом и прославить имя Его.</div>
+</div>
+
+
+</main>
+
+<footer>
+ARCHIVUM HAERETICUM — Q27 — DEAD SEA SCROLLS — 4. ХРАМОВЫЙ СВИТОК (11QT) — <span class="red">◆</span> SIGILLUM VERITATIS
+</footer>
+<script>function toggleAll(open){
+  document.querySelectorAll('details').forEach(d=>d.open=open);
+  document.querySelectorAll('.verse,.row').forEach(r=>{r.style.display=open?'grid':'none';});
+}
+function toggleOrig(){
+  document.querySelectorAll('.verse .cop').forEach(c=>c.style.display=c.style.display==='none'?'block':'none');
+}
+function toggleRu(){
+  document.querySelectorAll('.verse .ru').forEach(c=>c.style.display=c.style.display==='none'?'block':'none');
+}
+function resetView(){
+  document.querySelectorAll('.verse,.row').forEach(r=>r.style.display='grid');
+  document.querySelectorAll('.verse .cop,.verse .ru').forEach(c=>c.style.display='block');
+}</script>
+</body>
+</html>

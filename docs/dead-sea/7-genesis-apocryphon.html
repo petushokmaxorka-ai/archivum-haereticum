@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>7. АПОКРИФ БЫТИЯ (1QapGen) — СВИТКИ МЁРТВОГО МОРЯ — Архивум</title>
+<style>
+:root{--bg:#0a0a0c;--bg2:#0d0d12;--panel:#13131a;--line:#2a2a33;--red:#c8102e;--red-dark:#8a0a1f;--gold:#c9a227;--gold-bright:#e8b84a;--gold-dim:#8a7119;--ink:#c8102e;--ink-dim:#c9a227;--orig:#c8102e;--accent:#d49a3a;--grid:#1d1d24}
+*{box-sizing:border-box;margin:0;padding:0}body{background:var(--bg);color:var(--ink);font-family:Georgia,'Times New Roman',serif;line-height:1.55}
+a{color:var(--gold);text-decoration:none}a:hover{color:var(--gold-bright);text-decoration:underline}
+header.hos{background:linear-gradient(180deg,var(--red-dark) 0%,#1a0007 30%,var(--bg) 100%);border-bottom:2px solid var(--red);padding:0;position:relative}
+header.hos::before{content:"";position:absolute;left:0;top:0;bottom:0;width:6px;background:var(--red)}
+.hos-strip{display:flex;justify-content:space-between;align-items:center;padding:6px 14px;background:rgba(0,0,0,0.5);border-bottom:1px solid var(--red-dark);font-family:'Courier New',monospace;font-size:10px;letter-spacing:2px;color:var(--ink-dim);text-transform:uppercase}
+.hos-strip .l{color:var(--gold)} .hos-strip .r{color:var(--red);font-weight:bold}
+.hos-body{padding:18px 22px 14px}
+.hos-h1{font-size:1.5rem;letter-spacing:.12em;color:var(--orig);font-weight:normal;margin-bottom:4px;line-height:1.2}
+.hos-h1 .q{color:var(--red);font-family:'Courier New',monospace;font-size:.7em;vertical-align:super;margin-right:6px;padding:3px 7px;background:rgba(200,16,46,0.15);border:1px solid var(--red-dark);letter-spacing:1px}
+.hos-h1 .sig{font-size:.55em;color:var(--gold);font-family:'Courier New',monospace;letter-spacing:2px;margin-left:10px;padding:3px 8px;border:1px solid var(--gold-dim);vertical-align:middle}
+.hos-sub{color:var(--ink-dim);font-size:13px;font-style:italic}
+.stamps{padding:7px 16px;background:var(--bg2);border-bottom:1px solid var(--line);text-align:center;font-family:'Courier New',monospace}
+.stamps span{display:inline-block;border:1px solid var(--gold-dim);color:var(--gold);font-size:9px;letter-spacing:2px;padding:2px 7px;margin:0 2px;text-transform:uppercase}
+.stamps span.fid{color:var(--gold-bright);border-color:var(--gold);background:rgba(201,162,39,0.05)}
+.stamps span.dam{color:var(--red);border-color:var(--red-dark);background:rgba(200,16,46,0.05)}
+.stamps span.cre{color:var(--accent);border-color:var(--accent);background:rgba(212,154,58,0.05)}
+nav.main{padding:8px 18px;background:var(--panel);border-bottom:1px solid var(--line);font-size:12px;text-align:center}
+nav.main a{color:var(--gold);margin:0 6px;letter-spacing:1px;padding:3px 6px}
+.toolbar{display:flex;justify-content:center;gap:6px;flex-wrap:wrap;margin:14px 0 8px;padding:8px;background:var(--panel);border:1px solid var(--line);font-family:'Courier New',monospace}
+.toolbar button{background:transparent;border:1px solid var(--gold-dim);color:var(--gold);padding:5px 11px;font-size:10px;letter-spacing:1px;cursor:pointer;font-family:inherit;text-transform:uppercase}
+.toolbar button:hover{background:var(--gold);color:var(--bg)}
+.meta{color:var(--ink-dim);font-size:11px;font-style:italic;padding:6px 16px;text-align:center;font-family:'Courier New',monospace;letter-spacing:1px}
+.meta b{color:var(--gold);font-style:normal;font-family:Georgia,serif}
+.chap{background:linear-gradient(90deg,var(--red-dark),transparent);color:var(--gold-bright);font-size:.85rem;letter-spacing:.2em;padding:9px 16px;border-bottom:1px solid var(--red-dark);border-top:1px solid var(--red-dark);font-family:'Courier New',monospace;text-transform:uppercase;margin-top:12px}
+main{max-width:1300px;margin:0 auto;padding:0 12px 40px}
+.row{display:grid;grid-template-columns:3rem 1fr 1.1fr;border-bottom:1px solid var(--grid);align-items:start;transition:background 0.15s}
+.row:hover{background:#15110b}
+.num{grid-column:1;color:var(--gold);font-size:12px;padding:10px 4px;text-align:right;font-family:'Courier New',monospace;font-weight:bold;align-self:start}
+.orig,.ar,.gr,.he,.grc,.sk,.dev,.av,.zh,.sa{grid-column:2;padding:10px 12px;font-size:1rem;line-height:1.7;color:var(--orig);background:rgba(201,162,39,0.025);border-right:1px solid var(--gold-dim);border-left:3px solid var(--gold-dim);font-style:italic}
+.ar{direction:rtl;text-align:right;font-family:'Amiri','Scheherazade New','Traditional Arabic',serif;font-size:1.25rem;line-height:1.85}
+.gr,.grc{direction:ltr;font-family:'SBL Greek','Palatino Linotype',Georgia,serif}
+.he{direction:rtl;text-align:right;font-family:'SBL Hebrew','Times New Roman',serif;font-size:1.1rem}
+.sk,.dev{direction:ltr;font-family:'Noto Sans Devanagari','Sanskrit Text',serif;font-size:1.05rem}
+.zh{font-family:'Noto Serif CJK SC','SimSun',serif}
+.ru,.rus{grid-column:3;padding:10px 12px;font-size:.95rem;line-height:1.65;text-align:justify;color:var(--ink)}
+.bismillah{text-align:center;padding:1.5rem 1rem;font-family:'Amiri','Scheherazade New','Traditional Arabic',serif;font-size:1.8rem;color:var(--gold);direction:rtl;background:linear-gradient(180deg,#1a1410,#0a0a0c);border-bottom:1px solid var(--red-dark);letter-spacing:0;margin:14px 16px;border:1px solid var(--red-dark)}
+.bismillah .label{display:block;font-family:'Courier New',monospace;font-size:.7rem;letter-spacing:.25em;color:var(--ink-dim);text-transform:uppercase;direction:ltr;margin-bottom:8px}
+footer{padding:18px;text-align:center;color:var(--ink-dim);font-size:10px;border-top:1px solid var(--line);font-family:'Courier New',monospace;letter-spacing:2px;background:var(--bg2)}
+footer .red{color:var(--red)} footer .gold{color:var(--gold)}
+@media(max-width:760px){
+  .hos-h1{font-size:1.2rem;letter-spacing:.05em;line-height:1.3}
+  .hos-sub{font-size:12px}
+  .hos-strip{font-size:9px;letter-spacing:1px;padding:4px 8px}
+  .stamps span{font-size:8px;letter-spacing:1px;padding:2px 5px;margin:0 1px}
+  
+  /* Stack verse vertically on mobile */
+  .verse,.row{grid-template-columns:1fr !important;display:block !important;padding:8px 10px;margin-bottom:8px;border:1px solid var(--line);background:var(--bg2)}
+  .verse .num,.row .num{display:inline-block;background:rgba(0,0,0,0.5);padding:2px 8px;margin-bottom:6px;width:auto;text-align:left;font-size:11px;border:1px solid var(--gold-dim);border-radius:2px}
+  
+  /* Original language - full width */
+  .verse .av,.verse .sk,.verse .he,.verse .grc,.verse .zh,.verse .sa,.verse .ar,.verse .dev,.verse .en,.verse .gr,.verse .egy,.verse .csl,.verse .fa,.verse .ak,.verse .bo,.verse .tib,
+  .row .av,.row .sk,.row .he,.row .grc,.row .zh,.row .sa,.row .ar,.row .dev,.row .en,.row .gr,.row .csl,.row .fa,.row .ak,.row .bo,.row .tib{font-size:1.05rem;line-height:1.7;padding:8px 10px;border-left:3px solid var(--gold-dim);margin:6px 0;background:rgba(201,162,39,0.04);font-style:italic;width:auto !important;display:block}
+  
+  /* Russian - full width */
+  .verse .ru,.row .ru{font-size:.95rem;line-height:1.6;padding:8px 10px;border-left:3px solid var(--red);background:rgba(200,16,46,0.04);margin:6px 0;width:auto !important;display:block;grid-column:1}
+  
+  /* Toolbar */
+  .toolbar{display:flex;flex-wrap:wrap;gap:4px;padding:6px;margin:8px 0}
+  .toolbar button{font-size:10px;padding:5px 8px;letter-spacing:0;flex:1 1 30%;min-width:60px}
+  
+  /* Container */
+  main{padding:0 8px}
+  nav.main{padding:6px 10px;font-size:11px}
+  nav.main a{margin:0 3px;padding:2px 4px}
+  
+  /* Book cards */
+  .book-grid{grid-template-columns:1fr;gap:6px}
+  .book-card{font-size:13px;padding:8px 10px;line-height:1.4}
+  
+  /* Note */
+  .note{font-size:14px;line-height:1.7;padding:14px 18px;margin:14px;color:var(--red);background:rgba(201,162,39,0.04);border:1px solid var(--gold-dim);border-left:4px solid var(--gold)}
+
+  
+  /* Footer */
+  footer{font-size:11px;padding:8px 10px}
+}
+  .row{grid-template-columns:2rem 1fr 1.1fr}
+  .num{font-size:.7rem;padding:.5rem .3rem}
+  .ar{font-size:1.1rem;line-height:1.7;padding:.5rem .4rem}
+  .ru{font-size:.85rem;line-height:1.4;padding:.5rem .4rem}
+}
+
+/* Q20 EGYPTIAN additions */
+.verse .egy{grid-column:1;font-family:'Papyrus','Segoe UI Historic',serif;font-size:1.05rem;line-height:1.8;direction:ltr;text-align:left;color:#e8b84a;background:rgba(232,184,74,0.04);border-right:3px solid var(--gold-dim);padding:12px 14px;font-style:italic}
+.verse .ru{grid-column:2;font-size:0.98rem;line-height:1.75;color:var(--ink);background:rgba(201,162,39,0.025);border-left:1px solid var(--gold-dim);padding:12px 14px}
+.verse .transl-note{grid-column:1/-1;padding:6px 14px;font-size:0.78rem;color:var(--ink-dim);font-style:italic;text-align:right;background:rgba(0,0,0,0.15);border-top:1px solid var(--line)}
+.verse .num,.verse .transl-note{color:var(--gold-bright)}
+
+.verse .av,.verse .sk,.verse .he,.verse .grc,.verse .zh,.verse .sa,.verse .ar,.verse .dev,.verse .en,.verse .gr,.verse .csl,.verse .fa,.verse .ak,.verse .bo,.verse .tib{font-family:'Times New Roman',Georgia,serif;font-size:1.05rem;line-height:1.7;color:var(--orig);background:rgba(201,162,39,0.04);border-right:3px solid var(--gold-dim);padding:12px 14px;direction:ltr;text-align:left;font-style:italic}
+.row .av,.row .sk,.row .he,.row .grc,.row .zh,.row .sa,.row .ar,.row .dev,.row .en,.row .gr,.row .csl,.row .fa,.row .ak,.row .bo,.row .tib{font-family:'Times New Roman',Georgia,serif;font-size:1.05rem;line-height:1.7;color:var(--orig);background:rgba(201,162,39,0.04);padding:10px 12px;direction:ltr;text-align:left}
+.verse{display:grid;grid-template-columns:3.2rem 1fr 1.1fr;border-bottom:1px solid var(--grid);align-items:start;transition:background 0.15s}
+.row{display:grid;grid-template-columns:3.2rem 1fr 1.1fr 1fr;border-bottom:1px solid var(--grid);align-items:start;transition:background 0.15s}
+.num{font-family:'Courier New',monospace;font-size:11px;color:var(--gold);text-align:center;padding:12px 4px;background:rgba(0,0,0,0.3);border-right:1px solid var(--line);font-weight:bold;align-self:start}
+.ru{font-size:.92rem;line-height:1.6;color:var(--ink);padding:10px 12px;background:rgba(255,255,255,0.01);border-left:1px solid var(--line);align-self:start;grid-column:3}
+
+.idx-group{margin:20px 14px;border-bottom:1px solid var(--line);padding-bottom:14px}
+.idx-group h2{color:var(--gold);font-size:1.05rem;letter-spacing:.22em;border-left:4px solid var(--red);padding-left:.8rem;margin-bottom:1rem;font-weight:normal}
+.book-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:8px;margin-top:6px}
+.book-card{border:1px solid var(--line);background:var(--bg2);padding:8px 12px;display:flex;flex-direction:column;gap:3px;text-decoration:none;color:var(--ink);transition:all 0.15s;font-size:13px}
+.book-card:hover{border-color:var(--gold);background:#1a1410;text-decoration:none;color:var(--gold-bright)}
+.book-card .ttl{color:var(--gold);font-size:14px;font-weight:bold}
+.book-card .s{color:var(--ink-dim);font-size:12px;line-height:1.45}
+.note{font-size:14px;line-height:1.7;padding:14px 18px;margin:14px;color:var(--red);background:rgba(201,162,39,0.04);border:1px solid var(--gold-dim);border-left:4px solid var(--gold)}
+.note p{margin-bottom:10px}
+.note ul{padding-left:24px;margin-bottom:10px}
+.note li{margin-bottom:4px}
+@media(max-width:760px){
+  .hos-h1{font-size:1.2rem;letter-spacing:.05em;line-height:1.3}
+  .book-grid{grid-template-columns:1fr;gap:6px}
+  .book-card{padding:10px;font-size:13px}
+  .note{font-size:13px;line-height:1.55;padding:10px 12px}
+  .idx-group{margin:14px 10px}
+}
+
+.verse .cop{font-family:'Segoe UI Historic','Cardo','Noto Serif',serif;font-size:1.05rem;line-height:1.85;direction:ltr;text-align:left;color:var(--orig);background:rgba(201,162,39,0.04);border-right:3px solid var(--gold-dim);padding:12px 14px;font-style:italic;grid-column:2}
+.verse{display:grid;grid-template-columns:3.2rem 1fr 1fr;border-bottom:1px solid var(--grid);align-items:start;transition:background 0.15s}
+.verse:hover{background:#15110b}
+.num{grid-column:1;color:var(--gold);font-size:12px;padding:10px 4px;text-align:right;font-family:'Courier New',monospace;font-weight:bold;align-self:start}
+.ru{grid-column:3;padding:10px 12px;font-size:.95rem;line-height:1.65;text-align:justify;color:var(--ink);border-left:1px solid var(--line)}
+.note{font-size:14px;line-height:1.7;padding:14px 18px;margin:14px;color:var(--red);background:rgba(201,162,39,0.04);border:1px solid var(--gold-dim);border-left:4px solid var(--gold)}
+.note p{margin-bottom:10px}
+@media(max-width:760px){
+  .verse{grid-template-columns:1fr !important;display:block !important;padding:8px 10px;margin-bottom:8px;border:1px solid var(--line);background:var(--bg2)}
+  .verse .cop,.verse .ru{font-size:1rem;line-height:1.6;padding:8px 10px;width:auto;display:block;grid-column:1}
+  .verse .num{display:inline-block;background:rgba(0,0,0,0.5);padding:2px 8px;margin-bottom:6px;width:auto;text-align:left;font-size:11px;border:1px solid var(--gold-dim);border-radius:2px}
+  .hos-h1{font-size:1.2rem;letter-spacing:.05em;line-height:1.3}
+}
+</style>
+</head>
+<body>
+<header class="hos">
+<div class="hos-strip"><span class="l">ARCHIVUM HAERETICUM — CORPUS DIVINUS</span><span class="r">Q27 — DEAD SEA SCROLLS</span></div>
+<div class="hos-body">
+<h1 class="hos-h1"><span class="q">Q27</span>7. АПОКРИФ БЫТИЯ (1QapGen)</h1>
+<div class="hos-sub">Свитки Мёртвого моря · 8 текстов · иврит/арам. + рус. · III в. до н.э. — I в. н.э. · Wise/Abegg/Cook 2005</div>
+</div>
+<div class="stamps">
+<span class="fid">— FIDELIS</span>
+<span class="cre">✚ MYSTICA</span>
+<span class="dam">✠ ANTIQUISSIMA</span>
+</div>
+</header>
+
+<nav class="main">
+<a href="../index.html">— CORPUS DIVINUS</a>
+  ·  <a href="index.html">— Q27 DEAD SEA SCROLLS</a>
+</nav>
+
+<main>
+<div class="toolbar">
+<button onclick="toggleAll(true)">РАЗВЕРНУТЬ</button>
+<button onclick="toggleAll(false)">СВЕРНУТЬ</button>
+<button onclick="toggleOrig()">☀ ОРИГИНАЛ</button>
+<button onclick="toggleRu()">☾ ПЕРЕВОД</button>
+<button onclick="resetView()">◉ ОБА</button>
+</div>
+
+<div class="note">
+<p><b>Апокриф Бытия (1QapGen, Genesis Apocryphon).</b> Переработанный и расширенный текст книги Бытия 5-15, найденный в Пещере 1 Кумрана в 1947 г. Написан <b>на арамейском языке</b> (один из немногих арамейских текстов). Датируется I в. до н.э. (ок. 100 г. до н.э.). Содержит 22 колонки, из которых 5 сохранились полностью.</p><p>Содержит:</p><ul><li>Расширенные истории Ламеха, Ноя, Авраама</li><li>Сны Ламеха о потопе (расширение Бытия 5)</li><li>Видение Ноя о потопе (расширение Бытия 6)</li><li>Историю Авраама и Сары в Египте (расширение Бытия 12)</li><li>Мидраш-стиль, но с арамейским колоритом</li></ul><p>Параллели: Q3 Ветхий Завет (книга Бытия, Быт 5-15), Q4 1 Енох (расширенный библейский текст), Q5.1 Молитвы Волхвов (славянские апокрифические тексты), Q26 Кодзики (расширенные мифы о Ноевом потопе). Источник: <b>Wise/Abegg/Cook 2005</b>.</p>
+</div>
+
+<div class="verse">
+<div class="num">1</div>
+<div class="cop">And these are the words of the vision of Lamech, your father, which he saw and declared to his household, and to his sons, before he died.</div>
+<div class="ru">И это слова видения Ламеха, отца твоего, которое он видел и объявил дому своему, и сыновьям своим, прежде чем умер.</div>
+</div>
+<div class="verse">
+<div class="num">2</div>
+<div class="cop">And Lamech said to his son Noah: Hear me, my son, and I will declare to you the vision which I saw, that you may know what is to come to your descendants in the latter days.</div>
+<div class="ru">И сказал Ламех сыну своему Ною: послушай меня, сын мой, и я возвещу тебе видение, которое я видел, дабы ты знал, что придёт к потомкам твоим в последние дни.</div>
+</div>
+<div class="verse">
+<div class="num">3</div>
+<div class="cop">And in my sleep I saw a great mountain, and behold, it was cleft in two, and there came forth four winds, and they smote the mountain, and it fell into the sea, and the waters thereof were troubled.</div>
+<div class="ru">И во сне моём я видел великую гору, и вот, она раскололась надвое, и вышли четыре ветра, и поразили гору, и она пала в море, и воды его возмутились.</div>
+</div>
+<div class="verse">
+<div class="num">4</div>
+<div class="cop">And I lifted up my eyes to the firmament, and behold, the heavens were rent, and there fell from heaven a great star, and it came into the midst of the waters, and the waters thereof were troubled.</div>
+<div class="ru">И поднял я глаза к тверди, и вот, небеса разверзлись, и упала с неба великая звезда, и упала в средину вод, и воды возмутились.</div>
+</div>
+<div class="verse">
+<div class="num">5</div>
+<div class="cop">And I lifted up my eyes to the north, and behold, three chambers of water were cleft in the midst of the firmament, and three chambers of fire, and they were joined together.</div>
+<div class="ru">И поднял я глаза к северу, и вот, три камеры воды раскололись в средине тверди, и три камеры огня, и они соединились вместе.</div>
+</div>
+<div class="verse">
+<div class="num">6</div>
+<div class="cop">And the waters were troubled, and they poured out upon the whole earth, and they bore up the ark, and it went up on high upon the waters.</div>
+<div class="ru">И воды возмутились, и излились на всю землю, и подняли ковчег, и он поднялся высоко над водами.</div>
+</div>
+<div class="verse">
+<div class="num">7</div>
+<div class="cop">And the fountains of the deep were opened, and the windows of heaven were opened, and rain was upon the earth forty days and forty nights.</div>
+<div class="ru">И источники бездны открылись, и окна небесные открылись, и дождь был на земле сорок дней и сорок ночей.</div>
+</div>
+<div class="verse">
+<div class="num">8</div>
+<div class="cop">And the waters prevailed exceedingly upon the earth, and all the high mountains that were under the whole heaven were covered, and all flesh died that moved upon the earth.</div>
+<div class="ru">И воды усилились чрезвычайно на земле, и покрылись все высокие горы, которые под всем небом, и умерла всякая плоть, движущаяся по земле.</div>
+</div>
+<div class="verse">
+<div class="num">9</div>
+<div class="cop">And the waters were mighty upon the earth, and the ark went upon the face of the waters, and it was borne up upon the waters, and it was tossed upon the mighty waters.</div>
+<div class="ru">И воды были сильны на земле, и ковчег нёсся по лицу вод, и поднимался водами, и колебался сильными водами.</div>
+</div>
+<div class="verse">
+<div class="num">10</div>
+<div class="cop">And the ark rested upon the mountains of Ararat, in the seventh month, on the seventeenth day of the month, and the waters were abated.</div>
+<div class="ru">И ковчег остановился на горах Араратских, в седьмом месяце, в семнадцатый день месяца, и воды стали убывать.</div>
+</div>
+<div class="verse">
+<div class="num">11</div>
+<div class="cop">And the waters were dried up from off the earth, and the ground was dry, and Noah went out from the ark, and his sons with him, and his wife, and the wives of his sons with him.</div>
+<div class="ru">И воды иссохли с земли, и земля была сухая, и Ной вышел из ковчега, и сыновья его с ним, и жена его, и жёны сыновей его с ним.</div>
+</div>
+<div class="verse">
+<div class="num">12</div>
+<div class="cop">And they offered burnt offerings to the Lord, and the Lord smelled a sweet savour, and He said in His heart: I will not again curse the ground any more for man's sake, for the imagination of man's heart is evil from his youth.</div>
+<div class="ru">И принесли всесожжения Господу, и Господь обонял благоухание, и сказал в сердце Своём: не буду больше проклинать землю за человека, ибо помышление сердца человеческого — зло от юности его.</div>
+</div>
+<div class="verse">
+<div class="num">13</div>
+<div class="cop">And He blessed Noah and his sons, and said unto them: Be fruitful, and multiply, and replenish the earth, and subdue it, and have dominion over the fish of the sea, and the fowl of the air, and every living thing that moveth upon the earth.</div>
+<div class="ru">И благословил Ной и сыновей его, и сказал им: плодитесь и размножайтесь, и наполняйте землю, и обладайте ею, и владычествуйте над рыбами морскими, и над птицами небесными, и над всяким живым существом, движущимся по земле.</div>
+</div>
+<div class="verse">
+<div class="num">14</div>
+<div class="cop">And the Lord said: I will establish My covenant with you, and with your seed after you, and with every living creature that is with you, and with all flesh that is upon the earth, never again to destroy it with a flood.</div>
+<div class="ru">И сказал Господь: Я поставлю завет Мой с тобою и с потомством твоим после тебя, и с каждым живым существом, которое с тобою, и со всею плотью, которая на земле, — никогда больше не уничтожать её потопом.</div>
+</div>
+<div class="verse">
+<div class="num">15</div>
+<div class="cop">And the bow shall be in the cloud, and I will look upon it, that I may remember the everlasting covenant between God and every living creature of all flesh that is upon the earth.</div>
+<div class="ru">И радуга будет в облаке, и Я посмотрю на неё, чтобы вспомнить вечный завет между Богом и всяким живым существом из всей плоти, которая на земле.</div>
+</div>
+<div class="verse">
+<div class="num">16</div>
+<div class="cop">And the sons of Noah that went forth from the ark were Shem, and Ham, and Japheth, and from them was the whole earth overspread, and they dwelt in their lands, each one after his family, after his kindred, in their nations.</div>
+<div class="ru">И сыновья Ноя, вышедшие из ковчега, были Сим, Хам и Иафет, и от них распространилась вся земля, и жили они в землях своих, каждый по семейству своему, по роду своему, в народах своих.</div>
+</div>
+<div class="verse">
+<div class="num">17</div>
+<div class="cop">And the whole earth was of one language, and of one speech, and it came to pass as they journeyed from the east, that they found a plain in the land of Shinar, and they dwelt there.</div>
+<div class="ru">И была вся земля одного языка и одного наречия, и было, когда они путешествовали с востока, то нашли равнину в земле Сеннаар, и поселились там.</div>
+</div>
+<div class="verse">
+<div class="num">18</div>
+<div class="cop">And they said one to another: Go to, let us make brick, and burn them thoroughly. And they had brick for stone, and slime for mortar.</div>
+<div class="ru">И сказали друг другу: давайте сделаем кирпичи и обожжём их хорошенько. И был у них кирпич вместо камня, и смола вместо извести.</div>
+</div>
+<div class="verse">
+<div class="num">19</div>
+<div class="cop">And they said: Go to, let us build us a city, and a tower, whose top may reach unto heaven, and let us make us a name, lest we be scattered abroad upon the face of the whole earth.</div>
+<div class="ru">И сказали: давайте построим себе город и башню, вышиною до небес, и сделаем себе имя, чтобы мы не рассеялись по лицу всей земли.</div>
+</div>
+<div class="verse">
+<div class="num">20</div>
+<div class="cop">And the Lord came down to see the city and the tower, which the children of men builded, and He said: Behold, the people is one, and they have all one language, and this they begin to do, and now nothing will be restrained from them, which they have imagined to do.</div>
+<div class="ru">И сошёл Господь посмотреть город и башню, которые строили сыны человеческие, и сказал: вот, народ один, и у всех один язык, и вот что начали они делать, и теперь не будет для них ничего невозможного, что они задумали.</div>
+</div>
+<div class="verse">
+<div class="num">21</div>
+<div class="cop">And the Lord scattered them abroad from thence upon the face of all the earth, and they ceased to build the city, and the Lord scattered them abroad over the face of all the earth.</div>
+<div class="ru">И рассеял их Господь оттуда по всей земле, и они перестали строить город. Так рассеял их Господь по лицу всей земли.</div>
+</div>
+<div class="verse">
+<div class="num">22</div>
+<div class="cop">And therefore the name of the city was called Babel, because the Lord did there confound the language of all the earth, and from thence did the Lord scatter them abroad upon the face of all the earth.</div>
+<div class="ru">Поэтому имя городу было дано Вавилон, ибо там смешал Господь язык всей земли, и оттуда рассеял их Господь по лицу всей земли.</div>
+</div>
+
+
+</main>
+
+<footer>
+ARCHIVUM HAERETICUM — Q27 — DEAD SEA SCROLLS — 7. АПОКРИФ БЫТИЯ (1QapGen) — <span class="red">◆</span> SIGILLUM VERITATIS
+</footer>
+<script>function toggleAll(open){
+  document.querySelectorAll('details').forEach(d=>d.open=open);
+  document.querySelectorAll('.verse,.row').forEach(r=>{r.style.display=open?'grid':'none';});
+}
+function toggleOrig(){
+  document.querySelectorAll('.verse .cop').forEach(c=>c.style.display=c.style.display==='none'?'block':'none');
+}
+function toggleRu(){
+  document.querySelectorAll('.verse .ru').forEach(c=>c.style.display=c.style.display==='none'?'block':'none');
+}
+function resetView(){
+  document.querySelectorAll('.verse,.row').forEach(r=>r.style.display='grid');
+  document.querySelectorAll('.verse .cop,.verse .ru').forEach(c=>c.style.display='block');
+}</script>
+</body>
+</html>

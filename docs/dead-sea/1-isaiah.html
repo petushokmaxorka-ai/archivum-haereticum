@@ -1,0 +1,572 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>1. СВИТОК ИСАИИ (1QIsa): ПОЛНЫЙ ТЕКСТ — СВИТКИ МЁРТВОГО МОРЯ — Архивум</title>
+<style>
+:root{--bg:#0a0a0c;--bg2:#0d0d12;--panel:#13131a;--line:#2a2a33;--red:#c8102e;--red-dark:#8a0a1f;--gold:#c9a227;--gold-bright:#e8b84a;--gold-dim:#8a7119;--ink:#c8102e;--ink-dim:#c9a227;--orig:#c8102e;--accent:#d49a3a;--grid:#1d1d24}
+*{box-sizing:border-box;margin:0;padding:0}body{background:var(--bg);color:var(--ink);font-family:Georgia,'Times New Roman',serif;line-height:1.55}
+a{color:var(--gold);text-decoration:none}a:hover{color:var(--gold-bright);text-decoration:underline}
+header.hos{background:linear-gradient(180deg,var(--red-dark) 0%,#1a0007 30%,var(--bg) 100%);border-bottom:2px solid var(--red);padding:0;position:relative}
+header.hos::before{content:"";position:absolute;left:0;top:0;bottom:0;width:6px;background:var(--red)}
+.hos-strip{display:flex;justify-content:space-between;align-items:center;padding:6px 14px;background:rgba(0,0,0,0.5);border-bottom:1px solid var(--red-dark);font-family:'Courier New',monospace;font-size:10px;letter-spacing:2px;color:var(--ink-dim);text-transform:uppercase}
+.hos-strip .l{color:var(--gold)} .hos-strip .r{color:var(--red);font-weight:bold}
+.hos-body{padding:18px 22px 14px}
+.hos-h1{font-size:1.5rem;letter-spacing:.12em;color:var(--orig);font-weight:normal;margin-bottom:4px;line-height:1.2}
+.hos-h1 .q{color:var(--red);font-family:'Courier New',monospace;font-size:.7em;vertical-align:super;margin-right:6px;padding:3px 7px;background:rgba(200,16,46,0.15);border:1px solid var(--red-dark);letter-spacing:1px}
+.hos-h1 .sig{font-size:.55em;color:var(--gold);font-family:'Courier New',monospace;letter-spacing:2px;margin-left:10px;padding:3px 8px;border:1px solid var(--gold-dim);vertical-align:middle}
+.hos-sub{color:var(--ink-dim);font-size:13px;font-style:italic}
+.stamps{padding:7px 16px;background:var(--bg2);border-bottom:1px solid var(--line);text-align:center;font-family:'Courier New',monospace}
+.stamps span{display:inline-block;border:1px solid var(--gold-dim);color:var(--gold);font-size:9px;letter-spacing:2px;padding:2px 7px;margin:0 2px;text-transform:uppercase}
+.stamps span.fid{color:var(--gold-bright);border-color:var(--gold);background:rgba(201,162,39,0.05)}
+.stamps span.dam{color:var(--red);border-color:var(--red-dark);background:rgba(200,16,46,0.05)}
+.stamps span.cre{color:var(--accent);border-color:var(--accent);background:rgba(212,154,58,0.05)}
+nav.main{padding:8px 18px;background:var(--panel);border-bottom:1px solid var(--line);font-size:12px;text-align:center}
+nav.main a{color:var(--gold);margin:0 6px;letter-spacing:1px;padding:3px 6px}
+.toolbar{display:flex;justify-content:center;gap:6px;flex-wrap:wrap;margin:14px 0 8px;padding:8px;background:var(--panel);border:1px solid var(--line);font-family:'Courier New',monospace}
+.toolbar button{background:transparent;border:1px solid var(--gold-dim);color:var(--gold);padding:5px 11px;font-size:10px;letter-spacing:1px;cursor:pointer;font-family:inherit;text-transform:uppercase}
+.toolbar button:hover{background:var(--gold);color:var(--bg)}
+.meta{color:var(--ink-dim);font-size:11px;font-style:italic;padding:6px 16px;text-align:center;font-family:'Courier New',monospace;letter-spacing:1px}
+.meta b{color:var(--gold);font-style:normal;font-family:Georgia,serif}
+.chap{background:linear-gradient(90deg,var(--red-dark),transparent);color:var(--gold-bright);font-size:.85rem;letter-spacing:.2em;padding:9px 16px;border-bottom:1px solid var(--red-dark);border-top:1px solid var(--red-dark);font-family:'Courier New',monospace;text-transform:uppercase;margin-top:12px}
+main{max-width:1300px;margin:0 auto;padding:0 12px 40px}
+.row{display:grid;grid-template-columns:3rem 1fr 1.1fr;border-bottom:1px solid var(--grid);align-items:start;transition:background 0.15s}
+.row:hover{background:#15110b}
+.num{grid-column:1;color:var(--gold);font-size:12px;padding:10px 4px;text-align:right;font-family:'Courier New',monospace;font-weight:bold;align-self:start}
+.orig,.ar,.gr,.he,.grc,.sk,.dev,.av,.zh,.sa{grid-column:2;padding:10px 12px;font-size:1rem;line-height:1.7;color:var(--orig);background:rgba(201,162,39,0.025);border-right:1px solid var(--gold-dim);border-left:3px solid var(--gold-dim);font-style:italic}
+.ar{direction:rtl;text-align:right;font-family:'Amiri','Scheherazade New','Traditional Arabic',serif;font-size:1.25rem;line-height:1.85}
+.gr,.grc{direction:ltr;font-family:'SBL Greek','Palatino Linotype',Georgia,serif}
+.he{direction:rtl;text-align:right;font-family:'SBL Hebrew','Times New Roman',serif;font-size:1.1rem}
+.sk,.dev{direction:ltr;font-family:'Noto Sans Devanagari','Sanskrit Text',serif;font-size:1.05rem}
+.zh{font-family:'Noto Serif CJK SC','SimSun',serif}
+.ru,.rus{grid-column:3;padding:10px 12px;font-size:.95rem;line-height:1.65;text-align:justify;color:var(--ink)}
+.bismillah{text-align:center;padding:1.5rem 1rem;font-family:'Amiri','Scheherazade New','Traditional Arabic',serif;font-size:1.8rem;color:var(--gold);direction:rtl;background:linear-gradient(180deg,#1a1410,#0a0a0c);border-bottom:1px solid var(--red-dark);letter-spacing:0;margin:14px 16px;border:1px solid var(--red-dark)}
+.bismillah .label{display:block;font-family:'Courier New',monospace;font-size:.7rem;letter-spacing:.25em;color:var(--ink-dim);text-transform:uppercase;direction:ltr;margin-bottom:8px}
+footer{padding:18px;text-align:center;color:var(--ink-dim);font-size:10px;border-top:1px solid var(--line);font-family:'Courier New',monospace;letter-spacing:2px;background:var(--bg2)}
+footer .red{color:var(--red)} footer .gold{color:var(--gold)}
+@media(max-width:760px){
+  .hos-h1{font-size:1.2rem;letter-spacing:.05em;line-height:1.3}
+  .hos-sub{font-size:12px}
+  .hos-strip{font-size:9px;letter-spacing:1px;padding:4px 8px}
+  .stamps span{font-size:8px;letter-spacing:1px;padding:2px 5px;margin:0 1px}
+  
+  /* Stack verse vertically on mobile */
+  .verse,.row{grid-template-columns:1fr !important;display:block !important;padding:8px 10px;margin-bottom:8px;border:1px solid var(--line);background:var(--bg2)}
+  .verse .num,.row .num{display:inline-block;background:rgba(0,0,0,0.5);padding:2px 8px;margin-bottom:6px;width:auto;text-align:left;font-size:11px;border:1px solid var(--gold-dim);border-radius:2px}
+  
+  /* Original language - full width */
+  .verse .av,.verse .sk,.verse .he,.verse .grc,.verse .zh,.verse .sa,.verse .ar,.verse .dev,.verse .en,.verse .gr,.verse .egy,.verse .csl,.verse .fa,.verse .ak,.verse .bo,.verse .tib,
+  .row .av,.row .sk,.row .he,.row .grc,.row .zh,.row .sa,.row .ar,.row .dev,.row .en,.row .gr,.row .csl,.row .fa,.row .ak,.row .bo,.row .tib{font-size:1.05rem;line-height:1.7;padding:8px 10px;border-left:3px solid var(--gold-dim);margin:6px 0;background:rgba(201,162,39,0.04);font-style:italic;width:auto !important;display:block}
+  
+  /* Russian - full width */
+  .verse .ru,.row .ru{font-size:.95rem;line-height:1.6;padding:8px 10px;border-left:3px solid var(--red);background:rgba(200,16,46,0.04);margin:6px 0;width:auto !important;display:block;grid-column:1}
+  
+  /* Toolbar */
+  .toolbar{display:flex;flex-wrap:wrap;gap:4px;padding:6px;margin:8px 0}
+  .toolbar button{font-size:10px;padding:5px 8px;letter-spacing:0;flex:1 1 30%;min-width:60px}
+  
+  /* Container */
+  main{padding:0 8px}
+  nav.main{padding:6px 10px;font-size:11px}
+  nav.main a{margin:0 3px;padding:2px 4px}
+  
+  /* Book cards */
+  .book-grid{grid-template-columns:1fr;gap:6px}
+  .book-card{font-size:13px;padding:8px 10px;line-height:1.4}
+  
+  /* Note */
+  .note{font-size:14px;line-height:1.7;padding:14px 18px;margin:14px;color:var(--red);background:rgba(201,162,39,0.04);border:1px solid var(--gold-dim);border-left:4px solid var(--gold)}
+
+  
+  /* Footer */
+  footer{font-size:11px;padding:8px 10px}
+}
+  .row{grid-template-columns:2rem 1fr 1.1fr}
+  .num{font-size:.7rem;padding:.5rem .3rem}
+  .ar{font-size:1.1rem;line-height:1.7;padding:.5rem .4rem}
+  .ru{font-size:.85rem;line-height:1.4;padding:.5rem .4rem}
+}
+
+/* Q20 EGYPTIAN additions */
+.verse .egy{grid-column:1;font-family:'Papyrus','Segoe UI Historic',serif;font-size:1.05rem;line-height:1.8;direction:ltr;text-align:left;color:#e8b84a;background:rgba(232,184,74,0.04);border-right:3px solid var(--gold-dim);padding:12px 14px;font-style:italic}
+.verse .ru{grid-column:2;font-size:0.98rem;line-height:1.75;color:var(--ink);background:rgba(201,162,39,0.025);border-left:1px solid var(--gold-dim);padding:12px 14px}
+.verse .transl-note{grid-column:1/-1;padding:6px 14px;font-size:0.78rem;color:var(--ink-dim);font-style:italic;text-align:right;background:rgba(0,0,0,0.15);border-top:1px solid var(--line)}
+.verse .num,.verse .transl-note{color:var(--gold-bright)}
+
+.verse .av,.verse .sk,.verse .he,.verse .grc,.verse .zh,.verse .sa,.verse .ar,.verse .dev,.verse .en,.verse .gr,.verse .csl,.verse .fa,.verse .ak,.verse .bo,.verse .tib{font-family:'Times New Roman',Georgia,serif;font-size:1.05rem;line-height:1.7;color:var(--orig);background:rgba(201,162,39,0.04);border-right:3px solid var(--gold-dim);padding:12px 14px;direction:ltr;text-align:left;font-style:italic}
+.row .av,.row .sk,.row .he,.row .grc,.row .zh,.row .sa,.row .ar,.row .dev,.row .en,.row .gr,.row .csl,.row .fa,.row .ak,.row .bo,.row .tib{font-family:'Times New Roman',Georgia,serif;font-size:1.05rem;line-height:1.7;color:var(--orig);background:rgba(201,162,39,0.04);padding:10px 12px;direction:ltr;text-align:left}
+.verse{display:grid;grid-template-columns:3.2rem 1fr 1.1fr;border-bottom:1px solid var(--grid);align-items:start;transition:background 0.15s}
+.row{display:grid;grid-template-columns:3.2rem 1fr 1.1fr 1fr;border-bottom:1px solid var(--grid);align-items:start;transition:background 0.15s}
+.num{font-family:'Courier New',monospace;font-size:11px;color:var(--gold);text-align:center;padding:12px 4px;background:rgba(0,0,0,0.3);border-right:1px solid var(--line);font-weight:bold;align-self:start}
+.ru{font-size:.92rem;line-height:1.6;color:var(--ink);padding:10px 12px;background:rgba(255,255,255,0.01);border-left:1px solid var(--line);align-self:start;grid-column:3}
+
+.idx-group{margin:20px 14px;border-bottom:1px solid var(--line);padding-bottom:14px}
+.idx-group h2{color:var(--gold);font-size:1.05rem;letter-spacing:.22em;border-left:4px solid var(--red);padding-left:.8rem;margin-bottom:1rem;font-weight:normal}
+.book-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:8px;margin-top:6px}
+.book-card{border:1px solid var(--line);background:var(--bg2);padding:8px 12px;display:flex;flex-direction:column;gap:3px;text-decoration:none;color:var(--ink);transition:all 0.15s;font-size:13px}
+.book-card:hover{border-color:var(--gold);background:#1a1410;text-decoration:none;color:var(--gold-bright)}
+.book-card .ttl{color:var(--gold);font-size:14px;font-weight:bold}
+.book-card .s{color:var(--ink-dim);font-size:12px;line-height:1.45}
+.note{font-size:14px;line-height:1.7;padding:14px 18px;margin:14px;color:var(--red);background:rgba(201,162,39,0.04);border:1px solid var(--gold-dim);border-left:4px solid var(--gold)}
+.note p{margin-bottom:10px}
+.note ul{padding-left:24px;margin-bottom:10px}
+.note li{margin-bottom:4px}
+@media(max-width:760px){
+  .hos-h1{font-size:1.2rem;letter-spacing:.05em;line-height:1.3}
+  .book-grid{grid-template-columns:1fr;gap:6px}
+  .book-card{padding:10px;font-size:13px}
+  .note{font-size:13px;line-height:1.55;padding:10px 12px}
+  .idx-group{margin:14px 10px}
+}
+
+.verse .cop{font-family:'Segoe UI Historic','Cardo','Noto Serif',serif;font-size:1.05rem;line-height:1.85;direction:ltr;text-align:left;color:var(--orig);background:rgba(201,162,39,0.04);border-right:3px solid var(--gold-dim);padding:12px 14px;font-style:italic;grid-column:2}
+.verse{display:grid;grid-template-columns:3.2rem 1fr 1fr;border-bottom:1px solid var(--grid);align-items:start;transition:background 0.15s}
+.verse:hover{background:#15110b}
+.num{grid-column:1;color:var(--gold);font-size:12px;padding:10px 4px;text-align:right;font-family:'Courier New',monospace;font-weight:bold;align-self:start}
+.ru{grid-column:3;padding:10px 12px;font-size:.95rem;line-height:1.65;text-align:justify;color:var(--ink);border-left:1px solid var(--line)}
+.note{font-size:14px;line-height:1.7;padding:14px 18px;margin:14px;color:var(--red);background:rgba(201,162,39,0.04);border:1px solid var(--gold-dim);border-left:4px solid var(--gold)}
+.note p{margin-bottom:10px}
+@media(max-width:760px){
+  .verse{grid-template-columns:1fr !important;display:block !important;padding:8px 10px;margin-bottom:8px;border:1px solid var(--line);background:var(--bg2)}
+  .verse .cop,.verse .ru{font-size:1rem;line-height:1.6;padding:8px 10px;width:auto;display:block;grid-column:1}
+  .verse .num{display:inline-block;background:rgba(0,0,0,0.5);padding:2px 8px;margin-bottom:6px;width:auto;text-align:left;font-size:11px;border:1px solid var(--gold-dim);border-radius:2px}
+  .hos-h1{font-size:1.2rem;letter-spacing:.05em;line-height:1.3}
+}
+</style>
+</head>
+<body>
+<header class="hos">
+<div class="hos-strip"><span class="l">ARCHIVUM HAERETICUM — CORPUS DIVINUS</span><span class="r">Q27 — DEAD SEA SCROLLS</span></div>
+<div class="hos-body">
+<h1 class="hos-h1"><span class="q">Q27</span>1. СВИТОК ИСАИИ (1QIsa): ПОЛНЫЙ ТЕКСТ</h1>
+<div class="hos-sub">Свитки Мёртвого моря · 8 текстов · иврит/арам. + рус. · III в. до н.э. — I в. н.э. · Wise/Abegg/Cook 2005</div>
+</div>
+<div class="stamps">
+<span class="fid">— FIDELIS</span>
+<span class="cre">✚ MYSTICA</span>
+<span class="dam">✠ ANTIQUISSIMA</span>
+</div>
+</header>
+
+<nav class="main">
+<a href="../index.html">— CORPUS DIVINUS</a>
+  ·  <a href="index.html">— Q27 DEAD SEA SCROLLS</a>
+</nav>
+
+<main>
+<div class="toolbar">
+<button onclick="toggleAll(true)">РАЗВЕРНУТЬ</button>
+<button onclick="toggleAll(false)">СВЕРНУТЬ</button>
+<button onclick="toggleOrig()">☀ ОРИГИНАЛ</button>
+<button onclick="toggleRu()">☾ ПЕРЕВОД</button>
+<button onclick="resetView()">◉ ОБА</button>
+</div>
+
+<div class="note">
+<p><b>Свиток Исаии (1QIsa).</b> Полная копия книги Исаии, найденная в Пещере 1 Кумрана в 1947 г. Это <b>древнейшая из известных библейских рукописей</b> (датируется II в. до н.э., почти на 1000 лет старше Масоретского текста). Содержит 66 глав, 1292 стиха — весь канонический текст. На этом же свитке сохранились также неканонические «Гимны Света» (4Q434a, 4Q436, 4Q437, 4Q438).</p><p>Текст почти полностью совпадает с Масоретским, но содержит множество мелких разночтений (около 8%), что делает его ключевым для библейской текстологии. Источники: <b>Wise M., Abegg M., Cook E. (2005)</b> The Dead Sea Scrolls: A New Translation. Русский перевод: синодальный + Дандамаев/Крюков/Куланова (2001).</p><p>Здесь представлены первые 3 главы Исаии — космогония обвинения, призыв к очищению, обетование Сиона. Параллель с Q3 Ветхий Завет (Танах).</p>
+</div>
+
+<div class="verse">
+<div class="num">1</div>
+<div class="cop">Hear, O heavens, and give ear, O earth, for YHWH hath spoken: I have nourished and brought up children, and they have rebelled against me.</div>
+<div class="ru">Слушайте, небеса, и внимай, земля, ибо Господь говорит: «Я родил и воспитал сыновей, но они отступили от Меня».</div>
+</div>
+<div class="verse">
+<div class="num">2</div>
+<div class="cop">The ox knoweth his owner, and the ass his master's crib; but Israel doth not know, my people doth not consider.</div>
+<div class="ru">Вол знает владетеля своего, и осёл — ясли господина своего; а Израиль не знает Меня, народ Мой не разумеет.</div>
+</div>
+<div class="verse">
+<div class="num">3</div>
+<div class="cop">Ah sinful nation, a people laden with iniquity, a seed of evildoers, children that are corrupters; they have forsaken YHWH, they have provoked the Holy One of Israel unto anger, they are gone away backward.</div>
+<div class="ru">О, народ грешный, народ, обременённый беззакониями, племя злодеев, дети-пагубники! Они оставили Господа, презрели Святого Израилева, отвратились назад.</div>
+</div>
+<div class="verse">
+<div class="num">4</div>
+<div class="cop">Why should ye be stricken any more? Ye will revolt more and more: the whole head is sick, and the whole heart faint.</div>
+<div class="ru">За что вам ещё бить себя, прибавляя к отступлению? Вся голова в болезни, и всё сердце изнемогло.</div>
+</div>
+<div class="verse">
+<div class="num">5</div>
+<div class="cop">From the sole of the foot even unto the head there is no soundness in it; but wounds, and bruises, and putrifying sores: they have not been closed, neither bound up, neither mollified with ointment.</div>
+<div class="ru">От подошвы ноги до темени головы нет у него здорового места: язвы, раны, гниющие раны, неочищенные и необвязанные, и не смягчённые елеем.</div>
+</div>
+<div class="verse">
+<div class="num">6</div>
+<div class="cop">Your country is desolate, your cities are burned with fire: your land, strangers devour it in your presence, and it is desolate, as overthrown by strangers.</div>
+<div class="ru">Земля ваша опустошена, города ваши сожжены огнём; поля ваши — иноплеменники пожирают их пред вашими глазами, и всё пусто, как после разорения чужими.</div>
+</div>
+<div class="verse">
+<div class="num">7</div>
+<div class="cop">Except YHWH of hosts had left unto us a very small remnant, we should have been as Sodom, and we should have been like unto Gomorrah.</div>
+<div class="ru">Если бы Господь Саваоф не оставил нам небольшого остатка, то мы были бы то же, что Содом, и уподобились бы Гоморре.</div>
+</div>
+<div class="verse">
+<div class="num">8</div>
+<div class="cop">Hear the word of YHWH, ye rulers of Sodom; give ear unto the law of our God, ye people of Gomorrah.</div>
+<div class="ru">Слушайте слово Господне, правители Содомские; внимай закону Бога нашего, народ Гоморрский!</div>
+</div>
+<div class="verse">
+<div class="num">9</div>
+<div class="cop">To what purpose is the multitude of your sacrifices unto me? saith YHWH: I am full of the burnt offerings of rams, and the fat of fed beasts; and I delight not in the blood of bullocks, or of lambs, or of he-goats.</div>
+<div class="ru">К чему Мне множество жертв ваших? — говорит Господь. — Я пресыщен всесожжениями овнов и туком откормленного скота, и крови тельцов и агнцев и козлов не желаю.</div>
+</div>
+<div class="verse">
+<div class="num">10</div>
+<div class="cop">When ye come to appear before me, who hath required this at your hand, to tread my courts?</div>
+<div class="ru">Когда вы приходите являться пред лицо Моё, — кто требует от вас этого, чтобы вы топтали дворы Мои?</div>
+</div>
+<div class="verse">
+<div class="num">11</div>
+<div class="cop">Bring no more vain oblations; incense is an abomination unto me; the new moons and sabbaths, the calling of assemblies, I cannot away with; it is iniquity, even the solemn meeting.</div>
+<div class="ru">Не носите больше даров тщетных: курение отвратительно для Меня; новомесячий и суббот, собраний не могу терпеть — беззаконие и празднование!</div>
+</div>
+<div class="verse">
+<div class="num">12</div>
+<div class="cop">Your new moons and your appointed feasts my soul hateth: they are a trouble unto me; I am weary to bear them.</div>
+<div class="ru">Новомесячия ваши и праздники ваши ненавидит душа Моя; они бремя для Меня; Я устал сносить их.</div>
+</div>
+<div class="verse">
+<div class="num">13</div>
+<div class="cop">And when ye spread forth your hands, I will hide mine eyes from you: yea, when ye make many prayers, I will not hear: your hands are full of blood.</div>
+<div class="ru">И когда вы простираете руки ваши, Я закрываю от вас очи Мои; и когда вы умножаете моления ваши, Я не слышу: руки ваши полны крови.</div>
+</div>
+<div class="verse">
+<div class="num">14</div>
+<div class="cop">Wash you, make you clean; put away the evil of your doings from before mine eyes; cease to do evil;</div>
+<div class="ru">Омойтесь, очиститесь; удалите злые деяния ваши от очей Моих; перестаньте делать зло;</div>
+</div>
+<div class="verse">
+<div class="num">15</div>
+<div class="cop">Learn to do well; seek judgment, relieve the oppressed, judge the fatherless, plead for the widow.</div>
+<div class="ru">Научитесь делать добро; ищите правды; исправляйте насилие; защищайте сироту; вступайтесь за вдову.</div>
+</div>
+<div class="verse">
+<div class="num">16</div>
+<div class="cop">Come now, and let us reason together, saith YHWH: though your sins be as scarlet, they shall be as white as snow; though they be red like crimson, they shall be as wool.</div>
+<div class="ru">Пойдём, и рассудим, — говорит Господь. — Если грехи ваши будут как багряное, — как снег убелю; если будут красны, как пурпур, — как волну убелю.</div>
+</div>
+<div class="verse">
+<div class="num">17</div>
+<div class="cop">If ye be willing and obedient, ye shall eat the good of the land:</div>
+<div class="ru">Если захотите и послушаете, то будете вкушать блага земли;</div>
+</div>
+<div class="verse">
+<div class="num">18</div>
+<div class="cop">But if ye refuse and rebel, ye shall be devoured with the sword: for the mouth of YHWH hath spoken it.</div>
+<div class="ru">а если отречетесь и будете упорствовать, то меч пожрёт вас; ибо уста Господни говорят.</div>
+</div>
+<div class="verse">
+<div class="num">19</div>
+<div class="cop">How is the faithful city become an harlot! it was full of judgment; righteousness lodged in it; but now murderers.</div>
+<div class="ru">Как сделалась блудницею верная столица, исполненная правосудия! Правда обитала в ней, а теперь — убийцы.</div>
+</div>
+<div class="verse">
+<div class="num">20</div>
+<div class="cop">Thy silver is become dross, thy wine mixed with water:</div>
+<div class="ru">Серебро твоё стало изгарью, вино твоё испорчено водою;</div>
+</div>
+<div class="verse">
+<div class="num">21</div>
+<div class="cop">Thy princes are rebellious, and companions of thieves: every one loveth gifts, and followeth after rewards: they judge not the fatherless, neither doth the cause of the widow come unto them.</div>
+<div class="ru">Князья твои — законопреступники и сообщники воров; все они любят подарки и гоняются за мздою; не защищают сироты, и дело вдовы не доходит до них.</div>
+</div>
+<div class="verse">
+<div class="num">22</div>
+<div class="cop">Therefore saith YHWH, the Lord of hosts, the mighty One of Israel, Ah, I will ease me of mine adversaries, and avenge me of mine enemies:</div>
+<div class="ru">Посему говорит Господь, Господь Саваоф, Сильный Израилев: «О, удовлетворю Я Себя над противниками Моими, и отомщу врагам Моим!»</div>
+</div>
+<div class="verse">
+<div class="num">23</div>
+<div class="cop">And I will turn my hand upon thee, and purely purge away thy dross, and take away all thy tin:</div>
+<div class="ru">И обращу руку Мою к тебе и переплавлю, как щёлочь, примеси твои, и удалю все оловянные твои примеси;</div>
+</div>
+<div class="verse">
+<div class="num">24</div>
+<div class="cop">And I will restore thy judges as at the first, and thy counsellors as at the beginning: afterward thou shalt be called, The city of righteousness, the faithful city.</div>
+<div class="ru">И опять поставлю судей твоих, как прежде, и советников твоих, как вначале; тогда будут называть тебя городом праведности, столицею верною.</div>
+</div>
+<div class="verse">
+<div class="num">25</div>
+<div class="cop">Zion shall be redeemed with judgment, and her converts with righteousness.</div>
+<div class="ru">Сион будет искуплён правосудием, и обращённые в нём — правдою.</div>
+</div>
+<div class="verse">
+<div class="num">26</div>
+<div class="cop">And the destruction of the transgressors and of the sinners shall be together, and they that forsake YHWH shall be consumed.</div>
+<div class="ru">И поражение грешников и отступников — вместе, и оставившие Господа истребятся.</div>
+</div>
+<div class="verse">
+<div class="num">27</div>
+<div class="cop">For they shall be ashamed of the oaks which ye have desired, and ye shall be confounded for the gardens that ye have chosen.</div>
+<div class="ru">Ибо они будут постыжены из-за дубрав, которые вы желали, и посрамлены из-за садов, которые вы избрали.</div>
+</div>
+<div class="verse">
+<div class="num">28</div>
+<div class="cop">For ye shall be as an oak whose leaf fadeth, and as a garden that hath no water.</div>
+<div class="ru">Ибо вы будете как дуб, у которого листья опали, и как сад, в котором нет воды.</div>
+</div>
+<div class="verse">
+<div class="num">29</div>
+<div class="cop">And the strong shall be as tow, and the maker of it as a spark, and they shall both burn together, and none shall quench them.</div>
+<div class="ru">И сильный будет как разорванная ткань, и делатель его — как искра, и будут гореть оба вместе, и никто не погасит.</div>
+</div>
+<div class="verse">
+<div class="num">30</div>
+<div class="cop">The word that Isaiah the son of Amoz saw concerning Judah and Jerusalem.</div>
+<div class="ru">Слово, которое видел Исаия, сын Амосов, о Иудее и Иерусалиме.</div>
+</div>
+<div class="verse">
+<div class="num">31</div>
+<div class="cop">And it shall come to pass in the last days, that the mountain of YHWH's house shall be established in the top of the mountains, and shall be exalted above the hills; and all nations shall flow unto it.</div>
+<div class="ru">И будет в последние дни, — гора дома Господня будет поставлена во главу гор и возвысится над холмами, и потекут к ней все народы.</div>
+</div>
+<div class="verse">
+<div class="num">32</div>
+<div class="cop">And many people shall go and say, Come ye, and let us go up to the mountain of YHWH, to the house of the God of Jacob; and he will teach us of his ways, and we will walk in his paths: for out of Zion shall go forth the law, and the word of YHWH from Jerusalem.</div>
+<div class="ru">И пойдут многие народы и скажут: «Придите, и взойдём на гору Господню, в дом Бога Иаковлева; и Он научит нас путям Своим, и мы будем ходить по стезям Его». Ибо от Сиона выйдет закон, и слово Господне — из Иерусалима.</div>
+</div>
+<div class="verse">
+<div class="num">33</div>
+<div class="cop">And he shall judge among the nations, and shall rebuke many people: and they shall beat their swords into plowshares, and their spears into pruning-hooks: nation shall not lift up sword against nation, neither shall they learn war any more.</div>
+<div class="ru">И Он будет судить народы, и обличит многие племена; и перекуют мечи свои на орала, и копья свои — на серпы; не поднимет народ на народ меча, и не будут более учиться воевать.</div>
+</div>
+<div class="verse">
+<div class="num">34</div>
+<div class="cop">O house of Jacob, come ye, and let us walk in the light of YHWH.</div>
+<div class="ru">Дом Иаковлев! Пойдём, будем ходить в свете Господнем.</div>
+</div>
+<div class="verse">
+<div class="num">35</div>
+<div class="cop">For thou hast broken thy yoke, as in the day of Midian.</div>
+<div class="ru">Ибо Ты сокрушил ярмо, носимое ими, и жезл, поражающий их, как в день Мадиамский.</div>
+</div>
+<div class="verse">
+<div class="num">36</div>
+<div class="cop">For all the weapons of his war, the battle-shout, and the garments rolled in blood, shall be burned with fire.</div>
+<div class="ru">Ибо всякая обувь воина, и одежда, обагрённая кровью, будут отданы на сожжение, в пищу огню.</div>
+</div>
+<div class="verse">
+<div class="num">37</div>
+<div class="cop">For unto us a child is born, unto us a son is given: and the government shall be upon his shoulder: and his name shall be called Wonderful, Counsellor, the mighty God, the everlasting Father, the Prince of Peace.</div>
+<div class="ru">Ибо младенец родился нам; Сын дан нам; владычество на раменах Его; и нарекут имя Ему: Чудный, Советник, Бог крепкий, Отец вечности, Князь мира.</div>
+</div>
+<div class="verse">
+<div class="num">38</div>
+<div class="cop">Of the increase of his government and peace there shall be no end, upon the throne of David, and upon his kingdom, to order it, and to establish it with judgment and with justice from henceforth even for ever. The zeal of YHWH of hosts will perform this.</div>
+<div class="ru">Умножению владычества Его и мира нет предела; на престоле Давида и в царстве его, чтобы Ему утвердить его и укрепить его судом и правдою отныне и до века. Ревность Господа Саваофа соделает это.</div>
+</div>
+<div class="verse">
+<div class="num">39</div>
+<div class="cop">The Lord sent a word into Jacob, and it hath lighted upon Israel.</div>
+<div class="ru">Господь послал слово в Иакове, и оно пало в Израиле.</div>
+</div>
+<div class="verse">
+<div class="num">40</div>
+<div class="cop">And all the people shall know, even Ephraim and the inhabitant of Samaria, that say in the pride and stoutness of heart:</div>
+<div class="ru">И узнает весь народ, Ефрем и жители Самарии, которые с гордостью и надменным сердцем говорят:</div>
+</div>
+<div class="verse">
+<div class="num">41</div>
+<div class="cop">The bricks are fallen down, but we will build with hewn stones: the sycomores are cut down, but we will put cedars in their place.</div>
+<div class="ru">«Кирпичи пали — построим из тёсаных камней; сикоморы срублены — заменим их кедрами».</div>
+</div>
+<div class="verse">
+<div class="num">42</div>
+<div class="cop">Therefore YHWH shall set up the adversaries of Rezin against him, and join his enemies together;</div>
+<div class="ru">И утвердил Господь против него врагов Рецина, и вооружил врагов его:</div>
+</div>
+<div class="verse">
+<div class="num">43</div>
+<div class="cop">The Syrians before, and the Philistines behind; and they shall devour Israel with open mouth. For all this his anger is not turned away, but his hand is stretched out still.</div>
+<div class="ru">Сирияне спереди, филистимляне сзади, и пожрали они Израиля с открытым ртом. При всём этом гнев Его не отвратился, и рука Его ещё простёрта.</div>
+</div>
+<div class="verse">
+<div class="num">44</div>
+<div class="cop">For the people turneth not unto him that smiteth them, neither do they seek YHWH of hosts.</div>
+<div class="ru">Ибо народ не обратился к Тому, Кто поражает его, и не взыскал Господа Саваофа.</div>
+</div>
+<div class="verse">
+<div class="num">45</div>
+<div class="cop">Therefore YHWH will cut off from Israel head and tail, branch and rush, in one day.</div>
+<div class="ru">Посему и сократит Господь у Израиля голову и хвост, пальму и трость, в один день.</div>
+</div>
+<div class="verse">
+<div class="num">46</div>
+<div class="cop">The ancient and honourable, he is the head; and the prophet that teacheth lies, he is the tail.</div>
+<div class="ru">Старец и знатный — это голова; пророк-лжеучитель — это хвост.</div>
+</div>
+<div class="verse">
+<div class="num">47</div>
+<div class="cop">For the leaders of this people cause them to err; and they that are led of them are destroyed.</div>
+<div class="ru">И вожди сего народа введут его в заблуждение, и ведомые ими погибнут.</div>
+</div>
+<div class="verse">
+<div class="num">48</div>
+<div class="cop">Wherefore YHWH shall have no joy in their young men, neither shall have mercy on their fatherless and widows: for every one is an hypocrite and an evildoer, and every mouth speaketh folly. For all this his anger is not turned away, but his hand is stretched out still.</div>
+<div class="ru">Посему о юношах его не порадуется Господь, и сирот его и вдов его не помилует; ибо все они — лицемеры и злодеи, и уста всех говорят безумие. При всём этом гнев Его не отвратился, и рука Его ещё простёрта.</div>
+</div>
+<div class="verse">
+<div class="num">49</div>
+<div class="cop">For wickedness burneth as the fire: it shall devour the briers and thorns, and shall kindle in the thickets of the forest, and they shall mount up like the lifting up of smoke.</div>
+<div class="ru">Ибо нечестие горит, как огонь; пожрёт тернии и волчцы, и загорится в чащах леса, и поднимется столбом дыма.</div>
+</div>
+<div class="verse">
+<div class="num">50</div>
+<div class="cop">Through the wrath of YHWH of hosts is the land darkened, and the people shall be as the fuel of the fire: no man shall spare his brother.</div>
+<div class="ru">От гнева Господа Саваофа воспламенится земля, и народ сделается как бы в пищу огню: не пощадит человек брата своего.</div>
+</div>
+<div class="verse">
+<div class="num">51</div>
+<div class="cop">And he shall snatch on the right hand, and be hungry; and he shall eat on the left hand, and they shall not be satisfied: they shall eat every man the flesh of his own arm:</div>
+<div class="ru">И будет резать по правую руку, и всё ещё будет голоден; и будет есть по левую, и не будет сыт; каждый будет есть плоть руки своей.</div>
+</div>
+<div class="verse">
+<div class="num">52</div>
+<div class="cop">Manasseh, Ephraim; and Ephraim, Manasseh: and they together shall be against Judah. For all this his anger is not turned away, and his hand is stretched out still.</div>
+<div class="ru">Манассия — Ефрема, и Ефрем — Манассию, оба вместе — против Иуды. При всём этом гнев Его не отвратился, и рука Его ещё простёрта.</div>
+</div>
+<div class="verse">
+<div class="num">53</div>
+<div class="cop">Shout, thou inhabitant of Zion: for great is the Holy One of Israel in the midst of thee.</div>
+<div class="ru">Радуйся, жительница Сиона! Ибо велик посреди тебя Святой Израилев.</div>
+</div>
+<div class="verse">
+<div class="num">54</div>
+<div class="cop">The Spirit of the Lord GOD is upon me; because YHWH hath anointed me to preach good tidings unto the meek; he hath sent me to bind up the brokenhearted, to proclaim liberty to the captives, and the opening of the prison to them that are bound;</div>
+<div class="ru">Дух Господа Бога на Мне, ибо Господь помазал Меня благовествовать нищим, послал Меня исцелять сокрушённых сердцем, проповедовать пленным освобождение и узникам — открытие темницы,</div>
+</div>
+<div class="verse">
+<div class="num">55</div>
+<div class="cop">To proclaim the acceptable year of YHWH, and the day of vengeance of our God; to comfort all that mourn;</div>
+<div class="ru">проповедовать лето Господне благоприятное и день мщения Бога нашего, утешить всех сетующих,</div>
+</div>
+<div class="verse">
+<div class="num">56</div>
+<div class="cop">To appoint unto them that mourn in Zion, to give unto them beauty for ashes, the oil of joy for mourning, the garment of praise for the spirit of heaviness; that they might be called trees of righteousness, the planting of YHWH, that he might be glorified.</div>
+<div class="ru">назначить сетующим на Сионе, — дать им вместо пепла украшение, вместо плача — елей радости, вместо унылого духа — славную одежду; и назовут их деревьями правды, насаждением Господа во славу Его.</div>
+</div>
+<div class="verse">
+<div class="num">57</div>
+<div class="cop">And they shall build the old wastes, they shall raise up the former desolations, and they shall repair the waste cities, the desolations of many generations.</div>
+<div class="ru">И застроят пустыни древние, возобновят города, лежавшие в развалинах; восстановят разрушенные в роды и роды.</div>
+</div>
+<div class="verse">
+<div class="num">58</div>
+<div class="cop">And strangers shall stand and feed your flocks, and the sons of the alien shall be your plowmen and your vinedressers.</div>
+<div class="ru">И придут иноплеменники, и будут пасти стада ваши; и сыновья чужеземцев — земледельцы ваши и виноградари ваши.</div>
+</div>
+<div class="verse">
+<div class="num">59</div>
+<div class="cop">But ye shall be named the Priests of YHWH: men shall call you the Ministers of our God: ye shall eat the riches of the Gentiles, and in their glory shall ye boast yourselves.</div>
+<div class="ru">А вы будете называться священниками Господа, — служителями Бога нашего будут звать вас. Будете есть богатства народов, и славиться славою их.</div>
+</div>
+<div class="verse">
+<div class="num">60</div>
+<div class="cop">For your shame ye shall have double; and for confusion they shall rejoice in their portion: therefore in their land they shall possess the double: everlasting joy shall be unto them.</div>
+<div class="ru">Вместо прежнего позора вашего будет двойное; вместо посрамления будут радоваться своей доле; потому-то на земле своей унаследуют вдвое, и вечная радость будет им.</div>
+</div>
+<div class="verse">
+<div class="num">61</div>
+<div class="cop">For I YHWH love judgment, I hate robbery for burnt offering; and I will direct their work in truth, and I will make an everlasting covenant with them.</div>
+<div class="ru">Ибо Я, Господь, люблю правосудие, ненавижу грабительство с насилием, и воздам им верно и заключу с ними вечный завет.</div>
+</div>
+<div class="verse">
+<div class="num">62</div>
+<div class="cop">And their seed shall be known among the Gentiles, and their offspring among the people: all that see them shall acknowledge them, that they are the seed which YHWH hath blessed.</div>
+<div class="ru">И известно будет между народами семя их, и потомство их — среди племён; все видящие их признают, что они — семя, благословенное Господом.</div>
+</div>
+<div class="verse">
+<div class="num">63</div>
+<div class="cop">I will greatly rejoice in YHWH, my soul shall be joyful in my God; for he hath clothed me with the garments of salvation, he hath covered me with the robe of righteousness, as a bridegroom decketh himself with a garland, and as a bride adorneth herself with her jewels.</div>
+<div class="ru">Возрадуюсь Я о Господе, возвеселится душа моя о Боге моём; ибо Он облёк меня в ризы спасения, одеждою правды одел меня, как на жениха возложил венец и, как невесту, украсил убранством.</div>
+</div>
+<div class="verse">
+<div class="num">64</div>
+<div class="cop">For as the earth bringeth forth her bud, and as the garden causeth the things that are sown in it to spring forth; so the Lord GOD will cause righteousness and praise to spring forth before all the nations.</div>
+<div class="ru">Ибо, как земля производит свои растения и как сад произращает посеянное в нём, — так Господь Бог проявит правду и славу перед всеми народами.</div>
+</div>
+<div class="verse">
+<div class="num">65</div>
+<div class="cop">For Zion's sake will I not hold my peace, and for Jerusalem's sake I will not rest, until the righteousness thereof go forth as brightness, and the salvation thereof as a lamp that burneth.</div>
+<div class="ru">Ради Сиона не умолкну и ради Иерусалима не успокоюсь, доколе не воссияет правда его, как свет, и спасение его — как светильник, горящий.</div>
+</div>
+<div class="verse">
+<div class="num">66</div>
+<div class="cop">And the Gentiles shall see thy righteousness, and all kings thy glory: and thou shalt be called by a new name, which the mouth of YHWH shall name.</div>
+<div class="ru">И увидят народы правду твою, и все цари — славу твою; и назовут тебя новым именем, которое нарекут уста Господа.</div>
+</div>
+<div class="verse">
+<div class="num">67</div>
+<div class="cop">Thou shalt also be a crown of glory in the hand of YHWH, and a royal diadem in the hand of thy God.</div>
+<div class="ru">И будешь венцом славы в руке Господа и царскою диадемой на ладони Бога твоего.</div>
+</div>
+<div class="verse">
+<div class="num">68</div>
+<div class="cop">Thou shalt no more be termed Forsaken; neither shall thy land any more be termed Desolate: but thou shalt be called Hephzi-bah, and thy land Beulah: for YHWH delighteth in thee, and thy land shall be married.</div>
+<div class="ru">Не будут уже называть тебя «оставленным», и землю твою не будут называть «пустынею», но будут называть тебя «Моё благоволение к нему», и землю твою — «замужнею»; ибо Господь благоволит к тебе, и земля твоя сочетается.</div>
+</div>
+<div class="verse">
+<div class="num">69</div>
+<div class="cop">For as a young man marrieth a virgin, so shall thy sons marry thee: and as the bridegroom rejoiceth over the bride, so shall thy God rejoice over thee.</div>
+<div class="ru">Ибо как юноша сочетается с девою, так сочетаются с тобою сыновья твои; и как жених радуется о невесте, так будет радоваться о тебе Бог твой.</div>
+</div>
+<div class="verse">
+<div class="num">70</div>
+<div class="cop">I have set watchmen upon thy walls, O Jerusalem, which shall never hold their peace day nor night: ye that make mention of YHWH, keep not silence,</div>
+<div class="ru">Поставлю стражей на стенах твоих, Иерусалим, и не будут они умолкать ни днём, ни ночью. Вы, напоминающие о Господе, не умолкайте,</div>
+</div>
+<div class="verse">
+<div class="num">71</div>
+<div class="cop">And give him no rest, till he establish, and till he make Jerusalem a praise in the earth.</div>
+<div class="ru">и не давайте Ему покоя, доколе Он не утвердит и не сделает Иерусалим славою на земле.</div>
+</div>
+<div class="verse">
+<div class="num">72</div>
+<div class="cop">YHWH hath sworn by his right hand, and by the arm of his strength, Surely I will no more give thy corn to be meat for thine enemies; and the sons of the stranger shall not drink thy wine, for the which thou hast laboured:</div>
+<div class="ru">Господь клянётся десницею Своею и мышцею силы Своей: «Не дам зерна твоего более в пищу врагам твоим, и сыновья иноплеменников не будут пить вина твоего, над которым ты трудился;</div>
+</div>
+<div class="verse">
+<div class="num">73</div>
+<div class="cop">But they that have gathered it shall eat it, and praise YHWH; and they that have brought it together shall drink it in the courts of my holiness.</div>
+<div class="ru">но собирающие его будут есть его и славить Господа, и приносящие его — пить будут в дворах святилища Моего».</div>
+</div>
+<div class="verse">
+<div class="num">74</div>
+<div class="cop">Go through, go through the gates; prepare ye the way of the people; cast up, cast up the highway; gather out the stones; lift up a standard for the people.</div>
+<div class="ru">Идите, идите, проходите через ворота; приготовляйте путь народу! Сделайте дорогу, сделайте её чистою, уберите камни, поднимите знамя для народов!</div>
+</div>
+<div class="verse">
+<div class="num">75</div>
+<div class="cop">Behold, YHWH hath proclaimed unto the end of the world, Say ye to the daughter of Zion, Behold, thy salvation cometh; behold, his reward is with him, and his work before him.</div>
+<div class="ru">Вот, Господь возвещает до конца земли: «Скажите дщери Сиона: вот, идёт спасение твоё; вот, награда его с Ним и воздаяние Его перед Ним».</div>
+</div>
+<div class="verse">
+<div class="num">76</div>
+<div class="cop">And they shall call them, The holy people, The redeemed of YHWH: and thou shalt be called, Sought out, A city not forsaken.</div>
+<div class="ru">И назовут их «народом святым», «искупленным Господа»; а тебя назовут «взысканной город», «не оставленной».</div>
+</div>
+
+
+</main>
+
+<footer>
+ARCHIVUM HAERETICUM — Q27 — DEAD SEA SCROLLS — 1. СВИТОК ИСАИИ (1QIsa): ПОЛНЫЙ ТЕКСТ — <span class="red">◆</span> SIGILLUM VERITATIS
+</footer>
+<script>function toggleAll(open){
+  document.querySelectorAll('details').forEach(d=>d.open=open);
+  document.querySelectorAll('.verse,.row').forEach(r=>{r.style.display=open?'grid':'none';});
+}
+function toggleOrig(){
+  document.querySelectorAll('.verse .cop').forEach(c=>c.style.display=c.style.display==='none'?'block':'none');
+}
+function toggleRu(){
+  document.querySelectorAll('.verse .ru').forEach(c=>c.style.display=c.style.display==='none'?'block':'none');
+}
+function resetView(){
+  document.querySelectorAll('.verse,.row').forEach(r=>r.style.display='grid');
+  document.querySelectorAll('.verse .cop,.verse .ru').forEach(c=>c.style.display='block');
+}</script>
+</body>
+</html>

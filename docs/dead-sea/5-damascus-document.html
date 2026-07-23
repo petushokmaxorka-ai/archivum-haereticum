@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>5. ДАМАССКИЙ ДОКУМЕНТ (CD) — СВИТКИ МЁРТВОГО МОРЯ — Архивум</title>
+<style>
+:root{--bg:#0a0a0c;--bg2:#0d0d12;--panel:#13131a;--line:#2a2a33;--red:#c8102e;--red-dark:#8a0a1f;--gold:#c9a227;--gold-bright:#e8b84a;--gold-dim:#8a7119;--ink:#c8102e;--ink-dim:#c9a227;--orig:#c8102e;--accent:#d49a3a;--grid:#1d1d24}
+*{box-sizing:border-box;margin:0;padding:0}body{background:var(--bg);color:var(--ink);font-family:Georgia,'Times New Roman',serif;line-height:1.55}
+a{color:var(--gold);text-decoration:none}a:hover{color:var(--gold-bright);text-decoration:underline}
+header.hos{background:linear-gradient(180deg,var(--red-dark) 0%,#1a0007 30%,var(--bg) 100%);border-bottom:2px solid var(--red);padding:0;position:relative}
+header.hos::before{content:"";position:absolute;left:0;top:0;bottom:0;width:6px;background:var(--red)}
+.hos-strip{display:flex;justify-content:space-between;align-items:center;padding:6px 14px;background:rgba(0,0,0,0.5);border-bottom:1px solid var(--red-dark);font-family:'Courier New',monospace;font-size:10px;letter-spacing:2px;color:var(--ink-dim);text-transform:uppercase}
+.hos-strip .l{color:var(--gold)} .hos-strip .r{color:var(--red);font-weight:bold}
+.hos-body{padding:18px 22px 14px}
+.hos-h1{font-size:1.5rem;letter-spacing:.12em;color:var(--orig);font-weight:normal;margin-bottom:4px;line-height:1.2}
+.hos-h1 .q{color:var(--red);font-family:'Courier New',monospace;font-size:.7em;vertical-align:super;margin-right:6px;padding:3px 7px;background:rgba(200,16,46,0.15);border:1px solid var(--red-dark);letter-spacing:1px}
+.hos-h1 .sig{font-size:.55em;color:var(--gold);font-family:'Courier New',monospace;letter-spacing:2px;margin-left:10px;padding:3px 8px;border:1px solid var(--gold-dim);vertical-align:middle}
+.hos-sub{color:var(--ink-dim);font-size:13px;font-style:italic}
+.stamps{padding:7px 16px;background:var(--bg2);border-bottom:1px solid var(--line);text-align:center;font-family:'Courier New',monospace}
+.stamps span{display:inline-block;border:1px solid var(--gold-dim);color:var(--gold);font-size:9px;letter-spacing:2px;padding:2px 7px;margin:0 2px;text-transform:uppercase}
+.stamps span.fid{color:var(--gold-bright);border-color:var(--gold);background:rgba(201,162,39,0.05)}
+.stamps span.dam{color:var(--red);border-color:var(--red-dark);background:rgba(200,16,46,0.05)}
+.stamps span.cre{color:var(--accent);border-color:var(--accent);background:rgba(212,154,58,0.05)}
+nav.main{padding:8px 18px;background:var(--panel);border-bottom:1px solid var(--line);font-size:12px;text-align:center}
+nav.main a{color:var(--gold);margin:0 6px;letter-spacing:1px;padding:3px 6px}
+.toolbar{display:flex;justify-content:center;gap:6px;flex-wrap:wrap;margin:14px 0 8px;padding:8px;background:var(--panel);border:1px solid var(--line);font-family:'Courier New',monospace}
+.toolbar button{background:transparent;border:1px solid var(--gold-dim);color:var(--gold);padding:5px 11px;font-size:10px;letter-spacing:1px;cursor:pointer;font-family:inherit;text-transform:uppercase}
+.toolbar button:hover{background:var(--gold);color:var(--bg)}
+.meta{color:var(--ink-dim);font-size:11px;font-style:italic;padding:6px 16px;text-align:center;font-family:'Courier New',monospace;letter-spacing:1px}
+.meta b{color:var(--gold);font-style:normal;font-family:Georgia,serif}
+.chap{background:linear-gradient(90deg,var(--red-dark),transparent);color:var(--gold-bright);font-size:.85rem;letter-spacing:.2em;padding:9px 16px;border-bottom:1px solid var(--red-dark);border-top:1px solid var(--red-dark);font-family:'Courier New',monospace;text-transform:uppercase;margin-top:12px}
+main{max-width:1300px;margin:0 auto;padding:0 12px 40px}
+.row{display:grid;grid-template-columns:3rem 1fr 1.1fr;border-bottom:1px solid var(--grid);align-items:start;transition:background 0.15s}
+.row:hover{background:#15110b}
+.num{grid-column:1;color:var(--gold);font-size:12px;padding:10px 4px;text-align:right;font-family:'Courier New',monospace;font-weight:bold;align-self:start}
+.orig,.ar,.gr,.he,.grc,.sk,.dev,.av,.zh,.sa{grid-column:2;padding:10px 12px;font-size:1rem;line-height:1.7;color:var(--orig);background:rgba(201,162,39,0.025);border-right:1px solid var(--gold-dim);border-left:3px solid var(--gold-dim);font-style:italic}
+.ar{direction:rtl;text-align:right;font-family:'Amiri','Scheherazade New','Traditional Arabic',serif;font-size:1.25rem;line-height:1.85}
+.gr,.grc{direction:ltr;font-family:'SBL Greek','Palatino Linotype',Georgia,serif}
+.he{direction:rtl;text-align:right;font-family:'SBL Hebrew','Times New Roman',serif;font-size:1.1rem}
+.sk,.dev{direction:ltr;font-family:'Noto Sans Devanagari','Sanskrit Text',serif;font-size:1.05rem}
+.zh{font-family:'Noto Serif CJK SC','SimSun',serif}
+.ru,.rus{grid-column:3;padding:10px 12px;font-size:.95rem;line-height:1.65;text-align:justify;color:var(--ink)}
+.bismillah{text-align:center;padding:1.5rem 1rem;font-family:'Amiri','Scheherazade New','Traditional Arabic',serif;font-size:1.8rem;color:var(--gold);direction:rtl;background:linear-gradient(180deg,#1a1410,#0a0a0c);border-bottom:1px solid var(--red-dark);letter-spacing:0;margin:14px 16px;border:1px solid var(--red-dark)}
+.bismillah .label{display:block;font-family:'Courier New',monospace;font-size:.7rem;letter-spacing:.25em;color:var(--ink-dim);text-transform:uppercase;direction:ltr;margin-bottom:8px}
+footer{padding:18px;text-align:center;color:var(--ink-dim);font-size:10px;border-top:1px solid var(--line);font-family:'Courier New',monospace;letter-spacing:2px;background:var(--bg2)}
+footer .red{color:var(--red)} footer .gold{color:var(--gold)}
+@media(max-width:760px){
+  .hos-h1{font-size:1.2rem;letter-spacing:.05em;line-height:1.3}
+  .hos-sub{font-size:12px}
+  .hos-strip{font-size:9px;letter-spacing:1px;padding:4px 8px}
+  .stamps span{font-size:8px;letter-spacing:1px;padding:2px 5px;margin:0 1px}
+  
+  /* Stack verse vertically on mobile */
+  .verse,.row{grid-template-columns:1fr !important;display:block !important;padding:8px 10px;margin-bottom:8px;border:1px solid var(--line);background:var(--bg2)}
+  .verse .num,.row .num{display:inline-block;background:rgba(0,0,0,0.5);padding:2px 8px;margin-bottom:6px;width:auto;text-align:left;font-size:11px;border:1px solid var(--gold-dim);border-radius:2px}
+  
+  /* Original language - full width */
+  .verse .av,.verse .sk,.verse .he,.verse .grc,.verse .zh,.verse .sa,.verse .ar,.verse .dev,.verse .en,.verse .gr,.verse .egy,.verse .csl,.verse .fa,.verse .ak,.verse .bo,.verse .tib,
+  .row .av,.row .sk,.row .he,.row .grc,.row .zh,.row .sa,.row .ar,.row .dev,.row .en,.row .gr,.row .csl,.row .fa,.row .ak,.row .bo,.row .tib{font-size:1.05rem;line-height:1.7;padding:8px 10px;border-left:3px solid var(--gold-dim);margin:6px 0;background:rgba(201,162,39,0.04);font-style:italic;width:auto !important;display:block}
+  
+  /* Russian - full width */
+  .verse .ru,.row .ru{font-size:.95rem;line-height:1.6;padding:8px 10px;border-left:3px solid var(--red);background:rgba(200,16,46,0.04);margin:6px 0;width:auto !important;display:block;grid-column:1}
+  
+  /* Toolbar */
+  .toolbar{display:flex;flex-wrap:wrap;gap:4px;padding:6px;margin:8px 0}
+  .toolbar button{font-size:10px;padding:5px 8px;letter-spacing:0;flex:1 1 30%;min-width:60px}
+  
+  /* Container */
+  main{padding:0 8px}
+  nav.main{padding:6px 10px;font-size:11px}
+  nav.main a{margin:0 3px;padding:2px 4px}
+  
+  /* Book cards */
+  .book-grid{grid-template-columns:1fr;gap:6px}
+  .book-card{font-size:13px;padding:8px 10px;line-height:1.4}
+  
+  /* Note */
+  .note{font-size:14px;line-height:1.7;padding:14px 18px;margin:14px;color:var(--red);background:rgba(201,162,39,0.04);border:1px solid var(--gold-dim);border-left:4px solid var(--gold)}
+
+  
+  /* Footer */
+  footer{font-size:11px;padding:8px 10px}
+}
+  .row{grid-template-columns:2rem 1fr 1.1fr}
+  .num{font-size:.7rem;padding:.5rem .3rem}
+  .ar{font-size:1.1rem;line-height:1.7;padding:.5rem .4rem}
+  .ru{font-size:.85rem;line-height:1.4;padding:.5rem .4rem}
+}
+
+/* Q20 EGYPTIAN additions */
+.verse .egy{grid-column:1;font-family:'Papyrus','Segoe UI Historic',serif;font-size:1.05rem;line-height:1.8;direction:ltr;text-align:left;color:#e8b84a;background:rgba(232,184,74,0.04);border-right:3px solid var(--gold-dim);padding:12px 14px;font-style:italic}
+.verse .ru{grid-column:2;font-size:0.98rem;line-height:1.75;color:var(--ink);background:rgba(201,162,39,0.025);border-left:1px solid var(--gold-dim);padding:12px 14px}
+.verse .transl-note{grid-column:1/-1;padding:6px 14px;font-size:0.78rem;color:var(--ink-dim);font-style:italic;text-align:right;background:rgba(0,0,0,0.15);border-top:1px solid var(--line)}
+.verse .num,.verse .transl-note{color:var(--gold-bright)}
+
+.verse .av,.verse .sk,.verse .he,.verse .grc,.verse .zh,.verse .sa,.verse .ar,.verse .dev,.verse .en,.verse .gr,.verse .csl,.verse .fa,.verse .ak,.verse .bo,.verse .tib{font-family:'Times New Roman',Georgia,serif;font-size:1.05rem;line-height:1.7;color:var(--orig);background:rgba(201,162,39,0.04);border-right:3px solid var(--gold-dim);padding:12px 14px;direction:ltr;text-align:left;font-style:italic}
+.row .av,.row .sk,.row .he,.row .grc,.row .zh,.row .sa,.row .ar,.row .dev,.row .en,.row .gr,.row .csl,.row .fa,.row .ak,.row .bo,.row .tib{font-family:'Times New Roman',Georgia,serif;font-size:1.05rem;line-height:1.7;color:var(--orig);background:rgba(201,162,39,0.04);padding:10px 12px;direction:ltr;text-align:left}
+.verse{display:grid;grid-template-columns:3.2rem 1fr 1.1fr;border-bottom:1px solid var(--grid);align-items:start;transition:background 0.15s}
+.row{display:grid;grid-template-columns:3.2rem 1fr 1.1fr 1fr;border-bottom:1px solid var(--grid);align-items:start;transition:background 0.15s}
+.num{font-family:'Courier New',monospace;font-size:11px;color:var(--gold);text-align:center;padding:12px 4px;background:rgba(0,0,0,0.3);border-right:1px solid var(--line);font-weight:bold;align-self:start}
+.ru{font-size:.92rem;line-height:1.6;color:var(--ink);padding:10px 12px;background:rgba(255,255,255,0.01);border-left:1px solid var(--line);align-self:start;grid-column:3}
+
+.idx-group{margin:20px 14px;border-bottom:1px solid var(--line);padding-bottom:14px}
+.idx-group h2{color:var(--gold);font-size:1.05rem;letter-spacing:.22em;border-left:4px solid var(--red);padding-left:.8rem;margin-bottom:1rem;font-weight:normal}
+.book-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:8px;margin-top:6px}
+.book-card{border:1px solid var(--line);background:var(--bg2);padding:8px 12px;display:flex;flex-direction:column;gap:3px;text-decoration:none;color:var(--ink);transition:all 0.15s;font-size:13px}
+.book-card:hover{border-color:var(--gold);background:#1a1410;text-decoration:none;color:var(--gold-bright)}
+.book-card .ttl{color:var(--gold);font-size:14px;font-weight:bold}
+.book-card .s{color:var(--ink-dim);font-size:12px;line-height:1.45}
+.note{font-size:14px;line-height:1.7;padding:14px 18px;margin:14px;color:var(--red);background:rgba(201,162,39,0.04);border:1px solid var(--gold-dim);border-left:4px solid var(--gold)}
+.note p{margin-bottom:10px}
+.note ul{padding-left:24px;margin-bottom:10px}
+.note li{margin-bottom:4px}
+@media(max-width:760px){
+  .hos-h1{font-size:1.2rem;letter-spacing:.05em;line-height:1.3}
+  .book-grid{grid-template-columns:1fr;gap:6px}
+  .book-card{padding:10px;font-size:13px}
+  .note{font-size:13px;line-height:1.55;padding:10px 12px}
+  .idx-group{margin:14px 10px}
+}
+
+.verse .cop{font-family:'Segoe UI Historic','Cardo','Noto Serif',serif;font-size:1.05rem;line-height:1.85;direction:ltr;text-align:left;color:var(--orig);background:rgba(201,162,39,0.04);border-right:3px solid var(--gold-dim);padding:12px 14px;font-style:italic;grid-column:2}
+.verse{display:grid;grid-template-columns:3.2rem 1fr 1fr;border-bottom:1px solid var(--grid);align-items:start;transition:background 0.15s}
+.verse:hover{background:#15110b}
+.num{grid-column:1;color:var(--gold);font-size:12px;padding:10px 4px;text-align:right;font-family:'Courier New',monospace;font-weight:bold;align-self:start}
+.ru{grid-column:3;padding:10px 12px;font-size:.95rem;line-height:1.65;text-align:justify;color:var(--ink);border-left:1px solid var(--line)}
+.note{font-size:14px;line-height:1.7;padding:14px 18px;margin:14px;color:var(--red);background:rgba(201,162,39,0.04);border:1px solid var(--gold-dim);border-left:4px solid var(--gold)}
+.note p{margin-bottom:10px}
+@media(max-width:760px){
+  .verse{grid-template-columns:1fr !important;display:block !important;padding:8px 10px;margin-bottom:8px;border:1px solid var(--line);background:var(--bg2)}
+  .verse .cop,.verse .ru{font-size:1rem;line-height:1.6;padding:8px 10px;width:auto;display:block;grid-column:1}
+  .verse .num{display:inline-block;background:rgba(0,0,0,0.5);padding:2px 8px;margin-bottom:6px;width:auto;text-align:left;font-size:11px;border:1px solid var(--gold-dim);border-radius:2px}
+  .hos-h1{font-size:1.2rem;letter-spacing:.05em;line-height:1.3}
+}
+</style>
+</head>
+<body>
+<header class="hos">
+<div class="hos-strip"><span class="l">ARCHIVUM HAERETICUM — CORPUS DIVINUS</span><span class="r">Q27 — DEAD SEA SCROLLS</span></div>
+<div class="hos-body">
+<h1 class="hos-h1"><span class="q">Q27</span>5. ДАМАССКИЙ ДОКУМЕНТ (CD)</h1>
+<div class="hos-sub">Свитки Мёртвого моря · 8 текстов · иврит/арам. + рус. · III в. до н.э. — I в. н.э. · Wise/Abegg/Cook 2005</div>
+</div>
+<div class="stamps">
+<span class="fid">— FIDELIS</span>
+<span class="cre">✚ MYSTICA</span>
+<span class="dam">✠ ANTIQUISSIMA</span>
+</div>
+</header>
+
+<nav class="main">
+<a href="../index.html">— CORPUS DIVINUS</a>
+  ·  <a href="index.html">— Q27 DEAD SEA SCROLLS</a>
+</nav>
+
+<main>
+<div class="toolbar">
+<button onclick="toggleAll(true)">РАЗВЕРНУТЬ</button>
+<button onclick="toggleAll(false)">СВЕРНУТЬ</button>
+<button onclick="toggleOrig()">☀ ОРИГИНАЛ</button>
+<button onclick="toggleRu()">☾ ПЕРЕВОД</button>
+<button onclick="resetView()">◉ ОБА</button>
+</div>
+
+<div class="note">
+<p><b>Дамасский документ (CD, Cairo Damascus Document).</b> Один из важнейших текстов Кумрана. Найден в Пещере 4 (1947) и Пещере 5, 6 (1952). Оригинал на иврите. Содержит 19 колонок. Датируется II в. до н.э. — I в. н.э.</p><p>Текст описывает:</p><ul><li>«Новый завет» — обновление Синайского завета в «земле Дамаска»</li><li>Учитель Праведности — основатель общины, противопоставлен «Нечестивому Жрецу»</li><li>Эсхатология: явление «Мессии Аарона и Израиля»</li><li>Строгие законы ритуальной чистоты</li><li>Исключение из общины провинившихся</li></ul><p>Параллели: Q2 Новый Завет (учение о новом завете, мессианство), Q18 Каббала (мистическое толкование завета), Q5.1 Молитвы Волхвов (славянская сектантская традиция, ищущая истинный завет). Источник: <b>Wise/Abegg/Cook 2005</b>.</p>
+</div>
+
+<div class="verse">
+<div class="num">1</div>
+<div class="cop">And now, hear me, all you who know righteousness, and consider the works of God, for He has a controversy with all flesh, and will execute judgment upon all the ungodly.</div>
+<div class="ru">А теперь, послушайте меня, все, кто знаете праведность, и помыслите о делах Бога, ибо Он ведёт тяжбу со всякой плотью и совершит суд над всеми нечестивыми.</div>
+</div>
+<div class="verse">
+<div class="num">2</div>
+<div class="cop">For when they were uncircumcised in heart, and uncircumcised in flesh, they would not walk in the way of righteousness, but the Lord revealed His holy Spirit to them through His holy prophets.</div>
+<div class="ru">Ибо, когда они были необрезаны сердцем и не обрезаны плотью, они не хотели ходить путём праведности, но Господь открыл Святого Духа Своего через святых пророков Своих.</div>
+</div>
+<div class="verse">
+<div class="num">3</div>
+<div class="cop">And He raised up for them a Teacher of Righteousness, to lead them in the way of His heart, and to make known to them the mysteries of His grace, and to declare to them the hidden things of His truth.</div>
+<div class="ru">И Он поставил для них Учителя Праведности, чтобы вести их путём сердца Своего, и открыть им тайны благодати Своей, и возвестить им сокрытое истины Своей.</div>
+</div>
+<div class="verse">
+<div class="num">4</div>
+<div class="cop">And all those who followed the way of righteousness shall be saved, and all those who walked in the way of wickedness shall be cut off. And the sons of the pit shall be no more, and the wicked shall be no more.</div>
+<div class="ru">И все, кто последовал путём праведности, будут спасены, и все, кто ходил путём беззакония, будут истреблены. И сынов ямы не станет, и нечестивых не будет.</div>
+</div>
+<div class="verse">
+<div class="num">5</div>
+<div class="cop">And the meek shall possess the land, and they shall delight themselves in the abundance of peace, and they shall inherit the throne of glory for ever.</div>
+<div class="ru">И кроткие наследуют землю, и насладятся обилием мира, и унаследуют престол славы вовеки.</div>
+</div>
+<div class="verse">
+<div class="num">6</div>
+<div class="cop">And the sons of uncircumcision who despise the covenant of God, and break the statutes of His holiness, and walk in the ways of the defilement of the people, and say: "We are not guilty, although we have walked in the stubbornness of our heart,"</div>
+<div class="ru">И сыны необрезания, которые презирают завет Бога и нарушают уставы святыни Его, и ходят путями осквернения народов, и говорят: «Мы не виновны, хотя ходили в упорстве сердца нашего»,</div>
+</div>
+<div class="verse">
+<div class="num">7</div>
+<div class="cop">— these shall be delivered to the sword, when the glory of God shall visit the earth, and there shall be no escape for the wicked when the Lord raises the fallen of Israel.</div>
+<div class="ru">— эти будут преданы мечу, когда слава Бога посетит землю, и не будет спасения для нечестивых, когда Господь восставит падших Израиля.</div>
+</div>
+<div class="verse">
+<div class="num">8</div>
+<div class="cop">And when it shall be the day of the new covenant which the Lord will make with the house of Israel and with the house of Judah, then shall be a day of vengeance upon the nations, and the poor of the flock shall be saved.</div>
+<div class="ru">И когда настанет день нового завета, который Господь заключит с домом Израилевым и с домом Иуды, тогда будет день мщения над народами, и бедные из стада будут спасены.</div>
+</div>
+<div class="verse">
+<div class="num">9</div>
+<div class="cop">And the remnant of Israel shall return to the God of Jacob, and they shall be glad, and the poor among men shall rejoice in the Holy One of Israel, for the Lord will have mercy on His people.</div>
+<div class="ru">И остаток Израиля обратится к Богу Иакова, и возрадуется, и бедные среди людей возвеселятся о Святом Израилевом, ибо Господь помилует народ Свой.</div>
+</div>
+<div class="verse">
+<div class="num">10</div>
+<div class="cop">And those who understand shall walk in righteousness, and the faithful shall rejoice in the glory of God, and they shall purify themselves in the time of wickedness, and they shall not be defiled by the sin of the people.</div>
+<div class="ru">И разумные будут ходить в праведности, и верные возрадуются в славе Бога, и очистят себя во время нечестия, и не будут осквернены грехом народа.</div>
+</div>
+<div class="verse">
+<div class="num">11</div>
+<div class="cop">And all those who walk in these statutes, in the order of the council of holiness, shall be healed and made to prosper, and they shall rejoice in the multitude of peace, and shall enjoy long life.</div>
+<div class="ru">И все, кто ходит по сим уставам, в порядке совета святости, будут исцелены и преуспеют, и возрадуются во множестве мира, и будут наслаждаться долголетием.</div>
+</div>
+<div class="verse">
+<div class="num">12</div>
+<div class="cop">And the man who despises the statutes of righteousness shall be cut off in the midst of the wicked, and the man who despises the covenant of God shall be no more.</div>
+<div class="ru">И человек, который презирает уставы праведности, будет истреблён среди нечестивых, и человек, который презирает завет Бога, не будет иметь продолжения.</div>
+</div>
+<div class="verse">
+<div class="num">13</div>
+<div class="cop">And this is the order of the members of the camp, who shall walk in all the ways of righteousness, that they may be forgiven all their iniquities, and that the holy Spirit may dwell with them, and that they may not be condemned in the day of judgment.</div>
+<div class="ru">И это порядок членов стана, которые будут ходить во всех путях праведности, чтобы получить прощение всех беззаконий своих, и чтобы Святой Дух обитал с ними, и чтобы они не были осуждены в день суда.</div>
+</div>
+<div class="verse">
+<div class="num">14</div>
+<div class="cop">And this is the order of the holy city, which they shall purify by the holy water, and they shall sprinkle upon it the water of purification, and they shall not enter into it in their uncleanness.</div>
+<div class="ru">И это порядок святого города, который они очистят святою водою, и окропят его водою очищения, и не войдут в него в нечистоте своей.</div>
+</div>
+<div class="verse">
+<div class="num">15</div>
+<div class="cop">And every member of the city who is clean shall dwell in the city, and they shall be called by a new name, and the name of the city shall be the city of holiness, and the name of the house shall be the house of holiness.</div>
+<div class="ru">И каждый член города, который чист, будет жить в городе, и будут названы новым именем, и имя города будет город святости, и имя дома будет дом святости.</div>
+</div>
+<div class="verse">
+<div class="num">16</div>
+<div class="cop">And when the Lord has brought forth the Messiah with the breath of His mouth, and the spirit of His lips has slain the wicked, and the house of Israel is saved from among the nations, then shall be the day of everlasting joy for the people of God.</div>
+<div class="ru">И когда Господь выведет Мессию духом уст Своих, и дух губ Его убьёт нечестивых, и дом Израиля спасён от народов, тогда настанет день вечной радости для народа Бога.</div>
+</div>
+<div class="verse">
+<div class="num">17</div>
+<div class="cop">And they shall not return to the way of the foolish people, who walk in the darkness of their heart, but they shall return to the way of the light, which is the way of the sons of the holy ones.</div>
+<div class="ru">И не возвратятся на путь глупого народа, который ходит во тьме сердца своего, но возвратятся на путь света, который есть путь сынов святых.</div>
+</div>
+<div class="verse">
+<div class="num">18</div>
+<div class="cop">And the covenant of God shall be established for ever, and the holy Spirit shall be poured out upon the people of God, and they shall be cleansed from all their iniquities, and they shall walk in the way of righteousness for ever.</div>
+<div class="ru">И завет Бога утвердится навеки, и Святой Дух будет излит на народ Бога, и они очистятся от всех беззаконий своих, и будут ходить путём праведности вовеки.</div>
+</div>
+<div class="verse">
+<div class="num">19</div>
+<div class="cop">And the kingdom of God shall be over all the earth, and the Lord shall be king over all the nations, and the name of God shall be one, and His glory shall fill the whole earth.</div>
+<div class="ru">И царство Бога будет над всей землёй, и Господь будет царём над всеми народами, и имя Бога будет единым, и слава Его наполнит всю землю.</div>
+</div>
+<div class="verse">
+<div class="num">20</div>
+<div class="cop">And the sons of Belial shall be no more, and the saints of the Most High shall be exalted above the heavens, and the glory of God shall shine like the sun, and the earth shall be full of His glory.</div>
+<div class="ru">И сынов Белиала не будет более, и святые Всевышнего превознесутся выше небес, и слава Бога воссияет как солнце, и земля наполнится славою Его.</div>
+</div>
+
+
+</main>
+
+<footer>
+ARCHIVUM HAERETICUM — Q27 — DEAD SEA SCROLLS — 5. ДАМАССКИЙ ДОКУМЕНТ (CD) — <span class="red">◆</span> SIGILLUM VERITATIS
+</footer>
+<script>function toggleAll(open){
+  document.querySelectorAll('details').forEach(d=>d.open=open);
+  document.querySelectorAll('.verse,.row').forEach(r=>{r.style.display=open?'grid':'none';});
+}
+function toggleOrig(){
+  document.querySelectorAll('.verse .cop').forEach(c=>c.style.display=c.style.display==='none'?'block':'none');
+}
+function toggleRu(){
+  document.querySelectorAll('.verse .ru').forEach(c=>c.style.display=c.style.display==='none'?'block':'none');
+}
+function resetView(){
+  document.querySelectorAll('.verse,.row').forEach(r=>r.style.display='grid');
+  document.querySelectorAll('.verse .cop,.verse .ru').forEach(c=>c.style.display='block');
+}</script>
+</body>
+</html>
