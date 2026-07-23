@@ -1,99 +1,127 @@
-<!DOCTYPE html><html lang="ru"><head><meta charset="utf-8">
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<title>ДЕВТЕРОКАНОН — Архивум</title>
-<style>:root{--bg:#0a0a0c;--bg2:#0d0d12;--panel:#13131a;--line:#2a2a33;--red:#c8102e;--red-dark:#8a0a1f;--gold:#c9a227;--gold-bright:#e8b84a;--gold-dim:#8a7119;--ink:#e8e2d5;--ink-dim:#9a937f;--orig:#f2ead6;--accent:#d49a3a;--grid:#1d1d24}
-:root{--bg:#0d0b09;--panel:#161310;--line:#2e2820;--gold:#c9a227;--gold-dim:#8a7119;--ink:#d8cdb8;--ink-dim:#9a8f78;--red:#8c2f26}
-*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--ink);font-family:Georgia,'Times New Roman',serif;line-height:1.55}
-a{color:var(--gold);text-decoration:none}a:hover{text-decoration:underline}
-header.top{border-bottom:2px solid var(--gold-dim);padding:18px 24px;background:var(--panel)}
-header.top .brand{font-size:13px;letter-spacing:3px;color:var(--ink-dim);text-transform:uppercase}
-header.top h1{margin:6px 0 2px;font-size:26px;color:var(--gold);font-weight:normal}
-header.top .sub{color:var(--ink-dim);font-size:14px}
-.stamp{display:inline-block;border:1px solid var(--gold-dim);color:var(--gold);font-size:11px;letter-spacing:2px;padding:2px 8px;margin-left:8px;vertical-align:middle}
-.stamp.cre{color:#e8b84a;background:rgba(232,184,74,0.05);border-color:#e8b84a}
-.idx-group{margin:18px 24px}.idx-group h2{color:var(--gold);font-size:16px;letter-spacing:3px;border-bottom:1px solid var(--line);padding-bottom:6px;font-weight:normal}
-.idx-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:8px;margin-top:10px}
-.idx-card{border:1px solid var(--line);background:var(--panel);padding:10px 14px;display:block}
+<title>ДЕВТЕРОКАНОН · LXX · 11 КНИГ — Архивум</title>
+<style>
+:root{--bg:#0a0a0c;--bg2:#0d0d12;--panel:#13131a;--line:#2a2a33;--red:#c8102e;--red-dark:#8a0a1f;--gold:#c9a227;--gold-bright:#e8b84a;--gold-dim:#8a7119;--ink:#e8e2d5;--ink-dim:#9a937f;--orig:#f2ead6;--accent:#d49a3a;--grid:#1d1d24}
+*{box-sizing:border-box;margin:0;padding:0}body{background:var(--bg);color:var(--ink);font-family:Georgia,'Times New Roman',serif;line-height:1.55}
+a{color:var(--gold);text-decoration:none}a:hover{color:var(--gold-bright);text-decoration:underline}
+header.hos{background:linear-gradient(180deg,var(--red-dark) 0%,#1a0007 30%,var(--bg) 100%);border-bottom:2px solid var(--red);padding:0;position:relative}
+header.hos::before{content:"";position:absolute;left:0;top:0;bottom:0;width:6px;background:var(--red)}
+.hos-strip{display:flex;justify-content:space-between;align-items:center;padding:6px 14px;background:rgba(0,0,0,0.5);border-bottom:1px solid var(--red-dark);font-family:'Courier New',monospace;font-size:10px;letter-spacing:2px;color:var(--ink-dim);text-transform:uppercase}
+.hos-strip .l{color:var(--gold)} .hos-strip .r{color:var(--red);font-weight:bold}
+.hos-body{padding:18px 22px 14px}
+.hos-h1{font-size:1.5rem;letter-spacing:.12em;color:var(--orig);font-weight:normal;margin-bottom:4px;line-height:1.2}
+.hos-h1 .q{color:var(--red);font-family:'Courier New',monospace;font-size:.7em;vertical-align:super;margin-right:6px;padding:3px 7px;background:rgba(200,16,46,0.15);border:1px solid var(--red-dark);letter-spacing:1px}
+.hos-h1 .sig{font-size:.55em;color:var(--gold);font-family:'Courier New',monospace;letter-spacing:2px;margin-left:10px;padding:3px 8px;border:1px solid var(--gold-dim);vertical-align:middle}
+.hos-sub{color:var(--ink-dim);font-size:13px;font-style:italic}
+.stamps{padding:7px 16px;background:var(--bg2);border-bottom:1px solid var(--line);text-align:center;font-family:'Courier New',monospace}
+.stamps span{display:inline-block;border:1px solid var(--gold-dim);color:var(--gold);font-size:9px;letter-spacing:2px;padding:2px 7px;margin:0 2px;text-transform:uppercase}
+.stamps span.fid{color:var(--gold-bright);border-color:var(--gold);background:rgba(201,162,39,0.05)}
+.stamps span.dam{color:var(--red);border-color:var(--red-dark);background:rgba(200,16,46,0.05)}
+.stamps span.cre{color:var(--accent);border-color:var(--accent);background:rgba(212,154,58,0.05)}
+nav.main{padding:8px 18px;background:var(--panel);border-bottom:1px solid var(--line);font-size:12px;text-align:center}
+nav.main a{color:var(--gold);margin:0 6px;letter-spacing:1px;padding:3px 6px}
+.toolbar{display:flex;justify-content:center;gap:6px;flex-wrap:wrap;margin:14px 0 8px;padding:8px;background:var(--panel);border:1px solid var(--line);font-family:'Courier New',monospace}
+.toolbar button{background:transparent;border:1px solid var(--gold-dim);color:var(--gold);padding:5px 11px;font-size:10px;letter-spacing:1px;cursor:pointer;font-family:inherit;text-transform:uppercase}
+.toolbar button:hover{background:var(--gold);color:var(--bg)}
+.meta{color:var(--ink-dim);font-size:11px;font-style:italic;padding:6px 16px;text-align:center;font-family:'Courier New',monospace;letter-spacing:1px}
+.meta b{color:var(--gold);font-style:normal;font-family:Georgia,serif}
+.chap{background:linear-gradient(90deg,var(--red-dark),transparent);color:var(--gold-bright);font-size:.85rem;letter-spacing:.2em;padding:9px 16px;border-bottom:1px solid var(--red-dark);border-top:1px solid var(--red-dark);font-family:'Courier New',monospace;text-transform:uppercase;margin-top:12px}
+main{max-width:1300px;margin:0 auto;padding:0 12px 40px}
+.row{display:grid;grid-template-columns:3rem 1fr 1.1fr;border-bottom:1px solid var(--grid);align-items:start;transition:background 0.15s}
+.row:hover{background:#15110b}
+.num{grid-column:1;color:var(--gold);font-size:12px;padding:10px 4px;text-align:right;font-family:'Courier New',monospace;font-weight:bold;align-self:start}
+.orig,.ar,.gr,.he,.grc,.sk,.dev,.av,.zh,.sa{grid-column:2;padding:10px 12px;font-size:1rem;line-height:1.7;color:var(--orig);background:rgba(201,162,39,0.025);border-right:1px solid var(--gold-dim);border-left:3px solid var(--gold-dim);font-style:italic}
+.ar{direction:rtl;text-align:right;font-family:'Amiri','Scheherazade New','Traditional Arabic',serif;font-size:1.25rem;line-height:1.85}
+.gr,.grc{direction:ltr;font-family:'SBL Greek','Palatino Linotype',Georgia,serif}
+.he{direction:rtl;text-align:right;font-family:'SBL Hebrew','Times New Roman',serif;font-size:1.1rem}
+.sk,.dev{direction:ltr;font-family:'Noto Sans Devanagari','Sanskrit Text',serif;font-size:1.05rem}
+.zh{font-family:'Noto Serif CJK SC','SimSun',serif}
+.ru,.rus{grid-column:3;padding:10px 12px;font-size:.95rem;line-height:1.65;text-align:justify;color:var(--ink)}
+.bismillah{text-align:center;padding:1.5rem 1rem;font-family:'Amiri','Scheherazade New','Traditional Arabic',serif;font-size:1.8rem;color:var(--gold);direction:rtl;background:linear-gradient(180deg,#1a1410,#0a0a0c);border-bottom:1px solid var(--red-dark);letter-spacing:0;margin:14px 16px;border:1px solid var(--red-dark)}
+.bismillah .label{display:block;font-family:'Courier New',monospace;font-size:.7rem;letter-spacing:.25em;color:var(--ink-dim);text-transform:uppercase;direction:ltr;margin-bottom:8px}
+footer{padding:18px;text-align:center;color:var(--ink-dim);font-size:10px;border-top:1px solid var(--line);font-family:'Courier New',monospace;letter-spacing:2px;background:var(--bg2)}
+footer .red{color:var(--red)} footer .gold{color:var(--gold)}
+@media(max-width:760px){
+  .hos-h1{font-size:1.2rem}
+  .row{grid-template-columns:2rem 1fr 1.1fr}
+  .num{font-size:.7rem;padding:.5rem .3rem}
+  .ar{font-size:1.1rem;line-height:1.7;padding:.5rem .4rem}
+  .ru{font-size:.85rem;line-height:1.4;padding:.5rem .4rem}
+}
+
+.idx-group{margin:18px 24px}
+.idx-group h2{color:var(--gold);font-size:16px;letter-spacing:3px;border-bottom:1px solid var(--line);padding-bottom:6px;font-weight:normal}
+.idx-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(320px,1fr));gap:8px;margin-top:10px}
+.idx-card{border:1px solid var(--line);background:var(--panel);padding:12px 16px;display:block}
 .idx-card:hover{border-color:var(--gold-dim);text-decoration:none}
-.idx-card .t{color:var(--gold);font-size:16px}.idx-card .s{color:var(--ink-dim);font-size:12px;margin-top:2px}
-.note{margin:14px 24px;padding:12px 16px;border:1px solid var(--line);background:var(--panel);font-size:13px;color:var(--ink-dim)}
-footer{padding:24px;color:var(--ink-dim);font-size:12px;border-top:1px solid var(--line);margin-top:20px}
-.legend{padding:14px 24px;background:var(--panel);border-bottom:1px solid var(--line);font-size:12px}
-.legend span{display:inline-block;border:1px solid var(--gold-dim);color:var(--gold);font-size:10px;letter-spacing:2px;padding:3px 8px;margin-right:5px}
-.legend span.cre{color:#e8b84a;background:rgba(232,184,74,0.05);border-color:#e8b84a}
-.legend span.dam{color:var(--red);border-color:var(--red)}
-.toolbar{display:flex;justify-content:center;gap:8px;flex-wrap:wrap;margin:12px 0;padding:8px;background:#15151a;border:1px solid #2a2a33;border-radius:4px;font-family:Georgia,serif}
-.toolbar button{background:#1f1a12;border:1px solid #c9a227;color:#c9a227;padding:6px 12px;font-size:11px;letter-spacing:1px;cursor:pointer;font-family:Georgia,serif;text-transform:uppercase}
-.toolbar button:hover{background:#2a2010}
+.idx-card .t{color:var(--gold);font-size:15px;font-weight:bold}
+.idx-card .s{color:var(--ink-dim);font-size:12px;margin-top:4px;line-height:1.5}
+
+.idx-group{margin:20px 14px;border-bottom:1px solid var(--line);padding-bottom:14px}
+.idx-group h2{color:var(--gold);font-size:1.05rem;letter-spacing:.22em;border-left:4px solid var(--red);padding-left:.8rem;margin-bottom:1rem;font-weight:normal}
+.book-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:8px;margin-top:6px}
+.book-card{border:1px solid var(--line);background:var(--bg2);padding:8px 12px;display:flex;flex-direction:column;gap:3px;text-decoration:none;color:var(--ink);transition:all 0.15s;font-size:13px}
+.book-card:hover{border-color:var(--gold);background:#1a1410;text-decoration:none;color:var(--gold-bright)}
+.book-card .ttl{color:var(--gold);font-size:14px;font-weight:bold}
+.book-card .s{color:var(--ink-dim);font-size:12px;line-height:1.45}
+.cross-ref{background:rgba(200,16,46,0.04);border:1px solid var(--red-dark);padding:10px 14px;margin:14px;font-size:13px;line-height:1.55}
+.cross-ref b{color:var(--red)}
+@media(max-width:760px){
+  .hos-h1{font-size:1.2rem;letter-spacing:.05em;line-height:1.3}
+  .book-grid{grid-template-columns:1fr;gap:6px}
+  .book-card{padding:10px;font-size:13px}
+  .note{font-size:12px;line-height:1.55;padding:10px 12px}
+  .idx-group{margin:14px 10px}
+}
 </style>
-</head><body>
+</head>
+<body>
 <header class="hos">
-<div class="hos-strip"><span class="l">ARCHIVUM HAERETICUM · CORPUS DIVINUS</span><span class="r">Q3.1 · ДЕВТЕРОКАНОН</span></div>
+<div class="hos-strip"><span class="l">ARCHIVUM HAERETICUM — CORPUS DIVINUS</span><span class="r">Q3.1 — ДЕВТЕРОКАНОН</span></div>
 <div class="hos-body">
-<h1 class="hos-h1"><span class="q">Q3.1</span>ДЕВТЕРОКАНОН</h1>
-<div class="hos-sub">Книги Ветхого Завета, не входящие в иудейский канон</div>
+<h1 class="hos-h1"><span class="q">Q3.1</span>ДЕВТЕРОКАНОН · LXX · 11 КНИГ</h1>
+<div class="hos-sub">5 266 стихов · LXX + Синод. · Товит, Иудифь, Сирах, 1-3 Макк, Премудрость Соломона, Виды, Послание Иеремии, Варух, Товит, Молитва Манассии</div>
 </div>
-<div class="stamps"><span class="fid">◆ FIDELIS</span><span class="cre">✚ ОСНОВА</span></div>
+<div class="stamps">
+<span class="fid">◆ FIDELIS</span>
+<span>◇ КАНОН</span>
+<span>✚ SUSPECTUS</span>
+</div>
 </header>
-<div class="toolbar">
-<button onclick="toggleAll(true)">▼ Развернуть все</button>
-<button onclick="toggleAll(false)">▲ Свернуть все</button>
-<button onclick="toggleOrig()">🌙 Только оригинал</button>
-<button onclick="toggleRu()">📖 Только перевод</button>
-<button onclick="resetView()">◉ Оба</button>
+
+<nav class="main">
+<a href="../index.html">— CORPUS DIVINUS</a>
+</nav>
+
+<main>
+<div class="note">
+<p><b>Девтероканон</b> (от греч. δευτερόκανον, «второй канон») — книги Ветхого Завета, не входящие в иудейский канон, но входящие в православный и католический каноны. Полностью основаны на Септуагинте (LXX, 200 до н.э.).</p><p><b>Состав девтероканона</b> (от греч. δευτερόκανον = «второй канон»):</p><p>• 9 книг (правосл. + католич.): Товит, Иудифь, Премудрость Соломона, Сирах, Послание Иеремии, Варух, 1 Маккавейская, 2 Маккавейская, добавления к Даниилу (Песнь 3-х отроков, Сусанна, Вид)</p><p>• 2 книги только в Православии: 3 Маккавейская, 3 Ездры (= 1 Ездры в Вульгате)</p><p>• Добавления к Даниилу (Песнь 3-х отроков, Сусанна, Вид) — встроены в Книгу Даниила в Танахе</p><p>• Молитва Манассии — молитва покаяния, в Синодальном 1876 встроена в конец 2-й Книги Паралипоменон (2 Пар.36:22).</p>
 </div>
-<div class="legend">
-  <span>◆ FIDELIS</span><span>◇ SUSPECTUS</span><span class="dam">✠ DAMNATUS</span><span class="cre">✚ КАНОН</span>
+
+<div class="idx-group">
+<h2>СОДЕРЖАНИЕ</h2>
+<div class="book-grid">
+<a class="book-card" href="ezd3.html"><span class="ttl">3 Ездры (Апокалипсис Ездры)</span><span class="s">17 глав · 856 стихов · LXX + Синод.</span></a>
+<a class="book-card" href="iudif.html"><span class="ttl">Книга Иудифи</span><span class="s">16 глав · 340 стихов · LXX + Синод.</span></a>
+<a class="book-card" href="mak1.html"><span class="ttl">1 Книга Маккавейская</span><span class="s">16 глав · 924 стиха · LXX + Синод.</span></a>
+<a class="book-card" href="mak2.html"><span class="ttl">2 Книга Маккавейская</span><span class="s">15 глав · 556 стихов · LXX + Синод.</span></a>
+<a class="book-card" href="mak3.html"><span class="ttl">3 Книга Маккавейская</span><span class="s">7 глав · 180 стихов · LXX + Синод.</span></a>
+<a class="book-card" href="posl_ier.html"><span class="ttl">Послание Иеремии</span><span class="s">1 глава · 72 стиха · LXX + Синод.</span></a>
+<a class="book-card" href="prem.html"><span class="ttl">Премудрость Соломона</span><span class="s">19 глав · 440 стихов · LXX + Синод.</span></a>
+<a class="book-card" href="sir.html"><span class="ttl">Книга Сирахова</span><span class="s">52 главы · 1529 стихов · LXX + Синод.</span></a>
+<a class="book-card" href="tov.html"><span class="ttl">Книга Товита</span><span class="s">14 глав · 244 стиха · LXX + Синод.</span></a>
+<a class="book-card" href="var.html"><span class="ttl">Книга Варуха</span><span class="s">5 глав · 141 стих · LXX + Синод.</span></a>
+
 </div>
-<div class="note">Состав девтероканона (от греч. <i>δευτερόκανον</i> = «второй канон»):
-<ul>
-<li>9 книг (правосл. + католич.): Товит, Иудифь, Премудрость Соломона, Сирах, Послание Иеремии, Варух, 1 Маккавейская, 2 Маккавейская, добавления к Даниилу (Песнь 3-х отроков, Сусанна, Вид)</li>
-<li>2 книги только в Православии: 3 Маккавейская, 3 Ездры (= 1 Ездры в Вульгате)</li>
-<li>Добавления к Даниилу (Песнь 3-х отроков, Сусанна, Вид) — встроены в <a href="../tanakh/dan.html">Книгу Даниила</a> в <a href="../tanakh/index.html">Танахе</a></li>
-<li>Молитва Манассии — молитва покаяния, в Синодальном 1876 встроена в конец 2-й Книги Паралипоменон</li>
-</ul>
-Историческая основа: Септуагинта (LXX) — перевод 70 толковников в Александрии, III–II вв. до н.э. (все 11 книг). Вульгата — Св. Иероним, IV в.н.э. (все 11, кроме 3 Макк. и 3 Ездры). Протестантский канон (Лютер, 1534) не включает 7 книг в основной канон (только в «апокрифы»). Тридентский собор (1546) утвердил 11 книг как канонические для католиков. Синодальный перевод (1876) содержит все 11.</div>
-<div class="idx-group"><h2>КНИГИ ДЕВТЕРОКАНОНА</h2><div class="idx-grid">
-<a class="idx-card" href="tov.html"><div class="t">Книга Товита</div><div class="s">ТОВ · 14 глав · 244 стихов · Товит, Товия, архангел Рафаил, Сарра, демон Асмодей. Тема: Б</div></a>
-<a class="idx-card" href="iudif.html"><div class="t">Книга Иудифи</div><div class="s">ИУД · 16 глав · 340 стихов · Иудифь обезглавливает ассирийского полководца Олоферна. Тема</div></a>
-<a class="idx-card" href="prem.html"><div class="t">Книга Премудрости Соломона</div><div class="s">ПРЕМ · 19 глав · 440 стихов · Философская поэма о Премудрости Божьей (София), Логосе, Духе</div></a>
-<a class="idx-card" href="sir.html"><div class="t">Книга Премудрости Иисуса, сына Сирахова</div><div class="s">СИР · 52 глав · 1529 стихов · Сирах (Екклезиастикус) — мудрость, страх Божий, добродетели.</div></a>
-<a class="idx-card" href="posl_ier.html"><div class="t">Послание Иеремии</div><div class="s">ПИЕР · 1 глав · 72 стихов · В православии и католицизме = 6-я глава Книги Варуха. Протес</div></a>
-<a class="idx-card" href="var.html"><div class="t">Книга пророка Варуха</div><div class="s">ВАР · 5 глав · 141 стихов · Ученик Иеремии. Содержит молитвы и пророчества.</div></a>
-<a class="idx-card" href="mak1.html"><div class="t">Первая книга Маккавейская</div><div class="s">1МАК · 16 глав · 924 стихов · История восстания Маккавеев против Антиоха IV Епифана (167–1</div></a>
-<a class="idx-card" href="mak2.html"><div class="t">Вторая книга Маккавейская</div><div class="s">2МАК · 15 глав · 556 стихов · Продолжение 1-й. Преследование, мученики (Елеазар, 7 братьев</div></a>
-<a class="idx-card" href="mak3.html"><div class="t">Третья книга Маккавейская</div><div class="s">3МАК · 7 глав · 180 стихов · Только в Православии. Птолемей IV, преследование иудеев в Ал</div></a>
-<a class="idx-card" href="ezd3.html"><div class="t">Третья книга Ездры</div><div class="s">3ЕЗД · 16 глав · 840 стихов · Только в Православии (= 1 Ездры в Вульгате). Апокалиптика, в</div></a>
-</div></div>
-<div class="idx-group"><h2>ДОПОЛНИТЕЛЬНО</h2>
-<p style="margin:.25rem 0"><a href="../tanakh/dan.html">Добавления к Даниилу в Танахе</a> — Песнь 3-х отроков, Сусанна, Вид (доп. стихи 67)</p>
-<p style="margin:.25rem 0"><a href="../tanakh/2chr.html">Молитва Манассии</a> — встроена в конец 2-й Паралипоменон</p>
 </div>
-<footer>ARCHIVUM HAERETICUM IMPERII HUMANITATIS · Q3 · ДЕВТЕРОКАНОН · источник: algart.net/bible/synodal (Синодальный 1876, PD).<br>Sigillum: ◆◆◆ FIDELIS · Datum: 156.M3</footer><script>
-function toggleAll(state){
-  // For .row based layout
-  document.querySelectorAll('.row').forEach(r=>{r.style.display=state?'grid':'none';});
-  // For table-based (tanakh, deuterocanon)
-  document.querySelectorAll('table.orph tr').forEach(r=>{r.style.display=state?'':'none';});
-  // For .verse based (Q sections)
-  document.querySelectorAll('.verse').forEach(r=>{r.style.display=state?'grid':'none';});
-  // For .aya based (any other)
-  document.querySelectorAll('.aya, .v, [data-verse]').forEach(r=>{r.style.display=state?'':'none';});
-}
-function toggleOrig(){
-  document.querySelectorAll('.row').forEach(r=>{r.style.display='grid';const ar=r.querySelector('.ar,.gr,.he,.grc,.sk,.dev,.ar,');if(ar)ar.style.display='block';const ru=r.querySelector('.ru,.rus');if(ru)ru.style.display='none';});
-  document.querySelectorAll('.verse').forEach(r=>{r.style.display='grid';const orig=r.querySelector('.sk,.av,.zh,.sa,.en,.dev,.ar,.gr,.he,.grc');if(orig)orig.style.display='block';const ru=r.querySelector('.ru,.rus');if(ru)ru.style.display='none';});
-  document.querySelectorAll('table.orph tr').forEach(r=>{r.style.display='';r.querySelectorAll('.rus').forEach(c=>c.style.display='none');});
-}
-function toggleRu(){
-  document.querySelectorAll('.row').forEach(r=>{r.style.display='grid';const ar=r.querySelector('.ar,.gr,.he,.grc,.sk,.dev');if(ar)ar.style.display='none';const ru=r.querySelector('.ru,.rus');if(ru)ru.style.display='block';});
-  document.querySelectorAll('.verse').forEach(r=>{r.style.display='grid';const orig=r.querySelector('.sk,.av,.zh,.sa,.en,.dev,.ar,.gr,.he,.grc');if(orig)orig.style.display='none';const ru=r.querySelector('.ru,.rus');if(ru)ru.style.display='block';});
-  document.querySelectorAll('table.orph tr').forEach(r=>{r.style.display='';r.querySelectorAll('.he,.grc').forEach(c=>c.style.display='none');});
-}
-function resetView(){
-  document.querySelectorAll('.row,.verse').forEach(r=>{r.style.display='grid';});
-  document.querySelectorAll('.ar,.gr,.he,.grc,.sk,.dev,.zh,.sa,.en,.av,.ru,.rus').forEach(c=>{c.style.display='';});
-  document.querySelectorAll('table.orph tr').forEach(r=>{r.style.display='';});
-}
-</script>
-</body></html>
+</main>
+
+<footer>
+ARCHIVUM HAERETICUM — Q3.1 — ДЕВТЕРОКАНОН — <span class="red">◆</span> SIGILLUM VERITATIS
+</footer>
+</body>
+</html>

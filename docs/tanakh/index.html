@@ -1,88 +1,156 @@
-<!DOCTYPE html><html lang="ru"><head><meta charset="utf-8">
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<title>ТАНАХ · Ветхий Завет — Архивум</title><style>:root{--bg:#0a0a0c;--bg2:#0d0d12;--panel:#13131a;--line:#2a2a33;--red:#c8102e;--red-dark:#8a0a1f;--gold:#c9a227;--gold-bright:#e8b84a;--gold-dim:#8a7119;--ink:#e8e2d5;--ink-dim:#9a937f;--orig:#f2ead6;--accent:#d49a3a;--grid:#1d1d24}
-:root{--bg:#0d0b09;--panel:#161310;--line:#2e2820;--gold:#c9a227;--gold-dim:#8a7119;--ink:#d8cdb8;--ink-dim:#9a8f78;--red:#8c2f26}
-*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--ink);font-family:Georgia,'Times New Roman',serif;line-height:1.55}
-a{color:var(--gold);text-decoration:none}a:hover{text-decoration:underline}
-header.top{border-bottom:2px solid var(--gold-dim);padding:18px 24px;background:var(--panel)}
-header.top .brand{font-size:13px;letter-spacing:3px;color:var(--ink-dim);text-transform:uppercase}
-header.top h1{margin:6px 0 2px;font-size:26px;color:var(--gold);font-weight:normal}
-header.top .sub{color:var(--ink-dim);font-size:14px}
-.stamp{display:inline-block;border:1px solid var(--gold-dim);color:var(--gold);font-size:11px;letter-spacing:2px;padding:2px 8px;margin-left:8px;vertical-align:middle}
-nav.chapters{padding:10px 24px;border-bottom:1px solid var(--line);font-size:13px;color:var(--ink-dim);background:var(--panel)}
-nav.chapters a{margin-right:8px;white-space:nowrap}
-table.verses{width:100%;border-collapse:collapse}
-table.verses td{vertical-align:top;padding:8px 10px;border-bottom:1px solid var(--line);font-size:16px}
-td.ref{width:86px;color:var(--gold);font-size:13px;white-space:nowrap;padding-top:12px}
-td.ref .tr-ref{display:block;color:var(--ink-dim);font-size:11px}
-td.he{width:33%;direction:rtl;text-align:right;font-size:21px;font-family:'SBL Hebrew',Ezra,'Times New Roman',serif}
-td.grc{width:31%}
-td.rus{width:33%}
-td.miss{color:#4a4234;font-style:italic}
-tr.chhead td{background:var(--panel);color:var(--gold);font-size:15px;letter-spacing:2px;padding:10px;border-bottom:1px solid var(--gold-dim)}
-.orphan-section{padding:18px 24px}
-.orphan-section h2{color:var(--gold);font-size:17px;letter-spacing:2px;font-weight:normal}
-table.orph td{vertical-align:top;padding:6px 10px;border-bottom:1px solid var(--line);font-size:15px}
-table.orph td.oref{width:120px;color:var(--gold);font-size:12px;white-space:nowrap}
-table.orph td.otrad{width:46px;color:var(--red);font-size:11px;letter-spacing:1px}
-footer{padding:24px;color:var(--ink-dim);font-size:12px;border-top:1px solid var(--line);margin-top:20px}
-.idx-group{margin:18px 24px}.idx-group h2{color:var(--gold);font-size:16px;letter-spacing:3px;border-bottom:1px solid var(--line);padding-bottom:6px;font-weight:normal}
-.idx-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:8px;margin-top:10px}
-.idx-card{border:1px solid var(--line);background:var(--panel);padding:10px 14px;display:block}
+<title>ТАНАХ · ВЕТХИЙ ЗАВЕТ · תנ״ך — Архивум</title>
+<style>
+:root{--bg:#0a0a0c;--bg2:#0d0d12;--panel:#13131a;--line:#2a2a33;--red:#c8102e;--red-dark:#8a0a1f;--gold:#c9a227;--gold-bright:#e8b84a;--gold-dim:#8a7119;--ink:#e8e2d5;--ink-dim:#9a937f;--orig:#f2ead6;--accent:#d49a3a;--grid:#1d1d24}
+*{box-sizing:border-box;margin:0;padding:0}body{background:var(--bg);color:var(--ink);font-family:Georgia,'Times New Roman',serif;line-height:1.55}
+a{color:var(--gold);text-decoration:none}a:hover{color:var(--gold-bright);text-decoration:underline}
+header.hos{background:linear-gradient(180deg,var(--red-dark) 0%,#1a0007 30%,var(--bg) 100%);border-bottom:2px solid var(--red);padding:0;position:relative}
+header.hos::before{content:"";position:absolute;left:0;top:0;bottom:0;width:6px;background:var(--red)}
+.hos-strip{display:flex;justify-content:space-between;align-items:center;padding:6px 14px;background:rgba(0,0,0,0.5);border-bottom:1px solid var(--red-dark);font-family:'Courier New',monospace;font-size:10px;letter-spacing:2px;color:var(--ink-dim);text-transform:uppercase}
+.hos-strip .l{color:var(--gold)} .hos-strip .r{color:var(--red);font-weight:bold}
+.hos-body{padding:18px 22px 14px}
+.hos-h1{font-size:1.5rem;letter-spacing:.12em;color:var(--orig);font-weight:normal;margin-bottom:4px;line-height:1.2}
+.hos-h1 .q{color:var(--red);font-family:'Courier New',monospace;font-size:.7em;vertical-align:super;margin-right:6px;padding:3px 7px;background:rgba(200,16,46,0.15);border:1px solid var(--red-dark);letter-spacing:1px}
+.hos-h1 .sig{font-size:.55em;color:var(--gold);font-family:'Courier New',monospace;letter-spacing:2px;margin-left:10px;padding:3px 8px;border:1px solid var(--gold-dim);vertical-align:middle}
+.hos-sub{color:var(--ink-dim);font-size:13px;font-style:italic}
+.stamps{padding:7px 16px;background:var(--bg2);border-bottom:1px solid var(--line);text-align:center;font-family:'Courier New',monospace}
+.stamps span{display:inline-block;border:1px solid var(--gold-dim);color:var(--gold);font-size:9px;letter-spacing:2px;padding:2px 7px;margin:0 2px;text-transform:uppercase}
+.stamps span.fid{color:var(--gold-bright);border-color:var(--gold);background:rgba(201,162,39,0.05)}
+.stamps span.dam{color:var(--red);border-color:var(--red-dark);background:rgba(200,16,46,0.05)}
+.stamps span.cre{color:var(--accent);border-color:var(--accent);background:rgba(212,154,58,0.05)}
+nav.main{padding:8px 18px;background:var(--panel);border-bottom:1px solid var(--line);font-size:12px;text-align:center}
+nav.main a{color:var(--gold);margin:0 6px;letter-spacing:1px;padding:3px 6px}
+.toolbar{display:flex;justify-content:center;gap:6px;flex-wrap:wrap;margin:14px 0 8px;padding:8px;background:var(--panel);border:1px solid var(--line);font-family:'Courier New',monospace}
+.toolbar button{background:transparent;border:1px solid var(--gold-dim);color:var(--gold);padding:5px 11px;font-size:10px;letter-spacing:1px;cursor:pointer;font-family:inherit;text-transform:uppercase}
+.toolbar button:hover{background:var(--gold);color:var(--bg)}
+.meta{color:var(--ink-dim);font-size:11px;font-style:italic;padding:6px 16px;text-align:center;font-family:'Courier New',monospace;letter-spacing:1px}
+.meta b{color:var(--gold);font-style:normal;font-family:Georgia,serif}
+.chap{background:linear-gradient(90deg,var(--red-dark),transparent);color:var(--gold-bright);font-size:.85rem;letter-spacing:.2em;padding:9px 16px;border-bottom:1px solid var(--red-dark);border-top:1px solid var(--red-dark);font-family:'Courier New',monospace;text-transform:uppercase;margin-top:12px}
+main{max-width:1300px;margin:0 auto;padding:0 12px 40px}
+.row{display:grid;grid-template-columns:3rem 1fr 1.1fr;border-bottom:1px solid var(--grid);align-items:start;transition:background 0.15s}
+.row:hover{background:#15110b}
+.num{grid-column:1;color:var(--gold);font-size:12px;padding:10px 4px;text-align:right;font-family:'Courier New',monospace;font-weight:bold;align-self:start}
+.orig,.ar,.gr,.he,.grc,.sk,.dev,.av,.zh,.sa{grid-column:2;padding:10px 12px;font-size:1rem;line-height:1.7;color:var(--orig);background:rgba(201,162,39,0.025);border-right:1px solid var(--gold-dim);border-left:3px solid var(--gold-dim);font-style:italic}
+.ar{direction:rtl;text-align:right;font-family:'Amiri','Scheherazade New','Traditional Arabic',serif;font-size:1.25rem;line-height:1.85}
+.gr,.grc{direction:ltr;font-family:'SBL Greek','Palatino Linotype',Georgia,serif}
+.he{direction:rtl;text-align:right;font-family:'SBL Hebrew','Times New Roman',serif;font-size:1.1rem}
+.sk,.dev{direction:ltr;font-family:'Noto Sans Devanagari','Sanskrit Text',serif;font-size:1.05rem}
+.zh{font-family:'Noto Serif CJK SC','SimSun',serif}
+.ru,.rus{grid-column:3;padding:10px 12px;font-size:.95rem;line-height:1.65;text-align:justify;color:var(--ink)}
+.bismillah{text-align:center;padding:1.5rem 1rem;font-family:'Amiri','Scheherazade New','Traditional Arabic',serif;font-size:1.8rem;color:var(--gold);direction:rtl;background:linear-gradient(180deg,#1a1410,#0a0a0c);border-bottom:1px solid var(--red-dark);letter-spacing:0;margin:14px 16px;border:1px solid var(--red-dark)}
+.bismillah .label{display:block;font-family:'Courier New',monospace;font-size:.7rem;letter-spacing:.25em;color:var(--ink-dim);text-transform:uppercase;direction:ltr;margin-bottom:8px}
+footer{padding:18px;text-align:center;color:var(--ink-dim);font-size:10px;border-top:1px solid var(--line);font-family:'Courier New',monospace;letter-spacing:2px;background:var(--bg2)}
+footer .red{color:var(--red)} footer .gold{color:var(--gold)}
+@media(max-width:760px){
+  .hos-h1{font-size:1.2rem}
+  .row{grid-template-columns:2rem 1fr 1.1fr}
+  .num{font-size:.7rem;padding:.5rem .3rem}
+  .ar{font-size:1.1rem;line-height:1.7;padding:.5rem .4rem}
+  .ru{font-size:.85rem;line-height:1.4;padding:.5rem .4rem}
+}
+
+.idx-group{margin:18px 24px}
+.idx-group h2{color:var(--gold);font-size:16px;letter-spacing:3px;border-bottom:1px solid var(--line);padding-bottom:6px;font-weight:normal}
+.idx-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(320px,1fr));gap:8px;margin-top:10px}
+.idx-card{border:1px solid var(--line);background:var(--panel);padding:12px 16px;display:block}
 .idx-card:hover{border-color:var(--gold-dim);text-decoration:none}
-.idx-card .t{color:var(--gold);font-size:16px}.idx-card .s{color:var(--ink-dim);font-size:12px;margin-top:2px}
-.note{margin:14px 24px;padding:12px 16px;border:1px solid var(--line);background:var(--panel);font-size:13px;color:var(--ink-dim)}
-.toolbar{display:flex;justify-content:center;gap:8px;flex-wrap:wrap;margin:12px 0;padding:8px;background:#15151a;border:1px solid #2a2a33;border-radius:4px;font-family:Georgia,serif}
-.toolbar button{background:#1f1a12;border:1px solid #c9a227;color:#c9a227;padding:6px 12px;font-size:11px;letter-spacing:1px;cursor:pointer;font-family:Georgia,serif;text-transform:uppercase}
-.toolbar button:hover{background:#2a2010}
-</style></head><body>
+.idx-card .t{color:var(--gold);font-size:15px;font-weight:bold}
+.idx-card .s{color:var(--ink-dim);font-size:12px;margin-top:4px;line-height:1.5}
+
+.idx-group{margin:20px 14px;border-bottom:1px solid var(--line);padding-bottom:14px}
+.idx-group h2{color:var(--gold);font-size:1.05rem;letter-spacing:.22em;border-left:4px solid var(--red);padding-left:.8rem;margin-bottom:1rem;font-weight:normal}
+.book-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:8px;margin-top:6px}
+.book-card{border:1px solid var(--line);background:var(--bg2);padding:8px 12px;display:flex;flex-direction:column;gap:3px;text-decoration:none;color:var(--ink);transition:all 0.15s;font-size:13px}
+.book-card:hover{border-color:var(--gold);background:#1a1410;text-decoration:none;color:var(--gold-bright)}
+.book-card .ttl{color:var(--gold);font-size:14px;font-weight:bold}
+.book-card .s{color:var(--ink-dim);font-size:12px;line-height:1.45}
+.cross-ref{background:rgba(200,16,46,0.04);border:1px solid var(--red-dark);padding:10px 14px;margin:14px;font-size:13px;line-height:1.55}
+.cross-ref b{color:var(--red)}
+@media(max-width:760px){
+  .hos-h1{font-size:1.2rem;letter-spacing:.05em;line-height:1.3}
+  .book-grid{grid-template-columns:1fr;gap:6px}
+  .book-card{padding:10px;font-size:13px}
+  .note{font-size:12px;line-height:1.55;padding:10px 12px}
+  .idx-group{margin:14px 10px}
+}
+</style>
+</head>
+<body>
 <header class="hos">
-<div class="hos-strip"><span class="l">ARCHIVUM HAERETICUM · CORPUS DIVINUS</span><span class="r">Q3 · ТАНАХ</span></div>
+<div class="hos-strip"><span class="l">ARCHIVUM HAERETICUM — CORPUS DIVINUS</span><span class="r">Q3 — ТАНАХ</span></div>
 <div class="hos-body">
-<h1 class="hos-h1"><span class="q">Q3</span>ТАНАХ · Ветхий Завет</h1>
-<div class="hos-sub">Ветхий Завет</div>
+<h1 class="hos-h1"><span class="q">Q3</span>ТАНАХ · ВЕТХИЙ ЗАВЕТ · תנ״ך</h1>
+<div class="hos-sub">39 книг, 23 213 стихов · иврит + греч. LXX + рус. Синодальный</div>
 </div>
-<div class="stamps"><span class="fid">◆ FIDELIS</span><span class="cre">✚ ОСНОВА</span></div>
+<div class="stamps">
+<span class="fid">◆ FIDELIS</span>
+<span>◇ ОСНОВА</span>
+<span>✚ CANON</span>
+</div>
 </header>
-<div class="toolbar">
-<button onclick="toggleAll(true)">▼ Развернуть все</button>
-<button onclick="toggleAll(false)">▲ Свернуть все</button>
-<button onclick="toggleOrig()">🌙 Только оригинал</button>
-<button onclick="toggleRu()">📖 Только перевод</button>
-<button onclick="resetView()">◉ Оба</button>
+
+<nav class="main">
+<a href="../index.html">— CORPUS DIVINUS</a>
+</nav>
+
+<main>
+<div class="note">
+<p><b>Танах</b> (ивр. תנ״ך, «Тора, Невиим, Ктувим») — священное писание иудаизма, еврейская Библия. 39 книг, 23 213 стихов. Полностью основано на масоретском тексте (WLC) и Септуагинте (LXX, 200 до н.э.).</p><p><b>Структура</b>: 1) <b>Тора</b> (5 книг: Бытие, Исход, Левит, Числа, Второзаконие); 2) <b>Невиим</b> (Пророки): Иисус Навин, Судьи, 1-4 Царств; 3) <b>Ктувим</b> (Писания): 1-2 Паралипоменон, Ездра, Неемия, Есфирь, Иов, Псалтирь, Притчи, Екклесиаст, Песнь Песней, Руфь, Плач, Даниил.</p>
 </div>
-<div style="text-align:center;padding:10px 16px;border-bottom:1px solid #2a2418;background:#15110b;font-family:Georgia,serif">
-  <span style="display:inline-block;border:1px solid #c9a227;color:#c9a227;font-size:10px;letter-spacing:2px;padding:4px 10px;margin:0 3px">◆ FIDELIS</span>
-  <span style="display:inline-block;border:1px solid #8a7119;color:#8a7119;font-size:10px;letter-spacing:2px;padding:4px 10px;margin:0 3px">◇ SUSPECTUS-FERTILIS</span>
-  <span style="display:inline-block;border:1px solid #8c2f26;color:#8c2f26;font-size:10px;letter-spacing:2px;padding:4px 10px;margin:0 3px">✠ DAMNATUS</span>
-  <span style="display:inline-block;border:1px solid #e8b84a;color:#e8b84a;background:rgba(232,184,74,0.05);font-size:10px;letter-spacing:2px;padding:4px 10px;margin:0 3px">✚ CREDO</span>
+
+<div class="idx-group">
+<h2>СОДЕРЖАНИЕ</h2>
+<div class="book-grid">
+<a class="book-card" href="gen.html"><span class="ttl">Бытие (Genesis)</span><span class="s">50 глав · ивр.+LXX+рус.</span></a>
+<a class="book-card" href="exod.html"><span class="ttl">Исход (Exodus)</span><span class="s">40 глав · ивр.+LXX+рус.</span></a>
+<a class="book-card" href="lev.html"><span class="ttl">Левит (Leviticus)</span><span class="s">27 глав · ивр.+LXX+рус.</span></a>
+<a class="book-card" href="num.html"><span class="ttl">Числа (Numeri)</span><span class="s">36 глав · ивр.+LXX+рус.</span></a>
+<a class="book-card" href="deut.html"><span class="ttl">Второзаконие (Deuteronomium)</span><span class="s">34 главы · ивр.+LXX+рус.</span></a>
+<a class="book-card" href="josh.html"><span class="ttl">Иисус Навин (Joshua)</span><span class="s">24 главы · ивр.+LXX+рус.</span></a>
+<a class="book-card" href="judg.html"><span class="ttl">Судьи (Judges)</span><span class="s">21 глава · ивр.+LXX+рус.</span></a>
+<a class="book-card" href="ruth.html"><span class="ttl">Руфь (Ruth)</span><span class="s">4 главы · ивр.+LXX+рус.</span></a>
+<a class="book-card" href="1sam.html"><span class="ttl">1 Царств (1 Samuel)</span><span class="s">31 глава · ивр.+LXX+рус.</span></a>
+<a class="book-card" href="2sam.html"><span class="ttl">2 Царств (2 Samuel)</span><span class="s">24 главы · ивр.+LXX+рус.</span></a>
+<a class="book-card" href="1kgs.html"><span class="ttl">3 Царств (1 Kings)</span><span class="s">22 главы · ивр.+LXX+рус.</span></a>
+<a class="book-card" href="2kgs.html"><span class="ttl">4 Царств (2 Kings)</span><span class="s">25 глав · ивр.+LXX+рус.</span></a>
+<a class="book-card" href="1chr.html"><span class="ttl">1 Паралипоменон (1 Chronicles)</span><span class="s">29 глав · ивр.+LXX+рус.</span></a>
+<a class="book-card" href="2chr.html"><span class="ttl">2 Паралипоменон (2 Chronicles)</span><span class="s">36 глав · ивр.+LXX+рус.</span></a>
+<a class="book-card" href="ezra.html"><span class="ttl">Ездра (Ezra)</span><span class="s">10 глав · ивр.+LXX+рус.</span></a>
+<a class="book-card" href="neh.html"><span class="ttl">Неемия (Nehemiah)</span><span class="s">13 глав · ивр.+LXX+рус.</span></a>
+<a class="book-card" href="esth.html"><span class="ttl">Есфирь (Esther)</span><span class="s">10 глав · ивр.+LXX+рус.</span></a>
+<a class="book-card" href="job.html"><span class="ttl">Иов (Job)</span><span class="s">42 главы · ивр.+LXX+рус.</span></a>
+<a class="book-card" href="ps.html"><span class="ttl">Псалтирь (Psalms)</span><span class="s">150 псалмов · ивр.+LXX+рус.</span></a>
+<a class="book-card" href="prov.html"><span class="ttl">Притчи (Proverbs)</span><span class="s">31 глава · ивр.+LXX+рус.</span></a>
+<a class="book-card" href="eccl.html"><span class="ttl">Екклесиаст (Ecclesiastes)</span><span class="s">12 глав · ивр.+LXX+рус.</span></a>
+<a class="book-card" href="song.html"><span class="ttl">Песнь Песней (Song of Solomon)</span><span class="s">8 глав · ивр.+LXX+рус.</span></a>
+<a class="book-card" href="lam.html"><span class="ttl">Плач Иеремии (Lamentations)</span><span class="s">5 глав · ивр.+LXX+рус.</span></a>
+<a class="book-card" href="dan.html"><span class="ttl">Даниил (Daniel)</span><span class="s">12 глав · ивр.+LXX+рус.</span></a>
+<a class="book-card" href="isa.html"><span class="ttl">Исаия (Isaiah)</span><span class="s">66 глав · ивр.+LXX+рус.</span></a>
+<a class="book-card" href="jer.html"><span class="ttl">Иеремия (Jeremiah)</span><span class="s">52 главы · ивр.+LXX+рус.</span></a>
+<a class="book-card" href="ezek.html"><span class="ttl">Иезекииль (Ezekiel)</span><span class="s">48 глав · ивр.+LXX+рус.</span></a>
+<a class="book-card" href="hos.html"><span class="ttl">Осия (Hosea)</span><span class="s">14 глав · ивр.+LXX+рус.</span></a>
+<a class="book-card" href="joel.html"><span class="ttl">Иоиль (Joel)</span><span class="s">3 главы · ивр.+LXX+рус.</span></a>
+<a class="book-card" href="amos.html"><span class="ttl">Амос (Amos)</span><span class="s">9 глав · ивр.+LXX+рус.</span></a>
+<a class="book-card" href="obad.html"><span class="ttl">Авдий (Obadiah)</span><span class="s">1 глава · ивр.+LXX+рус.</span></a>
+<a class="book-card" href="jonah.html"><span class="ttl">Иона (Jonah)</span><span class="s">4 главы · ивр.+LXX+рус.</span></a>
+<a class="book-card" href="mic.html"><span class="ttl">Михей (Micah)</span><span class="s">7 глав · ивр.+LXX+рус.</span></a>
+<a class="book-card" href="nah.html"><span class="ttl">Наум (Nahum)</span><span class="s">3 главы · ивр.+LXX+рус.</span></a>
+<a class="book-card" href="hab.html"><span class="ttl">Аввакум (Habakkuk)</span><span class="s">3 главы · ивр.+LXX+рус.</span></a>
+<a class="book-card" href="zeph.html"><span class="ttl">Софония (Zephaniah)</span><span class="s">3 главы · ивр.+LXX+рус.</span></a>
+<a class="book-card" href="hag.html"><span class="ttl">Аггей (Haggai)</span><span class="s">2 главы · ивр.+LXX+рус.</span></a>
+<a class="book-card" href="zech.html"><span class="ttl">Захария (Zechariah)</span><span class="s">14 глав · ивр.+LXX+рус.</span></a>
+<a class="book-card" href="mal.html"><span class="ttl">Малахия (Malachi)</span><span class="s">3 главы · ивр.+LXX+рус.</span></a>
+
 </div>
-<div class="note">ВЫРАВНИВАНИЕ: основа — масоретская нумерация (WLC). Псалтирь выровнена по таблице LXX↔MT (Синодальный следует греческой нумерации). Где нумерация расходится, ячейка помечена своей ссылкой (LXX 22:1, Син. 3:19). Стихи, не имеющие соответствия в масоретском тексте (Дан 3:24–90 LXX, вставки 3 Царств, Пс 151, сокращения Иеремии LXX), вынесены в конец книги как «дополнительные». Прочерк «—» означает раздвоение/слияние стиха у свидетеля.</div><div class='idx-group'><h2>ТОРА · Пятикнижие</h2><div class='idx-grid'><a class='idx-card' href='gen.html'><div class='t'>Бытие</div><div class='s'>LIBER GENESIS · 50 гл. · 1533 стихов</div></a><a class='idx-card' href='exod.html'><div class='t'>Исход</div><div class='s'>LIBER EXODUS · 40 гл. · 1213 стихов</div></a><a class='idx-card' href='lev.html'><div class='t'>Левит</div><div class='s'>LIBER LEVITICUS · 27 гл. · 859 стихов</div></a><a class='idx-card' href='num.html'><div class='t'>Числа</div><div class='s'>LIBER NUMERORUM · 36 гл. · 1289 стихов</div></a><a class='idx-card' href='deut.html'><div class='t'>Второзаконие</div><div class='s'>LIBER DEUTERONOMII · 34 гл. · 959 стихов</div></a></div></div><div class='idx-group'><h2>ИСТОРИЧЕСКИЕ КНИГИ</h2><div class='idx-grid'><a class='idx-card' href='josh.html'><div class='t'>Иисус Навин</div><div class='s'>LIBER IOSUE · 24 гл. · 658 стихов</div></a><a class='idx-card' href='judg.html'><div class='t'>Книга Судей</div><div class='s'>LIBER IUDICUM · 21 гл. · 618 стихов</div></a><a class='idx-card' href='ruth.html'><div class='t'>Руфь</div><div class='s'>LIBER RUTH · 4 гл. · 85 стихов</div></a><a class='idx-card' href='1sam.html'><div class='t'>1-я книга Царств</div><div class='s'>LIBER I REGUM · 31 гл. · 811 стихов</div></a><a class='idx-card' href='2sam.html'><div class='t'>2-я книга Царств</div><div class='s'>LIBER II REGUM · 24 гл. · 695 стихов</div></a><a class='idx-card' href='1kgs.html'><div class='t'>3-я книга Царств</div><div class='s'>LIBER III REGUM · 22 гл. · 817 стихов · +14 доп.</div></a><a class='idx-card' href='2kgs.html'><div class='t'>4-я книга Царств</div><div class='s'>LIBER IV REGUM · 25 гл. · 719 стихов</div></a><a class='idx-card' href='1chr.html'><div class='t'>1-я Паралипоменон</div><div class='s'>LIBER I PARALIPOMENON · 29 гл. · 943 стихов</div></a><a class='idx-card' href='2chr.html'><div class='t'>2-я Паралипоменон</div><div class='s'>LIBER II PARALIPOMENON · 36 гл. · 822 стихов</div></a><a class='idx-card' href='ezra.html'><div class='t'>Ездра</div><div class='s'>LIBER ESDRAE · 10 гл. · 280 стихов</div></a><a class='idx-card' href='neh.html'><div class='t'>Неемия</div><div class='s'>LIBER NEHEMIAE · 13 гл. · 405 стихов · +1 доп.</div></a><a class='idx-card' href='esth.html'><div class='t'>Есфирь</div><div class='s'>LIBER ESTHER · 10 гл. · 167 стихов</div></a></div></div><div class='idx-group'><h2>УЧИТЕЛЬНЫЕ КНИГИ</h2><div class='idx-grid'><a class='idx-card' href='job.html'><div class='t'>Иов</div><div class='s'>LIBER IOB · 42 гл. · 1070 стихов</div></a><a class='idx-card' href='ps.html'><div class='t'>Псалтирь</div><div class='s'>LIBER PSALMORUM · 150 гл. · 2527 стихов · +7 доп.</div></a><a class='idx-card' href='prov.html'><div class='t'>Притчи</div><div class='s'>LIBER PROVERBIORUM · 31 гл. · 915 стихов</div></a><a class='idx-card' href='eccl.html'><div class='t'>Екклезиаст</div><div class='s'>LIBER ECCLESIASTES · 12 гл. · 222 стихов</div></a><a class='idx-card' href='song.html'><div class='t'>Песнь песней</div><div class='s'>CANTICUM CANTICORUM · 8 гл. · 117 стихов</div></a></div></div><div class='idx-group'><h2>ВЕЛИКИЕ ПРОРОКИ</h2><div class='idx-grid'><a class='idx-card' href='isa.html'><div class='t'>Исаия</div><div class='s'>LIBER ISAIAE · 66 гл. · 1291 стихов · +1 доп.</div></a><a class='idx-card' href='jer.html'><div class='t'>Иеремия</div><div class='s'>LIBER IEREMIAE · 52 гл. · 1364 стихов · +178 доп.</div></a><a class='idx-card' href='lam.html'><div class='t'>Плач Иеремии</div><div class='s'>LAMENTATIONES · 5 гл. · 154 стихов · +1 доп.</div></a><a class='idx-card' href='ezek.html'><div class='t'>Иезекииль</div><div class='s'>LIBER EZECHIELIS · 48 гл. · 1273 стихов</div></a><a class='idx-card' href='dan.html'><div class='t'>Даниил</div><div class='s'>LIBER DANIELIS · 12 гл. · 357 стихов · +67 доп.</div></a></div></div><div class='idx-group'><h2>МАЛЫЕ ПРОРОКИ</h2><div class='idx-grid'><a class='idx-card' href='hos.html'><div class='t'>Осия</div><div class='s'>LIBER OSEE · 14 гл. · 197 стихов</div></a><a class='idx-card' href='joel.html'><div class='t'>Иоиль</div><div class='s'>LIBER IOEL · 4 гл. · 73 стихов</div></a><a class='idx-card' href='amos.html'><div class='t'>Амос</div><div class='s'>LIBER AMOS · 9 гл. · 146 стихов</div></a><a class='idx-card' href='obad.html'><div class='t'>Авдий</div><div class='s'>LIBER ABDIAE · 1 гл. · 21 стихов</div></a><a class='idx-card' href='jonah.html'><div class='t'>Иона</div><div class='s'>LIBER IONAE · 4 гл. · 48 стихов</div></a><a class='idx-card' href='mic.html'><div class='t'>Михей</div><div class='s'>LIBER MICHAEAE · 7 гл. · 105 стихов</div></a><a class='idx-card' href='nah.html'><div class='t'>Наум</div><div class='s'>LIBER NAHUM · 3 гл. · 47 стихов</div></a><a class='idx-card' href='hab.html'><div class='t'>Аввакум</div><div class='s'>LIBER HABACUC · 3 гл. · 56 стихов</div></a><a class='idx-card' href='zeph.html'><div class='t'>Софония</div><div class='s'>LIBER SOPHONIAE · 3 гл. · 53 стихов</div></a><a class='idx-card' href='hag.html'><div class='t'>Аггей</div><div class='s'>LIBER AGGAEI · 2 гл. · 38 стихов</div></a><a class='idx-card' href='zech.html'><div class='t'>Захария</div><div class='s'>LIBER ZACHARIAE · 14 гл. · 211 стихов</div></a><a class='idx-card' href='mal.html'><div class='t'>Малахия</div><div class='s'>LIBER MALACHIAE · 3 гл. · 55 стихов</div></a></div></div><p style="text-align:center;padding:8px;background:var(--panel);color:var(--ink-dim);font-size:11px;letter-spacing:1px"> </p>
-<footer>ARCHIVUM HAERETICUM IMPERII HUMANITATIS · Q3 · WLC 4.20 / Rahlfs 1935 / Синодальный 1876 (PD)<br>Sigillum: ◆◆◆ FIDELIS · Datum: 020.M3</footer><script>
-function toggleAll(state){
-  // For .row based layout
-  document.querySelectorAll('.row').forEach(r=>{r.style.display=state?'grid':'none';});
-  // For table-based (tanakh, deuterocanon)
-  document.querySelectorAll('table.orph tr').forEach(r=>{r.style.display=state?'':'none';});
-  // For .verse based (Q sections)
-  document.querySelectorAll('.verse').forEach(r=>{r.style.display=state?'grid':'none';});
-  // For .aya based (any other)
-  document.querySelectorAll('.aya, .v, [data-verse]').forEach(r=>{r.style.display=state?'':'none';});
-}
-function toggleOrig(){
-  document.querySelectorAll('.row').forEach(r=>{r.style.display='grid';const ar=r.querySelector('.ar,.gr,.he,.grc,.sk,.dev,.ar,');if(ar)ar.style.display='block';const ru=r.querySelector('.ru,.rus');if(ru)ru.style.display='none';});
-  document.querySelectorAll('.verse').forEach(r=>{r.style.display='grid';const orig=r.querySelector('.sk,.av,.zh,.sa,.en,.dev,.ar,.gr,.he,.grc');if(orig)orig.style.display='block';const ru=r.querySelector('.ru,.rus');if(ru)ru.style.display='none';});
-  document.querySelectorAll('table.orph tr').forEach(r=>{r.style.display='';r.querySelectorAll('.rus').forEach(c=>c.style.display='none');});
-}
-function toggleRu(){
-  document.querySelectorAll('.row').forEach(r=>{r.style.display='grid';const ar=r.querySelector('.ar,.gr,.he,.grc,.sk,.dev');if(ar)ar.style.display='none';const ru=r.querySelector('.ru,.rus');if(ru)ru.style.display='block';});
-  document.querySelectorAll('.verse').forEach(r=>{r.style.display='grid';const orig=r.querySelector('.sk,.av,.zh,.sa,.en,.dev,.ar,.gr,.he,.grc');if(orig)orig.style.display='none';const ru=r.querySelector('.ru,.rus');if(ru)ru.style.display='block';});
-  document.querySelectorAll('table.orph tr').forEach(r=>{r.style.display='';r.querySelectorAll('.he,.grc').forEach(c=>c.style.display='none');});
-}
-function resetView(){
-  document.querySelectorAll('.row,.verse').forEach(r=>{r.style.display='grid';});
-  document.querySelectorAll('.ar,.gr,.he,.grc,.sk,.dev,.zh,.sa,.en,.av,.ru,.rus').forEach(c=>{c.style.display='';});
-  document.querySelectorAll('table.orph tr').forEach(r=>{r.style.display='';});
-}
-</script>
-</body></html>
+</div>
+</main>
+
+<footer>
+ARCHIVUM HAERETICUM — Q3 — ТАНАХ — <span class="red">◆</span> SIGILLUM VERITATIS
+</footer>
+</body>
+</html>

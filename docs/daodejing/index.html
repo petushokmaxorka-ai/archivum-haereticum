@@ -1,85 +1,198 @@
-<!DOCTYPE html><html lang="ru"><head><meta charset="utf-8">
-<title>Дао Дэ Цзин — Архивум</title>
-<style>:root{--bg:#0a0a0c;--bg2:#0d0d12;--panel:#13131a;--line:#2a2a33;--red:#c8102e;--red-dark:#8a0a1f;--gold:#c9a227;--gold-bright:#e8b84a;--gold-dim:#8a7119;--ink:#e8e2d5;--ink-dim:#9a937f;--orig:#f2ead6;--accent:#d49a3a;--grid:#1d1d24}
-:root{--bg:#0a0908;--panel:#1a1410;--line:#2e2820;--gold:#d4af37;--gold-dim:#8a6f1a;--ink:#e8dfca;--ink-dim:#9a8f78;--chinese:#c9302c;--red:#8c2f26}
-*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--ink);font-family:Georgia,serif;line-height:1.6}
-header.top{border-bottom:2px solid var(--gold-dim);padding:18px 24px;background:var(--panel)}
-header.top .brand{font-size:12px;letter-spacing:3px;color:var(--ink-dim);text-transform:uppercase}
-header.top h1{margin:6px 0 2px;font-size:23px;color:var(--gold);font-weight:normal}
-header.top .sub{color:var(--ink-dim);font-size:13px}
-.stamp{display:inline-block;border:1px solid var(--gold-dim);color:var(--gold);font-size:11px;letter-spacing:2px;padding:2px 8px;margin-left:8px;vertical-align:middle}
-.stamp.fir{color:#c9302c;background:rgba(201,48,44,0.05);border-color:#c9302c}
-nav.menu{padding:10px 24px;border-bottom:1px solid var(--line);font-size:13px;color:var(--ink-dim);background:var(--panel);line-height:1.8;max-height:200px;overflow-y:auto}
-nav.menu a{margin-right:8px;white-space:nowrap}
-.cnt{padding:20px 24px;font-size:14.5px;line-height:1.8}
-.verse{border-bottom:1px solid var(--line);padding:14px 0;display:grid;grid-template-columns:50px 1fr 1fr;gap:14px}
-.verse .num{color:var(--gold);font-size:1.1rem;text-align:right;font-weight:bold;padding-top:8px}
-.verse .zh{color:var(--chinese);font-size:1.1rem;line-height:1.85;background:rgba(201,48,44,0.05);padding:8px 12px;border-left:2px solid var(--chinese);font-family:'SimSun','Noto Sans CJK SC',serif}
-.verse .ru{color:var(--ink);font-size:14.5px;line-height:1.8;padding:8px 0}
-.verse .ru.empty{color:var(--ink-dim);font-style:italic}
-h2.ch{color:var(--gold);font-size:18px;letter-spacing:2px;margin:24px 0 14px;padding:8px 0;border-bottom:2px solid var(--gold-dim);font-weight:normal}
-.idx-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:8px;margin:14px 0}
-.idx-card{border:1px solid var(--line);background:var(--panel);padding:8px 12px;display:block}
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>ДАО ДЭ ЦЗИН · 道德經 — Архивум</title>
+<style>
+:root{--bg:#0a0a0c;--bg2:#0d0d12;--panel:#13131a;--line:#2a2a33;--red:#c8102e;--red-dark:#8a0a1f;--gold:#c9a227;--gold-bright:#e8b84a;--gold-dim:#8a7119;--ink:#e8e2d5;--ink-dim:#9a937f;--orig:#f2ead6;--accent:#d49a3a;--grid:#1d1d24}
+*{box-sizing:border-box;margin:0;padding:0}body{background:var(--bg);color:var(--ink);font-family:Georgia,'Times New Roman',serif;line-height:1.55}
+a{color:var(--gold);text-decoration:none}a:hover{color:var(--gold-bright);text-decoration:underline}
+header.hos{background:linear-gradient(180deg,var(--red-dark) 0%,#1a0007 30%,var(--bg) 100%);border-bottom:2px solid var(--red);padding:0;position:relative}
+header.hos::before{content:"";position:absolute;left:0;top:0;bottom:0;width:6px;background:var(--red)}
+.hos-strip{display:flex;justify-content:space-between;align-items:center;padding:6px 14px;background:rgba(0,0,0,0.5);border-bottom:1px solid var(--red-dark);font-family:'Courier New',monospace;font-size:10px;letter-spacing:2px;color:var(--ink-dim);text-transform:uppercase}
+.hos-strip .l{color:var(--gold)} .hos-strip .r{color:var(--red);font-weight:bold}
+.hos-body{padding:18px 22px 14px}
+.hos-h1{font-size:1.5rem;letter-spacing:.12em;color:var(--orig);font-weight:normal;margin-bottom:4px;line-height:1.2}
+.hos-h1 .q{color:var(--red);font-family:'Courier New',monospace;font-size:.7em;vertical-align:super;margin-right:6px;padding:3px 7px;background:rgba(200,16,46,0.15);border:1px solid var(--red-dark);letter-spacing:1px}
+.hos-h1 .sig{font-size:.55em;color:var(--gold);font-family:'Courier New',monospace;letter-spacing:2px;margin-left:10px;padding:3px 8px;border:1px solid var(--gold-dim);vertical-align:middle}
+.hos-sub{color:var(--ink-dim);font-size:13px;font-style:italic}
+.stamps{padding:7px 16px;background:var(--bg2);border-bottom:1px solid var(--line);text-align:center;font-family:'Courier New',monospace}
+.stamps span{display:inline-block;border:1px solid var(--gold-dim);color:var(--gold);font-size:9px;letter-spacing:2px;padding:2px 7px;margin:0 2px;text-transform:uppercase}
+.stamps span.fid{color:var(--gold-bright);border-color:var(--gold);background:rgba(201,162,39,0.05)}
+.stamps span.dam{color:var(--red);border-color:var(--red-dark);background:rgba(200,16,46,0.05)}
+.stamps span.cre{color:var(--accent);border-color:var(--accent);background:rgba(212,154,58,0.05)}
+nav.main{padding:8px 18px;background:var(--panel);border-bottom:1px solid var(--line);font-size:12px;text-align:center}
+nav.main a{color:var(--gold);margin:0 6px;letter-spacing:1px;padding:3px 6px}
+.toolbar{display:flex;justify-content:center;gap:6px;flex-wrap:wrap;margin:14px 0 8px;padding:8px;background:var(--panel);border:1px solid var(--line);font-family:'Courier New',monospace}
+.toolbar button{background:transparent;border:1px solid var(--gold-dim);color:var(--gold);padding:5px 11px;font-size:10px;letter-spacing:1px;cursor:pointer;font-family:inherit;text-transform:uppercase}
+.toolbar button:hover{background:var(--gold);color:var(--bg)}
+.meta{color:var(--ink-dim);font-size:11px;font-style:italic;padding:6px 16px;text-align:center;font-family:'Courier New',monospace;letter-spacing:1px}
+.meta b{color:var(--gold);font-style:normal;font-family:Georgia,serif}
+.chap{background:linear-gradient(90deg,var(--red-dark),transparent);color:var(--gold-bright);font-size:.85rem;letter-spacing:.2em;padding:9px 16px;border-bottom:1px solid var(--red-dark);border-top:1px solid var(--red-dark);font-family:'Courier New',monospace;text-transform:uppercase;margin-top:12px}
+main{max-width:1300px;margin:0 auto;padding:0 12px 40px}
+.row{display:grid;grid-template-columns:3rem 1fr 1.1fr;border-bottom:1px solid var(--grid);align-items:start;transition:background 0.15s}
+.row:hover{background:#15110b}
+.num{grid-column:1;color:var(--gold);font-size:12px;padding:10px 4px;text-align:right;font-family:'Courier New',monospace;font-weight:bold;align-self:start}
+.orig,.ar,.gr,.he,.grc,.sk,.dev,.av,.zh,.sa{grid-column:2;padding:10px 12px;font-size:1rem;line-height:1.7;color:var(--orig);background:rgba(201,162,39,0.025);border-right:1px solid var(--gold-dim);border-left:3px solid var(--gold-dim);font-style:italic}
+.ar{direction:rtl;text-align:right;font-family:'Amiri','Scheherazade New','Traditional Arabic',serif;font-size:1.25rem;line-height:1.85}
+.gr,.grc{direction:ltr;font-family:'SBL Greek','Palatino Linotype',Georgia,serif}
+.he{direction:rtl;text-align:right;font-family:'SBL Hebrew','Times New Roman',serif;font-size:1.1rem}
+.sk,.dev{direction:ltr;font-family:'Noto Sans Devanagari','Sanskrit Text',serif;font-size:1.05rem}
+.zh{font-family:'Noto Serif CJK SC','SimSun',serif}
+.ru,.rus{grid-column:3;padding:10px 12px;font-size:.95rem;line-height:1.65;text-align:justify;color:var(--ink)}
+.bismillah{text-align:center;padding:1.5rem 1rem;font-family:'Amiri','Scheherazade New','Traditional Arabic',serif;font-size:1.8rem;color:var(--gold);direction:rtl;background:linear-gradient(180deg,#1a1410,#0a0a0c);border-bottom:1px solid var(--red-dark);letter-spacing:0;margin:14px 16px;border:1px solid var(--red-dark)}
+.bismillah .label{display:block;font-family:'Courier New',monospace;font-size:.7rem;letter-spacing:.25em;color:var(--ink-dim);text-transform:uppercase;direction:ltr;margin-bottom:8px}
+footer{padding:18px;text-align:center;color:var(--ink-dim);font-size:10px;border-top:1px solid var(--line);font-family:'Courier New',monospace;letter-spacing:2px;background:var(--bg2)}
+footer .red{color:var(--red)} footer .gold{color:var(--gold)}
+@media(max-width:760px){
+  .hos-h1{font-size:1.2rem}
+  .row{grid-template-columns:2rem 1fr 1.1fr}
+  .num{font-size:.7rem;padding:.5rem .3rem}
+  .ar{font-size:1.1rem;line-height:1.7;padding:.5rem .4rem}
+  .ru{font-size:.85rem;line-height:1.4;padding:.5rem .4rem}
+}
+
+.idx-group{margin:18px 24px}
+.idx-group h2{color:var(--gold);font-size:16px;letter-spacing:3px;border-bottom:1px solid var(--line);padding-bottom:6px;font-weight:normal}
+.idx-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(320px,1fr));gap:8px;margin-top:10px}
+.idx-card{border:1px solid var(--line);background:var(--panel);padding:12px 16px;display:block}
 .idx-card:hover{border-color:var(--gold-dim);text-decoration:none}
-.idx-card .t{color:var(--gold);font-size:13px}
-.idx-card .s{color:var(--ink-dim);font-size:11px;margin-top:2px}
-.note{margin:14px 0;padding:12px 16px;border:1px solid var(--line);background:var(--panel);font-size:13px;color:var(--ink-dim)}
-footer{padding:24px;color:var(--ink-dim);font-size:12px;border-top:1px solid var(--line);margin-top:20px}
-@media(max-width:760px){.verse{grid-template-columns:30px 1fr}.verse .zh{border-left:none;border-top:2px solid var(--chinese)}}
-.toolbar{display:flex;justify-content:center;gap:8px;flex-wrap:wrap;margin:12px 0;padding:8px;background:#15151a;border:1px solid #2a2a33;border-radius:4px;font-family:Georgia,serif}
-.toolbar button{background:#1f1a12;border:1px solid #c9a227;color:#c9a227;padding:6px 12px;font-size:11px;letter-spacing:1px;cursor:pointer;font-family:Georgia,serif;text-transform:uppercase}
-.toolbar button:hover{background:#2a2010}
+.idx-card .t{color:var(--gold);font-size:15px;font-weight:bold}
+.idx-card .s{color:var(--ink-dim);font-size:12px;margin-top:4px;line-height:1.5}
+
+.idx-group{margin:20px 14px;border-bottom:1px solid var(--line);padding-bottom:14px}
+.idx-group h2{color:var(--gold);font-size:1.05rem;letter-spacing:.22em;border-left:4px solid var(--red);padding-left:.8rem;margin-bottom:1rem;font-weight:normal}
+.book-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:8px;margin-top:6px}
+.book-card{border:1px solid var(--line);background:var(--bg2);padding:8px 12px;display:flex;flex-direction:column;gap:3px;text-decoration:none;color:var(--ink);transition:all 0.15s;font-size:13px}
+.book-card:hover{border-color:var(--gold);background:#1a1410;text-decoration:none;color:var(--gold-bright)}
+.book-card .ttl{color:var(--gold);font-size:14px;font-weight:bold}
+.book-card .s{color:var(--ink-dim);font-size:12px;line-height:1.45}
+.cross-ref{background:rgba(200,16,46,0.04);border:1px solid var(--red-dark);padding:10px 14px;margin:14px;font-size:13px;line-height:1.55}
+.cross-ref b{color:var(--red)}
+@media(max-width:760px){
+  .hos-h1{font-size:1.2rem;letter-spacing:.05em;line-height:1.3}
+  .book-grid{grid-template-columns:1fr;gap:6px}
+  .book-card{padding:10px;font-size:13px}
+  .note{font-size:12px;line-height:1.55;padding:10px 12px}
+  .idx-group{margin:14px 10px}
+}
 </style>
-</head><body>
+</head>
+<body>
 <header class="hos">
-<div class="hos-strip"><span class="l">ARCHIVUM HAERETICUM · CORPUS DIVINUS</span><span class="r">Q11 · ДАО ДЭ ЦЗИН</span></div>
+<div class="hos-strip"><span class="l">ARCHIVUM HAERETICUM — CORPUS DIVINUS</span><span class="r">Q11 — ДАО ДЭ ЦЗИН</span></div>
 <div class="hos-body">
-<h1 class="hos-h1"><span class="q">Q11</span>Дао Дэ Цзин</h1>
-<div class="hos-sub">Канон Пути и Добродетели</div>
+<h1 class="hos-h1"><span class="q">Q11</span>ДАО ДЭ ЦЗИН · 道德經</h1>
+<div class="hos-sub">81 глава · кит. + рус. · Малявин 2010</div>
 </div>
-<div class="stamps"><span class="fid">◆ FIDELIS</span><span class="cre">✚ ОСНОВА</span></div>
+<div class="stamps">
+<span class="fid">◆ FIDELIS</span>
+<span>◇ ОСНОВА</span>
+<span>✚ ДАО</span>
+</div>
 </header>
-<div class="toolbar">
-<button onclick="toggleAll(true)">▼ Развернуть все</button>
-<button onclick="toggleAll(false)">▲ Свернуть все</button>
-<button onclick="toggleOrig()">🌙 Только оригинал</button>
-<button onclick="toggleRu()">📖 Только перевод</button>
-<button onclick="resetView()">◉ Оба</button>
-</div>
-<nav class="menu">
-<a href="index.html">◆ Обзор</a><a href="ch1.html">1</a><a href="ch2.html">2</a><a href="ch3.html">3</a><a href="ch4.html">4</a><a href="ch5.html">5</a><a href="ch6.html">6</a><a href="ch7.html">7</a><a href="ch8.html">8</a><a href="ch9.html">9</a><a href="ch10.html">10</a><a href="ch11.html">11</a><a href="ch12.html">12</a><a href="ch13.html">13</a><a href="ch14.html">14</a><a href="ch15.html">15</a><a href="ch16.html">16</a><a href="ch17.html">17</a><a href="ch18.html">18</a><a href="ch19.html">19</a><a href="ch20.html">20</a><a href="ch21.html">21</a><a href="ch22.html">22</a><a href="ch23.html">23</a><a href="ch24.html">24</a><a href="ch25.html">25</a><a href="ch26.html">26</a><a href="ch27.html">27</a><a href="ch28.html">28</a><a href="ch29.html">29</a><a href="ch30.html">30</a><a href="ch31.html">31</a><a href="ch32.html">32</a><a href="ch33.html">33</a><a href="ch34.html">34</a><a href="ch35.html">35</a><a href="ch36.html">36</a><a href="ch37.html">37</a><a href="ch38.html">38</a><a href="ch39.html">39</a><a href="ch40.html">40</a><a href="ch41.html">41</a><a href="ch42.html">42</a><a href="ch43.html">43</a><a href="ch44.html">44</a><a href="ch45.html">45</a><a href="ch46.html">46</a><a href="ch47.html">47</a><a href="ch48.html">48</a><a href="ch49.html">49</a><a href="ch50.html">50</a><a href="ch51.html">51</a><a href="ch52.html">52</a><a href="ch53.html">53</a><a href="ch54.html">54</a><a href="ch55.html">55</a><a href="ch56.html">56</a><a href="ch57.html">57</a><a href="ch58.html">58</a><a href="ch59.html">59</a><a href="ch60.html">60</a><a href="ch61.html">61</a><a href="ch62.html">62</a><a href="ch63.html">63</a><a href="ch64.html">64</a><a href="ch65.html">65</a><a href="ch66.html">66</a><a href="ch67.html">67</a><a href="ch68.html">68</a><a href="ch69.html">69</a><a href="ch70.html">70</a><a href="ch71.html">71</a><a href="ch72.html">72</a><a href="ch73.html">73</a><a href="ch74.html">74</a><a href="ch75.html">75</a><a href="ch76.html">76</a><a href="ch77.html">77</a><a href="ch78.html">78</a><a href="ch79.html">79</a><a href="ch80.html">80</a><a href="ch81.html">81</a></nav>
-<div class="cnt">
-<p>Дао Дэ Цзин (кит. <i>Dào Dé Jīng</i>, 道德經, букв. «Канон Пути и Добродетели») — основополагающий даосский текст, приписываемый мудрецу Лао-цзы (ок. VI в. до н.э.). Состоит из 81 главы (чан), каждая из которых представляет собой краткое стихотворение в прозе. Написан в традиции раннего даосизма.</p>
 
-<h2 class="ch">81 ГЛАВА ДАО ДЭ ЦЗИНА</h2>
-<div class="idx-grid"><a class="idx-card" href="ch1.html"><div class="t">1. 道可道</div><div class="s">Путь, который можно назвать</div></a><a class="idx-card" href="ch2.html"><div class="t">2. 天下皆知</div><div class="s">Когда в мире узнают</div></a><a class="idx-card" href="ch3.html"><div class="t">3. 不尚贤</div><div class="s">Не возвышайте достойных</div></a><a class="idx-card" href="ch4.html"><div class="t">4. 道冲</div><div class="s">Путь — пустота</div></a><a class="idx-card" href="ch5.html"><div class="t">5. 天地不仁</div><div class="s">Небо и земля не милосердны</div></a><a class="idx-card" href="ch6.html"><div class="t">6. 谷神不死</div><div class="s">Дух долины не умирает</div></a><a class="idx-card" href="ch7.html"><div class="t">7. 天长地久</div><div class="s">Небо и земля вечны</div></a><a class="idx-card" href="ch8.html"><div class="t">8. 上善若水</div><div class="s">Высшая добродетель — как вода</div></a><a class="idx-card" href="ch9.html"><div class="t">9. 持而盈之</div><div class="s">Наполнять до краёв — не к добру</div></a><a class="idx-card" href="ch10.html"><div class="t">10. 载营魄抱一</div><div class="s">Неся в себе душу и единство</div></a><a class="idx-card" href="ch11.html"><div class="t">11. 三十辐</div><div class="s">Тридцать спиц</div></a><a class="idx-card" href="ch12.html"><div class="t">12. 五色</div><div class="s">Пять красок</div></a><a class="idx-card" href="ch13.html"><div class="t">13. 宠辱若惊</div><div class="s">Слава и позор — оба пугают</div></a><a class="idx-card" href="ch14.html"><div class="t">14. 视之不见</div><div class="s">Смотришь — не видишь</div></a><a class="idx-card" href="ch15.html"><div class="t">15. 古之善为士</div><div class="s">Древние мастера Дао</div></a><a class="idx-card" href="ch16.html"><div class="t">16. 致虚极</div><div class="s">Достигай пустоты</div></a><a class="idx-card" href="ch17.html"><div class="t">17. 太上不知有之</div><div class="s">Лучший правитель — о котором не знают</div></a><a class="idx-card" href="ch18.html"><div class="t">18. 大道废</div><div class="s">Когда великий Дао исчезает</div></a><a class="idx-card" href="ch19.html"><div class="t">19. 绝圣弃智</div><div class="s">Покончи со святостью и мудростью</div></a><a class="idx-card" href="ch20.html"><div class="t">20. 唯之与阿</div><div class="s">Согласие и отказ</div></a><a class="idx-card" href="ch21.html"><div class="t">21. 孔德之容</div><div class="s">Вместилище великой добродетели</div></a><a class="idx-card" href="ch22.html"><div class="t">22. 曲则全</div><div class="s">Согнутое — цело</div></a><a class="idx-card" href="ch23.html"><div class="t">23. 希言自然</div><div class="s">Редкие слова — естественны</div></a><a class="idx-card" href="ch24.html"><div class="t">24. 企者不立</div><div class="s">Кто встаёт на цыпочки — не стоит</div></a><a class="idx-card" href="ch25.html"><div class="t">25. 有物混成</div><div class="s">Есть нечто хаотически рождённое</div></a><a class="idx-card" href="ch26.html"><div class="t">26. 重为轻根</div><div class="s">Тяжёлое — корень лёгкого</div></a><a class="idx-card" href="ch27.html"><div class="t">27. 善行无辙迹</div><div class="s">Искусный ходок не оставляет следов</div></a><a class="idx-card" href="ch28.html"><div class="t">28. 知其雄守其雌</div><div class="s">Зная мужское, храни женское</div></a><a class="idx-card" href="ch29.html"><div class="t">29. 将欲取天下</div><div class="s">Кто хочет овладеть миром</div></a><a class="idx-card" href="ch30.html"><div class="t">30. 以道佐人主者</div><div class="s">Кто помогает правителю Дао</div></a><a class="idx-card" href="ch31.html"><div class="t">31. 夫兵者不祥之器</div><div class="s">Оружие — злосчастный инструмент</div></a><a class="idx-card" href="ch32.html"><div class="t">32. 道常无名朴</div><div class="s">Дао вечно безымянно</div></a><a class="idx-card" href="ch33.html"><div class="t">33. 知人者智</div><div class="s">Знающий других — умён</div></a><a class="idx-card" href="ch34.html"><div class="t">34. 大道泛兮</div><div class="s">Великий Дао — повсюду</div></a><a class="idx-card" href="ch35.html"><div class="t">35. 执大象天下往</div><div class="s">Кто держит великий образ</div></a><a class="idx-card" href="ch36.html"><div class="t">36. 将欲歙之</div><div class="s">Кто хочет сжать</div></a><a class="idx-card" href="ch37.html"><div class="t">37. 道常无为而无不为</div><div class="s">Дао вечно недеятельно</div></a><a class="idx-card" href="ch38.html"><div class="t">38. 上德不德</div><div class="s">Высшая добродетель — не добродетельна</div></a><a class="idx-card" href="ch39.html"><div class="t">39. 昔之得一者</div><div class="s">Издревле те, кто обрели Единое</div></a><a class="idx-card" href="ch40.html"><div class="t">40. 反者道之动</div><div class="s">Обращение — движение Дао</div></a><a class="idx-card" href="ch41.html"><div class="t">41. 上士闻道</div><div class="s">Лучший ученик, услышав о Дао</div></a><a class="idx-card" href="ch42.html"><div class="t">42. 道生一</div><div class="s">Дао рождает Одно</div></a><a class="idx-card" href="ch43.html"><div class="t">43. 天下之至柔</div><div class="s">Самое мягкое в мире</div></a><a class="idx-card" href="ch44.html"><div class="t">44. 名与身孰亲</div><div class="s">Имя и тело — что ближе?</div></a><a class="idx-card" href="ch45.html"><div class="t">45. 大成若缺</div><div class="s">Великое совершенство — как неполное</div></a><a class="idx-card" href="ch46.html"><div class="t">46. 天下有道</div><div class="s">Когда в мире есть Дао</div></a><a class="idx-card" href="ch47.html"><div class="t">47. 不出户知天下</div><div class="s">Не выходя за дверь, можно знать мир</div></a><a class="idx-card" href="ch48.html"><div class="t">48. 为学日益</div><div class="s">Учение день ото дня увеличивает</div></a><a class="idx-card" href="ch49.html"><div class="t">49. 圣人无常心</div><div class="s">У мудреца нет постоянного сердца</div></a><a class="idx-card" href="ch50.html"><div class="t">50. 出生入死</div><div class="s">Выходя в жизнь, входим в смерть</div></a><a class="idx-card" href="ch51.html"><div class="t">51. 道生之</div><div class="s">Дао рождает</div></a><a class="idx-card" href="ch52.html"><div class="t">52. 天下有始</div><div class="s">У мира есть начало</div></a><a class="idx-card" href="ch53.html"><div class="t">53. 使我介然有知</div><div class="s">Если бы я имел хоть крупицу знания</div></a><a class="idx-card" href="ch54.html"><div class="t">54. 善建者不拔</div><div class="s">Искусный строитель не разрушает</div></a><a class="idx-card" href="ch55.html"><div class="t">55. 含德之厚</div><div class="s">Кто наполнен добродетелью</div></a><a class="idx-card" href="ch56.html"><div class="t">56. 知者不言</div><div class="s">Знающий не говорит</div></a><a class="idx-card" href="ch57.html"><div class="t">57. 以正治国</div><div class="s">Управляй страной справедливостью</div></a><a class="idx-card" href="ch58.html"><div class="t">58. 其政闷闷</div><div class="s">Когда правление незаметно</div></a><a class="idx-card" href="ch59.html"><div class="t">59. 治人事天莫若啬</div><div class="s">Управлять людьми и служить Небу</div></a><a class="idx-card" href="ch60.html"><div class="t">60. 治大国若烹小鲜</div><div class="s">Управлять великим государством — как жарить мелкую рыбу</div></a><a class="idx-card" href="ch61.html"><div class="t">61. 大国者下流</div><div class="s">Большое государство — как низовье</div></a><a class="idx-card" href="ch62.html"><div class="t">62. 道者万物之奥</div><div class="s">Дао — тайна всех вещей</div></a><a class="idx-card" href="ch63.html"><div class="t">63. 为无为事无事</div><div class="s">Делай недеяние</div></a><a class="idx-card" href="ch64.html"><div class="t">64. 其安易持</div><div class="s">Устойчивое легко удержать</div></a><a class="idx-card" href="ch65.html"><div class="t">65. 古之善为道者</div><div class="s">Древние мастера Дао</div></a><a class="idx-card" href="ch66.html"><div class="t">66. 江海所以能为百谷王者</div><div class="s">Реки и моря — цари долин</div></a><a class="idx-card" href="ch67.html"><div class="t">67. 天下皆谓我道大</div><div class="s">Все говорят: мой Дао велик</div></a><a class="idx-card" href="ch68.html"><div class="t">68. 善为士者不武</div><div class="s">Искусный воин не воинственен</div></a><a class="idx-card" href="ch69.html"><div class="t">69. 用兵有言</div><div class="s">В военном деле есть поговорка</div></a><a class="idx-card" href="ch70.html"><div class="t">70. 吾言甚易知</div><div class="s">Мои слова очень легко понять</div></a><a class="idx-card" href="ch71.html"><div class="t">71. 知不知上</div><div class="s">Знать, что не знаешь — высшее</div></a><a class="idx-card" href="ch72.html"><div class="t">72. 民不畏威</div><div class="s">Когда народ не боится</div></a><a class="idx-card" href="ch73.html"><div class="t">73. 勇于敢则杀</div><div class="s">Кто смел в дерзости — погибнет</div></a><a class="idx-card" href="ch74.html"><div class="t">74. 民不畏死</div><div class="s">Если народ не боится смерти</div></a><a class="idx-card" href="ch75.html"><div class="t">75. 民之饥</div><div class="s">Когда народ голоден</div></a><a class="idx-card" href="ch76.html"><div class="t">76. 人之生也柔弱</div><div class="s">Когда человек рождается, он мягок</div></a><a class="idx-card" href="ch77.html"><div class="t">77. 天之道</div><div class="s">Небесный Дао</div></a><a class="idx-card" href="ch78.html"><div class="t">78. 天下莫柔弱于水</div><div class="s">Нет ничего мягче воды</div></a><a class="idx-card" href="ch79.html"><div class="t">79. 和大怨必有余怨</div><div class="s">Примирить большую обиду</div></a><a class="idx-card" href="ch80.html"><div class="t">80. 小国寡民</div><div class="s">Малое государство — мало людей</div></a><a class="idx-card" href="ch81.html"><div class="t">81. 信言不美</div><div class="s">Правдивые слова не ласкают слух</div></a></div>
+<nav class="main">
+<a href="../index.html">— CORPUS DIVINUS</a>
+</nav>
 
-<blockquote style="border-left:3px solid var(--gold);padding:12px 18px;margin:14px 0;background:var(--panel);font-style:italic">«道可道，非常道。<br>The Dao that can be spoken is not the eternal Dao.»<br><span style="color:var(--ink-dim);font-size:12px;font-style:normal">— Дао Дэ Цзин, Глава 1 (Малявин 2010)</span></blockquote>
-
+<main>
 <div class="note">
-Источники: <i>Китайский оригинал: ctext.org (Dao De Jing, 道德经, Wang Bi 正统道藏本, Public Domain)</i>; <i>Русский: Малявин В.В., «Дао Дэ Цзин», перевод с китайского, М. 2010</i>; <i>Wikipedia: Tao Te Ching</i>. Свидетели: слева — китайский оригинал (традиционный, красный), справа — русский (Малявин 2010). Покрытие: 81/81 (100%).
+<p><b>Дао Дэ Цзин</b> (道德經, «Канон Пути и Добродетели») — основной текст даосизма, приписывается Лао-цзы (VI-V вв. до н.э.). 81 глава, ок. 5000 иероглифов. Главный текст китайской мистической традиции, второй по количеству переводов после Библии.</p><p><b>Главные темы:</b> Дао (道, «Путь») — невидимый принцип, который выше всех богов и выше бытия; Дэ (德, «Добродетель») — проявление Дао в мире; У-вэй (無為, «Недеяние») — принцип «не-принуждения»; Пустота (虛) — источник всех возможностей.</p>
 </div>
 
+<div class="idx-group">
+<h2>СОДЕРЖАНИЕ</h2>
+<div class="book-grid">
+<a class="book-card" href="ch1.html"><span class="ttl">Глава 1</span><span class="s">кит. + рус.</span></a>
+<a class="book-card" href="ch2.html"><span class="ttl">Глава 2</span><span class="s">кит. + рус.</span></a>
+<a class="book-card" href="ch3.html"><span class="ttl">Глава 3</span><span class="s">кит. + рус.</span></a>
+<a class="book-card" href="ch4.html"><span class="ttl">Глава 4</span><span class="s">кит. + рус.</span></a>
+<a class="book-card" href="ch5.html"><span class="ttl">Глава 5</span><span class="s">кит. + рус.</span></a>
+<a class="book-card" href="ch6.html"><span class="ttl">Глава 6</span><span class="s">кит. + рус.</span></a>
+<a class="book-card" href="ch7.html"><span class="ttl">Глава 7</span><span class="s">кит. + рус.</span></a>
+<a class="book-card" href="ch8.html"><span class="ttl">Глава 8</span><span class="s">кит. + рус.</span></a>
+<a class="book-card" href="ch9.html"><span class="ttl">Глава 9</span><span class="s">кит. + рус.</span></a>
+<a class="book-card" href="ch10.html"><span class="ttl">Глава 10</span><span class="s">кит. + рус.</span></a>
+<a class="book-card" href="ch11.html"><span class="ttl">Глава 11</span><span class="s">кит. + рус.</span></a>
+<a class="book-card" href="ch12.html"><span class="ttl">Глава 12</span><span class="s">кит. + рус.</span></a>
+<a class="book-card" href="ch13.html"><span class="ttl">Глава 13</span><span class="s">кит. + рус.</span></a>
+<a class="book-card" href="ch14.html"><span class="ttl">Глава 14</span><span class="s">кит. + рус.</span></a>
+<a class="book-card" href="ch15.html"><span class="ttl">Глава 15</span><span class="s">кит. + рус.</span></a>
+<a class="book-card" href="ch16.html"><span class="ttl">Глава 16</span><span class="s">кит. + рус.</span></a>
+<a class="book-card" href="ch17.html"><span class="ttl">Глава 17</span><span class="s">кит. + рус.</span></a>
+<a class="book-card" href="ch18.html"><span class="ttl">Глава 18</span><span class="s">кит. + рус.</span></a>
+<a class="book-card" href="ch19.html"><span class="ttl">Глава 19</span><span class="s">кит. + рус.</span></a>
+<a class="book-card" href="ch20.html"><span class="ttl">Глава 20</span><span class="s">кит. + рус.</span></a>
+<a class="book-card" href="ch21.html"><span class="ttl">Глава 21</span><span class="s">кит. + рус.</span></a>
+<a class="book-card" href="ch22.html"><span class="ttl">Глава 22</span><span class="s">кит. + рус.</span></a>
+<a class="book-card" href="ch23.html"><span class="ttl">Глава 23</span><span class="s">кит. + рус.</span></a>
+<a class="book-card" href="ch24.html"><span class="ttl">Глава 24</span><span class="s">кит. + рус.</span></a>
+<a class="book-card" href="ch25.html"><span class="ttl">Глава 25</span><span class="s">кит. + рус.</span></a>
+<a class="book-card" href="ch26.html"><span class="ttl">Глава 26</span><span class="s">кит. + рус.</span></a>
+<a class="book-card" href="ch27.html"><span class="ttl">Глава 27</span><span class="s">кит. + рус.</span></a>
+<a class="book-card" href="ch28.html"><span class="ttl">Глава 28</span><span class="s">кит. + рус.</span></a>
+<a class="book-card" href="ch29.html"><span class="ttl">Глава 29</span><span class="s">кит. + рус.</span></a>
+<a class="book-card" href="ch30.html"><span class="ttl">Глава 30</span><span class="s">кит. + рус.</span></a>
+<a class="book-card" href="ch31.html"><span class="ttl">Глава 31</span><span class="s">кит. + рус.</span></a>
+<a class="book-card" href="ch32.html"><span class="ttl">Глава 32</span><span class="s">кит. + рус.</span></a>
+<a class="book-card" href="ch33.html"><span class="ttl">Глава 33</span><span class="s">кит. + рус.</span></a>
+<a class="book-card" href="ch34.html"><span class="ttl">Глава 34</span><span class="s">кит. + рус.</span></a>
+<a class="book-card" href="ch35.html"><span class="ttl">Глава 35</span><span class="s">кит. + рус.</span></a>
+<a class="book-card" href="ch36.html"><span class="ttl">Глава 36</span><span class="s">кит. + рус.</span></a>
+<a class="book-card" href="ch37.html"><span class="ttl">Глава 37</span><span class="s">кит. + рус.</span></a>
+<a class="book-card" href="ch38.html"><span class="ttl">Глава 38</span><span class="s">кит. + рус.</span></a>
+<a class="book-card" href="ch39.html"><span class="ttl">Глава 39</span><span class="s">кит. + рус.</span></a>
+<a class="book-card" href="ch40.html"><span class="ttl">Глава 40</span><span class="s">кит. + рус.</span></a>
+<a class="book-card" href="ch41.html"><span class="ttl">Глава 41</span><span class="s">кит. + рус.</span></a>
+<a class="book-card" href="ch42.html"><span class="ttl">Глава 42</span><span class="s">кит. + рус.</span></a>
+<a class="book-card" href="ch43.html"><span class="ttl">Глава 43</span><span class="s">кит. + рус.</span></a>
+<a class="book-card" href="ch44.html"><span class="ttl">Глава 44</span><span class="s">кит. + рус.</span></a>
+<a class="book-card" href="ch45.html"><span class="ttl">Глава 45</span><span class="s">кит. + рус.</span></a>
+<a class="book-card" href="ch46.html"><span class="ttl">Глава 46</span><span class="s">кит. + рус.</span></a>
+<a class="book-card" href="ch47.html"><span class="ttl">Глава 47</span><span class="s">кит. + рус.</span></a>
+<a class="book-card" href="ch48.html"><span class="ttl">Глава 48</span><span class="s">кит. + рус.</span></a>
+<a class="book-card" href="ch49.html"><span class="ttl">Глава 49</span><span class="s">кит. + рус.</span></a>
+<a class="book-card" href="ch50.html"><span class="ttl">Глава 50</span><span class="s">кит. + рус.</span></a>
+<a class="book-card" href="ch51.html"><span class="ttl">Глава 51</span><span class="s">кит. + рус.</span></a>
+<a class="book-card" href="ch52.html"><span class="ttl">Глава 52</span><span class="s">кит. + рус.</span></a>
+<a class="book-card" href="ch53.html"><span class="ttl">Глава 53</span><span class="s">кит. + рус.</span></a>
+<a class="book-card" href="ch54.html"><span class="ttl">Глава 54</span><span class="s">кит. + рус.</span></a>
+<a class="book-card" href="ch55.html"><span class="ttl">Глава 55</span><span class="s">кит. + рус.</span></a>
+<a class="book-card" href="ch56.html"><span class="ttl">Глава 56</span><span class="s">кит. + рус.</span></a>
+<a class="book-card" href="ch57.html"><span class="ttl">Глава 57</span><span class="s">кит. + рус.</span></a>
+<a class="book-card" href="ch58.html"><span class="ttl">Глава 58</span><span class="s">кит. + рус.</span></a>
+<a class="book-card" href="ch59.html"><span class="ttl">Глава 59</span><span class="s">кит. + рус.</span></a>
+<a class="book-card" href="ch60.html"><span class="ttl">Глава 60</span><span class="s">кит. + рус.</span></a>
+<a class="book-card" href="ch61.html"><span class="ttl">Глава 61</span><span class="s">кит. + рус.</span></a>
+<a class="book-card" href="ch62.html"><span class="ttl">Глава 62</span><span class="s">кит. + рус.</span></a>
+<a class="book-card" href="ch63.html"><span class="ttl">Глава 63</span><span class="s">кит. + рус.</span></a>
+<a class="book-card" href="ch64.html"><span class="ttl">Глава 64</span><span class="s">кит. + рус.</span></a>
+<a class="book-card" href="ch65.html"><span class="ttl">Глава 65</span><span class="s">кит. + рус.</span></a>
+<a class="book-card" href="ch66.html"><span class="ttl">Глава 66</span><span class="s">кит. + рус.</span></a>
+<a class="book-card" href="ch67.html"><span class="ttl">Глава 67</span><span class="s">кит. + рус.</span></a>
+<a class="book-card" href="ch68.html"><span class="ttl">Глава 68</span><span class="s">кит. + рус.</span></a>
+<a class="book-card" href="ch69.html"><span class="ttl">Глава 69</span><span class="s">кит. + рус.</span></a>
+<a class="book-card" href="ch70.html"><span class="ttl">Глава 70</span><span class="s">кит. + рус.</span></a>
+<a class="book-card" href="ch71.html"><span class="ttl">Глава 71</span><span class="s">кит. + рус.</span></a>
+<a class="book-card" href="ch72.html"><span class="ttl">Глава 72</span><span class="s">кит. + рус.</span></a>
+<a class="book-card" href="ch73.html"><span class="ttl">Глава 73</span><span class="s">кит. + рус.</span></a>
+<a class="book-card" href="ch74.html"><span class="ttl">Глава 74</span><span class="s">кит. + рус.</span></a>
+<a class="book-card" href="ch75.html"><span class="ttl">Глава 75</span><span class="s">кит. + рус.</span></a>
+<a class="book-card" href="ch76.html"><span class="ttl">Глава 76</span><span class="s">кит. + рус.</span></a>
+<a class="book-card" href="ch77.html"><span class="ttl">Глава 77</span><span class="s">кит. + рус.</span></a>
+<a class="book-card" href="ch78.html"><span class="ttl">Глава 78</span><span class="s">кит. + рус.</span></a>
+<a class="book-card" href="ch79.html"><span class="ttl">Глава 79</span><span class="s">кит. + рус.</span></a>
+<a class="book-card" href="ch80.html"><span class="ttl">Глава 80</span><span class="s">кит. + рус.</span></a>
+<a class="book-card" href="ch81.html"><span class="ttl">Глава 81</span><span class="s">кит. + рус.</span></a>
+
 </div>
-<footer>ARCHIVUM HAERETICUM IMPERII HUMANITATIS · Q11 · ДАО ДЭ ЦЗИН · IV в. до н.э. · Китай.<br>Sigillum: ◆◆◆ FIDELIS · Datum: 160.M3</footer>
-<script>
-function toggleAll(state){
-  document.querySelectorAll('.verse').forEach(r=>{r.style.display=state?'grid':'none';});
-  document.querySelectorAll('.row').forEach(r=>{r.style.display=state?'grid':'none';});
-  document.querySelectorAll('table.orph tr').forEach(r=>{r.style.display=state?'':'none';});
-}
-function toggleOrig(){
-  document.querySelectorAll('.verse').forEach(r=>{r.style.display='grid';const o=r.querySelector('.sk,.av,.zh,.sa,.en,.dev,.ar,.gr,.he,.grc');if(o)o.style.display='block';const ru=r.querySelector('.ru,.rus');if(ru)ru.style.display='none';});
-  document.querySelectorAll('.row').forEach(r=>{r.style.display='grid';const o=r.querySelector('.sk,.av,.zh,.sa,.en,.dev,.ar,.gr,.he,.grc');if(o)o.style.display='block';const ru=r.querySelector('.ru,.rus');if(ru)ru.style.display='none';});
-}
-function toggleRu(){
-  document.querySelectorAll('.verse').forEach(r=>{r.style.display='grid';const o=r.querySelector('.sk,.av,.zh,.sa,.en,.dev,.ar,.gr,.he,.grc');if(o)o.style.display='none';const ru=r.querySelector('.ru,.rus');if(ru)ru.style.display='block';});
-  document.querySelectorAll('.row').forEach(r=>{r.style.display='grid';const o=r.querySelector('.sk,.av,.zh,.sa,.en,.dev,.ar,.gr,.he,.grc');if(o)o.style.display='none';const ru=r.querySelector('.ru,.rus');if(ru)ru.style.display='block';});
-}
-function resetView(){
-  document.querySelectorAll('.verse,.row').forEach(r=>{r.style.display='grid';});
-  document.querySelectorAll('.sk,.av,.zh,.sa,.en,.dev,.ar,.gr,.he,.grc,.ru,.rus').forEach(c=>{c.style.display='';});
-  document.querySelectorAll('table.orph tr').forEach(r=>{r.style.display='';});
-}
-</script>
-</body></html>
+</div>
+</main>
+
+<footer>
+ARCHIVUM HAERETICUM — Q11 — ДАО ДЭ ЦЗИН — <span class="red">◆</span> SIGILLUM VERITATIS
+</footer>
+</body>
+</html>
