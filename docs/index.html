@@ -174,10 +174,9 @@ details.corpus[open]>summary::before{content:"▼";color:var(--gold-bright)}
 
 <main>
 <div class="toolbar">
-<button onclick="document.querySelectorAll('details.corpus').forEach(d=>d.open=true);closeAllQmenus()">▼ РАЗВЕРНУТЬ ВСЕ</button>
-<button onclick="document.querySelectorAll('details.corpus').forEach(d=>d.open=false);closeAllQmenus()">▲ СВЕРНУТЬ ВСЕ</button>
 <button onclick="document.querySelectorAll('details.corpus').forEach(d=>d.open=false);document.querySelectorAll('.q1,.q2,.q3,.q3\\.1,.q4,.q5,.q5\\.1,.q18,.q25,.q27').forEach(d=>d.open=true)">✡ АВРААМИЧЕСКИЕ</button>
 <button onclick="document.querySelectorAll('details.corpus').forEach(d=>d.open=false);document.querySelectorAll('.q6,.q7,.q8,.q9,.q10,.q11,.q12,.q13,.q14,.q15,.q16,.q17,.q19,.q20,.q21,.q22,.q23,.q24,.q26').forEach(d=>d.open=true)">◈ НЕ-АВРААМИЧЕСКИЕ</button>
+<button onclick="document.querySelectorAll('details.corpus').forEach(d=>d.open=true)">◆ ВСЕ ТЕКСТЫ</button>
 </div>
 
 </div>
@@ -190,7 +189,7 @@ details.corpus[open]>summary::before{content:"▼";color:var(--gold-bright)}
 <div class="note main-note" style="color:var(--red)"><p><b>CORPUS DIVINUS</b> &middot; <b>Единый Свод Законов Божьих</b> &middot; <b>АРХИВУМ</b> &middot; попытка собрать мировые сакральные тексты в одном месте, в оригинале + русский перевод, для целей компаративного религиоведения и «воссоздания единого свода законов Божьих».</p><p>Проект основан на гипотезе: <b>«Вавилонская башня = точка расхождения единого свода законов Божьих»</b>. До рассеяния народов (Быт. 11) был единый свод. После — разные традиции, каждая со своим путём. Задача архива — собрать параллельные тексты, увидеть общее.</p></div>
 
 
-<details class="corpus q1">
+<details class="corpus q1" open>
 <summary><div class="left"><span class="qbadge">◆ Q1</span>КОРАН · AL-QUR'AN</div><div class="count">6 236 аятов · Tanzil + Крачковский 1963</div></summary>
 <div class="body">
 <div class="book-grid">
@@ -210,7 +209,7 @@ details.corpus[open]>summary::before{content:"▼";color:var(--gold-bright)}
 </div>
 </details>
 
-<details class="corpus q2">
+<details class="corpus q2" open>
 <summary><div class="left"><span class="qbadge">◆ Q2</span>НОВЫЙ ЗАВЕТ · 27 КНИГ</div><div class="count">7 957 стихов · SBLGNT + Синод. 1876</div></summary>
 <div class="body">
 <div class="book-grid">
@@ -246,7 +245,7 @@ details.corpus[open]>summary::before{content:"▼";color:var(--gold-bright)}
 </div>
 </details>
 
-<details class="corpus q3">
+<details class="corpus q3" open>
 <summary><div class="left"><span class="qbadge">◆ Q3</span>ТАНАХ · ВЕТХИЙ ЗАВЕТ · 39 КНИГ</div><div class="count">23 213 стихов · WLC + LXX + Синод.</div></summary>
 <div class="body">
 <div class="book-grid">
@@ -294,7 +293,7 @@ details.corpus[open]>summary::before{content:"▼";color:var(--gold-bright)}
 </div>
 </details>
 
-<details class="corpus q3.1">
+<details class="corpus q3.1" open>
 <summary><div class="left"><span class="qbadge">◆ Q3.1</span>ДЕВТЕРОКАНОН · LXX · 11 КНИГ</div><div class="count">5 266 стихов · LXX + Синод.</div></summary>
 <div class="body">
 <div class="book-grid">
@@ -313,7 +312,7 @@ details.corpus[open]>summary::before{content:"▼";color:var(--gold-bright)}
 </div>
 </details>
 
-<details class="corpus q4">
+<details class="corpus q4" open>
 <summary><div class="left"><span class="qbadge">◆ Q4</span>1 ЕНОХ · КНИГА СТРАЖЕЙ · 108 ГЛАВ</div><div class="count">1058 стихов · геэз + греч. + Смирн. + Charles</div></summary>
 <div class="body">
 <div class="book-grid">
@@ -328,7 +327,7 @@ details.corpus[open]>summary::before{content:"▼";color:var(--gold-bright)}
 </div>
 </details>
 
-<details class="corpus q5">
+<details class="corpus q5" open>
 <summary><div class="left"><span class="qbadge">◆ Q5</span>2 ЕНОХ · ЮБИЛЕИ</div><div class="count">68 + 50 глав · слав. + геэз + Смирн. + Charles</div></summary>
 <div class="body">
 <div class="book-grid">
@@ -349,7 +348,7 @@ details.corpus[open]>summary::before{content:"▼";color:var(--gold-bright)}
 </div>
 </details>
 
-<details class="corpus q5.1">
+<details class="corpus q5.1" open>
 <summary><div class="left"><span class="qbadge">◆ Q5.1</span>МОЛИТВЫ ВОЛХВОВ</div><div class="count">12 молитв + 8 заговоров · слав. + рус.</div></summary>
 <div class="body">
 <div class="book-grid">
@@ -359,7 +358,7 @@ details.corpus[open]>summary::before{content:"▼";color:var(--gold-bright)}
 </div>
 </details>
 
-<details class="corpus q6">
+<details class="corpus q6" open>
 <summary><div class="left"><span class="qbadge">◆ Q6</span>РИГВЕДА · ṚGVEDA</div><div class="count">1 027 гимнов · санскрит + Елизар.</div></summary>
 <div class="body">
 <div class="book-grid">
@@ -378,7 +377,7 @@ details.corpus[open]>summary::before{content:"▼";color:var(--gold-bright)}
 </div>
 </details>
 
-<details class="corpus q7">
+<details class="corpus q7" open>
 <summary><div class="left"><span class="qbadge">◆ Q7</span>АВЕСТА · 5 ГАТ ЗАРАТУШТРЫ</div><div class="count">17 гимнов · авест. + Чистяков</div></summary>
 <div class="body">
 <div class="book-grid">
@@ -392,7 +391,7 @@ details.corpus[open]>summary::before{content:"▼";color:var(--gold-bright)}
 </div>
 </details>
 
-<details class="corpus q8">
+<details class="corpus q8" open>
 <summary><div class="left"><span class="qbadge">◆ Q8</span>ЦЗИНЦЗЯО · 景教</div><div class="count">кит. + рус. · стела + Dunhuang</div></summary>
 <div class="body">
 <div class="book-grid">
@@ -404,7 +403,7 @@ details.corpus[open]>summary::before{content:"▼";color:var(--gold-bright)}
 </div>
 </details>
 
-<details class="corpus q9">
+<details class="corpus q9" open>
 <summary><div class="left"><span class="qbadge">◆ Q9</span>ДХАММАПАДА · 26 ВАГГ</div><div class="count">413 строф · пали + Топоров 1960</div></summary>
 <div class="body">
 <div class="book-grid">
@@ -417,7 +416,7 @@ details.corpus[open]>summary::before{content:"▼";color:var(--gold-bright)}
 </div>
 </details>
 
-<details class="corpus q10">
+<details class="corpus q10" open>
 <summary><div class="left"><span class="qbadge">◆ Q10</span>БХАГАВАДГИТА · 18 ГЛАВ</div><div class="count">700 стихов · санскрит + Семенцов</div></summary>
 <div class="body">
 <div class="book-grid">
@@ -430,7 +429,7 @@ details.corpus[open]>summary::before{content:"▼";color:var(--gold-bright)}
 </div>
 </details>
 
-<details class="corpus q11">
+<details class="corpus q11" open>
 <summary><div class="left"><span class="qbadge">◆ Q11</span>ДАО ДЭ ЦЗИН · 道德經</div><div class="count">кит. + Малявин 2010</div></summary>
 <div class="body">
 <div class="book-grid">
@@ -443,7 +442,7 @@ details.corpus[open]>summary::before{content:"▼";color:var(--gold-bright)}
 </div>
 </details>
 
-<details class="corpus q12">
+<details class="corpus q12" open>
 <summary><div class="left"><span class="qbadge">◆ Q12</span>ЛУНЬ ЮЙ · 論語</div><div class="count">499 стихов · кит. + Переломов 1998</div></summary>
 <div class="body">
 <div class="book-grid">
@@ -455,7 +454,7 @@ details.corpus[open]>summary::before{content:"▼";color:var(--gold-bright)}
 </div>
 </details>
 
-<details class="corpus q13">
+<details class="corpus q13" open>
 <summary><div class="left"><span class="qbadge">◆ Q13</span>МАНУ-СМРИТИ · 12 ГЛАВ</div><div class="count">2 685 стихов · санскрит + рус.</div></summary>
 <div class="body">
 <div class="book-grid">
@@ -467,7 +466,7 @@ details.corpus[open]>summary::before{content:"▼";color:var(--gold-bright)}
 </div>
 </details>
 
-<details class="corpus q14">
+<details class="corpus q14" open>
 <summary><div class="left"><span class="qbadge">◆ Q14</span>УПАНИШАДЫ · उपनिषद्</div><div class="count">санскрит + рус. + English</div></summary>
 <div class="body">
 <div class="book-grid">
@@ -479,7 +478,7 @@ details.corpus[open]>summary::before{content:"▼";color:var(--gold-bright)}
 </div>
 </details>
 
-<details class="corpus q15">
+<details class="corpus q15" open>
 <summary><div class="left"><span class="qbadge">◆ Q15</span>БАРДО ТХЁДОЛ</div><div class="count">80 наставлений · тибет. + рус.</div></summary>
 <div class="body">
 <div class="book-grid">
@@ -496,7 +495,7 @@ details.corpus[open]>summary::before{content:"▼";color:var(--gold-bright)}
 </div>
 </details>
 
-<details class="corpus q16">
+<details class="corpus q16" open>
 <summary><div class="left"><span class="qbadge">◆ Q16</span>СУФИЙСКАЯ ПОЭЗИЯ · تصوف</div><div class="count">40 стихов · перс. + рус. · Руми + Хафиз</div></summary>
 <div class="body">
 <div class="book-grid">
@@ -508,7 +507,7 @@ details.corpus[open]>summary::before{content:"▼";color:var(--gold-bright)}
 </div>
 </details>
 
-<details class="corpus q17">
+<details class="corpus q17" open>
 <summary><div class="left"><span class="qbadge">◆ Q17</span>ЭПОС О ГИЛЬГАМЕШЕ · 𒄑𒂗𒆤</div><div class="count">50 стихов · аккад. + рус. · III тыс. до н.э.</div></summary>
 <div class="body">
 <div class="book-grid">
@@ -520,7 +519,7 @@ details.corpus[open]>summary::before{content:"▼";color:var(--gold-bright)}
 </div>
 </details>
 
-<details class="corpus q18">
+<details class="corpus q18" open>
 <summary><div class="left"><span class="qbadge">◆ Q18</span>КАББАЛА · קַבָּלָה</div><div class="count">50 стихов · иврит + рус. · Сефер Йецира + Зогар</div></summary>
 <div class="body">
 <div class="book-grid">
@@ -531,7 +530,7 @@ details.corpus[open]>summary::before{content:"▼";color:var(--gold-bright)}
 </div>
 </details>
 
-<details class="corpus q19">
+<details class="corpus q19" open>
 <summary><div class="left"><span class="qbadge">◆ Q19</span>ОРФИЧЕСКИЕ ГИМНЫ · Ὀρφικοὶ ὕμνοι</div><div class="count">34 стиха · греч. + рус. · 87 гимнов богам</div></summary>
 <div class="body">
 <div class="book-grid">
@@ -541,7 +540,7 @@ details.corpus[open]>summary::before{content:"▼";color:var(--gold-bright)}
 </div>
 </details>
 
-<details class="corpus q20">
+<details class="corpus q20" open>
 <summary><div class="left"><span class="qbadge">◆ Q20</span>КНИГА МЁРТВЫХ · 𓂋𓈖𓆎𓅓𓏏𓊖</div><div class="count">28 заклинаний · егип. трансл. + рус. · 3000-100 до н.э.</div></summary>
 <div class="body">
 <div class="book-grid">
@@ -551,7 +550,7 @@ details.corpus[open]>summary::before{content:"▼";color:var(--gold-bright)}
 </div>
 </details>
 
-<details class="corpus q21">
+<details class="corpus q21" open>
 <summary><div class="left"><span class="qbadge">◆ Q21</span>СЛАВЯНСКИЕ ВЕДЫ · Русские Веды</div><div class="count">30 гимнов · слав. + рус. · до IX в. н.э.</div></summary>
 <div class="body">
 <div class="book-grid">
@@ -561,7 +560,7 @@ details.corpus[open]>summary::before{content:"▼";color:var(--gold-bright)}
 </div>
 </details>
 
-<details class="corpus q22">
+<details class="corpus q22" open>
 <summary><div class="left"><span class="qbadge">◆ Q22</span>СТАРШАЯ ЭДДА · VÖLUSPÁ · ᚦᛟᚱᛅ</div><div class="count">30 поэм · древнеисл. + рус. · Корсун / Мелетинский / Стеблин-Каменский</div></summary>
 <div class="body">
 <div class="book-grid">
@@ -598,7 +597,7 @@ details.corpus[open]>summary::before{content:"▼";color:var(--gold-bright)}
 </div>
 </details>
 
-<details class="corpus q23">
+<details class="corpus q23" open>
 <summary><div class="left"><span class="qbadge">◆ Q23</span>ПОПОЛЬ ВУХ · КНИГА НАРОДА КИЧЕ</div><div class="count">9 глав · кичье + исп. + рус. · Кофман 1994 / Ершова 1990</div></summary>
 <div class="body">
 <div class="book-grid">
@@ -616,7 +615,7 @@ details.corpus[open]>summary::before{content:"▼";color:var(--gold-bright)}
 </div>
 </details>
 
-<details class="corpus q27">
+<details class="corpus q27" open>
 <summary><div class="left"><span class="qbadge">◆ Q27</span>СВИТКИ МЁРТВОГО МОРЯ · 8 ТЕКСТОВ</div><div class="count">8 текстов · иврит/арам. + рус. · III в. до н.э. — I в. н.э. · Wise/Abegg/Cook 2005 / Дандамаев 2001</div></summary>
 <div class="body">
 <div class="book-grid">
@@ -633,7 +632,7 @@ details.corpus[open]>summary::before{content:"▼";color:var(--gold-bright)}
 </div>
 </details>
 
-<details class="corpus q26">
+<details class="corpus q26" open>
 <summary><div class="left"><span class="qbadge">◆ Q26</span>КОДЗИКИ · 3 ТОМА</div><div class="count">3 тома · старые япон. + рус. · 712 г. н.э. · Филиппи 1969 / Конрад 1973</div></summary>
 <div class="body">
 <div class="book-grid">
@@ -645,7 +644,7 @@ details.corpus[open]>summary::before{content:"▼";color:var(--gold-bright)}
 </div>
 </details>
 
-<details class="corpus q25">
+<details class="corpus q25" open>
 <summary><div class="left"><span class="qbadge">◆ Q25</span>ЭНУМА ЭЛИШ · 7 ТАБЛИЧЕК</div><div class="count">7 табличек · аккад. + рус. · ок. XII в. до н.э. · Ламберт 2013 / Рифтин 1977</div></summary>
 <div class="body">
 <div class="book-grid">
@@ -661,7 +660,7 @@ details.corpus[open]>summary::before{content:"▼";color:var(--gold-bright)}
 </div>
 </details>
 
-<details class="corpus q24">
+<details class="corpus q24" open>
 <summary><div class="left"><span class="qbadge">◆ Q24</span>ЕВАНГЕЛИЕ ОТ ФОМЫ · 114 LOGIA</div><div class="count">114 logia · копт. + рус. · Наг-Хаммади 1945 / Трофимова 1995</div></summary>
 <div class="body">
 <div class="book-grid">
@@ -676,7 +675,7 @@ details.corpus[open]>summary::before{content:"▼";color:var(--gold-bright)}
 </div>
 </details>
 
-<details class="corpus">
+<details class="corpus" open>
 <summary><div class="left"><span class="qbadge">+</span>SCRIPTORIUM · МОЛИТВЫ</div><div class="count">24 параллельных текста</div></summary>
 <div class="body">
 <div class="book-grid">
