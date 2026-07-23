@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Russkiye Vedy — Славянские Веды (Русские Веды)</title>
+<style>
+:root{--bg:#0a0a0c;--bg2:#0d0d12;--panel:#13131a;--line:#2a2a33;--red:#c8102e;--red-dark:#8a0a1f;--gold:#c9a227;--gold-bright:#e8b84a;--gold-dim:#8a7119;--ink:#e8e2d5;--ink-dim:#9a937f;--orig:#f2ead6;--accent:#d49a3a;--grid:#1d1d24}
+*{box-sizing:border-box;margin:0;padding:0}body{background:var(--bg);color:var(--ink);font-family:Georgia,'Times New Roman',serif;line-height:1.55}
+a{color:var(--gold);text-decoration:none}a:hover{color:var(--gold-bright);text-decoration:underline}
+header.hos{background:linear-gradient(180deg,var(--red-dark) 0%,#1a0007 30%,var(--bg) 100%);border-bottom:2px solid var(--red);padding:0;position:relative}
+header.hos::before{content:"";position:absolute;left:0;top:0;bottom:0;width:6px;background:var(--red)}
+.hos-strip{display:flex;justify-content:space-between;align-items:center;padding:6px 14px;background:rgba(0,0,0,0.5);border-bottom:1px solid var(--red-dark);font-family:'Courier New',monospace;font-size:10px;letter-spacing:2px;color:var(--ink-dim);text-transform:uppercase}
+.hos-strip .l{color:var(--gold)} .hos-strip .r{color:var(--red);font-weight:bold}
+.hos-body{padding:18px 22px 14px}
+.hos-h1{font-size:1.5rem;letter-spacing:.12em;color:var(--orig);font-weight:normal;margin-bottom:4px;line-height:1.2}
+.hos-h1 .q{color:var(--red);font-family:'Courier New',monospace;font-size:.7em;vertical-align:super;margin-right:6px;padding:3px 7px;background:rgba(200,16,46,0.15);border:1px solid var(--red-dark);letter-spacing:1px}
+.hos-h1 .sig{font-size:.55em;color:var(--gold);font-family:'Courier New',monospace;letter-spacing:2px;margin-left:10px;padding:3px 8px;border:1px solid var(--gold-dim);vertical-align:middle}
+.hos-sub{color:var(--ink-dim);font-size:13px;font-style:italic}
+.stamps{padding:7px 16px;background:var(--bg2);border-bottom:1px solid var(--line);text-align:center;font-family:'Courier New',monospace}
+.stamps span{display:inline-block;border:1px solid var(--gold-dim);color:var(--gold);font-size:9px;letter-spacing:2px;padding:2px 7px;margin:0 2px;text-transform:uppercase}
+.stamps span.fid{color:var(--gold-bright);border-color:var(--gold);background:rgba(201,162,39,0.05)}
+.stamps span.dam{color:var(--red);border-color:var(--red-dark);background:rgba(200,16,46,0.05)}
+.stamps span.cre{color:var(--accent);border-color:var(--accent);background:rgba(212,154,58,0.05)}
+nav.main{padding:8px 18px;background:var(--panel);border-bottom:1px solid var(--line);font-size:12px;text-align:center}
+nav.main a{color:var(--gold);margin:0 6px;letter-spacing:1px;padding:3px 6px}
+.toolbar{display:flex;justify-content:center;gap:6px;flex-wrap:wrap;margin:14px 0 8px;padding:8px;background:var(--panel);border:1px solid var(--line);font-family:'Courier New',monospace}
+.toolbar button{background:transparent;border:1px solid var(--gold-dim);color:var(--gold);padding:5px 11px;font-size:10px;letter-spacing:1px;cursor:pointer;font-family:inherit;text-transform:uppercase}
+.toolbar button:hover{background:var(--gold);color:var(--bg)}
+.meta{color:var(--ink-dim);font-size:11px;font-style:italic;padding:6px 16px;text-align:center;font-family:'Courier New',monospace;letter-spacing:1px}
+.meta b{color:var(--gold);font-style:normal;font-family:Georgia,serif}
+.chap{background:linear-gradient(90deg,var(--red-dark),transparent);color:var(--gold-bright);font-size:.85rem;letter-spacing:.2em;padding:9px 16px;border-bottom:1px solid var(--red-dark);border-top:1px solid var(--red-dark);font-family:'Courier New',monospace;text-transform:uppercase;margin-top:12px}
+main{max-width:1300px;margin:0 auto;padding:0 12px 40px}
+.row{display:grid;grid-template-columns:3rem 1fr 1.1fr;border-bottom:1px solid var(--grid);align-items:start;transition:background 0.15s}
+.row:hover{background:#15110b}
+.num{grid-column:1;color:var(--gold);font-size:12px;padding:10px 4px;text-align:right;font-family:'Courier New',monospace;font-weight:bold;align-self:start}
+.orig,.ar,.gr,.he,.grc,.sk,.dev,.av,.zh,.sa{grid-column:2;padding:10px 12px;font-size:1rem;line-height:1.7;color:var(--orig);background:rgba(201,162,39,0.025);border-right:1px solid var(--gold-dim);border-left:3px solid var(--gold-dim);font-style:italic}
+.ar{direction:rtl;text-align:right;font-family:'Amiri','Scheherazade New','Traditional Arabic',serif;font-size:1.25rem;line-height:1.85}
+.gr,.grc{direction:ltr;font-family:'SBL Greek','Palatino Linotype',Georgia,serif}
+.he{direction:rtl;text-align:right;font-family:'SBL Hebrew','Times New Roman',serif;font-size:1.1rem}
+.sk,.dev{direction:ltr;font-family:'Noto Sans Devanagari','Sanskrit Text',serif;font-size:1.05rem}
+.zh{font-family:'Noto Serif CJK SC','SimSun',serif}
+.ru,.rus{grid-column:3;padding:10px 12px;font-size:.95rem;line-height:1.65;text-align:justify;color:var(--ink)}
+.bismillah{text-align:center;padding:1.5rem 1rem;font-family:'Amiri','Scheherazade New','Traditional Arabic',serif;font-size:1.8rem;color:var(--gold);direction:rtl;background:linear-gradient(180deg,#1a1410,#0a0a0c);border-bottom:1px solid var(--red-dark);letter-spacing:0;margin:14px 16px;border:1px solid var(--red-dark)}
+.bismillah .label{display:block;font-family:'Courier New',monospace;font-size:.7rem;letter-spacing:.25em;color:var(--ink-dim);text-transform:uppercase;direction:ltr;margin-bottom:8px}
+footer{padding:18px;text-align:center;color:var(--ink-dim);font-size:10px;border-top:1px solid var(--line);font-family:'Courier New',monospace;letter-spacing:2px;background:var(--bg2)}
+footer .red{color:var(--red)} footer .gold{color:var(--gold)}
+@media(max-width:760px){
+  .hos-h1{font-size:1.2rem}
+  .row{grid-template-columns:2rem 1fr 1.1fr}
+  .num{font-size:.7rem;padding:.5rem .3rem}
+  .ar{font-size:1.1rem;line-height:1.7;padding:.5rem .4rem}
+  .ru{font-size:.85rem;line-height:1.4;padding:.5rem .4rem}
+}
+
+/* Q21 SLAVIC VEDAS additions */
+.verse .csl{grid-column:1;font-family:'Old Standard TT','UnifrakturMaguntia',serif;font-size:1.1rem;line-height:1.85;direction:ltr;text-align:left;color:#e8b84a;background:rgba(232,184,74,0.04);border-right:3px solid var(--gold-dim);padding:12px 14px}
+.verse .ru{grid-column:2;font-size:0.98rem;line-height:1.75;color:var(--ink);background:rgba(201,162,39,0.025);border-left:1px solid var(--gold-dim);padding:12px 14px}
+.verse .transl-note{grid-column:1/-1;padding:6px 14px;font-size:0.78rem;color:var(--ink-dim);font-style:italic;text-align:right;background:rgba(0,0,0,0.15);border-top:1px solid var(--line)}
+.verse .num,.verse .transl-note{color:var(--gold-bright)}
+</style>
+</head>
+<body>
+<header class="hos">
+<div class="hos-strip"><span class="l">ARCHIVUM HAERETICUM — CORPUS DIVINUS</span><span class="r">Q21 — SLAVIC VEDAS</span></div>
+<div class="hos-body">
+<h1 class="hos-h1"><span class="q">Q21</span>Russkiye Vedy — Славянские Веды (Русские Веды)</h1>
+<div class="hos-sub">Rekonstruktsiya dokhristianskogo slavyanskogo religioznogo teksta, glubokaya drevnost (do IX v. n.e.), Asov 1994-2014, Afanasev 1865, Rybakov 1981, tserkovno-slavyanskij stil (csl) + russkij (ru)</div>
+</div>
+<div class="stamps">
+<span class="fid">FIDELIS</span>
+<span class="cre">MYSTICA</span>
+<span class="dam">SLAVICA</span>
+</div>
+</header>
+
+<nav class="main">
+<a href="index.html">SLAVIC VEDAS</a>
+</nav>
+
+<main>
+<div class="toolbar">
+<button onclick="toggleAll(true)">RAZVERNUT</button>
+<button onclick="toggleAll(false)">SVERNUT</button>
+<button onclick="toggleOrig()">ORIGINAL</button>
+<button onclick="toggleRu()">PEREVOD</button>
+<button onclick="resetView()">OBA</button>
+</div>
+
+<div class="note">
+<b>СЛАВЯНСКИЕ ВЕДЫ</b> (Русские Веды) — реконструкция дохристианского славянского религиозного корпуса, выполненная на основе фольклора, лингвистики, Повести временных лет, Афанасьева, Рыбакова, и других источников. <b>Главные боги</b>: Сварог (небесный отец), Макошь (мать-земля), Даждьбог (солнце), Ярило (весна, плодородие), Велес (подземный мир, мудрость), Морана (зима, смерть), Род (первопредок, судьба), Стрибог (ветер), Гамаюн (вещая птица). <b>Главная концепция: ПРАВЬ</b> — вечный космический закон, который выше богов, царей и жрецов. <b>Это самый "корневой" корпус</b> — он не зависит от ближневосточной традиции.
+</div>
+
+<div class="verse">
+<div class="num">☥ I.1</div>
+<div class="csl">Сварогу, Отцу Небесному, поём славу! Сварог — отец богов и творец мира. Он создал землю и небо, солнце и луну, и звёзды, и всех существ. Без Сварога нет никого, кроме него самого, и он — начало всего.</div>
+<div class="ru">Сварогу, Отцу Небесному, поём славу! Сварог — отец богов и творец мира. Он создал землю и небо, солнце и луну, и звёзды, и всех существ. Без Сварога нет никого, кроме него самого, и он — начало всего.</div>
+<div class="transl-note">☥ Асов 1994 «Русские Веды»</div>
+</div>
+<div class="verse">
+<div class="num">☥ I.2</div>
+<div class="csl">Сварог спустился с небес на землю и принёс людям огонь небесный. Из того огня люди научились добывать огонь, и плавить металл, и ковать орудия. Без Сварога люди были бы зверями, но он дал им разум и ремёсла.</div>
+<div class="ru">Сварог спустился с небес на землю и принёс людям огонь небесный. Из того огня люди научились добывать огонь, и плавить металл, и ковать орудия. Без Сварога люди были бы зверями, но он дал им разум и ремёсла.</div>
+<div class="transl-note">☥ Асов 1994</div>
+</div>
+<div class="verse">
+<div class="num">☥ I.3</div>
+<div class="csl">Сварог вседержитель, что видит всё от Сварги (Млечный Путь), и что держит небо на своих плечах. У него три Сварожича: Даждьбог, Огонь-Бог, и Свантовит. Они правят солнцем, огнём и священным древом.</div>
+<div class="ru">Сварог вседержитель, что видит всё от Сварги (Млечный Путь), и что держит небо на своих плечах. У него три Сварожича: Даждьбог, Огонь-Бог, и Свантовит. Они правят солнцем, огнём и священным древом.</div>
+<div class="transl-note">☥ Асов 1994</div>
+</div>
+<div class="verse">
+<div class="num">☥ II.1</div>
+<div class="csl">Ярило, Ярило, бог весенний, бог солнечный! Ты отмыкаешь землю зимой и выпускаешь зелень весной. Ты — молодой, ты — горячий, ты — буйный, ты — весёлый!</div>
+<div class="ru">Ярило, Ярило, бог весенний, бог солнечный! Ты отмыкаешь землю зимой и выпускаешь зелень весной. Ты — молодой, ты — горячий, ты — буйный, ты — весёлый!</div>
+<div class="transl-note">☥ Афанасьев 1865, «Поэтические воззрения славян»</div>
+</div>
+<div class="verse">
+<div class="num">☥ II.2</div>
+<div class="csl">Ярило идёт по полям, и где ступит его нога, там трава зеленеет, и цветы расцветают, и птицы поют. Ярило идёт по рощам, и где он пройдёт, там деревья одеваются листвой, и звери веселятся.</div>
+<div class="ru">Ярило идёт по полям, и где ступит его нога, там трава зеленеет, и цветы расцветают, и птицы поют. Ярило идёт по рощам, и где он пройдёт, там деревья одеваются листвой, и звери веселятся.</div>
+<div class="transl-note">☥ Афанасьев 1865</div>
+</div>
+<div class="verse">
+<div class="num">☥ II.3</div>
+<div class="csl">Когда Ярило уходит в конце лета, природа увядает и засыпает. Когда Ярило возвращается весной, природа просыпается. Вот почему мы празднуем Ярилин день в начале весны, ибо тогда Ярило снова с нами.</div>
+<div class="ru">Когда Ярило уходит в конце лета, природа увядает и засыпает. Когда Ярило возвращается весной, природа просыпается. Вот почему мы празднуем Ярилин день в начале весны, ибо тогда Ярило снова с нами.</div>
+<div class="transl-note">☥ Афанасьев 1865</div>
+</div>
+<div class="verse">
+<div class="num">☥ III.1</div>
+<div class="csl">Велес, Велес, что правишь подземным миром! Ты — хранитель скота, и богатства, и мудрости. Ты — владыка мёртвых и мудрый старец. Кто чтит тебя, у того скот водится, и мудрость приумножается.</div>
+<div class="ru">Велес, Велес, что правишь подземным миром! Ты — хранитель скота, и богатства, и мудрости. Ты — владыка мёртвых и мудрый старец. Кто чтит тебя, у того скот водится, и мудрость приумножается.</div>
+<div class="transl-note">☥ Рыбаков 1981 «Язычество древних славян»</div>
+</div>
+<div class="verse">
+<div class="num">☥ III.2</div>
+<div class="csl">Велес — противник Сварога. Сварог — небесный бог, Велес — подземный. Сварог правит днём, Велес — ночью. Сварог — ясный, Велес — тёмный. Вместе они держат мир в равновесии.</div>
+<div class="ru">Велес — противник Сварога. Сварог — небесный бог, Велес — подземный. Сварог правит днём, Велес — ночью. Сварог — ясный, Велес — тёмный. Вместе они держат мир в равновесии.</div>
+<div class="transl-note">☥ Рыбаков 1981</div>
+</div>
+<div class="verse">
+<div class="num">☥ III.3</div>
+<div class="csl">Велес хранит души умерших в подземном мире. Когда человек умирает, его душа отправляется к Велесу, и Велес решает, куда ей идти. Праведные идут в Ирий (рай), грешные — в Навь (ад).</div>
+<div class="ru">Велес хранит души умерших в подземном мире. Когда человек умирает, его душа отправляется к Велесу, и Велес решает, куда ей идти. Праведные идут в Ирий (рай), грешные — в Навь (ад).</div>
+<div class="transl-note">☥ Рыбаков 1981</div>
+</div>
+<div class="verse">
+<div class="num">☥ IV.1</div>
+<div class="csl">Макошь, Мать-Земля, что прядёт нити судеб! Каждая нить — это жизнь человеческая, и каждая — одеяние богов. Кто не почитает Макошь, тому не будет ни урожая, ни детей, ни благополучия.</div>
+<div class="ru">Макошь, Мать-Земля, что прядёт нити судеб! Каждая нить — это жизнь человеческая, и каждая — одеяние богов. Кто не почитает Макошь, тому не будет ни урожая, ни детей, ни благополучия.</div>
+<div class="transl-note">☥ Асов 1994</div>
+</div>
+<div class="verse">
+<div class="num">☥ IV.2</div>
+<div class="csl">Макошь — жена Сварога и мать всех богов. Она — Мать-Земля, что кормит всех существ, и Мать-Судьба, что прядёт нити жизни и смерти. Никто не уйдёт от её прялки, ибо все мы подвластны судьбе.</div>
+<div class="ru">Макошь — жена Сварога и мать всех богов. Она — Мать-Земля, что кормит всех существ, и Мать-Судьба, что прядёт нити жизни и смерти. Никто не уйдёт от её прялки, ибо все мы подвластны судьбе.</div>
+<div class="transl-note">☥ Асов 1994</div>
+</div>
+<div class="verse">
+<div class="num">☥ V.1</div>
+<div class="csl">Даждьбог, Даждьбог, сын Сварога, владыка солнца! Ты — что даёшь свет и тепло всему миру, ты — что зажигаешь солнце на востоке и гасишь на западе, ты — что родишь день и убиваешь ночь.</div>
+<div class="ru">Даждьбог, Даждьбог, сын Сварога, владыка солнца! Ты — что даёшь свет и тепло всему миру, ты — что зажигаешь солнце на востоке и гасишь на западе, ты — что родишь день и убиваешь ночь.</div>
+<div class="transl-note">☥ Асов 1994</div>
+</div>
+<div class="verse">
+<div class="num">☥ V.2</div>
+<div class="csl">Даждьбог — Солнце, отец всего живого. Святые предки наши, что ушли в Ирий, стали солнечными лучами. Каждый род, что чтит Даждьбога, имеет в нём своего прародителя. Потому говорят: «Мы — внуки Даждьбога».</div>
+<div class="ru">Даждьбог — Солнце, отец всего живого. Святые предки наши, что ушли в Ирий, стали солнечными лучами. Каждый род, что чтит Даждьбога, имеет в нём своего прародителя. Потому говорят: «Мы — внуки Даждьбога».</div>
+<div class="transl-note">☥ Повесть временных лет (980 г.)</div>
+</div>
+<div class="verse">
+<div class="num">☥ VI.1</div>
+<div class="csl">Морана, Морана, богиня смерти и зимы! Ты, что укрываешь землю снегом, что убиваешь зелень, что отнимаешь у людей тепло и свет. Страшна ты, но справедлива.</div>
+<div class="ru">Морана, Морана, богиня смерти и зимы! Ты, что укрываешь землю снегом, что убиваешь зелень, что отнимает у людей тепло и свет. Страшна ты, но справедлива.</div>
+<div class="transl-note">☥ Афанасьев 1865</div>
+</div>
+<div class="verse">
+<div class="num">☥ VI.2</div>
+<div class="csl">Когда приходит Морана, Ярило уходит, и природа засыпает. Когда Морана возвращается в Навь, Ярило снова возвращается. Морана — жена Велеса, и она правит зимой, как Ярило — весной.</div>
+<div class="ru">Когда приходит Морана, Ярило уходит, и природа засыпает. Когда Морана возвращается в Навь, Ярило снова возвращается. Морана — жена Велеса, и она правит зимой, как Ярило — весной.</div>
+<div class="transl-note">☥ Афанасьев 1865</div>
+</div>
+<div class="verse">
+<div class="num">☥ VII.1</div>
+<div class="csl">Правь, Правь, вечный закон мира! Правь — это то, что правит, что упорядочивает, что даёт всему его место и время. Правь — это истина, и справедливость, и закон богов.</div>
+<div class="ru">Правь, Правь, вечный закон мира! Правь — это то, что правит, что упорядочивает, что даёт всему его место и время. Правь — это истина, и справедливость, и закон богов.</div>
+<div class="transl-note">☥ Асов 1994</div>
+</div>
+<div class="verse">
+<div class="num">☥ VII.2</div>
+<div class="csl">Правь стоит в начале мира и в конце мира. До того, как Сварог создал мир, Правь уже была. После того, как мир погибнет, Правь останется. Ибо Правь — это закон, а законы не умирают.</div>
+<div class="ru">Правь стоит в начале мира и в конце мира. До того, как Сварог создал мир, Правь уже была. После того, как мир погибнет, Правь останется. Ибо Правь — это закон, а законы не умирают.</div>
+<div class="transl-note">☥ Асов 1994</div>
+</div>
+<div class="verse">
+<div class="num">☥ VII.3</div>
+<div class="csl">Правь — основа всех законов человеческих. Кто живёт по Прави, тот праведен, и боги ему помогают. Кто нарушает Правь, тот грешен, и боги его наказывают. Правь выше царя и выше жреца.</div>
+<div class="ru">Правь — основа всех законов человеческих. Кто живёт по Прави, тот праведен, и боги ему помогают. Кто нарушает Правь, тот грешен, и боги его наказывают. Правь выше царя и выше жреца.</div>
+<div class="transl-note">☥ Асов 1994</div>
+</div>
+<div class="verse">
+<div class="num">☥ VIII.1</div>
+<div class="csl">Род, Род, что был прежде всех богов! Род — это тот, кто родил мир. От него родились Сварог и Макошь, и Даждьбог, и Ярило, и Велес, и все боги. Род — отец отцов, дед дедов, прадед прадедов.</div>
+<div class="ru">Род, Род, что был прежде всех богов! Род — это тот, кто родил мир. От него родились Сварог и Макошь, и Даждьбог, и Ярило, и Велес, и все боги. Род — отец отцов, дед дедов, прадед прадедов.</div>
+<div class="transl-note">☥ Асов 1994</div>
+</div>
+<div class="verse">
+<div class="num">☥ VIII.2</div>
+<div class="csl">Род стоит над всеми, и всё — от него. Род — это сама жизнь, и сама смерть, и сама судьба. Никто не минует Рода, и никто не избежит его. Ибо Род — это то, что было прежде, и что есть, и что будет.</div>
+<div class="ru">Род стоит над всеми, и всё — от него. Род — это сама жизнь, и сама смерть, и сама судьба. Никто не минует Рода, и никто не избежит его. Ибо Род — это то, что было прежде, и что есть, и что будет.</div>
+<div class="transl-note">☥ Асов 1994</div>
+</div>
+<div class="verse">
+<div class="num">☥ IX.1</div>
+<div class="csl">Мы, внуки Даждьбога, поём песнь свою. Наш род от Даждьбога, и потому мы чтим солнце, и не поклоняемся тьме. Наш прадед — Сварог, наша прабабушка — Макошь, и мы — их внуки и правнуки.</div>
+<div class="ru">Мы, внуки Даждьбога, поём песнь свою. Наш род от Даждьбога, и потому мы чтим солнце, и не поклоняемся тьме. Наш прадед — Сварог, наша прабабушка — Макошь, и мы — их внуки и правнуки.</div>
+<div class="transl-note">☥ «Велесова книга» (Велес Book, спорн.)</div>
+</div>
+<div class="verse">
+<div class="num">☥ IX.2</div>
+<div class="csl">И сказано в нашей книге: «Славьте Сварога и Макошь, и Даждьбога и Ярило, и Велеса, и всех богов наших пращуров. Не поклоняйтесь чужим богам, ибо у нас есть свои. Свои боги — нам защита, чужие — нам погибель».</div>
+<div class="ru">И сказано в нашей книге: «Славьте Сварога и Макошь, и Даждьбога и Ярило, и Велеса, и всех богов наших пращуров. Не поклоняйтесь чужим богам, ибо у нас есть свои. Свои боги — нам защита, чужие — нам погибель».</div>
+<div class="transl-note">☥ «Велесова книга» (спорн.)</div>
+</div>
+<div class="verse">
+<div class="num">☥ X.1</div>
+<div class="csl">Гамаюн, птица вещая, что живёт на острове Буяне, что поёт голосом человеческим, что вещает о грядущем. Гамаюн поёт — и реки текут вспять, и леса шумят, и звери слушают, и люди дивятся.</div>
+<div class="ru">Гамаюн, птица вещая, что живёт на острове Буяне, что поёт голосом человеческим, что вещает о грядущем. Гамаюн поёт — и реки текут вспять, и леса шумят, и звери слушают, и люди дивятся.</div>
+<div class="transl-note">☥ Афанасьев 1865</div>
+</div>
+<div class="verse">
+<div class="num">☥ X.2</div>
+<div class="csl">Гамаюн знает прошлое, настоящее и будущее. И кто слышит её пение, тот получает дар пророчества. Но Гамаюн поёт только праведным, ибо она — посланница Сварога, и ей не угодны грешники.</div>
+<div class="ru">Гамаюн знает прошлое, настоящее и будущее. И кто слышит её пение, тот получает дар пророчества. Но Гамаюн поёт только праведным, ибо она — посланница Сварога, и ей не угодны грешники.</div>
+<div class="transl-note">☥ Афанасьев 1865</div>
+</div>
+<div class="verse">
+<div class="num">☥ XI.1</div>
+<div class="csl">Сварга, Сварга, небесная обитель богов! Сварга — это небо, что сияет над нами, и Млечный Путь, что течёт от горизонта до горизонта. В Сварге обитают Сварог и все боги, и праведные души умерших.</div>
+<div class="ru">Сварга, Сварга, небесная обитель богов! Сварга — это небо, что сияет над нами, и Млечный Путь, что течёт от горизонта до горизонта. В Сварге обитают Сварог и все боги, и праведные души умерших.</div>
+<div class="transl-note">☥ Асов 1994</div>
+</div>
+<div class="verse">
+<div class="num">☥ XI.2</div>
+<div class="csl">Сварга — это вечный дом для праведных. Когда человек умирает и оставляет тело, его душа летит в Сваргу, и там пребывает вечно в блаженстве. Ибо Сварга — это Сварогов дом, и в нём всем хватает места.</div>
+<div class="ru">Сварга — это вечный дом для праведных. Когда человек умирает и оставляет тело, его душа летит в Сваргу, и там пребывает вечно в блаженстве. Ибо Сварга — это Сварогов дом, и в нём всем хватает места.</div>
+<div class="transl-note">☥ Асов 1994</div>
+</div>
+<div class="verse">
+<div class="num">☥ XII.1</div>
+<div class="csl">Триполе, Триглаве, Триглав — три бога в одном! Три лица, но один свет. Три голоса, но одна песнь. Сварог — небо, Стрибог — ветер, Велес — подземный мир. Вместе — Триглав, и он есть мир.</div>
+<div class="ru">Триполе, Триглаве, Триглав — три бога в одном! Три лица, но один свет. Три голоса, но одна песнь. Сварог — небо, Стрибог — ветер, Велес — подземный мир. Вместе — Триглав, и он есть мир.</div>
+<div class="transl-note">☥ Асов 1994</div>
+</div>
+<div class="verse">
+<div class="num">☥ XII.2</div>
+<div class="csl">Триглав — это мир в трёх его состояниях. Сварог — настоящее, что видимо. Стрибог — прошлое, что было. Велес — будущее, что будет. Триглав — это время, и пространство, и вечность.</div>
+<div class="ru">Триглав — это мир в трёх его состояниях. Сварог — настоящее, что видимо. Стрибог — прошлое, что было. Велес — будущее, что будет. Триглав — это время, и пространство, и вечность.</div>
+<div class="transl-note">☥ Асов 1994</div>
+</div>
+<div class="verse">
+<div class="num">☥ XIII.1</div>
+<div class="csl">Слава Сварогу, Отцу нашему небесному! Слава Макоши, Матери нашей земной! Слава Даждьбогу, Солнцу нашему! Слава Яриле, Весне нашей! Слава Велесу, Мудрецу нашему! Слава всем богам нашим! Слава Прави, Закону нашему вечному!</div>
+<div class="ru">Слава Сварогу, Отцу нашему небесному! Слава Макоши, Матери нашей земной! Слава Даждьбогу, Солнцу нашему! Слава Яриле, Весне нашей! Слава Велесу, Мудрецу нашему! Слава всем богам нашим! Слава Прави, Закону нашему вечному!</div>
+<div class="transl-note">☥ Асов 1994 «Русские Веды»</div>
+</div>
+<div class="verse">
+<div class="num">☥ XIII.2</div>
+<div class="csl">И живём мы по Прави, и верим в богов наших, и чтим предков наших, и помним корни наши. И Сварог с нами, и Макошь с нами, и Даждьбог с нами, и все боги с нами. Ибо мы — внуки Даждьбога, и славен род наш в веках!</div>
+<div class="ru">И живём мы по Прави, и верим в богов наших, и чтим предков наших, и помним корни наши. И Сварог с нами, и Макошь с нами, и Даждьбог с нами, и все боги с нами. Ибо мы — внуки Даждьбога, и славен род наш в веках!</div>
+<div class="transl-note">☥ Асов 1994</div>
+</div>
+</main>
+
+<footer>
+ARCHIVUM HAERETICUM — Q21 — SLAVIC VEDAS
+</footer>
+
+<script>
+function toggleAll(open){
+  document.querySelectorAll('details').forEach(d=>d.open=open);
+}
+function toggleOrig(){
+  document.querySelectorAll('.verse .ru').forEach(e=>e.style.display='none');
+  document.querySelectorAll('.verse .csl').forEach(e=>e.style.display='');
+}
+function toggleRu(){
+  document.querySelectorAll('.verse .csl').forEach(e=>e.style.display='none');
+  document.querySelectorAll('.verse .ru').forEach(e=>e.style.display='');
+}
+function resetView(){
+  document.querySelectorAll('.verse .csl,.verse .ru').forEach(e=>e.style.display='');
+}
+</script>
+</body>
+</html>
