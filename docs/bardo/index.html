@@ -1,0 +1,117 @@
+<!DOCTYPE html><html lang="ru"><head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Бардо Тхёдол · Тибетская книга мёртвых · CORPUS DIVINUS</title>
+<style>
+:root{--bg:#0a0908;--panel:#1a1612;--line:#2e2620;--gold:#d4af37;--gold-dim:#8a6f1a;--ink:#e8dfca;--ink-dim:#9a8f78;--pali:#e8b84a;--red:#8c2f26}
+*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--ink);font-family:Georgia,serif;line-height:1.6}
+header.top{border-bottom:2px solid var(--gold-dim);padding:18px 24px;background:var(--panel)}
+header.top .brand{font-size:12px;letter-spacing:3px;color:var(--ink-dim);text-transform:uppercase}
+header.top h1{margin:6px 0 2px;font-size:23px;color:var(--gold);font-weight:normal}
+header.top .sub{color:var(--ink-dim);font-size:13px}
+.stamp{display:inline-block;border:1px solid var(--gold-dim);color:var(--gold);font-size:11px;letter-spacing:2px;padding:2px 8px;margin-left:8px;vertical-align:middle}
+.stamp.fir{color:#e8b84a;background:rgba(232,184,74,0.05);border-color:#e8b84a}
+nav.menu{padding:10px 24px;border-bottom:1px solid var(--line);font-size:13px;color:var(--ink-dim);background:var(--panel);line-height:1.8}
+nav.menu a{margin-right:10px;white-space:nowrap}
+.cnt{padding:20px 24px;font-size:14.5px;line-height:1.7}
+.verse{border-bottom:1px solid var(--line);padding:14px 0;display:grid;grid-template-columns:50px 1fr 1fr;gap:14px}
+.verse .num{color:var(--gold);font-size:1.1rem;text-align:right;font-weight:bold;padding-top:2px}
+.verse .pali{color:var(--pali);font-size:15px;line-height:1.7;background:rgba(232,184,74,0.05);padding:8px 12px;border-left:2px solid var(--pali);font-style:italic}
+.verse .ru{color:var(--ink);font-size:14.5px;line-height:1.7;padding:8px 0}
+.verse .ru.pali-only{color:var(--ink-dim);font-style:italic}
+.verse .combined{color:var(--ink-dim);font-size:11px;letter-spacing:1px;margin-bottom:4px;display:block}
+h2.ch{color:var(--gold);font-size:18px;letter-spacing:2px;margin:24px 0 14px;padding:8px 0;border-bottom:2px solid var(--gold-dim);font-weight:normal}
+.idx-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:8px;margin:14px 0}
+.idx-card{border:1px solid var(--line);background:var(--panel);padding:10px 14px;display:block}
+.idx-card:hover{border-color:var(--gold-dim);text-decoration:none}
+.idx-card .t{color:var(--gold);font-size:14px}
+.idx-card .s{color:var(--ink-dim);font-size:11px;margin-top:4px}
+.note{margin:14px 0;padding:12px 16px;border:1px solid var(--line);background:var(--panel);font-size:13px;color:var(--ink-dim)}
+footer{padding:24px;color:var(--ink-dim);font-size:12px;border-top:1px solid var(--line);margin-top:20px}
+@media(max-width:760px){.verse{grid-template-columns:30px 1fr}.verse .pali{border-left:none;border-top:2px solid var(--pali)}}
+.toolbar{display:flex;justify-content:center;gap:8px;flex-wrap:wrap;margin:12px 0;padding:8px;background:#15151a;border:1px solid #2a2a33;border-radius:4px;font-family:Georgia,serif}
+.toolbar button{background:#1f1a12;border:1px solid #c9a227;color:#c9a227;padding:6px 12px;font-size:11px;letter-spacing:1px;cursor:pointer;font-family:Georgia,serif;text-transform:uppercase}
+.toolbar button:hover{background:#2a2010}
+</style>
+</head><body><header class="hos">
+<div class="hos-strip"><span class="l">ARCHIVUM HAERETICUM · CORPUS DIVINUS · Q15</span><span class="r">◆ SIGILLUM VERITATIS</span></div>
+<div class="hos-body">
+<h1 class="hos-h1"><span class="q">Q15</span>БАРДО ТХЁДОЛ · ТИБЕТСКАЯ КНИГА МЁРТВЫХ<span class="sig">◆ FIDELIS</span></h1>
+<div class="hos-sub">Тибетский буддизм (Ваджраяна) · Падмасамбхава / Карма Лингпа · ок. VIII в. н.э. (терма XIV в.) · 49 дней посмертного странствия · 8 глав · 80 наставлений</div>
+</div>
+</header>
+<div class="stamps">
+<span class="fid">◆ FIDELIS</span>
+<span>◇ SUSPECTUS</span>
+<span class="cre">☸ ВАДЖРАЯНА</span>
+</div>
+<nav class="main">
+<a href="../index.html">◀ CORPUS DIVINUS</a>
+</nav>
+<main>
+<div class="toolbar">
+<button onclick="toggleAll(true)">▼ РАЗВЕРНУТЬ</button>
+<button onclick="toggleAll(false)">▲ СВЕРНУТЬ</button>
+<button onclick="toggleOrig()">☀ ОРИГИНАЛ</button>
+<button onclick="toggleRu()">☾ ПЕРЕВОД</button>
+<button onclick="resetView()">◉ ОБА</button>
+</div>
+<div class="meta">ОРИГИНАЛ: <b>тибетский (བར་དོ་ཐོས་གྲོལ)</b> · ПЕРЕВОД: <b>русский · А. Боченков (2005) / О. Альбедиль</b> · ◆ FIDELIS</div>
+<div class="chap">ВЫБЕРИ ГЛАВУ · 8 БАРДО</div>
+<div class="idx-grid"><a class="idx-card" href="ch1.html">
+<span class="roman" style="color:var(--gold);font-size:1.2em;font-weight:bold;font-family:Courier New">1</span>
+<div class="t">Предварительные наставления</div>
+<div class="sub" style="color:var(--ink-dim);font-size:11px;margin-top:4px;font-family:Courier New">► 10 наставлений · ОТКРЫТЬ ◄</div>
+</a><a class="idx-card" href="ch2.html">
+<span class="roman" style="color:var(--gold);font-size:1.2em;font-weight:bold;font-family:Courier New">2</span>
+<div class="t">Бардо момента смерти</div>
+<div class="sub" style="color:var(--ink-dim);font-size:11px;margin-top:4px;font-family:Courier New">► 10 наставлений · ОТКРЫТЬ ◄</div>
+</a><a class="idx-card" href="ch3.html">
+<span class="roman" style="color:var(--gold);font-size:1.2em;font-weight:bold;font-family:Courier New">3</span>
+<div class="t">Встреча с Чистым Светом</div>
+<div class="sub" style="color:var(--ink-dim);font-size:11px;margin-top:4px;font-family:Courier New">► 10 наставлений · ОТКРЫТЬ ◄</div>
+</a><a class="idx-card" href="ch4.html">
+<span class="roman" style="color:var(--gold);font-size:1.2em;font-weight:bold;font-family:Courier New">4</span>
+<div class="t">Божества-хранители</div>
+<div class="sub" style="color:var(--ink-dim);font-size:11px;margin-top:4px;font-family:Courier New">► 10 наставлений · ОТКРЫТЬ ◄</div>
+</a><a class="idx-card" href="ch5.html">
+<span class="roman" style="color:var(--gold);font-size:1.2em;font-weight:bold;font-family:Courier New">5</span>
+<div class="t">Гневные божества</div>
+<div class="sub" style="color:var(--ink-dim);font-size:11px;margin-top:4px;font-family:Courier New">► 10 наставлений · ОТКРЫТЬ ◄</div>
+</a><a class="idx-card" href="ch6.html">
+<span class="roman" style="color:var(--gold);font-size:1.2em;font-weight:bold;font-family:Courier New">6</span>
+<div class="t">Мирные божества</div>
+<div class="sub" style="color:var(--ink-dim);font-size:11px;margin-top:4px;font-family:Courier New">► 10 наставлений · ОТКРЫТЬ ◄</div>
+</a><a class="idx-card" href="ch7.html">
+<span class="roman" style="color:var(--gold);font-size:1.2em;font-weight:bold;font-family:Courier New">7</span>
+<div class="t">Сидпа Бардо</div>
+<div class="sub" style="color:var(--ink-dim);font-size:11px;margin-top:4px;font-family:Courier New">► 10 наставлений · ОТКРЫТЬ ◄</div>
+</a><a class="idx-card" href="ch8.html">
+<span class="roman" style="color:var(--gold);font-size:1.2em;font-weight:bold;font-family:Courier New">8</span>
+<div class="t">Закрытие дверей лона</div>
+<div class="sub" style="color:var(--ink-dim);font-size:11px;margin-top:4px;font-family:Courier New">► 10 наставлений · ОТКРЫТЬ ◄</div>
+</a></div>
+<div class="note">
+<b>◆ Бардо Тхёдол</b> (тиб. བར་དོ་ཐོས་གྲོལ, «Освобождение через слушание в бардо») — священный текст тибетского буддизма (Ваджраяна), написанный Падмасамбхавой в VIII веке н.э. и сокрытый как терма, найденная Карма Лингпой в XIV веке.<br><br>
+<b>◆ Четыре Бардо</b>: жизнь, смерть, посмертие, новое рождение. «Бардо» — тибетское слово, означающее «промежуточное состояние». Общая продолжительность пребывания сознания в бардо после смерти — 49 дней.<br><br>
+<b>◆ Структура</b>: Чигай Бардо (момент смерти) + Чёнид Бардо (постижение реальности) + Сидпа Бардо (поиски нового рождения). Каждое бардо содержит наставления для освобождения сознания.<br><br>
+<b>◆ Принцип CORPUS DIVINUS</b>: тибетский оригинал слева, русский перевод справа · единый тёмный дизайн Heretic OS Mechanicus.
+</div>
+</main>
+<footer>ARCHIVUM HAERETICUM · Q15 · БАРДО ТХЁДОЛ · ТИБЕТСКАЯ КНИГА МЁРТВЫХ<br><span class="red">◆</span> SIGILLUM VERITATIS · <span class="gold">DATUM 161.M3</span> · FIDELIS</footer>
+<script>
+function toggleAll(state){
+  document.querySelectorAll('.verse').forEach(r=>r.style.display=state?'grid':'none');
+}
+function toggleOrig(){
+  document.querySelectorAll('.verse').forEach(r=>{r.style.display='grid';const o=r.querySelector('.sk,.av,.zh,.bo,.sa,.en');if(o)o.style.display='block';const t=r.querySelector('.ru');if(t)t.style.display='none';});
+}
+function toggleRu(){
+  document.querySelectorAll('.verse').forEach(r=>{r.style.display='grid';const o=r.querySelector('.sk,.av,.zh,.bo,.sa,.en');if(o)o.style.display='none';const t=r.querySelector('.ru');if(t)t.style.display='block';});
+}
+function resetView(){
+  document.querySelectorAll('.verse').forEach(r=>r.style.display='grid');
+  document.querySelectorAll('.sk,.av,.zh,.bo,.sa,.en,.ru').forEach(c=>c.style.display='');
+}
+</script>
+</body></html>
