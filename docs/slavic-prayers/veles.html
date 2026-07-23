@@ -1,0 +1,101 @@
+<!DOCTYPE html><html lang="ru"><head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Молитва Велесу · Q5.1</title>
+<style>
+:root{--bg:#0a0a0c;--bg2:#0d0d12;--panel:#13131a;--line:#2a2a33;--red:#c8102e;--red-dark:#8a0a1f;--gold:#c9a227;--gold-bright:#e8b84a;--gold-dim:#8a7119;--ink:#e8d8a8;--ink-dim:#9e8855;--orig:#c9a227;--accent:#d49a3a;--grid:#1d1d24}
+*{box-sizing:border-box;margin:0;padding:0}
+body{background:var(--bg);color:var(--ink);font-family:Georgia,'Times New Roman',serif;line-height:1.55;overflow-x:hidden}
+header.hos{background:linear-gradient(180deg,var(--red-dark) 0%,#1a0007 30%,var(--bg) 100%);border-bottom:2px solid var(--red);padding:0;position:relative}
+header.hos::before{content:"";position:absolute;left:0;top:0;bottom:0;width:6px;background:var(--red)}
+.hos-strip{display:flex;justify-content:space-between;align-items:center;padding:6px 14px;background:rgba(0,0,0,0.5);border-bottom:1px solid var(--red-dark);font-family:'Courier New',monospace;font-size:10px;letter-spacing:2px;color:var(--ink-dim);text-transform:uppercase}
+.hos-strip .l{color:var(--gold)} .hos-strip .r{color:var(--red);font-weight:bold}
+.hos-body{padding:18px 22px 14px}
+.hos-h1{font-size:1.5rem;letter-spacing:.12em;color:var(--orig);font-weight:normal;margin-bottom:4px;line-height:1.2}
+.hos-h1 .q{color:var(--red);font-family:'Courier New',monospace;font-size:.7em;vertical-align:super;margin-right:6px;padding:3px 7px;background:rgba(200,16,46,0.15);border:1px solid var(--red-dark);letter-spacing:1px}
+.hos-sub{color:var(--ink-dim);font-size:13px;font-style:italic}
+.stamps{padding:7px 16px;background:var(--bg2);border-bottom:1px solid var(--line);text-align:center;font-family:'Courier New',monospace}
+.stamps span{display:inline-block;border:1px solid var(--gold-dim);color:var(--gold);font-size:9px;letter-spacing:2px;padding:2px 7px;margin:0 2px;text-transform:uppercase}
+nav.main{padding:8px 18px;background:var(--panel);border-bottom:1px solid var(--line);font-size:12px;text-align:center}
+nav.main a{color:var(--gold);margin:0 6px;letter-spacing:1px;padding:3px 6px}
+main{max-width:1300px;margin:0 auto;padding:0 12px 40px}
+.verse{display:grid;grid-template-columns:3.2rem 1fr 1.1fr;border-bottom:1px solid var(--grid);align-items:start;transition:background 0.15s;width:100%}
+.verse:hover{background:#15110b}
+.num{grid-column:1;color:var(--gold);font-size:12px;padding:10px 4px;text-align:right;font-family:'Courier New',monospace;font-weight:bold;align-self:start}
+.csl{grid-column:2;padding:10px 12px;font-size:1.05rem;line-height:1.7;color:var(--orig);background:rgba(201,162,39,0.04);border-right:1px solid var(--gold-dim);border-left:3px solid var(--gold-dim);font-style:italic;font-family:'Old Standard TT','Monomakh','Ponomar','Times New Roman',serif;direction:ltr;text-align:left;word-wrap:break-word;overflow-wrap:break-word}
+.ru{grid-column:3;padding:10px 12px;font-size:.95rem;line-height:1.65;text-align:justify;color:var(--ink);font-family:Georgia,serif;border-left:1px solid var(--line);word-wrap:break-word;overflow-wrap:break-word}
+.meta{padding:8px 16px;text-align:center;color:var(--ink-dim);font-size:11px;font-style:italic;background:var(--bg2);border-bottom:1px solid var(--line)}
+footer{padding:18px;text-align:center;color:var(--ink-dim);font-size:10px;border-top:1px solid var(--line);font-family:'Courier New',monospace;letter-spacing:2px;background:var(--bg2)}
+.note{margin:14px;padding:14px 18px;background:rgba(201,162,39,0.04);border:1px solid var(--gold-dim);border-left:4px solid var(--gold);font-size:14px;line-height:1.7;color:var(--ink)}
+.toolbar{display:flex;justify-content:center;gap:6px;flex-wrap:wrap;margin:14px 0 8px;padding:8px;background:var(--panel);border:1px solid var(--line);font-family:'Courier New',monospace}
+.toolbar button{background:transparent;border:1px solid var(--gold-dim);color:var(--gold);padding:5px 11px;font-size:10px;letter-spacing:1px;cursor:pointer;font-family:inherit;text-transform:uppercase}
+.toolbar button:hover{background:var(--gold);color:var(--bg)}
+@media(max-width:760px){
+  .verse{grid-template-columns:1fr !important;display:block !important;padding:12px 14px;margin:8px 0;border:1px solid var(--line);background:var(--bg2);width:100% !important}
+  .verse .num{display:inline-block;background:rgba(0,0,0,0.5);padding:2px 8px;margin-bottom:8px;width:auto;text-align:left;font-size:11px;border:1px solid var(--gold-dim);border-radius:2px;font-family:'Courier New',monospace}
+  .verse .csl{font-size:1.1rem;line-height:1.7;padding:10px 12px;border-left:3px solid var(--gold-dim);margin:6px 0;background:rgba(201,162,39,0.04);font-style:italic;width:auto !important;display:block}
+  .verse .ru{font-size:.95rem;line-height:1.6;padding:10px 12px;border-left:3px solid var(--red);background:rgba(200,16,46,0.04);margin:6px 0;width:auto !important;display:block}
+  .hos-h1{font-size:1.2rem;letter-spacing:.05em;line-height:1.3}
+  .hos-sub{font-size:12px}
+  main{padding:0 8px}
+}
+</style>
+</head>
+<body>
+<header class="hos">
+<div class="hos-strip"><span class="l">ARCHIVUM HAERETICUM — CORPUS DIVINUS</span><span class="r">Q5.1 — MOLITVY VOLKHOV</span></div>
+<div class="hos-body">
+<h1 class="hos-h1"><span class="q">Q5.1</span>Молитва Велесу · Славянские молитвы</h1>
+<div class="hos-sub">Велес — бог подземного мира, мудрости, магии, скота и богатства. Покровитель волхвов и кудесников.</div>
+</div>
+<div class="stamps">
+<span class="fid">◆ FIDELIS</span>
+<span class="cre">✚ MYSTICA</span>
+<span class="dam">✠ SLAVICA</span>
+</div>
+</header>
+<nav class="main">
+<a href="index.html">◀ СЛАВЯНСКИЕ МОЛИТВЫ</a>
+</nav>
+<main>
+<div class="toolbar">
+<button onclick="toggleOrig()">☀ ОРИГИНАЛ</button>
+<button onclick="toggleRu()">☾ ПЕРЕВОД</button>
+<button onclick="resetView()">◉ ОБА</button>
+</div>
+<div class="note">
+<b>МОЛИТВА ВЕЛЕСУ</b> — обращение к Велесу (Волосу) — богу мудрости, подземного царства (Нави), скота и богатства. Велес — покровитель волхвов, кудесников, сказителей и певцов (Баянов). В этой молитве мы просим мудрости, защиты от зла и сохранения стад. <b>Стихийный параллель:</b> Велесова книга (дощечки 4, 6, 8, 16), берестяные грамоты № 605, 724.
+</div>
+<div class="verse">
+<div class="num">1</div>
+<div class="csl">Велесе, Боже нашъ, Иже еси въ Нави и въ Прави! Ты еси стражь мудрости, ты еси пастырь стадъ нашихъ, ты еси хранитель душъ нашихъ посмертіи.</div>
+<div class="ru">Велес, Боже наш, сущий в Нави и в Прави! Ты еси страж мудрости, ты еси пастырь стад наших, ты еси хранитель душ наших после смерти.</div>
+</div>
+<div class="verse">
+<div class="num">2</div>
+<div class="csl">Молимся Тебѣ, да даси намъ мудрость, да отверзеши очи сердецъ нашихъ, да явиши намъ путь истины.</div>
+<div class="ru">Молимся Тебе, да дашь нам мудрость, да откроешь очи сердец наших, да явишь нам путь истины.</div>
+</div>
+<div class="verse">
+<div class="num">3</div>
+<div class="csl">Яко Ты еси Богъ боговъ, Ты еси Вѣщь, Ты еси Слово, Ты еси Мудрость, Ты еси Пѣсня, Ты еси Праотцевъ нашихъ Родъ.</div>
+<div class="ru">Ибо Ты еси Бог богов, Ты еси Вещь, Ты еси Слово, Ты еси Мудрость, Ты еси Песня, Ты еси Праотцев наших Род.</div>
+</div>
+<div class="verse">
+<div class="num">4</div>
+<div class="csl">Слава Тебѣ, Велесе, державный! Слава Тебѣ, скотий боже! Слава Тебѣ, преисподнихъ владыко! Ныне и присно и во веки вековъ. Аминь.</div>
+<div class="ru">Слава Тебе, Велес, державный! Слава Тебе, скотий боже! Слава Тебе, преисподних владыка! Ныне и всегда и во веки веков. Аминь.</div>
+</div>
+<div class="verse">
+<div class="num">5</div>
+<div class="csl">Огнь Сварожь, Сварожичи! Даждьбогъ, Семарглъ, Огнь! Зажгите сердца наша верою правого, зажгите души наша любовию к Роду нашему.</div>
+<div class="ru">Огонь Сварога, Сварожичи! Даждьбог, Семаргл, Огонь! Зажгите сердца наши верою правой, зажгите души наши любовью к Роду нашему.</div>
+</div>
+</main>
+<footer>ARCHIVUM HAERETICUM · Q5.1 · МОЛИТВЫ ВОЛХВОВ · Велес · источник: Веда славян, Велесова книга</footer>
+<script>
+function toggleOrig(){document.querySelectorAll('.verse .csl').forEach(e=>e.style.display='');document.querySelectorAll('.verse .ru').forEach(e=>e.style.display='none')}
+function toggleRu(){document.querySelectorAll('.verse .csl').forEach(e=>e.style.display='none');document.querySelectorAll('.verse .ru').forEach(e=>e.style.display='')}
+function resetView(){document.querySelectorAll('.verse .csl,.verse .ru').forEach(e=>e.style.display='')}
+</script>
+</body></html>
