@@ -134,17 +134,21 @@ footer .red{color:var(--red)} footer .gold{color:var(--gold)}
   .hos-h1{font-size:1.2rem;letter-spacing:.05em;line-height:1.3}
 }
 
-.eg{grid-column:2;padding:10px 12px;font-size:1rem;line-height:1.7;color:var(--orig);background:rgba(201,162,39,0.025);border-right:1px solid var(--gold-dim);border-left:3px solid var(--gold-dim);font-style:italic;direction:ltr;font-family:"SBL Egyptian","Noto Sans Egyptian Hieroglyphs","Times New Roman",serif}
 .toolbar button,.toolbar a.btn-link{display:inline-flex;align-items:center;justify-content:center;height:30px;padding:0 14px;background:transparent;border:1px solid var(--gold-dim);color:var(--gold);font-size:10px;letter-spacing:1.5px;cursor:pointer;font-family:inherit;text-transform:uppercase;text-decoration:none;transition:all 0.15s;box-sizing:border-box;white-space:nowrap;margin:0;text-align:center}
 .toolbar button:hover,.toolbar a.btn-link:hover{background:var(--gold);color:var(--bg)}
 .toolbar-row{display:flex;justify-content:center;align-items:center;gap:6px;flex-wrap:wrap;margin:0 0 5px}
 .toolbar-row:last-child{margin-bottom:0}
 .toolbar-row.half button,.toolbar-row.half a.btn-link{flex:1 1 calc(50% - 3px);min-width:120px;max-width:calc(50% - 3px)}
 .toolbar-row.full a.btn-link{flex:1 1 100%;min-width:200px;max-width:340px}
-.spell-info{background:rgba(201,162,39,0.05);padding:10px 16px;margin:14px 0 6px;border-left:3px solid var(--gold);font-family:Georgia,serif}
-.spell-info .qbadge{color:var(--gold-bright);font-size:11px;letter-spacing:1.5px;margin-right:10px;display:inline-block;border:1px solid var(--gold-dim);padding:2px 7px;font-family:'Courier New',monospace}
-.spell-info .title{color:var(--ink);font-size:14px;font-weight:bold}
-.spell-info .ctx{color:var(--ink-dim);font-size:12px;font-style:italic;margin-top:4px;display:block}
+/* Скрываю default browser marker details */
+details>summary{list-style:none}
+details>summary::-webkit-details-marker{display:none}
+details>summary::marker{display:none}
+/* Кастомный marker */
+details>summary::before{content:"▶";color:var(--red);font-size:14px;margin-right:8px;display:inline-block;transition:transform 0.2s}
+details[open]>summary::before{content:"▼";color:var(--red)}
+.eg{grid-column:2;padding:10px 12px;font-size:1rem;line-height:1.7;color:var(--orig);background:rgba(201,162,39,0.025);border-right:1px solid var(--gold-dim);border-left:3px solid var(--gold-dim);font-style:italic;direction:ltr;font-family:"SBL Egyptian","Noto Sans Egyptian Hieroglyphs","Times New Roman",serif}
+.spell-context{padding:8px 14px;font-size:12px;line-height:1.5;color:var(--ink-dim);font-style:italic;background:rgba(201,162,39,0.03);border-left:3px solid var(--gold-dim);margin:0 0 4px}
 </style>
 </head>
 <body>
@@ -176,17 +180,12 @@ footer .red{color:var(--red)} footer .gold{color:var(--gold)}
 <div class="note">
 <p><b>УНАС · UNAS</b></p>
 <p>Саккара, Египет · 228 заклинаний · ~2345 до н.э. · 1-ая пирамида с Текстами Пирамид</p>
-<p><b>Формат:</b> египтологическая транслитерация слева, русский перевод справа. Каждая строка заклинания — отдельный <b>verse</b> с номером строки (как в Q25 Энума Элиш).</p>
 </div>
 
 <details class="corpus spell" open>
 <summary><div class="left"><span class="qbadge">◆ PT 213</span>Изречение для восхождения на небо</div><div class="count">заклинание №213</div></summary>
 <div class="body">
-<div class="spell-info">
-<span class="qbadge">PT 213</span>
-<span class="title">Изречение для восхождения на небо</span>
-<span class="ctx">Открывает цикл заклинаний. Унас отождествляется с Осирисом и должен вознестись на небо как звезда.</span>
-</div>
+<div class="spell-context">Открывает цикл заклинаний. Унас отождествляется с Осирисом и должен вознестись на небо как звезда.</div>
 <div class="verse">
 <div class="num">1</div>
 <div class="eg">wsjr wnn-nfr mꜣꜥ-ḫrw r pt m rn=k pn nn-rnp.t</div>
@@ -208,11 +207,7 @@ footer .red{color:var(--red)} footer .gold{color:var(--gold)}
 <details class="corpus spell" open>
 <summary><div class="left"><span class="qbadge">◆ PT 260</span>Изречение для отверзания рта</div><div class="count">заклинание №260</div></summary>
 <div class="body">
-<div class="spell-info">
-<span class="qbadge">PT 260</span>
-<span class="title">Изречение для отверзания рта</span>
-<span class="ctx">Ритуал «отверзания уст» — фараон оживает в загробном мире и обретает способность говорить, есть, дышать.</span>
-</div>
+<div class="spell-context">Ритуал «отверзания уст» — фараон оживает в загробном мире и обретает способность говорить, есть, дышать.</div>
 <div class="verse">
 <div class="num">1</div>
 <div class="eg">wn sꜣ r snw=k wsjr wnn-nfr</div>
@@ -234,11 +229,7 @@ footer .red{color:var(--red)} footer .gold{color:var(--gold)}
 <details class="corpus spell" open>
 <summary><div class="left"><span class="qbadge">◆ PT 261</span>Изречение об отнятии сердца</div><div class="count">заклинание №261</div></summary>
 <div class="body">
-<div class="spell-info">
-<span class="qbadge">PT 261</span>
-<span class="title">Изречение об отнятии сердца</span>
-<span class="ctx">Сердце — вместилище души. В загробном суде взвешивается сердце на весах Маат.</span>
-</div>
+<div class="spell-context">Сердце — вместилище души. В загробном суде взвешивается сердце на весах Маат.</div>
 <div class="verse">
 <div class="num">1</div>
 <div class="eg">twꜣ ib n wsjr wnn-nfr nṯr-ꜥꜣ</div>
@@ -260,11 +251,7 @@ footer .red{color:var(--red)} footer .gold{color:var(--gold)}
 <details class="corpus spell" open>
 <summary><div class="left"><span class="qbadge">◆ PT 302</span>Изречение для нисхождения в Дуат</div><div class="count">заклинание №302</div></summary>
 <div class="body">
-<div class="spell-info">
-<span class="qbadge">PT 302</span>
-<span class="title">Изречение для нисхождения в Дуат</span>
-<span class="ctx">Дуат — подземный загробный мир, через который солнце проходит ночью.</span>
-</div>
+<div class="spell-context">Дуат — подземный загробный мир, через который солнце проходит ночью.</div>
 <div class="verse">
 <div class="num">1</div>
 <div class="eg">ꜣḫ n wsjr wnn-nfr dwꜣ.t rꜥ nb</div>
@@ -286,11 +273,7 @@ footer .red{color:var(--red)} footer .gold{color:var(--gold)}
 <details class="corpus spell" open>
 <summary><div class="left"><span class="qbadge">◆ PT 310</span>Изречение не поглощать фараона</div><div class="count">заклинание №310</div></summary>
 <div class="body">
-<div class="spell-info">
-<span class="qbadge">PT 310</span>
-<span class="title">Изречение не поглощать фараона</span>
-<span class="ctx">Защита от чудовищ загробного мира, пожирающих души.</span>
-</div>
+<div class="spell-context">Защита от чудовищ загробного мира, пожирающих души.</div>
 <div class="verse">
 <div class="num">1</div>
 <div class="eg">nn km(w) n wsjr wnn-nfr m dwꜣ.t</div>
@@ -312,11 +295,7 @@ footer .red{color:var(--red)} footer .gold{color:var(--gold)}
 <details class="corpus spell" open>
 <summary><div class="left"><span class="qbadge">◆ PT 364</span>Изречение о жертвах</div><div class="count">заклинание №364</div></summary>
 <div class="body">
-<div class="spell-info">
-<span class="qbadge">PT 364</span>
-<span class="title">Изречение о жертвах</span>
-<span class="ctx">Список жертвенных даров: хлеб, пиво, быки, гуси, ладан, одежды.</span>
-</div>
+<div class="spell-context">Список жертвенных даров: хлеб, пиво, быки, гуси, ладан, одежды.</div>
 <div class="verse">
 <div class="num">1</div>
 <div class="eg">ḥtp-dỉ-nsw n wsjr wnn-nfr</div>
@@ -338,11 +317,7 @@ footer .red{color:var(--red)} footer .gold{color:var(--gold)}
 <details class="corpus spell" open>
 <summary><div class="left"><span class="qbadge">◆ PT 422</span>Изречение для плавания</div><div class="count">заклинание №422</div></summary>
 <div class="body">
-<div class="spell-info">
-<span class="qbadge">PT 422</span>
-<span class="title">Изречение для плавания</span>
-<span class="ctx">Фараон плывёт по небесному Нилу к полю Иалу (поля тростника).</span>
-</div>
+<div class="spell-context">Фараон плывёт по небесному Нилу к полю Иалу (поля тростника).</div>
 <div class="verse">
 <div class="num">1</div>
 <div class="eg">nꜥi wsjr wnn-nfr m mw mꜣꜥ-ḫrw</div>
@@ -364,11 +339,7 @@ footer .red{color:var(--red)} footer .gold{color:var(--gold)}
 <details class="corpus spell" open>
 <summary><div class="left"><span class="qbadge">◆ PT 464</span>Изречение для носителей сандалий</div><div class="count">заклинание №464</div></summary>
 <div class="body">
-<div class="spell-info">
-<span class="qbadge">PT 464</span>
-<span class="title">Изречение для носителей сандалий</span>
-<span class="ctx">Сандалии символизируют способность ходить по священной земле.</span>
-</div>
+<div class="spell-context">Сандалии символизируют способность ходить по священной земле.</div>
 <div class="verse">
 <div class="num">1</div>
 <div class="eg">twꜣ twꜣ.t n wsjr wnn-nfr</div>
@@ -390,11 +361,7 @@ footer .red{color:var(--red)} footer .gold{color:var(--gold)}
 <details class="corpus spell" open>
 <summary><div class="left"><span class="qbadge">◆ PT 487</span>Изречение для неба</div><div class="count">заклинание №487</div></summary>
 <div class="body">
-<div class="spell-info">
-<span class="qbadge">PT 487</span>
-<span class="title">Изречение для неба</span>
-<span class="ctx">Фараон как солнце поднимается над горизонтом.</span>
-</div>
+<div class="spell-context">Фараон как солнце поднимается над горизонтом.</div>
 <div class="verse">
 <div class="num">1</div>
 <div class="eg">pꜣ tꜣ n wsjr wnn-nfr rꜥ nṯr-ꜥꜣ</div>
@@ -416,11 +383,7 @@ footer .red{color:var(--red)} footer .gold{color:var(--gold)}
 <details class="corpus spell" open>
 <summary><div class="left"><span class="qbadge">◆ PT 510</span>Изречение о силе</div><div class="count">заклинание №510</div></summary>
 <div class="body">
-<div class="spell-info">
-<span class="qbadge">PT 510</span>
-<span class="title">Изречение о силе</span>
-<span class="ctx">Фараон обретает божественную силу после воскресения.</span>
-</div>
+<div class="spell-context">Фараон обретает божественную силу после воскресения.</div>
 <div class="verse">
 <div class="num">1</div>
 <div class="eg">sḫm nb n wsjr wnn-nfr</div>
@@ -442,11 +405,7 @@ footer .red{color:var(--red)} footer .gold{color:var(--gold)}
 <details class="corpus spell" open>
 <summary><div class="left"><span class="qbadge">◆ PT 534</span>Изречение об Орионе</div><div class="count">заклинание №534</div></summary>
 <div class="body">
-<div class="spell-info">
-<span class="qbadge">PT 534</span>
-<span class="title">Изречение об Орионе</span>
-<span class="ctx">Орион — священное созвездие, где живёт душa Осириса. Фараон присоединяется к нему.</span>
-</div>
+<div class="spell-context">Орион — священное созвездие, где живёт душa Осириса. Фараон присоединяется к нему.</div>
 <div class="verse">
 <div class="num">1</div>
 <div class="eg">sꜣḥ wsjr wnn-nfr m sꜣḥ</div>
@@ -468,11 +427,7 @@ footer .red{color:var(--red)} footer .gold{color:var(--gold)}
 <details class="corpus spell" open>
 <summary><div class="left"><span class="qbadge">◆ PT 539</span>Изречение об Утренней звезде</div><div class="count">заклинание №539</div></summary>
 <div class="body">
-<div class="spell-info">
-<span class="qbadge">PT 539</span>
-<span class="title">Изречение об Утренней звезде</span>
-<span class="ctx">Утренняя звезда (Сириус) — предвестница восхода солнца. Символ воскресения.</span>
-</div>
+<div class="spell-context">Утренняя звезда (Сириус) — предвестница восхода солнца. Символ воскресения.</div>
 <div class="verse">
 <div class="num">1</div>
 <div class="eg">sbꜣ wsjr wnn-nfr m sbꜣw</div>
@@ -494,11 +449,7 @@ footer .red{color:var(--red)} footer .gold{color:var(--gold)}
 <details class="corpus spell" open>
 <summary><div class="left"><span class="qbadge">◆ PT 556</span>Изречение о «Поле тростника»</div><div class="count">заклинание №556</div></summary>
 <div class="body">
-<div class="spell-info">
-<span class="qbadge">PT 556</span>
-<span class="title">Изречение о «Поле тростника»</span>
-<span class="ctx">Иалу — загробный рай, поля вечного изобилия.</span>
-</div>
+<div class="spell-context">Иалу — загробный рай, поля вечного изобилия.</div>
 <div class="verse">
 <div class="num">1</div>
 <div class="eg">sḫt-ꜥrw n wsjr wnn-nfr</div>
@@ -520,11 +471,7 @@ footer .red{color:var(--red)} footer .gold{color:var(--gold)}
 <details class="corpus spell" open>
 <summary><div class="left"><span class="qbadge">◆ PT 571</span>Изречение для ночного плавания</div><div class="count">заклинание №571</div></summary>
 <div class="body">
-<div class="spell-info">
-<span class="qbadge">PT 571</span>
-<span class="title">Изречение для ночного плавания</span>
-<span class="ctx">Фараон следует за солнечной баркой через 12 часов ночи.</span>
-</div>
+<div class="spell-context">Фараон следует за солнечной баркой через 12 часов ночи.</div>
 <div class="verse">
 <div class="num">1</div>
 <div class="eg">nwi wsjr wnn-nfr m grḥ</div>
@@ -546,11 +493,7 @@ footer .red{color:var(--red)} footer .gold{color:var(--gold)}
 <details class="corpus spell" open>
 <summary><div class="left"><span class="qbadge">◆ PT 577</span>Изречение для бодрствования</div><div class="count">заклинание №577</div></summary>
 <div class="body">
-<div class="spell-info">
-<span class="qbadge">PT 577</span>
-<span class="title">Изречение для бодрствования</span>
-<span class="ctx">Фараон должен бодрствовать в загробном мире, чтобы возродиться.</span>
-</div>
+<div class="spell-context">Фараон должен бодрствовать в загробном мире, чтобы возродиться.</div>
 <div class="verse">
 <div class="num">1</div>
 <div class="eg">nwn n wsjr wnn-nfr m dwꜣ.t</div>
@@ -572,11 +515,7 @@ footer .red{color:var(--red)} footer .gold{color:var(--gold)}
 <details class="corpus spell" open>
 <summary><div class="left"><span class="qbadge">◆ PT 600</span>Изречение о вознесении</div><div class="count">заклинание №600</div></summary>
 <div class="body">
-<div class="spell-info">
-<span class="qbadge">PT 600</span>
-<span class="title">Изречение о вознесении</span>
-<span class="ctx">Главное заклинание — фараон поднимается к звёздам.</span>
-</div>
+<div class="spell-context">Главное заклинание — фараон поднимается к звёздам.</div>
 <div class="verse">
 <div class="num">1</div>
 <div class="eg">qꜣi wsjr wnn-nfr r pt</div>
@@ -598,11 +537,7 @@ footer .red{color:var(--red)} footer .gold{color:var(--gold)}
 <details class="corpus spell" open>
 <summary><div class="left"><span class="qbadge">◆ PT 665</span>Изречение для урея</div><div class="count">заклинание №665</div></summary>
 <div class="body">
-<div class="spell-info">
-<span class="qbadge">PT 665</span>
-<span class="title">Изречение для урея</span>
-<span class="ctx">Урей — кобра на лбу богов, символ власти.</span>
-</div>
+<div class="spell-context">Урей — кобра на лбу богов, символ власти.</div>
 <div class="verse">
 <div class="num">1</div>
 <div class="eg">mꜣꜥ-ḫrw n wsjr wnn-nfr r ꜥr.t</div>
@@ -624,11 +559,7 @@ footer .red{color:var(--red)} footer .gold{color:var(--gold)}
 <details class="corpus spell" open>
 <summary><div class="left"><span class="qbadge">◆ PT 688</span>Изречение для Геба</div><div class="count">заклинание №688</div></summary>
 <div class="body">
-<div class="spell-info">
-<span class="qbadge">PT 688</span>
-<span class="title">Изречение для Геба</span>
-<span class="ctx">Хнум — бог, создающий людей на гончарном круге.</span>
-</div>
+<div class="spell-context">Хнум — бог, создающий людей на гончарном круге.</div>
 <div class="verse">
 <div class="num">1</div>
 <div class="eg">ms.n ḫnm.t gs.wy n wsjr wnn-nfr</div>
@@ -650,11 +581,7 @@ footer .red{color:var(--red)} footer .gold{color:var(--gold)}
 <details class="corpus spell" open>
 <summary><div class="left"><span class="qbadge">◆ PT 723</span>Изречение о Сопд</div><div class="count">заклинание №723</div></summary>
 <div class="body">
-<div class="spell-info">
-<span class="qbadge">PT 723</span>
-<span class="title">Изречение о Сопд</span>
-<span class="ctx">Сириус — звезда Исиды, жены Осириса.</span>
-</div>
+<div class="spell-context">Сириус — звезда Исиды, жены Осириса.</div>
 <div class="verse">
 <div class="num">1</div>
 <div class="eg">sptd n wsjr wnn-nfr</div>
