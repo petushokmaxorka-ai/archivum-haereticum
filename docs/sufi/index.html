@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>SUFIJSKAYA POEZIYA — تصوف</title>
+<style>
+:root{--bg:#0a0a0c;--bg2:#0d0d12;--panel:#13131a;--line:#2a2a33;--red:#c8102e;--red-dark:#8a0a1f;--gold:#c9a227;--gold-bright:#e8b84a;--gold-dim:#8a7119;--ink:#e8e2d5;--ink-dim:#9a937f;--orig:#f2ead6;--accent:#d49a3a;--grid:#1d1d24}
+*{box-sizing:border-box;margin:0;padding:0}body{background:var(--bg);color:var(--ink);font-family:Georgia,'Times New Roman',serif;line-height:1.55}
+a{color:var(--gold);text-decoration:none}a:hover{color:var(--gold-bright);text-decoration:underline}
+header.hos{background:linear-gradient(180deg,var(--red-dark) 0%,#1a0007 30%,var(--bg) 100%);border-bottom:2px solid var(--red);padding:0;position:relative}
+header.hos::before{content:"";position:absolute;left:0;top:0;bottom:0;width:6px;background:var(--red)}
+.hos-strip{display:flex;justify-content:space-between;align-items:center;padding:6px 14px;background:rgba(0,0,0,0.5);border-bottom:1px solid var(--red-dark);font-family:'Courier New',monospace;font-size:10px;letter-spacing:2px;color:var(--ink-dim);text-transform:uppercase}
+.hos-strip .l{color:var(--gold)} .hos-strip .r{color:var(--red);font-weight:bold}
+.hos-body{padding:18px 22px 14px}
+.hos-h1{font-size:1.5rem;letter-spacing:.12em;color:var(--orig);font-weight:normal;margin-bottom:4px;line-height:1.2}
+.hos-h1 .q{color:var(--red);font-family:'Courier New',monospace;font-size:.7em;vertical-align:super;margin-right:6px;padding:3px 7px;background:rgba(200,16,46,0.15);border:1px solid var(--red-dark);letter-spacing:1px}
+.hos-h1 .sig{font-size:.55em;color:var(--gold);font-family:'Courier New',monospace;letter-spacing:2px;margin-left:10px;padding:3px 8px;border:1px solid var(--gold-dim);vertical-align:middle}
+.hos-sub{color:var(--ink-dim);font-size:13px;font-style:italic}
+.stamps{padding:7px 16px;background:var(--bg2);border-bottom:1px solid var(--line);text-align:center;font-family:'Courier New',monospace}
+.stamps span{display:inline-block;border:1px solid var(--gold-dim);color:var(--gold);font-size:9px;letter-spacing:2px;padding:2px 7px;margin:0 2px;text-transform:uppercase}
+.stamps span.fid{color:var(--gold-bright);border-color:var(--gold);background:rgba(201,162,39,0.05)}
+.stamps span.dam{color:var(--red);border-color:var(--red-dark);background:rgba(200,16,46,0.05)}
+.stamps span.cre{color:var(--accent);border-color:var(--accent);background:rgba(212,154,58,0.05)}
+nav.main{padding:8px 18px;background:var(--panel);border-bottom:1px solid var(--line);font-size:12px;text-align:center}
+nav.main a{color:var(--gold);margin:0 6px;letter-spacing:1px;padding:3px 6px}
+.toolbar{display:flex;justify-content:center;gap:6px;flex-wrap:wrap;margin:14px 0 8px;padding:8px;background:var(--panel);border:1px solid var(--line);font-family:'Courier New',monospace}
+.toolbar button{background:transparent;border:1px solid var(--gold-dim);color:var(--gold);padding:5px 11px;font-size:10px;letter-spacing:1px;cursor:pointer;font-family:inherit;text-transform:uppercase}
+.toolbar button:hover{background:var(--gold);color:var(--bg)}
+.meta{color:var(--ink-dim);font-size:11px;font-style:italic;padding:6px 16px;text-align:center;font-family:'Courier New',monospace;letter-spacing:1px}
+.meta b{color:var(--gold);font-style:normal;font-family:Georgia,serif}
+.chap{background:linear-gradient(90deg,var(--red-dark),transparent);color:var(--gold-bright);font-size:.85rem;letter-spacing:.2em;padding:9px 16px;border-bottom:1px solid var(--red-dark);border-top:1px solid var(--red-dark);font-family:'Courier New',monospace;text-transform:uppercase;margin-top:12px}
+main{max-width:1300px;margin:0 auto;padding:0 12px 40px}
+.row{display:grid;grid-template-columns:3rem 1fr 1.1fr;border-bottom:1px solid var(--grid);align-items:start;transition:background 0.15s}
+.row:hover{background:#15110b}
+.num{grid-column:1;color:var(--gold);font-size:12px;padding:10px 4px;text-align:right;font-family:'Courier New',monospace;font-weight:bold;align-self:start}
+.orig,.ar,.gr,.he,.grc,.sk,.dev,.av,.zh,.sa{grid-column:2;padding:10px 12px;font-size:1rem;line-height:1.7;color:var(--orig);background:rgba(201,162,39,0.025);border-right:1px solid var(--gold-dim);border-left:3px solid var(--gold-dim);font-style:italic}
+.ar{direction:rtl;text-align:right;font-family:'Amiri','Scheherazade New','Traditional Arabic',serif;font-size:1.25rem;line-height:1.85}
+.gr,.grc{direction:ltr;font-family:'SBL Greek','Palatino Linotype',Georgia,serif}
+.he{direction:rtl;text-align:right;font-family:'SBL Hebrew','Times New Roman',serif;font-size:1.1rem}
+.sk,.dev{direction:ltr;font-family:'Noto Sans Devanagari','Sanskrit Text',serif;font-size:1.05rem}
+.zh{font-family:'Noto Serif CJK SC','SimSun',serif}
+.ru,.rus{grid-column:3;padding:10px 12px;font-size:.95rem;line-height:1.65;text-align:justify;color:var(--ink)}
+.bismillah{text-align:center;padding:1.5rem 1rem;font-family:'Amiri','Scheherazade New','Traditional Arabic',serif;font-size:1.8rem;color:var(--gold);direction:rtl;background:linear-gradient(180deg,#1a1410,#0a0a0c);border-bottom:1px solid var(--red-dark);letter-spacing:0;margin:14px 16px;border:1px solid var(--red-dark)}
+.bismillah .label{display:block;font-family:'Courier New',monospace;font-size:.7rem;letter-spacing:.25em;color:var(--ink-dim);text-transform:uppercase;direction:ltr;margin-bottom:8px}
+footer{padding:18px;text-align:center;color:var(--ink-dim);font-size:10px;border-top:1px solid var(--line);font-family:'Courier New',monospace;letter-spacing:2px;background:var(--bg2)}
+footer .red{color:var(--red)} footer .gold{color:var(--gold)}
+@media(max-width:760px){
+  .hos-h1{font-size:1.2rem}
+  .row{grid-template-columns:2rem 1fr 1.1fr}
+  .num{font-size:.7rem;padding:.5rem .3rem}
+  .ar{font-size:1.1rem;line-height:1.7;padding:.5rem .4rem}
+  .ru{font-size:.85rem;line-height:1.4;padding:.5rem .4rem}
+}
+
+.idx-group{margin:18px 24px}
+.idx-group h2{color:var(--gold);font-size:16px;letter-spacing:3px;border-bottom:1px solid var(--line);padding-bottom:6px;font-weight:normal}
+.idx-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(320px,1fr));gap:8px;margin-top:10px}
+.idx-card{border:1px solid var(--line);background:var(--panel);padding:12px 16px;display:block}
+.idx-card:hover{border-color:var(--gold-dim);text-decoration:none}
+.idx-card .t{color:var(--gold);font-size:15px;font-weight:bold}
+.idx-card .s{color:var(--ink-dim);font-size:12px;margin-top:4px;line-height:1.5}
+</style>
+</head>
+<body>
+<header class="hos">
+<div class="hos-strip"><span class="l">ARCHIVUM HAERETICUM — CORPUS DIVINUS</span><span class="r">Q16 — SUFIZM</span></div>
+<div class="hos-body">
+<h1 class="hos-h1"><span class="q">Q16</span>SUFIJSKAYA POEZIYA — تصوف</h1>
+<div class="hos-sub">Misticheskaya tradiciya islama, Rumi (XIII v.) i Khafiz (XIV v.), 40 stikhov, persidskij, russkij</div>
+</div>
+<div class="stamps">
+<span class="fid">FIDELIS</span>
+<span class="cre">OSNOVA</span>
+<span class="dam">MYSTICA</span>
+</div>
+</header>
+
+<nav class="main">
+<a href="../index.html">CORPUS DIVINUS</a>
+</nav>
+
+<main>
+<div class="toolbar">
+<button onclick="toggleAll(true)">RAZVERNUT</button>
+<button onclick="toggleAll(false)">SVERNUT</button>
+<button onclick="toggleOrig()">ORIGINAL</button>
+<button onclick="toggleRu()">PEREVOD</button>
+<button onclick="resetView()">OBA</button>
+</div>
+
+<div class="note">
+<b>SUFIZM</b> (تصوف, tasavvuf) - mistiko-asketicheskoe techenie v islame, napravlennoe na pryamoe poznaniye Boga cherez vnutrennij opyt. Viznik v VIII-IX vv. v Basre (Irak). Sufii - nasledniki proroka Mukhammada v ego vnutrennej zhizni, kak Koran - naslednik v ego vneshnej zhizni. Glavnye temy: <b>fana</b> (rastvorenie ego v Boge), <b>baka</b> (prebyvanie v Boge), <b>zukr</b> (pominanie), <b>ishk</b> (misticheskaya lyubov), <b>shatkh</b> (paradoksalnoe vyskazyvanie ekstaza). Glavnye predstaviteli v persidskoj poezii: <b>Rumi</b> (1207-1273, Konya) i <b>Khafiz</b> (1315-1390, Shiraz). V arabskoj proze: <b>Ibn Arabi</b> (1165-1240, Damask) i <b>al-Gazali</b> (1058-1111, Bagdad). Sufizm - eto vnutrennij islam, v otlichie ot vneshnego shariata. Sufizm i Bardo Tyodol (Q15) imeyut odni i te zhe korni - vedicheskuyu/indo-iranskuyu mistiku (cherez Ibn Arabi i cherez tibetskij buddizm).
+</div>
+
+<div class="idx-group">
+<h2>RUMI — مولانا جلال الدین محمد بلخی — KONYA (1207-1273)</h2>
+<div class="idx-grid">
+<a class="idx-card" href="masnavi.html">
+<div class="t">Masnavi-yi Manavi - مثنوی معنوی</div>
+<div class="s">Dukhovnaya poema, 6 knig (daftarov), okolo 25000 beitov, XIII vek, persidskij, russkij (Shaft 1910), 20 stikhov otbrano iz Knigi I</div>
+</a>
+<a class="idx-card" href="rumi-ghazals.html">
+<div class="t">Divan-e Shams-e Tabrizi - دیوان شمس</div>
+<div class="s">Gazeli, okolo 40000 beitov, XIII vek, persidskij, russkij (Virkevich 1910), 10 stikhov</div>
+</a>
+</div>
+</div>
+
+<div class="idx-group">
+<h2>KHAFIZ — حافظ شیرازی — SHIRAZ (1315-1390)</h2>
+<div class="idx-grid">
+<a class="idx-card" href="hafiz.html">
+<div class="t">Divan-e Khafiz - دیوان حافظ</div>
+<div class="s">Gazeli, okolo 5000 beitov, XIV vek, persidskij, russkij (Chalisova 2010), 10 stikhov</div>
+</a>
+</div>
+</div>
+
+<div class="note">
+<b>Svyaz s Bardo Tyodol (Q15):</b> Ya umer kak mineral i stal rasteniem. Ya umer kak rastenie i stal zhivotnym. Ya umer kak zhivotnoe i stal chelovekom. Pochemu zhe ya dolzhen boyatsya stat mertvym? Kogda ya umru kak chelovek, ya stany angelom (Rumi). Tibetskie i sufijskie mistiki govoryat odinakovo: smert - eto transformaciya, a ne konec. Trostnik oplakivaet razluku s trostnikovymi zaroslyami (Rumi, Masnavi I.1) - vnemi uzhasu bytiya, tebe, kak v zvone tinklin-tinklin, protyazhno my vyvodim ton (Bardo Tyodol).
+</div>
+</main>
+
+<footer>
+ARCHIVUM HAERETICUM — Q16 — SUFI
+</footer>
+
+<script>
+function toggleAll(open){
+  document.querySelectorAll('details').forEach(d=>d.open=open);
+}
+function toggleOrig(){
+  document.querySelectorAll('.ru').forEach(e=>e.style.display='none');
+  document.querySelectorAll('.fa').forEach(e=>e.style.display='');
+}
+function toggleRu(){
+  document.querySelectorAll('.fa').forEach(e=>e.style.display='none');
+  document.querySelectorAll('.ru').forEach(e=>e.style.display='');
+}
+function resetView(){
+  document.querySelectorAll('.fa,.ru').forEach(e=>e.style.display='');
+}
+</script>
+</body>
+</html>
