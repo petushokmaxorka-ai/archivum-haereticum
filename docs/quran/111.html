@@ -50,10 +50,23 @@ footer .red{color:var(--red)} footer .gold{color:var(--gold)}
   .ar{font-size:1.1rem;line-height:1.7;padding:.5rem .4rem}
   .ru{font-size:.85rem;line-height:1.4;padding:.5rem .4rem}
 }
+
+/* Q20 EGYPTIAN additions */
+.verse .egy{grid-column:1;font-family:'Papyrus','Segoe UI Historic',serif;font-size:1.05rem;line-height:1.8;direction:ltr;text-align:left;color:#e8b84a;background:rgba(232,184,74,0.04);border-right:3px solid var(--gold-dim);padding:12px 14px;font-style:italic}
+.verse .ru{grid-column:2;font-size:0.98rem;line-height:1.75;color:var(--ink);background:rgba(201,162,39,0.025);border-left:1px solid var(--gold-dim);padding:12px 14px}
+.verse .transl-note{grid-column:1/-1;padding:6px 14px;font-size:0.78rem;color:var(--ink-dim);font-style:italic;text-align:right;background:rgba(0,0,0,0.15);border-top:1px solid var(--line)}
+.verse .num,.verse .transl-note{color:var(--gold-bright)}
+
+.verse .av,.verse .sk,.verse .he,.verse .grc,.verse .zh,.verse .sa,.verse .ar,.verse .dev,.verse .en,.verse .gr,.verse .csl,.verse .fa,.verse .ak,.verse .bo,.verse .tib{font-family:'Times New Roman',Georgia,serif;font-size:1.05rem;line-height:1.7;color:var(--orig);background:rgba(201,162,39,0.04);border-right:3px solid var(--gold-dim);padding:12px 14px;direction:ltr;text-align:left;font-style:italic}
+.row .av,.row .sk,.row .he,.row .grc,.row .zh,.row .sa,.row .ar,.row .dev,.row .en,.row .gr,.row .csl,.row .fa,.row .ak,.row .bo,.row .tib{font-family:'Times New Roman',Georgia,serif;font-size:1.05rem;line-height:1.7;color:var(--orig);background:rgba(201,162,39,0.04);padding:10px 12px;direction:ltr;text-align:left}
+.verse{display:grid;grid-template-columns:3.2rem 1fr 1.1fr;border-bottom:1px solid var(--grid);align-items:start;transition:background 0.15s}
+.row{display:grid;grid-template-columns:3.2rem 1fr 1.1fr 1fr;border-bottom:1px solid var(--grid);align-items:start;transition:background 0.15s}
+.num{font-family:'Courier New',monospace;font-size:11px;color:var(--gold);text-align:center;padding:12px 4px;background:rgba(0,0,0,0.3);border-right:1px solid var(--line);font-weight:bold;align-self:start}
+.ru{font-size:.92rem;line-height:1.6;color:var(--ink);padding:10px 12px;background:rgba(255,255,255,0.01);border-left:1px solid var(--line);align-self:start;grid-column:3}
 </style>
 </head><body>
 <header class="hos">
-<div class="hos-strip"><span class="l">ARCHIVUM HAERETICUM · CORPUS DIVINUS · Q1</span><span class="r">◆ SIGILLUM VERITATIS</span></div>
+<div class="hos-strip"><span class="l">ARCHIVUM HAERETICUM — CORPUS DIVINUS</span><span class="r">Q1 — QURAN</span></div>
 <div class="hos-body">
 <h1 class="hos-h1"><span class="q">Q1</span>СУРА 111 · АЛЬ-МАСАД</h1>
 <div class="hos-sub">Пальмовые волокна · 5 аятов · Tanzil Uthmani (араб.) + Крачковский И.Ю. 1963 (рус.) · Мекка/Медина</div>
@@ -61,8 +74,8 @@ footer .red{color:var(--red)} footer .gold{color:var(--gold)}
 </header>
 <div class="stamps">
 <span class="fid">◆ FIDELIS</span>
-<span>◇ SUSPECTUS</span>
-<span class="cre">☪ ИСЛАМ</span>
+<span class="cre">✚ MYSTICA</span>
+<span class="dam">✠ ISLAMICA</span>
 </div>
 <nav class="main">
 <a href="../index.html">◀ CORPUS DIVINUS</a>
@@ -88,18 +101,22 @@ footer .red{color:var(--red)} footer .gold{color:var(--gold)}
 </main>
 <footer>ARCHIVUM HAERETICUM · Q1 · КОРАН · СУРА 111 · Аль-Масад · Пальмовые волокна<br><span class="red">◆</span> SIGILLUM VERITATIS · <span class="gold">DATUM 160.M3</span> · FIDELIS</footer>
 <script>
-function toggleAll(state){
-  document.querySelectorAll('.row').forEach(r=>r.style.display=state?'grid':'none');
+function toggleAll(open){
+  document.querySelectorAll('details').forEach(d=>d.open=open);
+  document.querySelectorAll('.verse,.row').forEach(r=>{r.style.display=open?'grid':'none';});
 }
 function toggleOrig(){
-  document.querySelectorAll('.row').forEach(r=>{r.style.display='grid';const o=r.querySelector('.ar');if(o)o.style.display='block';const t=r.querySelector('.ru');if(t)t.style.display='none';});
+  document.querySelectorAll('.verse,.row').forEach(r=>{r.style.display='grid';});
+  document.querySelectorAll('.verse .ru,.row .ru').forEach(e=>e.style.display='none');
+  document.querySelectorAll('.verse .av,.verse .sk,.verse .he,.verse .grc,.verse .zh,.verse .sa,.verse .ar,.verse .dev,.verse .en,.verse .gr,.verse .egy,.verse .csl,.verse .fa,.verse .ak,.verse .bo,.verse .tib').forEach(e=>e.style.display='');
 }
 function toggleRu(){
-  document.querySelectorAll('.row').forEach(r=>{r.style.display='grid';const o=r.querySelector('.ar');if(o)o.style.display='none';const t=r.querySelector('.ru');if(t)t.style.display='block';});
+  document.querySelectorAll('.verse .ru,.row .ru').forEach(e=>e.style.display='');
+  document.querySelectorAll('.verse .av,.verse .sk,.verse .he,.verse .grc,.verse .zh,.verse .sa,.verse .ar,.verse .dev,.verse .en,.verse .gr,.verse .egy,.verse .csl,.verse .fa,.verse .ak,.verse .bo,.verse .tib').forEach(e=>e.style.display='none');
 }
 function resetView(){
-  document.querySelectorAll('.row').forEach(r=>r.style.display='grid');
-  document.querySelectorAll('.ar,.ru').forEach(c=>c.style.display='');
+  document.querySelectorAll('.verse,.row').forEach(r=>{r.style.display='grid';});
+  document.querySelectorAll('.verse .av,.verse .sk,.verse .he,.verse .grc,.verse .zh,.verse .sa,.verse .ar,.verse .dev,.verse .en,.verse .gr,.verse .egy,.verse .csl,.verse .fa,.verse .ak,.verse .bo,.verse .tib,.verse .ru,.row .ru').forEach(e=>e.style.display='');
 }
 </script>
 </body></html>
