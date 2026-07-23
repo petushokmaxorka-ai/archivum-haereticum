@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>EGYPTIAN BOOK OF THE DEAD — 𓂋𓈖𓆎𓅓𓏏𓊖 — КНИГА МЁРТВЫХ</title>
+<style>
+:root{--bg:#0a0a0c;--bg2:#0d0d12;--panel:#13131a;--line:#2a2a33;--red:#c8102e;--red-dark:#8a0a1f;--gold:#c9a227;--gold-bright:#e8b84a;--gold-dim:#8a7119;--ink:#e8e2d5;--ink-dim:#9a937f;--orig:#f2ead6;--accent:#d49a3a;--grid:#1d1d24}
+*{box-sizing:border-box;margin:0;padding:0}body{background:var(--bg);color:var(--ink);font-family:Georgia,'Times New Roman',serif;line-height:1.55}
+a{color:var(--gold);text-decoration:none}a:hover{color:var(--gold-bright);text-decoration:underline}
+header.hos{background:linear-gradient(180deg,var(--red-dark) 0%,#1a0007 30%,var(--bg) 100%);border-bottom:2px solid var(--red);padding:0;position:relative}
+header.hos::before{content:"";position:absolute;left:0;top:0;bottom:0;width:6px;background:var(--red)}
+.hos-strip{display:flex;justify-content:space-between;align-items:center;padding:6px 14px;background:rgba(0,0,0,0.5);border-bottom:1px solid var(--red-dark);font-family:'Courier New',monospace;font-size:10px;letter-spacing:2px;color:var(--ink-dim);text-transform:uppercase}
+.hos-strip .l{color:var(--gold)} .hos-strip .r{color:var(--red);font-weight:bold}
+.hos-body{padding:18px 22px 14px}
+.hos-h1{font-size:1.5rem;letter-spacing:.12em;color:var(--orig);font-weight:normal;margin-bottom:4px;line-height:1.2}
+.hos-h1 .q{color:var(--red);font-family:'Courier New',monospace;font-size:.7em;vertical-align:super;margin-right:6px;padding:3px 7px;background:rgba(200,16,46,0.15);border:1px solid var(--red-dark);letter-spacing:1px}
+.hos-h1 .sig{font-size:.55em;color:var(--gold);font-family:'Courier New',monospace;letter-spacing:2px;margin-left:10px;padding:3px 8px;border:1px solid var(--gold-dim);vertical-align:middle}
+.hos-sub{color:var(--ink-dim);font-size:13px;font-style:italic}
+.stamps{padding:7px 16px;background:var(--bg2);border-bottom:1px solid var(--line);text-align:center;font-family:'Courier New',monospace}
+.stamps span{display:inline-block;border:1px solid var(--gold-dim);color:var(--gold);font-size:9px;letter-spacing:2px;padding:2px 7px;margin:0 2px;text-transform:uppercase}
+.stamps span.fid{color:var(--gold-bright);border-color:var(--gold);background:rgba(201,162,39,0.05)}
+.stamps span.dam{color:var(--red);border-color:var(--red-dark);background:rgba(200,16,46,0.05)}
+.stamps span.cre{color:var(--accent);border-color:var(--accent);background:rgba(212,154,58,0.05)}
+nav.main{padding:8px 18px;background:var(--panel);border-bottom:1px solid var(--line);font-size:12px;text-align:center}
+nav.main a{color:var(--gold);margin:0 6px;letter-spacing:1px;padding:3px 6px}
+.toolbar{display:flex;justify-content:center;gap:6px;flex-wrap:wrap;margin:14px 0 8px;padding:8px;background:var(--panel);border:1px solid var(--line);font-family:'Courier New',monospace}
+.toolbar button{background:transparent;border:1px solid var(--gold-dim);color:var(--gold);padding:5px 11px;font-size:10px;letter-spacing:1px;cursor:pointer;font-family:inherit;text-transform:uppercase}
+.toolbar button:hover{background:var(--gold);color:var(--bg)}
+.meta{color:var(--ink-dim);font-size:11px;font-style:italic;padding:6px 16px;text-align:center;font-family:'Courier New',monospace;letter-spacing:1px}
+.meta b{color:var(--gold);font-style:normal;font-family:Georgia,serif}
+.chap{background:linear-gradient(90deg,var(--red-dark),transparent);color:var(--gold-bright);font-size:.85rem;letter-spacing:.2em;padding:9px 16px;border-bottom:1px solid var(--red-dark);border-top:1px solid var(--red-dark);font-family:'Courier New',monospace;text-transform:uppercase;margin-top:12px}
+main{max-width:1300px;margin:0 auto;padding:0 12px 40px}
+.row{display:grid;grid-template-columns:3rem 1fr 1.1fr;border-bottom:1px solid var(--grid);align-items:start;transition:background 0.15s}
+.row:hover{background:#15110b}
+.num{grid-column:1;color:var(--gold);font-size:12px;padding:10px 4px;text-align:right;font-family:'Courier New',monospace;font-weight:bold;align-self:start}
+.orig,.ar,.gr,.he,.grc,.sk,.dev,.av,.zh,.sa{grid-column:2;padding:10px 12px;font-size:1rem;line-height:1.7;color:var(--orig);background:rgba(201,162,39,0.025);border-right:1px solid var(--gold-dim);border-left:3px solid var(--gold-dim);font-style:italic}
+.ar{direction:rtl;text-align:right;font-family:'Amiri','Scheherazade New','Traditional Arabic',serif;font-size:1.25rem;line-height:1.85}
+.gr,.grc{direction:ltr;font-family:'SBL Greek','Palatino Linotype',Georgia,serif}
+.he{direction:rtl;text-align:right;font-family:'SBL Hebrew','Times New Roman',serif;font-size:1.1rem}
+.sk,.dev{direction:ltr;font-family:'Noto Sans Devanagari','Sanskrit Text',serif;font-size:1.05rem}
+.zh{font-family:'Noto Serif CJK SC','SimSun',serif}
+.ru,.rus{grid-column:3;padding:10px 12px;font-size:.95rem;line-height:1.65;text-align:justify;color:var(--ink)}
+.bismillah{text-align:center;padding:1.5rem 1rem;font-family:'Amiri','Scheherazade New','Traditional Arabic',serif;font-size:1.8rem;color:var(--gold);direction:rtl;background:linear-gradient(180deg,#1a1410,#0a0a0c);border-bottom:1px solid var(--red-dark);letter-spacing:0;margin:14px 16px;border:1px solid var(--red-dark)}
+.bismillah .label{display:block;font-family:'Courier New',monospace;font-size:.7rem;letter-spacing:.25em;color:var(--ink-dim);text-transform:uppercase;direction:ltr;margin-bottom:8px}
+footer{padding:18px;text-align:center;color:var(--ink-dim);font-size:10px;border-top:1px solid var(--line);font-family:'Courier New',monospace;letter-spacing:2px;background:var(--bg2)}
+footer .red{color:var(--red)} footer .gold{color:var(--gold)}
+@media(max-width:760px){
+  .hos-h1{font-size:1.2rem}
+  .row{grid-template-columns:2rem 1fr 1.1fr}
+  .num{font-size:.7rem;padding:.5rem .3rem}
+  .ar{font-size:1.1rem;line-height:1.7;padding:.5rem .4rem}
+  .ru{font-size:.85rem;line-height:1.4;padding:.5rem .4rem}
+}
+
+.idx-group{margin:18px 24px}
+.idx-group h2{color:var(--gold);font-size:16px;letter-spacing:3px;border-bottom:1px solid var(--line);padding-bottom:6px;font-weight:normal}
+.idx-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(320px,1fr));gap:8px;margin-top:10px}
+.idx-card{border:1px solid var(--line);background:var(--panel);padding:12px 16px;display:block}
+.idx-card:hover{border-color:var(--gold-dim);text-decoration:none}
+.idx-card .t{color:var(--gold);font-size:15px;font-weight:bold}
+.idx-card .s{color:var(--ink-dim);font-size:12px;margin-top:4px;line-height:1.5}
+</style>
+</head>
+<body>
+<header class="hos">
+<div class="hos-strip"><span class="l">ARCHIVUM HAERETICUM — CORPUS DIVINUS</span><span class="r">Q20 — EGYPTIAN</span></div>
+<div class="hos-body">
+<h1 class="hos-h1"><span class="q">Q20</span>EGYPTIAN BOOK OF THE DEAD — 𓂋𓈖𓆎𓅓𓏏𓊖 — КНИГА МЁРТВЫХ</h1>
+<div class="hos-sub">Drevneegipetskiy religioznyy tekst, 192 zaklinaniya, ok. 3000-100 do n.e., 28 stikhov otbrano, trans-literatsiya (egy) + russkij</div>
+</div>
+<div class="stamps">
+<span class="fid">FIDELIS</span>
+<span class="cre">MYSTICA</span>
+<span class="dam">AEGYPTIACA</span>
+</div>
+</header>
+
+<nav class="main">
+<a href="../index.html">CORPUS DIVINUS</a>
+</nav>
+
+<main>
+<div class="toolbar">
+<button onclick="toggleAll(true)">RAZVERNUT</button>
+<button onclick="toggleAll(false)">SVERNUT</button>
+<button onclick="toggleOrig()">ORIGINAL</button>
+<button onclick="toggleRu()">PEREVOD</button>
+<button onclick="resetView()">OBA</button>
+</div>
+
+<div class="note">
+<b>ДРЕВНЕЕГИПЕТСКАЯ РЕЛИГИЯ</b> (ок. 3000 до н.э. — 100 н.э.) — самая длительная монотеистическая традиция в истории человечества. Главные боги: <b>Ра (𓇳)</b> — Бог-Солнце, творец мира; <b>Осирис (𓁹)</b> — Бог загробного мира, справедливый судья; <b>Исида (𓊨)</b> — Богиня-мать, сестра и жена Осириса; <b>Анубис (𓋹)</b> — Бог бальзамирования; <b>Маат (𓌳𓂖𓏏)</b> — Богиня истины и справедливости; <b>Тот (𓁟)</b> — Бог мудрости и письменности.
+<br><b>Книга Мёртвых</b> — собрание магических формул, которые нужно было знать и произнести/прочитать в загробном мире. Помещалась в гробницу. <b>Главные эпизоды:</b>
+<br>1) <b>Закл. 1</b> — «Говорит Осирис: да пребудут слова мои в твоей устах»
+<br>2) <b>Закл. 17</b> — Гимн Ра (Богу-Солнцу, что правит днём и ночью)
+<br>3) <b>Закл. 23</b> — «Открытие уст» (ритуал возвращения к жизни)
+<br>4) <b>Закл. 30</b> — Сердце-скарабей (защита сердца от свидетельства против тебя)
+<br>5) <b>Закл. 42</b> — 42 судьи Маат
+<br>6) <b>Закл. 125</b> — Взвешивание сердца против пера Маат
+<br>7) <b>Закл. 125B</b> — Отрицательная исповедь (42 отречения)
+<br>8) <b>Закл. 148</b> — Поля Иару (загробный рай)
+<br>9) <b>Закл. 186</b> — Гимн Осирису
+<br>10) <b>Закл. 192</b> — Гимн Ра при закате
+</div>
+
+<div class="idx-group">
+<h2>КНИГА МЁРТВЫХ · 192 ЗАКЛИНАНИЯ · 28 ОТОБРАНО</h2>
+<div class="idx-grid">
+<a class="idx-card" href="book-of-dead.html">
+<div class="t">Kheru-shu-Reqau - Книга Мёртвых</div>
+<div class="s">28 заупокойных заклинаний и гимнов, III тыс. до н.э. - I в. н.э., транслитерация (egy) + русский (Фолта 2005). Боги: Осирис, Ра, Исида, Анубис, Маат, Тот.</div>
+</a>
+</div>
+</div>
+
+<div class="note">
+<b>Связь с Q15 Бардо Тхёдол:</b> Оба корпуса — путеводители в загробный мир. У египтян: 12 часов ночи (амдуат), 42 судьи, взвешивание сердца. У тибетцев: 3 бардо (Чикай, Чёнид, Сидпа), 42 мирных и гневных божества. Общее: душа после смерти проходит через суд и очищение, прежде чем достичь блаженства.
+<br><b>Связь с Q19 Орфизм:</b> Орфизм возник в греческих колониях Египта (Навкратида, VI в. до н.э.). Протогонос (Первозданный) ≈ Атум (древнейший из египетских богов). Метемпсихоз ≈ «Путь Ра».
+<br><b>Связь с Q18 Каббала:</b> Александрия (III в. до н.э. — VI в. н.э.) — точка, где встретились: египетская мифология (Тот = Гермес Трисмегист), греческая философия (Платон, Филон), и иудейская мистика (Сефер Йецира). «Книга Мёртвых» повлияла на «Текст Мудрости» (Sophia), а Sophia — на имя центральной сефиры.
+<br><b>Связь с Q1 Коран:</b> «Книга Мёртвых» — практический мистический текст. Коран — Слово Божье. Оба: «путь прямой» (الصراط المستقيم) и «Путь Ра» (егип.).
+<br><b>Главная мысль:</b> Древний Египет (3000-100 до н.э.) — «мать-цивилизация» для всех средиземноморских мистик. Всё, что потом: греческая мистика, еврейская Каббала, христианское монашество, коптский гностицизм, суфизм — корнями в египетской традиции.
+</div>
+</main>
+
+<footer>
+ARCHIVUM HAERETICUM — Q20 — EGYPTIAN BOOK OF THE DEAD — AEGYPTIA MISTIKA
+</footer>
+
+<script>
+function toggleAll(open){
+  document.querySelectorAll('details').forEach(d=>d.open=open);
+}
+function toggleOrig(){
+  document.querySelectorAll('.ru').forEach(e=>e.style.display='none');
+  document.querySelectorAll('.egy').forEach(e=>e.style.display='');
+}
+function toggleRu(){
+  document.querySelectorAll('.egy').forEach(e=>e.style.display='none');
+  document.querySelectorAll('.ru').forEach(e=>e.style.display='');
+}
+function resetView(){
+  document.querySelectorAll('.egy,.ru').forEach(e=>e.style.display='');
+}
+</script>
+</body>
+</html>

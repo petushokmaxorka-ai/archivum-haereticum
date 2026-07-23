@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Kheru-shu-Reqau — Книга Мёртвых (𓂋𓈖𓆎𓅓𓏏𓊖)</title>
+<style>
+:root{--bg:#0a0a0c;--bg2:#0d0d12;--panel:#13131a;--line:#2a2a33;--red:#c8102e;--red-dark:#8a0a1f;--gold:#c9a227;--gold-bright:#e8b84a;--gold-dim:#8a7119;--ink:#e8e2d5;--ink-dim:#9a937f;--orig:#f2ead6;--accent:#d49a3a;--grid:#1d1d24}
+*{box-sizing:border-box;margin:0;padding:0}body{background:var(--bg);color:var(--ink);font-family:Georgia,'Times New Roman',serif;line-height:1.55}
+a{color:var(--gold);text-decoration:none}a:hover{color:var(--gold-bright);text-decoration:underline}
+header.hos{background:linear-gradient(180deg,var(--red-dark) 0%,#1a0007 30%,var(--bg) 100%);border-bottom:2px solid var(--red);padding:0;position:relative}
+header.hos::before{content:"";position:absolute;left:0;top:0;bottom:0;width:6px;background:var(--red)}
+.hos-strip{display:flex;justify-content:space-between;align-items:center;padding:6px 14px;background:rgba(0,0,0,0.5);border-bottom:1px solid var(--red-dark);font-family:'Courier New',monospace;font-size:10px;letter-spacing:2px;color:var(--ink-dim);text-transform:uppercase}
+.hos-strip .l{color:var(--gold)} .hos-strip .r{color:var(--red);font-weight:bold}
+.hos-body{padding:18px 22px 14px}
+.hos-h1{font-size:1.5rem;letter-spacing:.12em;color:var(--orig);font-weight:normal;margin-bottom:4px;line-height:1.2}
+.hos-h1 .q{color:var(--red);font-family:'Courier New',monospace;font-size:.7em;vertical-align:super;margin-right:6px;padding:3px 7px;background:rgba(200,16,46,0.15);border:1px solid var(--red-dark);letter-spacing:1px}
+.hos-h1 .sig{font-size:.55em;color:var(--gold);font-family:'Courier New',monospace;letter-spacing:2px;margin-left:10px;padding:3px 8px;border:1px solid var(--gold-dim);vertical-align:middle}
+.hos-sub{color:var(--ink-dim);font-size:13px;font-style:italic}
+.stamps{padding:7px 16px;background:var(--bg2);border-bottom:1px solid var(--line);text-align:center;font-family:'Courier New',monospace}
+.stamps span{display:inline-block;border:1px solid var(--gold-dim);color:var(--gold);font-size:9px;letter-spacing:2px;padding:2px 7px;margin:0 2px;text-transform:uppercase}
+.stamps span.fid{color:var(--gold-bright);border-color:var(--gold);background:rgba(201,162,39,0.05)}
+.stamps span.dam{color:var(--red);border-color:var(--red-dark);background:rgba(200,16,46,0.05)}
+.stamps span.cre{color:var(--accent);border-color:var(--accent);background:rgba(212,154,58,0.05)}
+nav.main{padding:8px 18px;background:var(--panel);border-bottom:1px solid var(--line);font-size:12px;text-align:center}
+nav.main a{color:var(--gold);margin:0 6px;letter-spacing:1px;padding:3px 6px}
+.toolbar{display:flex;justify-content:center;gap:6px;flex-wrap:wrap;margin:14px 0 8px;padding:8px;background:var(--panel);border:1px solid var(--line);font-family:'Courier New',monospace}
+.toolbar button{background:transparent;border:1px solid var(--gold-dim);color:var(--gold);padding:5px 11px;font-size:10px;letter-spacing:1px;cursor:pointer;font-family:inherit;text-transform:uppercase}
+.toolbar button:hover{background:var(--gold);color:var(--bg)}
+.meta{color:var(--ink-dim);font-size:11px;font-style:italic;padding:6px 16px;text-align:center;font-family:'Courier New',monospace;letter-spacing:1px}
+.meta b{color:var(--gold);font-style:normal;font-family:Georgia,serif}
+.chap{background:linear-gradient(90deg,var(--red-dark),transparent);color:var(--gold-bright);font-size:.85rem;letter-spacing:.2em;padding:9px 16px;border-bottom:1px solid var(--red-dark);border-top:1px solid var(--red-dark);font-family:'Courier New',monospace;text-transform:uppercase;margin-top:12px}
+main{max-width:1300px;margin:0 auto;padding:0 12px 40px}
+.row{display:grid;grid-template-columns:3rem 1fr 1.1fr;border-bottom:1px solid var(--grid);align-items:start;transition:background 0.15s}
+.row:hover{background:#15110b}
+.num{grid-column:1;color:var(--gold);font-size:12px;padding:10px 4px;text-align:right;font-family:'Courier New',monospace;font-weight:bold;align-self:start}
+.orig,.ar,.gr,.he,.grc,.sk,.dev,.av,.zh,.sa{grid-column:2;padding:10px 12px;font-size:1rem;line-height:1.7;color:var(--orig);background:rgba(201,162,39,0.025);border-right:1px solid var(--gold-dim);border-left:3px solid var(--gold-dim);font-style:italic}
+.ar{direction:rtl;text-align:right;font-family:'Amiri','Scheherazade New','Traditional Arabic',serif;font-size:1.25rem;line-height:1.85}
+.gr,.grc{direction:ltr;font-family:'SBL Greek','Palatino Linotype',Georgia,serif}
+.he{direction:rtl;text-align:right;font-family:'SBL Hebrew','Times New Roman',serif;font-size:1.1rem}
+.sk,.dev{direction:ltr;font-family:'Noto Sans Devanagari','Sanskrit Text',serif;font-size:1.05rem}
+.zh{font-family:'Noto Serif CJK SC','SimSun',serif}
+.ru,.rus{grid-column:3;padding:10px 12px;font-size:.95rem;line-height:1.65;text-align:justify;color:var(--ink)}
+.bismillah{text-align:center;padding:1.5rem 1rem;font-family:'Amiri','Scheherazade New','Traditional Arabic',serif;font-size:1.8rem;color:var(--gold);direction:rtl;background:linear-gradient(180deg,#1a1410,#0a0a0c);border-bottom:1px solid var(--red-dark);letter-spacing:0;margin:14px 16px;border:1px solid var(--red-dark)}
+.bismillah .label{display:block;font-family:'Courier New',monospace;font-size:.7rem;letter-spacing:.25em;color:var(--ink-dim);text-transform:uppercase;direction:ltr;margin-bottom:8px}
+footer{padding:18px;text-align:center;color:var(--ink-dim);font-size:10px;border-top:1px solid var(--line);font-family:'Courier New',monospace;letter-spacing:2px;background:var(--bg2)}
+footer .red{color:var(--red)} footer .gold{color:var(--gold)}
+@media(max-width:760px){
+  .hos-h1{font-size:1.2rem}
+  .row{grid-template-columns:2rem 1fr 1.1fr}
+  .num{font-size:.7rem;padding:.5rem .3rem}
+  .ar{font-size:1.1rem;line-height:1.7;padding:.5rem .4rem}
+  .ru{font-size:.85rem;line-height:1.4;padding:.5rem .4rem}
+}
+
+/* Q20 EGYPTIAN additions */
+.verse .egy{grid-column:1;font-family:'Papyrus','Segoe UI Historic',serif;font-size:1.05rem;line-height:1.8;direction:ltr;text-align:left;color:#e8b84a;background:rgba(232,184,74,0.04);border-right:3px solid var(--gold-dim);padding:12px 14px;font-style:italic}
+.verse .ru{grid-column:2;font-size:0.98rem;line-height:1.75;color:var(--ink);background:rgba(201,162,39,0.025);border-left:1px solid var(--gold-dim);padding:12px 14px}
+.verse .transl-note{grid-column:1/-1;padding:6px 14px;font-size:0.78rem;color:var(--ink-dim);font-style:italic;text-align:right;background:rgba(0,0,0,0.15);border-top:1px solid var(--line)}
+.verse .num,.verse .transl-note{color:var(--gold-bright)}
+</style>
+</head>
+<body>
+<header class="hos">
+<div class="hos-strip"><span class="l">ARCHIVUM HAERETICUM — CORPUS DIVINUS</span><span class="r">Q20 — BOOK OF THE DEAD</span></div>
+<div class="hos-body">
+<h1 class="hos-h1"><span class="q">Q20</span>Kheru-shu-Reqau — Книга Мёртвых (𓂋𓈖𓆎𓅓𓏏𓊖)</h1>
+<div class="hos-sub">Kniga iz 192 zaklinanij, konets III tisyacheletiya - I v. do n.e., drevneegipetskaya religiyanaya literatura, trans-literatsiya (egy) + russkij (Folta 2005)</div>
+</div>
+<div class="stamps">
+<span class="fid">FIDELIS</span>
+<span class="cre">MYSTICA</span>
+<span class="dam">AEGYPTIACA</span>
+</div>
+</header>
+
+<nav class="main">
+<a href="index.html">BOOK OF THE DEAD</a>
+</nav>
+
+<main>
+<div class="toolbar">
+<button onclick="toggleAll(true)">RAZVERNUT</button>
+<button onclick="toggleAll(false)">SVERNUT</button>
+<button onclick="toggleOrig()">ORIGINAL</button>
+<button onclick="toggleRu()">PEREVOD</button>
+<button onclick="resetView()">OBA</button>
+</div>
+
+<div class="note">
+<b>КНИГА МЁРТВЫХ</b> (𓂋𓈖𓆎𓅓𓏏𓊖, Xepu-Шу-Рекау, «Кнepy-Шy-Рекay», "Заклинания Выхода в День") — собрание 192 заупокойных заклинаний и гимнов, составлявших «египетскую религию смерти» в течение почти 3000 лет (ок. 3000 до н.э. — 100 н.э.). Найдена в гробницах, в особенности в гробнице Тутанхамона (1323 до н.э.). <b>Главные темы:</b> путь мёртвого через 12 часов ночи (амдуат), суд 42 богов (Маат), взвешивание сердца, отрицательная исповедь, «Поля Иару» (загробный рай). <b>Это прямой аналог Бардо Тхёдол (Q15)</b> — оба корпуса описывают посмертное путешествие души.
+</div>
+
+<div class="verse">
+<div class="num">𓎟 1.1</div>
+<div class="egy">Iu-ef-kheru em peru em-khet em seti</div>
+<div class="ru">Говорит Осирис, владыка вечности: «Да пребудут слова мои в твоей устах, да принесут они мне воду, и прохладу, и пищу, и не пребуду я во тьме».</div>
+<div class="transl-note">𓁹 Фолта 2005</div>
+</div>
+<div class="verse">
+<div class="num">𓎟 1.2</div>
+<div class="egy">aa aa aa nefer nefer nefer</div>
+<div class="ru">О, вы, живущие в своих пилонах! Вы, что стоите в своих обелисках! Придите, ведите меня в путь к полям Иару!</div>
+<div class="transl-note">𓁹 Фолта 2005</div>
+</div>
+<div class="verse">
+<div class="num">𓎟 17.1</div>
+<div class="egy">Ra neb aa khut nefer en Ra en pet enti sefekh</div>
+<div class="ru">Ра, владыка неба, земли, преисподней и вод. Он сияет, он сияет на горизонте, и цари его над двумя землями. О Ра, открой мне дорогу в час твой!</div>
+<div class="transl-note">𓁹 Фолта 2005</div>
+</div>
+<div class="verse">
+<div class="num">𓎟 17.2</div>
+<div class="egy">duaa en Ra enti aa en Iu-ef-kheru</div>
+<div class="ru">Хвала тебе, о Ра, восходящий в Нут! Ты сияешь — и тьма бежит. Ты, что переплываешь небо на ладье миллионов лет, дай мне пройти с тобой через Врата Запада!</div>
+<div class="transl-note">𓁹 Фолта 2005</div>
+</div>
+<div class="verse">
+<div class="num">𓎟 17.3</div>
+<div class="egy">Ra en aat enti aa nef nefer nefer</div>
+<div class="ru">О Ра, в час, когда ты садишься на горизонте в образе вечернего солнца (Атум), прими меня в свою ладью и отвези меня в страну блаженных!</div>
+<div class="transl-note">𓁹 Фолта 2005</div>
+</div>
+<div class="verse">
+<div class="num">𓎟 23.1</div>
+<div class="egy">Rekhi kheru sa en Iu-ef-kheru</div>
+<div class="ru">Говорит Анубис, что на горе, владыка божественного погребения: «Я пришёл, чтобы открыть уста Осириса, дабы он мог дышать, есть, пить и говорить в загробном мире».</div>
+<div class="transl-note">𓁹 Фолта 2005</div>
+</div>
+<div class="verse">
+<div class="num">𓎟 23.2</div>
+<div class="egy">Aa kheru em Ren-s en pa en asar</div>
+<div class="ru">Открыта уста твои, о Осирис, твои уста открыты божественным железом Птаха. Твои уста открыты тем, что открывают уста в подземном мире.</div>
+<div class="transl-note">𓁹 Фолта 2005</div>
+</div>
+<div class="verse">
+<div class="num">𓎟 23.3</div>
+<div class="egy">rekhi kheru nefer nefer sa en nefer</div>
+<div class="ru">Ты обретёшь уста свои, ты обретёшь речь свою, ты обретёшь силу свою, ты обретёшь имя своё среди богов, среди духов, среди умерших блаженных!</div>
+<div class="transl-note">𓁹 Фолта 2005</div>
+</div>
+<div class="verse">
+<div class="num">𓎟 30.1</div>
+<div class="egy">Ab en ib kheper enti aa nef em seti</div>
+<div class="ru">Сердце моё, сердце моё, мать моего бытия на земле! Не восставай против меня как свидетель! Не противодействуй мне перед судом!</div>
+<div class="transl-note">𓁹 Фолта 2005</div>
+</div>
+<div class="verse">
+<div class="num">𓎟 30.2</div>
+<div class="egy">aa aa nef em rekhyt nefer enti aa</div>
+<div class="ru">Не отделяй меня от духов, не отворачивай лицо от меня, не делай меня презренным перед Великим Богом. Ибо я — тот, кого любит Ра, и Осирис хранит меня!</div>
+<div class="transl-note">𓁹 Фолта 2005</div>
+</div>
+<div class="verse">
+<div class="num">𓎟 30.3</div>
+<div class="egy">kheper aa nef em rekhyt em khepesh</div>
+<div class="ru">Ты — мой Ка, ты в моей груди, ты — бог Хатхор, в моём сердце, ты — моё пробуждение в загробном мире. Будь спокоен, ибо я — Истина (Маат)!</div>
+<div class="transl-note">𓁹 Фолта 2005</div>
+</div>
+<div class="verse">
+<div class="num">𓎟 42.1</div>
+<div class="egy">Iu-ef-kheru enti nefer em Maat</div>
+<div class="ru">Я знаю имена 42 богов, что живут в зале Двух Истин и что судят грешников. Я пришёл к вам, о боги, без греха, без злобы, без лжи!</div>
+<div class="transl-note">𓁹 Фолта 2005</div>
+</div>
+<div class="verse">
+<div class="num">𓎟 42.2</div>
+<div class="egy">aa aa kheper en Asar enti sefekh</div>
+<div class="ru">О вы, боги, что живёте в Чент-анну (зале суда), спасите меня от великого бога, что ест мёртвых в час суда! Вот, я пришёл к вам без зла!</div>
+<div class="transl-note">𓁹 Фолта 2005</div>
+</div>
+<div class="verse">
+<div class="num">𓎟 125.1</div>
+<div class="egy">Weighing of the heart against the feather of Maat</div>
+<div class="ru">О, Великий Бог, Владыка Двух Истин! Я пришёл к тебе, о Владыка вечности! Дай мне видеть тебя! Не отворачивай лицо от меня! Я пришёл с Истиной (Маат), я обнял её, я не разлучался с ней!</div>
+<div class="transl-note">𓁹 Фолта 2005</div>
+</div>
+<div class="verse">
+<div class="num">𓎟 125.2</div>
+<div class="egy">Maat enti en tep tu nefer en Asar</div>
+<div class="ru">Сердце моё взвешено на весах против пера Истины (Маат). Явилась Истина, и мой грех отвергнут! Сердце моё лёгкое, как перо, и я иду в поля Иару!</div>
+<div class="transl-note">𓁹 Фолта 2005</div>
+</div>
+<div class="verse">
+<div class="num">𓎟 125B.1</div>
+<div class="egy">Iu-ef-kheru em sefekh neteru</div>
+<div class="ru">Я не совершал несправедливости. Я не крал. Я не был жесток. Я не лгал. Я не убивал. Я не причинял вреда. Я не делал зла в месте Истины.</div>
+<div class="transl-note">𓁹 Фолта 2005</div>
+</div>
+<div class="verse">
+<div class="num">𓎟 125B.2</div>
+<div class="egy">nefer nefer nefer nefer em Maat</div>
+<div class="ru">Я не похищал жертв богов. Я не убивал священных животных. Я не разрушал плуга земледельца. Я не отбирал зерно у бедного. Я не лгал в суде.</div>
+<div class="transl-note">𓁹 Фолта 2005</div>
+</div>
+<div class="verse">
+<div class="num">𓎟 125B.3</div>
+<div class="egy">aa nef em kheper nefer em rekhyt</div>
+<div class="ru">Я не осквернял воды Нила. Я не насылал засуху. Я не прелюбодействовал. Я не отвергал Бога в сердце моём. Я не убивал священного быка.</div>
+<div class="transl-note">𓁹 Фолта 2005</div>
+</div>
+<div class="verse">
+<div class="num">𓎟 125B.4</div>
+<div class="egy">kheper kheper em rekhyt enti aa</div>
+<div class="ru">Я не был сребролюбив. Я не презирал бога. Я не делал зла в день восхода. Я не сожительствовал с чужой женой. Я не отвергал своего отца.</div>
+<div class="transl-note">𓁹 Фолта 2005</div>
+</div>
+<div class="verse">
+<div class="num">𓎟 148.1</div>
+<div class="egy">Sekhet-Iaru enti aa nefer nefer</div>
+<div class="ru">Поля Иару (Поля тростника) — это прекрасные поля, что в стране блаженных. Я — среди них! Я ем, я пью, я живу вовек!</div>
+<div class="transl-note">𓁹 Фолта 2005</div>
+</div>
+<div class="verse">
+<div class="num">𓎟 148.2</div>
+<div class="egy">Iu-ef-kheru em Sekhet-Iaru enti nefer</div>
+<div class="ru">Я владею полями Иару, я сею там ячмень и полбу, я выращиваю финики и виноград. Я вкушаю их плоды, и они обновляются, и я обновляюсь вместе с ними!</div>
+<div class="transl-note">𓁹 Фолта 2005</div>
+</div>
+<div class="verse">
+<div class="num">𓎟 186.1</div>
+<div class="egy">Asar neb enti aa em seti enti nefer</div>
+<div class="ru">Осирис, владыка вечности, царь богов, ты, что носишь на голове корону Атеф, ты, что держишь скипетр и плеть! Даруй мне обновление жизни!</div>
+<div class="transl-note">𓁹 Фолта 2005</div>
+</div>
+<div class="verse">
+<div class="num">𓎟 186.2</div>
+<div class="egy">aa aa en Asar enti kheper nefer</div>
+<div class="ru">Ты — первый из богов, ты породил себя сам, ты — Отец Отцов, ты — Владыка миллионов лет, ты — Тот, кто пребывает в золотом чертоге!</div>
+<div class="transl-note">𓁹 Фолта 2005</div>
+</div>
+<div class="verse">
+<div class="num">𓎟 186.3</div>
+<div class="egy">Asar enti sefekh nefer em rekhyt</div>
+<div class="ru">Осирис! Да будет тебе хвала! Ты лежишь на левом боку, ты спишь, ты правишь подземным миром, ты водишь умерших по их обителям!</div>
+<div class="transl-note">𓁹 Фолта 2005</div>
+</div>
+<div class="verse">
+<div class="num">𓎟 192.1</div>
+<div class="egy">Ra enti aa nefer em rekhyt</div>
+<div class="ru">О Ра, что заходишь в земле Аменти (Закат), когда ты достигаешь предела неба! Сияние твоё покрывает лицо Маат, и боги тьмы бегут от тебя!</div>
+<div class="transl-note">𓁹 Фолта 2005</div>
+</div>
+<div class="verse">
+<div class="num">𓎟 192.2</div>
+<div class="egy">aa Ra enti kheper em rekhyt</div>
+<div class="ru">О Ра, что восходишь в Нут утром, и заходишь в Атум вечером, и переплываешь небо в ладье миллионов лет! Прими меня в свою ладью, о Ра!</div>
+<div class="transl-note">𓁹 Фолта 2005</div>
+</div>
+<div class="verse">
+<div class="num">𓎟 XXX.1</div>
+<div class="egy">kheper aa kheper em Asar em Ra</div>
+<div class="ru">Я — Осирис, я — Ра, я — Хатхор, я — Анубис, я — Тот, я — Маат. Я — все боги, и все боги — во мне. Я есмь Истина, и Истина — есмь Я!</div>
+<div class="transl-note">𓁹 Фолта 2005</div>
+</div>
+<div class="verse">
+<div class="num">𓎟 XXX.2</div>
+<div class="egy">nefer nefer nefer em rekhyt enti aa</div>
+<div class="ru">Слава тебе, о Осирис, Владыка вечности! Ты дал мне пищу и питьё, ты дал мне жизнь, ты дал мне силу, ты дал мне обновление! Я — вечный!</div>
+<div class="transl-note">𓁹 Фолта 2005</div>
+</div>
+</main>
+
+<footer>
+ARCHIVUM HAERETICUM — Q20 — EGYPTIAN BOOK OF THE DEAD
+</footer>
+
+<script>
+function toggleAll(open){
+  document.querySelectorAll('details').forEach(d=>d.open=open);
+}
+function toggleOrig(){
+  document.querySelectorAll('.verse .ru').forEach(e=>e.style.display='none');
+  document.querySelectorAll('.verse .egy').forEach(e=>e.style.display='');
+}
+function toggleRu(){
+  document.querySelectorAll('.verse .egy').forEach(e=>e.style.display='none');
+  document.querySelectorAll('.verse .ru').forEach(e=>e.style.display='');
+}
+function resetView(){
+  document.querySelectorAll('.verse .egy,.verse .ru').forEach(e=>e.style.display='');
+}
+</script>
+</body>
+</html>
