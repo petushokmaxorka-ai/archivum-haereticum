@@ -1,0 +1,185 @@
+{{Short description|Tang Chinese Christian stele (est. 781)}}
+{{Infobox Chinese
+|pic = Nestorian Stele (front).JPG
+|picsize = 300px
+|piccap = The stele entitled 大秦景教流行中國碑 was erected in China in 781.
+|t = {{linktext|大秦|景教|流行|中國|碑}}
+|s = 大秦景教流行中国碑
+|l = Stele to the Propagation in China of the ''[[Church of the East in China|Jingjiao]]'' (Luminous Religion) of ''[[Daqin]]'' (Roman Empire)
+|p = Dàqín Jǐngjiào Liúxíng Zhōngguó Bēi
+|j = Daai<sup>6</sup> Ceon<sup>4</sup> Ging<sup>2</sup> Gaau<sup>3</sup> Lau<sup>4</sup> Hang<sup>4</sup> Zung<sup>1</sup> Gwok<sup>3</sup> Bei<sup>1</sup>
+|c2 = 景教碑
+|l2 = Luminous Religion Stele
+|p2 = Jǐngjiào Bēi
+|j2 = Ging<sup>2</sup> Gaau<sup>3</sup> Bei<sup>1</sup>
+|mc={{IPA|/dɑi<sup>H</sup>.d͡ziɪn kˠiæŋ<sup>X</sup>.kˠau<sup>H</sup> lɨu.ɦˠæŋ ʈɨuŋ.kwək̚ pˠiᴇ/}}
+}}
+The '''Xi'an Stele''' or the '''{{transliteration|zh|Jingjiao}} Stele''' ({{lang-zh|c=景教碑|p= Jǐngjiào bēi}}), traditionally translated as the "'''Nestorian Stele'''," is a [[Tang dynasty|Tang Chinese]] [[stele]] erected in 781 that documents 150 years of early [[Christianity in China]].<ref name="hill-108">{{Cite book | editor-last= Hill | editor-first=Henry | year= 1988 | title = Light from the East: A Symposium on the Oriental Orthodox and Assyrian Churches | location = Toronto, Canada | pages = 108 109}}</ref> It is a [[limestone block]] {{convert|279|cm|ftin}} high with text in both [[Chinese language|Chinese]] and [[Syriac language|Syriac]] describing the existence of Christian communities in several cities in northern China. It reveals that the initial [[Church of the East in China|Church of the East]] had met recognition by the Tang [[Emperor Taizong of Tang|Emperor Taizong]], due to efforts of the Christian missionary [[Alopen]] in 635.<ref name="lhc">{{Cite book |last= Jenkins |first=Peter |url=https://archive.org/details/losthistoryofchr00jenk/page/65 |title=The Lost History of Christianity: the Thousand-Year Golden Age of the Church in the Middle East, Africa, and Asia - and How It Died |publisher=Harper Collins |year=2008 |isbn=978-0-06-147280-0 |location=New York |pages=[https://archive.org/details/losthistoryofchr00jenk/page/65 65] |url-access=registration}}</ref> According to the stele, Alopen and his fellow [[Syriac Christians|Syriac]] missionaries came to China from [[Daqin]] (the [[Eastern Roman Empire]]) in the ninth year of [[Emperor Taizong of Tang|Emperor Taizong]] (Tai Tsung) (635), bringing sacred books and images.<ref>{{Cite book |last=Ding |first= Wang |title=Jingjiao: the Church of the East in China and Central Asia |publisher=Steyler Verlagsbuchhandlung GmbH |year=2006 |isbn=978-3-8050-0534-0 |editor-last=Malek, Roman |chapter=Remnants of Christianity from Chinese Central Asia in Medieval ages |editor-last2=Hofrichter, Peter}}</ref> The Church of the East monk [[Adam (monk)|Adam]] ({{transliteration|zh|Jingjing}} in Chinese) composed the text on the stele.<ref>{{Cite book|last=Godwin|first=R. Todd|url=https://books.google.com/books?id=9-mKDwAAQBAJ|title=Persian Christians at the Chinese Court: The Xi'an Stele and the Early Medieval Church of the East|publisher=Bloomsbury Publishing|year=2018|isbn=978-1-78673-316-0|page=10}}</ref> Buried in 845, probably during the [[Huichang persecution of Buddhism]],<ref>{{Cite web |last=McGrath |first=Anastasia |date=2021-02-10 |title=China's Buried Christian History |url=https://crc.blog.fordham.edu/arts-culture/chinas-buried-christian-history/ |access-date=2023-03-02 |website=SAPIENTIA |publisher=[[Fordham University]] |language=en}}</ref> the stele was not rediscovered until 1625.  It is now in the [[Stele Forest]] in [[Xi'an]].
+
+==Discovery==
+[[File:Nestorian Stele - Flora Sinensis 1656 (2950911).jpg|thumb|x200px|Michał Boym, ''Flora Sinensis'', 1656]]
+[[File:China monumentis 1667 (3755914) (cropped).jpg|thumb|x200px|Athanasius Kircher, ''China Monumentis'', 1667]]
+The stele is thought to have been buried in 845, during the Huichang persecution, which also affected Christians.<ref Name="Mungello165">{{cite book
+  | last =Mungello
+  | first =David E. 
+  | author-link =David E. Mungello
+  | title =Curious Land: Jesuit Accommodation and the Origins of Sinology
+  | publisher =University of Hawaii Press
+  | year =1989
+  | url =https://books.google.com/books?id=wb4yPw4ZgZQC
+| isbn=0-8248-1219-0
+  | page =165}}</ref>
+
+The stele was unearthed in the late [[Ming dynasty]] (between 1621 and 1625)<ref>{{Cite journal |last=Ma |first=Tianji |date=2025-03-07 |title=Jingjiao: The Earliest Christian Church in China, written by Glen L. Thompson |url=https://doi.org/10.1163/25424246-08010009 |journal=International Journal of Asian Christianity |volume=8 |issue=1 |pages=138–139 |doi=10.1163/25424246-08010009 |issn=2542-4238 |quote=Furthermore, the precise year of the Stele’s discovery remains a subject of scholarly debate. The majority of researchers situate this event between 1621 and 1625, based on their respective analyses.|url-access=subscription }}</ref> beside Chongren Temple ({{lang|zh|崇仁寺}}) outside of [[Xi'an]].<ref name = "Saeki">{{cite book
+|author-link=P. Y. Saeki
+|last= Saeki
+|first=P.Y.
+|title=Nestorian Documents and Relics in China
+|edition= 2nd
+|location=Tokyo
+|publisher= Maruzen
+|year=1951}}</ref>
+According to the account by the [[Jesuit]] [[Alvaro Semedo]], the workers who found the stele immediately reported the find to the governor, who soon visited the monument, and had it installed on a pedestal under a protective roof, requesting the nearby Buddhist monastery to care for it.<ref Name="Mungello168">Mungello, p. 168</ref>
+
+The newly discovered stele attracted attention of local intellectuals. It was Zhang Gengyou ([[Wade-Giles]]: Chang Keng-yu) who first identified the text as Christian in content. Zhang, who had been aware of Christianity through [[Matteo Ricci]], and who himself may have been Christian, sent a copy of the stele's Chinese text to his Christian friend, Leon Li Zhizao in [[Hangzhou]], who in his turn published the text and told the [[Jesuit China missions|locally based Jesuits]] about it.<ref Name="Mungello168"/>
+
+[[Alvaro Semedo]] was the first European to visit the stele (some time between 1625 and 1628).<ref>Mungello (p. 168), following [[Legge]], is inclined to date Semedo's visit to Xi'an to 1628, but also mentions that some researchers interpret Semedo's account as to mean a 1625 visit.</ref> [[Nicolas Trigault]]'s Latin translation of the monument's inscription soon made its way in Europe, and was apparently first published in a French translation, in 1628. Portuguese and Italian translations, and a Latin re-translation, were soon published as well. Semedo's account of the monument's discovery was published in 1641, in his ''Imperio de la China''.<ref Name="Mungello169">Mungello, p. 169</ref>
+
+Early Jesuits attempted to claim that the stele was erected by a historical community of [[Roman Catholic]]s in China, called [[Nestorianism]] a [[heresy]], and claimed that it was Catholics who first brought Christianity to China. But later historians and writers admitted that it was indeed from the [[Church of the East]] and not the Roman Catholic Church.<ref>{{cite book|url=https://books.google.com/books?id=6wEMAAAAYAAJ&q=monument+heresy+catholic|title=The Chinese repository, Volume 13|year=1844|publisher=Printed for the proprietors|location=VICTORIA, HONGKONG|page=472|access-date=2011-05-08}}(Original from Harvard University)</ref>
+
+The first publication of the original Chinese and Syriac text of the inscription in Europe is attributed to [[Athanasius Kircher]]. ''China Illustrata'' edited by Kircher (1667) included a reproduction of the original inscription in Chinese characters,<ref>[http://kircher.stanford.edu/gallery/djvu/index.djvu?djvuopts&page=93 Reproduction of the original Chinese and Syriac text in Kircher's China Illustrata] {{webarchive|url=https://web.archive.org/web/20100730215142/http://kircher.stanford.edu/gallery/djvu/index.djvu?djvuopts&page=93 |date=2010-07-30 }}</ref>
+[[Romanization of Chinese|romanization]] of the text, and a Latin translation.<ref>[https://books.google.com/books?id=-VKNZ4SAXqYC China monumentis: qua sacris quà profanis, ...], pp. 13-28. An English translation of Kircher's work can be found as an "Appendix" in:
+[[Johan Nieuhof]], ''[http://digital.library.wisc.edu/1711.dl/DLDecArts.Nieuhof An embassy from the East-India Company of the United Provinces, to the Grand Tartar Cham, emperor of China : delivered by their excellencies Peter de Goyer and Jacob de Keyzer, at his imperial city of Peking wherein the cities, towns, villages, ports, rivers, &c. in their passages from Canton to Peking are ingeniously described by John Nieuhoff; also an epistle of Father John Adams, their antagonist, concerning the whole negotiation; with an appendix of several remarks taken out of Father Athanasius Kircher; Englished and set forth with their several sculptures by John Ogilby]'' (1673); the relevant chapters appear there as "[Kircher Appendix] Chap. 2 and 3", pp. 323-339.</ref> This was perhaps the first sizeable Chinese text made available in its original form to the European public. A sophisticated romanization system, reflecting Chinese tones, used to transcribe the text, was the one developed earlier by [[Matteo Ricci]]'s collaborator [[Lazzaro Cattaneo]] (1560–1640).
+
+The work of the transcription and translation was carried out by [[Michał Boym]] and two young Chinese Christians who visited Rome in the 1650s and 1660s: Boym's traveling companion Andreas Zheng ({{lang|zh-Hans|郑安德勒}}) and, later, another person who signed in Latin as "Matthaeus Sina". [[D.E. Mungello]] suggests that Matthaeus Sina may have been the person who traveled overland from China to Europe with [[Johann Grueber]].<ref Name="Mungello167">Mungello, p. 167</ref>
+
+==Content==
+[[File:Syriac text Nestorian Stele 781AD 1.png|thumb|right|upright=1.5|[[Syriac script|Syriac text]] at the bottom of the stele:<br />"In the [[Seleucid era|year of the Greeks]] one thousand and ninety-two, the Lord Yazedbuzid, Priest and Vicar-episcopal of Cumdan the royal city, son of the enlightened Mailas, Priest of [[Balkh|Balach]] a city of [[Tokharistan|Turkestan]], set up this tablet, whereon is inscribed the Dispensation of our Redeemer, and the preaching of the apostolic missionaries to the King of China. ["The Priest Lingpau", in Chinese] "[[Jingjing (monk)|Adam the Deacon]], son of Yazedbuzid, vicar-episcopal. The Lord Sergius, Priest and Vicar-episcopal. Sabar Jesus, Priest. Gabriel, Priest, Archdeacon, and Ecclesiarch of Cumdan and Sarag."<ref>{{cite book |last1=Tang |first1=Li |last2=Winkler |first2=Dietmar W. |title=From the Oxus River to the Chinese Shores: Studies on East Syriac Christianity in China and Central Asia |date=2013 |publisher=LIT Verlag Münster |isbn=978-3-643-90329-7 |page=131 |url=https://books.google.com/books?id=VYaMuV3N5vUC&pg=PA131 |language=en}}</ref><ref>{{cite book |last1=Holm |first1=Frits Vilhelm |title=The Nestorian Monument: An Ancient Record of Christianity in China |chapter=Translation of the Nestorian Inscription |chapter-url=https://en.wikisource.org/wiki/The_Nestorian_Monument:_An_Ancient_Record_of_Christianity_in_China/Translation_of_the_Nestorian_Inscription}}</ref><ref>{{cite book |last1=WILMSHURST |first1=DAVID |title=A MONUMENT TO THE SPREAD OF THE SYRIAN BRILLIANT TEACHING IN CHINA |page=9 |url=http://www.syriacstudies.com/wp-content/uploads/2018/08/10-Syrian-teaching-in-China.pdf}}</ref>]]
+{{wikisource|The Nestorian Monument: An Ancient Record of Christianity in China/Translation of the Nestorian Inscription|English translation of the text on the Xi'an Stele}}
+{{wikisourcelang|zh |%E5%A4%A7%E7%A7%A6%E6%99%AF%E6%95%99%E6%B5%81%E8%A1%8C%E4%B8%AD%E5%9C%8B%E7%A2%91%E9%A0%8C|Fulltext of the Xi'an Stele (in Chinese)}}
+The heading on the stone, Chinese for '''Memorial of the Propagation in China of the Luminous Religion from Daqin''' ({{lang|zh|大秦景教流行中國碑}}, abbreviated {{lang|zh|大秦景教碑}}). An even more abbreviated version of the title, {{lang|zh|景教碑}} ({{transliteration|zh|Jǐngjiào bēi}}, "The Stele of the Luminous Religion"), in its [[Wade-Giles]] form, '''Ching-chiao-pei''' or '''Chingchiaopei''', was used by some Western writers to refer to the stele as well.<ref>Such as {{harvnb|Holm|2001}}</ref>
+
+The name of the stele can also be translated as ''A Monument Commemorating the Propagation of the Ta-Chin Luminous Religion in the Middle Kingdom'' (the church referred to itself as "The Luminous Religion of [[Daqin]]", Daqin being the Chinese language term for the [[Roman Empire]] in the 1st and 2nd centuries AD,<ref name="Hou">{{cite book
+| first=John E.
+| last=Hill
+| year=2004
+| title=The Western Regions according to the ''Hou Hanshu''
+| edition=2nd
+| chapter=The Kingdom of Da Qin
+| url=http://depts.washington.edu/silkroad/texts/hhshu/hou_han_shu.html#sec11 
+| access-date=2008-11-30
+}}</ref> and in later eras also used to refer to the Syriac Christian churches).<ref>{{cite book 
+| last=Foster
+| first= John
+| year=1939
+| title=The Church in T'ang Dynasty
+| publisher=Society for Promoting Christian Knowledge
+| location=Great Britain
+| page=123}}</ref>
+
+===Authorship===
+The stele was erected on February 4, 781 ("[[Emperor Dezong of Tang|Jianzhong]] 2, Taicu [https://zh.wikipedia.org/zh-tw/%E5%8D%81%E4%BA%8C%E5%BE%8B] month, 7th day" in the inscription), at the imperial capital city of [[Chang'an]] (modern-day [[Xi'an]]), or at nearby [[Zhouzhi County]]. The [[Chinese calligraphy|calligraphy]] was by Lü Xiuyan ({{lang|zh-Hant|呂秀巖}}), and the content was composed by the Church of the East monk [[Adam (monk)|Jingjing]] in the four- and six-[[Chinese character|character]] euphemistic style (大秦寺僧㬌淨述, "Related by Jingjing, monk of the [[Daqin]] Temple"). A gloss in Syriac identifies Jingjing with "Adam, priest, chorepiscopus and ''papash'' of Sinistan" ({{lang|syc|ܐܕܡ ܩܫܝܫܐ ܘܟܘܪܐܦܝܣܩܘܦܐ ܘܦܐܦܫܝ ܕܨܝܢܝܣܬܐܢ}} {{transliteration|syc|Adam qshisha w'kurapisqupa w'papash d'Sinistan}}). Although the term ''papash'' (literally "pope") is unusual and the normal Syriac name for China is Beth Sinaye, not Sinistan, there is no reason to doubt that Adam was the metropolitan of the Church of the East ecclesiastical province of Beth Sinaye, created a half-century earlier during the reign of Patriarch [[Sliba-zkha]] (714–28).  A Syriac dating formula refers to the [[List of Patriarchs of the Church of the East|Church of the East patriarch]] [[Hnanisho II|{{Transliteration|ar|DIN|Hnanishoʿ}} II]] (773–780), news of whose death several months earlier had evidently not yet reached the Church of the East of Chang'an. In fact, the reigning Church of the East patriarch in January 781 was [[Timothy I (Nestorian Patriarch)|Timothy I]] (780–823), who had been consecrated in [[Baghdad]] on 7 May 780.<ref>[[Elijah of Nisibis]], ''Chronography'' (ed. Brooks), i. 32 and 87</ref> The names of several higher clergy (one bishop, two chorepiscopi and two archdeacons) and around seventy monks or priests are listed.<ref>{{cite book|author=Stewart, John|title=Nestorian missionary enterprise, the story of a church on fire|year=1928|publisher=Edinburgh, T. & T. Clark., p. 183}}</ref> The names of the higher clergy appear on the front of the stone while those of the priests and monks are inscribed in rows along the narrow sides of the stone, in both Syriac and Chinese. In some cases, the Chinese names are phonetically close to the Syriac originals, but in many other cases, they bear little resemblance to them. Some of the Church of the East monks had distinctive [[Middle Persian language|Persian]] names (such as Isadsafas, Gushnasap), suggesting that they might have come from [[Pars (Sasanian province)|Fars]] or elsewhere in [[Sasanian Empire|Persia]], but most of them had common Christian names or the kind of compound Syriac name (such as {{Transliteration|ar|DIN|ʿAbdishoʿ}}, 'servant of Jesus') much in vogue among all Church of the East Christians. In such cases, it is impossible to guess at their place of origin.
+
+===Content===
+On top of the tablet, there is a cross. Below this headpiece is a long Chinese inscription, consisting of around 1,900 Chinese characters, sometimes glossed in Syriac (several sentences amounting to about 50 Syriac words). Referring to [[Chinese names for the God of Abrahamic religions|God]] using the title {{wikt-lang|zh|真主}}, Pinyin: {{transliteration|zh|Zhēnzhǔ}} (literally "Veritable Majesty" or "True Lord"), the text refers to [[Book of Genesis|Genesis]], the [[Christian cross|cross]], and [[baptism]]. It also pays tribute to missionaries and benefactors of the church, who are known to have arrived in China by 640. The text contains the name of an early missionary, [[Alopen]]. The tablet describes the "Illustrious Religion" and emphasizes the [[Trinity]] and the [[Incarnation]], but there is nothing about Christ's crucifixion or resurrection. Other Chinese elements referred to include a wooden bell, beard, [[tonsure]], and [[renunciation]].<ref name=hill-108/> The Syriac proper names for God, Christ and Satan (''Allaha'', ''Mshiha'' and ''Satana'') were rendered phonetically into Chinese. Chinese transliterations were also made of one or two words of [[Sanskrit]] origin such as ''Sphatica'' and ''[[Dasa]]''. There is also a Persian word denoting [[Sunday]].<ref>Saeki, pp. 14&ndash;15</ref>
+
+Yazedbuzid (Yisi in Chinese) helped the Tang dynasty general [[Guo Ziyi]] militarily crush the Sogdian-Turk led [[An Lushan rebellion]], with Yisi personally acting as a military commander and Yisi and the Church of the East were rewarded by the Tang dynasty with titles and positions as described in the Xi'an Stele.<ref>{{cite journal |last1=Johnson |first1=Scott Fitzgerald |date= 26 May 2017 |title=Silk Road Christians and the Translation of Culture in Tang China |url=https://cambridge.org/core/journals/studies-in-church-history/article/abs/silk-road-christians-and-the-translation-of-culture-in-tang-china/D8E48283153EA2E3C38AF5D36E238A0D |journal=Studies in Church History |volume=53 |pages=15–38  |publisher=Published online by Cambridge University Press |doi=10.1017/stc.2016.3 |s2cid=164239427 |url-access=subscription }}</ref><ref>{{cite book |editor1-last=Tang|editor1-first=Li |editor2-last=Winkler |editor2-first= Dietmar W. |last=Deeg |first=Max |date=2013 |title=From the Oxus River to the Chinese Shores: Studies on East Syriac Christianity in China and Central Asia |chapter-url=https://books.google.com/books?id=VYaMuV3N5vUC&pg=PA113 |publisher=LIT Verlag Münster|edition=illustrated |page=113 |chapter=A Belligerent Priest - Yisi and his Political Context|isbn=978-3-643-90329-7 }}</ref><ref>{{cite book |last=Godwin  |first=R. Todd |date=2018 |title=Persian Christians at the Chinese Court: The Xi'an Stele and the Early Medieval Church of the East |series= Library of Medieval Studies |url=https://books.google.com/books?id=wbmKDwAAQBAJ&dq=yisi+stele+guo+lushan&pg=PT179 |publisher=Bloomsbury Publishing |isbn=978-1-78672-316-1}}</ref><ref>{{cite journal |last1=Chin  |first1=Ken-pa |date=2019 |title=Jingjiao under the Lenses of Chinese Political Theology |journal=Religions |volume=10 |issue=10 |page=551 |doi=10.3390/rel10100551|doi-access=free }}</ref><ref>{{cite book |last=LIPPIELLO  |first=TIZIANA |editor1-last=Hoster |editor1-first=Barbara |editor2-last=Kuhlmann|editor2-first=Dirk |editor3-last=Wesolowski|editor3-first=Zbigniew |date=2017 |title=Rooted in Hope: China – Religion – Christianity Vol 1: Festschrift in Honor of Roman Malek S.V.D. on the Occasion of His 65th Birthday |series=Monumenta Serica Monograph Series|chapter-url=https://books.google.com/books?id=iYmjDgAAQBAJ&dq=yisi+stele+guo&pg=PT300 |publisher=Routledge |chapter=On the Difficult Practice of the Mean in Ordinary Life Teachings from the Zhongyong|isbn=978-1-351-67277-1}}</ref>
+
+==Debate==
+[[File:Nestorians-1-.jpg|thumb|left|upright|Title of the stele: "Stele to the Propagation in China of the Luminous Religion ([[Church of the East]]) of the Roman Empire (''[[Daqin]]'')"]]
+[[File:Spitzel - De re literaria Sinensium commentarius, 1660 - 4711627.tif|thumb|[[Theophil Gottlieb Spitzel]], ''De re literaria Sinensium commentarius'', 1660]]
+The Xi'an Stele attracted the attention of some anti-Christian, Protestant anti-Catholic, or Catholic anti-Jesuit groups in the 17th century, who argued that the stone was a fake or that the inscriptions had been modified by the [[Society of Jesus|Jesuits]] who served in the Ming Court. The three most prominent early skeptics were the German-Dutch [[Presbyterian]] scholar [[Georgius Hornius|Georg Horn]] (1620–1670) (''De originibus Americanis'', 1652), the German historian Gottlieb Spitzel (1639–1691) (''De re literaria Sinensium commentarius'', 1660), and the [[Dominican Order|Dominican]] missionary [[Domingo Navarrete]] (1618–1686) (''Tratados historicos, politicos, ethicos, y religiosos de la monarchia de China'', 1676). Later, Navarrete's point of view was taken up by French [[Jansenists]] and [[Voltaire]].<ref name=Mungello170>Mungello, p. 170-171</ref>
+
+By the 19th century, the debate had become less sectarian and more scholarly. Notable skeptics included [[Karl Friedrich Neumann]], [[Stanislas Julien]], Edward E. Salisbury and Charles Wall.<ref name=Mungello169/><ref>{{cite book| title=An examination of the ancient orthography of the Jews, and of the original state of the text of the Hebrew Bible |author=Wall, Charles|publisher=Whittaker and Co. |year=1840 |pages=159–245 |url=https://books.google.com/books?id=8j1BAAAAcAAJ&pg=PA159}}</ref> [[Ernest Renan]] initially had "grave doubts", but eventually changed his mind in the light of later scholarship, in favor of the stele's genuineness.<ref>{{harvnb|Keevak|2008|p=103}}</ref> The defenders included some non-Jesuit scholars, such as [[Alexander Wylie (missionary)|Alexander Wylie]], [[James Legge]], and Jean-Pierre-Guillaume Pauthier, although the most substantive work in defense of the stele's authenticity &ndash; the three-volume ''La stèle chrétienne de Si-ngan-fou'' (1895 to 1902) was authored by the Jesuit scholar Henri Havret (1848–1902).<ref name=Mungello169/>
+
+[[Paul Pelliot]] (1878–1945) did an extensive amount of research on the stele, which, however, was only published posthumously, in 1984 (a second edition, revised by Forte was then published in 1996).<ref>{{Cite web |url=http://www.umass.edu/wsp/sinology/persons/pelliot.html |title=Sinologists: Paul Pelliot |access-date=2009-11-21 |archive-date=2012-03-30 |archive-url=https://web.archive.org/web/20120330193309/http://www.umass.edu/wsp/sinology/persons/pelliot.html |url-status=dead }}</ref><ref>Paul Pelliott, "L'inscription nestorienne de Si-ngan-fou", ed. avec supléments par Antonino Forte, Kyoto et Paris, 1996. {{ISBN|4-900793-12-4}}</ref> His and Havret's works are still regarded as the two "standard books" on the subject.<ref>{{harvnb|Keevak|2008|p=4}}</ref>
+
+==Modern location, and replicas==
+{{multiple image
+| footer    = The Xi'an Stele, on its turtle ([[Bixi (tortoise)|Bixi]]) pedestal. Left: 1907 photograph by [[Frits Holm]], without the brick cladding/pavilion seen in earlier pictures and shortly before it was moved to the [[Stele Forest|Beilin Museum]]. Right: The Xi'an Stele in Beilin Museum in 2026.
+| total_width= 300
+| align     = 
+| image1    = Frits-Holm-Chinas-Foremost-Monument-the-Chingchiaopei.png
+| caption1  = 
+| image2    = PXL 20260714 073530736.MP.jpg
+| caption2  = 
+}}
+Since the late 19th century a number of European scholars opined in favor of somehow getting the stele out of China and into the [[British Museum]] or some other "suitable" location (e.g., [[Frederic H. Balfour]] in his letter published in ''[[The Times]]'' in early 1886<ref>Henri Havret (1895), [http://gallica.bnf.fr/ark:/12148/bpt6k54407919.pleinepage.f25.langEN p.4]</ref>). The Danish scholar and adventurer [[Frits Holm]] came to [[Xi'an]] in 1907 planning to take the monument for himself to Europe.<ref name=keevak117>{{harvnb|Keevak|2008|pp=117–121}}. Holm's original report can be found in  {{harvnb|Carus|Wylie|Holm|1909}}, and also in more popular form in {{harvnb|Holm|2001}}</ref> Local authorities prevented him and moved the stele, complete with its [[Bixi (tortoise)|tortoise]], from its location near Chongren Temple<ref name = "Saeki"/><ref name=keevak27>{{harvnb|Keevak|2008|p=27}}</ref> to Xi'an's [[Stele Forest|Beilin Museum]] (Forest of Steles Museum).<ref name=keevak117/><ref>See modern [https://www.flickr.com/photos/chinaencounters/2722082168/ photos of the stele on Flickr.com], complete with the same tortoise</ref>
+
+Holm had an exact copy of the stele made for him and had the replica stele shipped to New York, planning to sell it to the [[Metropolitan Museum of Art]]. The museum's director [[Caspar Purdon Clarke]], however, was less than enthusiastic about purchasing "so large a stone ... of no artistic value". Nonetheless, the replica stele was exhibited in the museum ("on loan" from Mr. Holm) for about 10 years.<ref name=keevak117/> Eventually, in 1917 some Mrs. George Leary, a wealthy New Yorker, purchased the replica stele from Holm and sent it to [[Rome]], as a gift to the Pope.<ref>[https://timesmachine.nytimes.com/timesmachine/1917/01/29/102315628.pdf NEW CAPTAIN ON ST. LOUIS.; Hartley, Young American Line Commander, Praised for Handling Ship]. ''The New York Times'', January 29, 1917</ref><ref>{{Cite news |last=Holm |first=Frits |date=November 1916 |title=A JAPANESE AUTHOR ON THE CHINESE NESTORIAN MONUMENT. |pages=686–694 |work=The Open Court |url=https://upload.wikimedia.org/wikipedia/commons/4/47/The_Open_court_%28IA_opencourt_nov1916caru%29.pdf |access-date=March 23, 2023}}</ref> Another full-sized replica cast from that replica, gifted by Mrs. George Leary in 1919, is on permanent display in the [[Edward B. Bunn S.J. Intercultural Center|Bunn Intercultural Center]] on the campus of [[Georgetown University]] (Washington, D.C.).
+
+The original Xi'an Stele remains in the Forest of Steles. It is now exhibited on the museum's B2 floor, in a prominent display. When the official [[list of Chinese cultural relics forbidden to be exhibited abroad]] was promulgated in 2003, the stele was included into this short list of particularly valuable and important items.
+
+Other copies of the stele and its tortoise can be found near Xi'an [[Daqin Pagoda]],<ref>[https://www.flickr.com/photos/chinaencounters/2721232333/in/set-72157606468507868/ Photos of the replica stele outside of the Daqin Pagoda]</ref> on [[Mount Kōya]] in Japan,<ref>{{harvnb|Keevak|2008|p=125}}</ref> and, in [[Tianhe Church]], [[Guangzhou]].<ref>{{Cite news |url=http://www.gospeltimes.cn/index.php/portal/article/index/id/32673 |script-title=zh:广州市基督教两会仿制景教碑立于天河堂 盼广州教会传承景教以来众圣徒"道成肉身"的美好见证 |trans-title=Guangzhou CCC&TSPM Copied Jingjiao Stele in Tianhe Church, Hoping to Pass Good Witnesses of "Incarnation" Since Jingjiao Saints |publisher=福音时报 (Gospel Times) |date=2016-03-10 |language=zh-cn |archive-date=2018-08-28 |access-date=2018-08-28 |archive-url=https://web.archive.org/web/20180828134317/http://www.gospeltimes.cn/index.php/portal/article/index/id/32673 |url-status=dead }}</ref>
+
+==Other early Christian monuments in China==
+[[File:Nestorian headstone.jpg|thumb|upright|left|A Nestorian tombstone from [[Quanzhou]]<ref>[http://www.anchist.mq.edu.au/doccentre/Zayton.htm Manichaean and Christian Remains in Zayton (Quanzhou, South China)]</ref>]]
+[[File:Sutras on the Origin of Origins of Ta-ch‘in Luminous Religion.jpg|thumb|[[Nestorian pillar of Luoyang]], established in 815 and discovered in 2006.]]
+Numerous Christian gravestones have also been found in China in the [[Xinjiang]] region, [[Quanzhou]] and elsewhere from a somewhat later period. There are also two much later stelae (from 960 and 1365) presenting a curious mix of Christian and Buddhist aspects, which are preserved at the site of the former [[Cross Temple, Fangshan|Monastery of the Cross]] in the [[Fangshan District]], near [[Beijing]].<ref name = "Moule 86-9">{{cite book
+|first=A. C. 
+|last=Moule
+|title=Christians in China before the year 1550
+|location=London
+|publisher=SPCK
+|year= 1930
+|pages=86–89}}</ref>
+
+In 2006, a mortuary stone pillar with Church of the East inscriptions was discovered in [[Luoyang]], the [[Nestorian pillar of Luoyang]]. Erected and engraved in 815, the inscriptions give partial details surrounding the background of a [[Sogdia]]n Christian community living in Luoyang.<ref>{{Cite journal|last=Nicolini-Zani|first=Matteo|date=2009|title=The Tang Christian Pillar From Luoyang and its Jingjiao Inscription: A Preliminary Survey|journal=Monumenta Serica|volume=57|issue=1|pages=99–140|doi=10.1179/mon.2009.57.1.003|issn=0254-9948|jstor=40727622|s2cid=190861764}}</ref>
+
+== In popular culture ==
+* In the 20th episode of ''[[The Longest Day in Chang'an]]'', the Monk Jingde ({{ill|Volker Helfrich|de}}) hands a [[Christian mission|missionary]] [[Folded leaflet|leaflet]] to Tan Qi ([[Rayzha Alimjan]]), which contains text taken from the inscription of the Xi'an Stele.
+
+==See also==
+{{Portal|Christianity}}
+*[[Church of the East in China]]  
+*[[Jingjiao Documents]]
+*[[Adam (monk)|Adam (Jingjing)]]
+*[[Nestorian pillar of Luoyang]]
+*[[Mogao Christian painting]]
+*[[Murals from the Christian temple at Qocho]]
+
+== References ==
+{{Reflist}}
+
+==Further reading==
+* [[Henri Havret]] [[jesuit|sj]], ''La stèle chrétienne de Si Ngan-fou'', Parts 1–3. Full text (was) available at Gallica:
+** [http://gallica.bnf.fr/ark:/12148/bpt6k54407919 Part 1] (1895)
+** [http://gallica.bnf.fr/ark:/12148/bpt6k5438511s Part 2] (1897)
+** [http://gallica.bnf.fr/ark:/12148/bpt6k54365345 Part 3] (1902)
+Some of the volumes can also be found [https://archive.org/search.php?query=havret on archive.org].
+*  {{citation|first1=Paul |last1=Carus|first2= Alexander|last2= Wylie|first3=Frits |last3=Holm|url=https://archive.org/details/nestorianmonume00holmgoog
+|title=The Nestorian Monument: An Ancient Record of Christianity in China, with Special Reference to the expedition of Frits V. Holm...
+|publisher=The Open court publishing company|year= 1909}}
+* {{citation|first=Frits |last=Holm|publisher=Gorgias Press LLC |year=2001|isbn=0-9713097-6-0
+|title=My Nestorian Adventure in China: A Popular Account of the Holm-Nestorian Expedition to Sian-Fu and Its Results
+|series=Volume 6 of Georgias reprint series|url= https://books.google.com/books?id=7gjWGWRyWQYC}}. Originally published by: Hutchinson & Co, London, 1924.
+* {{citation|first=Michael |last=Keevak| url=https://archive.org/details/storyofstelechin0000keev
+|title=The Story of a Stele: China's Nestorian Monument and Its Reception in the West, 1625-1916
+|isbn=978-962-209-895-4|year= 2008}}
+* {{citation|first=Alexis |last=Balmont
+|title=Le christianisme chinois du haut Moyen Âge. Recherche historique, philologique et théologique sur les textes chrétiens chinois du VIIe au Xe siècle.|isbn=978-2204168694|year= 2025}}. Published by Éditions du Cerf, Paris, includes a critical edition of the Chinese and Syriac text, introduced and annotated, together with a French translation.
+
+==External links==
+{{commons category|Nestorian Stele}}
+*[http://www.fordham.edu/halsall/eastasia/781nestorian.html Stele text in English from researchers at Fordham University; actually 1855 translation of A. Wiley]
+*[http://epapers.bham.ac.uk/755/1/stele.jpg Large photograph of a rubbing of the stele from University of Birmingham]
+*[http://www.hsstudyc.org.hk/en/tripod_en/en_tripod_124_05.html "The Jesus Messiah of Xi'an"] ― translation and exposition of doctrinal passages in the stele text. From B. Vermander (ed.), ''Le Christ Chinois, Héritages et espérance'' (Paris: Desclée de Brouwer, 1998).
+*[https://web.archive.org/web/20070531045639/http://f17.aaa.livedoor.jp/~kmaz/keikyo/keikyou-hi.htm Photos of a replica of the Nestorian Stele in Xi-an; photos are of a replica located in Japan] Japanese text.
+* SIR E. A. WALLIS BUDGE, KT.,  [http://www.aina.org/books/mokk/mokk.htm THE MONKS OF KUBLAl KHAN EMPEROR OF CHINA] (1928) - contains reproductions of early photographs of the stele where it stood in the early 20th century (from Havret etc.)
+*[http://australianmuseum.net.au/Nestorian-Stele-Inscription-B11298 Nestorian Stele – Inscription: A slice of Christian history from China. Australian Museum].
+
+{{Christianity and China}}
+{{Church of the East in China}}
+
+{{coord|display=title}}
+
+[[Category:8th-century inscriptions]]
+[[Category:Monuments and memorials in Xi'an]]
+[[Category:Church of the East in Shaanxi]]
+[[Category:Chinese steles]]
+[[Category:8th-century Christian texts]]
+[[Category:Multilingual texts]]
+[[Category:Church of the East texts]]
+[[Category:Religion in the Tang dynasty]]
+[[Category:Chinese cultural relics forbidden to be exhibited abroad]]
+[[Category:Taisho Tripitaka Non-Buddhist Section]]
