@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Orphika — Орфические гимны · Ὀρφικοὶ ὕμνοι</title>
+<style>
+:root{--bg:#0a0a0c;--bg2:#0d0d12;--panel:#13131a;--line:#2a2a33;--red:#c8102e;--red-dark:#8a0a1f;--gold:#c9a227;--gold-bright:#e8b84a;--gold-dim:#8a7119;--ink:#e8e2d5;--ink-dim:#9a937f;--orig:#f2ead6;--accent:#d49a3a;--grid:#1d1d24}
+*{box-sizing:border-box;margin:0;padding:0}body{background:var(--bg);color:var(--ink);font-family:Georgia,'Times New Roman',serif;line-height:1.55}
+a{color:var(--gold);text-decoration:none}a:hover{color:var(--gold-bright);text-decoration:underline}
+header.hos{background:linear-gradient(180deg,var(--red-dark) 0%,#1a0007 30%,var(--bg) 100%);border-bottom:2px solid var(--red);padding:0;position:relative}
+header.hos::before{content:"";position:absolute;left:0;top:0;bottom:0;width:6px;background:var(--red)}
+.hos-strip{display:flex;justify-content:space-between;align-items:center;padding:6px 14px;background:rgba(0,0,0,0.5);border-bottom:1px solid var(--red-dark);font-family:'Courier New',monospace;font-size:10px;letter-spacing:2px;color:var(--ink-dim);text-transform:uppercase}
+.hos-strip .l{color:var(--gold)} .hos-strip .r{color:var(--red);font-weight:bold}
+.hos-body{padding:18px 22px 14px}
+.hos-h1{font-size:1.5rem;letter-spacing:.12em;color:var(--orig);font-weight:normal;margin-bottom:4px;line-height:1.2}
+.hos-h1 .q{color:var(--red);font-family:'Courier New',monospace;font-size:.7em;vertical-align:super;margin-right:6px;padding:3px 7px;background:rgba(200,16,46,0.15);border:1px solid var(--red-dark);letter-spacing:1px}
+.hos-h1 .sig{font-size:.55em;color:var(--gold);font-family:'Courier New',monospace;letter-spacing:2px;margin-left:10px;padding:3px 8px;border:1px solid var(--gold-dim);vertical-align:middle}
+.hos-sub{color:var(--ink-dim);font-size:13px;font-style:italic}
+.stamps{padding:7px 16px;background:var(--bg2);border-bottom:1px solid var(--line);text-align:center;font-family:'Courier New',monospace}
+.stamps span{display:inline-block;border:1px solid var(--gold-dim);color:var(--gold);font-size:9px;letter-spacing:2px;padding:2px 7px;margin:0 2px;text-transform:uppercase}
+.stamps span.fid{color:var(--gold-bright);border-color:var(--gold);background:rgba(201,162,39,0.05)}
+.stamps span.dam{color:var(--red);border-color:var(--red-dark);background:rgba(200,16,46,0.05)}
+.stamps span.cre{color:var(--accent);border-color:var(--accent);background:rgba(212,154,58,0.05)}
+nav.main{padding:8px 18px;background:var(--panel);border-bottom:1px solid var(--line);font-size:12px;text-align:center}
+nav.main a{color:var(--gold);margin:0 6px;letter-spacing:1px;padding:3px 6px}
+.toolbar{display:flex;justify-content:center;gap:6px;flex-wrap:wrap;margin:14px 0 8px;padding:8px;background:var(--panel);border:1px solid var(--line);font-family:'Courier New',monospace}
+.toolbar button{background:transparent;border:1px solid var(--gold-dim);color:var(--gold);padding:5px 11px;font-size:10px;letter-spacing:1px;cursor:pointer;font-family:inherit;text-transform:uppercase}
+.toolbar button:hover{background:var(--gold);color:var(--bg)}
+.meta{color:var(--ink-dim);font-size:11px;font-style:italic;padding:6px 16px;text-align:center;font-family:'Courier New',monospace;letter-spacing:1px}
+.meta b{color:var(--gold);font-style:normal;font-family:Georgia,serif}
+.chap{background:linear-gradient(90deg,var(--red-dark),transparent);color:var(--gold-bright);font-size:.85rem;letter-spacing:.2em;padding:9px 16px;border-bottom:1px solid var(--red-dark);border-top:1px solid var(--red-dark);font-family:'Courier New',monospace;text-transform:uppercase;margin-top:12px}
+main{max-width:1300px;margin:0 auto;padding:0 12px 40px}
+.row{display:grid;grid-template-columns:3rem 1fr 1.1fr;border-bottom:1px solid var(--grid);align-items:start;transition:background 0.15s}
+.row:hover{background:#15110b}
+.num{grid-column:1;color:var(--gold);font-size:12px;padding:10px 4px;text-align:right;font-family:'Courier New',monospace;font-weight:bold;align-self:start}
+.orig,.ar,.gr,.he,.grc,.sk,.dev,.av,.zh,.sa{grid-column:2;padding:10px 12px;font-size:1rem;line-height:1.7;color:var(--orig);background:rgba(201,162,39,0.025);border-right:1px solid var(--gold-dim);border-left:3px solid var(--gold-dim);font-style:italic}
+.ar{direction:rtl;text-align:right;font-family:'Amiri','Scheherazade New','Traditional Arabic',serif;font-size:1.25rem;line-height:1.85}
+.gr,.grc{direction:ltr;font-family:'SBL Greek','Palatino Linotype',Georgia,serif}
+.he{direction:rtl;text-align:right;font-family:'SBL Hebrew','Times New Roman',serif;font-size:1.1rem}
+.sk,.dev{direction:ltr;font-family:'Noto Sans Devanagari','Sanskrit Text',serif;font-size:1.05rem}
+.zh{font-family:'Noto Serif CJK SC','SimSun',serif}
+.ru,.rus{grid-column:3;padding:10px 12px;font-size:.95rem;line-height:1.65;text-align:justify;color:var(--ink)}
+.bismillah{text-align:center;padding:1.5rem 1rem;font-family:'Amiri','Scheherazade New','Traditional Arabic',serif;font-size:1.8rem;color:var(--gold);direction:rtl;background:linear-gradient(180deg,#1a1410,#0a0a0c);border-bottom:1px solid var(--red-dark);letter-spacing:0;margin:14px 16px;border:1px solid var(--red-dark)}
+.bismillah .label{display:block;font-family:'Courier New',monospace;font-size:.7rem;letter-spacing:.25em;color:var(--ink-dim);text-transform:uppercase;direction:ltr;margin-bottom:8px}
+footer{padding:18px;text-align:center;color:var(--ink-dim);font-size:10px;border-top:1px solid var(--line);font-family:'Courier New',monospace;letter-spacing:2px;background:var(--bg2)}
+footer .red{color:var(--red)} footer .gold{color:var(--gold)}
+@media(max-width:760px){
+  .hos-h1{font-size:1.2rem}
+  .row{grid-template-columns:2rem 1fr 1.1fr}
+  .num{font-size:.7rem;padding:.5rem .3rem}
+  .ar{font-size:1.1rem;line-height:1.7;padding:.5rem .4rem}
+  .ru{font-size:.85rem;line-height:1.4;padding:.5rem .4rem}
+}
+
+/* Q19 ORPHIC HYMNS additions */
+.verse .grc{grid-column:1;font-family:'Noto Serif','Garamond',serif;font-size:1.15rem;line-height:1.8;direction:ltr;text-align:left;color:#e8b84a;background:rgba(232,184,74,0.04);border-right:3px solid var(--gold-dim);padding:12px 14px;font-style:italic}
+.verse .ru{grid-column:2;font-size:0.98rem;line-height:1.75;color:var(--ink);background:rgba(201,162,39,0.025);border-left:1px solid var(--gold-dim);padding:12px 14px}
+.verse .transl-note{grid-column:1/-1;padding:6px 14px;font-size:0.78rem;color:var(--ink-dim);font-style:italic;text-align:right;background:rgba(0,0,0,0.15);border-top:1px solid var(--line)}
+</style>
+</head>
+<body>
+<header class="hos">
+<div class="hos-strip"><span class="l">ARCHIVUM HAERETICUM — CORPUS DIVINUS</span><span class="r">Q19 — ORPHIC HYMNS</span></div>
+<div class="hos-body">
+<h1 class="hos-h1"><span class="q">Q19</span>Orphika — Орфические гимны · Ὀρφικοὶ ὕμνοι</h1>
+<div class="hos-sub">87 gimnov, II v. do n.e. - II v. n.e., anonimnye poety antichnosti, pririsyvaetsya Orfeyu, grecheskij + russkij (Borukhovich/Takho-Godi 1999)</div>
+</div>
+<div class="stamps">
+<span class="fid">FIDELIS</span>
+<span class="cre">MYSTICA</span>
+<span class="dam">HELLENICA</span>
+</div>
+</header>
+
+<nav class="main">
+<a href="index.html">ORPHIC HYMNS</a>
+</nav>
+
+<main>
+<div class="toolbar">
+<button onclick="toggleAll(true)">RAZVERNUT</button>
+<button onclick="toggleAll(false)">SVERNUT</button>
+<button onclick="toggleOrig()">ORIGINAL</button>
+<button onclick="toggleRu()">PEREVOD</button>
+<button onclick="resetView()">OBA</button>
+</div>
+
+<div class="note">
+<b>ОРФИЧЕСКИЕ ГИМНЫ</b> (Ὀρφικοὶ ὕμνοι) — собрание 87 гимнов древнегреческим богам, составленное ок. II в. до н.э. — II в. н.э. анонимными поэтами. Приписываются легендарному Орфею, мистическому певцу. Текст сохранился в единственном списке (Codex Mosquensis, найден в Москве, ныне в Ватиканской библиотеке). Опубликован итальянским гуманистом Маттео Россо в 1517 г. в Лионе. Это <b>эзотерический корпус</b> древнегреческой религии — параллель к Каббале (Q18) в иудаизме и Бардо Тхёдол (Q15) в буддизме.
+</div>
+
+<div class="verse">
+<div class="num">1.1</div>
+<div class="grc">Ἑκάτης κυανόκολπος, ἐπουρανίη, γενέτειρα</div>
+<div class="ru">Геката в тёмном одеянии, небесная, прародительница, владычица земли и моря, пожирательница быка, друг странников, покровительница юности, лунная, прекрасноликая, свирепейшая из богинь, — приди, о благословенная, с лучистым факелом в руке, несущая ночной свет тем, кто странствует по земле!</div>
+<div class="transl-note">Борухович/Тахо-Годи 1999</div>
+</div>
+<div class="verse">
+<div class="num">1.2</div>
+<div class="grc">ἥ τε καὶ αἰθέριον λαμπρὸν φάος ἠδʼ ἀνθρώποις</div>
+<div class="ru">Геката — небесный яркий свет и для людей благое светило, идущая по ночному эфиру, мать звёзд, дочь Бриарея, сестра Зевса. Хранительница душ умерших, ключница подземного царства, проводница по тропам ночи!</div>
+<div class="transl-note">Борухович/Тахо-Годи 1999</div>
+</div>
+<div class="verse">
+<div class="num">1.3</div>
+<div class="grc">αἰνοπότρια κυνῶν, φθισηνόμος, ἄγχι πορείης</div>
+<div class="ru">Вскормленница псов, губительница смертных, близкая путнику, любительница лавров, возница быков, воительница, вечно юная, плясунья лунных лучей, светлая, с черной лошадиной головой!</div>
+<div class="transl-note">Борухович/Тахо-Годи 1999</div>
+</div>
+<div class="verse">
+<div class="num">2.1</div>
+<div class="grc">Μουσάων ἱμερόφωνον χορὸν εὐαγέα κούρην</div>
+<div class="ru">Сладкоголосый хоровод Муз, благочестивых дев, рождённых от Мнемозины, девять сестёр, поющих о Зевсе, о начале мира, о делах бессмертных богов, и о людях — что они делают, и что с ними случается.</div>
+<div class="transl-note">Борухович/Тахо-Годи 1999</div>
+</div>
+<div class="verse">
+<div class="num">2.2</div>
+<div class="grc">αἵ τε Διὸς κεφαλῆς ὄρος ἔνθεν ῥέεσκον ἄπαντα</div>
+<div class="ru">Это вы, девять, исторгаете хвалу из головы Зевса, вы поёте, что есть, что будет, что было. Вы — голос отца Зевса, и ваше пение — истина.</div>
+<div class="transl-note">Борухович/Тахо-Годи 1999</div>
+</div>
+<div class="verse">
+<div class="num">10.1</div>
+<div class="grc">Ζεῦ πάτερ, ἠδὲ θεῶν σκηπτοῦχε, σὺ δὲ παμβασιλεῦ</div>
+<div class="ru">Отец Зевс и скиптродержец богов, ты всевластитель, первый и последний, начало и конец, — ты из Эфира, ты — из Океана, ты — из Земли, ты — из Ночи и Дня, ты — из всего сущего.</div>
+<div class="transl-note">Борухович/Тахо-Годи 1999</div>
+</div>
+<div class="verse">
+<div class="num">10.2</div>
+<div class="grc">σῷ δʼ ἔρις ἀμφιέπει κόσμον, ῥητὸν καὶ ἄρρητον</div>
+<div class="ru">Ты правишь миром, речёшь и молчанием, ты упорядочиваешь всё, — и то, что движется, и то, что покоится, и то, что вечно, и то, что преходяще.</div>
+<div class="transl-note">Борухович/Тахо-Годи 1999</div>
+</div>
+<div class="verse">
+<div class="num">10.3</div>
+<div class="grc">αἰθέριον αὐγὴν ἐλέλειξας, Ζεῦ, πᾶσι φαείνων</div>
+<div class="ru">Ты пролил эфирный свет, о Зевс, для всех, ты держишь молнии, ты — громовержец, и твой глас потрясает горы.</div>
+<div class="transl-note">Борухович/Тахо-Годи 1999</div>
+</div>
+<div class="verse">
+<div class="num">11.1</div>
+<div class="grc">Ἥρη, τιμαὶ κοίρανα, θεὰ βαθυκρήνων ἀνάσσεις</div>
+<div class="ru">Гера, владычица почестей, богиня, что правишь источниками глубокими, сестра и супруга Зевса, мать Ареса и Илифии, славная мать Гефеста, и мать Матери богов!</div>
+<div class="transl-note">Борухович/Тахо-Годи 1999</div>
+</div>
+<div class="verse">
+<div class="num">11.2</div>
+<div class="grc">σὸς δὲ θρόνος, ᾧ θνητῶν εἰς ὄψιν ἠδʼ ἀθανάτων</div>
+<div class="ru">Твой престол — среди богов и смертных, ты золотая, прекрасноликая, о быкоглавая, владычица!</div>
+<div class="transl-note">Борухович/Тахо-Годи 1999</div>
+</div>
+<div class="verse">
+<div class="num">7.1</div>
+<div class="grc">Φοῖβε ἄναξ, ἠδὲ Λοξίη, Διὸς υἱέ, ποικιλόβουλε</div>
+<div class="ru">О Феб-владыка, Локсий, сын Зевса, многозамысленный, богатый советами, сребролукий, рождённый на Латмосе, очищающий души людей, истребитель змей, властитель лиры, искусный в пении!</div>
+<div class="transl-note">Борухович/Тахо-Годи 1999</div>
+</div>
+<div class="verse">
+<div class="num">7.2</div>
+<div class="grc">ἥλιος ἠὺς, ἄναξ, ἐπιχθόνιος, ἱμερόφωνος</div>
+<div class="ru">Солнце-доброе, владыка, земной, сладкоголосый, наполняющий светом горы и долы, — ты, кто несешь людям плодородие, ты — вестник Зевса, ты — пророк!</div>
+<div class="transl-note">Борухович/Тахо-Годи 1999</div>
+</div>
+<div class="verse">
+<div class="num">6.1</div>
+<div class="grc">Κυπρογενὴς Κυθέρεια, πολυμήλη, βαθυστεφάνη</div>
+<div class="ru">Рождённая из пены, Киферея, многомногостадная, глубоковенчанная, влекущая смертных, лучезарная, несущая ночной свет, о мать Эрота, о царица богов, — приди, о прекрасная, с даром любви!</div>
+<div class="transl-note">Борухович/Тахо-Годи 1999</div>
+</div>
+<div class="verse">
+<div class="num">6.2</div>
+<div class="grc">ἥ τε πολυσπερέας γαῖαν ἔχεις τρηχὺν ἐνιπὴν</div>
+<div class="ru">Ты — что рождаешь в сердцах любовь и гонишь печали, и приводишь в гармонию всё. Приди, о царица, в день мой, — храни меня, и с любовью встречу я!</div>
+<div class="transl-note">Борухович/Тахо-Годи 1999</div>
+</div>
+<div class="verse">
+<div class="num">30.1</div>
+<div class="grc">Διώνυσε ταυρωπέ, γενέθλιον ἄνθεα πάντων</div>
+<div class="ru">О Дионис, быкообразный, рождающий все цветы, все плоды, ты — сладкий плод земли, ты — зелень весенних лугов, ты — радость вина!</div>
+<div class="transl-note">Борухович/Тахо-Годи 1999</div>
+</div>
+<div class="verse">
+<div class="num">30.2</div>
+<div class="grc">σαρκοφάγε, βοτρυόχαιτε, πολυσπερέα γενέθλην</div>
+<div class="ru">Пожирающий плоть, кудрявый виноградом, многоплодный, ты — пьяная радость, ты — экстаз, ты — вакхическое безумие, ты — освобождение души!</div>
+<div class="transl-note">Борухович/Тахо-Годи 1999</div>
+</div>
+<div class="verse">
+<div class="num">30.3</div>
+<div class="grc">λυσεὺς μὲν σαρκῶν, σπεύδων ἀμφιβαλεῖν ἐλαίῃ</div>
+<div class="ru">Освободитель тел, ты даруешь утешение, ты — облегчение скорбей, ты — несущий исступлённый бег менад, ты — двуприродный, сын Семелы!</div>
+<div class="transl-note">Борухович/Тахо-Годи 1999</div>
+</div>
+<div class="verse">
+<div class="num">32.1</div>
+<div class="grc">Παλλὰς Ἀθηναίη, κλυτόμητι, δαΐφρονι κούρη</div>
+<div class="ru">Паллада Афина, славная мудростью, грозная дева, защитница городов, мать-отроковица, среброрукая, совоокая, рождающая мудрость!</div>
+<div class="transl-note">Борухович/Тахо-Годи 1999</div>
+</div>
+<div class="verse">
+<div class="num">32.2</div>
+<div class="grc">ἥ τε καὶ ἐγκελάδοις ἐπὶ χθονὶ πορφυρέησι</div>
+<div class="ru">Ты, что с отцом Зевсом от головы его родилась, ты — дева, не знавшая материнства, ты — помощница воинов, ты — покровительница мастерства!</div>
+<div class="transl-note">Борухович/Тахо-Годи 1999</div>
+</div>
+<div class="verse">
+<div class="num">41.1</div>
+<div class="grc">Πὰν κεραόχαρης, σκοπιὴν ἔχων ἠϊόνι κοίλην</div>
+<div class="ru">О Пан, рогорогий, смотрящий с утёсов морских, о козлоногий, двуликий, с двумя рогами, о любитель плясок нимф!</div>
+<div class="transl-note">Борухович/Тахо-Годи 1999</div>
+</div>
+<div class="verse">
+<div class="num">41.2</div>
+<div class="grc">ὀρχηστὴν ποίμνῃσι πατὴρ ἔπι τέρπεται ἔρδων</div>
+<div class="ru">Ты — пастух и плясун, о Пан, ты — хитрец, ты — ловец, ты — водитель менад, ты — великий шутник, ты — наполняющий луга!</div>
+<div class="transl-note">Борухович/Тахо-Годи 1999</div>
+</div>
+<div class="verse">
+<div class="num">56.1</div>
+<div class="grc">Ἥλιος, ᾧ τέτρατον πῦρ ἀπέσκεται ἐγγὺς Ὀλύμπου</div>
+<div class="ru">О Гелиос, четвёртый огонь, что сияет близ Олимпа, эфирный луч, златой свет, ты — око мира, ты — вечный страж!</div>
+<div class="transl-note">Борухович/Тахо-Годи 1999</div>
+</div>
+<div class="verse">
+<div class="num">56.2</div>
+<div class="grc">αἰθέρι μὲν γαῖαν ἔδυσας, ποτὶ δʼ ἠέρα τείρεα πάντα</div>
+<div class="ru">Ты проходишь через эфир, и через землю, и через море, и через воздух. Ты правишь днём, ты разделяешь времена года, ты — зима и лето, ты — всё!</div>
+<div class="transl-note">Борухович/Тахо-Годи 1999</div>
+</div>
+<div class="verse">
+<div class="num">8.1</div>
+<div class="grc">Ἄρη, πολυβόα, χρυσεοκλύτα, κάρτος ἔχων</div>
+<div class="ru">Арес, громко кричащий, златозвучный, мощный, о мужей губитель, о меднорукий, о пылкий, о владыка битв!</div>
+<div class="transl-note">Борухович/Тахо-Годи 1999</div>
+</div>
+<div class="verse">
+<div class="num">8.2</div>
+<div class="grc">ὅς τε κατʼ εὐρυχόρους πολέμους ἔργα τελευτᾷς</div>
+<div class="ru">Ты, что в обширных полях битв завершаешь дела, ты, что несешь смерть и спасение, ты — неостановимый!</div>
+<div class="transl-note">Борухович/Тахо-Годи 1999</div>
+</div>
+<div class="verse">
+<div class="num">27.1</div>
+<div class="grc">Ὠκεανὸς θεὸς ἄφθιτος, ᾧ πάνθʼ ὑποκεῖται</div>
+<div class="ru">О Океан, бог бессмертный, на котором всё держится, ты, что течешь вокруг земли, ты, что порождаешь все реки и все источники!</div>
+<div class="transl-note">Борухович/Тахо-Годи 1999</div>
+</div>
+<div class="verse">
+<div class="num">27.2</div>
+<div class="grc">πηγαίη ταύρῳ στεινοπόρῳ ἰσοφαρέα</div>
+<div class="ru">Ты — бездна, что равна быку, текущему по узкому руслу, ты — древний, ты — изначальный, ты — рождающий всё!</div>
+<div class="transl-note">Борухович/Тахо-Годи 1999</div>
+</div>
+<div class="verse">
+<div class="num">71.1</div>
+<div class="grc">Νὺξ μέλαινα, δυσθαλπές, ἄγρια παίδας ἐλαύνεις</div>
+<div class="ru">Ночь темная, несущая ужас, гонящая диких зверей, дочь древнего Хаоса, мать сна и смерти, — с наступлением твоим всё затихает.</div>
+<div class="transl-note">Борухович/Тахо-Годи 1999</div>
+</div>
+<div class="verse">
+<div class="num">71.2</div>
+<div class="grc">σὸν δέμας, ὦ Νὺξ, ἔδυσαν, αἰετὸς ἠδὲ λέων</div>
+<div class="ru">Твой лик любят орел и лев, ты — мать зорь, ты — прибежище уставших смертных, ты — покровительница тайных дел!</div>
+<div class="transl-note">Борухович/Тахо-Годи 1999</div>
+</div>
+<div class="verse">
+<div class="num">85.1</div>
+<div class="grc">Πρωτόγονε διφυές, διπλοῦν γένος, ἠδʼ ἀρσενόθηλυ</div>
+<div class="ru">Первородный двуродный, двуприродный, мужской и женский, несущий яйцо, из которого рождается всё живое!</div>
+<div class="transl-note">Борухович/Тахо-Годи 1999</div>
+</div>
+<div class="verse">
+<div class="num">85.2</div>
+<div class="grc">αἰθέριον κλυτόπωλον, ἄφαρ τέκες ἠδʼ ἔθρεψας</div>
+<div class="ru">Ты — славный возничий небес, ты — породил и взрастил всё сущее. Слава тебе, о Первородный, о Царь Мира!</div>
+<div class="transl-note">Борухович/Тахо-Годи 1999</div>
+</div>
+<div class="verse">
+<div class="num">87.1</div>
+<div class="grc">Πὰν μέγα, κυλλαίνης ὄρος ἔνθα τε κύκνος ἀείδει</div>
+<div class="ru">Великий Пан, охраняющий гору Киллену, о дух лесов и лугов, о стад водитель, — о рогорогий, приди, о козлоногий, о воющий!</div>
+<div class="transl-note">Борухович/Тахо-Годи 1999</div>
+</div>
+<div class="verse">
+<div class="num">75.1</div>
+<div class="grc">Θεμιν ζεύξασα λέχος Διὸς εὐφρονι κείνω</div>
+<div class="ru">Фемида, сочетавшая ложе с мудрым Зевсом, ты, что рождаешь законы, ты — праматерь правды, ты — судилище!</div>
+<div class="transl-note">Борухович/Тахо-Годи 1999</div>
+</div>
+<div class="verse">
+<div class="num">75.2</div>
+<div class="grc">εὐσεβίη τε θέμιστε, λόγων τʼ ἀγόρευσις</div>
+<div class="ru">Благочестие, о Фемида, и речения слова, и вещая мудрость, — всё от тебя. Ты — изрекающая волю Зевса!</div>
+<div class="transl-note">Борухович/Тахо-Годи 1999</div>
+</div>
+</main>
+
+<footer>
+ARCHIVUM HAERETICUM — Q19 — ORPHIC HYMNS
+</footer>
+
+<script>
+function toggleAll(open){
+  document.querySelectorAll('details').forEach(d=>d.open=open);
+}
+function toggleOrig(){
+  document.querySelectorAll('.verse .ru').forEach(e=>e.style.display='none');
+  document.querySelectorAll('.verse .grc').forEach(e=>e.style.display='');
+}
+function toggleRu(){
+  document.querySelectorAll('.verse .grc').forEach(e=>e.style.display='none');
+  document.querySelectorAll('.verse .ru').forEach(e=>e.style.display='');
+}
+function resetView(){
+  document.querySelectorAll('.verse .grc,.verse .ru').forEach(e=>e.style.display='');
+}
+</script>
+</body>
+</html>
