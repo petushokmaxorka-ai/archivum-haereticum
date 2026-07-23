@@ -559,14 +559,14 @@ ARCHIVUM HAERETICUM — Q27 — DEAD SEA SCROLLS — 1. СВИТОК ИСАИИ 
   document.querySelectorAll('.verse,.row').forEach(r=>{r.style.display=open?'grid':'none';});
 }
 function toggleOrig(){
-  document.querySelectorAll('.verse .cop').forEach(c=>c.style.display=c.style.display==='none'?'block':'none');
+  document.querySelectorAll('.verse .he').forEach(c=>c.style.display=c.style.display==='none'?'block':'none');
 }
 function toggleRu(){
   document.querySelectorAll('.verse .ru').forEach(c=>c.style.display=c.style.display==='none'?'block':'none');
 }
 function resetView(){
   document.querySelectorAll('.verse,.row').forEach(r=>r.style.display='grid');
-  document.querySelectorAll('.verse .cop,.verse .ru').forEach(c=>c.style.display='block');
+  document.querySelectorAll('.verse .he,.verse .ru').forEach(c=>c.style.display='block');
 }</script>
 </body>
 </html>
