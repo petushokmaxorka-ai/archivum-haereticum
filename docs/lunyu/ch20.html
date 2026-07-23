@@ -1,64 +1,95 @@
-<!DOCTYPE html><html lang="ru"><head><meta charset="utf-8">
-<title>尧曰 — Лунь Юй</title><style>
-:root{--bg:#0a0908;--panel:#1a1410;--line:#2e2620;--gold:#d4af37;--gold-dim:#8a6f1a;--ink:#e8dfca;--ink-dim:#9a8f78;--chinese:#c9302c}
-*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--ink);font-family:Georgia,serif;line-height:1.6}
-header.top{border-bottom:2px solid var(--gold-dim);padding:18px 24px;background:var(--panel)}
-header.top .brand{font-size:12px;letter-spacing:3px;color:var(--ink-dim);text-transform:uppercase}
-header.top h1{margin:6px 0 2px;font-size:23px;color:var(--gold);font-weight:normal}
-header.top .sub{color:var(--ink-dim);font-size:13px}
-.stamp{display:inline-block;border:1px solid var(--gold-dim);color:var(--gold);font-size:11px;letter-spacing:2px;padding:2px 8px;margin-left:8px;vertical-align:middle}
-.stamp.fir{color:#c9302c;background:rgba(201,48,44,0.05);border-color:#c9302c}
-nav.menu{padding:10px 24px;border-bottom:1px solid var(--line);font-size:13px;color:var(--ink-dim);background:var(--panel);line-height:1.8}
-nav.menu a{margin-right:8px;white-space:nowrap}
-.cnt{padding:20px 24px;font-size:14.5px;line-height:1.8}
-.verse{border-bottom:1px solid var(--line);padding:12px 0;display:grid;grid-template-columns:50px 1fr 1fr;gap:14px}
-.verse .num{color:var(--gold);font-size:1.1rem;text-align:right;font-weight:bold;padding-top:8px}
-.verse .zh{color:var(--chinese);font-size:1.05rem;line-height:1.8;background:rgba(201,48,44,0.05);padding:6px 10px;border-left:2px solid var(--chinese);font-family:'SimSun','Noto Sans CJK SC',serif}
-.verse .ru{color:var(--ink);font-size:14px;line-height:1.7;padding:6px 0}
-.verse .ru.empty{color:var(--ink-dim);font-style:italic}
-h2.ch{color:var(--gold);font-size:18px;letter-spacing:2px;margin:24px 0 14px;padding:8px 0;border-bottom:2px solid var(--gold-dim);font-weight:normal}
-.idx-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:8px;margin:14px 0}
-.idx-card{border:1px solid var(--line);background:var(--panel);padding:8px 12px;display:block}
-.idx-card:hover{border-color:var(--gold-dim);text-decoration:none}
-.idx-card .t{color:var(--gold);font-size:13px}
-.idx-card .s{color:var(--ink-dim);font-size:11px;margin-top:2px}
-.note{margin:14px 0;padding:12px 16px;border:1px solid var(--line);background:var(--panel);font-size:13px;color:var(--ink-dim)}
-footer{padding:24px;color:var(--ink-dim);font-size:12px;border-top:1px solid var(--line);margin-top:20px}
-@media(max-width:760px){.verse{grid-template-columns:30px 1fr}.verse .zh{border-left:none;border-top:2px solid var(--chinese)}}
-</style></head><body>
-<header class="top"><div class="brand">ARCHIVUM HAERETICUM · CORPUS DIVINUS · Q12 · ЛУНЬ ЮЙ</div>
-<h1>Книга 20. 尧曰<span class="stamp">◆ FIDELIS</span></h1>
-<div class="sub">Яо Юэ · 20 книг</div></header>
-<div class="toolbar">
-<button onclick="toggleAll(true)">▼ Развернуть все</button>
-<button onclick="toggleAll(false)">▲ Свернуть все</button>
-<button onclick="toggleOrig()">🌙 Только оригинал</button>
-<button onclick="toggleRu()">📖 Только перевод</button>
-<button onclick="resetView()">◉ Оба</button>
+<!DOCTYPE html><html lang="ru"><head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>尧曰 — Лунь Юй</title>
+<style>
+:root{--bg:#0a0a0c;--bg2:#0d0d12;--panel:#13131a;--line:#2a2a33;--red:#c8102e;--red-dark:#8a0a1f;--gold:#c9a227;--gold-bright:#e8b84a;--gold-dim:#8a7119;--ink:#e8e2d5;--ink-dim:#9a937f;--orig:#f2ead6;--accent:#d49a3a;--grid:#1d1d24}
+*{box-sizing:border-box;margin:0;padding:0}body{background:var(--bg);color:var(--ink);font-family:Georgia,'Times New Roman',serif;line-height:1.55}
+a{color:var(--gold);text-decoration:none}a:hover{color:var(--gold-bright);text-decoration:underline}
+header.hos{background:linear-gradient(180deg,var(--red-dark) 0%,#1a0007 30%,var(--bg) 100%);border-bottom:2px solid var(--red);padding:0;position:relative}
+header.hos::before{content:"";position:absolute;left:0;top:0;bottom:0;width:6px;background:var(--red)}
+.hos-strip{display:flex;justify-content:space-between;align-items:center;padding:6px 14px;background:rgba(0,0,0,0.5);border-bottom:1px solid var(--red-dark);font-family:'Courier New',monospace;font-size:10px;letter-spacing:2px;color:var(--ink-dim);text-transform:uppercase}
+.hos-strip .l{color:var(--gold)} .hos-strip .r{color:var(--red);font-weight:bold}
+.hos-body{padding:18px 22px 14px}
+.hos-h1{font-size:1.5rem;letter-spacing:.12em;color:var(--orig);font-weight:normal;margin-bottom:4px;line-height:1.2}
+.hos-h1 .q{color:var(--red);font-family:'Courier New',monospace;font-size:.7em;vertical-align:super;margin-right:6px;padding:3px 7px;background:rgba(200,16,46,0.15);border:1px solid var(--red-dark);letter-spacing:1px}
+.hos-h1 .sig{font-size:.55em;color:var(--gold);font-family:'Courier New',monospace;letter-spacing:2px;margin-left:10px;padding:3px 8px;border:1px solid var(--gold-dim);vertical-align:middle}
+.hos-sub{color:var(--ink-dim);font-size:13px;font-style:italic}
+.stamps{padding:7px 16px;background:var(--bg2);border-bottom:1px solid var(--line);text-align:center;font-family:'Courier New',monospace}
+.stamps span{display:inline-block;border:1px solid var(--gold-dim);color:var(--gold);font-size:9px;letter-spacing:2px;padding:2px 7px;margin:0 2px;text-transform:uppercase}
+.stamps span.fid{color:var(--gold-bright);border-color:var(--gold);background:rgba(201,162,39,0.05)}
+.stamps span.dam{color:var(--red);border-color:var(--red-dark);background:rgba(200,16,46,0.05)}
+.stamps span.cre{color:var(--accent);border-color:var(--accent);background:rgba(212,154,58,0.05)}
+nav.main{padding:8px 18px;background:var(--panel);border-bottom:1px solid var(--line);font-size:12px;text-align:center}
+nav.main a{color:var(--gold);margin:0 6px;letter-spacing:1px;padding:3px 6px}
+.toolbar{display:flex;justify-content:center;gap:6px;flex-wrap:wrap;margin:14px 0 8px;padding:8px;background:var(--panel);border:1px solid var(--line);font-family:'Courier New',monospace}
+.toolbar button{background:transparent;border:1px solid var(--gold-dim);color:var(--gold);padding:5px 11px;font-size:10px;letter-spacing:1px;cursor:pointer;font-family:inherit;text-transform:uppercase}
+.toolbar button:hover{background:var(--gold);color:var(--bg)}
+.meta{color:var(--ink-dim);font-size:11px;font-style:italic;padding:6px 16px;text-align:center;font-family:'Courier New',monospace;letter-spacing:1px}
+.meta b{color:var(--gold);font-style:normal;font-family:Georgia,serif}
+.chap{background:linear-gradient(90deg,var(--red-dark),transparent);color:var(--gold-bright);font-size:.85rem;letter-spacing:.2em;padding:9px 16px;border-bottom:1px solid var(--red-dark);border-top:1px solid var(--red-dark);font-family:'Courier New',monospace;text-transform:uppercase;margin-top:12px}
+main{max-width:1300px;margin:0 auto;padding:0 12px 40px}
+.row{display:grid;grid-template-columns:3rem 1fr 1.1fr;border-bottom:1px solid var(--grid);align-items:start;transition:background 0.15s}
+.row:hover{background:#15110b}
+.num{grid-column:1;color:var(--gold);font-size:12px;padding:10px 4px;text-align:right;font-family:'Courier New',monospace;font-weight:bold;align-self:start}
+.orig,.ar,.gr,.he,.grc,.sk,.dev,.av,.zh,.sa{grid-column:2;padding:10px 12px;font-size:1rem;line-height:1.7;color:var(--orig);background:rgba(201,162,39,0.025);border-right:1px solid var(--gold-dim);border-left:3px solid var(--gold-dim);font-style:italic}
+.ar{direction:rtl;text-align:right;font-family:'Amiri','Scheherazade New','Traditional Arabic',serif;font-size:1.25rem;line-height:1.85}
+.gr,.grc{direction:ltr;font-family:'SBL Greek','Palatino Linotype',Georgia,serif}
+.he{direction:rtl;text-align:right;font-family:'SBL Hebrew','Times New Roman',serif;font-size:1.1rem}
+.sk,.dev{direction:ltr;font-family:'Noto Sans Devanagari','Sanskrit Text',serif;font-size:1.05rem}
+.zh{font-family:'Noto Serif CJK SC','SimSun',serif}
+.ru,.rus{grid-column:3;padding:10px 12px;font-size:.95rem;line-height:1.65;text-align:justify;color:var(--ink)}
+.verse{display:grid;grid-template-columns:3.2rem 1fr 1.1fr;border-bottom:1px solid var(--grid);align-items:start;transition:background 0.15s}
+.verse:hover{background:#15110b}
+.verse .num{grid-column:1;color:var(--gold);font-size:11px;padding:10px 4px;text-align:right;font-family:'Courier New',monospace;font-weight:bold;align-self:start}
+.verse .sk,.verse .av,.verse .zh,.verse .dev,.verse .en{grid-column:2;padding:10px 12px;font-size:.95rem;line-height:1.7;color:var(--orig);background:rgba(201,162,39,0.025);border-right:1px solid var(--gold-dim);border-left:3px solid var(--gold-dim);font-style:italic}
+.verse .ru{grid-column:3;padding:10px 12px;font-size:.92rem;line-height:1.6}
+table.orph{width:100%;border-collapse:collapse;margin:8px 0}
+table.orph td{padding:8px 10px;border-bottom:1px solid var(--grid);vertical-align:top;font-size:.95rem;line-height:1.55}
+table.orph tr:hover{background:#15110b}
+table.orph td.ref{width:60px;color:var(--gold);font-family:'Courier New',monospace;font-size:11px;font-weight:bold;border-right:1px solid var(--line);text-align:right}
+table.orph td.he{width:32%;direction:rtl;text-align:right;font-family:'SBL Hebrew',serif;font-size:1.05rem;color:var(--orig);background:rgba(201,162,39,0.025);border-left:3px solid var(--gold-dim)}
+table.orph td.grc{width:32%;direction:ltr;font-family:'SBL Greek',serif;font-size:1rem;color:var(--orig)}
+table.orph td.rus{color:var(--ink);font-size:.95rem}
+footer{padding:18px;text-align:center;color:var(--ink-dim);font-size:10px;border-top:1px solid var(--line);font-family:'Courier New',monospace;letter-spacing:2px;background:var(--bg2)}
+footer .red{color:var(--red)} footer .gold{color:var(--gold)}
+@media(max-width:760px){
+  .hos-h1{font-size:1.2rem}
+  .row,.verse{grid-template-columns:1.7rem 1fr 1fr}
+  .num{font-size:.7rem;padding:.4rem .2rem}
+  .orig,.ar,.gr,.he,.grc,.sk,.dev,.av,.zh,.sa,.ru,.rus{padding:6px 4px;font-size:.85rem}
+  .ar{font-size:1rem}
+  table.orph td{padding:6px 4px;font-size:.82rem}
+  table.orph td.ref{width:30px;font-size:9px}
+}
+</style>
+</head><body>
+<header class="hos">
+<div class="hos-strip"><span class="l">ARCHIVUM HAERETICUM · CORPUS DIVINUS · Q12</span><span class="r">◆ SIGILLUM VERITATIS</span></div>
+<div class="hos-body">
+<h1 class="hos-h1"><span class="q">Q12</span>尧曰 — Лунь Юй<span class="sig">◆ FIDELIS</span></h1>
+<div class="hos-sub">Яо Юэ · 20 книг</div>
 </div>
-<nav class="menu"><a href="index.html">← Обзор</a>
-<a href="ch1.html">1</a>
-<a href="ch2.html">2</a>
-<a href="ch3.html">3</a>
-<a href="ch4.html">4</a>
-<a href="ch5.html">5</a>
-<a href="ch6.html">6</a>
-<a href="ch7.html">7</a>
-<a href="ch8.html">8</a>
-<a href="ch9.html">9</a>
-<a href="ch10.html">10</a>
-<a href="ch11.html">11</a>
-<a href="ch12.html">12</a>
-<a href="ch13.html">13</a>
-<a href="ch14.html">14</a>
-<a href="ch15.html">15</a>
-<a href="ch16.html">16</a>
-<a href="ch17.html">17</a>
-<a href="ch18.html">18</a>
-<a href="ch19.html">19</a>
-<a href="ch20.html"><b>20</b></a>
+</header>
+<div class="stamps">
+<span class="fid">◆ FIDELIS</span>
+<span>◇ SUSPECTUS</span>
+<span class="cre">✚ CREDO</span>
+</div>
+<nav class="main">
+<a href="../index.html">◀ CORPUS DIVINUS</a>
+<a href="index.html">○ ОБЗОР</a>
 </nav>
-<div class="cnt">
+<main>
+<div class="toolbar">
+<button onclick="toggleAll(true)">▼ РАЗВЕРНУТЬ</button>
+<button onclick="toggleAll(false)">▲ СВЕРНУТЬ</button>
+<button onclick="toggleOrig()">☀ ОРИГИНАЛ</button>
+<button onclick="toggleRu()">☾ ПЕРЕВОД</button>
+<button onclick="resetView()">◉ ОБА</button>
+</div>
+<div class="meta">◆ ОРИГИНАЛ СЛЕВА · ПЕРЕВОД СПРАВА · ◆ FIDELIS</div>
+
 <div class="verse">
 <div class="num">1</div>
 <div class="zh"><i>(китайский отсутствует в источнике)</i></div>
@@ -74,6 +105,29 @@ footer{padding:24px;color:var(--ink-dim);font-size:12px;border-top:1px solid var
 <div class="zh"><i>(китайский отсутствует в источнике)</i></div>
 <div class="ru">Учитель сказал: — Не зная воли [неба], нельзя стать благородным мужем. Не зная ритуала, нельзя утвердить себя [в обществе]. Не зная, что говорят [люди], нельзя узнать людей. Конфуций: «Лунь юй» Конфуций Конфуций родился зимой 551 г. до р.х. в период царствования Чжоуской династии, когда Китай представлял из себя феодальное королевство со слабеющей центральной властью и раздираемое междоусобной борьбой многочисленных удельных владений, а частыми беспорядками в массе народа, порождаемыми голодом и нищетой. Конфуций происходил из царского рода. Его родословная, доведенная до 1200 г. до р.х., свидетельствует, что один из его предков сложил с себя герцогское достоинство, вследствие чего его семья в пятом поколении снова слилась с простым народом. Отец Конфуция был прекрасным офицером и комендантом маленького города Тсов. Рождение Конфуция было возвещено его матери сказочным зверем, принесшим алмаз с надписью: «Сын водяного духа займёт место увядающего рода Тху и будет властителем, хотя и без трона». Трёх лет Конфуций потерял отца, семья осталась в стеснённых обстоятельствах. Впоследствии, когда Конфуция хвалили за знание многих искусств и ремесел, он объяснял это бедностью, заставившей его приобретать эти знания для того, чтобы зарабатывать на существование. В детских играх он имел пристрастие воздвигать жертвенники и совершать обряды. Конфуций: «Лунь юй» Пятнадцати лет проявил большую способность к учению, а девятнадцати — женился. У него был сын и две дочери. На двадцать втором году Конфуций начал свою деятельность учителя. Постепенно вокруг него собралась школа из молодых пытливых умов, стремящихся к нравственным наставлениям и пониманию правильного государственного управления. Конфуций принимал всех желающих учиться, не обращая внимание на предлагаемую плату, но он и не удерживал тех, кто не выказывал серьёзности и способностей. Он преподавал историю и учение о нравственности, толковал древние песни, сказания и книги, учил этике, политике и искусству управлять. В целях изучения генеалогии, музыки и обрядов древности он предпринял путешествие в резиденцию императора. Здесь он познакомился с величайшим мыслителем и философом своего времени, основателем одного из трех ведущих религиозно-философских учений Китая — Лао-цзы. Встреча эта оставила глубокий след в душе Конфуция. Он выразил это словами: «Я знаю, как птицы могут летать, рыбы плавать, дичина бегать. Но бегущий может попасть в западню, плавающий может попасть на крючок и летающий может быть застрелен в воздухе. Но как дракон устремляется по ветру и облакам и подымается в небеса, я не постигаю. Ныне я узрел Лао-цзы и думаю, что он подобен дракону». Согласно преданиям, Конфуций имел 3 тыс. учеников, среди которых 72 были наиболее выдающимися. Любимым учеником Конфуция был рано умерший Янь-Юань, а главным пропагандистом его учения — Мынь-Цзы (381 — 288 гг. до р.х.). В сопровождении учеников Конфуций долгие годы странствовал по различным царствам Древнего Китая, стремясь найти применение своим принципам мудрого управления государством, но правители тяготились им также, как тиран Дионисий тяготился Платоном. Наконец, на пятьдесят втором году жизни, он получает место наместника города Хунг-то. Его деятельность даёт блестящие результаты и он назначается надзирателем государственных земель, а позднее министром юстиции. По свидетельству биографов, достаточно было одного назначения мудреца, чтобы положить предел преступлениям. Ещё за 1200 лет до рождения Конфуция один из древних правителей Китая сказал: «Великий Бог даровал людям нравственное чувство, следование которому неизменно ведёт к добру. Заставлять людей спокойно подчиняться этому чувству есть задача правителя». Конфуций хорошо знал это изречение, он учил, что дурной человек непригоден к управлению. «...Правительство, которое притесняет, хуже дикого зверя и его более боятся, чем тигра». «Где государь — государь, министр — министр, отец — отец, сын — сын, там мудрое правительство.» Конфуций учил, что управлять — это значит ставить каждого на свое место в обществе в соответствии с его качествами. Он считал также, что каждый человек должен по возможности учиться и нравственно совершенствоваться. Правители обязаны призывать народ к обучению, воспитывать и обучать его. Горячо любя свою родину, он восставал против внутренних распрей между правителями отдельных уделов и отстаивал необходимость объединения Китая путем подчинения удельных владетелей моральному авторитету главы государства. Процветание герцогства Лу, вызванное мудрым правлением Конфуция, породило зависть соседних князей, и они старались посеять раздор между герцогом и мудрецом. К сожалению, им это удалось, и на 56-м году Конфуций вынужден был вновь оставить отечество и на протяжении 14 лет скитаться по различным государствам Китая. Он жил при дворах и в народе, порой ему воздавали почести, заискивали и льстили, но нигде не давали государственных должностей. Однажды во время странствия он встретил отшельника, с презрением отозвавшегося о попытках борьбы Конфуция с существующими порядками и призвавшего учеников не следовать за учителем, а удалиться от мира. На это мудрец ответил: «Невозможно удалиться от мира и жить с птицами и зверями, не имеющими с нами никакого сходства. С кем мне сообщаться, как не со страждущими людьми? Господствующее зло — вот что требует моих усилий.» Конфуций до конца дней оставался верен своему пути. Конфуций: «Лунь юй» Шестидесяти восьми лет, благодаря влиянию одного ученика, занимавшего важный пост в Лу, Конфуций наконец вернулся в родную провинцию. Не имея больше влияния на правящий дом, он посвятил последние годы составлению летописи Лу «Чуньцю» («Весна и осень»), охватывающей период 722…481 г. до р.х., редактированию «Шу цзин» («Книги истории»), «Шиц зинь» («Книги стихов»), входящих состав четырех— и пятикнижья. Из древнего литературного наследия Китая более других Конфуций восхвалял «И цзин» — «Книгу перемен»). Эта книга, использующаяся до сих пор для гадания, заключает в себе по мнению ученых теорию явлений физического мира и свод различных морально-этических принципов, выраженных линиями и цифрами. В этой книге есть удивительные аналогии с сочинением Пифагора «Об элементах чисел, как элементах реального мира». Эта книга до сих пор остается загадкой, ведь на сегодняшний день ни один ученый, ни китайский, ни иностранный, так и не дали по ней удовлетворительного разъяснения. Конфуций же говорил об «И цзин», что проживи он дольше, он посвятил бы этой книге пятьдесят лет и тогда бы мог не иметь недостатков. Конфуций умер в четвертом месяце 478-го года, окруженный своими учениками, не покидавшими могилу учителя около трёх лет. Известие о смерти мудреца мгновенно распространилось по всему государству и произошло чудо: не признаваемый во время жизни, Великий Учитель стал объектом неудержимого поклонения целого народа, которое не убывает и по сей день. Конфуций в принципе не проповедовал каких-нибудь новых идей; он твёрдо верил в своё призвание воскресить в памяти людей повеления древних мудрецов, противодействовать злу и несправедливости, сделать китайский народ добродетельным, счастливым и процветающим. Он никогда не занимался вопросами теологии, считая, что «если мы не знаем людей, как познать духов? если не знаем еще жизни, как познать смерть?» Его учение проникнуто сознанием нравственного роста человека в гармонии с природой. Именно эта гармония и определяет нормы нравственности. Всей своей жизнью Конфуций неустанно старался показать пример того, что, по его мнению, должно быть идеалом человека: «Не делай другим того, чего не желаешь себе», «Сначала познай самого себя», «Сначала поправь самого себя», «Плати за добро добром и справедливостью за зло». Конфуций: «Лунь юй» Кьюнг Чиу Китайский философ, политолог, великий учитель, политический деятель, один из величайших умов Восточной Азии, основоположник философского учения, ставшего в последствии религией целого государства Конфуций (настоящее имя — Кьюнг Чиу, литературный псевдоним — Чунг-Ни) родился 27 августа 551 года до нашей эры в области Лу, современная провинция Шантунг, в Китае. Жизнь Конфуция, по сравнению с её огромным влиянием на мировую цивилизацию, была удивительно спокойной, даже скучной (по современным меркам), однако она являлась идеалом для Китая. Как гласит китайская мудрость, его жизнь была «простой и настоящей». Его жизнь была примером того, как человек сам себя познает, открывает в себе новые грани, сам строит свое будущее. Вера в способность обыкновенного человека стать «притчей во языцах», легендой и даже полубогом, а также абсолютная уверенность в том, что любой человек может стать лучше, умнее и прекраснее, являются основными постулатами философии Конфуция. Несмотря на то, что Конфуций жил достаточно давно, общая картина его жизненного пути представляется весьма отчетливо. Конфуций родился на 22 год прихода к власти Хцианга, правителя Лу, то есть в 551 году до н.э. В Китае днем его рождения считается 28 сентября. Например, в Тайване это национальный праздник, «День рождения Учителя». Провинция Лу, где философ появился на свет, была известна точным сохранением и почитанием культурных традиций цивилизации Чоу. Фамилия семьи была Чиу, однако в историю он вошел как Кьюнг-фу-цу (Учитель Кьюнг). Вероятно, предки Конфуция принадлежали к аристократии, однако ко времени рождения Конфуция от былого богатства остались лишь воспоминания. Когда ребенку было три годика, умер его отец, поэтому основное воспитание он получил от матери. Ещё в детстве сам Конфуций определил себя как неустанного учителя своих сверстников. До конца жизни он повторял, что в пятнадцать лет он отдал свое сердце искусству учить. При этом он никогда не переставал учиться сам, был очень жаден до знаний. При этом не известно, кто был учителем самого Конфуция, но он прилагал огромные усилия, чтобы найти действительно знающих и талантливых преподавателей, особенно это казалось музыки и обрядов. Конфуций служил мелким чиновником, в сферу обязанностей которого входило управление конюшнями и зернохранилищами. Но в 19 лет он женился на девушке из родной провинции Лу. Конфуций был преподавателем по шести специальностям — обряды, музыка, искусство стрельбы из лука, каллиграфия и арифметика. По мимо этого, он прекрасно разбирался в национальных традициях, поэзии и истории. Благодаря такому багажу знаний, к тридцати годам он смог начать блестящую карьеру учителя. Конфуций: «Лунь юй» Известно, что Конфуций первым в Китае выступал за всеобщее образование, а также за признание работы учителя особой специальностью, если не особым образом жизни. До Конфуция аристократические семьи нанимали преподавателей своим сыновьям по отдельным наукам. Предварительно, эти преподаватели должны были пройти специальный экзамены на знание инструкций по обучению, выпускаемых государственными чиновниками от образования. Конфуций же во главу угла ставил обучение не столько знаниям, хотя они тоже были важны, сколько обучению как способу трансформации человека, формирования его характера, его моральному и духовному совершенствованию, и как следствие, преображение всего общества. Он считал, что каждый должен заниматься самосовершенствованием, и эти он будет приносить миру наибольшую пользу. Конфуций разработал специальные программы по гуманитарным дисциплинам для будущий управленцев и руководителей. Двери его школы были открыты абсолютно для всех. Главной целью преподавания для Конфуция была разработка программ для обучения аристократии (Чюн-цу). Причем этот процесс должен был включать в себя обязательное самосовершенствование и установление прочных социальных связей. Конфуций всегда говорил, что «образование необходимо для самого человека», а конечной его целью является самообразование и самореализация. Общественная и государственная работа, по мнению философа, являются логическим продолжением обучения, именно в этой сфере должны применяться полученные знания. Мудрецы-отшельники часто подвергали сомнению искренность помыслов Конфуция. Он же отвечал, что достаточно легко поддаться искушению уйти в другой мир, стать отшельником, жить среди птичьего пения и благоухания цветов, жить в отрыве от настоящего человеческого общества. Сам же он предпочитал изменять мир к лучшему изнутри. Несколько десятилетий Конфуций был активно вовлечен в политику, пытаясь применить свои гуманистический принципы к политической действительности через различные управленческие структуры. В возрасте пятидесяти лет Конфуций работал сначала судьей, затем помощником министра по общественным работам. В итоге его назначили министром юстиции в провинции Лу. Вероятно, Конфуций сопровождал правителя Лу в его поездках как дипломатический представитель. Однако политическая карьера Конфуция была непродолжительной. Его лояльность и помощь правителю не соответствовала интересам властьимущих, особенно клану Чи. С другой стороны, его моральные устои не могли смириться с придворными нравами. В возрасти 56 лет, когда Конфуций понял, что его государство в лице государственных чиновников во главе с правителем более не заинтересованы в нем, Конфуций покинул Лу, надеясь найти другую провинцию, где его знания найдут лучшее применение. В путешествии его сопровождали ученики, не отвернувшиеся от Учителя во время опалы. Странствия длились 12 лет. За эти годы он стал ещё более известен, уважением и почитаем. Один пограничный служащий однажды назвал Конфуция «деревянным языком колокола времени», голос которого является гласом небесного пророка, пробуждающего людей. Конфуций был из тех людей, которые прекрасно понимают, что их могут не услышать и не понять, но которые самоотверженно продолжают делать все, что в их силах, на благо человечества. В возрасте 67 лет Конфуций возвратился на родину, преисполненный желания учить и передавать накопленные знания опыт и традиции. Конфуций умер в 479 году, когда ему было</div>
 </div>
-</div>
-<footer>ARCHIVUM HAERETICUM · Q12 · Книга 20. 尧曰<br>Sigillum: ◆◆◆ FIDELIS · Datum: 160.M3</footer>
+
+</main>
+<footer>ARCHIVUM HAERETICUM · Q12 · <span class="red">◆</span> SIGILLUM VERITATIS · <span class="gold">DATUM 160.M3</span> · FIDELIS</footer>
+<script>
+function toggleAll(state){
+  document.querySelectorAll('.row').forEach(r=>r.style.display=state?'grid':'none');
+  document.querySelectorAll('.verse').forEach(r=>r.style.display=state?'grid':'none');
+  document.querySelectorAll('table.orph tr').forEach(r=>r.style.display=state?'':'none');
+}
+function toggleOrig(){
+  document.querySelectorAll('.row').forEach(r=>{r.style.display='grid';const o=r.querySelector('.orig,.ar,.gr,.he,.grc,.sk,.dev,.av,.zh,.sa');if(o)o.style.display='block';const t=r.querySelector('.ru,.rus');if(t)t.style.display='none';});
+  document.querySelectorAll('.verse').forEach(r=>{r.style.display='grid';const o=r.querySelector('.sk,.av,.zh,.sa,.en,.dev,.ar,.gr,.he,.grc');if(o)o.style.display='block';const t=r.querySelector('.ru,.rus');if(t)t.style.display='none';});
+  document.querySelectorAll('table.orph tr').forEach(r=>{r.style.display='';r.querySelectorAll('.rus').forEach(c=>c.style.display='none');});
+}
+function toggleRu(){
+  document.querySelectorAll('.row').forEach(r=>{r.style.display='grid';const o=r.querySelector('.orig,.ar,.gr,.he,.grc,.sk,.dev,.av,.zh,.sa');if(o)o.style.display='none';const t=r.querySelector('.ru,.rus');if(t)t.style.display='block';});
+  document.querySelectorAll('.verse').forEach(r=>{r.style.display='grid';const o=r.querySelector('.sk,.av,.zh,.sa,.en,.dev,.ar,.gr,.he,.grc');if(o)o.style.display='none';const t=r.querySelector('.ru,.rus');if(t)t.style.display='block';});
+  document.querySelectorAll('table.orph tr').forEach(r=>{r.style.display='';r.querySelectorAll('.he,.grc').forEach(c=>c.style.display='none');});
+}
+function resetView(){
+  document.querySelectorAll('.row,.verse').forEach(r=>r.style.display='grid');
+  document.querySelectorAll('.orig,.ar,.gr,.he,.grc,.sk,.dev,.av,.zh,.sa,.en,.ru,.rus').forEach(c=>c.style.display='');
+  document.querySelectorAll('table.orph tr').forEach(r=>r.style.display='');
+}
+</script>
 </body></html>

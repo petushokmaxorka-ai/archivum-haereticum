@@ -1,10 +1,93 @@
-<!DOCTYPE html><html lang="ru"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Евангелие от Матфея · Новый Завет</title><style>:root{--bg:#0a0a0c;--bg2:#101014;--panel:#15151a;--line:#2a2a33;--red:#c8102e;--gold:#c9a227;--ink:#e8e2d5;--dim:#9a937f;--orig:#f2ead6}*{box-sizing:border-box;margin:0;padding:0}body{background:var(--bg);color:var(--ink);font-family:Georgia,serif;line-height:1.55}header.b{background:linear-gradient(180deg,#1a0007,#0a0a0c);border-bottom:3px solid var(--red);padding:1.6rem 1rem;text-align:center}header.b h1{font-size:1.4rem;letter-spacing:.15em;color:var(--orig)}header.b p{color:var(--gold);font-size:.75rem;letter-spacing:.25em;text-transform:uppercase}main{max-width:1150px;margin:0 auto;padding:1.2rem 1rem 3rem}.row{display:grid;grid-template-columns:3.4rem 1fr 1fr;border-bottom:1px solid #1d1d24}.num{color:var(--dim);font-size:.75rem;padding:.7rem .5rem;text-align:right}.gr{direction:ltr;font-family:'SBL Greek','Palatino Linotype',Georgia,serif;font-size:1.06rem;line-height:1.75;color:var(--orig);padding:.7rem .9rem;border-right:1px solid #1d1d24}.ru{padding:.7rem .9rem;font-size:.97rem}.meta{color:var(--dim);font-size:.78rem;font-style:italic;padding:.6rem 0}nav{padding:.6rem;text-align:center}nav a{color:var(--gold);font-size:.8rem;margin:0 .6rem}a{color:var(--gold)}.chap{background:#17130a;color:var(--gold);font-size:.8rem;letter-spacing:.15em;padding:.45rem .9rem;border-bottom:1px solid #26262e}@media(max-width:760px){.row{grid-template-columns:2rem 1fr}.gr{border-right:none;border-bottom:1px dashed #26262e}.ru{grid-column:2}}</style></head><body><header class="b"><h1>Евангелие от Матфея</h1><p>НОВЫЙ ЗАВЕТ · СПРАВА РУССКИЙ, СЛЕВА ГРЕЧЕСКИЙ</p></header>
-<div style="text-align:center;padding:10px 16px;border-bottom:1px solid #2a2418;background:#15110b;font-family:Georgia,serif">
-  <span style="display:inline-block;border:1px solid #c9a227;color:#c9a227;font-size:10px;letter-spacing:2px;padding:4px 10px;margin:0 3px">◆ FIDELIS</span>
-  <span style="display:inline-block;border:1px solid #8a7119;color:#8a7119;font-size:10px;letter-spacing:2px;padding:4px 10px;margin:0 3px">◇ SUSPECTUS-FERTILIS</span>
-  <span style="display:inline-block;border:1px solid #8c2f26;color:#8c2f26;font-size:10px;letter-spacing:2px;padding:4px 10px;margin:0 3px">✠ DAMNATUS</span>
-  <span style="display:inline-block;border:1px solid #e8b84a;color:#e8b84a;background:rgba(232,184,74,0.05);font-size:10px;letter-spacing:2px;padding:4px 10px;margin:0 3px">✚ CREDO</span>
-</div><nav><a href="./index.html">✠ Оглавление</a><a href="62-Mk.html">Евангелие от Марка →</a></nav><main><div class="meta">Греческий: SBLGNT (© Logos/SBL, CC BY) · Русский: Синодальный перевод 1876 (Public Domain) · Печать: ◆ FIDELIS</div>
+<!DOCTYPE html><html lang="ru"><head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Евангелие от Матфея</title>
+<style>
+:root{--bg:#0a0a0c;--bg2:#0d0d12;--panel:#13131a;--line:#2a2a33;--red:#c8102e;--red-dark:#8a0a1f;--gold:#c9a227;--gold-bright:#e8b84a;--gold-dim:#8a7119;--ink:#e8e2d5;--ink-dim:#9a937f;--orig:#f2ead6;--accent:#d49a3a;--grid:#1d1d24}
+*{box-sizing:border-box;margin:0;padding:0}body{background:var(--bg);color:var(--ink);font-family:Georgia,'Times New Roman',serif;line-height:1.55}
+a{color:var(--gold);text-decoration:none}a:hover{color:var(--gold-bright);text-decoration:underline}
+header.hos{background:linear-gradient(180deg,var(--red-dark) 0%,#1a0007 30%,var(--bg) 100%);border-bottom:2px solid var(--red);padding:0;position:relative}
+header.hos::before{content:"";position:absolute;left:0;top:0;bottom:0;width:6px;background:var(--red)}
+.hos-strip{display:flex;justify-content:space-between;align-items:center;padding:6px 14px;background:rgba(0,0,0,0.5);border-bottom:1px solid var(--red-dark);font-family:'Courier New',monospace;font-size:10px;letter-spacing:2px;color:var(--ink-dim);text-transform:uppercase}
+.hos-strip .l{color:var(--gold)} .hos-strip .r{color:var(--red);font-weight:bold}
+.hos-body{padding:18px 22px 14px}
+.hos-h1{font-size:1.5rem;letter-spacing:.12em;color:var(--orig);font-weight:normal;margin-bottom:4px;line-height:1.2}
+.hos-h1 .q{color:var(--red);font-family:'Courier New',monospace;font-size:.7em;vertical-align:super;margin-right:6px;padding:3px 7px;background:rgba(200,16,46,0.15);border:1px solid var(--red-dark);letter-spacing:1px}
+.hos-h1 .sig{font-size:.55em;color:var(--gold);font-family:'Courier New',monospace;letter-spacing:2px;margin-left:10px;padding:3px 8px;border:1px solid var(--gold-dim);vertical-align:middle}
+.hos-sub{color:var(--ink-dim);font-size:13px;font-style:italic}
+.stamps{padding:7px 16px;background:var(--bg2);border-bottom:1px solid var(--line);text-align:center;font-family:'Courier New',monospace}
+.stamps span{display:inline-block;border:1px solid var(--gold-dim);color:var(--gold);font-size:9px;letter-spacing:2px;padding:2px 7px;margin:0 2px;text-transform:uppercase}
+.stamps span.fid{color:var(--gold-bright);border-color:var(--gold);background:rgba(201,162,39,0.05)}
+.stamps span.dam{color:var(--red);border-color:var(--red-dark);background:rgba(200,16,46,0.05)}
+.stamps span.cre{color:var(--accent);border-color:var(--accent);background:rgba(212,154,58,0.05)}
+nav.main{padding:8px 18px;background:var(--panel);border-bottom:1px solid var(--line);font-size:12px;text-align:center}
+nav.main a{color:var(--gold);margin:0 6px;letter-spacing:1px;padding:3px 6px}
+.toolbar{display:flex;justify-content:center;gap:6px;flex-wrap:wrap;margin:14px 0 8px;padding:8px;background:var(--panel);border:1px solid var(--line);font-family:'Courier New',monospace}
+.toolbar button{background:transparent;border:1px solid var(--gold-dim);color:var(--gold);padding:5px 11px;font-size:10px;letter-spacing:1px;cursor:pointer;font-family:inherit;text-transform:uppercase}
+.toolbar button:hover{background:var(--gold);color:var(--bg)}
+.meta{color:var(--ink-dim);font-size:11px;font-style:italic;padding:6px 16px;text-align:center;font-family:'Courier New',monospace;letter-spacing:1px}
+.meta b{color:var(--gold);font-style:normal;font-family:Georgia,serif}
+.chap{background:linear-gradient(90deg,var(--red-dark),transparent);color:var(--gold-bright);font-size:.85rem;letter-spacing:.2em;padding:9px 16px;border-bottom:1px solid var(--red-dark);border-top:1px solid var(--red-dark);font-family:'Courier New',monospace;text-transform:uppercase;margin-top:12px}
+main{max-width:1300px;margin:0 auto;padding:0 12px 40px}
+.row{display:grid;grid-template-columns:3rem 1fr 1.1fr;border-bottom:1px solid var(--grid);align-items:start;transition:background 0.15s}
+.row:hover{background:#15110b}
+.num{grid-column:1;color:var(--gold);font-size:12px;padding:10px 4px;text-align:right;font-family:'Courier New',monospace;font-weight:bold;align-self:start}
+.orig,.ar,.gr,.he,.grc,.sk,.dev,.av,.zh,.sa{grid-column:2;padding:10px 12px;font-size:1rem;line-height:1.7;color:var(--orig);background:rgba(201,162,39,0.025);border-right:1px solid var(--gold-dim);border-left:3px solid var(--gold-dim);font-style:italic}
+.ar{direction:rtl;text-align:right;font-family:'Amiri','Scheherazade New','Traditional Arabic',serif;font-size:1.25rem;line-height:1.85}
+.gr,.grc{direction:ltr;font-family:'SBL Greek','Palatino Linotype',Georgia,serif}
+.he{direction:rtl;text-align:right;font-family:'SBL Hebrew','Times New Roman',serif;font-size:1.1rem}
+.sk,.dev{direction:ltr;font-family:'Noto Sans Devanagari','Sanskrit Text',serif;font-size:1.05rem}
+.zh{font-family:'Noto Serif CJK SC','SimSun',serif}
+.ru,.rus{grid-column:3;padding:10px 12px;font-size:.95rem;line-height:1.65;text-align:justify;color:var(--ink)}
+.verse{display:grid;grid-template-columns:3.2rem 1fr 1.1fr;border-bottom:1px solid var(--grid);align-items:start;transition:background 0.15s}
+.verse:hover{background:#15110b}
+.verse .num{grid-column:1;color:var(--gold);font-size:11px;padding:10px 4px;text-align:right;font-family:'Courier New',monospace;font-weight:bold;align-self:start}
+.verse .sk,.verse .av,.verse .zh,.verse .dev,.verse .en{grid-column:2;padding:10px 12px;font-size:.95rem;line-height:1.7;color:var(--orig);background:rgba(201,162,39,0.025);border-right:1px solid var(--gold-dim);border-left:3px solid var(--gold-dim);font-style:italic}
+.verse .ru{grid-column:3;padding:10px 12px;font-size:.92rem;line-height:1.6}
+table.orph{width:100%;border-collapse:collapse;margin:8px 0}
+table.orph td{padding:8px 10px;border-bottom:1px solid var(--grid);vertical-align:top;font-size:.95rem;line-height:1.55}
+table.orph tr:hover{background:#15110b}
+table.orph td.ref{width:60px;color:var(--gold);font-family:'Courier New',monospace;font-size:11px;font-weight:bold;border-right:1px solid var(--line);text-align:right}
+table.orph td.he{width:32%;direction:rtl;text-align:right;font-family:'SBL Hebrew',serif;font-size:1.05rem;color:var(--orig);background:rgba(201,162,39,0.025);border-left:3px solid var(--gold-dim)}
+table.orph td.grc{width:32%;direction:ltr;font-family:'SBL Greek',serif;font-size:1rem;color:var(--orig)}
+table.orph td.rus{color:var(--ink);font-size:.95rem}
+footer{padding:18px;text-align:center;color:var(--ink-dim);font-size:10px;border-top:1px solid var(--line);font-family:'Courier New',monospace;letter-spacing:2px;background:var(--bg2)}
+footer .red{color:var(--red)} footer .gold{color:var(--gold)}
+@media(max-width:760px){
+  .hos-h1{font-size:1.2rem}
+  .row,.verse{grid-template-columns:1.7rem 1fr 1fr}
+  .num{font-size:.7rem;padding:.4rem .2rem}
+  .orig,.ar,.gr,.he,.grc,.sk,.dev,.av,.zh,.sa,.ru,.rus{padding:6px 4px;font-size:.85rem}
+  .ar{font-size:1rem}
+  table.orph td{padding:6px 4px;font-size:.82rem}
+  table.orph td.ref{width:30px;font-size:9px}
+}
+</style>
+</head><body>
+<header class="hos">
+<div class="hos-strip"><span class="l">ARCHIVUM HAERETICUM · CORPUS DIVINUS · Q2</span><span class="r">◆ SIGILLUM VERITATIS</span></div>
+<div class="hos-body">
+<h1 class="hos-h1"><span class="q">Q2</span>Евангелие от Матфея<span class="sig">◆ FIDELIS</span></h1>
+<div class="hos-sub">27 книг · SBLGNT + Синодальный 1876</div>
+</div>
+</header>
+<div class="stamps">
+<span class="fid">◆ FIDELIS</span>
+<span>◇ SUSPECTUS</span>
+<span class="cre">✚ CREDO</span>
+</div>
+<nav class="main">
+<a href="../index.html">◀ CORPUS DIVINUS</a>
+</nav>
+<main>
+<div class="toolbar">
+<button onclick="toggleAll(true)">▼ РАЗВЕРНУТЬ</button>
+<button onclick="toggleAll(false)">▲ СВЕРНУТЬ</button>
+<button onclick="toggleOrig()">☀ ОРИГИНАЛ</button>
+<button onclick="toggleRu()">☾ ПЕРЕВОД</button>
+<button onclick="resetView()">◉ ОБА</button>
+</div>
+<div class="meta">Греческий: SBLGNT (© Logos/SBL, CC BY) · Русский: Синодальный перевод 1876 (Public Domain) · Печать: ◆ FIDELIS</div>
 <div class="toolbar">
 <button onclick="toggleAll(true)">▼ Развернуть все</button>
 <button onclick="toggleAll(false)">▲ Свернуть все</button>
@@ -1110,32 +1193,29 @@
 <div class="row"><span class="num">28:17</span><div class="gr" lang="grc">καὶ ἰδόντες αὐτὸν ⸀προσεκύνησαν, οἱ δὲ ἐδίστασαν.</div><div class="ru">и, увидев Его, поклонились Ему, а иные усомнились.</div></div>
 <div class="row"><span class="num">28:18</span><div class="gr" lang="grc">καὶ προσελθὼν ὁ Ἰησοῦς ἐλάλησεν αὐτοῖς λέγων· Ἐδόθη μοι πᾶσα ἐξουσία ἐν οὐρανῷ καὶ ἐπὶ ⸀τῆς γῆς·</div><div class="ru">И, приблизившись, Иисус сказал им: дана Мне всякая власть на небе и на земле.</div></div>
 <div class="row"><span class="num">28:19</span><div class="gr" lang="grc">πορευθέντες ⸀οὖν μαθητεύσατε πάντα τὰ ἔθνη, ⸀βαπτίζοντες αὐτοὺς εἰς τὸ ὄνομα τοῦ πατρὸς καὶ τοῦ υἱοῦ καὶ τοῦ ἁγίου πνεύματος,</div><div class="ru">Итак, идите, научите все народы, крестя их во имя Отца и Сына и Святого Духа,</div></div>
-<div class="row"><span class="num">28:20</span><div class="gr" lang="grc">διδάσκοντες αὐτοὺς τηρεῖν πάντα ὅσα ἐνετειλάμην ὑμῖν· καὶ ἰδοὺ ἐγὼ μεθ’ ὑμῶν εἰμι πάσας τὰς ἡμέρας ἕως τῆς συντελείας τοῦ ⸀αἰῶνος.</div><div class="ru">уча их соблюдать все, что Я повелел вам; и се, Я с вами во все дни до скончания века. Аминь.</div></div></main><script>
+<div class="row"><span class="num">28:20</span><div class="gr" lang="grc">διδάσκοντες αὐτοὺς τηρεῖν πάντα ὅσα ἐνετειλάμην ὑμῖν· καὶ ἰδοὺ ἐγὼ μεθ’ ὑμῶν εἰμι πάσας τὰς ἡμέρας ἕως τῆς συντελείας τοῦ ⸀αἰῶνος.</div><div class="ru">уча их соблюдать все, что Я повелел вам; и се, Я с вами во все дни до скончания века. Аминь.</div></div>
+</main>
+<footer>ARCHIVUM HAERETICUM · Q2 · <span class="red">◆</span> SIGILLUM VERITATIS · <span class="gold">DATUM 160.M3</span> · FIDELIS</footer>
+<script>
 function toggleAll(state){
-  document.querySelectorAll('.row').forEach(r=>{
-    r.style.display = state ? 'grid' : 'none';
-  });
+  document.querySelectorAll('.row').forEach(r=>r.style.display=state?'grid':'none');
+  document.querySelectorAll('.verse').forEach(r=>r.style.display=state?'grid':'none');
+  document.querySelectorAll('table.orph tr').forEach(r=>r.style.display=state?'':'none');
 }
 function toggleOrig(){
-  document.querySelectorAll('.row').forEach(r=>{
-    r.style.display='grid';
-    r.querySelector('.ar').style.display='block';
-    r.querySelector('.ru').style.display='none';
-  });
+  document.querySelectorAll('.row').forEach(r=>{r.style.display='grid';const o=r.querySelector('.orig,.ar,.gr,.he,.grc,.sk,.dev,.av,.zh,.sa');if(o)o.style.display='block';const t=r.querySelector('.ru,.rus');if(t)t.style.display='none';});
+  document.querySelectorAll('.verse').forEach(r=>{r.style.display='grid';const o=r.querySelector('.sk,.av,.zh,.sa,.en,.dev,.ar,.gr,.he,.grc');if(o)o.style.display='block';const t=r.querySelector('.ru,.rus');if(t)t.style.display='none';});
+  document.querySelectorAll('table.orph tr').forEach(r=>{r.style.display='';r.querySelectorAll('.rus').forEach(c=>c.style.display='none');});
 }
 function toggleRu(){
-  document.querySelectorAll('.row').forEach(r=>{
-    r.style.display='grid';
-    r.querySelector('.ar').style.display='none';
-    r.querySelector('.ru').style.display='block';
-  });
+  document.querySelectorAll('.row').forEach(r=>{r.style.display='grid';const o=r.querySelector('.orig,.ar,.gr,.he,.grc,.sk,.dev,.av,.zh,.sa');if(o)o.style.display='none';const t=r.querySelector('.ru,.rus');if(t)t.style.display='block';});
+  document.querySelectorAll('.verse').forEach(r=>{r.style.display='grid';const o=r.querySelector('.sk,.av,.zh,.sa,.en,.dev,.ar,.gr,.he,.grc');if(o)o.style.display='none';const t=r.querySelector('.ru,.rus');if(t)t.style.display='block';});
+  document.querySelectorAll('table.orph tr').forEach(r=>{r.style.display='';r.querySelectorAll('.he,.grc').forEach(c=>c.style.display='none');});
 }
 function resetView(){
-  document.querySelectorAll('.row').forEach(r=>{
-    r.style.display='grid';
-    r.querySelector('.ar').style.display='block';
-    r.querySelector('.ru').style.display='block';
-  });
+  document.querySelectorAll('.row,.verse').forEach(r=>r.style.display='grid');
+  document.querySelectorAll('.orig,.ar,.gr,.he,.grc,.sk,.dev,.av,.zh,.sa,.en,.ru,.rus').forEach(c=>c.style.display='');
+  document.querySelectorAll('table.orph tr').forEach(r=>r.style.display='');
 }
 </script>
 </body></html>

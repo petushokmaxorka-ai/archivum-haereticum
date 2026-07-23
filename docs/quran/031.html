@@ -1,74 +1,86 @@
 <!DOCTYPE html><html lang="ru"><head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Сура 31 · Лукман (Лукман)</title>
+<title>Сура 31 · Лукман</title>
 <style>
-:root{--bg:#0a0a0c;--bg2:#101014;--panel:#15151a;--line:#2a2a33;--red:#c8102e;--gold:#c9a227;--ink:#e8e2d5;--dim:#9a937f;--orig:#f2ead6}
-*{box-sizing:border-box;margin:0;padding:0}
-body{background:var(--bg);color:var(--ink);font-family:Georgia,serif;line-height:1.55}
-header.b{background:linear-gradient(180deg,#1a0007,#0a0a0c);border-bottom:3px solid var(--red);padding:1.6rem 1rem;text-align:center}
-header.b h1{font-size:1.5rem;letter-spacing:.15em;color:var(--orig);margin-bottom:0.3em}
-header.b p{color:var(--gold);font-size:.75rem;letter-spacing:.25em;text-transform:uppercase}
-.stamps{padding:8px 16px;border-bottom:1px solid #2a2418;background:#15110b;text-align:center;font-family:Georgia,serif}
-.stamps span{display:inline-block;border:1px solid #c9a227;color:#c9a227;font-size:10px;letter-spacing:2px;padding:3px 8px;margin:0 2px}
-.stamps span.fir{color:#e8b84a;background:rgba(232,184,74,0.05);border-color:#e8b84a}
-main{max-width:1300px;margin:0 auto;padding:1rem 1rem 3rem}
-.toolbar{display:flex;justify-content:center;gap:10px;flex-wrap:wrap;margin:12px 0;padding:8px;background:#15151a;border:1px solid #2a2a33;border-radius:4px}
-.toolbar button{background:#1f1a12;border:1px solid #c9a227;color:#c9a227;padding:6px 12px;font-size:11px;letter-spacing:1px;cursor:pointer;font-family:Georgia,serif;text-transform:uppercase}
-.toolbar button:hover{background:#2a2010}
-.toolbar button.active{background:#c9a227;color:#0a0a0c}
-.meta{color:var(--dim);font-size:.78rem;font-style:italic;padding:.6rem 0;text-align:center}
-.chap{background:#17130a;color:var(--gold);font-size:.85rem;letter-spacing:.15em;padding:.55rem .9rem;border-bottom:1px solid #26262e;margin-top:14px}
-.row{display:grid;grid-template-columns:3rem 1fr 1.1fr;border-bottom:1px solid #1d1d24;align-items:start;transition:background 0.2s}
+:root{--bg:#0a0a0c;--bg2:#0d0d12;--panel:#13131a;--line:#2a2a33;--red:#c8102e;--red-dark:#8a0a1f;--gold:#c9a227;--gold-bright:#e8b84a;--gold-dim:#8a7119;--ink:#e8e2d5;--ink-dim:#9a937f;--orig:#f2ead6;--accent:#d49a3a;--grid:#1d1d24}
+*{box-sizing:border-box;margin:0;padding:0}body{background:var(--bg);color:var(--ink);font-family:Georgia,'Times New Roman',serif;line-height:1.55}
+a{color:var(--gold);text-decoration:none}a:hover{color:var(--gold-bright);text-decoration:underline}
+header.hos{background:linear-gradient(180deg,var(--red-dark) 0%,#1a0007 30%,var(--bg) 100%);border-bottom:2px solid var(--red);padding:0;position:relative}
+header.hos::before{content:"";position:absolute;left:0;top:0;bottom:0;width:6px;background:var(--red)}
+.hos-strip{display:flex;justify-content:space-between;align-items:center;padding:6px 14px;background:rgba(0,0,0,0.5);border-bottom:1px solid var(--red-dark);font-family:'Courier New',monospace;font-size:10px;letter-spacing:2px;color:var(--ink-dim);text-transform:uppercase}
+.hos-strip .l{color:var(--gold)} .hos-strip .r{color:var(--red);font-weight:bold}
+.hos-body{padding:18px 22px 14px}
+.hos-h1{font-size:1.5rem;letter-spacing:.12em;color:var(--orig);font-weight:normal;margin-bottom:4px;line-height:1.2}
+.hos-h1 .q{color:var(--red);font-family:'Courier New',monospace;font-size:.7em;vertical-align:super;margin-right:6px;padding:3px 7px;background:rgba(200,16,46,0.15);border:1px solid var(--red-dark);letter-spacing:1px}
+.hos-h1 .sig{font-size:.55em;color:var(--gold);font-family:'Courier New',monospace;letter-spacing:2px;margin-left:10px;padding:3px 8px;border:1px solid var(--gold-dim);vertical-align:middle}
+.hos-sub{color:var(--ink-dim);font-size:13px;font-style:italic}
+.stamps{padding:7px 16px;background:var(--bg2);border-bottom:1px solid var(--line);text-align:center;font-family:'Courier New',monospace}
+.stamps span{display:inline-block;border:1px solid var(--gold-dim);color:var(--gold);font-size:9px;letter-spacing:2px;padding:2px 7px;margin:0 2px;text-transform:uppercase}
+.stamps span.fid{color:var(--gold-bright);border-color:var(--gold);background:rgba(201,162,39,0.05)}
+.stamps span.dam{color:var(--red);border-color:var(--red-dark);background:rgba(200,16,46,0.05)}
+.stamps span.cre{color:var(--accent);border-color:var(--accent);background:rgba(212,154,58,0.05)}
+nav.main{padding:8px 18px;background:var(--panel);border-bottom:1px solid var(--line);font-size:12px;text-align:center}
+nav.main a{color:var(--gold);margin:0 6px;letter-spacing:1px;padding:3px 6px}
+.toolbar{display:flex;justify-content:center;gap:6px;flex-wrap:wrap;margin:14px 0 8px;padding:8px;background:var(--panel);border:1px solid var(--line);font-family:'Courier New',monospace}
+.toolbar button{background:transparent;border:1px solid var(--gold-dim);color:var(--gold);padding:5px 11px;font-size:10px;letter-spacing:1px;cursor:pointer;font-family:inherit;text-transform:uppercase}
+.toolbar button:hover{background:var(--gold);color:var(--bg)}
+.meta{color:var(--ink-dim);font-size:11px;font-style:italic;padding:6px 16px;text-align:center;font-family:'Courier New',monospace;letter-spacing:1px}
+.meta b{color:var(--gold);font-style:normal;font-family:Georgia,serif}
+.chap{background:linear-gradient(90deg,var(--red-dark),transparent);color:var(--gold-bright);font-size:.85rem;letter-spacing:.2em;padding:9px 16px;border-bottom:1px solid var(--red-dark);border-top:1px solid var(--red-dark);font-family:'Courier New',monospace;text-transform:uppercase;margin-top:12px}
+main{max-width:1300px;margin:0 auto;padding:0 12px 40px}
+.row{display:grid;grid-template-columns:3rem 1fr 1.1fr;border-bottom:1px solid var(--grid);align-items:start;transition:background 0.15s}
 .row:hover{background:#15110b}
-.num{grid-column:1;color:var(--gold);font-size:.78rem;padding:.8rem .5rem;text-align:right;font-weight:bold;align-self:start}
-.ar{grid-column:2;direction:rtl;text-align:right;font-family:'Amiri','Scheherazade New','Traditional Arabic',serif;font-size:1.35rem;line-height:1.9;color:var(--orig);padding:.8rem .9rem;border-right:1px solid #1d1d24}
-.ru{grid-column:3;padding:.8rem .9rem;font-size:.97rem;line-height:1.6;text-align:justify}
-.bismillah{text-align:center;padding:1.5rem 1rem;font-family:'Amiri','Scheherazade New','Traditional Arabic',serif;font-size:1.8rem;color:var(--gold);direction:rtl;background:linear-gradient(180deg,#1a1410,#0a0a0c);border-bottom:1px solid #2a2418;letter-spacing:0}
-.bismillah .label{display:block;font-family:Georgia,serif;font-size:.7rem;letter-spacing:.25em;color:var(--dim);text-transform:uppercase;direction:ltr;margin-bottom:8px}
-nav{padding:.7rem;text-align:center;border-bottom:1px solid #2a2418}
-nav a{color:var(--gold);font-size:.85rem;margin:0 .8rem;letter-spacing:1px}
-footer{padding:20px;text-align:center;color:var(--dim);font-size:11px;border-top:1px solid #2a2418;letter-spacing:1px}
+.num{grid-column:1;color:var(--gold);font-size:12px;padding:10px 4px;text-align:right;font-family:'Courier New',monospace;font-weight:bold;align-self:start}
+.orig,.ar,.gr,.he,.grc,.sk,.dev,.av,.zh,.sa{grid-column:2;padding:10px 12px;font-size:1rem;line-height:1.7;color:var(--orig);background:rgba(201,162,39,0.025);border-right:1px solid var(--gold-dim);border-left:3px solid var(--gold-dim);font-style:italic}
+.ar{direction:rtl;text-align:right;font-family:'Amiri','Scheherazade New','Traditional Arabic',serif;font-size:1.25rem;line-height:1.85}
+.gr,.grc{direction:ltr;font-family:'SBL Greek','Palatino Linotype',Georgia,serif}
+.he{direction:rtl;text-align:right;font-family:'SBL Hebrew','Times New Roman',serif;font-size:1.1rem}
+.sk,.dev{direction:ltr;font-family:'Noto Sans Devanagari','Sanskrit Text',serif;font-size:1.05rem}
+.zh{font-family:'Noto Serif CJK SC','SimSun',serif}
+.ru,.rus{grid-column:3;padding:10px 12px;font-size:.95rem;line-height:1.65;text-align:justify;color:var(--ink)}
+.bismillah{text-align:center;padding:1.5rem 1rem;font-family:'Amiri','Scheherazade New','Traditional Arabic',serif;font-size:1.8rem;color:var(--gold);direction:rtl;background:linear-gradient(180deg,#1a1410,#0a0a0c);border-bottom:1px solid var(--red-dark);letter-spacing:0;margin:14px 16px;border:1px solid var(--red-dark)}
+.bismillah .label{display:block;font-family:'Courier New',monospace;font-size:.7rem;letter-spacing:.25em;color:var(--ink-dim);text-transform:uppercase;direction:ltr;margin-bottom:8px}
+footer{padding:18px;text-align:center;color:var(--ink-dim);font-size:10px;border-top:1px solid var(--line);font-family:'Courier New',monospace;letter-spacing:2px;background:var(--bg2)}
+footer .red{color:var(--red)} footer .gold{color:var(--gold)}
 @media(max-width:760px){
+  .hos-h1{font-size:1.2rem}
   .row{grid-template-columns:2rem 1fr 1.1fr}
-  .num{font-size:.7rem;padding:.6rem .3rem}
+  .num{font-size:.7rem;padding:.5rem .3rem}
   .ar{font-size:1.1rem;line-height:1.7;padding:.5rem .4rem}
   .ru{font-size:.85rem;line-height:1.4;padding:.5rem .4rem}
 }
-@media(max-width:420px){
-  .row{grid-template-columns:1.7rem 1fr 1fr}
-  .num{font-size:.62rem;padding:.4rem .2rem}
-  .ar{font-size:.95rem;line-height:1.55;padding:.4rem .3rem}
-  .ru{font-size:.78rem;line-height:1.3;padding:.4rem .3rem}
-}
 </style>
 </head><body>
-<header class="b">
-<h1>Сура 31 · Лукман</h1>
-<p>Лукман · AL-QUR'AN · CORPUS DIVINUS</p>
+<header class="hos">
+<div class="hos-strip"><span class="l">ARCHIVUM HAERETICUM · CORPUS DIVINUS · Q1</span><span class="r">◆ SIGILLUM VERITATIS</span></div>
+<div class="hos-body">
+<h1 class="hos-h1"><span class="q">Q1</span>СУРА 31 · ЛУКМАН<span class="sig">◆ FIDELIS</span></h1>
+<div class="hos-sub">Лукман · 34 аятов · Tanzil Uthmani (араб.) + Крачковский И.Ю. 1963 (рус.) · Мекка/Медина</div>
+</div>
 </header>
 <div class="stamps">
-<span>◆ FIDELIS</span>
-<span>◇ SUSPECTUS-FERTILIS</span>
-<span>✠ DAMNATUS</span>
-<span class="fir">✚ CREDO</span>
+<span class="fid">◆ FIDELIS</span>
+<span>◇ SUSPECTUS</span>
+<span class="cre">☪ ИСЛАМ</span>
 </div>
-<nav>
-<a href="../index.html">✠ Оглавление Корана</a>
-<a href="030.html">← 30</a>
-<a href="032.html">32 →</a>
+<nav class="main">
+<a href="../index.html">◀ CORPUS DIVINUS</a>
+<a href="index.html">○ 114 СУР</a>
+<a href="030.html">◀ 30</a>
+<a href="032.html">32 ▶</a>
 </nav>
 <main>
-<div class="meta">Оригинал: Tanzil Uthmani (Public Domain) · Перевод: Крачковский И.Ю. (1963) · 34 аятов · Печать: ◆ FIDELIS</div>
 <div class="toolbar">
-<button onclick="toggleAll(true)">▼ Развернуть все</button>
-<button onclick="toggleAll(false)">▲ Свернуть все</button>
-<button onclick="toggleOrig()">🌙 Только оригинал</button>
-<button onclick="toggleRu()">📖 Только перевод</button>
-<button onclick="resetView()">◉ Оба</button>
+<button onclick="toggleAll(true)">▼ РАЗВЕРНУТЬ</button>
+<button onclick="toggleAll(false)">▲ СВЕРНУТЬ</button>
+<button onclick="toggleOrig()">☀ АРАБСКИЙ</button>
+<button onclick="toggleRu()">☾ РУССКИЙ</button>
+<button onclick="resetView()">◉ ОБА</button>
 </div>
-<div class="bismillah"><span class="label">Бисмилляh</span>بِسْمِ ٱللَّهِ ٱلرَّحْمَٰنِ ٱلرَّحِيمِ</div>
-<div class="cnt">
+<div class="meta">ОРИГИНАЛ: <b>Tanzil Uthmani (Public Domain)</b> · ПЕРЕВОД: <b>Крачковский И.Ю. (1963; PD с 2022)</b> · ◆ FIDELIS</div>
+<div class="bismillah"><span class="label">◆ БИСМИЛЛЯh · ١</span>بِسْمِ ٱللَّهِ ٱلرَّحْمَٰنِ ٱلرَّحِيمِ</div>
+<div class="chap">СУРА 31 · ЛУКМАН · 34 АЯТОВ</div>
 <div class="row"><span class="num">31:2</span><div class="ar" lang="ar">تِلْكَ ءَايَٰتُ ٱلْكِتَٰبِ ٱلْحَكِيمِ</div><div class="ru">Это - знамения книги мудрой,</div></div>
 <div class="row"><span class="num">31:3</span><div class="ar" lang="ar">هُدًى وَرَحْمَةً لِّلْمُحْسِنِينَ</div><div class="ru">как руководство и милость для творящих добро,</div></div>
 <div class="row"><span class="num">31:4</span><div class="ar" lang="ar">ٱلَّذِينَ يُقِيمُونَ ٱلصَّلَوٰةَ وَيُؤْتُونَ ٱلزَّكَوٰةَ وَهُم بِٱلْـَٔاخِرَةِ هُمْ يُوقِنُونَ</div><div class="ru">которые выстаивают молитву и дают очистительную подать, они - те, которые веруют в будущую жизнь.</div></div>
@@ -102,35 +114,21 @@ footer{padding:20px;text-align:center;color:var(--dim);font-size:11px;border-top
 <div class="row"><span class="num">31:32</span><div class="ar" lang="ar">وَإِذَا غَشِيَهُم مَّوْجٌ كَٱلظُّلَلِ دَعَوُا۟ ٱللَّهَ مُخْلِصِينَ لَهُ ٱلدِّينَ فَلَمَّا نَجَّىٰهُمْ إِلَى ٱلْبَرِّ فَمِنْهُم مُّقْتَصِدٌ وَمَا يَجْحَدُ بِـَٔايَٰتِنَآ إِلَّا كُلُّ خَتَّارٍ كَفُورٍ</div><div class="ru">И когда их покроет волна, сень, они взывают к Аллаху, очищая пред Ним веру; а когда Он их спасет на сушу, то среди них оказывается удерживающийся. Но отрицает Наши знамения только всякий изменник, неверный!</div></div>
 <div class="row"><span class="num">31:33</span><div class="ar" lang="ar">يَٰٓأَيُّهَا ٱلنَّاسُ ٱتَّقُوا۟ رَبَّكُمْ وَٱخْشَوْا۟ يَوْمًا لَّا يَجْزِى وَالِدٌ عَن وَلَدِهِۦ وَلَا مَوْلُودٌ هُوَ جَازٍ عَن وَالِدِهِۦ شَيْـًٔا إِنَّ وَعْدَ ٱللَّهِ حَقٌّ فَلَا تَغُرَّنَّكُمُ ٱلْحَيَوٰةُ ٱلدُّنْيَا وَلَا يَغُرَّنَّكُم بِٱللَّهِ ٱلْغَرُورُ</div><div class="ru">О люди! Бойтесь Господа вашего и страшитесь дня, когда родитель не возместит за ребенка и рожденный не возместит ничем за своего родителя! Поистине, обетование Аллаха - истина; пусть же тебя не обольщает жизнь ближайшая, и пусть не обольщает вас обольститель об Аллахе.</div></div>
 <div class="row"><span class="num">31:34</span><div class="ar" lang="ar">إِنَّ ٱللَّهَ عِندَهُۥ عِلْمُ ٱلسَّاعَةِ وَيُنَزِّلُ ٱلْغَيْثَ وَيَعْلَمُ مَا فِى ٱلْأَرْحَامِ وَمَا تَدْرِى نَفْسٌ مَّاذَا تَكْسِبُ غَدًا وَمَا تَدْرِى نَفْسٌۢ بِأَىِّ أَرْضٍ تَمُوتُ إِنَّ ٱللَّهَ عَلِيمٌ خَبِيرٌۢ</div><div class="ru">Поистине, у Аллаха ведение о часе; Он низводит дождь и знает, что в утробах, но не знает душа, что она приобретет завтра, и не знает душа, в какой земле умрет. Поистине, Аллах - ведущий, знающий!</div></div>
-</div>
 </main>
-<footer>ARCHIVUM HAERETICUM · Q1 · AL-QUR'AN · Сура 31 · Лукман (Лукман)<br>Источник: Крачковский И.Ю. (1963; Public Domain с 2022) · Tanzil Uthmani (PD) · Sigillum ◆◆◆ FIDELIS</footer>
+<footer>ARCHIVUM HAERETICUM · Q1 · КОРАН · СУРА 31 · Лукман · Лукман<br><span class="red">◆</span> SIGILLUM VERITATIS · <span class="gold">DATUM 160.M3</span> · FIDELIS</footer>
 <script>
 function toggleAll(state){
-  document.querySelectorAll('.row').forEach(r=>{
-    r.style.display = state ? 'grid' : 'none';
-  });
+  document.querySelectorAll('.row').forEach(r=>r.style.display=state?'grid':'none');
 }
 function toggleOrig(){
-  document.querySelectorAll('.row').forEach(r=>{
-    r.style.display='grid';
-    r.querySelector('.ar').style.display='block';
-    r.querySelector('.ru').style.display='none';
-  });
+  document.querySelectorAll('.row').forEach(r=>{r.style.display='grid';const o=r.querySelector('.ar');if(o)o.style.display='block';const t=r.querySelector('.ru');if(t)t.style.display='none';});
 }
 function toggleRu(){
-  document.querySelectorAll('.row').forEach(r=>{
-    r.style.display='grid';
-    r.querySelector('.ar').style.display='none';
-    r.querySelector('.ru').style.display='block';
-  });
+  document.querySelectorAll('.row').forEach(r=>{r.style.display='grid';const o=r.querySelector('.ar');if(o)o.style.display='none';const t=r.querySelector('.ru');if(t)t.style.display='block';});
 }
 function resetView(){
-  document.querySelectorAll('.row').forEach(r=>{
-    r.style.display='grid';
-    r.querySelector('.ar').style.display='block';
-    r.querySelector('.ru').style.display='block';
-  });
+  document.querySelectorAll('.row').forEach(r=>r.style.display='grid');
+  document.querySelectorAll('.ar,.ru').forEach(c=>c.style.display='');
 }
 </script>
 </body></html>
