@@ -85,7 +85,7 @@ footer .red{color:var(--red)} footer .gold{color:var(--gold)}
 <div class="toolbar">
 <button onclick="toggleAll(true)">▼ РАЗВЕРНУТЬ</button>
 <button onclick="toggleAll(false)">▲ СВЕРНУТЬ</button>
-<button onclick="toggleOrig()">☀ ОРИГИНАЛ</button>
+<button onclick="toggleEn()">EN</button> <button onclick="toggleOrig()">☀ ОРИГИНАЛ</button>
 <button onclick="toggleRu()">☾ ПЕРЕВОД</button>
 <button onclick="resetView()">◉ ОБА</button>
 </div>
@@ -288,7 +288,8 @@ function toggleAll(state){
   document.querySelectorAll('.verse').forEach(r=>r.style.display=state?'grid':'none');
   document.querySelectorAll('table.orph tr').forEach(r=>r.style.display=state?'':'none');
 }
-function toggleOrig(){
+function toggleEn(){document.querySelectorAll(".verse").forEach(r=>{r.style.display="grid";const e=r.querySelector(".en");if(e)e.style.display=e.style.display==="none"?"block":"none";const o=r.querySelector(".sk");if(o)o.style.display="block";const t=r.querySelector(".ru");if(t)t.style.display="none";});}
+  function toggleOrig(){
   document.querySelectorAll('.row').forEach(r=>{r.style.display='grid';const o=r.querySelector('.orig,.ar,.gr,.he,.grc,.sk,.dev,.av,.zh,.sa');if(o)o.style.display='block';const t=r.querySelector('.ru,.rus');if(t)t.style.display='none';});
   document.querySelectorAll('.verse').forEach(r=>{r.style.display='grid';const o=r.querySelector('.sk,.av,.zh,.sa,.en,.dev,.ar,.gr,.he,.grc');if(o)o.style.display='block';const t=r.querySelector('.ru,.rus');if(t)t.style.display='none';});
   document.querySelectorAll('table.orph tr').forEach(r=>{r.style.display='';r.querySelectorAll('.rus').forEach(c=>c.style.display='none');});
