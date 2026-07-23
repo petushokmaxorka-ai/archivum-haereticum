@@ -117,32 +117,23 @@ details.corpus[open]>summary::before{content:"▼";color:var(--gold-bright)}
   details.corpus>summary{font-size:.85rem;padding:10px 12px;letter-spacing:.03em}
   details.corpus>summary .left{font-size:.85rem}
 }
-.nav-rama{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin:18px 0}
-.nav-card{background:linear-gradient(135deg,var(--bg2),var(--panel));border:2px solid var(--gold-dim);padding:14px 18px;position:relative;transition:all 0.2s}
-.nav-card:hover{border-color:var(--gold);box-shadow:0 0 12px rgba(201,162,39,0.15)}
-.nav-card.abram{border-color:var(--red-dark)}
-.nav-card.abram:hover{border-color:var(--red);box-shadow:0 0 12px rgba(200,16,46,0.15)}
-.nav-card h2{font-size:1.05rem;color:var(--gold-bright);letter-spacing:2px;margin:0 0 10px;font-weight:normal;border-bottom:1px solid var(--gold-dim);padding-bottom:6px}
-.nav-card.abram h2{color:var(--red)}
-.nav-list{list-style:none;padding:0;margin:0;display:grid;grid-template-columns:1fr 1fr;gap:4px 8px}
-.nav-list li a{display:flex;align-items:center;gap:5px;padding:4px 6px;border:1px solid transparent;color:var(--ink);text-decoration:none;font-size:12px;line-height:1.4;transition:all 0.15s}
-.nav-list li a:hover{border-color:var(--gold);background:rgba(201,162,39,0.08);color:var(--gold-bright);text-decoration:none}
-.nav-list li a .qb{color:var(--gold);font-family:'Courier New',monospace;font-size:10px;font-weight:bold;flex-shrink:0;min-width:38px}
-.nav-card.abram .nav-list li a .qb{color:var(--red)}
-.nav-card.abram .nav-list li a:hover{border-color:var(--red);background:rgba(200,16,46,0.08);color:var(--red)}
-.nav-card .foot{font-size:10px;color:var(--ink-dim);text-align:right;margin-top:8px;font-family:'Courier New',monospace;letter-spacing:1px}
-.full-list-btn{display:block;margin:18px auto;padding:10px 28px;background:linear-gradient(135deg,var(--bg2),var(--panel));border:2px solid var(--gold);color:var(--gold-bright);font-family:'Courier New',monospace;font-size:14px;letter-spacing:3px;cursor:pointer;text-transform:uppercase;transition:all 0.2s;font-weight:bold}
-.full-list-btn:hover{background:var(--gold);color:var(--bg);box-shadow:0 0 16px rgba(201,162,39,0.3)}
-.full-list-section{margin:18px 0;padding:16px 18px;background:var(--bg2);border:1px solid var(--gold-dim)}
-.full-list-section summary{cursor:pointer;padding:8px 0;list-style:none}
-.full-list-section summary::-webkit-details-marker{display:none}
-.full-list-section summary h2{display:inline;color:var(--gold-bright);font-size:1rem;letter-spacing:2px;margin:0;font-weight:normal}
-.full-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(220px,1fr));gap:8px;margin-top:14px}
-.full-grid .q-frame{padding:8px 12px;border:1px solid var(--line);background:var(--bg);transition:all 0.15s;text-decoration:none;display:flex;flex-direction:column;gap:2px;color:var(--ink)}
-.full-grid .q-frame:hover{border-color:var(--gold);background:rgba(201,162,39,0.06);text-decoration:none;color:var(--gold-bright)}
-.full-grid .q-frame .q-id{color:var(--gold);font-family:'Courier New',monospace;font-size:10px;letter-spacing:1.5px;font-weight:bold}
-.full-grid .q-frame .q-name{font-size:12px;line-height:1.35}
-@media(max-width:760px){.nav-rama{grid-template-columns:1fr}.nav-list{grid-template-columns:1fr}.full-grid{grid-template-columns:1fr 1fr}}
+.rama-btns{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin:18px 0}
+.rama-btn{background:linear-gradient(135deg,var(--bg2),var(--panel));border:2px solid var(--gold-dim);padding:14px 18px;cursor:pointer;transition:all 0.2s;font-family:'Courier New',monospace;text-align:center;position:relative}
+.rama-btn.abram{border-color:var(--red-dark)}
+.rama-btn.abram:hover{border-color:var(--red);background:rgba(200,16,46,0.1);box-shadow:0 0 16px rgba(200,16,46,0.3)}
+.rama-btn.non-abram:hover{border-color:var(--gold);background:rgba(201,162,39,0.1);box-shadow:0 0 16px rgba(201,162,39,0.3)}
+.rama-btn h2{margin:0;font-size:1.1rem;letter-spacing:3px;font-weight:bold;display:block}
+.rama-btn.abram h2{color:var(--red)}
+.rama-btn.non-abram h2{color:var(--gold-bright)}
+.rama-btn .sub{display:block;font-size:10px;color:var(--ink-dim);margin-top:4px;letter-spacing:1.5px;font-weight:normal}
+.rama-list-box{margin:0 0 18px;padding:14px 18px;background:var(--bg2);border:1px solid var(--gold-dim);animation:fadeIn 0.3s ease}
+.rama-list-box.abram{border-color:var(--red-dark)}
+.rama-list-box h3{margin:0 0 10px;font-size:0.95rem;letter-spacing:2px;font-weight:normal;padding-bottom:6px;border-bottom:1px solid var(--gold-dim)}
+.rama-list-box.abram h3{color:var(--red);border-bottom-color:var(--red-dark)}
+.rama-list-box h3.gold{color:var(--gold-bright)}
+@keyframes fadeIn{from{opacity:0;transform:translateY(-6px)}to{opacity:1;transform:translateY(0)}}
+@media(max-width:760px){.rama-btns{grid-template-columns:1fr}.full-grid{grid-template-columns:1fr 1fr}}
+
 </style>
 </head>
 <body>
@@ -174,57 +165,20 @@ details.corpus[open]>summary::before{content:"▼";color:var(--gold-bright)}
 
 <div class="note main-note" style="color:var(--red)"><p><b>CORPUS DIVINUS</b> &middot; <b>Единый Свод Законов Божьих</b> &middot; <b>АРХИВУМ</b> &middot; попытка собрать мировые сакральные тексты в одном месте, в оригинале + русский перевод, для целей компаративного религиоведения и «воссоздания единого свода законов Божьих».</p><p>Проект основан на гипотезе: <b>«Вавилонская башня = точка расхождения единого свода законов Божьих»</b>. До рассеяния народов (Быт. 11) был единый свод. После — разные традиции, каждая со своим путём. Задача архива — собрать параллельные тексты, увидеть общее.</p><p><b>28 КОРПУСА:</b> Q1 Коран · Q2 Новый Завет · Q3 Танах · Q3.1 Девтероканон · Q4 1 Енох · Q5 2 Енох+Юбилеи · Q5.1 Молитвы Волхвов · Q6 Ригведа · Q7 Авеста · Q8 Цзинцзяо · Q9 Дхаммапада · Q10 Бхагавадгита · Q11 Дао Дэ Цзин · Q12 Лунь Юй · Q13 Ману-смрити · Q14 Упанишады · Q15 Бардо Тхёдол · Q16 Суфийская поэзия · Q17 Эпос о Гильгамеше · Q18 Каббала · Q19 Орфические гимны · Q20 Книга Мёртвых · Q21 Славянские Веды · Q22 Старшая Эдда · Q23 Пополь Вух · Q24 Евангелие от Фомы · Q25 Энума Элиш · Q26 Кодзики · Q27 Свитки Мёртвого моря</p></div>
 
-<div class="nav-rama">
 
-<div class="nav-card abram">
+<div class="rama-btns">
+<button class="rama-btn abram" onclick="toggleRama('abram')">
 <h2>✡ АВРААМИЧЕСКИЕ ✡</h2>
-<ul class="nav-list">
-  <li><a href="quran/index.html"><span class="qb">Q1</span>☪ Коран</a></li>
-  <li><a href="nt/index.html"><span class="qb">Q2</span>✝ Новый Завет</a></li>
-  <li><a href="tanakh/index.html"><span class="qb">Q3</span>✡ Танах</a></li>
-  <li><a href="deuterocanon/index.html"><span class="qb">Q3.1</span>✡ Девтероканон</a></li>
-  <li><a href="enoch/index.html"><span class="qb">Q4</span>✡ 1 Енох</a></li>
-  <li><a href="enoch2/index.html"><span class="qb">Q5</span>✡ 2 Енох+Юбилеи</a></li>
-  <li><a href="slavic-prayers/index.html"><span class="qb">Q5.1</span>☀ Молитвы Волхвов</a></li>
-  <li><a href="kabbalah/index.html"><span class="qb">Q18</span>✡ Каббала</a></li>
-  <li><a href="enuma-elish/index.html"><span class="qb">Q25</span>☀ Энума Элиш</a></li>
-  <li><a href="dead-sea/index.html"><span class="qb">Q27</span>✡ Свитки Мёртвого моря</a></li>
-</ul>
-<div class="foot">10 корпусов &middot; единая традиция Авраама</div>
-</div>
-
-<div class="nav-card">
+<span class="sub">▼ 10 КОРПУСОВ · нажмите чтобы развернуть</span>
+</button>
+<button class="rama-btn non-abram" onclick="toggleRama('non')">
 <h2>◈ НЕ АВРААМИЧЕСКИЕ ◈</h2>
-<ul class="nav-list">
-  <li><a href="rigveda/index.html"><span class="qb">Q6</span>☸ Ригведа</a></li>
-  <li><a href="avesta/index.html"><span class="qb">Q7</span>☸ Авеста</a></li>
-  <li><a href="jingjiao/index.html"><span class="qb">Q8</span>☯ Цзинцзяо</a></li>
-  <li><a href="dhammapada/index.html"><span class="qb">Q9</span>☸ Дхаммапада</a></li>
-  <li><a href="bhagavadgita/index.html"><span class="qb">Q10</span>☸ Бхагавадгита</a></li>
-  <li><a href="daodejing/index.html"><span class="qb">Q11</span>☯ Дао Дэ Цзин</a></li>
-  <li><a href="lunyu/index.html"><span class="qb">Q12</span>☯ Лунь Юй</a></li>
-  <li><a href="manusmriti/index.html"><span class="qb">Q13</span>☸ Ману-смрити</a></li>
-  <li><a href="upanishad/index.html"><span class="qb">Q14</span>☸ Упанишады</a></li>
-  <li><a href="bardo/index.html"><span class="qb">Q15</span>☸ Бардо Тхёдол</a></li>
-  <li><a href="sufi/index.html"><span class="qb">Q16</span>☪ Суфийская поэзия</a></li>
-  <li><a href="gilgamesh/index.html"><span class="qb">Q17</span>☀ Эпос о Гильгамеше</a></li>
-  <li><a href="orphic/index.html"><span class="qb">Q19</span>☿ Орфические гимны</a></li>
-  <li><a href="egyptian/index.html"><span class="qb">Q20</span>𓂀 Книга Мёртвых</a></li>
-  <li><a href="slavic/index.html"><span class="qb">Q21</span>☀ Славянские Веды</a></li>
-  <li><a href="edda/index.html"><span class="qb">Q22</span>⚡ Старшая Эдда</a></li>
-  <li><a href="popol-vuh/index.html"><span class="qb">Q23</span>☀ Пополь Вух</a></li>
-  <li><a href="thomas/index.html"><span class="qb">Q24</span>☀ Евангелие от Фомы</a></li>
-  <li><a href="kojiki/index.html"><span class="qb">Q26</span>☯ Кодзики</a></li>
-</ul>
-<div class="foot">19 корпусов &middot; иные цивилизации</div>
+<span class="sub">▼ 19 КОРПУСОВ · нажмите чтобы развернуть</span>
+</button>
 </div>
 
-</div>
-
-<button class="full-list-btn" onclick="document.getElementById('full-list').open=true; this.style.display='none';">▼ ПОЛНЫЙ СПИСОК 29 КОРПУСОВ ▼</button>
-
-<details class="full-list-section" id="full-list">
-<summary><h2>◆ ПОЛНЫЙ СПИСОК &middot; 29 КОРПУСОВ &middot; ◆</h2></summary>
+<div id="rama-abram" class="rama-list-box abram" style="display:none">
+<h3>✡ АВРААМИЧЕСКИЕ КОРПУСА · ЕДИНАЯ ТРАДИЦИЯ АВРААМА</h3>
 <div class="full-grid">
   <a class="q-frame" href="quran/index.html"><span class="q-id">◆ Q1</span><span class="q-name">☪ Коран</span></a>
   <a class="q-frame" href="nt/index.html"><span class="q-id">◆ Q2</span><span class="q-name">✝ Новый Завет</span></a>
@@ -236,6 +190,12 @@ details.corpus[open]>summary::before{content:"▼";color:var(--gold-bright)}
   <a class="q-frame" href="kabbalah/index.html"><span class="q-id">◆ Q18</span><span class="q-name">✡ Каббала</span></a>
   <a class="q-frame" href="enuma-elish/index.html"><span class="q-id">◆ Q25</span><span class="q-name">☀ Энума Элиш</span></a>
   <a class="q-frame" href="dead-sea/index.html"><span class="q-id">◆ Q27</span><span class="q-name">✡ Свитки Мёртвого моря</span></a>
+</div>
+</div>
+
+<div id="rama-non" class="rama-list-box" style="display:none">
+<h3 class="gold">◈ НЕ АВРААМИЧЕСКИЕ КОРПУСА · ИНЫЕ ЦИВИЛИЗАЦИИ</h3>
+<div class="full-grid">
   <a class="q-frame" href="rigveda/index.html"><span class="q-id">◆ Q6</span><span class="q-name">☸ Ригведа</span></a>
   <a class="q-frame" href="avesta/index.html"><span class="q-id">◆ Q7</span><span class="q-name">☸ Авеста</span></a>
   <a class="q-frame" href="jingjiao/index.html"><span class="q-id">◆ Q8</span><span class="q-name">☯ Цзинцзяо</span></a>
@@ -256,8 +216,7 @@ details.corpus[open]>summary::before{content:"▼";color:var(--gold-bright)}
   <a class="q-frame" href="thomas/index.html"><span class="q-id">◆ Q24</span><span class="q-name">☀ Евангелие от Фомы</span></a>
   <a class="q-frame" href="kojiki/index.html"><span class="q-id">◆ Q26</span><span class="q-name">☯ Кодзики</span></a>
 </div>
-</details>
-
+</div>
 
 <details class="corpus q1">
 <summary><div class="left"><span class="qbadge">◆ Q1</span>КОРАН · AL-QUR'AN</div><div class="count">6 236 аятов · Tanzil + Крачковский 1963</div></summary>
@@ -757,8 +716,51 @@ details.corpus[open]>summary::before{content:"▼";color:var(--gold-bright)}
 
 </main>
 
+<script>
+function toggleAll(open){
+  document.querySelectorAll('details').forEach(d=>d.open=open);
+  document.querySelectorAll('.verse,.row').forEach(r=>{r.style.display=open?'grid':'none';});
+}
+function toggleOrig(){
+  document.querySelectorAll('.verse .cop').forEach(c=>c.style.display=c.style.display==='none'?'block':'none');
+}
+function toggleRu(){
+  document.querySelectorAll('.verse .ru').forEach(c=>c.style.display=c.style.display==='none'?'block':'none');
+}
+function resetView(){
+  document.querySelectorAll('.verse,.row').forEach(r=>r.style.display='grid');
+  document.querySelectorAll('.verse .cop,.verse .ru').forEach(c=>c.style.display='block');
+}
+function toggleRama(which) {
+  const abramBox = document.getElementById('rama-abram');
+  const nonBox = document.getElementById('rama-non');
+  if (which === 'abram') {
+    const willShow = abramBox.style.display === 'none';
+    abramBox.style.display = willShow ? 'block' : 'none';
+    nonBox.style.display = 'none';
+  } else {
+    const willShow = nonBox.style.display === 'none';
+    nonBox.style.display = willShow ? 'block' : 'none';
+    abramBox.style.display = 'none';
+  }
+}
+</script>
 <footer>
 ARCHIVUM HAERETICUM IMPERII HUMANITATIS &middot; CORPUS DIVINUS &middot; <span class="red">◆</span> SIGILLUM VERITATIS &middot; <span class="gold">28 КОРПУСА &middot; 407 СТРАНИЦ</span>
 </footer>
 </body>
-</html>
+</htmlfunction toggleRama(which) {
+  const abramBox = document.getElementById('rama-abram');
+  const nonBox = document.getElementById('rama-non');
+  if (which === 'abram') {
+    const willShow = abramBox.style.display === 'none';
+    abramBox.style.display = willShow ? 'block' : 'none';
+    nonBox.style.display = 'none';
+  } else {
+    const willShow = nonBox.style.display === 'none';
+    nonBox.style.display = willShow ? 'block' : 'none';
+    abramBox.style.display = 'none';
+  }
+}
+
+>
