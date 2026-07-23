@@ -1,0 +1,517 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>ТОМ 1: КАМИ-НО-МАКИ (ВЕК БОГОВ) — КОДЗИКИ — Архивум</title>
+<style>
+:root{--bg:#0a0a0c;--bg2:#0d0d12;--panel:#13131a;--line:#2a2a33;--red:#c8102e;--red-dark:#8a0a1f;--gold:#c9a227;--gold-bright:#e8b84a;--gold-dim:#8a7119;--ink:#c8102e;--ink-dim:#c9a227;--orig:#c8102e;--accent:#d49a3a;--grid:#1d1d24}
+*{box-sizing:border-box;margin:0;padding:0}body{background:var(--bg);color:var(--ink);font-family:Georgia,'Times New Roman',serif;line-height:1.55}
+a{color:var(--gold);text-decoration:none}a:hover{color:var(--gold-bright);text-decoration:underline}
+header.hos{background:linear-gradient(180deg,var(--red-dark) 0%,#1a0007 30%,var(--bg) 100%);border-bottom:2px solid var(--red);padding:0;position:relative}
+header.hos::before{content:"";position:absolute;left:0;top:0;bottom:0;width:6px;background:var(--red)}
+.hos-strip{display:flex;justify-content:space-between;align-items:center;padding:6px 14px;background:rgba(0,0,0,0.5);border-bottom:1px solid var(--red-dark);font-family:'Courier New',monospace;font-size:10px;letter-spacing:2px;color:var(--ink-dim);text-transform:uppercase}
+.hos-strip .l{color:var(--gold)} .hos-strip .r{color:var(--red);font-weight:bold}
+.hos-body{padding:18px 22px 14px}
+.hos-h1{font-size:1.5rem;letter-spacing:.12em;color:var(--orig);font-weight:normal;margin-bottom:4px;line-height:1.2}
+.hos-h1 .q{color:var(--red);font-family:'Courier New',monospace;font-size:.7em;vertical-align:super;margin-right:6px;padding:3px 7px;background:rgba(200,16,46,0.15);border:1px solid var(--red-dark);letter-spacing:1px}
+.hos-h1 .sig{font-size:.55em;color:var(--gold);font-family:'Courier New',monospace;letter-spacing:2px;margin-left:10px;padding:3px 8px;border:1px solid var(--gold-dim);vertical-align:middle}
+.hos-sub{color:var(--ink-dim);font-size:13px;font-style:italic}
+.stamps{padding:7px 16px;background:var(--bg2);border-bottom:1px solid var(--line);text-align:center;font-family:'Courier New',monospace}
+.stamps span{display:inline-block;border:1px solid var(--gold-dim);color:var(--gold);font-size:9px;letter-spacing:2px;padding:2px 7px;margin:0 2px;text-transform:uppercase}
+.stamps span.fid{color:var(--gold-bright);border-color:var(--gold);background:rgba(201,162,39,0.05)}
+.stamps span.dam{color:var(--red);border-color:var(--red-dark);background:rgba(200,16,46,0.05)}
+.stamps span.cre{color:var(--accent);border-color:var(--accent);background:rgba(212,154,58,0.05)}
+nav.main{padding:8px 18px;background:var(--panel);border-bottom:1px solid var(--line);font-size:12px;text-align:center}
+nav.main a{color:var(--gold);margin:0 6px;letter-spacing:1px;padding:3px 6px}
+.toolbar{display:flex;justify-content:center;gap:6px;flex-wrap:wrap;margin:14px 0 8px;padding:8px;background:var(--panel);border:1px solid var(--line);font-family:'Courier New',monospace}
+.toolbar button{background:transparent;border:1px solid var(--gold-dim);color:var(--gold);padding:5px 11px;font-size:10px;letter-spacing:1px;cursor:pointer;font-family:inherit;text-transform:uppercase}
+.toolbar button:hover{background:var(--gold);color:var(--bg)}
+.meta{color:var(--ink-dim);font-size:11px;font-style:italic;padding:6px 16px;text-align:center;font-family:'Courier New',monospace;letter-spacing:1px}
+.meta b{color:var(--gold);font-style:normal;font-family:Georgia,serif}
+.chap{background:linear-gradient(90deg,var(--red-dark),transparent);color:var(--gold-bright);font-size:.85rem;letter-spacing:.2em;padding:9px 16px;border-bottom:1px solid var(--red-dark);border-top:1px solid var(--red-dark);font-family:'Courier New',monospace;text-transform:uppercase;margin-top:12px}
+main{max-width:1300px;margin:0 auto;padding:0 12px 40px}
+.row{display:grid;grid-template-columns:3rem 1fr 1.1fr;border-bottom:1px solid var(--grid);align-items:start;transition:background 0.15s}
+.row:hover{background:#15110b}
+.num{grid-column:1;color:var(--gold);font-size:12px;padding:10px 4px;text-align:right;font-family:'Courier New',monospace;font-weight:bold;align-self:start}
+.orig,.ar,.gr,.he,.grc,.sk,.dev,.av,.zh,.sa{grid-column:2;padding:10px 12px;font-size:1rem;line-height:1.7;color:var(--orig);background:rgba(201,162,39,0.025);border-right:1px solid var(--gold-dim);border-left:3px solid var(--gold-dim);font-style:italic}
+.ar{direction:rtl;text-align:right;font-family:'Amiri','Scheherazade New','Traditional Arabic',serif;font-size:1.25rem;line-height:1.85}
+.gr,.grc{direction:ltr;font-family:'SBL Greek','Palatino Linotype',Georgia,serif}
+.he{direction:rtl;text-align:right;font-family:'SBL Hebrew','Times New Roman',serif;font-size:1.1rem}
+.sk,.dev{direction:ltr;font-family:'Noto Sans Devanagari','Sanskrit Text',serif;font-size:1.05rem}
+.zh{font-family:'Noto Serif CJK SC','SimSun',serif}
+.ru,.rus{grid-column:3;padding:10px 12px;font-size:.95rem;line-height:1.65;text-align:justify;color:var(--ink)}
+.bismillah{text-align:center;padding:1.5rem 1rem;font-family:'Amiri','Scheherazade New','Traditional Arabic',serif;font-size:1.8rem;color:var(--gold);direction:rtl;background:linear-gradient(180deg,#1a1410,#0a0a0c);border-bottom:1px solid var(--red-dark);letter-spacing:0;margin:14px 16px;border:1px solid var(--red-dark)}
+.bismillah .label{display:block;font-family:'Courier New',monospace;font-size:.7rem;letter-spacing:.25em;color:var(--ink-dim);text-transform:uppercase;direction:ltr;margin-bottom:8px}
+footer{padding:18px;text-align:center;color:var(--ink-dim);font-size:10px;border-top:1px solid var(--line);font-family:'Courier New',monospace;letter-spacing:2px;background:var(--bg2)}
+footer .red{color:var(--red)} footer .gold{color:var(--gold)}
+@media(max-width:760px){
+  .hos-h1{font-size:1.2rem;letter-spacing:.05em;line-height:1.3}
+  .hos-sub{font-size:12px}
+  .hos-strip{font-size:9px;letter-spacing:1px;padding:4px 8px}
+  .stamps span{font-size:8px;letter-spacing:1px;padding:2px 5px;margin:0 1px}
+  
+  /* Stack verse vertically on mobile */
+  .verse,.row{grid-template-columns:1fr !important;display:block !important;padding:8px 10px;margin-bottom:8px;border:1px solid var(--line);background:var(--bg2)}
+  .verse .num,.row .num{display:inline-block;background:rgba(0,0,0,0.5);padding:2px 8px;margin-bottom:6px;width:auto;text-align:left;font-size:11px;border:1px solid var(--gold-dim);border-radius:2px}
+  
+  /* Original language - full width */
+  .verse .av,.verse .sk,.verse .he,.verse .grc,.verse .zh,.verse .sa,.verse .ar,.verse .dev,.verse .en,.verse .gr,.verse .egy,.verse .csl,.verse .fa,.verse .ak,.verse .bo,.verse .tib,
+  .row .av,.row .sk,.row .he,.row .grc,.row .zh,.row .sa,.row .ar,.row .dev,.row .en,.row .gr,.row .csl,.row .fa,.row .ak,.row .bo,.row .tib{font-size:1.05rem;line-height:1.7;padding:8px 10px;border-left:3px solid var(--gold-dim);margin:6px 0;background:rgba(201,162,39,0.04);font-style:italic;width:auto !important;display:block}
+  
+  /* Russian - full width */
+  .verse .ru,.row .ru{font-size:.95rem;line-height:1.6;padding:8px 10px;border-left:3px solid var(--red);background:rgba(200,16,46,0.04);margin:6px 0;width:auto !important;display:block;grid-column:1}
+  
+  /* Toolbar */
+  .toolbar{display:flex;flex-wrap:wrap;gap:4px;padding:6px;margin:8px 0}
+  .toolbar button{font-size:10px;padding:5px 8px;letter-spacing:0;flex:1 1 30%;min-width:60px}
+  
+  /* Container */
+  main{padding:0 8px}
+  nav.main{padding:6px 10px;font-size:11px}
+  nav.main a{margin:0 3px;padding:2px 4px}
+  
+  /* Book cards */
+  .book-grid{grid-template-columns:1fr;gap:6px}
+  .book-card{font-size:13px;padding:8px 10px;line-height:1.4}
+  
+  /* Note */
+  .note{font-size:14px;line-height:1.7;padding:14px 18px;margin:14px;color:var(--red);background:rgba(201,162,39,0.04);border:1px solid var(--gold-dim);border-left:4px solid var(--gold)}
+
+  
+  /* Footer */
+  footer{font-size:11px;padding:8px 10px}
+}
+  .row{grid-template-columns:2rem 1fr 1.1fr}
+  .num{font-size:.7rem;padding:.5rem .3rem}
+  .ar{font-size:1.1rem;line-height:1.7;padding:.5rem .4rem}
+  .ru{font-size:.85rem;line-height:1.4;padding:.5rem .4rem}
+}
+
+/* Q20 EGYPTIAN additions */
+.verse .egy{grid-column:1;font-family:'Papyrus','Segoe UI Historic',serif;font-size:1.05rem;line-height:1.8;direction:ltr;text-align:left;color:#e8b84a;background:rgba(232,184,74,0.04);border-right:3px solid var(--gold-dim);padding:12px 14px;font-style:italic}
+.verse .ru{grid-column:2;font-size:0.98rem;line-height:1.75;color:var(--ink);background:rgba(201,162,39,0.025);border-left:1px solid var(--gold-dim);padding:12px 14px}
+.verse .transl-note{grid-column:1/-1;padding:6px 14px;font-size:0.78rem;color:var(--ink-dim);font-style:italic;text-align:right;background:rgba(0,0,0,0.15);border-top:1px solid var(--line)}
+.verse .num,.verse .transl-note{color:var(--gold-bright)}
+
+.verse .av,.verse .sk,.verse .he,.verse .grc,.verse .zh,.verse .sa,.verse .ar,.verse .dev,.verse .en,.verse .gr,.verse .csl,.verse .fa,.verse .ak,.verse .bo,.verse .tib{font-family:'Times New Roman',Georgia,serif;font-size:1.05rem;line-height:1.7;color:var(--orig);background:rgba(201,162,39,0.04);border-right:3px solid var(--gold-dim);padding:12px 14px;direction:ltr;text-align:left;font-style:italic}
+.row .av,.row .sk,.row .he,.row .grc,.row .zh,.row .sa,.row .ar,.row .dev,.row .en,.row .gr,.row .csl,.row .fa,.row .ak,.row .bo,.row .tib{font-family:'Times New Roman',Georgia,serif;font-size:1.05rem;line-height:1.7;color:var(--orig);background:rgba(201,162,39,0.04);padding:10px 12px;direction:ltr;text-align:left}
+.verse{display:grid;grid-template-columns:3.2rem 1fr 1.1fr;border-bottom:1px solid var(--grid);align-items:start;transition:background 0.15s}
+.row{display:grid;grid-template-columns:3.2rem 1fr 1.1fr 1fr;border-bottom:1px solid var(--grid);align-items:start;transition:background 0.15s}
+.num{font-family:'Courier New',monospace;font-size:11px;color:var(--gold);text-align:center;padding:12px 4px;background:rgba(0,0,0,0.3);border-right:1px solid var(--line);font-weight:bold;align-self:start}
+.ru{font-size:.92rem;line-height:1.6;color:var(--ink);padding:10px 12px;background:rgba(255,255,255,0.01);border-left:1px solid var(--line);align-self:start;grid-column:3}
+
+.idx-group{margin:20px 14px;border-bottom:1px solid var(--line);padding-bottom:14px}
+.idx-group h2{color:var(--gold);font-size:1.05rem;letter-spacing:.22em;border-left:4px solid var(--red);padding-left:.8rem;margin-bottom:1rem;font-weight:normal}
+.book-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:8px;margin-top:6px}
+.book-card{border:1px solid var(--line);background:var(--bg2);padding:8px 12px;display:flex;flex-direction:column;gap:3px;text-decoration:none;color:var(--ink);transition:all 0.15s;font-size:13px}
+.book-card:hover{border-color:var(--gold);background:#1a1410;text-decoration:none;color:var(--gold-bright)}
+.book-card .ttl{color:var(--gold);font-size:14px;font-weight:bold}
+.book-card .s{color:var(--ink-dim);font-size:12px;line-height:1.45}
+.note{font-size:14px;line-height:1.7;padding:14px 18px;margin:14px;color:var(--red);background:rgba(201,162,39,0.04);border:1px solid var(--gold-dim);border-left:4px solid var(--gold)}
+.note p{margin-bottom:10px}
+.note ul{padding-left:24px;margin-bottom:10px}
+.note li{margin-bottom:4px}
+@media(max-width:760px){
+  .hos-h1{font-size:1.2rem;letter-spacing:.05em;line-height:1.3}
+  .book-grid{grid-template-columns:1fr;gap:6px}
+  .book-card{padding:10px;font-size:13px}
+  .note{font-size:13px;line-height:1.55;padding:10px 12px}
+  .idx-group{margin:14px 10px}
+}
+
+.verse .cop{font-family:'Segoe UI Historic','Cardo','Noto Serif',serif;font-size:1.05rem;line-height:1.85;direction:ltr;text-align:left;color:var(--orig);background:rgba(201,162,39,0.04);border-right:3px solid var(--gold-dim);padding:12px 14px;font-style:italic;grid-column:2}
+.verse{display:grid;grid-template-columns:3.2rem 1fr 1fr;border-bottom:1px solid var(--grid);align-items:start;transition:background 0.15s}
+.verse:hover{background:#15110b}
+.num{grid-column:1;color:var(--gold);font-size:12px;padding:10px 4px;text-align:right;font-family:'Courier New',monospace;font-weight:bold;align-self:start}
+.ru{grid-column:3;padding:10px 12px;font-size:.95rem;line-height:1.65;text-align:justify;color:var(--ink);border-left:1px solid var(--line)}
+.note{font-size:14px;line-height:1.7;padding:14px 18px;margin:14px;color:var(--red);background:rgba(201,162,39,0.04);border:1px solid var(--gold-dim);border-left:4px solid var(--gold)}
+.note p{margin-bottom:10px}
+@media(max-width:760px){
+  .verse{grid-template-columns:1fr !important;display:block !important;padding:8px 10px;margin-bottom:8px;border:1px solid var(--line);background:var(--bg2)}
+  .verse .cop,.verse .ru{font-size:1rem;line-height:1.6;padding:8px 10px;width:auto;display:block;grid-column:1}
+  .verse .num{display:inline-block;background:rgba(0,0,0,0.5);padding:2px 8px;margin-bottom:6px;width:auto;text-align:left;font-size:11px;border:1px solid var(--gold-dim);border-radius:2px}
+  .hos-h1{font-size:1.2rem;letter-spacing:.05em;line-height:1.3}
+}
+</style>
+</head>
+<body>
+<header class="hos">
+<div class="hos-strip"><span class="l">ARCHIVUM HAERETICUM — CORPUS DIVINUS</span><span class="r">Q26 — KOJIKI</span></div>
+<div class="hos-body">
+<h1 class="hos-h1"><span class="q">Q26</span>ТОМ 1: КАМИ-НО-МАКИ (ВЕК БОГОВ)</h1>
+<div class="hos-sub">古事記 · Кодзики · 3 тома · старые япон. + рус. · 712 г. н.э. · Филиппи 1969 / Конрад 1973</div>
+</div>
+<div class="stamps">
+<span class="fid">— FIDELIS</span>
+<span class="cre">✚ MYSTICA</span>
+<span class="dam">✠ SINICA</span>
+</div>
+</header>
+
+<nav class="main">
+<a href="../index.html">— CORPUS DIVINUS</a>
+  ·  <a href="index.html">— Q26 KOJIKI</a>
+</nav>
+
+<main>
+<div class="toolbar">
+<button onclick="toggleAll(true)">РАЗВЕРНУТЬ</button>
+<button onclick="toggleAll(false)">СВЕРНУТЬ</button>
+<button onclick="toggleOrig()">☀ ОРИГИНАЛ</button>
+<button onclick="toggleRu()">☾ ПЕРЕВОД</button>
+<button onclick="resetView()">◉ ОБА</button>
+</div>
+
+<div class="note">
+<p><b>Том 1: Ками-но-маки (神代巻, «Свиток Века Богов»).</b> Самая мифологическая часть Кодзики. Содержит космогонию: семь поколений богов, брак Идзанаги и Идзанами, рождение японских островов, смерть Идзанами, рождение трёх священных детей (Аматэрасу, Цукуёми, Сусаноо), битву Сусаноо с Аматэрасу, изгнание Сусаноо в Идзумо, его победу над восьмиглавым драконом Ямата-но-Ороти, рождение земных богов, передачу земли потомкам Небесных Богов (правнуку Аматэрасу Ниниги-но-Микото).</p><p>Это <b>японская «Книга Бытия»</b> — все основные мифы Страны Восходящего Солнца. Аккадский транслит — латинизированный японский «онъёми-манъёгана» (использование китайских иероглифов для звучания). Русский перевод выполнен по классическим работам: <b>Филиппи Д.Л. (1969, Кодзики, Южноземельный Университет)</b> с уточнениями по <b>Конрад Н.И. (1973, Древняя японская литература)</b>.</p>
+</div>
+
+<div class="verse">
+<div class="num">1</div>
+<div class="cop">Kono yo hajimete no kami, Ame no minakanushi no kami toki iu.</div>
+<div class="ru">В начале мира, в веке богов, были боги, называемые Амэ-но-Минакануси (Господин Центра Неба).</div>
+</div>
+<div class="verse">
+<div class="num">2</div>
+<div class="cop">Tsugi ni Taka-mimusubi no kami toki iu.</div>
+<div class="ru">Затем бог, называемый Така-Мимусуби (Высокий Священный Зародыш).</div>
+</div>
+<div class="verse">
+<div class="num">3</div>
+<div class="cop">Tsugi ni Ka-mimusubi no kami toki iu.</div>
+<div class="ru">Затем бог, называемый Ка-Мимусуби (Священный Зародыш Божественного).</div>
+</div>
+<div class="verse">
+<div class="num">4</div>
+<div class="cop">Kono mikami, hitori no kami toki iu.</div>
+<div class="ru">Эти три бога были рождены как одиночные боги (хитори-дзуки).</div>
+</div>
+<div class="verse">
+<div class="num">5</div>
+<div class="cop">Ato, Umashi-atsukabi-atsuhi no kami.</div>
+<div class="ru">После них — Умаси-Ацукаби-но-ками (Чудесный Блестящий Бог).</div>
+</div>
+<div class="verse">
+<div class="num">6</div>
+<div class="cop">Tsugi ni Otonoji no kami.</div>
+<div class="ru">Затем — Отоно-дзи-но-ками (Вечно-Молодой Бог).</div>
+</div>
+<div class="verse">
+<div class="num">7</div>
+<div class="cop">Tsugi ni Omodaru no kami.</div>
+<div class="ru">Затем — Омодару-но-ками (Достигающий Зрелости).</div>
+</div>
+<div class="verse">
+<div class="num">8</div>
+<div class="cop">Tsugi ni Ayakashikone no kami.</div>
+<div class="ru">Затем — Аякасиконэ-но-ками (Чудесный Зародыш).</div>
+</div>
+<div class="verse">
+<div class="num">9</div>
+<div class="cop">Kono tsugi no mikami, hitori-mono no kami toki iu.</div>
+<div class="ru">Эти пять поколений богов также были рождены как одиночные боги.</div>
+</div>
+<div class="verse">
+<div class="num">10</div>
+<div class="cop">Ame no minakanushi no mikami, ko no mikami, Izanagi no Mikoto, Izanami no Mikoto ni, Onogoroshima, kuni-miyake, nigirahi, kuni hajime no koto, yashinai, tamaheraku, kuni hajime no koto, seshimu.</div>
+<div class="ru">Бог Амэ-но-Минакануси повелел своим детям — Идзанаги-но-Микото и Идзанами-но-Микото — утвердить плавающую землю Они-но-горосима, дать ей стать землёй, и начали устроение страны.</div>
+</div>
+<div class="verse">
+<div class="num">11</div>
+<div class="cop">Sore-tsugi, Izanagi no Mikoto, Izanami no Mikoto, sono Ama no nuhoko, migi no tsubira yori, ho-buri kazashi, iwa toshi, tatashite, taga tayasuki, sumi, omoiki kimi.</div>
+<div class="ru">Затем Идзанаги-но-Микото и Идзанами-но-Микото взяли копьё Амэ-но-Нухоко, выставленное через правое окно небес, и, стоя на мосту небес, погрузили его в океан. Они брызгали и соляной капали.</div>
+</div>
+<div class="verse">
+<div class="num">12</div>
+<div class="cop">Sore, kuyashi kashikoku, soko ni, Onogoroshima, kuni hajime no shima, fumi-sahinami, michi-taga shikado.</div>
+<div class="ru">Соль закапала, и образовался остров Они-но-горосима (Самозародившийся Остров). Они спустились на этот остров и утвердили его как свою страну.</div>
+</div>
+<div class="verse">
+<div class="num">13</div>
+<div class="cop">Izanagi no Mikoto iu: "Are, kono kuni hajime, waga mi, futa-michi, yukashiki kimi, fune-aratama to, mitsumatsuru michi, kaku, hito-uki-agari, koso, michi su beki nari."</div>
+<div class="ru">Идзанаги-но-Микото сказал: «О, какова прекрасная земля, что мы сотворили! Пусть обойду её вокруг!»</div>
+</div>
+<div class="verse">
+<div class="num">14</div>
+<div class="cop">Izanami no Mikoto iu: "Sore sara, yukashiki kimi."</div>
+<div class="ru">Идзанами-но-Микото сказала: «Да, поистине прекрасная земля!»</div>
+</div>
+<div class="verse">
+<div class="num">15</div>
+<div class="cop">Sore, futa-michi, michi-taga, kaku, koso, owarite, shikado.</div>
+<div class="ru">Они обошли остров. Когда встретились, Идзанами-но-Микото первая обратилась к Идзанаги-но-Микото:</div>
+</div>
+<div class="verse">
+<div class="num">16</div>
+<div class="cop">Izanami no Mikoto iu: "Are, kaku, suguretaru, kono, umare-narubeki, ko, nari to, omou kimi!"</div>
+<div class="ru">«О, прекрасный юноша! Я думаю, что наша дитя будет прекрасной!»</div>
+</div>
+<div class="verse">
+<div class="num">17</div>
+<div class="cop">Izanagi no Mikoto iu: "Are, kaku, suguretaru, kono, umare-narubeki, ko, nari to, omou kimi!"</div>
+<div class="ru">Идзанаги-но-Микото ответил: «О, прекрасная девушка! Я тоже так думаю!»</div>
+</div>
+<div class="verse">
+<div class="num">18</div>
+<div class="cop">Sore, onaji koto, iu, koto shikado, haha, haha, kashikoma.</div>
+<div class="ru">Однако мудрые боги сочли это дурным знаком, ибо женщина не должна была говорить первой.</div>
+</div>
+<div class="verse">
+<div class="num">19</div>
+<div class="cop">Sore, Izanagi, Izanami, kono kuni no, yon-kuni, hirumesu-masu, watari, kuni-miyake, nari.</div>
+<div class="ru">Затем Идзанаги и Идзанами родили остров Ава-сима (Авадзи).</div>
+</div>
+<div class="verse">
+<div class="num">20</div>
+<div class="cop">Tsugi ni Iyo no futana shima, koko ni, sumi-aho, hōkō-nari, kōshite, kono shima, iи, koto, iu.</div>
+<div class="ru">Затем они родили остров Иё-но-футана (Иё-но-футана-но-сима, Сикоку).</div>
+</div>
+<div class="verse">
+<div class="num">21</div>
+<div class="cop">Tsugi ni Oho-yamato no kuni, koyasu no maki, kōshite, maki, masu, kōshite, kono kuni, iu, koto, iu.</div>
+<div class="ru">Затем родили остров Оо-Ямато (Великая Ямато), землю, где много гор.</div>
+</div>
+<div class="verse">
+<div class="num">22</div>
+<div class="cop">Tsugi ni Iga no tsubana shima, kōshite, kono shima, iu, koto, iu.</div>
+<div class="ru">Затем родили остров Ига-но-Цубана-но-сима.</div>
+</div>
+<div class="verse">
+<div class="num">23</div>
+<div class="cop">Tsugi ni Tsukushi no kuni, futa-michi, kōshite, kuni, masu, kōshite, kono kuni, iu, koto, iu.</div>
+<div class="ru">Затем родили страну Цукуси (Кюсю), две земли.</div>
+</div>
+<div class="verse">
+<div class="num">24</div>
+<div class="cop">Tsugi ni Tsushima no kuni, kōshite, kono kuni, iu, koto, iu.</div>
+<div class="ru">Затем родили страну Цусима.</div>
+</div>
+<div class="verse">
+<div class="num">25</div>
+<div class="cop">Tsugi ni Iki no kuni, kōshite, kōshite, kono kuni, iu, koto, iu.</div>
+<div class="ru">Затем родили страну Ики.</div>
+</div>
+<div class="verse">
+<div class="num">26</div>
+<div class="cop">Tsugi ni Tsuno no kuni, kōshite, kono kuni, iu, koto, iu.</div>
+<div class="ru">Затем родили страну Цуно.</div>
+</div>
+<div class="verse">
+<div class="num">27</div>
+<div class="cop">Tsugi ni Mishima no kuni, kōshite, kono kuni, iu, koto, iu.</div>
+<div class="ru">Затем родили страну Мисима.</div>
+</div>
+<div class="verse">
+<div class="num">28</div>
+<div class="cop">Tsugi ni Uka no Mitama no kami, kōshite, kono, iu, koto, iu.</div>
+<div class="ru">Затем родили бога Ука-но-Митама (Дух Пищи).</div>
+</div>
+<div class="verse">
+<div class="num">29</div>
+<div class="cop">Tsugi ni Ōgetsuhime no kami, kōshite, kono, iu, koto, iu.</div>
+<div class="ru">Затем родили богиню Оогэцу-Химэ (Богиня Большой Еды).</div>
+</div>
+<div class="verse">
+<div class="num">30</div>
+<div class="cop">Tsugi ni Ōtoshi no kami, kōshite, kono, iu, koto, iu.</div>
+<div class="ru">Затем родили бога Оотоси (Бог Года).</div>
+</div>
+<div class="verse">
+<div class="num">31</div>
+<div class="cop">Tsugi ni Ukanomitama no kami, kōshite, kono, iu, koto, iu.</div>
+<div class="ru">Затем родили бога Уканомитама (Дух Пищи).</div>
+</div>
+<div class="verse">
+<div class="num">32</div>
+<div class="cop">Kono-gaki, Izanami no Mikoto, ko umare, koto, kono, kagiri, kagiri, hara, hi, tsuki, tatsu, tokoro, Ōgotani-otsu no Yomo-tsu-kuni, itarite, mi-tama, tsu-ki, tama, tokashiki, kagiri, tama, tsu-ki, tokashiki, koto, koto, iu.</div>
+<div class="ru">После рождения Кагу-Цути (Огненного Бога) Идзанами-но-Микото была опалена и тяжело заболела. Её внутренности стали гореть. Она истекла кровью и умерла в Ёмо-но-Куни (Стране Мрака).</div>
+</div>
+<div class="verse">
+<div class="num">33</div>
+<div class="cop">Izanagi no Mikoto, naku, koto, koto, shikado, mi-tama, koto, oku, ni, maki, maki, shite, kagiri, shite, naki, naku.</div>
+<div class="ru">Идзанаги-но-Микото, плача, сказал: «О, моя дорогая младшая сестра! Я не могу жить без тебя!»</div>
+</div>
+<div class="verse">
+<div class="num">34</div>
+<div class="cop">Izanami no Mikoto iu: "Moshi, kaku, naku, naku, koto, kimi, kimi, waga, mune, otte, omoi, kimi, to, omou, koto, nakereba, kaku, koto, naku, nakereba, kaku, koto, oku, ni, oku, koto, koto, koto, oku, oku, koto, koto, oku, koto, koto, oku."</div>
+<div class="ru">Идзанами-но-Микото ответила: «Мой дорогой старший брат! Если ты хочешь видеть меня, то я буду спать в Стране Мрака, но не ешь там пищи и не смотри на меня!»</div>
+</div>
+<div class="verse">
+<div class="num">35</div>
+<div class="cop">Izanagi no Mikoto, naku, koto, mune, otte, yomo-tsu-kuni, itarite, mite, koto, koto, koto, kaku, mune, otte, koto, iu.</div>
+<div class="ru">Идзанаги-но-Микото, тоскуя, последовал за ней в Страну Мрака. Идзанами-но-Микото сказала ему: «Зачем ты пришёл так скоро? Подожди!» И она вошла во дворец.</div>
+</div>
+<div class="verse">
+<div class="num">36</div>
+<div class="cop">Izanagi no Mikoto, matsu, koto, kagiri, kagiri, kagiri, hara, hi, koko, kagiri, kagiri, tsuki, tsuki, tatsu, hodo, matsu, koto, naku, omoi, koto, iu.</div>
+<div class="ru">Идзанаги-но-Микото ждал. Но он не мог ждать, ибо в Стране Мрака ночь длится бесконечно.</div>
+</div>
+<div class="verse">
+<div class="num">37</div>
+<div class="cop">Sore, kono tokoro, kono, kagiri, kagiri, ogi, hi, tachi, kagiri, kagiri, kagiri, kagiri, shite, kagiri, koto, shite, kagiri, shite, maki, maki, hara, hara, hara, hara, hara, hara, hara, hara, hara.</div>
+<div class="ru">Он сломал зуб на конце гребня, зажёг его как факел и вошёл. И увидел он гниющее тело Идзанами-но-Микото, на котором восемь видов громовых богов сидели.</div>
+</div>
+<div class="verse">
+<div class="num">38</div>
+<div class="cop">Izanagi no Mikoto, mite, kore, kore, kore, oi, hara, kagiri, kore, kore, kagiri, kagiri, kagiri, kagiri, kagiri, shite, kagiri, koto, kagiri, kagiri, shite, kagiri, kagiri, shite, kagiri, kagiri, kagiri, shite, kagiri, kagiri, kagiri, koto.</div>
+<div class="ru">Увидев это, Идзанаги-но-Микото в ужасе бежал. Идзанами-но-Микото разгневалась и послала за ним Ура-но-Цуру и 800 бедных духов Страны Мрака.</div>
+</div>
+<div class="verse">
+<div class="num">39</div>
+<div class="cop">Izanagi no Mikoto, kaku, kagiri, hashiru, hodo, hodo, kore, nugu, kagiri, kagiri, kagiri, maki, maki, hara, hara, hara, hara, hara, hara, hara, hara, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, shite, kagiri, kagiri, shite, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, shite, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, shite, kagiri.</div>
+<div class="ru">Идзанаги-но-Микото бежал, бросая на землю: головной убор (превратился в виноград), гребень (в побеги бамбука), три персика (в камни). И преградил путь преследователям.</div>
+</div>
+<div class="verse">
+<div class="num">40</div>
+<div class="cop">Sore, Izanami no Mikoto, mi-tama, onore, yomo-tsu-kuni, oku, ni, kagiri, shite, "Are, kagiri, kagiri, kimi, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri."</div>
+<div class="ru">Тогда Идзанами-но-Микото сказала: «Он постыдил меня, показав моё гниющее тело. Каждый день я буду убивать по тысяче его подданных!» Идзанаги-но-Микото ответил: «Тогда я буду создавать по полторы тысячи!» Так и повелось: каждый день умирают тысяча и рождаются полторы тысячи.</div>
+</div>
+<div class="verse">
+<div class="num">41</div>
+<div class="cop">Sore, Izanagi no Mikoto, kaku, maki, tōru, maki, kagiri, shite, tsu-ki, shite, kagiri, kagiri, kagiri, kagiri, shite, kagiri, kagiri, shite, kagiri, kagiri, kagiri, shite, kagiri, kagiri, kagiri, kagiri, kagiri, shite, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, shite, kagiri.</div>
+<div class="ru">Идзанаги-но-Микото, очистившись от скверны, сказал: «Я осквернился, пройдя через Страну Мрака!» И совершил ритуальное очищение в реке.</div>
+</div>
+<div class="verse">
+<div class="num">42</div>
+<div class="cop">Kagiri, kagiri, tōru, kagiri, maki, kagiri, kagiri, shite, tsu-ki, shite, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, shite, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri.</div>
+<div class="ru">Когда он бросил свой посох, родились боги, называемые То-но-кагу-но-оно-но-но. Когда он бросил пояс, родились боги Мика-но-но-но. Когда он бросил сумку, родились боги Фуку-но-но-но. Когда он бросил одежду, родились боги Акэ-но-но-но. Когда он бросил штаны, родились боги Ха-но-но-но.</div>
+</div>
+<div class="verse">
+<div class="num">43</div>
+<div class="cop">Sore, Izanagi no Mikoto, kagiri, kagiri, tsu-ki, shite, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, shite, kagiri, shite, Amaterasu Ōmikami, Tsukuyomi no Mikoto, Susanoo no Mikoto, mitsu no kimi, kagiri, tsu-ki, shite, tōru, kagiri, shite, kagiri, kagiri, kagiri, kagiri, kagiri, shite, kagiri.</div>
+<div class="ru">Когда он омыл левое око, родилась богиня Аматэрасу-но-Оомиками (Великая Богиня, Сияющая на Небе). Когда он омыл правое око, родился бог Цукуёми-но-Микото (Бог Луны). Когда он омыл нос, родился бог Сусаноо-но-Микото (Бог Бури).</div>
+</div>
+<div class="verse">
+<div class="num">44</div>
+<div class="cop">Izanagi no Mikoto, ō-i, kore, tsu-ki, kagiri, kagiri, shite, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, shite, kagiri, shite, kagiri, kagiri, shite, kagiri.</div>
+<div class="ru">Идзанаги-но-Микото был счастлив, и изрёк: «Я родил трёх благих детей!» Затем он снял с шеи ожерелье из драгоценных камней и, разорвав его, дал Аматэрасу: «Правь над Высокой Страной Неба!» Цукуёми: «Правь над Страной Ночи!» Сусаноо: «Правь над Страной Моря!»</div>
+</div>
+<div class="verse">
+<div class="num">45</div>
+<div class="cop">Sore, Susanoo no Mikoto, kagiri, kagiri, kagiri, shite, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, shite, kagiri, kagiri, kagiri, kagiri, kagiri, shite, kagiri, kagiri, shite, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, shite, kagiri.</div>
+<div class="ru">Сусаноо-но-Микото не был доволен своим уделом и долго плакал, оплакивая свою мать Идзанами. Это причиняло беспокойство богине Солнца Аматэрасу. Священные боги в Стране Высокого Неба встревожились.</div>
+</div>
+<div class="verse">
+<div class="num">46</div>
+<div class="cop">Kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, shite, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, shite, kagiri.</div>
+<div class="ru">Тогда боги послали к Сусаноо двух посланников — Цуку-но-Кагири-но-Микото и Амэ-но-Додзи, чтобы спросить его о причине его плача. Сусаноо ответил: «Я плачу не от злого умысла. Я плачу потому, что хочу последовать за моей матерью в Страну Мрака.»</div>
+</div>
+<div class="verse">
+<div class="num">47</div>
+<div class="cop">Kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, shite, kagiri.</div>
+<div class="ru">Однако боги не поверили ему и заподозрили, что он намерен захватить Страну Высокого Неба. Тогда они вырвали у него бороду и клыки, и изгнали его.</div>
+</div>
+<div class="verse">
+<div class="num">48</div>
+<div class="cop">Susanoo no Mikoto, kagiri, kagiri, tōru, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, shite, Amaterasu Ōmikami, no, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, shite, kagiri, kagiri, shite, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri.</div>
+<div class="ru">Сусаноо поднялся в Страну Высокого Неба и сказал Аматэрасу: «Я пришёл проститься.» Аматэрасу ответила: «Если ты пришёл проститься, то зачем ты поднялся со свитой, облачённый в доспехи?» Сусаноо ответил: «Я не знаю, о чём ты говоришь.»</div>
+</div>
+<div class="verse">
+<div class="num">49</div>
+<div class="cop">Amaterasu Ōmikami, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, shite, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, shite, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, shite, kagiri, kagiri, kagiri, kagiri, shite, kagiri, shite, kagiri, kagiri, kagiri, kagiri, kagiri, shite, kagiri.</div>
+<div class="ru">Аматэрасу стала подозревать, что он пришёл с дурными намерениями. Они стояли по разные стороны реки Амэ-но-Ясу-но-Кава и обменивались залогами. Аматэрасу взяла меч Сусаноо и родила от него трёх богинь. Сусаноо взял ожерелье Аматэрасу и родил от него пятерых богов.</div>
+</div>
+<div class="verse">
+<div class="num">50</div>
+<div class="cop">Sore, Amaterasu Ōmikami, kore, kore, tsu-ki, tōru, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, shite, kagiri, kagiri, kagiri, kagiri, shite, kagiri.</div>
+<div class="ru">Аматэрасу, увидев рождённых от её залога богинь, сказала: «Это благое знамение!» И они стали спорить, чьё знамение лучше. Пока они спорили, Сусаноо одержал верх.</div>
+</div>
+<div class="verse">
+<div class="num">51</div>
+<div class="cop">Sore, Susanoo no Mikoto, kagiri, kagiri, tsu-ki, tōru, kagiri, kagiri, kagiri, kagiri, kagiri, shite, Amaterasu Ōmikami, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, shite, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, shite, kagiri.</div>
+<div class="ru">Разгневанный Сусаноо разрушил рисовые поля Аматэрасу, забросал их экскрементами, разорвал священную изгородь, осквернил её ткацкий станок, и убил одну из её ткачих, швырнув её в ткацкий станок. Аматэрасу была в ужасе и в гневе.</div>
+</div>
+<div class="verse">
+<div class="num">52</div>
+<div class="cop">Sore, Amaterasu Ōmikami, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, shite, Ama no iwato, kagiri, kagiri, kagiri, kagiri, shite, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, shite, kagiri, shite, kagiri, kagiri, shite, kagiri.</div>
+<div class="ru">Аматэрасу укрылась в Небесной Пещере (Амэ-но-Ивато) и наглухо закрыла вход. Страна Высокого Неба погрузилась во тьму. Восемь миллионов богов не могли собрать урожай, и в Стране Середины (земле) появились злые духи.</div>
+</div>
+<div class="verse">
+<div class="num">53</div>
+<div class="cop">Sore, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, shite, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, shite, kagiri.</div>
+<div class="ru">Богиня Омма-Камэ-но-Микото устроила божественный совет, и было решено устроить весёлый праздник перед пещерой. Богиня Амэ-но-Удзумэ-но-Микото вышла на перевёрнутый котёл и начала танцевать дикий танец, распустив свою одежду соломенным веником. Все боги разразились громким смехом.</div>
+</div>
+<div class="verse">
+<div class="num">54</div>
+<div class="cop">Amaterasu Ōmikami, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, shite, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, shite, kagiri.</div>
+<div class="ru">Аматэрасу, удивлённая, спросила: «Почему боги веселятся, когда я заперта в пещере?» Амэ-но-Удзумэ ответила: «Потому что у нас есть богиня более великолепная, чем ты!» И показала ей зеркало (Ята-но-Кагами).</div>
+</div>
+<div class="verse">
+<div class="num">55</div>
+<div class="cop">Amaterasu Ōmikami, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, shite, kagiri.</div>
+<div class="ru">Аматэрасу, любопытствуя, приоткрыла дверь пещеры. Тогда бог Амэ-но-Кояну-но-Микото схватил её за руку и вытащил наружу. Другой бог протянул за ней священную верёвку, чтобы она не могла вернуться обратно.</div>
+</div>
+<div class="verse">
+<div class="num">56</div>
+<div class="cop">Sore, Amaterasu Ōmikami, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, shite, kagiri, kagiri, kagiri, kagiri, shite, kagiri.</div>
+<div class="ru">Когда Аматэрасу вышла, мир снова озарился светом. Тогда боги вынесли решение: «Отныне пусть Сусаноо будет наказан!» Ему вырвали ногти и бороду, и изгнали его в Страну Середины (землю).</div>
+</div>
+<div class="verse">
+<div class="num">57</div>
+<div class="cop">Susanoo no Mikoto, kagiri, kagiri, tōru, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, shite, kagiri, kagiri, shite, kagiri, kagiri, shite, kagiri, kagiri, shite, kagiri, kagiri, kagiri, shite, kagiri, shite, kagiri, kagiri, shite, kagiri.</div>
+<div class="ru">Изгнанный Сусаноо спустился в Идзумо. В это время из реки Хи вышел меч. Сусаноо сказал: «У меня есть благое знамение!» И вставил меч между хвостами, назвав его Амэ-но-муракумо-но-цуруги (Меч Собранных Облаков Неба).</div>
+</div>
+<div class="verse">
+<div class="num">58</div>
+<div class="cop">Sore, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, shite, kagiri.</div>
+<div class="ru">Затем Сусаноо увидел плачущих старика и старуху с дочерью, окружённых дракоценностями. Он спросил: «Кто вы?» Они ответили: «Я — бог горы этой страны. У нас было восемь дочерей. Каждый год приходит восьмиглавый дракон Ямата-но-Ороти и пожирает одну. Теперь осталась последняя — Кусинада-Химэ.»</div>
+</div>
+<div class="verse">
+<div class="num">59</div>
+<div class="cop">Susanoo no Mikoto, kagiri, kagiri, tōru, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, shite, kagiri, kagiri, shite, kagiri.</div>
+<div class="ru">Сусаноо сказал: «Я спасу её! Сделайте мне восемь кольев, восемь бочек рисового вина, и приготовьте платформу.» Когда дракон пришёл, Сусаноо облил его вином. Дракон опьянел и заснул. Тогда Сусаноо убил его, отрубив все восемь голов.</div>
+</div>
+<div class="verse">
+<div class="num">60</div>
+<div class="cop">Sore, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, shite, kagiri.</div>
+<div class="ru">В хвосте дракона Сусаноо нашёл превосходный меч, который назвал Кусанаги-но-Цуруги (Меч, Режущий Траву). Затем он передал меч богам неба и попросил их сохранить его до поры. Сусаноо женился на Кусинада-Химэ, и они произвели на свет многих детей, в том числе Оо-Куни-нуси-но-Микото (Великий Владыка Земли).</div>
+</div>
+<div class="verse">
+<div class="num">61</div>
+<div class="cop">Ōkuninushi no Mikoto, kagiri, kagiri, tōru, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, shite, kagiri.</div>
+<div class="ru">Оо-Куни-нуси-но-Микото построил великий дворец в Идзумо и управлял Страной Середины (землёй). У него было много жён, и от них родилось множество детей.</div>
+</div>
+<div class="verse">
+<div class="num">62</div>
+<div class="cop">Sore, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, shite, kagiri, kagiri, shite, kagiri.</div>
+<div class="ru">Тогда боги Высокого Неба были обеспокоены, ибо земные боги (ками-но-куни) расплодились слишком сильно. Они послали Амэ-но-Хохи-но-Микото на землю, чтобы наказать Оо-Куни-нуси. Но Амэ-но-Хохи был принят радушно Оо-Куни-нуси и отказался его убивать.</div>
+</div>
+<div class="verse">
+<div class="num">63</div>
+<div class="cop">Sore, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, shite, kagiri.</div>
+<div class="ru">Тогда боги послали Амэ-но-Вакахико-но-Микото, но он тоже подружился с Оо-Куни-нуси. Тогда боги послали Таками-мусуби-но-Ками — первого из божественных князей. Он вытащил из своего пальца зерно и бросил его перед Оо-Куни-нуси. Оо-Куни-нуси, увидев это, испугался и согласился передать землю потомкам Небесных Богов.</div>
+</div>
+<div class="verse">
+<div class="num">64</div>
+<div class="cop">Ōkuninushi no Mikoto, kagiri, kagiri, tōru, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, shite, kagiri.</div>
+<div class="ru">Оо-Куни-нуси спрятал своих сыновей в Стране Вечной Молодости (Токоё-но-Куни). Затем он родил от Амэ-но-Сакуя-Химэ (Богини Цветущего Дерева) сына по имени Мико-но-Ниги-Ками (Могучий Хозяин).</div>
+</div>
+<div class="verse">
+<div class="num">65</div>
+<div class="cop">Sore, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, kagiri, shite, kagiri, shite, kagiri.</div>
+<div class="ru">Оо-Куни-нуси и его сын передали землю внуку Ниниги-но-Микото, который спустился с Небес на вершину горы Такатихо-но-Хо в провинции Хюга. С ним спустились три сокровища (зеркало, меч, ожерелье), которые Аматэрасу вручила своему внуку. Так началась императорская династия.</div>
+</div>
+
+
+</main>
+
+<footer>
+ARCHIVUM HAERETICUM — Q26 — KOJIKI — ТОМ 1: КАМИ-НО-МАКИ (ВЕК БОГОВ) — <span class="red">◆</span> SIGILLUM VERITATIS
+</footer>
+<script>function toggleAll(open){
+  document.querySelectorAll('details').forEach(d=>d.open=open);
+  document.querySelectorAll('.verse,.row').forEach(r=>{r.style.display=open?'grid':'none';});
+}
+function toggleOrig(){
+  document.querySelectorAll('.verse .cop').forEach(c=>c.style.display=c.style.display==='none'?'block':'none');
+}
+function toggleRu(){
+  document.querySelectorAll('.verse .ru').forEach(c=>c.style.display=c.style.display==='none'?'block':'none');
+}
+function resetView(){
+  document.querySelectorAll('.verse,.row').forEach(r=>r.style.display='grid');
+  document.querySelectorAll('.verse .cop,.verse .ru').forEach(c=>c.style.display='block');
+}</script>
+</body>
+</html>
