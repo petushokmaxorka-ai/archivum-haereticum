@@ -134,17 +134,23 @@ footer .red{color:var(--red)} footer .gold{color:var(--gold)}
   .hos-h1{font-size:1.2rem;letter-spacing:.05em;line-height:1.3}
 }
 
-.eg{grid-column:2;padding:10px 12px;font-size:1rem;line-height:1.7;color:var(--orig);background:rgba(201,162,39,0.025);border-right:1px solid var(--gold-dim);border-left:3px solid var(--gold-dim);font-style:italic;direction:ltr;font-family:"Noto Sans Egyptian Hieroglyphs","SBL Egyptian","Times New Roman",serif}
 .toolbar button,.toolbar a.btn-link{display:inline-flex;align-items:center;justify-content:center;height:30px;padding:0 14px;background:transparent;border:1px solid var(--gold-dim);color:var(--gold);font-size:10px;letter-spacing:1.5px;cursor:pointer;font-family:inherit;text-transform:uppercase;text-decoration:none;transition:all 0.15s;box-sizing:border-box;white-space:nowrap;margin:0;text-align:center}
 .toolbar button:hover,.toolbar a.btn-link:hover{background:var(--gold);color:var(--bg)}
 .toolbar-row{display:flex;justify-content:center;align-items:center;gap:6px;flex-wrap:wrap;margin:0 0 5px}
 .toolbar-row:last-child{margin-bottom:0}
 .toolbar-row.half button,.toolbar-row.half a.btn-link{flex:1 1 calc(50% - 3px);min-width:120px;max-width:calc(50% - 3px)}
 .toolbar-row.full a.btn-link{flex:1 1 100%;min-width:200px;max-width:340px}
-.spell-header{background:rgba(201,162,39,0.05);padding:8px 12px;margin:14px 0 4px;border-left:3px solid var(--gold);font-family:'Courier New',monospace}
-.spell-header .qbadge{color:var(--gold-bright);font-size:11px;letter-spacing:1.5px;margin-right:8px;display:inline-block;border:1px solid var(--gold-dim);padding:2px 6px}
-.spell-header .title{color:var(--ink);font-size:14px;font-weight:bold;font-family:Georgia,serif}
-.spell-context{padding:6px 12px;font-size:12px;line-height:1.5;color:var(--ink-dim);font-style:italic;background:rgba(201,162,39,0.03);border-left:3px solid var(--gold-dim);margin:0 0 2px}
+.spell-card{border:1px solid var(--line);background:var(--bg2);padding:12px 16px;margin:8px 0;transition:all 0.15s}
+.spell-card:hover{border-color:var(--gold);background:#1a1410}
+.spell-card .head{display:flex;justify-content:space-between;align-items:baseline;margin-bottom:6px;flex-wrap:wrap;gap:8px}
+.spell-card .qbadge{color:var(--gold-bright);font-family:'Courier New',monospace;font-size:11px;letter-spacing:1.5px;border:1px solid var(--gold-dim);padding:2px 8px;flex-shrink:0}
+.spell-card .title{color:var(--ink);font-size:15px;font-weight:bold;font-family:Georgia,serif;flex:1}
+.spell-card .count{color:var(--ink-dim);font-size:11px;font-family:'Courier New',monospace;letter-spacing:1px;flex-shrink:0}
+.spell-card .context{color:var(--ink-dim);font-size:12px;font-style:italic;line-height:1.5;padding:6px 0;border-top:1px solid var(--grid);margin-top:6px}
+.spell-card .pair{display:grid;grid-template-columns:3rem 1fr 1.1fr;border-top:1px solid var(--grid);margin-top:8px;padding-top:8px}
+.spell-card .pair .num{color:var(--gold);font-size:12px;padding:6px 4px;text-align:right;font-family:'Courier New',monospace;font-weight:bold;align-self:start}
+.spell-card .pair .eg{grid-column:2;padding:6px 10px;font-size:14px;line-height:1.6;color:var(--orig);background:rgba(201,162,39,0.025);border-right:1px solid var(--gold-dim);border-left:3px solid var(--gold-dim);font-style:italic;direction:ltr;font-family:"SBL Egyptian","Noto Sans Egyptian Hieroglyphs","Times New Roman",serif}
+.spell-card .pair .ru{grid-column:3;padding:6px 10px;font-size:14px;line-height:1.6;color:var(--ink);text-align:justify;font-family:Georgia,serif}
 </style>
 </head>
 <body>
@@ -176,108 +182,126 @@ footer .red{color:var(--red)} footer .gold{color:var(--gold)}
 <div class="note main-note" style="color:var(--red)">
 <p><b>МЕРЕНРА I · MERENRE I</b></p>
 <p>Саккара, Египет · 120 заклинаний · ~2270 до н.э. · 5-й фараон VI династии</p>
-<p><b>Формат:</b> каждый <b>PT 219</b> представлен как параллельный текст — оригинал (египтологическая транслитерация) слева, русский перевод справа. Сверху — исторический контекст. Все заклинания вырезаны иероглифами на стенах погребальной камеры пирамиды.</p>
+<p><b>Формат:</b> каждый <b>PT 219</b> в виде прямоугольной карточки с разделителями — оригинал (египтологическая транслитерация) слева, русский перевод справа. Сверху — исторический контекст.</p>
 </div>
 
-<details class="corpus spell" open>
-<summary><div class="left"><span class="qbadge">PT 219</span>Изречение о вознесении Меренра</div><div class="count">заклинание №219</div></summary>
-<div class="body">
-<div class="note" style="margin:8px 12px;font-size:12px;line-height:1.5;color:var(--ink-dim);font-style:italic">Заклинание вознесения для Меренра I.</div>
-<div class="row">
+<div class="spell-card">
+<div class="head">
+<span class="qbadge">PT 219</span>
+<span class="title">Изречение о вознесении Меренра</span>
+<span class="count">№219 из 1000+</span>
+</div>
+<div class="context">Заклинание вознесения для Меренра I.</div>
+<div class="pair">
 <div class="num">219</div>
 <div class="eg">qꜣi wsjr mr-n-rꜥ r pt</div>
 <div class="ru">Да вознесётся Осирис Меренра на небо!</div>
 </div>
 </div>
-</details>
-<details class="corpus spell" open>
-<summary><div class="left"><span class="qbadge">PT 251</span>Изречение о жатве</div><div class="count">заклинание №251</div></summary>
-<div class="body">
-<div class="note" style="margin:8px 12px;font-size:12px;line-height:1.5;color:var(--ink-dim);font-style:italic">Загробный урожай, ежегодно собираемый.</div>
-<div class="row">
+<div class="spell-card">
+<div class="head">
+<span class="qbadge">PT 251</span>
+<span class="title">Изречение о жатве</span>
+<span class="count">№251 из 1000+</span>
+</div>
+<div class="context">Загробный урожай, ежегодно собираемый.</div>
+<div class="pair">
 <div class="num">251</div>
 <div class="eg">sḫt-ꜥrw n wsjr mr-n-rꜥ</div>
 <div class="ru">Поля жатвы для Осириса Меренра!</div>
 </div>
 </div>
-</details>
-<details class="corpus spell" open>
-<summary><div class="left"><span class="qbadge">PT 276</span>Изречение о ночных часах</div><div class="count">заклинание №276</div></summary>
-<div class="body">
-<div class="note" style="margin:8px 12px;font-size:12px;line-height:1.5;color:var(--ink-dim);font-style:italic">Путешествие через 12 часов ночи.</div>
-<div class="row">
+<div class="spell-card">
+<div class="head">
+<span class="qbadge">PT 276</span>
+<span class="title">Изречение о ночных часах</span>
+<span class="count">№276 из 1000+</span>
+</div>
+<div class="context">Путешествие через 12 часов ночи.</div>
+<div class="pair">
 <div class="num">276</div>
 <div class="eg">hrw dwꜣ.t n wsjr mr-n-rꜥ</div>
 <div class="ru">Часы Дуата для Осириса Меренра!</div>
 </div>
 </div>
-</details>
-<details class="corpus spell" open>
-<summary><div class="left"><span class="qbadge">PT 304</span>Изречение о звёздах</div><div class="count">заклинание №304</div></summary>
-<div class="body">
-<div class="note" style="margin:8px 12px;font-size:12px;line-height:1.5;color:var(--ink-dim);font-style:italic">Фараон становится одной из «непоколебимых звёзд».</div>
-<div class="row">
+<div class="spell-card">
+<div class="head">
+<span class="qbadge">PT 304</span>
+<span class="title">Изречение о звёздах</span>
+<span class="count">№304 из 1000+</span>
+</div>
+<div class="context">Фараон становится одной из «непоколебимых звёзд».</div>
+<div class="pair">
 <div class="num">304</div>
 <div class="eg">sbꜣw n wsjr mr-n-rꜥ</div>
 <div class="ru">Звёзды непоколебимы для Осириса Меренра!</div>
 </div>
 </div>
-</details>
-<details class="corpus spell" open>
-<summary><div class="left"><span class="qbadge">PT 340</span>Изречение о «дверях Дуата»</div><div class="count">заклинание №340</div></summary>
-<div class="body">
-<div class="note" style="margin:8px 12px;font-size:12px;line-height:1.5;color:var(--ink-dim);font-style:italic">Двери между мирами открываются магией.</div>
-<div class="row">
+<div class="spell-card">
+<div class="head">
+<span class="qbadge">PT 340</span>
+<span class="title">Изречение о «дверях Дуата»</span>
+<span class="count">№340 из 1000+</span>
+</div>
+<div class="context">Двери между мирами открываются магией.</div>
+<div class="pair">
 <div class="num">340</div>
 <div class="eg">ꜥꜣr.t dwꜣ.t n wsjr mr-n-rꜥ</div>
 <div class="ru">Двери Дуата открыты для Осириса Меренра!</div>
 </div>
 </div>
-</details>
-<details class="corpus spell" open>
-<summary><div class="left"><span class="qbadge">PT 420</span>Изречение о воде</div><div class="count">заклинание №420</div></summary>
-<div class="body">
-<div class="note" style="margin:8px 12px;font-size:12px;line-height:1.5;color:var(--ink-dim);font-style:italic">Очищение перед вознесением.</div>
-<div class="row">
+<div class="spell-card">
+<div class="head">
+<span class="qbadge">PT 420</span>
+<span class="title">Изречение о воде</span>
+<span class="count">№420 из 1000+</span>
+</div>
+<div class="context">Очищение перед вознесением.</div>
+<div class="pair">
 <div class="num">420</div>
 <div class="eg">mw n wsjr mr-n-rꜥ</div>
 <div class="ru">Вода для Осириса Меренра!</div>
 </div>
 </div>
-</details>
-<details class="corpus spell" open>
-<summary><div class="left"><span class="qbadge">PT 480</span>Изречение о сосудах</div><div class="count">заклинание №480</div></summary>
-<div class="body">
-<div class="note" style="margin:8px 12px;font-size:12px;line-height:1.5;color:var(--ink-dim);font-style:italic">Ритуальные сосуды для подношений.</div>
-<div class="row">
+<div class="spell-card">
+<div class="head">
+<span class="qbadge">PT 480</span>
+<span class="title">Изречение о сосудах</span>
+<span class="count">№480 из 1000+</span>
+</div>
+<div class="context">Ритуальные сосуды для подношений.</div>
+<div class="pair">
 <div class="num">480</div>
 <div class="eg">ḥn.w n wsjr mr-n-rꜥ</div>
 <div class="ru">Сосуды (для жертв) для Осириса Меренра!</div>
 </div>
 </div>
-</details>
-<details class="corpus spell" open>
-<summary><div class="left"><span class="qbadge">PT 550</span>Изречение о вечности</div><div class="count">заклинание №550</div></summary>
-<div class="body">
-<div class="note" style="margin:8px 12px;font-size:12px;line-height:1.5;color:var(--ink-dim);font-style:italic">Фараон обретает вечность.</div>
-<div class="row">
+<div class="spell-card">
+<div class="head">
+<span class="qbadge">PT 550</span>
+<span class="title">Изречение о вечности</span>
+<span class="count">№550 из 1000+</span>
+</div>
+<div class="context">Фараон обретает вечность.</div>
+<div class="pair">
 <div class="num">550</div>
 <div class="eg">nḥḥ n wsjr mr-n-rꜥ</div>
 <div class="ru">Вечность для Осириса Меренра!</div>
 </div>
 </div>
-</details>
-<details class="corpus spell" open>
-<summary><div class="left"><span class="qbadge">PT 622</span>Изречение о Сопд</div><div class="count">заклинание №622</div></summary>
-<div class="body">
-<div class="note" style="margin:8px 12px;font-size:12px;line-height:1.5;color:var(--ink-dim);font-style:italic">Сириус — звезда Исиды, оплакивающей мужа.</div>
-<div class="row">
+<div class="spell-card">
+<div class="head">
+<span class="qbadge">PT 622</span>
+<span class="title">Изречение о Сопд</span>
+<span class="count">№622 из 1000+</span>
+</div>
+<div class="context">Сириус — звезда Исиды, оплакивающей мужа.</div>
+<div class="pair">
 <div class="num">622</div>
 <div class="eg">spdt n wsjr mr-n-rꜥ</div>
 <div class="ru">Сопдет (Сириус) для Осириса Меренра!</div>
 </div>
 </div>
-</details>
 
 </main>
 

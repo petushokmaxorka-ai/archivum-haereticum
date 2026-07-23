@@ -134,17 +134,23 @@ footer .red{color:var(--red)} footer .gold{color:var(--gold)}
   .hos-h1{font-size:1.2rem;letter-spacing:.05em;line-height:1.3}
 }
 
-.eg{grid-column:2;padding:10px 12px;font-size:1rem;line-height:1.7;color:var(--orig);background:rgba(201,162,39,0.025);border-right:1px solid var(--gold-dim);border-left:3px solid var(--gold-dim);font-style:italic;direction:ltr;font-family:"Noto Sans Egyptian Hieroglyphs","SBL Egyptian","Times New Roman",serif}
 .toolbar button,.toolbar a.btn-link{display:inline-flex;align-items:center;justify-content:center;height:30px;padding:0 14px;background:transparent;border:1px solid var(--gold-dim);color:var(--gold);font-size:10px;letter-spacing:1.5px;cursor:pointer;font-family:inherit;text-transform:uppercase;text-decoration:none;transition:all 0.15s;box-sizing:border-box;white-space:nowrap;margin:0;text-align:center}
 .toolbar button:hover,.toolbar a.btn-link:hover{background:var(--gold);color:var(--bg)}
 .toolbar-row{display:flex;justify-content:center;align-items:center;gap:6px;flex-wrap:wrap;margin:0 0 5px}
 .toolbar-row:last-child{margin-bottom:0}
 .toolbar-row.half button,.toolbar-row.half a.btn-link{flex:1 1 calc(50% - 3px);min-width:120px;max-width:calc(50% - 3px)}
 .toolbar-row.full a.btn-link{flex:1 1 100%;min-width:200px;max-width:340px}
-.spell-header{background:rgba(201,162,39,0.05);padding:8px 12px;margin:14px 0 4px;border-left:3px solid var(--gold);font-family:'Courier New',monospace}
-.spell-header .qbadge{color:var(--gold-bright);font-size:11px;letter-spacing:1.5px;margin-right:8px;display:inline-block;border:1px solid var(--gold-dim);padding:2px 6px}
-.spell-header .title{color:var(--ink);font-size:14px;font-weight:bold;font-family:Georgia,serif}
-.spell-context{padding:6px 12px;font-size:12px;line-height:1.5;color:var(--ink-dim);font-style:italic;background:rgba(201,162,39,0.03);border-left:3px solid var(--gold-dim);margin:0 0 2px}
+.spell-card{border:1px solid var(--line);background:var(--bg2);padding:12px 16px;margin:8px 0;transition:all 0.15s}
+.spell-card:hover{border-color:var(--gold);background:#1a1410}
+.spell-card .head{display:flex;justify-content:space-between;align-items:baseline;margin-bottom:6px;flex-wrap:wrap;gap:8px}
+.spell-card .qbadge{color:var(--gold-bright);font-family:'Courier New',monospace;font-size:11px;letter-spacing:1.5px;border:1px solid var(--gold-dim);padding:2px 8px;flex-shrink:0}
+.spell-card .title{color:var(--ink);font-size:15px;font-weight:bold;font-family:Georgia,serif;flex:1}
+.spell-card .count{color:var(--ink-dim);font-size:11px;font-family:'Courier New',monospace;letter-spacing:1px;flex-shrink:0}
+.spell-card .context{color:var(--ink-dim);font-size:12px;font-style:italic;line-height:1.5;padding:6px 0;border-top:1px solid var(--grid);margin-top:6px}
+.spell-card .pair{display:grid;grid-template-columns:3rem 1fr 1.1fr;border-top:1px solid var(--grid);margin-top:8px;padding-top:8px}
+.spell-card .pair .num{color:var(--gold);font-size:12px;padding:6px 4px;text-align:right;font-family:'Courier New',monospace;font-weight:bold;align-self:start}
+.spell-card .pair .eg{grid-column:2;padding:6px 10px;font-size:14px;line-height:1.6;color:var(--orig);background:rgba(201,162,39,0.025);border-right:1px solid var(--gold-dim);border-left:3px solid var(--gold-dim);font-style:italic;direction:ltr;font-family:"SBL Egyptian","Noto Sans Egyptian Hieroglyphs","Times New Roman",serif}
+.spell-card .pair .ru{grid-column:3;padding:6px 10px;font-size:14px;line-height:1.6;color:var(--ink);text-align:justify;font-family:Georgia,serif}
 </style>
 </head>
 <body>
@@ -176,119 +182,139 @@ footer .red{color:var(--red)} footer .gold{color:var(--gold)}
 <div class="note main-note" style="color:var(--red)">
 <p><b>ТЕТИ · TETI</b></p>
 <p>Саккара, Египет · 186 заклинаний · ~2320 до н.э. · 1-ый фараон VI династии</p>
-<p><b>Формат:</b> каждый <b>PT 217</b> представлен как параллельный текст — оригинал (египтологическая транслитерация) слева, русский перевод справа. Сверху — исторический контекст. Все заклинания вырезаны иероглифами на стенах погребальной камеры пирамиды.</p>
+<p><b>Формат:</b> каждый <b>PT 217</b> в виде прямоугольной карточки с разделителями — оригинал (египтологическая транслитерация) слева, русский перевод справа. Сверху — исторический контекст.</p>
 </div>
 
-<details class="corpus spell" open>
-<summary><div class="left"><span class="qbadge">PT 217</span>Изречение о союзе с Ра</div><div class="count">заклинание №217</div></summary>
-<div class="body">
-<div class="note" style="margin:8px 12px;font-size:12px;line-height:1.5;color:var(--ink-dim);font-style:italic">Тети соединяется с солнечным богом Ра, чтобы получить его силу и сияние.</div>
-<div class="row">
+<div class="spell-card">
+<div class="head">
+<span class="qbadge">PT 217</span>
+<span class="title">Изречение о союзе с Ра</span>
+<span class="count">№217 из 1000+</span>
+</div>
+<div class="context">Тети соединяется с солнечным богом Ра, чтобы получить его силу и сияние.</div>
+<div class="pair">
 <div class="num">217</div>
 <div class="eg">sṯn wsjr nṯr-ꜥꜣ rꜥ</div>
 <div class="ru">Осирис, великий бог, да соединится с Ра!</div>
 </div>
 </div>
-</details>
-<details class="corpus spell" open>
-<summary><div class="left"><span class="qbadge">PT 249</span>Изречение о кровле</div><div class="count">заклинание №249</div></summary>
-<div class="body">
-<div class="note" style="margin:8px 12px;font-size:12px;line-height:1.5;color:var(--ink-dim);font-style:italic">Вознесение на самую высокую точку небосвода.</div>
-<div class="row">
+<div class="spell-card">
+<div class="head">
+<span class="qbadge">PT 249</span>
+<span class="title">Изречение о кровле</span>
+<span class="count">№249 из 1000+</span>
+</div>
+<div class="context">Вознесение на самую высокую точку небосвода.</div>
+<div class="pair">
 <div class="num">249</div>
 <div class="eg">ꜥꜣ nꜥi n wsjr nn-kꜣ-ḥtp.t</div>
 <div class="ru">Поднимись, поднимись, Осирис Тети, на кровлю неба!</div>
 </div>
 </div>
-</details>
-<details class="corpus spell" open>
-<summary><div class="left"><span class="qbadge">PT 266</span>Изречение о сердце</div><div class="count">заклинание №266</div></summary>
-<div class="body">
-<div class="note" style="margin:8px 12px;font-size:12px;line-height:1.5;color:var(--ink-dim);font-style:italic">Сердце в египетской традиции — средоточие совести, воли и памяти.</div>
-<div class="row">
+<div class="spell-card">
+<div class="head">
+<span class="qbadge">PT 266</span>
+<span class="title">Изречение о сердце</span>
+<span class="count">№266 из 1000+</span>
+</div>
+<div class="context">Сердце в египетской традиции — средоточие совести, воли и памяти.</div>
+<div class="pair">
 <div class="num">266</div>
 <div class="eg">ib n wsjr nn-kꜣ-ḥtp.t nfr</div>
 <div class="ru">Сердце Осириса Тети благословенно!</div>
 </div>
 </div>
-</details>
-<details class="corpus spell" open>
-<summary><div class="left"><span class="qbadge">PT 300</span>Изречение о ночных часах</div><div class="count">заклинание №300</div></summary>
-<div class="body">
-<div class="note" style="margin:8px 12px;font-size:12px;line-height:1.5;color:var(--ink-dim);font-style:italic">Каждый час ночи — отдельное испытание в подземном мире.</div>
-<div class="row">
+<div class="spell-card">
+<div class="head">
+<span class="qbadge">PT 300</span>
+<span class="title">Изречение о ночных часах</span>
+<span class="count">№300 из 1000+</span>
+</div>
+<div class="context">Каждый час ночи — отдельное испытание в подземном мире.</div>
+<div class="pair">
 <div class="num">300</div>
 <div class="eg">hrw dwꜣ.t n wsjr nn-kꜣ-ḥtp.t</div>
 <div class="ru">Час Дуата для Осириса Тети!</div>
 </div>
 </div>
-</details>
-<details class="corpus spell" open>
-<summary><div class="left"><span class="qbadge">PT 320</span>Изречение об отвержении зла</div><div class="count">заклинание №320</div></summary>
-<div class="body">
-<div class="note" style="margin:8px 12px;font-size:12px;line-height:1.5;color:var(--ink-dim);font-style:italic">Защита от демонов и чудовищ Дуата.</div>
-<div class="row">
+<div class="spell-card">
+<div class="head">
+<span class="qbadge">PT 320</span>
+<span class="title">Изречение об отвержении зла</span>
+<span class="count">№320 из 1000+</span>
+</div>
+<div class="context">Защита от демонов и чудовищ Дуата.</div>
+<div class="pair">
 <div class="num">320</div>
 <div class="eg">nḥf(w) n wsjr nn-kꜣ-ḥtp.t</div>
 <div class="ru">Да будет отвергнуто зло от Осириса Тети!</div>
 </div>
 </div>
-</details>
-<details class="corpus spell" open>
-<summary><div class="left"><span class="qbadge">PT 359</span>Изречение о двух истинах</div><div class="count">заклинание №359</div></summary>
-<div class="body">
-<div class="note" style="margin:8px 12px;font-size:12px;line-height:1.5;color:var(--ink-dim);font-style:italic">Маат — богиня истины и справедливости, основа космического порядка.</div>
-<div class="row">
+<div class="spell-card">
+<div class="head">
+<span class="qbadge">PT 359</span>
+<span class="title">Изречение о двух истинах</span>
+<span class="count">№359 из 1000+</span>
+</div>
+<div class="context">Маат — богиня истины и справедливости, основа космического порядка.</div>
+<div class="pair">
 <div class="num">359</div>
 <div class="eg">mꜣꜥ-ḫrw mꜣꜥ-ḫrw mꜣꜥ-ḫrw</div>
 <div class="ru">Маат! Маат! Маат! (трижды)</div>
 </div>
 </div>
-</details>
-<details class="corpus spell" open>
-<summary><div class="left"><span class="qbadge">PT 402</span>Изречение о воде</div><div class="count">заклинание №402</div></summary>
-<div class="body">
-<div class="note" style="margin:8px 12px;font-size:12px;line-height:1.5;color:var(--ink-dim);font-style:italic">Фараон очищается небесной водой, как младенец при рождении.</div>
-<div class="row">
+<div class="spell-card">
+<div class="head">
+<span class="qbadge">PT 402</span>
+<span class="title">Изречение о воде</span>
+<span class="count">№402 из 1000+</span>
+</div>
+<div class="context">Фараон очищается небесной водой, как младенец при рождении.</div>
+<div class="pair">
 <div class="num">402</div>
 <div class="eg">mw mw mw n wsjr nn-kꜣ-ḥtp.t</div>
 <div class="ru">Вода! Вода! Вода! Осирису Тети!</div>
 </div>
 </div>
-</details>
-<details class="corpus spell" open>
-<summary><div class="left"><span class="qbadge">PT 466</span>Изречение о сандалиях</div><div class="count">заклинание №466</div></summary>
-<div class="body">
-<div class="note" style="margin:8px 12px;font-size:12px;line-height:1.5;color:var(--ink-dim);font-style:italic">Магические сандалии позволяют ходить по священной земле загробного мира.</div>
-<div class="row">
+<div class="spell-card">
+<div class="head">
+<span class="qbadge">PT 466</span>
+<span class="title">Изречение о сандалиях</span>
+<span class="count">№466 из 1000+</span>
+</div>
+<div class="context">Магические сандалии позволяют ходить по священной земле загробного мира.</div>
+<div class="pair">
 <div class="num">466</div>
 <div class="eg">ṯbw.t n wsjr nn-kꜣ-ḥtp.t</div>
 <div class="ru">Сандалии для Осириса Тети!</div>
 </div>
 </div>
-</details>
-<details class="corpus spell" open>
-<summary><div class="left"><span class="qbadge">PT 510</span>Изречение о силе Тети</div><div class="count">заклинание №510</div></summary>
-<div class="body">
-<div class="note" style="margin:8px 12px;font-size:12px;line-height:1.5;color:var(--ink-dim);font-style:italic">Обретение божественной силы после воскресения.</div>
-<div class="row">
+<div class="spell-card">
+<div class="head">
+<span class="qbadge">PT 510</span>
+<span class="title">Изречение о силе Тети</span>
+<span class="count">№510 из 1000+</span>
+</div>
+<div class="context">Обретение божественной силы после воскресения.</div>
+<div class="pair">
 <div class="num">510</div>
 <div class="eg">sḫm nb n wsjr nn-kꜣ-ḥtp.t</div>
 <div class="ru">Вся сила принадлежит Осирису Тети!</div>
 </div>
 </div>
-</details>
-<details class="corpus spell" open>
-<summary><div class="left"><span class="qbadge">PT 564</span>Изречение о полях</div><div class="count">заклинание №564</div></summary>
-<div class="body">
-<div class="note" style="margin:8px 12px;font-size:12px;line-height:1.5;color:var(--ink-dim);font-style:italic">Загробный рай, поля вечного плодородия.</div>
-<div class="row">
+<div class="spell-card">
+<div class="head">
+<span class="qbadge">PT 564</span>
+<span class="title">Изречение о полях</span>
+<span class="count">№564 из 1000+</span>
+</div>
+<div class="context">Загробный рай, поля вечного плодородия.</div>
+<div class="pair">
 <div class="num">564</div>
 <div class="eg">sḫt-ꜥrw n wsjr nn-kꜣ-ḥtp.t</div>
 <div class="ru">Поля тростника для Осириса Тети!</div>
 </div>
 </div>
-</details>
 
 </main>
 
