@@ -28,6 +28,9 @@ nav.main a{color:var(--gold);margin:0 6px;letter-spacing:1px;padding:3px 6px}
 .toolbar button{background:transparent;border:1px solid var(--gold-dim);color:var(--gold);padding:5px 11px;font-size:10px;letter-spacing:1px;cursor:pointer;font-family:inherit;text-transform:uppercase}
 .toolbar button:hover{background:var(--gold);color:var(--bg)}.toolbar a.btn-link{background:transparent;border:1px solid var(--gold-dim);color:var(--gold);padding:5px 11px;font-size:10px;letter-spacing:1px;cursor:pointer;font-family:inherit;text-transform:uppercase;text-decoration:none;display:inline-block;transition:all 0.15s}
 .toolbar a.btn-link:hover{background:var(--gold);color:var(--bg);text-decoration:none}
+.toolbar-row{display:flex;justify-content:center;gap:6px;flex-wrap:wrap;margin:0 0 4px}
+.toolbar-row:last-child{margin-bottom:0}
+
 
 .meta{color:var(--ink-dim);font-size:11px;font-style:italic;padding:6px 16px;text-align:center;font-family:'Courier New',monospace;letter-spacing:1px}
 .meta b{color:var(--gold);font-style:normal;font-family:Georgia,serif}
@@ -176,11 +179,8 @@ details.corpus[open]>summary::before{content:"▼";color:var(--gold-bright)}
 
 <main>
 <div class="toolbar">
-<button onclick="document.querySelectorAll('details.corpus').forEach(d=>d.open=true)">▼ РАЗВЕРНУТЬ</button>
-<button onclick="document.querySelectorAll('details.corpus').forEach(d=>d.open=false)">▲ СВЕРНУТЬ</button>
-<a class="btn-link" href="02-libri-deperditi/abram/index.html">✡ АВРААМИЧЕСКИЕ</a>
-<a class="btn-link" href="02-libri-deperditi/non-abram/index.html">◈ НЕ-АВРААМИЧЕСКИЕ</a>
-<a class="btn-link" href="index.html">◆ ВСЕ ТЕКСТЫ</a>
+<div class="toolbar-row"><button onclick="document.querySelectorAll('details.corpus').forEach(d=>d.open=true)">▼ РАЗВЕРНУТЬ</button><button onclick="document.querySelectorAll('details.corpus').forEach(d=>d.open=false)">▲ СВЕРНУТЬ</button><a class="btn-link" href="index.html">◆ ВСЕ ТЕКСТЫ</a></div>
+<div class="toolbar-row"><a class="btn-link" href="02-libri-deperditi/abram/index.html">✡ АВРААМИЧЕСКИЕ</a><a class="btn-link" href="02-libri-deperditi/non-abram/index.html">◈ НЕ-АВРААМИЧЕСКИЕ</a></div>
 </div>
 
 </div>
@@ -710,7 +710,7 @@ function resetView(){
 
 </script>
 <footer>
-ARCHIVUM HAERETICUM IMPERII HUMANITATIS &middot; CORPUS DIVINUS &middot; <span class="red">◆</span> SIGILLUM VERITATIS &middot; <span class="gold">28 КОРПУСА &middot; 407 СТРАНИЦ</span>
+ARCHIVUM HAERETICUM IMPERII HUMANITATIS — CORPUS DIVINUS — <span class="red">◆</span> SIGILLUM VERITATIS
 </footer>
 </body>
 </htmlfunction toggleRama(which) {
