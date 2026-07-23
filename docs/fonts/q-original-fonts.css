@@ -1,0 +1,66 @@
+/* ARCHIVUM HAERETICUM — Q-Original Fonts
+   Загружает редкие шрифты для Cuneiform, Egyptian Hieroglyphs, Coptic */
+
+@font-face {
+  font-family: 'Noto Sans Cuneiform';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url('/archivum-haereticum/fonts/noto-cuneiform.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Noto Sans Egyptian Hieroglyphs';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url('/archivum-haereticum/fonts/noto-hieroglyphs.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Noto Sans Coptic';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url('/archivum-haereticum/fonts/noto-coptic.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Noto Serif JP';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local('Noto Serif JP'), local('NotoSerifJP-Regular');
+}
+
+@font-face {
+  font-family: 'Noto Sans Devanagari';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local('Noto Sans Devanagari'), local('NotoSansDevanagari-Regular');
+}
+
+@font-face {
+  font-family: 'Noto Sans Tibetan';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local('Noto Sans Tibetan'), local('NotoSansTibetan-Regular');
+}
+
+@font-face {
+  font-family: 'Noto Sans Hebrew';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local('Noto Sans Hebrew'), local('NotoSansHebrew-Regular');
+}
+
+@font-face {
+  font-family: 'SBL Greek';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local('SBL Greek'), local('SBLGreek');
+}
