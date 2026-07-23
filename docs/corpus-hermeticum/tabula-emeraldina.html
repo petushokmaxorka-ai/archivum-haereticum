@@ -1,0 +1,129 @@
+<!DOCTYPE html><html lang="ru"><head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Tabula Smaragdina · Q29</title>
+<style>
+:root{--bg:#0a0a0c;--bg2:#0d0d12;--panel:#13131a;--line:#2a2a33;--red:#c8102e;--gold:#c9a227;--gold-bright:#e8b84a;--gold-dim:#8a7119;--ink:#d4c6a8;--ink-dim:#9e8855;--orig:#c9a227}
+*{box-sizing:border-box;margin:0;padding:0}body{background:var(--bg);color:var(--ink);font-family:Georgia,'Times New Roman',serif;line-height:1.55;overflow-x:hidden}
+header.hos{background:linear-gradient(180deg,#8a0a1f 0%,#1a0007 30%,var(--bg) 100%);border-bottom:2px solid var(--red);padding:0;position:relative}
+header.hos::before{content:"";position:absolute;left:0;top:0;bottom:0;width:6px;background:var(--red)}
+.hos-strip{display:flex;justify-content:space-between;align-items:center;padding:6px 14px;background:rgba(0,0,0,0.5);border-bottom:1px solid #8a0a1f;font-family:'Courier New',monospace;font-size:10px;letter-spacing:2px;color:var(--ink-dim);text-transform:uppercase}
+.hos-strip .l{color:var(--gold)} .hos-strip .r{color:var(--red);font-weight:bold}
+.hos-body{padding:18px 22px 14px}
+.hos-h1{font-size:1.5rem;letter-spacing:.12em;color:var(--orig);font-weight:normal;margin-bottom:4px;line-height:1.2}
+.hos-h1 .q{color:var(--red);font-family:'Courier New',monospace;font-size:.7em;vertical-align:super;margin-right:6px;padding:3px 7px;background:rgba(200,16,46,0.15);border:1px solid #8a0a1f;letter-spacing:1px}
+.hos-sub{color:var(--ink-dim);font-size:13px;font-style:italic}
+.stamps{padding:7px 16px;background:var(--bg2);border-bottom:1px solid var(--line);text-align:center;font-family:'Courier New',monospace}
+.stamps span{display:inline-block;border:1px solid var(--gold-dim);color:var(--gold);font-size:9px;letter-spacing:2px;padding:2px 7px;margin:0 2px;text-transform:uppercase}
+nav.main{padding:8px 18px;background:#13131a;border-bottom:1px solid var(--line);font-size:12px;text-align:center}
+nav.main a{color:var(--gold);margin:0 6px;letter-spacing:1px;padding:3px 6px}
+main{max-width:1300px;margin:0 auto;padding:0 12px 40px}
+.verse{display:grid;grid-template-columns:3.2rem 1fr 1.1fr;border-bottom:1px solid #1d1d24;align-items:start;transition:background 0.15s;width:100%}
+.verse:hover{background:#15110b}
+.num{grid-column:1;color:var(--gold);font-size:12px;padding:10px 4px;text-align:right;font-family:'Courier New',monospace;font-weight:bold;align-self:start}
+.la{grid-column:2;padding:10px 12px;font-size:1.05rem;line-height:1.7;color:var(--orig);background:rgba(201,162,39,0.04);border-right:1px solid var(--gold-dim);border-left:3px solid var(--gold-dim);font-style:italic;font-family:'Cardo','New Athena Unicode',Georgia,serif;direction:ltr;text-align:left;word-wrap:break-word;overflow-wrap:break-word}
+.ru{grid-column:3;padding:10px 12px;font-size:.95rem;line-height:1.65;text-align:justify;color:var(--ink);font-family:Georgia,serif;border-left:1px solid var(--line);word-wrap:break-word;overflow-wrap:break-word}
+.meta{padding:8px 16px;text-align:center;color:var(--ink-dim);font-size:11px;font-style:italic;background:var(--bg2);border-bottom:1px solid var(--line)}
+footer{padding:18px;text-align:center;color:var(--ink-dim);font-size:10px;border-top:1px solid var(--line);font-family:'Courier New',monospace;letter-spacing:2px;background:var(--bg2)}
+.note{margin:14px;padding:14px 18px;background:rgba(201,162,39,0.04);border:1px solid var(--gold-dim);border-left:4px solid var(--gold);font-size:14px;line-height:1.7;color:var(--ink)}
+.toolbar{display:flex;justify-content:center;gap:6px;flex-wrap:wrap;margin:14px 0 8px;padding:8px;background:#13131a;border:1px solid var(--line);font-family:'Courier New',monospace}
+.toolbar button{background:transparent;border:1px solid var(--gold-dim);color:var(--gold);padding:5px 11px;font-size:10px;letter-spacing:1px;cursor:pointer;font-family:inherit;text-transform:uppercase}
+.toolbar button:hover{background:var(--gold);color:var(--bg)}
+@media(max-width:760px){
+  .verse,.row{grid-template-columns:1fr !important;display:block !important;padding:12px 14px;margin:8px 0;border:1px solid var(--line);background:var(--bg2);width:100% !important;max-width:100% !important;overflow:hidden;box-sizing:border-box}
+  .verse .num,.row .num{display:inline-block;background:rgba(0,0,0,0.5);padding:3px 10px;margin-bottom:8px;width:auto;text-align:left;font-size:11px;border:1px solid var(--gold-dim);border-radius:2px;font-family:'Courier New',monospace;min-width:0 !important}
+  .verse .la,.verse .ru{font-size:1.05rem !important;line-height:1.65 !important;padding:10px 12px !important;border-left:3px solid var(--gold-dim);margin:6px 0;background:rgba(201,162,39,0.04);width:auto !important;display:block !important;min-width:0 !important;word-wrap:break-word;overflow-wrap:break-word;max-width:100% !important;box-sizing:border-box}
+  .verse .ru{border-left:3px solid var(--red);background:rgba(200,16,46,0.04)}
+  .hos-h1{font-size:1.2rem;letter-spacing:.05em;line-height:1.3}
+  .hos-sub{font-size:12px}
+  main{padding:0 8px;width:100% !important;max-width:100% !important;box-sizing:border-box}
+  nav.main{padding:6px 10px;font-size:11px}
+  nav.main a{margin:0 3px;padding:2px 4px}
+  .toolbar button{font-size:10px;padding:5px 8px;letter-spacing:0;flex:1 1 30%;min-width:60px}
+  footer{font-size:11px;padding:8px 10px}
+}
+</style>
+</head>
+<body>
+<header class="hos">
+<div class="hos-strip"><span class="l">ARCHIVUM HAERETICUM — CORPUS DIVINUS</span><span class="r">Q29 — HERMETICA</span></div>
+<div class="hos-body">
+<h1 class="hos-h1"><span class="q">Q29</span>Tabula Smaragdina · Изумрудная Скрижаль</h1>
+<div class="hos-sub">Tabula Smaragdina Hermetis · Древнейший герметический текст (III-VII вв. н.э.) · Латинский оригинал + русский перевод</div>
+</div>
+<div class="stamps">
+<span class="fid">◆ FIDELIS</span>
+<span class="cre">✚ MYSTICA</span>
+<span class="dam">✠ HERMETICA</span>
+</div>
+</header>
+<nav class="main">
+<a href="index.html">◀ CORPUS HERMETICUM</a>
+</nav>
+<main>
+<div class="toolbar">
+<button onclick="toggleOrig()">☀ ОРИГИНАЛ</button>
+<button onclick="toggleRu()">☾ ПЕРЕВОД</button>
+<button onclick="resetView()">◉ ОБА</button>
+</div>
+<div class="note">
+<b>TABULA SMARAGDINA</b> (Изумрудная Скрижаль) — самый знаменитый герметический текст, приписываемый <b>Гермесу Трисмегисту</b> (Ἑρμῆς ὁ Τρισμέγιστος). По легенде, текст был найден Аполлонием Тианским в гробнице Гермеса, вырезан на изумрудной таблице. Это алхимический и философский трактат о единстве материи и духа, о принципе «что вверху, то и внизу». Перевод на латинский сделан в XII-XIII вв. (предположительно Иоанном Итальянским или Хьюго из Санталы). <b>Структура:</b> 13 пунктов-аксиом алхимии и космогонии.
+</div>
+<div class="verse">
+<div class="num">1</div>
+<div class="la">Verum sine mendacio, certum et verissimum: Quod est inferius est sicut quod est superius, et quod est superius est sicut quod est inferius, ad perpetranda miracula rei unius.</div>
+<div class="ru">Истинно, без обмана, достоверно и наивернейшее: то, что внизу, подобно тому, что вверху, и то, что вверху, подобно тому, что внизу, для совершения чудес единой вещи.</div>
+</div>
+<div class="verse">
+<div class="num">2</div>
+<div class="la">Et sicut omnes res fuerunt ab Uno, meditatione Unius, sic omnes res natae fuerunt ab hac una re, adaptatione.</div>
+<div class="ru">И как все вещи произошли от единого, через размышление о едином, так все вещи родились от этой единой вещи через приспособление.</div>
+</div>
+<div class="verse">
+<div class="num">3</div>
+<div class="la">Pater eius est Sol, mater eius est Luna, portavit illud ventus in ventre suo, nutrix eius terra est.</div>
+<div class="ru">Отец её — Солнце, мать её — Луна, нёс её ветер в своём чреве, кормилица её — Земля.</div>
+</div>
+<div class="verse">
+<div class="num">4</div>
+<div class="la">Pater omnis telesmi totius mundi est hic. Virtus eius integra est, si versa fuerit in terram.</div>
+<div class="ru">Отец всякого совершенства во всём мире — вот. Сила его цела, если она обратится в землю.</div>
+</div>
+<div class="verse">
+<div class="num">5</div>
+<div class="la">Separabis terram ab igne, subtile a spisso, suaviter, magno cum ingenio. Ascendit a terra in caelum, iterumque descendit in terram, et recipit vim superiorum et inferiorum.</div>
+<div class="ru">Отделишь землю от огня, тонкое от грубого, мягко, с великим разумением. Восходит от земли к небу и снова нисходит к земле, и получает силу верхних и нижних.</div>
+</div>
+<div class="verse">
+<div class="num">6</div>
+<div class="la">Habes gloriam totius mundi, ideo fugiet a te omnis obscuritas.</div>
+<div class="ru">Получишь славу всего мира, и потому убежит от тебя всякая темнота.</div>
+</div>
+<div class="verse">
+<div class="num">7</div>
+<div class="la">Hic est totius fortitudinis fortitudo fortis, quia vincet omnem rem subtilem, omnemque solidam penetrabit.</div>
+<div class="ru">Здесь крепкая сила всякой силы, ибо она победит всякую тонкую вещь и проникнет в каждую твёрдую.</div>
+</div>
+<div class="verse">
+<div class="num">8</div>
+<div class="la">Sic mundus creatus est. Hinc erunt adaptationes mirabiles, quarum modus hic est.</div>
+<div class="ru">Так был создан мир. Отсюда будут удивительные приспособления, способ которых здесь.</div>
+</div>
+<div class="verse">
+<div class="num">9</div>
+<div class="la">Itaque vocatus sum Hermes Trismegistus, habens tres partes philosophiae totius mundi.</div>
+<div class="ru">Поэтому я был назван Гермес Трисмегист, имеющий три части философии всего мира.</div>
+</div>
+<div class="verse">
+<div class="num">10</div>
+<div class="la">Completum est quod dixi de operatione Solis et Lunae.</div>
+<div class="ru">Завершено то, что я сказал о действии Солнца и Луны.</div>
+</div>
+</main>
+<footer>ARCHIVUM HAERETICUM · Q29 · TABULA SMARAGDINA · латинский оригинал, XII-XIII вв.</footer>
+<script>
+function toggleOrig(){document.querySelectorAll('.verse .la').forEach(e=>e.style.display='');document.querySelectorAll('.verse .ru').forEach(e=>e.style.display='none')}
+function toggleRu(){document.querySelectorAll('.verse .la').forEach(e=>e.style.display='none');document.querySelectorAll('.verse .ru').forEach(e=>e.style.display='')}
+function resetView(){document.querySelectorAll('.verse .la,.verse .ru').forEach(e=>e.style.display='')}
+</script>
+</body></html>
