@@ -4,53 +4,67 @@
 <title>CORPUS DIVINUS · Единый Свод</title>
 <style>
 :root{--bg:#0a0a0c;--bg2:#0d0d12;--panel:#13131a;--line:#2a2a33;--red:#c8102e;--red-dark:#8a0a1f;--gold:#c9a227;--gold-bright:#e8b84a;--gold-dim:#8a7119;--ink:#e8e2d5;--ink-dim:#9a937f;--orig:#f2ead6;--accent:#d49a3a;--grid:#1d1d24}
-*{box-sizing:border-box;margin:0;padding:0}body{background:var(--bg);color:var(--ink);font-family:Georgia,'Times New Roman',serif;line-height:1.55}
+*{box-sizing:border-box;margin:0;padding:0}body{background:var(--bg);color:var(--ink);font-family:Georgia,'Times New Roman',serif;line-height:1.55;padding-bottom:40px}
 a{color:var(--gold);text-decoration:none}a:hover{color:var(--gold-bright);text-decoration:underline}
 header.hos{background:linear-gradient(180deg,var(--red-dark) 0%,#1a0007 30%,var(--bg) 100%);border-bottom:2px solid var(--red);padding:0;position:relative}
 header.hos::before{content:"";position:absolute;left:0;top:0;bottom:0;width:6px;background:var(--red)}
-.hos-strip{display:flex;justify-content:space-between;align-items:center;padding:6px 14px;background:rgba(0,0,0,0.5);border-bottom:1px solid var(--red-dark);font-family:'Courier New',monospace;font-size:10px;letter-spacing:2px;color:var(--ink-dim);text-transform:uppercase}
+.hos-strip{display:flex;justify-content:space-between;align-items:center;padding:6px 14px;background:rgba(0,0,0,0.5);border-bottom:1px solid var(--red-dark);font-family:'Courier New',monospace;font-size:10px;letter-spacing:2px;color:var(--ink-dim);text-transform:uppercase;flex-wrap:wrap;gap:4px}
 .hos-strip .l{color:var(--gold)} .hos-strip .r{color:var(--red);font-weight:bold}
 .hos-body{padding:18px 22px 14px;text-align:center}
 .hos-h1{font-size:2rem;letter-spacing:.15em;color:var(--orig);font-weight:normal;margin-bottom:6px;line-height:1.2}
 .hos-h1 .q{color:var(--red);font-family:'Courier New',monospace;font-size:.5em;vertical-align:super;margin-right:8px;padding:4px 9px;background:rgba(200,16,46,0.15);border:1px solid var(--red-dark);letter-spacing:2px}
 .hos-h1 .sig{font-size:.4em;color:var(--gold);font-family:'Courier New',monospace;letter-spacing:3px;margin-left:12px;padding:4px 10px;border:1px solid var(--gold-dim);vertical-align:middle}
-.hos-sub{color:var(--ink-dim);font-size:14px;font-style:italic;letter-spacing:1px}
+.hos-sub{color:var(--ink-dim);font-size:14px;font-style:italic;letter-spacing:1px;padding:0 12px}
 .stamps{padding:8px 16px;background:var(--bg2);border-bottom:1px solid var(--line);text-align:center;font-family:'Courier New',monospace}
 .stamps span{display:inline-block;border:1px solid var(--gold-dim);color:var(--gold);font-size:10px;letter-spacing:2px;padding:3px 8px;margin:0 3px;text-transform:uppercase}
 .stamps span.fid{color:var(--gold-bright);border-color:var(--gold);background:rgba(201,162,39,0.05)}
 .stamps span.dam{color:var(--red);border-color:var(--red-dark);background:rgba(200,16,46,0.05)}
 .stamps span.cre{color:var(--accent);border-color:var(--accent);background:rgba(212,154,58,0.05)}
-.toolbar{display:flex;justify-content:center;gap:6px;flex-wrap:wrap;margin:14px 0;padding:10px;background:var(--panel);border:1px solid var(--line);font-family:'Courier New',monospace}
+.toolbar{display:flex;justify-content:center;gap:6px;flex-wrap:wrap;margin:14px 12px;padding:10px;background:var(--panel);border:1px solid var(--line);font-family:'Courier New',monospace}
 .toolbar button{background:transparent;border:1px solid var(--gold-dim);color:var(--gold);padding:6px 14px;font-size:11px;letter-spacing:2px;cursor:pointer;font-family:inherit;text-transform:uppercase;transition:all 0.15s}
 .toolbar button:hover{background:var(--gold);color:var(--bg)}
-main{max-width:1100px;margin:0 auto;padding:0 12px 40px}
-.meta{color:var(--ink-dim);font-size:12px;font-style:italic;padding:10px 16px;text-align:center;font-family:'Courier New',monospace;letter-spacing:1px}
+main{max-width:1100px;margin:0 auto;padding:0 12px}
+.meta{color:var(--ink-dim);font-size:12px;font-style:italic;padding:14px 16px;text-align:center;font-family:'Courier New',monospace;letter-spacing:1px}
 .meta b{color:var(--gold);font-style:normal;font-family:Georgia,serif}
-section.corpus{margin:14px 0;border:1px solid var(--line);background:var(--panel)}
-section.corpus>summary{list-style:none;cursor:pointer;padding:10px 16px;background:linear-gradient(90deg,var(--red-dark),transparent);color:var(--gold-bright);font-size:1rem;letter-spacing:.15em;border-bottom:1px solid var(--red-dark);font-family:'Courier New',monospace;text-transform:uppercase;display:flex;justify-content:space-between;align-items:center;user-select:none}
-section.corpus>summary::-webkit-details-marker{display:none}
-section.corpus>summary::before{content:"▶";margin-right:10px;color:var(--red);font-size:.8em;transition:transform 0.2s}
-section.corpus[open]>summary::before{content:"▼";color:var(--gold-bright)}
-section.corpus>summary:hover{background:linear-gradient(90deg,var(--red),var(--red-dark) 60%,transparent)}
-section.corpus>summary .count{color:var(--ink-dim);font-size:.85em;font-weight:normal;letter-spacing:1px}
-section.corpus>summary .qbadge{color:var(--red);font-size:.9em;margin-right:8px;background:rgba(200,16,46,0.15);border:1px solid var(--red-dark);padding:2px 6px;font-size:.75em}
-section.corpus .body{padding:14px 16px}
+details.corpus{margin:8px 0;border:1px solid var(--line);background:var(--panel)}
+details.corpus>summary{list-style:none;cursor:pointer;padding:12px 16px;background:linear-gradient(90deg,var(--red-dark),transparent);color:var(--gold-bright);font-size:1rem;letter-spacing:.1em;border-bottom:1px solid var(--red-dark);font-family:'Courier New',monospace;text-transform:uppercase;display:flex;justify-content:space-between;align-items:center;user-select:none;gap:8px;flex-wrap:wrap}
+details.corpus>summary::-webkit-details-marker{display:none}
+details.corpus>summary::marker{display:none;content:""}
+details.corpus>summary::before{content:"▶";margin-right:8px;color:var(--red);font-size:.8em;transition:transform 0.2s;flex-shrink:0}
+details.corpus[open]>summary::before{content:"▼";color:var(--gold-bright)}
+details.corpus>summary:hover{background:linear-gradient(90deg,var(--red),var(--red-dark) 60%,transparent)}
+details.corpus>summary .left{flex:1;min-width:0;word-break:break-word}
+details.corpus>summary .count{color:var(--ink-dim);font-size:.75em;font-weight:normal;letter-spacing:1px;text-align:right;white-space:nowrap}
+details.corpus>summary .qbadge{color:var(--red);font-size:.85em;margin-right:8px;background:rgba(200,16,46,0.15);border:1px solid var(--red-dark);padding:2px 6px;font-size:.75em;letter-spacing:1px}
+details.corpus .body{padding:14px 16px}
 .book-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(220px,1fr));gap:6px}
-.book-card{border:1px solid var(--line);background:var(--bg2);padding:6px 10px;display:block;color:var(--ink);text-decoration:none;transition:all 0.15s;font-size:13px}
+.book-card{border:1px solid var(--line);background:var(--bg2);padding:6px 10px;display:block;color:var(--ink);text-decoration:none;transition:all 0.15s;font-size:13px;word-break:break-word}
 .book-card:hover{border-color:var(--gold);background:#1a1410;text-decoration:none;color:var(--gold-bright)}
 .book-card .nm{color:var(--gold);font-size:12px;font-family:'Courier New',monospace;margin-right:6px;letter-spacing:1px}
 .book-card .ttl{color:var(--ink)}
 .note{margin:14px 16px;padding:12px 16px;border:1px solid var(--gold-dim);background:var(--bg2);font-size:12px;color:var(--ink-dim);line-height:1.55}
 .note b{color:var(--gold)}
-.note .red{color:var(--red)}
 footer{padding:18px;text-align:center;color:var(--ink-dim);font-size:10px;border-top:1px solid var(--line);font-family:'Courier New',monospace;letter-spacing:2px;background:var(--bg2)}
 footer .red{color:var(--red)} footer .gold{color:var(--gold)}
+@media(max-width:760px){
+  .hos-h1{font-size:1.3rem;letter-spacing:.08em}
+  .hos-h1 .q{font-size:.7em;margin-right:4px;padding:2px 5px}
+  .hos-h1 .sig{font-size:.5em;margin-left:6px;padding:2px 6px}
+  .hos-sub{font-size:12px;letter-spacing:0}
+  .stamps span{font-size:8px;padding:2px 5px;margin:1px}
+  details.corpus>summary{font-size:.85rem;padding:10px 12px;letter-spacing:.05em}
+  details.corpus>summary .count{font-size:.65em}
+  .book-grid{grid-template-columns:1fr;gap:4px}
+  .book-card{padding:8px 10px;font-size:14px}
+  .toolbar button{font-size:9px;padding:4px 8px;letter-spacing:1px}
+  .meta{font-size:10px;padding:10px 12px}
+}
 </style>
 </head><body><header class="hos">
 <div class="hos-strip"><span class="l">ARCHIVUM HAERETICUM IMPERII HUMANITATIS</span><span class="r">◆ SIGILLUM VERITATIS · CORPUS DIVINUS</span></div>
 <div class="hos-body">
 <h1 class="hos-h1"><span class="q">CD</span>CORPUS DIVINUS<span class="sig">◆ FIDELIS</span></h1>
-<div class="hos-sub">Единый Свод Законов Божьих · ОРИГИНАЛ СЛЕВА · ПЕРЕВОД СПРАВА · 14 КОРПУСОВ · 397 ПАРАЛЛЕЛЬНЫХ ТЕКСТОВ</div>
+<div class="hos-sub">Единый Свод Законов Божьих · ОРИГИНАЛ СЛЕВА · ПЕРЕВОД СПРАВА · 14 КОРПУСОВ · 397 ТЕКСТОВ</div>
 </div>
 </header>
 <div class="stamps">
@@ -62,15 +76,15 @@ footer .red{color:var(--red)} footer .gold{color:var(--gold)}
 <div class="toolbar">
 <button onclick="document.querySelectorAll('details.corpus').forEach(d=>d.open=true)">▼ РАЗВЕРНУТЬ ВСЕ</button>
 <button onclick="document.querySelectorAll('details.corpus').forEach(d=>d.open=false)">▲ СВЕРНУТЬ ВСЕ</button>
-<button onclick="document.querySelectorAll('details.q1,details.q2,details.q3,details.q4,details.q5').forEach(d=>d.open=true);document.querySelectorAll('details.q6,details.q7,details.q8,details.q9,details.q10,details.q11,details.q12,details.q13,details.q14').forEach(d=>d.open=false)">☀ ТОЛЬКО АВРААМИЧЕСКИЕ</button>
-<button onclick="document.querySelectorAll('details.q1,details.q2,details.q3,details.q4,details.q5').forEach(d=>d.open=false);document.querySelectorAll('details.q6,details.q7,details.q8,details.q9,details.q10,details.q11,details.q12,details.q13,details.q14').forEach(d=>d.open=true)">☸ ТОЛЬКО НЕ-АВРААМИЧЕСКИЕ</button>
+<button onclick="document.querySelectorAll('.q1,.q2,.q3,.q4,.q5').forEach(d=>d.open=true);document.querySelectorAll('.q6,.q7,.q8,.q9,.q10,.q11,.q12,.q13,.q14').forEach(d=>d.open=false)">☀ АВРААМИЧЕСКИЕ</button>
+<button onclick="document.querySelectorAll('.q1,.q2,.q3,.q4,.q5').forEach(d=>d.open=false);document.querySelectorAll('.q6,.q7,.q8,.q9,.q10,.q11,.q12,.q13,.q14').forEach(d=>d.open=true)">☸ НЕ-АВРААМИЧЕСКИЕ</button>
 </div>
 <main>
 <div class="meta">ЦЕЛЬ: <b>воссоздание единого свода законов Божьих</b> · ВАВИЛОНСКАЯ БАШНЯ = точка расхождения · <span class="red">◆</span> FIDELIS</div>
 
-<!-- ============ Q3 ВЕТХИЙ ЗАВЕТ ============ -->
+<!-- ============ Q3 ВЕТХИЙ ЗАВЕТ (default open) ============ -->
 <details class="corpus q3" open>
-<summary><span><span class="qbadge">Q3</span>ТАНАХ · ВЕТХИЙ ЗАВЕТ · 39 КНИГ</span><span class="count">23 213 стихов МТ · WLC + LXX + Синодальный</span></summary>
+<summary><div class="left"><span class="qbadge">Q3</span>ТАНАХ · ВЕТХИЙ ЗАВЕТ · 39 КНИГ</div><div class="count">23 213 стихов · WLC + LXX + Синод.</div></summary>
 <div class="body">
 <div class="book-grid">
 <a class="book-card" href="tanakh/gen.html"><span class="nm">01</span><span class="ttl">Бытие (Берешит)</span></a>
@@ -78,111 +92,111 @@ footer .red{color:var(--red)} footer .gold{color:var(--gold)}
 <a class="book-card" href="tanakh/lev.html"><span class="nm">03</span><span class="ttl">Левит (Ваикра)</span></a>
 <a class="book-card" href="tanakh/num.html"><span class="nm">04</span><span class="ttl">Числа (Бемидбар)</span></a>
 <a class="book-card" href="tanakh/deut.html"><span class="nm">05</span><span class="ttl">Второзаконие (Дварим)</span></a>
-<a class="book-card" href="tanakh/josh.html"><span class="nm">06</span><span class="ttl">Иисус Навин (Иехошуа)</span></a>
-<a class="book-card" href="tanakh/judg.html"><span class="nm">07</span><span class="ttl">Книга Судей (Шофтим)</span></a>
-<a class="book-card" href="tanakh/ruth.html"><span class="nm">08</span><span class="ttl">Руфь (Рут)</span></a>
-<a class="book-card" href="tanakh/1sam.html"><span class="nm">09</span><span class="ttl">1-я Царств (Шмуэль I)</span></a>
-<a class="book-card" href="tanakh/2sam.html"><span class="nm">10</span><span class="ttl">2-я Царств (Шмуэль II)</span></a>
-<a class="book-card" href="tanakh/1kgs.html"><span class="nm">11</span><span class="ttl">3-я Царств (Млахим I)</span></a>
-<a class="book-card" href="tanakh/2kgs.html"><span class="nm">12</span><span class="ttl">4-я Царств (Млахим II)</span></a>
-<a class="book-card" href="tanakh/1chr.html"><span class="nm">13</span><span class="ttl">1-я Паралипоменон (Диврей hа-ямим I)</span></a>
-<a class="book-card" href="tanakh/2chr.html"><span class="nm">14</span><span class="ttl">2-я Паралипоменон (Диврей hа-ямим II)</span></a>
-<a class="book-card" href="tanakh/ezra.html"><span class="nm">15</span><span class="ttl">Ездра (Эзра)</span></a>
-<a class="book-card" href="tanakh/neh.html"><span class="nm">16</span><span class="ttl">Неемия (Нехемья)</span></a>
-<a class="book-card" href="tanakh/esth.html"><span class="nm">17</span><span class="ttl">Есфирь (Эстер)</span></a>
-<a class="book-card" href="tanakh/job.html"><span class="nm">18</span><span class="ttl">Иов (Ийов)</span></a>
-<a class="book-card" href="tanakh/ps.html"><span class="nm">19</span><span class="ttl">Псалтирь (Техилим)</span></a>
-<a class="book-card" href="tanakh/prov.html"><span class="nm">20</span><span class="ttl">Притчи (Мишлей)</span></a>
-<a class="book-card" href="tanakh/eccl.html"><span class="nm">21</span><span class="ttl">Екклезиаст (Коhелет)</span></a>
-<a class="book-card" href="tanakh/song.html"><span class="nm">22</span><span class="ttl">Песнь Песней (Шир hа-Ширим)</span></a>
-<a class="book-card" href="tanakh/isa.html"><span class="nm">23</span><span class="ttl">Исаия (Иешаяhу)</span></a>
-<a class="book-card" href="tanakh/jer.html"><span class="nm">24</span><span class="ttl">Иеремия (Ирмеяhу)</span></a>
-<a class="book-card" href="tanakh/lam.html"><span class="nm">25</span><span class="ttl">Плач Иеремии (Эйха)</span></a>
-<a class="book-card" href="tanakh/ezek.html"><span class="nm">26</span><span class="ttl">Иезекииль (Иехезкель)</span></a>
-<a class="book-card" href="tanakh/dan.html"><span class="nm">27</span><span class="ttl">Даниил (Даниэль)</span></a>
-<a class="book-card" href="tanakh/hos.html"><span class="nm">28</span><span class="ttl">Осия (Хошеа)</span></a>
-<a class="book-card" href="tanakh/joel.html"><span class="nm">29</span><span class="ttl">Иоиль (Иоэль)</span></a>
-<a class="book-card" href="tanakh/amos.html"><span class="nm">30</span><span class="ttl">Амос (Амос)</span></a>
-<a class="book-card" href="tanakh/obad.html"><span class="nm">31</span><span class="ttl">Авдий (Овадья)</span></a>
-<a class="book-card" href="tanakh/jonah.html"><span class="nm">32</span><span class="ttl">Иона (Йона)</span></a>
-<a class="book-card" href="tanakh/mic.html"><span class="nm">33</span><span class="ttl">Михей (Михо)</span></a>
-<a class="book-card" href="tanakh/nah.html"><span class="nm">34</span><span class="ttl">Наум (Нахум)</span></a>
-<a class="book-card" href="tanakh/hab.html"><span class="nm">35</span><span class="ttl">Аввакум (Хавакук)</span></a>
-<a class="book-card" href="tanakh/zeph.html"><span class="nm">36</span><span class="ttl">Софония (Цфанья)</span></a>
-<a class="book-card" href="tanakh/hag.html"><span class="nm">37</span><span class="ttl">Аггей (Хагай)</span></a>
-<a class="book-card" href="tanakh/zech.html"><span class="nm">38</span><span class="ttl">Захария (Зхарья)</span></a>
-<a class="book-card" href="tanakh/mal.html"><span class="nm">39</span><span class="ttl">Малахия (Малахи)</span></a>
+<a class="book-card" href="tanakh/josh.html"><span class="nm">06</span><span class="ttl">Иисус Навин</span></a>
+<a class="book-card" href="tanakh/judg.html"><span class="nm">07</span><span class="ttl">Книга Судей</span></a>
+<a class="book-card" href="tanakh/ruth.html"><span class="nm">08</span><span class="ttl">Руфь</span></a>
+<a class="book-card" href="tanakh/1sam.html"><span class="nm">09</span><span class="ttl">1-я Царств</span></a>
+<a class="book-card" href="tanakh/2sam.html"><span class="nm">10</span><span class="ttl">2-я Царств</span></a>
+<a class="book-card" href="tanakh/1kgs.html"><span class="nm">11</span><span class="ttl">3-я Царств</span></a>
+<a class="book-card" href="tanakh/2kgs.html"><span class="nm">12</span><span class="ttl">4-я Царств</span></a>
+<a class="book-card" href="tanakh/1chr.html"><span class="nm">13</span><span class="ttl">1-я Паралипоменон</span></a>
+<a class="book-card" href="tanakh/2chr.html"><span class="nm">14</span><span class="ttl">2-я Паралипоменон</span></a>
+<a class="book-card" href="tanakh/ezra.html"><span class="nm">15</span><span class="ttl">Ездра</span></a>
+<a class="book-card" href="tanakh/neh.html"><span class="nm">16</span><span class="ttl">Неемия</span></a>
+<a class="book-card" href="tanakh/esth.html"><span class="nm">17</span><span class="ttl">Есфирь</span></a>
+<a class="book-card" href="tanakh/job.html"><span class="nm">18</span><span class="ttl">Иов</span></a>
+<a class="book-card" href="tanakh/ps.html"><span class="nm">19</span><span class="ttl">Псалтирь</span></a>
+<a class="book-card" href="tanakh/prov.html"><span class="nm">20</span><span class="ttl">Притчи</span></a>
+<a class="book-card" href="tanakh/eccl.html"><span class="nm">21</span><span class="ttl">Екклезиаст</span></a>
+<a class="book-card" href="tanakh/song.html"><span class="nm">22</span><span class="ttl">Песнь Песней</span></a>
+<a class="book-card" href="tanakh/isa.html"><span class="nm">23</span><span class="ttl">Исаия</span></a>
+<a class="book-card" href="tanakh/jer.html"><span class="nm">24</span><span class="ttl">Иеремия</span></a>
+<a class="book-card" href="tanakh/lam.html"><span class="nm">25</span><span class="ttl">Плач Иеремии</span></a>
+<a class="book-card" href="tanakh/ezek.html"><span class="nm">26</span><span class="ttl">Иезекииль</span></a>
+<a class="book-card" href="tanakh/dan.html"><span class="nm">27</span><span class="ttl">Даниил</span></a>
+<a class="book-card" href="tanakh/hos.html"><span class="nm">28</span><span class="ttl">Осия</span></a>
+<a class="book-card" href="tanakh/joel.html"><span class="nm">29</span><span class="ttl">Иоиль</span></a>
+<a class="book-card" href="tanakh/amos.html"><span class="nm">30</span><span class="ttl">Амос</span></a>
+<a class="book-card" href="tanakh/obad.html"><span class="nm">31</span><span class="ttl">Авдий</span></a>
+<a class="book-card" href="tanakh/jonah.html"><span class="nm">32</span><span class="ttl">Иона</span></a>
+<a class="book-card" href="tanakh/mic.html"><span class="nm">33</span><span class="ttl">Михей</span></a>
+<a class="book-card" href="tanakh/nah.html"><span class="nm">34</span><span class="ttl">Наум</span></a>
+<a class="book-card" href="tanakh/hab.html"><span class="nm">35</span><span class="ttl">Аввакум</span></a>
+<a class="book-card" href="tanakh/zeph.html"><span class="nm">36</span><span class="ttl">Софония</span></a>
+<a class="book-card" href="tanakh/hag.html"><span class="nm">37</span><span class="ttl">Аггей</span></a>
+<a class="book-card" href="tanakh/zech.html"><span class="nm">38</span><span class="ttl">Захария</span></a>
+<a class="book-card" href="tanakh/mal.html"><span class="nm">39</span><span class="ttl">Малахия</span></a>
 </div>
 </div>
 </details>
 
 <!-- ============ Q3.1 ДЕВТЕРОКАНОН ============ -->
 <details class="corpus">
-<summary><span><span class="qbadge">Q3.1</span>ДЕВТЕРОКАНОН · LXX · 11 КНИГ</span><span class="count">5 266 стихов · LXX + Синодальный</span></summary>
+<summary><div class="left"><span class="qbadge">Q3.1</span>ДЕВТЕРОКАНОН · LXX · 11 КНИГ</div><div class="count">5 266 стихов · LXX + Синод.</div></summary>
 <div class="body">
 <div class="book-grid">
 <a class="book-card" href="deuterocanon/tov.html"><span class="ttl">Книга Товита</span></a>
 <a class="book-card" href="deuterocanon/iudif.html"><span class="ttl">Книга Иудифи</span></a>
-<a class="book-card" href="deuterocanon/prem.html"><span class="ttl">Книга Премудрости Соломона</span></a>
-<a class="book-card" href="deuterocanon/sir.html"><span class="ttl">Книга Сираха (Екклезиастикус)</span></a>
+<a class="book-card" href="deuterocanon/prem.html"><span class="ttl">Премудрость Соломона</span></a>
+<a class="book-card" href="deuterocanon/sir.html"><span class="ttl">Книга Сираха</span></a>
 <a class="book-card" href="deuterocanon/posl_ier.html"><span class="ttl">Послание Иеремии</span></a>
 <a class="book-card" href="deuterocanon/var.html"><span class="ttl">Книга Варуха</span></a>
 <a class="book-card" href="deuterocanon/mak1.html"><span class="ttl">1-я Маккавейская</span></a>
 <a class="book-card" href="deuterocanon/mak2.html"><span class="ttl">2-я Маккавейская</span></a>
 <a class="book-card" href="deuterocanon/mak3.html"><span class="ttl">3-я Маккавейская</span></a>
 <a class="book-card" href="deuterocanon/ezd3.html"><span class="ttl">3-я книга Ездры</span></a>
-<a class="book-card" href="deuterocanon/index.html"><span class="ttl" style="color:var(--red)">→ Все 11 книг (с составом канона)</span></a>
+<a class="book-card" href="deuterocanon/index.html"><span class="ttl" style="color:var(--red)">→ Все 11 книг (канон)</span></a>
 </div>
 </div>
 </details>
 
 <!-- ============ Q4 1 ЕНОХ ============ -->
 <details class="corpus q4">
-<summary><span><span class="qbadge">Q4</span>1 ЕНОХ · КНИГА СТРАЖЕЙ · 108 ГЛАВ</span><span class="count">1058 стихов × 4 свидетеля · геэз + греч + Смирнов + Charles</span></summary>
+<summary><div class="left"><span class="qbadge">Q4</span>1 ЕНОХ · КНИГА СТРАЖЕЙ · 108 ГЛАВ</div><div class="count">1058 стихов · геэз + греч. + Смирн. + Charles</div></summary>
 <div class="body">
 <div class="book-grid">
-<a class="book-card" href="enoch/part1.html"><span class="ttl">Книга Стражей (1–36)</span></a>
-<a class="book-card" href="enoch/part2.html"><span class="ttl">Книга Притчей (37–71)</span></a>
-<a class="book-card" href="enoch/part3.html"><span class="ttl">Астрономическая книга (72–82)</span></a>
-<a class="book-card" href="enoch/part4.html"><span class="ttl">Книга Сновидений (83–90)</span></a>
-<a class="book-card" href="enoch/part5.html"><span class="ttl">Послание Еноха (91–105)</span></a>
-<a class="book-card" href="enoch/part6.html"><span class="ttl">Фрагмент о Ное · Заключение (106–108)</span></a>
+<a class="book-card" href="enoch/part1.html"><span class="ttl">Стражи (1–36)</span></a>
+<a class="book-card" href="enoch/part2.html"><span class="ttl">Притчи (37–71)</span></a>
+<a class="book-card" href="enoch/part3.html"><span class="ttl">Астрономическая (72–82)</span></a>
+<a class="book-card" href="enoch/part4.html"><span class="ttl">Сновидения (83–90)</span></a>
+<a class="book-card" href="enoch/part5.html"><span class="ttl">Послание (91–105)</span></a>
+<a class="book-card" href="enoch/part6.html"><span class="ttl">Ной · Заключение (106–108)</span></a>
 </div>
 </div>
 </details>
 
 <!-- ============ Q5 2 ЕНОХ + ЮБИЛЕИ ============ -->
 <details class="corpus q5">
-<summary><span><span class="qbadge">Q5</span>2 ЕНОХ · ЮБИЛЕИ · СЛАВЯНСКАЯ + ГЕЭЗ</span><span class="count">68 + 50 глав · славянский + геэз + Смирнов + Charles</span></summary>
+<summary><div class="left"><span class="qbadge">Q5</span>2 ЕНОХ · ЮБИЛЕИ</div><div class="count">68 + 50 глав · слав. + геэз + Смирн. + Charles</div></summary>
 <div class="body">
 <div class="book-grid">
-<a class="book-card" href="enoch2/ch01-12.html"><span class="ttl">2 Енох · Гл. 1–12 · Вознесение</span></a>
-<a class="book-card" href="enoch2/ch13-21.html"><span class="ttl">2 Енох · Гл. 13–21 · Небеса</span></a>
-<a class="book-card" href="enoch2/ch22-33.html"><span class="ttl">2 Енох · Гл. 22–33 · Творение</span></a>
-<a class="book-card" href="enoch2/ch34-47.html"><span class="ttl">2 Енох · Гл. 34–47 · Наставления I</span></a>
-<a class="book-card" href="enoch2/ch48-60.html"><span class="ttl">2 Енох · Гл. 48–60 · Наставления II</span></a>
-<a class="book-card" href="enoch2/ch61-68.html"><span class="ttl">2 Енох · Гл. 61–68 · Завещание</span></a>
-<a class="book-card" href="enoch2/melchisedek.html"><span class="ttl">2 Енох · Приложение о Мелхиседеке</span></a>
-<a class="book-card" href="jubilees/knigi-1-10.html"><span class="ttl">Юбилеи · Книги I–X</span></a>
-<a class="book-card" href="jubilees/knigi-11-20.html"><span class="ttl">Юбилеи · Книги XI–XX</span></a>
-<a class="book-card" href="jubilees/knigi-21-30.html"><span class="ttl">Юбилеи · Книги XXI–XXX</span></a>
-<a class="book-card" href="jubilees/knigi-31-40.html"><span class="ttl">Юбилеи · Книги XXXI–XL</span></a>
-<a class="book-card" href="jubilees/knigi-41-50.html"><span class="ttl">Юбилеи · Книги XLI–L</span></a>
+<a class="book-card" href="enoch2/ch01-12.html"><span class="ttl">2 Енох · 1–12 · Вознесение</span></a>
+<a class="book-card" href="enoch2/ch13-21.html"><span class="ttl">2 Енох · 13–21 · Небеса</span></a>
+<a class="book-card" href="enoch2/ch22-33.html"><span class="ttl">2 Енох · 22–33 · Творение</span></a>
+<a class="book-card" href="enoch2/ch34-47.html"><span class="ttl">2 Енох · 34–47 · Наставления I</span></a>
+<a class="book-card" href="enoch2/ch48-60.html"><span class="ttl">2 Енох · 48–60 · Наставления II</span></a>
+<a class="book-card" href="enoch2/ch61-68.html"><span class="ttl">2 Енох · 61–68 · Завещание</span></a>
+<a class="book-card" href="enoch2/melchisedek.html"><span class="ttl">2 Енох · Мелхиседек</span></a>
+<a class="book-card" href="jubilees/knigi-1-10.html"><span class="ttl">Юбилеи · I–X</span></a>
+<a class="book-card" href="jubilees/knigi-11-20.html"><span class="ttl">Юбилеи · XI–XX</span></a>
+<a class="book-card" href="jubilees/knigi-21-30.html"><span class="ttl">Юбилеи · XXI–XXX</span></a>
+<a class="book-card" href="jubilees/knigi-31-40.html"><span class="ttl">Юбилеи · XXXI–XL</span></a>
+<a class="book-card" href="jubilees/knigi-41-50.html"><span class="ttl">Юбилеи · XLI–L</span></a>
 </div>
 </div>
 </details>
 
 <!-- ============ Q2 НОВЫЙ ЗАВЕТ ============ -->
 <details class="corpus q2">
-<summary><span><span class="qbadge">Q2</span>НОВЫЙ ЗАВЕТ · 27 КНИГ</span><span class="count">7 957 стихов · SBLGNT (греч.) + Синодальный 1876</span></summary>
+<summary><div class="left"><span class="qbadge">Q2</span>НОВЫЙ ЗАВЕТ · 27 КНИГ</div><div class="count">7 957 стихов · SBLGNT + Синод. 1876</div></summary>
 <div class="body">
 <div class="book-grid">
-<a class="book-card" href="nt/61-Mt.html"><span class="ttl">Евангелие от Матфея</span></a>
-<a class="book-card" href="nt/62-Mk.html"><span class="ttl">Евангелие от Марка</span></a>
-<a class="book-card" href="nt/63-Lk.html"><span class="ttl">Евангелие от Луки</span></a>
-<a class="book-card" href="nt/64-Jn.html"><span class="ttl">Евангелие от Иоанна</span></a>
-<a class="book-card" href="nt/65-Ac.html"><span class="ttl">Деяния апостолов</span></a>
-<a class="book-card" href="nt/66-Ro.html"><span class="ttl">Послание к Римлянам</span></a>
+<a class="book-card" href="nt/61-Mt.html"><span class="ttl">Матфей</span></a>
+<a class="book-card" href="nt/62-Mk.html"><span class="ttl">Марк</span></a>
+<a class="book-card" href="nt/63-Lk.html"><span class="ttl">Лука</span></a>
+<a class="book-card" href="nt/64-Jn.html"><span class="ttl">Иоанн</span></a>
+<a class="book-card" href="nt/65-Ac.html"><span class="ttl">Деяния</span></a>
+<a class="book-card" href="nt/66-Ro.html"><span class="ttl">Римлянам</span></a>
 <a class="book-card" href="nt/67-1Co.html"><span class="ttl">1-е Коринфянам</span></a>
 <a class="book-card" href="nt/68-2Co.html"><span class="ttl">2-е Коринфянам</span></a>
 <a class="book-card" href="nt/69-Ga.html"><span class="ttl">Галатам</span></a>
@@ -203,39 +217,39 @@ footer .red{color:var(--red)} footer .gold{color:var(--gold)}
 <a class="book-card" href="nt/84-2Jn.html"><span class="ttl">2-е Иоанна</span></a>
 <a class="book-card" href="nt/85-3Jn.html"><span class="ttl">3-е Иоанна</span></a>
 <a class="book-card" href="nt/86-Jud.html"><span class="ttl">Иуды</span></a>
-<a class="book-card" href="nt/87-Re.html"><span class="ttl">Откровение Иоанна</span></a>
+<a class="book-card" href="nt/87-Re.html"><span class="ttl">Откровение</span></a>
 </div>
 </div>
 </details>
 
 <!-- ============ Q1 КОРАН ============ -->
 <details class="corpus q1">
-<summary><span><span class="qbadge">Q1</span>КОРАН · AL-QUR'AN · 114 СУР</span><span class="count">6 236 аятов · Tanzil Uthmani (араб.) + Крачковский 1963 (рус.)</span></summary>
+<summary><div class="left"><span class="qbadge">Q1</span>КОРАН · AL-QUR'AN · 114 СУР</div><div class="count">6 236 аятов · Tanzil + Крачковский 1963</div></summary>
 <div class="body">
 <div class="book-grid">
-<a class="book-card" href="quran/index.html"><span class="ttl" style="color:var(--red)">→ ОГЛАВЛЕНИЕ ВСЕХ 114 СУР</span></a>
-<a class="book-card" href="quran/001.html"><span class="nm">1</span><span class="ttl">Аль-Фатиха · Открывающая (7)</span></a>
-<a class="book-card" href="quran/002.html"><span class="nm">2</span><span class="ttl">Аль-Бакара · Корова (286)</span></a>
-<a class="book-card" href="quran/003.html"><span class="nm">3</span><span class="ttl">Аль-Имран · Семейство Имрана (200)</span></a>
-<a class="book-card" href="quran/004.html"><span class="nm">4</span><span class="ttl">Ан-Ниса · Женщины (176)</span></a>
-<a class="book-card" href="quran/005.html"><span class="nm">5</span><span class="ttl">Аль-Маида · Трапеза (120)</span></a>
-<a class="book-card" href="quran/036.html"><span class="nm">36</span><span class="ttl">Ясин · Ясин (83)</span></a>
-<a class="book-card" href="quran/055.html"><span class="nm">55</span><span class="ttl">Ар-Рахман · Милостивый (78)</span></a>
-<a class="book-card" href="quran/067.html"><span class="nm">67</span><span class="ttl">Аль-Мульк · Власть (30)</span></a>
-<a class="book-card" href="quran/112.html"><span class="nm">112</span><span class="ttl">Аль-Ихлас · Искренность (4)</span></a>
-<a class="book-card" href="quran/113.html"><span class="nm">113</span><span class="ttl">Аль-Фалак · Рассвет (5)</span></a>
-<a class="book-card" href="quran/114.html"><span class="nm">114</span><span class="ttl">Ан-Нас · Люди (6)</span></a>
+<a class="book-card" href="quran/index.html"><span class="ttl" style="color:var(--red)">→ ОГЛАВЛЕНИЕ 114 СУР</span></a>
+<a class="book-card" href="quran/001.html"><span class="nm">1</span><span class="ttl">Аль-Фатиха (7)</span></a>
+<a class="book-card" href="quran/002.html"><span class="nm">2</span><span class="ttl">Аль-Бакара (286)</span></a>
+<a class="book-card" href="quran/003.html"><span class="nm">3</span><span class="ttl">Аль-Имран (200)</span></a>
+<a class="book-card" href="quran/004.html"><span class="nm">4</span><span class="ttl">Ан-Ниса (176)</span></a>
+<a class="book-card" href="quran/005.html"><span class="nm">5</span><span class="ttl">Аль-Маида (120)</span></a>
+<a class="book-card" href="quran/036.html"><span class="nm">36</span><span class="ttl">Ясин (83)</span></a>
+<a class="book-card" href="quran/055.html"><span class="nm">55</span><span class="ttl">Ар-Рахман (78)</span></a>
+<a class="book-card" href="quran/067.html"><span class="nm">67</span><span class="ttl">Аль-Мульк (30)</span></a>
+<a class="book-card" href="quran/112.html"><span class="nm">112</span><span class="ttl">Аль-Ихлас (4)</span></a>
+<a class="book-card" href="quran/113.html"><span class="nm">113</span><span class="ttl">Аль-Фалак (5)</span></a>
+<a class="book-card" href="quran/114.html"><span class="nm">114</span><span class="ttl">Ан-Нас (6)</span></a>
 </div>
 </div>
 </details>
 
 <!-- ============ Q6 РИГВЕДА ============ -->
 <details class="corpus q6">
-<summary><span><span class="qbadge">Q6</span>РИГВЕДА · ṚGVEDA · 10 МАНДАЛ</span><span class="count">1 028 гимнов · санскрит (деванагари) + Елизаренкова</span></summary>
+<summary><div class="left"><span class="qbadge">Q6</span>РИГВЕДА · ṚGVEDA · 10 МАНДАЛ</div><div class="count">1 027 гимнов · санскрит + Елизар.</div></summary>
 <div class="body">
 <div class="book-grid">
 <a class="book-card" href="rigveda/index.html"><span class="ttl" style="color:var(--red)">→ ВЫБЕРИ МАНДАЛУ</span></a>
-<a class="book-card" href="rigveda/mi.html"><span class="nm">I</span><span class="ttl">Агни (191 гимн)</span></a>
+<a class="book-card" href="rigveda/mi.html"><span class="nm">I</span><span class="ttl">Агни (191)</span></a>
 <a class="book-card" href="rigveda/mii.html"><span class="nm">II</span><span class="ttl">Варуна, Агни (43)</span></a>
 <a class="book-card" href="rigveda/miii.html"><span class="nm">III</span><span class="ttl">Вишвамитра (62)</span></a>
 <a class="book-card" href="rigveda/miv.html"><span class="nm">IV</span><span class="ttl">Вамадева (58)</span></a>
@@ -251,49 +265,49 @@ footer .red{color:var(--red)} footer .gold{color:var(--gold)}
 
 <!-- ============ Q7 АВЕСТА ============ -->
 <details class="corpus q7">
-<summary><span><span class="qbadge">Q7</span>АВЕСТА · AVESTĀ · 5 ГАТ ЗАРАТУШТРЫ</span><span class="count">17 гимнов · авестийский + Чистяков (рус.)</span></summary>
+<summary><div class="left"><span class="qbadge">Q7</span>АВЕСТА · 5 ГАТ ЗАРАТУШТРЫ</div><div class="count">17 гимнов · авест. + Чистяков</div></summary>
 <div class="body">
 <div class="book-grid">
 <a class="book-card" href="avesta/index.html"><span class="ttl" style="color:var(--red)">→ ОГЛАВЛЕНИЕ АВЕСТЫ</span></a>
-<a class="book-card" href="avesta/gathas.html"><span class="ttl">Ахунаваити (Y28-34) — 7 строф</span></a>
-<a class="book-card" href="avesta/ushtavaiti.html"><span class="ttl">Уштаваити (Y43-46) — 4 строфы</span></a>
-<a class="book-card" href="avesta/spentamainyu.html"><span class="ttl">Спентамайнью (Y47-50) — 4 строфы</span></a>
-<a class="book-card" href="avesta/vohukhshathra.html"><span class="ttl">Вохухшатра (Y51) — 1 строфа</span></a>
-<a class="book-card" href="avesta/vahistoishti.html"><span class="ttl">Вахиштоишти (Y53) — 1 строфа</span></a>
+<a class="book-card" href="avesta/gathas.html"><span class="ttl">Ахунаваити (Y28-34)</span></a>
+<a class="book-card" href="avesta/ushtavaiti.html"><span class="ttl">Уштаваити (Y43-46)</span></a>
+<a class="book-card" href="avesta/spentamainyu.html"><span class="ttl">Спентамайнью (Y47-50)</span></a>
+<a class="book-card" href="avesta/vohukhshathra.html"><span class="ttl">Вохухшатра (Y51)</span></a>
+<a class="book-card" href="avesta/vahistoishti.html"><span class="ttl">Вахиштоишти (Y53)</span></a>
 </div>
 </div>
 </details>
 
 <!-- ============ Q8 ЦЗИНЦЗЯО ============ -->
 <details class="corpus q8">
-<summary><span><span class="qbadge">Q8</span>ЦЗИНЦЗЯО · 景教 · СТЕЛА 781</span><span class="count">китайский + русский · стела + Dunhuang + Алопен</span></summary>
+<summary><div class="left"><span class="qbadge">Q8</span>ЦЗИНЦЗЯО · 景教 · СТЕЛА 781</div><div class="count">кит. + рус. · стела + Dunhuang</div></summary>
 <div class="body">
 <div class="book-grid">
-<a class="book-card" href="jingjiao/index.html"><span class="ttl" style="color:var(--red)">→ Обзор Цзинцзяо (11 свидетелей)</span></a>
-<a class="book-card" href="jingjiao/stele.html"><span class="ttl">⛩ Стела 781 г. (大秦景教流行中國碑)</span></a>
-<a class="book-card" href="jingjiao/dunhuang.html"><span class="ttl">📜 Дуньхуанские тексты (7 шт.)</span></a>
-<a class="book-card" href="jingjiao/alopen.html"><span class="ttl">👤 Епископ Алопен (阿羅本, 635 г.)</span></a>
+<a class="book-card" href="jingjiao/index.html"><span class="ttl" style="color:var(--red)">→ Обзор Цзинцзяо</span></a>
+<a class="book-card" href="jingjiao/stele.html"><span class="ttl">⛩ Стела 781 г.</span></a>
+<a class="book-card" href="jingjiao/dunhuang.html"><span class="ttl">📜 Дуньхуанские (7)</span></a>
+<a class="book-card" href="jingjiao/alopen.html"><span class="ttl">👤 Епископ Алопен</span></a>
 </div>
 </div>
 </details>
 
 <!-- ============ Q9 ДХАММАПАДА ============ -->
 <details class="corpus q9">
-<summary><span><span class="qbadge">Q9</span>ДХАММАПАДА · DHAMMAPADA · 26 ВАГГ</span><span class="count">413 строф · пали (Fausböll 1900) + Топоров 1960</span></summary>
+<summary><div class="left"><span class="qbadge">Q9</span>ДХАММАПАДА · 26 ВАГГ</div><div class="count">413 строф · пали + Топоров 1960</div></summary>
 <div class="body">
 <div class="book-grid">
 <a class="book-card" href="dhammapada/index.html"><span class="ttl" style="color:var(--red)">→ Все 26 вагг</span></a>
-<a class="book-card" href="dhammapada/vi.html"><span class="nm">I</span><span class="ttl">Ямака · Парные (1-20)</span></a>
-<a class="book-card" href="dhammapada/vvi.html"><span class="nm">VI</span><span class="ttl">Paṇḍita · Мудрые (76-89)</span></a>
-<a class="book-card" href="dhammapada/vxxv.html"><span class="nm">XXV</span><span class="ttl">Bhikkhu · Бхикшу (360-382)</span></a>
-<a class="book-card" href="dhammapada/vxxvi.html"><span class="nm">XXVI</span><span class="ttl">Brāhmaṇa · Брахманы (383-423)</span></a>
+<a class="book-card" href="dhammapada/vi.html"><span class="nm">I</span><span class="ttl">Ямака (1-20)</span></a>
+<a class="book-card" href="dhammapada/vvi.html"><span class="nm">VI</span><span class="ttl">Paṇḍita (76-89)</span></a>
+<a class="book-card" href="dhammapada/vxxv.html"><span class="nm">XXV</span><span class="ttl">Bhikkhu (360-382)</span></a>
+<a class="book-card" href="dhammapada/vxxvi.html"><span class="nm">XXVI</span><span class="ttl">Brāhmaṇa (383-423)</span></a>
 </div>
 </div>
 </details>
 
 <!-- ============ Q10 БХАГАВАДГИТА ============ -->
 <details class="corpus q10">
-<summary><span><span class="qbadge">Q10</span>БХАГАВАДГИТА · 18 ГЛАВ</span><span class="count">700 стихов · санскрит (деванагари) + Семенцов 1999</span></summary>
+<summary><div class="left"><span class="qbadge">Q10</span>БХАГАВАДГИТА · 18 ГЛАВ</div><div class="count">700 стихов · санскрит + Семенцов</div></summary>
 <div class="body">
 <div class="book-grid">
 <a class="book-card" href="bhagavadgita/index.html"><span class="ttl" style="color:var(--red)">→ Все 18 глав</span></a>
@@ -307,13 +321,13 @@ footer .red{color:var(--red)} footer .gold{color:var(--gold)}
 
 <!-- ============ Q11 ДАО ДЭ ЦЗИН ============ -->
 <details class="corpus q11">
-<summary><span><span class="qbadge">Q11</span>ДАО ДЭ ЦЗИН · 道德經 · 81 ГЛАВА</span><span class="count">китайский (ctext.org) + Малявин 2010</span></summary>
+<summary><div class="left"><span class="qbadge">Q11</span>ДАО ДЭ ЦЗИН · 道德經 · 81 ГЛАВА</div><div class="count">кит. + Малявин 2010</div></summary>
 <div class="body">
 <div class="book-grid">
 <a class="book-card" href="daodejing/index.html"><span class="ttl" style="color:var(--red)">→ Все 81 глава</span></a>
 <a class="book-card" href="daodejing/ch1.html"><span class="nm">1</span><span class="ttl">道可道 · Путь</span></a>
 <a class="book-card" href="daodejing/ch25.html"><span class="nm">25</span><span class="ttl">有物混成 · Хаос</span></a>
-<a class="book-card" href="daodejing/ch42.html"><span class="nm">42</span><span class="ttl">道生一 · Дао рождает Одно</span></a>
+<a class="book-card" href="daodejing/ch42.html"><span class="nm">42</span><span class="ttl">道生一 · Дао = Одно</span></a>
 <a class="book-card" href="daodejing/ch81.html"><span class="nm">81</span><span class="ttl">信言不美 · Правда</span></a>
 </div>
 </div>
@@ -321,7 +335,7 @@ footer .red{color:var(--red)} footer .gold{color:var(--gold)}
 
 <!-- ============ Q12 ЛУНЬ ЮЙ ============ -->
 <details class="corpus q12">
-<summary><span><span class="qbadge">Q12</span>ЛУНЬ ЮЙ · 論語 · 20 КНИГ</span><span class="count">499 стихов · китайский + Переломов 1998</span></summary>
+<summary><div class="left"><span class="qbadge">Q12</span>ЛУНЬ ЮЙ · 論語 · 20 КНИГ</div><div class="count">499 стихов · кит. + Переломов 1998</div></summary>
 <div class="body">
 <div class="book-grid">
 <a class="book-card" href="lunyu/index.html"><span class="ttl" style="color:var(--red)">→ Все 20 книг</span></a>
@@ -334,20 +348,20 @@ footer .red{color:var(--red)} footer .gold{color:var(--gold)}
 
 <!-- ============ Q13 МАНУ-СМРИТИ ============ -->
 <details class="corpus q13">
-<summary><span><span class="qbadge">Q13</span>МАНУ-СМРИТИ · 12 ГЛАВ</span><span class="count">2 685 стихов · санскрит (English Bahirji 1883) + ключевые рус.</span></summary>
+<summary><div class="left"><span class="qbadge">Q13</span>МАНУ-СМРИТИ · 12 ГЛАВ</div><div class="count">2 685 стихов · санскрит + рус.</div></summary>
 <div class="body">
 <div class="book-grid">
 <a class="book-card" href="manusmriti/index.html"><span class="ttl" style="color:var(--red)">→ Все 12 глав</span></a>
-<a class="book-card" href="manusmriti/ch1.html"><span class="nm">1</span><span class="ttl">О создании мира</span></a>
-<a class="book-card" href="manusmriti/ch7.html"><span class="nm">7</span><span class="ttl">Об обязанностях царя</span></a>
-<a class="book-card" href="manusmriti/ch12.html"><span class="nm">12</span><span class="ttl">О воздаянии за деяния</span></a>
+<a class="book-card" href="manusmriti/ch1.html"><span class="nm">1</span><span class="ttl">Создание мира</span></a>
+<a class="book-card" href="manusmriti/ch7.html"><span class="nm">7</span><span class="ttl">Обязанности царя</span></a>
+<a class="book-card" href="manusmriti/ch12.html"><span class="nm">12</span><span class="ttl">Воздаяние за деяния</span></a>
 </div>
 </div>
 </details>
 
 <!-- ============ Q14 УПАНИШАДЫ ============ -->
 <details class="corpus q14">
-<summary><span><span class="qbadge">Q14</span>УПАНИШАДЫ · उपनिषद् · 5 ГЛАВНЫХ</span><span class="count">санскрит (деванагари) + English</span></summary>
+<summary><div class="left"><span class="qbadge">Q14</span>УПАНИШАДЫ · उपनिषद् · 5 ГЛАВНЫХ</div><div class="count">санскрит + рус. + English</div></summary>
 <div class="body">
 <div class="book-grid">
 <a class="book-card" href="upanishad/index.html"><span class="ttl" style="color:var(--red)">→ Все 5 главных</span></a>
@@ -360,11 +374,11 @@ footer .red{color:var(--red)} footer .gold{color:var(--gold)}
 
 <!-- ============ ДОПОЛНИТЕЛЬНОЕ ============ -->
 <details class="corpus">
-<summary><span><span class="qbadge">+</span>SCRIPTORIUM · МОЛИТВЫ · АППАРАТ</span><span class="count">параллельные тексты + славянские молитвы</span></summary>
+<summary><div class="left"><span class="qbadge">+</span>SCRIPTORIUM · МОЛИТВЫ</div><div class="count">24 параллельных + 12 молитв</div></summary>
 <div class="body">
 <div class="book-grid">
-<a class="book-card" href="scriptorium/index.html"><span class="ttl">📚 Scriptorium Parallella — 24 текста</span></a>
-<a class="book-card" href="slavic-prayers/index.html"><span class="ttl">☀ 12 молитв волхвов + 4 чина + 8 заговоров</span></a>
+<a class="book-card" href="scriptorium/index.html"><span class="ttl">📚 Scriptorium Parallella (24)</span></a>
+<a class="book-card" href="slavic-prayers/index.html"><span class="ttl">☀ 12 молитв волхвов + 8 заговоров</span></a>
 </div>
 </div>
 </details>
@@ -373,7 +387,7 @@ footer .red{color:var(--red)} footer .gold{color:var(--gold)}
 <b>◆ ЦЕЛЬ АРХИВА</b> — доказательство через этнографию/сравнительное языкознание/историю, что <b>Вавилонская башня</b> = точка расхождения единого свода законов Божьих и одного народа; <b>цель архива</b> — <b>воссоздание единого свода законов Божьих</b>.<br><br>
 <b>◆ ПРИНЦИП CORPUS DIVINUS</b>: <span class="red">оригинал СЛЕВА</span> · перевод СПРАВА · ◆ FIDELIS на каждой странице · единый тёмный дизайн Heretic OS Mechanicus.<br><br>
 <b>◆ 14 КОРПУСОВ</b> (Q1-Q14): Коран · Новый Завет · Танах · Девтероканон · 1 Енох · 2 Енох+Юбилеи · Ригведа · Авеста · Цзинцзяо · Дхаммапада · Бхагавадгита · Дао Дэ Цзин · Лунь Юй · Ману-смрити + Упанишады.<br><br>
-<b>◆ РАЗВЕРНИ/СВЕРНИ</b> — кнопки вверху: «▼ РАЗВЕРНУТЬ ВСЕ» / «▲ СВЕРНУТЬ ВСЕ» / «☀ ТОЛЬКО АВРААМИЧЕСКИЕ» / «☸ ТОЛЬКО НЕ-АВРААМИЧЕСКИЕ».
+<b>◆ РАЗВЕРНИ/СВЕРНИ</b> — кнопки вверху: «▼ РАЗВЕРНУТЬ ВСЕ» / «▲ СВЕРНУТЬ ВСЕ» / «☀ АВРААМИЧЕСКИЕ» / «☸ НЕ-АВРААМИЧЕСКИЕ».
 </div>
 </main>
 <footer>ARCHIVUM HAERETICUM IMPERII HUMANITATIS · CORPUS DIVINUS · 14 КОРПУСОВ · 397 ТЕКСТОВ<br><span class="red">◆</span> SIGILLUM VERITATIS · <span class="gold">DATUM 160.M3</span> · FIDELIS · ◆</footer>
