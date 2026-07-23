@@ -26,7 +26,9 @@ nav.main{padding:8px 18px;background:var(--panel);border-bottom:1px solid var(--
 nav.main a{color:var(--gold);margin:0 6px;letter-spacing:1px;padding:3px 6px}
 .toolbar{display:flex;justify-content:center;gap:6px;flex-wrap:wrap;margin:14px 0 8px;padding:8px;background:var(--panel);border:1px solid var(--line);font-family:'Courier New',monospace}
 .toolbar button{background:transparent;border:1px solid var(--gold-dim);color:var(--gold);padding:5px 11px;font-size:10px;letter-spacing:1px;cursor:pointer;font-family:inherit;text-transform:uppercase}
-.toolbar button:hover{background:var(--gold);color:var(--bg)}
+.toolbar button:hover{background:var(--gold);color:var(--bg)}.toolbar a.btn-link{background:transparent;border:1px solid var(--gold-dim);color:var(--gold);padding:5px 11px;font-size:10px;letter-spacing:1px;cursor:pointer;font-family:inherit;text-transform:uppercase;text-decoration:none;display:inline-block;transition:all 0.15s}
+.toolbar a.btn-link:hover{background:var(--gold);color:var(--bg);text-decoration:none}
+
 .meta{color:var(--ink-dim);font-size:11px;font-style:italic;padding:6px 16px;text-align:center;font-family:'Courier New',monospace;letter-spacing:1px}
 .meta b{color:var(--gold);font-style:normal;font-family:Georgia,serif}
 .chap{background:linear-gradient(90deg,var(--red-dark),transparent);color:var(--gold-bright);font-size:.85rem;letter-spacing:.2em;padding:9px 16px;border-bottom:1px solid var(--red-dark);border-top:1px solid var(--red-dark);font-family:'Courier New',monospace;text-transform:uppercase;margin-top:12px}
@@ -174,11 +176,11 @@ details.corpus[open]>summary::before{content:"▼";color:var(--gold-bright)}
 
 <main>
 <div class="toolbar">
-<button onclick="document.querySelectorAll('details.corpus').forEach(d=>d.open=true)">▼ РАЗВЕРНУТЬ ВСЕ</button>
-<button onclick="document.querySelectorAll('details.corpus').forEach(d=>d.open=false)">▲ СВЕРНУТЬ ВСЕ</button>
-<button onclick="document.querySelectorAll('details.corpus').forEach(d=>d.open=false);document.querySelectorAll('.q1,.q2,.q3,.q3\\.1,.q4,.q5,.q5\\.1,.q18,.q25,.q27').forEach(d=>d.open=true)">✡ АВРААМИЧЕСКИЕ</button>
-<button onclick="document.querySelectorAll('details.corpus').forEach(d=>d.open=false);document.querySelectorAll('.q6,.q7,.q8,.q9,.q10,.q11,.q12,.q13,.q14,.q15,.q16,.q17,.q19,.q20,.q21,.q22,.q23,.q24,.q26').forEach(d=>d.open=true)">◈ НЕ-АВРААМИЧЕСКИЕ</button>
-<button onclick="document.querySelectorAll('details.corpus').forEach(d=>d.open=false)">◆ ВСЕ ТЕКСТЫ</button>
+<button onclick="document.querySelectorAll('details.corpus').forEach(d=>d.open=true)">▼ РАЗВЕРНУТЬ</button>
+<button onclick="document.querySelectorAll('details.corpus').forEach(d=>d.open=false)">▲ СВЕРНУТЬ</button>
+<a class="btn-link" href="02-libri-deperditi/abram/index.html">✡ АВРААМИЧЕСКИЕ</a>
+<a class="btn-link" href="02-libri-deperditi/non-abram/index.html">◈ НЕ-АВРААМИЧЕСКИЕ</a>
+<a class="btn-link" href="index.html">◆ ВСЕ ТЕКСТЫ</a>
 </div>
 
 </div>
