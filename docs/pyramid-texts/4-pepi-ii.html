@@ -134,23 +134,17 @@ footer .red{color:var(--red)} footer .gold{color:var(--gold)}
   .hos-h1{font-size:1.2rem;letter-spacing:.05em;line-height:1.3}
 }
 
+.eg{grid-column:2;padding:10px 12px;font-size:1rem;line-height:1.7;color:var(--orig);background:rgba(201,162,39,0.025);border-right:1px solid var(--gold-dim);border-left:3px solid var(--gold-dim);font-style:italic;direction:ltr;font-family:"SBL Egyptian","Noto Sans Egyptian Hieroglyphs","Times New Roman",serif}
 .toolbar button,.toolbar a.btn-link{display:inline-flex;align-items:center;justify-content:center;height:30px;padding:0 14px;background:transparent;border:1px solid var(--gold-dim);color:var(--gold);font-size:10px;letter-spacing:1.5px;cursor:pointer;font-family:inherit;text-transform:uppercase;text-decoration:none;transition:all 0.15s;box-sizing:border-box;white-space:nowrap;margin:0;text-align:center}
 .toolbar button:hover,.toolbar a.btn-link:hover{background:var(--gold);color:var(--bg)}
 .toolbar-row{display:flex;justify-content:center;align-items:center;gap:6px;flex-wrap:wrap;margin:0 0 5px}
 .toolbar-row:last-child{margin-bottom:0}
 .toolbar-row.half button,.toolbar-row.half a.btn-link{flex:1 1 calc(50% - 3px);min-width:120px;max-width:calc(50% - 3px)}
 .toolbar-row.full a.btn-link{flex:1 1 100%;min-width:200px;max-width:340px}
-.spell-card{border:1px solid var(--line);background:var(--bg2);padding:12px 16px;margin:8px 0;transition:all 0.15s}
-.spell-card:hover{border-color:var(--gold);background:#1a1410}
-.spell-card .head{display:flex;justify-content:space-between;align-items:baseline;margin-bottom:6px;flex-wrap:wrap;gap:8px}
-.spell-card .qbadge{color:var(--gold-bright);font-family:'Courier New',monospace;font-size:11px;letter-spacing:1.5px;border:1px solid var(--gold-dim);padding:2px 8px;flex-shrink:0}
-.spell-card .title{color:var(--ink);font-size:15px;font-weight:bold;font-family:Georgia,serif;flex:1}
-.spell-card .count{color:var(--ink-dim);font-size:11px;font-family:'Courier New',monospace;letter-spacing:1px;flex-shrink:0}
-.spell-card .context{color:var(--ink-dim);font-size:12px;font-style:italic;line-height:1.5;padding:6px 0;border-top:1px solid var(--grid);margin-top:6px}
-.spell-card .pair{display:grid;grid-template-columns:3rem 1fr 1.1fr;border-top:1px solid var(--grid);margin-top:8px;padding-top:8px}
-.spell-card .pair .num{color:var(--gold);font-size:12px;padding:6px 4px;text-align:right;font-family:'Courier New',monospace;font-weight:bold;align-self:start}
-.spell-card .pair .eg{grid-column:2;padding:6px 10px;font-size:14px;line-height:1.6;color:var(--orig);background:rgba(201,162,39,0.025);border-right:1px solid var(--gold-dim);border-left:3px solid var(--gold-dim);font-style:italic;direction:ltr;font-family:"SBL Egyptian","Noto Sans Egyptian Hieroglyphs","Times New Roman",serif}
-.spell-card .pair .ru{grid-column:3;padding:6px 10px;font-size:14px;line-height:1.6;color:var(--ink);text-align:justify;font-family:Georgia,serif}
+.spell-info{background:rgba(201,162,39,0.05);padding:10px 16px;margin:14px 0 6px;border-left:3px solid var(--gold);font-family:Georgia,serif}
+.spell-info .qbadge{color:var(--gold-bright);font-size:11px;letter-spacing:1.5px;margin-right:10px;display:inline-block;border:1px solid var(--gold-dim);padding:2px 7px;font-family:'Courier New',monospace}
+.spell-info .title{color:var(--ink);font-size:14px;font-weight:bold}
+.spell-info .ctx{color:var(--ink-dim);font-size:12px;font-style:italic;margin-top:4px;display:block}
 </style>
 </head>
 <body>
@@ -179,142 +173,172 @@ footer .red{color:var(--red)} footer .gold{color:var(--gold)}
 <div class="toolbar-row half"><a class="btn-link" href="../02-libri-deperditi/abram/index.html"><svg viewBox="0 0 24 24" width="13" height="13" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" style="flex-shrink:0;margin-right:6px"><polygon points="12,2.5 21.5,19 2.5,19"/><polygon points="12,21.5 21.5,5 2.5,5"/></svg>АВРААМИЧЕСКИЕ</a><a class="btn-link" href="../02-libri-deperditi/non-abram/index.html"><svg viewBox="0 0 24 24" width="13" height="13" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" style="flex-shrink:0;margin-right:6px"><circle cx="12" cy="12" r="9.5"/><circle cx="12" cy="12" r="2.5"/><line x1="12" y1="2.5" x2="12" y2="9.5"/><line x1="12" y1="14.5" x2="12" y2="21.5"/><line x1="2.5" y1="12" x2="9.5" y2="12"/><line x1="14.5" y1="12" x2="21.5" y2="12"/><line x1="5.3" y1="5.3" x2="9.9" y2="9.9"/><line x1="14.1" y1="14.1" x2="18.7" y2="18.7"/><line x1="5.3" y1="18.7" x2="9.9" y2="14.1"/><line x1="14.1" y1="9.9" x2="18.7" y2="5.3"/></svg>НЕ-АВРААМИЧЕСКИЕ</a></div>
 </div>
 
-<div class="note main-note" style="color:var(--red)">
+<div class="note">
 <p><b>ПЕПИ II · PEPI II</b></p>
 <p>Саккара, Египет · 700+ заклинаний · ~2240 до н.э. · самый большой корпус</p>
-<p><b>Формат:</b> каждый <b>PT 215</b> в виде прямоугольной карточки с разделителями — оригинал (египтологическая транслитерация) слева, русский перевод справа. Сверху — исторический контекст.</p>
+<p><b>Формат:</b> египтологическая транслитерация слева, русский перевод справа. Каждая строка заклинания — отдельный <b>verse</b> с номером строки (как в Q25 Энума Элиш).</p>
 </div>
 
-<div class="spell-card">
-<div class="head">
+<details class="corpus spell" open>
+<summary><div class="left"><span class="qbadge">◆ PT 215</span>Изречение о вознесении Пепи II</div><div class="count">заклинание №215</div></summary>
+<div class="body">
+<div class="spell-info">
 <span class="qbadge">PT 215</span>
 <span class="title">Изречение о вознесении Пепи II</span>
-<span class="count">№215 из 1000+</span>
+<span class="ctx">Главное заклинание для самого долгоправящего фараона.</span>
 </div>
-<div class="context">Главное заклинание вознесения для самого долгоправящего фараона.</div>
-<div class="pair">
-<div class="num">215</div>
+<div class="verse">
+<div class="num">1</div>
 <div class="eg">qꜣi wsjr nfr-kꜣ-rꜥ r pt</div>
-<div class="ru">Да вознесётся Осирис Неферикара (Пепи II) на небо!</div>
+<div class="ru">Да вознесётся Осирис Неферикара на небо!</div>
 </div>
+
 </div>
-<div class="spell-card">
-<div class="head">
+</details>
+<details class="corpus spell" open>
+<summary><div class="left"><span class="qbadge">◆ PT 252</span>Изречение о «Поле жатвы»</div><div class="count">заклинание №252</div></summary>
+<div class="body">
+<div class="spell-info">
 <span class="qbadge">PT 252</span>
 <span class="title">Изречение о «Поле жатвы»</span>
-<span class="count">№252 из 1000+</span>
+<span class="ctx">Загробный урожай — пшеница и ячмень высотой 2 метра.</span>
 </div>
-<div class="context">Загробный урожай — пшеница и ячмень высотой 2 метра.</div>
-<div class="pair">
-<div class="num">252</div>
+<div class="verse">
+<div class="num">1</div>
 <div class="eg">sḫt-ꜥrw n wsjr nfr-kꜣ-rꜥ</div>
 <div class="ru">Поля жатвы для Осириса Неферикара!</div>
 </div>
+
 </div>
-<div class="spell-card">
-<div class="head">
+</details>
+<details class="corpus spell" open>
+<summary><div class="left"><span class="qbadge">◆ PT 278</span>Изречение о Дуате</div><div class="count">заклинание №278</div></summary>
+<div class="body">
+<div class="spell-info">
 <span class="qbadge">PT 278</span>
 <span class="title">Изречение о Дуате</span>
-<span class="count">№278 из 1000+</span>
+<span class="ctx">12 областей подземного мира.</span>
 </div>
-<div class="context">12 областей подземного мира, каждая со своим стражем и чудовищем.</div>
-<div class="pair">
-<div class="num">278</div>
+<div class="verse">
+<div class="num">1</div>
 <div class="eg">dwꜣ.t n wsjr nfr-kꜣ-rꜥ 1-12</div>
 <div class="ru">12 регионов Дуата для Осириса Неферикара!</div>
 </div>
+
 </div>
-<div class="spell-card">
-<div class="head">
+</details>
+<details class="corpus spell" open>
+<summary><div class="left"><span class="qbadge">◆ PT 308</span>Изречение о Сириусе</div><div class="count">заклинание №308</div></summary>
+<div class="body">
+<div class="spell-info">
 <span class="qbadge">PT 308</span>
 <span class="title">Изречение о Сириусе</span>
-<span class="count">№308 из 1000+</span>
+<span class="ctx">Сириус — звезда Исиды.</span>
 </div>
-<div class="context">Сириус — звезда Исиды, оплакивающей Осириса.</div>
-<div class="pair">
-<div class="num">308</div>
+<div class="verse">
+<div class="num">1</div>
 <div class="eg">spdt n wsjr nfr-kꜣ-rꜥ</div>
-<div class="ru">Сириус (Сопдет) принадлежит Осирису Неферикара!</div>
+<div class="ru">Сириус принадлежит Осирису Неферикара!</div>
 </div>
+
 </div>
-<div class="spell-card">
-<div class="head">
+</details>
+<details class="corpus spell" open>
+<summary><div class="left"><span class="qbadge">◆ PT 363</span>Изречение о пище</div><div class="count">заклинание №363</div></summary>
+<div class="body">
+<div class="spell-info">
 <span class="qbadge">PT 363</span>
 <span class="title">Изречение о пище</span>
-<span class="count">№363 из 1000+</span>
+<span class="ctx">Сотни видов жертвенной пищи.</span>
 </div>
-<div class="context">Сотни видов жертвенной пищи, мяса, овощей, фруктов.</div>
-<div class="pair">
-<div class="num">363</div>
+<div class="verse">
+<div class="num">1</div>
 <div class="eg">tꜣ n wsjr nfr-kꜣ-rꜥ nb</div>
-<div class="ru">Хлеб для Осириса Неферикара, владыки!</div>
+<div class="ru">Хлеб для Осириса Неферикара!</div>
 </div>
+
 </div>
-<div class="spell-card">
-<div class="head">
+</details>
+<details class="corpus spell" open>
+<summary><div class="left"><span class="qbadge">◆ PT 410</span>Изречение о семи Hathor</div><div class="count">заклинание №410</div></summary>
+<div class="body">
+<div class="spell-info">
 <span class="qbadge">PT 410</span>
 <span class="title">Изречение о семи Hathor</span>
-<span class="count">№410 из 1000+</span>
+<span class="ctx">Семь форм богини Хатхор.</span>
 </div>
-<div class="context">Семь форм богини Хатхор, покровительницы рожениц и мёртвых.</div>
-<div class="pair">
-<div class="num">410</div>
+<div class="verse">
+<div class="num">1</div>
 <div class="eg">7 ḥw.t-ḥr.w n wsjr nfr-kꜣ-rꜥ</div>
 <div class="ru">Семь Хатхор для Осириса Неферикара!</div>
 </div>
+
 </div>
-<div class="spell-card">
-<div class="head">
+</details>
+<details class="corpus spell" open>
+<summary><div class="left"><span class="qbadge">◆ PT 476</span>Изречение о скипетре</div><div class="count">заклинание №476</div></summary>
+<div class="body">
+<div class="spell-info">
 <span class="qbadge">PT 476</span>
 <span class="title">Изречение о скипетре</span>
-<span class="count">№476 из 1000+</span>
+<span class="ctx">Скипетр — символ божественной власти.</span>
 </div>
-<div class="context">Скипетр — символ божественной власти и покровительства.</div>
-<div class="pair">
-<div class="num">476</div>
+<div class="verse">
+<div class="num">1</div>
 <div class="eg">wꜣs n wsjr nfr-kꜣ-rꜥ</div>
 <div class="ru">Скипетр Уас для Осириса Неферикара!</div>
 </div>
+
 </div>
-<div class="spell-card">
-<div class="head">
+</details>
+<details class="corpus spell" open>
+<summary><div class="left"><span class="qbadge">◆ PT 540</span>Изречение о вечности</div><div class="count">заклинание №540</div></summary>
+<div class="body">
+<div class="spell-info">
 <span class="qbadge">PT 540</span>
 <span class="title">Изречение о вечности</span>
-<span class="count">№540 из 1000+</span>
+<span class="ctx">Пепи II станет вечным как звёзды.</span>
 </div>
-<div class="context">Пепи II станет вечным, как звёзды и сам Ра.</div>
-<div class="pair">
-<div class="num">540</div>
+<div class="verse">
+<div class="num">1</div>
 <div class="eg">nḥḥ n wsjr nfr-kꜣ-rꜥ</div>
 <div class="ru">Вечность для Осириса Неферикара!</div>
 </div>
+
 </div>
-<div class="spell-card">
-<div class="head">
+</details>
+<details class="corpus spell" open>
+<summary><div class="left"><span class="qbadge">◆ PT 610</span>Изречение о двух истинах</div><div class="count">заклинание №610</div></summary>
+<div class="body">
+<div class="spell-info">
 <span class="qbadge">PT 610</span>
 <span class="title">Изречение о двух истинах</span>
-<span class="count">№610 из 1000+</span>
+<span class="ctx">Маат — основа космического порядка.</span>
 </div>
-<div class="context">Маат — основа космического порядка. Без неё всё рухнет.</div>
-<div class="pair">
-<div class="num">610</div>
+<div class="verse">
+<div class="num">1</div>
 <div class="eg">mꜣꜥ-ḫrw ḏd mꜣꜥ-ḫrw</div>
 <div class="ru">Маат говорит: «Маат!»</div>
 </div>
+
 </div>
-<div class="spell-card">
-<div class="head">
+</details>
+<details class="corpus spell" open>
+<summary><div class="left"><span class="qbadge">◆ PT 685</span>Изречение о Маат</div><div class="count">заклинание №685</div></summary>
+<div class="body">
+<div class="spell-info">
 <span class="qbadge">PT 685</span>
 <span class="title">Изречение о Маат</span>
-<span class="count">№685 из 1000+</span>
+<span class="ctx">Маат — дочь Ра, жена Тота.</span>
 </div>
-<div class="context">Маат — богиня, дочь Ра, жена Тота, покровительница мёртвых в суде.</div>
-<div class="pair">
-<div class="num">685</div>
+<div class="verse">
+<div class="num">1</div>
 <div class="eg">mꜣꜥ.t nb.t n wsjr nfr-kꜣ-rꜥ</div>
 <div class="ru">Маат, владычица, для Осириса Неферикара!</div>
 </div>
+
 </div>
+</details>
 
 </main>
 

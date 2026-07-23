@@ -134,23 +134,17 @@ footer .red{color:var(--red)} footer .gold{color:var(--gold)}
   .hos-h1{font-size:1.2rem;letter-spacing:.05em;line-height:1.3}
 }
 
+.eg{grid-column:2;padding:10px 12px;font-size:1rem;line-height:1.7;color:var(--orig);background:rgba(201,162,39,0.025);border-right:1px solid var(--gold-dim);border-left:3px solid var(--gold-dim);font-style:italic;direction:ltr;font-family:"SBL Egyptian","Noto Sans Egyptian Hieroglyphs","Times New Roman",serif}
 .toolbar button,.toolbar a.btn-link{display:inline-flex;align-items:center;justify-content:center;height:30px;padding:0 14px;background:transparent;border:1px solid var(--gold-dim);color:var(--gold);font-size:10px;letter-spacing:1.5px;cursor:pointer;font-family:inherit;text-transform:uppercase;text-decoration:none;transition:all 0.15s;box-sizing:border-box;white-space:nowrap;margin:0;text-align:center}
 .toolbar button:hover,.toolbar a.btn-link:hover{background:var(--gold);color:var(--bg)}
 .toolbar-row{display:flex;justify-content:center;align-items:center;gap:6px;flex-wrap:wrap;margin:0 0 5px}
 .toolbar-row:last-child{margin-bottom:0}
 .toolbar-row.half button,.toolbar-row.half a.btn-link{flex:1 1 calc(50% - 3px);min-width:120px;max-width:calc(50% - 3px)}
 .toolbar-row.full a.btn-link{flex:1 1 100%;min-width:200px;max-width:340px}
-.spell-card{border:1px solid var(--line);background:var(--bg2);padding:12px 16px;margin:8px 0;transition:all 0.15s}
-.spell-card:hover{border-color:var(--gold);background:#1a1410}
-.spell-card .head{display:flex;justify-content:space-between;align-items:baseline;margin-bottom:6px;flex-wrap:wrap;gap:8px}
-.spell-card .qbadge{color:var(--gold-bright);font-family:'Courier New',monospace;font-size:11px;letter-spacing:1.5px;border:1px solid var(--gold-dim);padding:2px 8px;flex-shrink:0}
-.spell-card .title{color:var(--ink);font-size:15px;font-weight:bold;font-family:Georgia,serif;flex:1}
-.spell-card .count{color:var(--ink-dim);font-size:11px;font-family:'Courier New',monospace;letter-spacing:1px;flex-shrink:0}
-.spell-card .context{color:var(--ink-dim);font-size:12px;font-style:italic;line-height:1.5;padding:6px 0;border-top:1px solid var(--grid);margin-top:6px}
-.spell-card .pair{display:grid;grid-template-columns:3rem 1fr 1.1fr;border-top:1px solid var(--grid);margin-top:8px;padding-top:8px}
-.spell-card .pair .num{color:var(--gold);font-size:12px;padding:6px 4px;text-align:right;font-family:'Courier New',monospace;font-weight:bold;align-self:start}
-.spell-card .pair .eg{grid-column:2;padding:6px 10px;font-size:14px;line-height:1.6;color:var(--orig);background:rgba(201,162,39,0.025);border-right:1px solid var(--gold-dim);border-left:3px solid var(--gold-dim);font-style:italic;direction:ltr;font-family:"SBL Egyptian","Noto Sans Egyptian Hieroglyphs","Times New Roman",serif}
-.spell-card .pair .ru{grid-column:3;padding:6px 10px;font-size:14px;line-height:1.6;color:var(--ink);text-align:justify;font-family:Georgia,serif}
+.spell-info{background:rgba(201,162,39,0.05);padding:10px 16px;margin:14px 0 6px;border-left:3px solid var(--gold);font-family:Georgia,serif}
+.spell-info .qbadge{color:var(--gold-bright);font-size:11px;letter-spacing:1.5px;margin-right:10px;display:inline-block;border:1px solid var(--gold-dim);padding:2px 7px;font-family:'Courier New',monospace}
+.spell-info .title{color:var(--ink);font-size:14px;font-weight:bold}
+.spell-info .ctx{color:var(--ink-dim);font-size:12px;font-style:italic;margin-top:4px;display:block}
 </style>
 </head>
 <body>
@@ -179,259 +173,506 @@ footer .red{color:var(--red)} footer .gold{color:var(--gold)}
 <div class="toolbar-row half"><a class="btn-link" href="../02-libri-deperditi/abram/index.html"><svg viewBox="0 0 24 24" width="13" height="13" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" style="flex-shrink:0;margin-right:6px"><polygon points="12,2.5 21.5,19 2.5,19"/><polygon points="12,21.5 21.5,5 2.5,5"/></svg>АВРААМИЧЕСКИЕ</a><a class="btn-link" href="../02-libri-deperditi/non-abram/index.html"><svg viewBox="0 0 24 24" width="13" height="13" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" style="flex-shrink:0;margin-right:6px"><circle cx="12" cy="12" r="9.5"/><circle cx="12" cy="12" r="2.5"/><line x1="12" y1="2.5" x2="12" y2="9.5"/><line x1="12" y1="14.5" x2="12" y2="21.5"/><line x1="2.5" y1="12" x2="9.5" y2="12"/><line x1="14.5" y1="12" x2="21.5" y2="12"/><line x1="5.3" y1="5.3" x2="9.9" y2="9.9"/><line x1="14.1" y1="14.1" x2="18.7" y2="18.7"/><line x1="5.3" y1="18.7" x2="9.9" y2="14.1"/><line x1="14.1" y1="9.9" x2="18.7" y2="5.3"/></svg>НЕ-АВРААМИЧЕСКИЕ</a></div>
 </div>
 
-<div class="note main-note" style="color:var(--red)">
+<div class="note">
 <p><b>УНАС · UNAS</b></p>
 <p>Саккара, Египет · 228 заклинаний · ~2345 до н.э. · 1-ая пирамида с Текстами Пирамид</p>
-<p><b>Формат:</b> каждый <b>PT 213</b> в виде прямоугольной карточки с разделителями — оригинал (египтологическая транслитерация) слева, русский перевод справа. Сверху — исторический контекст.</p>
+<p><b>Формат:</b> египтологическая транслитерация слева, русский перевод справа. Каждая строка заклинания — отдельный <b>verse</b> с номером строки (как в Q25 Энума Элиш).</p>
 </div>
 
-<div class="spell-card">
-<div class="head">
+<details class="corpus spell" open>
+<summary><div class="left"><span class="qbadge">◆ PT 213</span>Изречение для восхождения на небо</div><div class="count">заклинание №213</div></summary>
+<div class="body">
+<div class="spell-info">
 <span class="qbadge">PT 213</span>
 <span class="title">Изречение для восхождения на небо</span>
-<span class="count">№213 из 1000+</span>
+<span class="ctx">Открывает цикл заклинаний. Унас отождествляется с Осирисом и должен вознестись на небо как звезда.</span>
 </div>
-<div class="context">Открывает цикл заклинаний. Унас отождествляется с Осирисом и должен вознестись на небо как звезда.</div>
-<div class="pair">
-<div class="num">213</div>
+<div class="verse">
+<div class="num">1</div>
 <div class="eg">wsjr wnn-nfr mꜣꜥ-ḫrw r pt m rn=k pn nn-rnp.t</div>
 <div class="ru">Осирис Унас, правогласный, поднимись на небо этим твоим именем «нестареющий»!</div>
 </div>
+<div class="verse">
+<div class="num">2</div>
+<div class="eg">kꜣ=k n rꜥ m sꜣḥ</div>
+<div class="ru">Да восстанет твой ка (дух) с Ра, как Орион!</div>
 </div>
-<div class="spell-card">
-<div class="head">
+<div class="verse">
+<div class="num">3</div>
+<div class="eg">nḥḥ n nb rꜥ nb</div>
+<div class="ru">Вечно, как владыка Ра, владыка всех!</div>
+</div>
+
+</div>
+</details>
+<details class="corpus spell" open>
+<summary><div class="left"><span class="qbadge">◆ PT 260</span>Изречение для отверзания рта</div><div class="count">заклинание №260</div></summary>
+<div class="body">
+<div class="spell-info">
 <span class="qbadge">PT 260</span>
 <span class="title">Изречение для отверзания рта</span>
-<span class="count">№260 из 1000+</span>
+<span class="ctx">Ритуал «отверзания уст» — фараон оживает в загробном мире и обретает способность говорить, есть, дышать.</span>
 </div>
-<div class="context">Ритуал «отверзания уст» — фараон оживает в загробном мире и обретает способность говорить, есть, дышать.</div>
-<div class="pair">
-<div class="num">260</div>
+<div class="verse">
+<div class="num">1</div>
 <div class="eg">wn sꜣ r snw=k wsjr wnn-nfr</div>
 <div class="ru">Открой рот свой, чтобы говорить, Осирис Унас!</div>
 </div>
+<div class="verse">
+<div class="num">2</div>
+<div class="eg">wn snw=k m-ꜥꜣb.t</div>
+<div class="ru">Открой уста свои, чтобы говорить в Доме Осириса!</div>
 </div>
-<div class="spell-card">
-<div class="head">
+<div class="verse">
+<div class="num">3</div>
+<div class="eg">ptpt mꜣꜥ-ḫrw n wsjr wnn-nfr</div>
+<div class="ru">Восхваляется правогласный, Осирис Унас!</div>
+</div>
+
+</div>
+</details>
+<details class="corpus spell" open>
+<summary><div class="left"><span class="qbadge">◆ PT 261</span>Изречение об отнятии сердца</div><div class="count">заклинание №261</div></summary>
+<div class="body">
+<div class="spell-info">
 <span class="qbadge">PT 261</span>
 <span class="title">Изречение об отнятии сердца</span>
-<span class="count">№261 из 1000+</span>
+<span class="ctx">Сердце — вместилище души. В загробном суде взвешивается сердце на весах Маат.</span>
 </div>
-<div class="context">Сердце — вместилище души. В загробном суде взвешивается сердце на весах Маат.</div>
-<div class="pair">
-<div class="num">261</div>
+<div class="verse">
+<div class="num">1</div>
 <div class="eg">twꜣ ib n wsjr wnn-nfr nṯr-ꜥꜣ</div>
 <div class="ru">Дано сердце Осириса Унаса, великого бога, в Доме сердец.</div>
 </div>
+<div class="verse">
+<div class="num">2</div>
+<div class="eg">sfḫ sꜣ rꜥ n wsjr wnn-nfr</div>
+<div class="ru">Да отделит Ра рот Осириса Унаса!</div>
 </div>
-<div class="spell-card">
-<div class="head">
+<div class="verse">
+<div class="num">3</div>
+<div class="eg">sfḫ sꜣ wsjr r ḥw.t-ꜥb n nṯr.w</div>
+<div class="ru">Да отделит рот Осириса в Доме сердец богов!</div>
+</div>
+
+</div>
+</details>
+<details class="corpus spell" open>
+<summary><div class="left"><span class="qbadge">◆ PT 302</span>Изречение для нисхождения в Дуат</div><div class="count">заклинание №302</div></summary>
+<div class="body">
+<div class="spell-info">
 <span class="qbadge">PT 302</span>
 <span class="title">Изречение для нисхождения в Дуат</span>
-<span class="count">№302 из 1000+</span>
+<span class="ctx">Дуат — подземный загробный мир, через который солнце проходит ночью.</span>
 </div>
-<div class="context">Дуат — подземный загробный мир, через который солнце проходит ночью.</div>
-<div class="pair">
-<div class="num">302</div>
+<div class="verse">
+<div class="num">1</div>
 <div class="eg">ꜣḫ n wsjr wnn-nfr dwꜣ.t rꜥ nb</div>
 <div class="ru">Да сияет Осирис Унас в Дуате подобно Ра каждый день!</div>
 </div>
+<div class="verse">
+<div class="num">2</div>
+<div class="eg">nwi wsjr wnn-nfr m dwꜣ.t</div>
+<div class="ru">Да плывёт Осирис Унас в Дуате!</div>
 </div>
-<div class="spell-card">
-<div class="head">
+<div class="verse">
+<div class="num">3</div>
+<div class="eg">pꜣ dwꜣ.t n rꜥ n wsjr wnn-nfr</div>
+<div class="ru">Дуат принадлежит Ра, и Осирису Унасу!</div>
+</div>
+
+</div>
+</details>
+<details class="corpus spell" open>
+<summary><div class="left"><span class="qbadge">◆ PT 310</span>Изречение не поглощать фараона</div><div class="count">заклинание №310</div></summary>
+<div class="body">
+<div class="spell-info">
 <span class="qbadge">PT 310</span>
 <span class="title">Изречение не поглощать фараона</span>
-<span class="count">№310 из 1000+</span>
+<span class="ctx">Защита от чудовищ загробного мира, пожирающих души.</span>
 </div>
-<div class="context">Защита от чудовищ загробного мира, пожирающих души.</div>
-<div class="pair">
-<div class="num">310</div>
+<div class="verse">
+<div class="num">1</div>
 <div class="eg">nn km(w) n wsjr wnn-nfr m dwꜣ.t</div>
 <div class="ru">Не будет поглощён Осирис Унас в Дуате!</div>
 </div>
+<div class="verse">
+<div class="num">2</div>
+<div class="eg">iꜥ n nb dwꜣ.t n wsjr wnn-nfr</div>
+<div class="ru">Да поднимется владыка Дуата, Осирис Унас!</div>
 </div>
-<div class="spell-card">
-<div class="head">
+<div class="verse">
+<div class="num">3</div>
+<div class="eg">nn ḥꜣp(w) n wsjr wnn-nfr m nṯr-ꜥꜣ</div>
+<div class="ru">Не скроется Осирис Унас от великого бога!</div>
+</div>
+
+</div>
+</details>
+<details class="corpus spell" open>
+<summary><div class="left"><span class="qbadge">◆ PT 364</span>Изречение о жертвах</div><div class="count">заклинание №364</div></summary>
+<div class="body">
+<div class="spell-info">
 <span class="qbadge">PT 364</span>
 <span class="title">Изречение о жертвах</span>
-<span class="count">№364 из 1000+</span>
+<span class="ctx">Список жертвенных даров: хлеб, пиво, быки, гуси, ладан, одежды.</span>
 </div>
-<div class="context">Список жертвенных даров: хлеб, пиво, быки, гуси, ладан, одежды.</div>
-<div class="pair">
-<div class="num">364</div>
+<div class="verse">
+<div class="num">1</div>
 <div class="eg">ḥtp-dỉ-nsw n wsjr wnn-nfr</div>
 <div class="ru">Приношение, которое даёт царь Осирису Унасу.</div>
 </div>
+<div class="verse">
+<div class="num">2</div>
+<div class="eg">tꜣ 1 ḥnqt 2 ksꜣ 3</div>
+<div class="ru">Хлеб 1000, пиво 2000, бык 3000.</div>
 </div>
-<div class="spell-card">
-<div class="head">
+<div class="verse">
+<div class="num">3</div>
+<div class="eg">ꜥpdw ꜣpdw ꜥpdw n wsjr wnn-nfr</div>
+<div class="ru">Птицы, птицы, птицы для Осириса Унаса!</div>
+</div>
+
+</div>
+</details>
+<details class="corpus spell" open>
+<summary><div class="left"><span class="qbadge">◆ PT 422</span>Изречение для плавания</div><div class="count">заклинание №422</div></summary>
+<div class="body">
+<div class="spell-info">
 <span class="qbadge">PT 422</span>
 <span class="title">Изречение для плавания</span>
-<span class="count">№422 из 1000+</span>
+<span class="ctx">Фараон плывёт по небесному Нилу к полю Иалу (поля тростника).</span>
 </div>
-<div class="context">Фараон плывёт по небесному Нилу к полю Иалу (поля тростника).</div>
-<div class="pair">
-<div class="num">422</div>
+<div class="verse">
+<div class="num">1</div>
 <div class="eg">nꜥi wsjr wnn-nfr m mw mꜣꜥ-ḫrw</div>
 <div class="ru">Да плывёт Осирис Унас в воде, правогласный!</div>
 </div>
+<div class="verse">
+<div class="num">2</div>
+<div class="eg">nꜥi wsjr wnn-nfr r sḫt-ꜥrw</div>
+<div class="ru">Да плывёт Осирис Унас к Полям тростника!</div>
 </div>
-<div class="spell-card">
-<div class="head">
+<div class="verse">
+<div class="num">3</div>
+<div class="eg">nꜥi m mw mꜣꜥ-ḫrw wsjr wnn-nfr</div>
+<div class="ru">Плывёт в воде правогласный, Осирис Унас!</div>
+</div>
+
+</div>
+</details>
+<details class="corpus spell" open>
+<summary><div class="left"><span class="qbadge">◆ PT 464</span>Изречение для носителей сандалий</div><div class="count">заклинание №464</div></summary>
+<div class="body">
+<div class="spell-info">
 <span class="qbadge">PT 464</span>
 <span class="title">Изречение для носителей сандалий</span>
-<span class="count">№464 из 1000+</span>
+<span class="ctx">Сандалии символизируют способность ходить по священной земле.</span>
 </div>
-<div class="context">Сандалии символизируют способность ходить по священной земле.</div>
-<div class="pair">
-<div class="num">464</div>
+<div class="verse">
+<div class="num">1</div>
 <div class="eg">twꜣ twꜣ.t n wsjr wnn-nfr</div>
 <div class="ru">Да будет обут Осирис Унас, да будет он обут богами!</div>
 </div>
+<div class="verse">
+<div class="num">2</div>
+<div class="eg">mꜣꜥ-ḫrw n wsjr wnn-nfr</div>
+<div class="ru">Правогласный, Осирис Унас!</div>
 </div>
-<div class="spell-card">
-<div class="head">
+<div class="verse">
+<div class="num">3</div>
+<div class="eg">nn nꜣr(w) twꜣ.t n wsjr wnn-nfr</div>
+<div class="ru">Не будет снята обувь с Осириса Унаса!</div>
+</div>
+
+</div>
+</details>
+<details class="corpus spell" open>
+<summary><div class="left"><span class="qbadge">◆ PT 487</span>Изречение для неба</div><div class="count">заклинание №487</div></summary>
+<div class="body">
+<div class="spell-info">
 <span class="qbadge">PT 487</span>
 <span class="title">Изречение для неба</span>
-<span class="count">№487 из 1000+</span>
+<span class="ctx">Фараон как солнце поднимается над горизонтом.</span>
 </div>
-<div class="context">Фараон как солнце поднимается над горизонтом.</div>
-<div class="pair">
-<div class="num">487</div>
+<div class="verse">
+<div class="num">1</div>
 <div class="eg">pꜣ tꜣ n wsjr wnn-nfr rꜥ nṯr-ꜥꜣ</div>
 <div class="ru">Эта земля принадлежит Осирису Унасу — Ра, великому богу!</div>
 </div>
+<div class="verse">
+<div class="num">2</div>
+<div class="eg">wḏꜥ n rꜥ n wsjr wnn-nfr</div>
+<div class="ru">Да встанет Ра за Осириса Унаса!</div>
 </div>
-<div class="spell-card">
-<div class="head">
+<div class="verse">
+<div class="num">3</div>
+<div class="eg">stẖ wsjr wnn-nfr r pt</div>
+<div class="ru">Да поднимет Осириса Унаса на небо!</div>
+</div>
+
+</div>
+</details>
+<details class="corpus spell" open>
+<summary><div class="left"><span class="qbadge">◆ PT 510</span>Изречение о силе</div><div class="count">заклинание №510</div></summary>
+<div class="body">
+<div class="spell-info">
 <span class="qbadge">PT 510</span>
 <span class="title">Изречение о силе</span>
-<span class="count">№510 из 1000+</span>
+<span class="ctx">Фараон обретает божественную силу после воскресения.</span>
 </div>
-<div class="context">Фараон обретает божественную силу после воскресения.</div>
-<div class="pair">
-<div class="num">510</div>
+<div class="verse">
+<div class="num">1</div>
 <div class="eg">sḫm nb n wsjr wnn-nfr</div>
 <div class="ru">Всякая власть принадлежит Осирису Унасу!</div>
 </div>
+<div class="verse">
+<div class="num">2</div>
+<div class="eg">sḫm sḫm n wsjr wnn-nfr</div>
+<div class="ru">Сила, сила Осириса Унаса!</div>
 </div>
-<div class="spell-card">
-<div class="head">
+<div class="verse">
+<div class="num">3</div>
+<div class="eg">nb sḫm nb nbw n wsjr wnn-nfr</div>
+<div class="ru">Владыка силы, владыка золота — Осирис Унас!</div>
+</div>
+
+</div>
+</details>
+<details class="corpus spell" open>
+<summary><div class="left"><span class="qbadge">◆ PT 534</span>Изречение об Орионе</div><div class="count">заклинание №534</div></summary>
+<div class="body">
+<div class="spell-info">
 <span class="qbadge">PT 534</span>
 <span class="title">Изречение об Орионе</span>
-<span class="count">№534 из 1000+</span>
+<span class="ctx">Орион — священное созвездие, где живёт душa Осириса. Фараон присоединяется к нему.</span>
 </div>
-<div class="context">Орион — священное созвездие, где живёт душa Осириса. Фараон присоединяется к нему.</div>
-<div class="pair">
-<div class="num">534</div>
+<div class="verse">
+<div class="num">1</div>
 <div class="eg">sꜣḥ wsjr wnn-nfr m sꜣḥ</div>
 <div class="ru">Да воссияет Осирис Унас как Орион!</div>
 </div>
+<div class="verse">
+<div class="num">2</div>
+<div class="eg">sfḫ n sꜣḥ n wsjr wnn-nfr</div>
+<div class="ru">Да отделится от Ориона Осирис Унас!</div>
 </div>
-<div class="spell-card">
-<div class="head">
+<div class="verse">
+<div class="num">3</div>
+<div class="eg">wpw rꜥ nb n wsjr wnn-nfr</div>
+<div class="ru">Вестник Ра, владыка, Осирис Унас!</div>
+</div>
+
+</div>
+</details>
+<details class="corpus spell" open>
+<summary><div class="left"><span class="qbadge">◆ PT 539</span>Изречение об Утренней звезде</div><div class="count">заклинание №539</div></summary>
+<div class="body">
+<div class="spell-info">
 <span class="qbadge">PT 539</span>
 <span class="title">Изречение об Утренней звезде</span>
-<span class="count">№539 из 1000+</span>
+<span class="ctx">Утренняя звезда (Сириус) — предвестница восхода солнца. Символ воскресения.</span>
 </div>
-<div class="context">Утренняя звезда (Сириус) — предвестница восхода солнца. Символ воскресения.</div>
-<div class="pair">
-<div class="num">539</div>
+<div class="verse">
+<div class="num">1</div>
 <div class="eg">sbꜣ wsjr wnn-nfr m sbꜣw</div>
 <div class="ru">Да взойдёт Осирис Унас как Утренняя звезда!</div>
 </div>
+<div class="verse">
+<div class="num">2</div>
+<div class="eg">sbꜣ sbꜣ n wsjr wnn-nfr</div>
+<div class="ru">Восход, восход Осириса Унаса!</div>
 </div>
-<div class="spell-card">
-<div class="head">
+<div class="verse">
+<div class="num">3</div>
+<div class="eg">wpw mꜣwt n wsjr wnn-nfr</div>
+<div class="ru">Вестник нового, Осирис Унас!</div>
+</div>
+
+</div>
+</details>
+<details class="corpus spell" open>
+<summary><div class="left"><span class="qbadge">◆ PT 556</span>Изречение о «Поле тростника»</div><div class="count">заклинание №556</div></summary>
+<div class="body">
+<div class="spell-info">
 <span class="qbadge">PT 556</span>
 <span class="title">Изречение о «Поле тростника»</span>
-<span class="count">№556 из 1000+</span>
+<span class="ctx">Иалу — загробный рай, поля вечного изобилия.</span>
 </div>
-<div class="context">Иалу — загробный рай, поля вечного изобилия.</div>
-<div class="pair">
-<div class="num">556</div>
+<div class="verse">
+<div class="num">1</div>
 <div class="eg">sḫt-ꜥrw n wsjr wnn-nfr</div>
 <div class="ru">Поле тростника (Иалу) принадлежит Осирису Унасу!</div>
 </div>
+<div class="verse">
+<div class="num">2</div>
+<div class="eg">sḫt-ꜥrw nṯr.w n wsjr wnn-nfr</div>
+<div class="ru">Поле тростника богов — Осирису Унасу!</div>
 </div>
-<div class="spell-card">
-<div class="head">
+<div class="verse">
+<div class="num">3</div>
+<div class="eg">iꜥr sḫt-ꜥrw n wsjr wnn-nfr</div>
+<div class="ru">Да поднимется на Поле тростника Осирис Унас!</div>
+</div>
+
+</div>
+</details>
+<details class="corpus spell" open>
+<summary><div class="left"><span class="qbadge">◆ PT 571</span>Изречение для ночного плавания</div><div class="count">заклинание №571</div></summary>
+<div class="body">
+<div class="spell-info">
 <span class="qbadge">PT 571</span>
 <span class="title">Изречение для ночного плавания</span>
-<span class="count">№571 из 1000+</span>
+<span class="ctx">Фараон следует за солнечной баркой через 12 часов ночи.</span>
 </div>
-<div class="context">Фараон следует за солнечной баркой через 12 часов ночи.</div>
-<div class="pair">
-<div class="num">571</div>
+<div class="verse">
+<div class="num">1</div>
 <div class="eg">nwi wsjr wnn-nfr m grḥ</div>
 <div class="ru">Да плывёт Осирис Унас ночью вместе с Ра!</div>
 </div>
+<div class="verse">
+<div class="num">2</div>
+<div class="eg">nwi mꜣꜥ-ḫrw m grḥ</div>
+<div class="ru">Плывёт правогласный ночью!</div>
 </div>
-<div class="spell-card">
-<div class="head">
+<div class="verse">
+<div class="num">3</div>
+<div class="eg">nwi wsjr wnn-nfr m wꜣwt-ꜥꜣ.t</div>
+<div class="ru">Плывёт Осирис Унас в Великой Барке!</div>
+</div>
+
+</div>
+</details>
+<details class="corpus spell" open>
+<summary><div class="left"><span class="qbadge">◆ PT 577</span>Изречение для бодрствования</div><div class="count">заклинание №577</div></summary>
+<div class="body">
+<div class="spell-info">
 <span class="qbadge">PT 577</span>
 <span class="title">Изречение для бодрствования</span>
-<span class="count">№577 из 1000+</span>
+<span class="ctx">Фараон должен бодрствовать в загробном мире, чтобы возродиться.</span>
 </div>
-<div class="context">Фараон должен бодрствовать в загробном мире, чтобы возродиться.</div>
-<div class="pair">
-<div class="num">577</div>
+<div class="verse">
+<div class="num">1</div>
 <div class="eg">nwn n wsjr wnn-nfr m dwꜣ.t</div>
 <div class="ru">Да пробудится Осирис Унас в Дуате, да не уснёт!</div>
 </div>
+<div class="verse">
+<div class="num">2</div>
+<div class="eg">nn sdr n wsjr wnn-nfr m dwꜣ.t</div>
+<div class="ru">Не уснёт Осирис Унас в Дуате!</div>
 </div>
-<div class="spell-card">
-<div class="head">
+<div class="verse">
+<div class="num">3</div>
+<div class="eg">nwn n wbn n rꜥ n wsjr wnn-nfr</div>
+<div class="ru">Да восстанет с восходом Ра Осирис Унас!</div>
+</div>
+
+</div>
+</details>
+<details class="corpus spell" open>
+<summary><div class="left"><span class="qbadge">◆ PT 600</span>Изречение о вознесении</div><div class="count">заклинание №600</div></summary>
+<div class="body">
+<div class="spell-info">
 <span class="qbadge">PT 600</span>
 <span class="title">Изречение о вознесении</span>
-<span class="count">№600 из 1000+</span>
+<span class="ctx">Главное заклинание — фараон поднимается к звёздам.</span>
 </div>
-<div class="context">Главное заклинание — фараон поднимается к звёздам.</div>
-<div class="pair">
-<div class="num">600</div>
+<div class="verse">
+<div class="num">1</div>
 <div class="eg">qꜣi wsjr wnn-nfr r pt</div>
 <div class="ru">Да вознесётся Осирис Унас на небо!</div>
 </div>
+<div class="verse">
+<div class="num">2</div>
+<div class="eg">qꜣi m pt m sꜣḥ</div>
+<div class="ru">Поднимись на небо с Орионом!</div>
 </div>
-<div class="spell-card">
-<div class="head">
+<div class="verse">
+<div class="num">3</div>
+<div class="eg">qꜣi rꜥ mꜣꜥ-ḫrw n wsjr wnn-nfr</div>
+<div class="ru">Восходит Ра, правогласный, Осирис Унас!</div>
+</div>
+
+</div>
+</details>
+<details class="corpus spell" open>
+<summary><div class="left"><span class="qbadge">◆ PT 665</span>Изречение для урея</div><div class="count">заклинание №665</div></summary>
+<div class="body">
+<div class="spell-info">
 <span class="qbadge">PT 665</span>
 <span class="title">Изречение для урея</span>
-<span class="count">№665 из 1000+</span>
+<span class="ctx">Урей — кобра на лбу богов, символ власти.</span>
 </div>
-<div class="context">Урей — кобра на лбу богов, символ власти.</div>
-<div class="pair">
-<div class="num">665</div>
+<div class="verse">
+<div class="num">1</div>
 <div class="eg">mꜣꜥ-ḫrw n wsjr wnn-nfr r ꜥr.t</div>
 <div class="ru">Правогласный Унас да воссядет на урей!</div>
 </div>
+<div class="verse">
+<div class="num">2</div>
+<div class="eg">ꜥr.t n nṯr.w n wsjr wnn-nfr</div>
+<div class="ru">Урей богов — Осирису Унасу!</div>
 </div>
-<div class="spell-card">
-<div class="head">
+<div class="verse">
+<div class="num">3</div>
+<div class="eg">mꜣꜥ-ḫrw r st-ꜥr.t n wsjr</div>
+<div class="ru">Правогласный на месте Урея, Осирис!</div>
+</div>
+
+</div>
+</details>
+<details class="corpus spell" open>
+<summary><div class="left"><span class="qbadge">◆ PT 688</span>Изречение для Геба</div><div class="count">заклинание №688</div></summary>
+<div class="body">
+<div class="spell-info">
 <span class="qbadge">PT 688</span>
 <span class="title">Изречение для Геба</span>
-<span class="count">№688 из 1000+</span>
+<span class="ctx">Хнум — бог, создающий людей на гончарном круге.</span>
 </div>
-<div class="context">Хнум — бог, создающий людей на гончарном круге.</div>
-<div class="pair">
-<div class="num">688</div>
+<div class="verse">
+<div class="num">1</div>
 <div class="eg">ms.n ḫnm.t gs.wy n wsjr wnn-nfr</div>
 <div class="ru">Хнум создал руки для Осириса Унаса!</div>
 </div>
+<div class="verse">
+<div class="num">2</div>
+<div class="eg">ms gs.wy n wsjr wnn-nfr</div>
+<div class="ru">Создал руки Осириса Унаса!</div>
 </div>
-<div class="spell-card">
-<div class="head">
+<div class="verse">
+<div class="num">3</div>
+<div class="eg">gs.wy nb n wsjr wnn-nfr</div>
+<div class="ru">Все руки — Осирису Унасу!</div>
+</div>
+
+</div>
+</details>
+<details class="corpus spell" open>
+<summary><div class="left"><span class="qbadge">◆ PT 723</span>Изречение о Сопд</div><div class="count">заклинание №723</div></summary>
+<div class="body">
+<div class="spell-info">
 <span class="qbadge">PT 723</span>
 <span class="title">Изречение о Сопд</span>
-<span class="count">№723 из 1000+</span>
+<span class="ctx">Сириус — звезда Исиды, жены Осириса.</span>
 </div>
-<div class="context">Сириус — звезда Исиды, жены Осириса.</div>
-<div class="pair">
-<div class="num">723</div>
+<div class="verse">
+<div class="num">1</div>
 <div class="eg">sptd n wsjr wnn-nfr</div>
 <div class="ru">Сопд (Сириус) принадлежит Осирису Унасу!</div>
 </div>
+<div class="verse">
+<div class="num">2</div>
+<div class="eg">sptd mꜣꜥ-ḫrw n wsjr wnn-nfr</div>
+<div class="ru">Сопд правогласная — Осирису Унасу!</div>
 </div>
+<div class="verse">
+<div class="num">3</div>
+<div class="eg">sptd ꜥst n wsjr wnn-nfr</div>
+<div class="ru">Сопд Исиды — Осирису Унасу!</div>
+</div>
+
+</div>
+</details>
 
 </main>
 
