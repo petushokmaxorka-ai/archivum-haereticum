@@ -1,0 +1,6 @@
+{
+   "error" : {
+      "code" : "ERR_REQUIRES_AUTHENTICATION",
+      "description" : "The requested function requires authentication to continue. Please access the API from a <a href=\"http://ctext.org/tools/subscribe\">registered IP address</a> or supply a valid API key."
+   }
+}
