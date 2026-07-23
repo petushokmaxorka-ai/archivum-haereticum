@@ -1,67 +1,63 @@
-<!DOCTYPE html><html lang="ru"><head><meta charset="utf-8">
+<!DOCTYPE html><html lang="ru"><head>
+<meta charset="UTF-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<title>РИГВЕДА — Архивум</title>
+<title>Ригведа · 10 мандал · CORPUS DIVINUS</title>
 <style>
-:root{--bg:#0d0b09;--panel:#161310;--line:#2e2820;--gold:#c9a227;--gold-dim:#8a7119;--ink:#d8cdb8;--ink-dim:#9a8f78;--red:#8c2f26}
-*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--ink);font-family:Georgia,'Times New Roman',serif;line-height:1.55}
-a{color:var(--gold);text-decoration:none}a:hover{text-decoration:underline}
-header.top{border-bottom:2px solid var(--gold-dim);padding:18px 24px;background:var(--panel)}
-header.top .brand{font-size:13px;letter-spacing:3px;color:var(--ink-dim);text-transform:uppercase}
-header.top h1{margin:6px 0 2px;font-size:26px;color:var(--gold);font-weight:normal}
-header.top .sub{color:var(--ink-dim);font-size:14px}
-.stamp{display:inline-block;border:1px solid var(--gold-dim);color:var(--gold);font-size:11px;letter-spacing:2px;padding:2px 8px;margin-left:8px;vertical-align:middle}
-.idx-group{margin:18px 24px}.idx-group h2{color:var(--gold);font-size:16px;letter-spacing:3px;border-bottom:1px solid var(--line);padding-bottom:6px;font-weight:normal}
-.idx-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:8px;margin-top:10px}
-.idx-card{border:1px solid var(--line);background:var(--panel);padding:10px 14px;display:block}
-.idx-card:hover{border-color:var(--gold-dim);text-decoration:none}
-.idx-card .t{color:var(--gold);font-size:16px}.idx-card .s{color:var(--ink-dim);font-size:12px;margin-top:2px}
-.note{margin:14px 24px;padding:12px 16px;border:1px solid var(--line);background:var(--panel);font-size:13px;color:var(--ink-dim)}
-footer{padding:24px;color:var(--ink-dim);font-size:12px;border-top:1px solid var(--line);margin-top:20px}
-.toolbar{display:flex;justify-content:center;gap:8px;flex-wrap:wrap;margin:12px 0;padding:8px;background:#15151a;border:1px solid #2a2a33;border-radius:4px;font-family:Georgia,serif}
-.toolbar button{background:#1f1a12;border:1px solid #c9a227;color:#c9a227;padding:6px 12px;font-size:11px;letter-spacing:1px;cursor:pointer;font-family:Georgia,serif;text-transform:uppercase}
-.toolbar button:hover{background:#2a2010}
-</style></head><body>
-<header class="top"><div class="brand">ARCHIVUM HAERETICUM · CORPUS DIVINUS · Q6</div>
-<h1>РИГВЕДА (ṚGVEDA)<span class="stamp">◆ FIDELIS</span></h1>
-<div class="sub">«Знание гимнов» · древнейший из четырёх Вед · 10 мандал (книг) · 1028 гимнов (сукт) · 10 261 стих (рич) · ок. 1500-1200 до н.э. · Индия</div></header>
-<div class="toolbar">
-<button onclick="toggleAll(true)">▼ Развернуть все</button>
-<button onclick="toggleAll(false)">▲ Свернуть все</button>
-<button onclick="toggleOrig()">🌙 Только оригинал</button>
-<button onclick="toggleRu()">📖 Только перевод</button>
-<button onclick="resetView()">◉ Оба</button>
+:root{--bg:#0a0a0c;--bg2:#0d0d12;--panel:#13131a;--line:#2a2a33;--red:#c8102e;--red-dark:#8a0a1f;--gold:#c9a227;--gold-bright:#e8b84a;--gold-dim:#8a7119;--ink:#e8e2d5;--ink-dim:#9a937f;--orig:#f2ead6;--accent:#d49a3a;--grid:#1d1d24}
+*{box-sizing:border-box;margin:0;padding:0}body{background:var(--bg);color:var(--ink);font-family:Georgia,'Times New Roman',serif;line-height:1.55}
+a{color:var(--gold);text-decoration:none}a:hover{color:var(--gold-bright)}
+header.hos{background:linear-gradient(180deg,var(--red-dark) 0%,#1a0007 30%,var(--bg) 100%);border-bottom:2px solid var(--red);padding:0;position:relative}
+header.hos::before{content:"";position:absolute;left:0;top:0;bottom:0;width:6px;background:var(--red)}
+.hos-strip{display:flex;justify-content:space-between;align-items:center;padding:6px 14px;background:rgba(0,0,0,0.5);border-bottom:1px solid var(--red-dark);font-family:'Courier New',monospace;font-size:10px;letter-spacing:2px;color:var(--ink-dim);text-transform:uppercase}
+.hos-strip .l{color:var(--gold)} .hos-strip .r{color:var(--red);font-weight:bold}
+.hos-body{padding:18px 22px 14px}
+.hos-h1{font-size:1.55rem;letter-spacing:.12em;color:var(--orig);font-weight:normal;margin-bottom:4px;line-height:1.2}
+.hos-h1 .q{color:var(--red);font-family:'Courier New',monospace;font-size:.7em;vertical-align:super;margin-right:6px;padding:3px 7px;background:rgba(200,16,46,0.15);border:1px solid var(--red-dark);letter-spacing:1px}
+.hos-h1 .sig{font-size:.55em;color:var(--gold);font-family:'Courier New',monospace;letter-spacing:2px;margin-left:10px;padding:3px 8px;border:1px solid var(--gold-dim);vertical-align:middle}
+.hos-sub{color:var(--ink-dim);font-size:13px;font-style:italic}
+.stamps{padding:7px 16px;background:var(--bg2);border-bottom:1px solid var(--line);text-align:center;font-family:'Courier New',monospace}
+.stamps span{display:inline-block;border:1px solid var(--gold-dim);color:var(--gold);font-size:9px;letter-spacing:2px;padding:2px 7px;margin:0 2px;text-transform:uppercase}
+.stamps span.fid{color:var(--gold-bright);border-color:var(--gold);background:rgba(201,162,39,0.05)}
+nav.main{padding:8px 18px;background:var(--panel);border-bottom:1px solid var(--line);font-size:12px;text-align:center}
+nav.main a{color:var(--gold);margin:0 6px;letter-spacing:1px;padding:3px 6px}
+main{max-width:1300px;margin:0 auto;padding:0 12px 40px}
+.meta{color:var(--ink-dim);font-size:12px;font-style:italic;padding:8px 16px;text-align:center;font-family:'Courier New',monospace;letter-spacing:1px}
+.meta b{color:var(--gold);font-style:normal;font-family:Georgia,serif}
+.chap{background:linear-gradient(90deg,var(--red-dark),transparent);color:var(--gold-bright);font-size:.9rem;letter-spacing:.2em;padding:10px 16px;border-bottom:1px solid var(--red-dark);border-top:1px solid var(--red-dark);font-family:'Courier New',monospace;text-transform:uppercase;margin-top:12px}
+.idx-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:8px;padding:14px}
+.idx-card{border:1px solid var(--line);background:var(--panel);padding:12px 16px;display:block;color:var(--ink);text-decoration:none;transition:all 0.15s}
+.idx-card:hover{border-color:var(--gold);background:#1a1410;text-decoration:none}
+.idx-card .roman{color:var(--red);font-size:1.2em;font-weight:bold;font-family:'Courier New',monospace;letter-spacing:1px;display:inline-block;margin-right:8px}
+.idx-card .t{color:var(--gold);font-size:14px;letter-spacing:1px}
+.idx-card .sub{color:var(--ink-dim);font-size:11px;margin-top:4px;font-family:'Courier New',monospace}
+.note{margin:14px 16px;padding:12px 16px;border:1px solid var(--line);background:var(--panel);font-size:12px;color:var(--ink-dim);line-height:1.5}
+.note b{color:var(--gold)}
+footer{padding:18px;text-align:center;color:var(--ink-dim);font-size:10px;border-top:1px solid var(--line);font-family:'Courier New',monospace;letter-spacing:2px;background:var(--bg2)}
+footer .red{color:var(--red)} footer .gold{color:var(--gold)}
+</style></head><body><header class="hos">
+<div class="hos-strip"><span class="l">ARCHIVUM HAERETICUM · CORPUS DIVINUS · Q6</span><span class="r">◆ SIGILLUM VERITATIS</span></div>
+<div class="hos-body">
+<h1 class="hos-h1"><span class="q">Q6</span>РИГВЕДА · ṚGVEDA · ВЕСЬ КОРПУС<span class="sig">◆ FIDELIS</span></h1>
+<div class="hos-sub">10 мандал · 1028 гимнов · 10462 стихов · санскрит (деванагари) + русский (Елизаренкова 1989-1999) · ок. 1500-1200 до н.э.</div>
 </div>
-<div class="note"><b>Ригведа (Ṛgveda, Риг-Веда)</b> — древнейший из четырёх Вед индуизма, свод религиозных гимнов, собранных в Пенджабе (СЗ Индия) ок. 1500-1200 до н.э. Состоит из 10 мандал (книг) + вводная мандала (обычно = I.1-9). <b>Структура</b>: 1 028 гимнов, 10 261 стих. <b>Боги</b>: Агни (жертвенный огонь), Индра (громовержец), Варуна (космический закон), Сома (священный напиток), Адити (мать богов), Ушас (заря), Ашвины (близнецы-целители) и др. <b>Язык</b>: ведический санскрит (архаичный, с богатой акцентологией). <b>Свидетели</b>: <ul><li><b>Слева</b> — санскрит (bhavykhatri/DharmicData, GitHub, CC-BY-SA): полный текст с метрической разметкой</li><li><b>Справа</b> — перевод Т.Я. Елизаренковой (1989-1999, Институт востоковедения РАН, общественное достояние)</li></ul></div>
-<div class="idx-group"><h2>МАНДАЛЫ (КНИГИ)</h2><div class="idx-grid">
-<a class="idx-card" href="mi.html"><div class="t">Мандала I</div><div class="s">22 гимнов · 257 RU · 245 SK</div></a>
-<a class="idx-card" href="mii.html"><div class="t">Мандала II</div><div class="s">17 гимнов · 194 RU · 159 SK</div></a>
-<a class="idx-card" href="miii.html"><div class="t">Мандала III</div><div class="s">27 гимнов · 258 RU · 255 SK</div></a>
-<a class="idx-card" href="miv.html"><div class="t">Мандала IV</div><div class="s">25 гимнов · 295 RU · 276 SK</div></a>
-<a class="idx-card" href="mv.html"><div class="t">Мандала V</div><div class="s">28 гимнов · 194 RU · 197 SK</div></a>
-<a class="idx-card" href="mviii.html"><div class="t">Мандала VIII</div><div class="s">18 гимнов · 447 RU · 433 SK</div></a>
-<a class="idx-card" href="mix.html"><div class="t">Мандала IX</div><div class="s">32 гимнов · 253 RU · 250 SK</div></a>
-<a class="idx-card" href="mx.html"><div class="t">Мандала X</div><div class="s">19 гимнов · 185 RU · 183 SK</div></a>
-</div></div>
-<div class="note">Всего в корпусе: 188 гимнов (1+ Мандалы I, II, III, IV, V, VIII, IX, X) с полным параллельным текстом · 2083 стихов на русском · 1998 стихов на санскрите. В корпусе нет полностью Мандал VI, VII — санскритский источник bhavykhatri/DharmicData содержит 1 028 из 1 028 гимнов Ригведы, а русский перевод (scriptures.ru) включает 188 гимнов первой половины корпуса.</div>
-<footer>ARCHIVUM HAERETICUM IMPERII HUMANITATIS · Q6 · РИГВЕДА · источники: bhavykhatri/DharmicData (sanskrit, CC-BY-SA), scriptures.ru (рус. перевод Елизаренковой, PD).<br>Sigillum: ◆◆◆ FIDELIS · Datum: 158.M3</footer>
-<script>
-function toggleAll(state){
-  document.querySelectorAll('.verse').forEach(r=>{r.style.display=state?'grid':'none';});
-  document.querySelectorAll('.row').forEach(r=>{r.style.display=state?'grid':'none';});
-  document.querySelectorAll('table.orph tr').forEach(r=>{r.style.display=state?'':'none';});
-}
-function toggleOrig(){
-  document.querySelectorAll('.verse').forEach(r=>{r.style.display='grid';const o=r.querySelector('.sk,.av,.zh,.sa,.en,.dev,.ar,.gr,.he,.grc');if(o)o.style.display='block';const ru=r.querySelector('.ru,.rus');if(ru)ru.style.display='none';});
-  document.querySelectorAll('.row').forEach(r=>{r.style.display='grid';const o=r.querySelector('.sk,.av,.zh,.sa,.en,.dev,.ar,.gr,.he,.grc');if(o)o.style.display='block';const ru=r.querySelector('.ru,.rus');if(ru)ru.style.display='none';});
-}
-function toggleRu(){
-  document.querySelectorAll('.verse').forEach(r=>{r.style.display='grid';const o=r.querySelector('.sk,.av,.zh,.sa,.en,.dev,.ar,.gr,.he,.grc');if(o)o.style.display='none';const ru=r.querySelector('.ru,.rus');if(ru)ru.style.display='block';});
-  document.querySelectorAll('.row').forEach(r=>{r.style.display='grid';const o=r.querySelector('.sk,.av,.zh,.sa,.en,.dev,.ar,.gr,.he,.grc');if(o)o.style.display='none';const ru=r.querySelector('.ru,.rus');if(ru)ru.style.display='block';});
-}
-function resetView(){
-  document.querySelectorAll('.verse,.row').forEach(r=>{r.style.display='grid';});
-  document.querySelectorAll('.sk,.av,.zh,.sa,.en,.dev,.ar,.gr,.he,.grc,.ru,.rus').forEach(c=>{c.style.display='';});
-  document.querySelectorAll('table.orph tr').forEach(r=>{r.style.display='';});
-}
-</script>
+</header>
+<div class="stamps">
+<span class="fid">◆ FIDELIS</span>
+<span>◇ SUSPECTUS-FERTILIS</span>
+<span class="fid">☀ ОМ</span>
+</div>
+<nav class="main">
+<a href="../index.html">◀ CORPUS DIVINUS</a>
+</nav>
+<main>
+<div class="meta">ОРИГИНАЛ: <b>санскрит (деванагари) · DharmicData (GitHub)</b> · ПЕРЕВОД: <b>русский · Т.Я. Елизаренкова (1989-1999, М.: Наука)</b> · ◆ FIDELIS</div>
+<div class="chap">ВЫБЕРИ МАНДАЛУ · 10 КНИГ</div>
+<div class="idx-grid">
+<a class="idx-card" href="mi.html"><span class="roman">I</span><span class="t">МАНДАЛА I — АГНИ (РАЗНЫЕ)</span><div class="sub">► 191 гимнов · ОТКРЫТЬ ◄</div></a><a class="idx-card" href="mii.html"><span class="roman">II</span><span class="t">МАНДАЛА II — ВАРУНА, АГНИ</span><div class="sub">► 43 гимнов · ОТКРЫТЬ ◄</div></a><a class="idx-card" href="miii.html"><span class="roman">III</span><span class="t">МАНДАЛА III — ВИШВАМИТРА</span><div class="sub">► 62 гимнов · ОТКРЫТЬ ◄</div></a><a class="idx-card" href="miv.html"><span class="roman">IV</span><span class="t">МАНДАЛА IV — ВАМАДЕВА</span><div class="sub">► 58 гимнов · ОТКРЫТЬ ◄</div></a><a class="idx-card" href="mv.html"><span class="roman">V</span><span class="t">МАНДАЛА V — АТРИ</span><div class="sub">► 87 гимнов · ОТКРЫТЬ ◄</div></a><a class="idx-card" href="mvi.html"><span class="roman">VI</span><span class="t">МАНДАЛА VI — БХАРАДВАДЖА</span><div class="sub">► 75 гимнов · ОТКРЫТЬ ◄</div></a><a class="idx-card" href="mvii.html"><span class="roman">VII</span><span class="t">МАНДАЛА VII — ВАСИШТХА</span><div class="sub">► 104 гимнов · ОТКРЫТЬ ◄</div></a><a class="idx-card" href="mviii.html"><span class="roman">VIII</span><span class="t">МАНДАЛА VIII — КАНВА</span><div class="sub">► 102 гимнов · ОТКРЫТЬ ◄</div></a><a class="idx-card" href="mix.html"><span class="roman">IX</span><span class="t">МАНДАЛА IX — СОМА-ПАВАМАНА</span><div class="sub">► 114 гимнов · ОТКРЫТЬ ◄</div></a><a class="idx-card" href="mx.html"><span class="roman">X</span><span class="t">МАНДАЛА X — РАЗНЫЕ</span><div class="sub">► 191 гимнов · ОТКРЫТЬ ◄</div></a>
+</div>
+<div class="note">
+<b>Ригведа</b> (санскр. Ṛgveda, «Знание гимнов») — древнейший памятник индийской литературы, священный текст индуизма. Собрание 1028 гимнов (сутр), разделенных на <b>10 мандал (книг)</b>. Написана на ведическом санскрите, ок. 1500-1200 гг. до н.э. Гимны посвящены Агни, Индре, Соме, Варуне, Ушас, Марутам и другим божествам. <b>Риши (составители)</b>: Гайатри (Вишвамитра), Васиштха, Вамадева, Атри, Бхарадваджа и др. <b>Источник</b>: DharmicData (GitHub). <b>Перевод</b>: Т.Я. Елизаренкова, «Ригведа. Мандалы I-IV» (1989, 1991, 1997, 1999), серия «Литературные памятники» (М.: Наука). <b>Принцип CORPUS DIVINUS</b>: оригинал (санскрит) слева, перевод (русский) справа.
+</div>
+</main>
+<footer>ARCHIVUM HAERETICUM · Q6 · РИГВЕДА · 10 МАНДАЛ · 1028 ГИМНОВ<br><span class="red">◆</span> SIGILLUM VERITATIS · <span class="gold">DATUM 160.M3</span> · FIDELIS</footer>
 </body></html>
