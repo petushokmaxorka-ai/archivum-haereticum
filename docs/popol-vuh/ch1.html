@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Сотворение мира — ПОПОЛЬ ВУХ — Архивум</title>
+<style>
+:root{--bg:#0a0a0c;--bg2:#0d0d12;--panel:#13131a;--line:#2a2a33;--red:#c8102e;--red-dark:#8a0a1f;--gold:#c9a227;--gold-bright:#e8b84a;--gold-dim:#8a7119;--ink:#c8102e;--ink-dim:#c9a227;--orig:#c8102e;--accent:#d49a3a;--grid:#1d1d24}
+*{box-sizing:border-box;margin:0;padding:0}body{background:var(--bg);color:var(--ink);font-family:Georgia,'Times New Roman',serif;line-height:1.55}
+a{color:var(--gold);text-decoration:none}a:hover{color:var(--gold-bright);text-decoration:underline}
+header.hos{background:linear-gradient(180deg,var(--red-dark) 0%,#1a0007 30%,var(--bg) 100%);border-bottom:2px solid var(--red);padding:0;position:relative}
+header.hos::before{content:"";position:absolute;left:0;top:0;bottom:0;width:6px;background:var(--red)}
+.hos-strip{display:flex;justify-content:space-between;align-items:center;padding:6px 14px;background:rgba(0,0,0,0.5);border-bottom:1px solid var(--red-dark);font-family:'Courier New',monospace;font-size:10px;letter-spacing:2px;color:var(--ink-dim);text-transform:uppercase}
+.hos-strip .l{color:var(--gold)} .hos-strip .r{color:var(--red);font-weight:bold}
+.hos-body{padding:18px 22px 14px}
+.hos-h1{font-size:1.5rem;letter-spacing:.12em;color:var(--orig);font-weight:normal;margin-bottom:4px;line-height:1.2}
+.hos-h1 .q{color:var(--red);font-family:'Courier New',monospace;font-size:.7em;vertical-align:super;margin-right:6px;padding:3px 7px;background:rgba(200,16,46,0.15);border:1px solid var(--red-dark);letter-spacing:1px}
+.hos-h1 .sig{font-size:.55em;color:var(--gold);font-family:'Courier New',monospace;letter-spacing:2px;margin-left:10px;padding:3px 8px;border:1px solid var(--gold-dim);vertical-align:middle}
+.hos-sub{color:var(--ink-dim);font-size:13px;font-style:italic}
+.stamps{padding:7px 16px;background:var(--bg2);border-bottom:1px solid var(--line);text-align:center;font-family:'Courier New',monospace}
+.stamps span{display:inline-block;border:1px solid var(--gold-dim);color:var(--gold);font-size:9px;letter-spacing:2px;padding:2px 7px;margin:0 2px;text-transform:uppercase}
+.stamps span.fid{color:var(--gold-bright);border-color:var(--gold);background:rgba(201,162,39,0.05)}
+.stamps span.dam{color:var(--red);border-color:var(--red-dark);background:rgba(200,16,46,0.05)}
+.stamps span.cre{color:var(--accent);border-color:var(--accent);background:rgba(212,154,58,0.05)}
+nav.main{padding:8px 18px;background:var(--panel);border-bottom:1px solid var(--line);font-size:12px;text-align:center}
+nav.main a{color:var(--gold);margin:0 6px;letter-spacing:1px;padding:3px 6px}
+.toolbar{display:flex;justify-content:center;gap:6px;flex-wrap:wrap;margin:14px 0 8px;padding:8px;background:var(--panel);border:1px solid var(--line);font-family:'Courier New',monospace}
+.toolbar button{background:transparent;border:1px solid var(--gold-dim);color:var(--gold);padding:5px 11px;font-size:10px;letter-spacing:1px;cursor:pointer;font-family:inherit;text-transform:uppercase}
+.toolbar button:hover{background:var(--gold);color:var(--bg)}
+.meta{color:var(--ink-dim);font-size:11px;font-style:italic;padding:6px 16px;text-align:center;font-family:'Courier New',monospace;letter-spacing:1px}
+.meta b{color:var(--gold);font-style:normal;font-family:Georgia,serif}
+.chap{background:linear-gradient(90deg,var(--red-dark),transparent);color:var(--gold-bright);font-size:.85rem;letter-spacing:.2em;padding:9px 16px;border-bottom:1px solid var(--red-dark);border-top:1px solid var(--red-dark);font-family:'Courier New',monospace;text-transform:uppercase;margin-top:12px}
+main{max-width:1300px;margin:0 auto;padding:0 12px 40px}
+.row{display:grid;grid-template-columns:3rem 1fr 1.1fr;border-bottom:1px solid var(--grid);align-items:start;transition:background 0.15s}
+.row:hover{background:#15110b}
+.num{grid-column:1;color:var(--gold);font-size:12px;padding:10px 4px;text-align:right;font-family:'Courier New',monospace;font-weight:bold;align-self:start}
+.orig,.ar,.gr,.he,.grc,.sk,.dev,.av,.zh,.sa{grid-column:2;padding:10px 12px;font-size:1rem;line-height:1.7;color:var(--orig);background:rgba(201,162,39,0.025);border-right:1px solid var(--gold-dim);border-left:3px solid var(--gold-dim);font-style:italic}
+.ar{direction:rtl;text-align:right;font-family:'Amiri','Scheherazade New','Traditional Arabic',serif;font-size:1.25rem;line-height:1.85}
+.gr,.grc{direction:ltr;font-family:'SBL Greek','Palatino Linotype',Georgia,serif}
+.he{direction:rtl;text-align:right;font-family:'SBL Hebrew','Times New Roman',serif;font-size:1.1rem}
+.sk,.dev{direction:ltr;font-family:'Noto Sans Devanagari','Sanskrit Text',serif;font-size:1.05rem}
+.zh{font-family:'Noto Serif CJK SC','SimSun',serif}
+.ru,.rus{grid-column:3;padding:10px 12px;font-size:.95rem;line-height:1.65;text-align:justify;color:var(--ink)}
+.bismillah{text-align:center;padding:1.5rem 1rem;font-family:'Amiri','Scheherazade New','Traditional Arabic',serif;font-size:1.8rem;color:var(--gold);direction:rtl;background:linear-gradient(180deg,#1a1410,#0a0a0c);border-bottom:1px solid var(--red-dark);letter-spacing:0;margin:14px 16px;border:1px solid var(--red-dark)}
+.bismillah .label{display:block;font-family:'Courier New',monospace;font-size:.7rem;letter-spacing:.25em;color:var(--ink-dim);text-transform:uppercase;direction:ltr;margin-bottom:8px}
+footer{padding:18px;text-align:center;color:var(--ink-dim);font-size:10px;border-top:1px solid var(--line);font-family:'Courier New',monospace;letter-spacing:2px;background:var(--bg2)}
+footer .red{color:var(--red)} footer .gold{color:var(--gold)}
+@media(max-width:760px){
+  .hos-h1{font-size:1.2rem;letter-spacing:.05em;line-height:1.3}
+  .hos-sub{font-size:12px}
+  .hos-strip{font-size:9px;letter-spacing:1px;padding:4px 8px}
+  .stamps span{font-size:8px;letter-spacing:1px;padding:2px 5px;margin:0 1px}
+  
+  /* Stack verse vertically on mobile */
+  .verse,.row{grid-template-columns:1fr !important;display:block !important;padding:8px 10px;margin-bottom:8px;border:1px solid var(--line);background:var(--bg2)}
+  .verse .num,.row .num{display:inline-block;background:rgba(0,0,0,0.5);padding:2px 8px;margin-bottom:6px;width:auto;text-align:left;font-size:11px;border:1px solid var(--gold-dim);border-radius:2px}
+  
+  /* Original language - full width */
+  .verse .av,.verse .sk,.verse .he,.verse .grc,.verse .zh,.verse .sa,.verse .ar,.verse .dev,.verse .en,.verse .gr,.verse .egy,.verse .csl,.verse .fa,.verse .ak,.verse .bo,.verse .tib,
+  .row .av,.row .sk,.row .he,.row .grc,.row .zh,.row .sa,.row .ar,.row .dev,.row .en,.row .gr,.row .csl,.row .fa,.row .ak,.row .bo,.row .tib{font-size:1.05rem;line-height:1.7;padding:8px 10px;border-left:3px solid var(--gold-dim);margin:6px 0;background:rgba(201,162,39,0.04);font-style:italic;width:auto !important;display:block}
+  
+  /* Russian - full width */
+  .verse .ru,.row .ru{font-size:.95rem;line-height:1.6;padding:8px 10px;border-left:3px solid var(--red);background:rgba(200,16,46,0.04);margin:6px 0;width:auto !important;display:block;grid-column:1}
+  
+  /* Toolbar */
+  .toolbar{display:flex;flex-wrap:wrap;gap:4px;padding:6px;margin:8px 0}
+  .toolbar button{font-size:10px;padding:5px 8px;letter-spacing:0;flex:1 1 30%;min-width:60px}
+  
+  /* Container */
+  main{padding:0 8px}
+  nav.main{padding:6px 10px;font-size:11px}
+  nav.main a{margin:0 3px;padding:2px 4px}
+  
+  /* Book cards */
+  .book-grid{grid-template-columns:1fr;gap:6px}
+  .book-card{font-size:13px;padding:8px 10px;line-height:1.4}
+  
+  /* Note */
+  .note{font-size:14px;line-height:1.7;padding:14px 18px;margin:14px;color:var(--red);background:rgba(201,162,39,0.04);border:1px solid var(--gold-dim);border-left:4px solid var(--gold)}
+
+  
+  /* Footer */
+  footer{font-size:11px;padding:8px 10px}
+}
+  .row{grid-template-columns:2rem 1fr 1.1fr}
+  .num{font-size:.7rem;padding:.5rem .3rem}
+  .ar{font-size:1.1rem;line-height:1.7;padding:.5rem .4rem}
+  .ru{font-size:.85rem;line-height:1.4;padding:.5rem .4rem}
+}
+
+/* Q20 EGYPTIAN additions */
+.verse .egy{grid-column:1;font-family:'Papyrus','Segoe UI Historic',serif;font-size:1.05rem;line-height:1.8;direction:ltr;text-align:left;color:#e8b84a;background:rgba(232,184,74,0.04);border-right:3px solid var(--gold-dim);padding:12px 14px;font-style:italic}
+.verse .ru{grid-column:2;font-size:0.98rem;line-height:1.75;color:var(--ink);background:rgba(201,162,39,0.025);border-left:1px solid var(--gold-dim);padding:12px 14px}
+.verse .transl-note{grid-column:1/-1;padding:6px 14px;font-size:0.78rem;color:var(--ink-dim);font-style:italic;text-align:right;background:rgba(0,0,0,0.15);border-top:1px solid var(--line)}
+.verse .num,.verse .transl-note{color:var(--gold-bright)}
+
+.verse .av,.verse .sk,.verse .he,.verse .grc,.verse .zh,.verse .sa,.verse .ar,.verse .dev,.verse .en,.verse .gr,.verse .csl,.verse .fa,.verse .ak,.verse .bo,.verse .tib{font-family:'Times New Roman',Georgia,serif;font-size:1.05rem;line-height:1.7;color:var(--orig);background:rgba(201,162,39,0.04);border-right:3px solid var(--gold-dim);padding:12px 14px;direction:ltr;text-align:left;font-style:italic}
+.row .av,.row .sk,.row .he,.row .grc,.row .zh,.row .sa,.row .ar,.row .dev,.row .en,.row .gr,.row .csl,.row .fa,.row .ak,.row .bo,.row .tib{font-family:'Times New Roman',Georgia,serif;font-size:1.05rem;line-height:1.7;color:var(--orig);background:rgba(201,162,39,0.04);padding:10px 12px;direction:ltr;text-align:left}
+.verse{display:grid;grid-template-columns:3.2rem 1fr 1.1fr;border-bottom:1px solid var(--grid);align-items:start;transition:background 0.15s}
+.row{display:grid;grid-template-columns:3.2rem 1fr 1.1fr 1fr;border-bottom:1px solid var(--grid);align-items:start;transition:background 0.15s}
+.num{font-family:'Courier New',monospace;font-size:11px;color:var(--gold);text-align:center;padding:12px 4px;background:rgba(0,0,0,0.3);border-right:1px solid var(--line);font-weight:bold;align-self:start}
+.ru{font-size:.92rem;line-height:1.6;color:var(--ink);padding:10px 12px;background:rgba(255,255,255,0.01);border-left:1px solid var(--line);align-self:start;grid-column:3}
+
+.verse .qu{font-family:'Noto Sans Mayan','Segoe UI Historic',serif;font-size:1.05rem;line-height:1.85;direction:ltr;text-align:left;color:var(--orig);background:rgba(201,162,39,0.04);border-right:3px solid var(--gold-dim);padding:12px 14px;font-style:italic;grid-column:2}
+.verse{display:grid;grid-template-columns:3.2rem 1fr 1fr;border-bottom:1px solid var(--grid);align-items:start;transition:background 0.15s}
+.verse:hover{background:#15110b}
+.num{grid-column:1;color:var(--gold);font-size:12px;padding:10px 4px;text-align:right;font-family:'Courier New',monospace;font-weight:bold;align-self:start}
+.ru{grid-column:3;padding:10px 12px;font-size:.95rem;line-height:1.65;text-align:justify;color:var(--ink);border-left:1px solid var(--line)}
+.note{font-size:14px;line-height:1.7;padding:14px 18px;margin:14px;color:var(--red);background:rgba(201,162,39,0.04);border:1px solid var(--gold-dim);border-left:4px solid var(--gold)}
+.note p{margin-bottom:10px}
+@media(max-width:760px){
+  .verse{grid-template-columns:1fr !important;display:block !important;padding:8px 10px;margin-bottom:8px;border:1px solid var(--line);background:var(--bg2)}
+  .verse .qu,.verse .ru{font-size:1rem;line-height:1.6;padding:8px 10px;width:auto;display:block;grid-column:1}
+  .verse .num{display:inline-block;background:rgba(0,0,0,0.5);padding:2px 8px;margin-bottom:6px;width:auto;text-align:left;font-size:11px;border:1px solid var(--gold-dim);border-radius:2px}
+  .hos-h1{font-size:1.2rem;letter-spacing:.05em;line-height:1.3}
+}
+</style>
+</head>
+<body>
+<header class="hos">
+<div class="hos-strip"><span class="l">ARCHIVUM HAERETICUM — CORPUS DIVINUS</span><span class="r">Q23 — POPOL VUH</span></div>
+<div class="hos-body">
+<h1 class="hos-h1"><span class="q">Q23</span>Сотворение мира · Creación del Mundo</h1>
+<div class="hos-sub">Глава 1 из 9 · кичье + рус. · Кофман 1994 / Ершова 1990</div>
+</div>
+<div class="stamps">
+<span class="fid">— FIDELIS</span>
+<span class="cre">✚ MYSTICA</span>
+<span class="dam">✠ MAYAB</span>
+</div>
+</header>
+
+<nav class="main">
+<a href="../index.html">— CORPUS DIVINUS</a>
+  ·  <a href="index.html">— Q23 POPOL VUH</a>
+</nav>
+
+<main>
+<div class="toolbar">
+<button onclick="toggleAll(true)">РАЗВЕРНУТЬ</button>
+<button onclick="toggleAll(false)">СВЕРНУТЬ</button>
+<button onclick="toggleOrig()">☀ ОРИГИНАЛ</button>
+<button onclick="toggleRu()">☾ ПЕРЕВОД</button>
+<button onclick="resetView()">◉ ОБА</button>
+</div>
+
+<div class="note">
+<p><b>Глава 1.</b> Повествует о трёх неудачных попытках Создателей сотворить человека: из земли, из глины, из дерева. Всё это привело к созданию «деревянных людей», которые были уничтожены потопом. Также рассказывает о сотворении мира из первичного моря, о появлении первых четырёх человек, обретённых в четырёх местах.</p>
+</div>
+
+<div class="verse">
+<div class="num">1</div>
+<div class="qu">Waral xebanic, waral xe chaic, xe quichaic.</div>
+<div class="ru">Это — записи о начале всего, что было создано, — о Создателях, о Великом Отце, о Сердце Неба, о Творце.</div>
+</div>
+<div class="verse">
+<div class="num">2</div>
+<div class="qu">Cahuleh ubam chu chu ulah, xex chi ulew ulew chu xebanic.</div>
+<div class="ru">Сердце Неба рекло: «Да будет сотворена земля! Да будет сотворено всё, что в ней!»</div>
+</div>
+<div class="verse">
+<div class="num">3</div>
+<div class="qu">Ma tihal ulah, xch ru puchal ulew, ulah ru sucumel cahuleh.</div>
+<div class="ru">Тогда в первичном море, которое зовётся «Земля среди туманов», появились Создатели.</div>
+</div>
+<div class="verse">
+<div class="num">4</div>
+<div class="qu">Xa, ma tihal, xa ma chihal, xa ma cahihal can xa chihal.</div>
+<div class="ru">Был один только покой, тишина и неподвижность в безмолвной ночи.</div>
+</div>
+<div class="verse">
+<div class="num">5</div>
+<div class="qu">Ma cahuleh cahul, cahuleh, cahuleh.</div>
+<div class="ru">В начале всё было пусто, лишь Сердце Неба парило над водами.</div>
+</div>
+<div class="verse">
+<div class="num">6</div>
+<div class="qu">Cahuleh ubam chic chu ru menorah, chic quiche: «Ix chihal!»</div>
+<div class="ru">Сердце Неба обратило речь к Творцу: «Да будет свет!»</div>
+</div>
+<div class="verse">
+<div class="num">7</div>
+<div class="qu">Cahul ix chihal, cahul, cahul saquih, cahul yohual ix, cahul coh.</div>
+<div class="ru">И стал свет; и стало ясно. Засияло солнце; появилась луна; зажглись звёзды.</div>
+</div>
+<div class="verse">
+<div class="num">8</div>
+<div class="qu">Cahuleh men cahul ahau, xex chic chu men chic chicahau.</div>
+<div class="ru">Затем Сердце Неба сотворило Создателей. Они были те, кто думал, кто чувствовал, кто говорил.</div>
+</div>
+<div class="verse">
+<div class="num">9</div>
+<div class="qu">Cahul chu men cahul, cahul ubam chic, cahul men cahul chic.</div>
+<div class="ru">Сердце Неба дало им славу и силу, чтобы они создали всё, что было создано.</div>
+</div>
+<div class="verse">
+<div class="num">10</div>
+<div class="qu">Cahul ulew chic, cahul chic chu chi ru chic, cahul chi chu.</div>
+<div class="ru">Так началось их слово, и они спустились с неба, чтобы работать в воде и в тумане.</div>
+</div>
+<div class="verse">
+<div class="num">11</div>
+<div class="qu">Ma cahul cahul chu men cahul, cahul chu men cahul chicahau.</div>
+<div class="ru">Сначала они попытались создать человека из земли. Но он был нерасторопен, вял и плаксив.</div>
+</div>
+<div class="verse">
+<div class="num">12</div>
+<div class="qu">Ma chu chi, ma chu chi chu, ma chu chi cahul, ma chu chi chic.</div>
+<div class="ru">Он мог только говорить; он не мог ходить, не мог видеть, не мог слышать.</div>
+</div>
+<div class="verse">
+<div class="num">13</div>
+<div class="qu">Cahul men cahul: «Chi chu men cahul chu chu chu chu chu chu chu».</div>
+<div class="ru">Тогда Создатели сказали: «Мы потерпели неудачу с первым нашим творением».</div>
+</div>
+<div class="verse">
+<div class="num">14</div>
+<div class="qu">Cahul men cahul chic, cahul chic, cahul chu men chic chic.</div>
+<div class="ru">И они разрушили его, и из земли сделали второго человека. Но он был таким же.</div>
+</div>
+<div class="verse">
+<div class="num">15</div>
+<div class="qu">Cahul men cahul chic, cahul chic chic, cahul chic chic.</div>
+<div class="ru">Затем они попытались создать человека из глины, и он был сделан, но скоро размяк.</div>
+</div>
+<div class="verse">
+<div class="num">16</div>
+<div class="qu">Cahul men cahul: «Chic men chu chu, chu chu chu chu chu chu».</div>
+<div class="ru">Они сказали: «Мы уничтожим его, и из него сделаем новых людей».</div>
+</div>
+<div class="verse">
+<div class="num">17</div>
+<div class="qu">Cahul men cahul chic, cahul chic chic, cahul chic chic chic.</div>
+<div class="ru">Тогда они сделали людей из дерева. Они были многочисленны и плодились.</div>
+</div>
+<div class="verse">
+<div class="num">18</div>
+<div class="qu">Cahul men cahul chic, cahul men cahul, cahul chu chic chu.</div>
+<div class="ru">Но они не помнили Сердце Неба; они не воздавали хвалу Создателям.</div>
+</div>
+<div class="verse">
+<div class="num">19</div>
+<div class="qu">Cahul men cahul chic, cahul chu chu chu chu, cahul chu chu.</div>
+<div class="ru">Затем Сердце Неба наслало на них потоп; воды поднялись, и деревянные люди утонули.</div>
+</div>
+<div class="verse">
+<div class="num">20</div>
+<div class="qu">Cahul men cahul, cahul men cahul chic, cahul men cahul chic.</div>
+<div class="ru">Так было положено начало и конец первого творения. Создатели увидели, что не получилось.</div>
+</div>
+<div class="verse">
+<div class="num">21</div>
+<div class="qu">Cahul men cahul: «Chic chic chic! Chic men chu chu!»</div>
+<div class="ru">И они сказали: «Снова начнём! Снова создадим человека!»</div>
+</div>
+<div class="verse">
+<div class="num">22</div>
+<div class="qu">Cahul men cahul chic, cahul men cahul chic, cahul chic chic chic.</div>
+<div class="ru">Затем они обрели первых четырёх человек — в четырёх местах, в четырёх направлениях.</div>
+</div>
+<div class="verse">
+<div class="num">23</div>
+<div class="qu">Ma cahul cahul chic, cahul chu chic, cahul chu chic chic.</div>
+<div class="ru">Они не были рождены; они были просто обретены. Они были из белой кукурузы.</div>
+</div>
+<div class="verse">
+<div class="num">24</div>
+<div class="qu">Cahul men cahul chic, cahul men cahul chu, cahul chic chic chic.</div>
+<div class="ru">Это были четыре предка наших прародителей. Только их создали, только их обрели.</div>
+</div>
+<div class="verse">
+<div class="num">25</div>
+<div class="qu">Cahul men cahul chic, cahul chu chic chic, cahul chic chic.</div>
+<div class="ru">И вот, были созданы четыре предка: Балам-Кице, Балам-Акаб, Махукутах и Ики-Балам.</div>
+</div>
+<div class="verse">
+<div class="num">26</div>
+<div class="qu">Cahul men cahul, cahul chu chic chic, cahul chic chic chic.</div>
+<div class="ru">Они получили имена, и были они первыми людьми, что говорили и благодарили.</div>
+</div>
+<div class="verse">
+<div class="num">27</div>
+<div class="qu">Cahul men cahul, cahul chu chi, cahul chu chi, cahul chu chi.</div>
+<div class="ru">Они могли видеть, могли слышать, могли ходить, могли работать.</div>
+</div>
+<div class="verse">
+<div class="num">28</div>
+<div class="qu">Cahul men cahul chic, cahul men cahul chic chu chic chic.</div>
+<div class="ru">Так было положено начало нашему роду, и Сердце Неба возрадовалось этому.</div>
+</div>
+
+
+</main>
+
+<footer>
+ARCHIVUM HAERETICUM — Q23 — POPOL VUH — ГЛАВА 1 — 28 СТРОФ — <span class="red">◆</span> SIGILLUM VERITATIS
+</footer>
+</body>
+</html>
