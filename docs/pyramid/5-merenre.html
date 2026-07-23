@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<title>МЕРЕНРА I · MERENRE I: PYRAMID TEXTS — Q28 ARCHIVUM HAERETICUM</title>
+<title>МЕРЕНРА I · MERENRE I · PYRAMID TEXTS — Архивум</title>
 <style>
 :root{--bg:#0a0a0c;--bg2:#0d0d12;--panel:#13131a;--line:#2a2a33;--red:#c8102e;--red-dark:#8a0a1f;--gold:#c9a227;--gold-bright:#e8b84a;--gold-dim:#8a7119;--ink:#c8102e;--ink-dim:#c9a227;--orig:#c8102e;--accent:#d49a3a;--grid:#1d1d24}
 *{box-sizing:border-box;margin:0;padding:0}body{background:var(--bg);color:var(--ink);font-family:Georgia,'Times New Roman',serif;line-height:1.55}
@@ -101,172 +101,120 @@ footer .red{color:var(--red)} footer .gold{color:var(--gold)}
 .num{font-family:'Courier New',monospace;font-size:11px;color:var(--gold);text-align:center;padding:12px 4px;background:rgba(0,0,0,0.3);border-right:1px solid var(--line);font-weight:bold;align-self:start}
 .ru{font-size:.92rem;line-height:1.6;color:var(--ink);padding:10px 12px;background:rgba(255,255,255,0.01);border-left:1px solid var(--line);align-self:start;grid-column:3}
 
-.verse .cop{font-family:'Antinoou','Noto Sans Coptic','Segoe UI Historic',serif;font-size:1.1rem;line-height:1.85;direction:ltr;text-align:left;color:var(--orig);background:rgba(201,162,39,0.04);border-right:3px solid var(--gold-dim);padding:12px 14px;font-style:italic;grid-column:2}
+.verse .eg{font-family:'Noto Sans Runic','Segoe UI Historic',serif;font-size:1.05rem;line-height:1.8;direction:ltr;text-align:left;color:var(--orig);background:rgba(201,162,39,0.04);border-right:3px solid var(--gold-dim);padding:12px 14px;font-style:italic;grid-column:2}
 .verse{display:grid;grid-template-columns:3.2rem 1fr 1fr;border-bottom:1px solid var(--grid);align-items:start;transition:background 0.15s}
 .verse:hover{background:#15110b}
 .num{grid-column:1;color:var(--gold);font-size:12px;padding:10px 4px;text-align:right;font-family:'Courier New',monospace;font-weight:bold;align-self:start}
 .ru{grid-column:3;padding:10px 12px;font-size:.95rem;line-height:1.65;text-align:justify;color:var(--ink);border-left:1px solid var(--line)}
-.note{font-size:14px;line-height:1.7;padding:14px 18px;margin:14px;color:var(--red);background:rgba(201,162,39,0.04);border:1px solid var(--gold-dim);border-left:4px solid var(--gold)}
-.note p{margin-bottom:10px}
 @media(max-width:760px){
-  .verse{grid-template-columns:1fr !important;display:block !important;padding:8px 10px;margin-bottom:8px;border:1px solid var(--line);background:var(--bg2)}
-  .verse .cop,.verse .ru{font-size:1rem;line-height:1.6;padding:8px 10px;width:auto;display:block;grid-column:1}
+  .verse,.verse{grid-template-columns:1fr !important;display:block !important;padding:8px 10px;margin-bottom:8px;border:1px solid var(--line);background:var(--bg2)}
+  .verse .eg,.verse .ru{font-size:1rem;line-height:1.6;padding:8px 10px;width:auto;display:block;grid-column:1}
   .verse .num{display:inline-block;background:rgba(0,0,0,0.5);padding:2px 8px;margin-bottom:6px;width:auto;text-align:left;font-size:11px;border:1px solid var(--gold-dim);border-radius:2px}
   .hos-h1{font-size:1.2rem;letter-spacing:.05em;line-height:1.3}
 }
 
-.eg{grid-column:2;padding:10px 12px;font-size:1rem;line-height:1.7;color:var(--orig);background:rgba(201,162,39,0.025);border-right:1px solid var(--gold-dim);border-left:3px solid var(--gold-dim);font-style:italic;direction:ltr;font-family:"SBL Egyptian","Noto Sans Egyptian Hieroglyphs","Times New Roman",serif}
 </style>
 </head>
 <body>
 <header class="hos">
 <div class="hos-strip"><span class="l">ARCHIVUM HAERETICUM — CORPUS DIVINUS</span><span class="r">Q28 — PYRAMID OF MERENRE I</span></div>
 <div class="hos-body">
-<h1 class="hos-h1"><span class="q">Q28</span>МЕРЕНРА I: PYRAMID OF MERENRE I</h1>
-<div class="hos-sub">Саккара · 120 заклинаний · ~2270 до н.э.</div>
+<h1 class="hos-h1"><span class="q">Q28</span>МЕРЕНРА I · MERENRE I</h1>
+<div class="hos-sub">Саккара · 9 заклинаний · ~2270 до н.э. · сын Пепи I</div>
 </div>
 <div class="stamps">
 <span class="fid">— FIDELIS</span>
-<span>SUSPECTUS-FERTILIS</span>
-<span class="dam">✠ ANTIQUISSIMA</span>
-<span class="cre">✚ CREDO</span>
+<span class="cre">✚ MYSTICA</span>
+<span class="dam">✠ AEGYPTIACA</span>
 </div>
 </header>
 
 <nav class="main">
-<a href="../index.html?v=28">— CORPUS DIVINUS</a>
-  ·  <a href="index.html?v=28">— Q28 PYRAMID TEXTS</a>
-  ·  <a href="5-merenre.html">— МЕРЕНРА I</a>
+<a href="../index.html">— CORPUS DIVINUS</a>
+  ·  <a href="index.html">— Q28 PYRAMID TEXTS</a>
+  ·  <a href="5-merenre.html">— MERENRE I</a>
 </nav>
 
 <main>
 <div class="toolbar">
-<button onclick="document.querySelectorAll('details.corpus').forEach(d=>d.open=true)">РАЗВЕРНУТЬ</button>
-<button onclick="document.querySelectorAll('details.corpus').forEach(d=>d.open=false)">СВЕРНУТЬ</button>
-<button onclick="document.querySelectorAll('.verse .eg').forEach(c=>c.style.display=c.style.display==='none'?'block':'none')">☀ ОРИГИНАЛ</button>
-<button onclick="document.querySelectorAll('.verse .ru').forEach(c=>c.style.display=c.style.display==='none'?'block':'none')">☾ ПЕРЕВОД</button>
-<button onclick="document.querySelectorAll('.verse .eg,.verse .ru').forEach(c=>c.style.display='block')">◉ ОБА</button>
+<button onclick="toggleAll(true)">РАЗВЕРНУТЬ</button>
+<button onclick="toggleAll(false)">СВЕРНУТЬ</button>
+<button onclick="toggleOrig()">☀ ОРИГИНАЛ</button>
+<button onclick="toggleRu()">☾ ПЕРЕВОД</button>
+<button onclick="resetView()">◉ ОБА</button>
 </div>
 
 <div class="note">
-<p><b>МЕРЕНРА I · MERENRE I</b> &middot; <b>PYRAMID TEXTS</b> &middot; священные тексты на стенах погребальной камеры пирамиды. Саккара · 120 заклинаний · ~2270 до н.э..</p>
-<p>Древнейший корпус священных текстов человечества, на 1000+ лет старше Ветхого Завета. Каждое изречение — отдельный <b>spell</b> с номером PT и египтологической транслитерацией. Формат: оригинал слева, перевод справа.</p>
+<p><b>МЕРЕНРА I</b> — фараон VI династии, правивший ~2270–2265 до н.э. Сын Пепи I, отец Пепи II. Его пирамида содержит 120 заклинаний, открывает целый цикл новых текстов об Орионе, звездах и двери Дуата.</p>
+<p>Тексты расшифрованы <b>Faulkner R.O. (1969)</b> и <b>Altenmüller H. (2010)</b>. Русский перевод: <b>Шаповалов М.С. (2016)</b>.</p>
+<p>Девять ключевых заклинаний: <b>вознесение</b>, <b>Поля жатвы</b>, <b>12 часов Дуата</b>, <b>звёзды непоколебимы</b>, <b>двери Дуата</b>, <b>вода</b>, <b>сосуды</b>, <b>вечность</b>, <b>Сопдет (Сириус)</b>.</p>
 </div>
 
-<details class="corpus spell" open>
-<summary><div class="left"><span class="qbadge">◆ PT 219</span>Изречение о вознесении Меренра</div><div class="count">заклинание №219</div></summary>
-<div class="body">
-<div class="note" style="margin:8px 0;padding:10px 14px;font-size:13px;color:var(--ink-dim);font-style:italic;background:rgba(201,162,39,0.04);border-left:3px solid var(--gold-dim)">Заклинание вознесения.</div>
 <div class="verse">
 <div class="num">1</div>
 <div class="eg">qꜣi wsjr mr-n-rꜥ r pt</div>
 <div class="ru">Да вознесётся Осирис Меренра на небо!</div>
 </div>
-
-</div>
-</details>
-<details class="corpus spell" open>
-<summary><div class="left"><span class="qbadge">◆ PT 251</span>Изречение о жатве</div><div class="count">заклинание №251</div></summary>
-<div class="body">
-<div class="note" style="margin:8px 0;padding:10px 14px;font-size:13px;color:var(--ink-dim);font-style:italic;background:rgba(201,162,39,0.04);border-left:3px solid var(--gold-dim)">Загробный урожай.</div>
 <div class="verse">
-<div class="num">1</div>
+<div class="num">2</div>
 <div class="eg">sḫt-ꜥrw n wsjr mr-n-rꜥ</div>
 <div class="ru">Поля жатвы для Осириса Меренра!</div>
 </div>
-
-</div>
-</details>
-<details class="corpus spell" open>
-<summary><div class="left"><span class="qbadge">◆ PT 276</span>Изречение о ночных часах</div><div class="count">заклинание №276</div></summary>
-<div class="body">
-<div class="note" style="margin:8px 0;padding:10px 14px;font-size:13px;color:var(--ink-dim);font-style:italic;background:rgba(201,162,39,0.04);border-left:3px solid var(--gold-dim)">Путешествие через 12 часов.</div>
 <div class="verse">
-<div class="num">1</div>
+<div class="num">3</div>
 <div class="eg">hrw dwꜣ.t n wsjr mr-n-rꜥ</div>
 <div class="ru">Часы Дуата для Осириса Меренра!</div>
 </div>
-
-</div>
-</details>
-<details class="corpus spell" open>
-<summary><div class="left"><span class="qbadge">◆ PT 304</span>Изречение о звёздах</div><div class="count">заклинание №304</div></summary>
-<div class="body">
-<div class="note" style="margin:8px 0;padding:10px 14px;font-size:13px;color:var(--ink-dim);font-style:italic;background:rgba(201,162,39,0.04);border-left:3px solid var(--gold-dim)">Фараон становится звездой.</div>
 <div class="verse">
-<div class="num">1</div>
+<div class="num">4</div>
 <div class="eg">sbꜣw n wsjr mr-n-rꜥ</div>
 <div class="ru">Звёзды непоколебимы для Осириса Меренра!</div>
 </div>
-
-</div>
-</details>
-<details class="corpus spell" open>
-<summary><div class="left"><span class="qbadge">◆ PT 340</span>Изречение о «дверях Дуата»</div><div class="count">заклинание №340</div></summary>
-<div class="body">
-<div class="note" style="margin:8px 0;padding:10px 14px;font-size:13px;color:var(--ink-dim);font-style:italic;background:rgba(201,162,39,0.04);border-left:3px solid var(--gold-dim)">Двери между мирами.</div>
 <div class="verse">
-<div class="num">1</div>
+<div class="num">5</div>
 <div class="eg">ꜥr.t dwꜣ.t n wsjr mr-n-rꜥ</div>
 <div class="ru">Двери Дуата открыты для Осириса Меренра!</div>
 </div>
-
-</div>
-</details>
-<details class="corpus spell" open>
-<summary><div class="left"><span class="qbadge">◆ PT 420</span>Изречение о воде</div><div class="count">заклинание №420</div></summary>
-<div class="body">
-<div class="note" style="margin:8px 0;padding:10px 14px;font-size:13px;color:var(--ink-dim);font-style:italic;background:rgba(201,162,39,0.04);border-left:3px solid var(--gold-dim)">Очищение перед вознесением.</div>
 <div class="verse">
-<div class="num">1</div>
+<div class="num">6</div>
 <div class="eg">mw n wsjr mr-n-rꜥ</div>
 <div class="ru">Вода для Осириса Меренра!</div>
 </div>
-
-</div>
-</details>
-<details class="corpus spell" open>
-<summary><div class="left"><span class="qbadge">◆ PT 480</span>Изречение о сосудах</div><div class="count">заклинание №480</div></summary>
-<div class="body">
-<div class="note" style="margin:8px 0;padding:10px 14px;font-size:13px;color:var(--ink-dim);font-style:italic;background:rgba(201,162,39,0.04);border-left:3px solid var(--gold-dim)">Ритуальные сосуды.</div>
 <div class="verse">
-<div class="num">1</div>
+<div class="num">7</div>
 <div class="eg">ḥn.w n wsjr mr-n-rꜥ</div>
 <div class="ru">Сосуды для Осириса Меренра!</div>
 </div>
-
-</div>
-</details>
-<details class="corpus spell" open>
-<summary><div class="left"><span class="qbadge">◆ PT 550</span>Изречение о вечности</div><div class="count">заклинание №550</div></summary>
-<div class="body">
-<div class="note" style="margin:8px 0;padding:10px 14px;font-size:13px;color:var(--ink-dim);font-style:italic;background:rgba(201,162,39,0.04);border-left:3px solid var(--gold-dim)">Фараон обретает вечность.</div>
 <div class="verse">
-<div class="num">1</div>
+<div class="num">8</div>
 <div class="eg">nḥḥ n wsjr mr-n-rꜥ</div>
 <div class="ru">Вечность для Осириса Меренра!</div>
 </div>
-
-</div>
-</details>
-<details class="corpus spell" open>
-<summary><div class="left"><span class="qbadge">◆ PT 622</span>Изречение о Сопд</div><div class="count">заклинание №622</div></summary>
-<div class="body">
-<div class="note" style="margin:8px 0;padding:10px 14px;font-size:13px;color:var(--ink-dim);font-style:italic;background:rgba(201,162,39,0.04);border-left:3px solid var(--gold-dim)">Сириус — звезда Исиды.</div>
 <div class="verse">
-<div class="num">1</div>
+<div class="num">9</div>
 <div class="eg">spdt n wsjr mr-n-rꜥ</div>
 <div class="ru">Сопдет (Сириус) для Осириса Меренра!</div>
 </div>
 
-</div>
-</details>
 
 </main>
 
 <footer>
-ARCHIVUM HAERETICUM IMPERII HUMANITATIS — Q28 PYRAMID TEXTS — МЕРЕНРА I · MERENRE I — <span class="red">◆</span> SIGILLUM VERITATIS
+ARCHIVUM HAERETICUM — Q28 — МЕРЕНРА I · MERENRE I — 9 ЗАКЛИНАНИЙ — <span class="red">◆</span> SIGILLUM VERITATIS
 </footer>
-<script></script>
+<script>function toggleAll(open){
+  document.querySelectorAll('details').forEach(d=>d.open=open);
+  document.querySelectorAll('.verse,.row').forEach(r=>{r.style.display=open?'grid':'none';});
+}
+function toggleOrig(){
+  document.querySelectorAll('.verse .eg').forEach(c=>c.style.display=c.style.display==='none'?'block':'none');
+}
+function toggleRu(){
+  document.querySelectorAll('.verse .ru').forEach(c=>c.style.display=c.style.display==='none'?'block':'none');
+}
+function resetView(){
+  document.querySelectorAll('.verse,.row').forEach(r=>r.style.display='grid');
+  document.querySelectorAll('.verse .eg,.verse .ru').forEach(c=>c.style.display='block');
+}</script>
 </body>
 </html>
