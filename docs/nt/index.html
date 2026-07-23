@@ -5,6 +5,13 @@
   <span style="display:inline-block;border:1px solid #8c2f26;color:#8c2f26;font-size:10px;letter-spacing:2px;padding:4px 10px;margin:0 3px">✠ DAMNATUS</span>
   <span style="display:inline-block;border:1px solid #e8b84a;color:#e8b84a;background:rgba(232,184,74,0.05);font-size:10px;letter-spacing:2px;padding:4px 10px;margin:0 3px">✚ CREDO</span>
 </div><nav><a href="../index.html">✠ Оглавление</a> &nbsp;|&nbsp;</nav><main><div class="meta">НОВЫЙ ЗАВЕТ · параллельная читалка · 27 книг · SBLGNT + Синодальный 1876 · Корпус Divinus, фаза Q2</div>
+<div class="toolbar">
+<button onclick="toggleAll(true)">▼ Развернуть все</button>
+<button onclick="toggleAll(false)">▲ Свернуть все</button>
+<button onclick="toggleOrig()">🌙 Только оригинал</button>
+<button onclick="toggleRu()">📖 Только перевод</button>
+<button onclick="resetView()">◉ Оба</button>
+</div>
 <div style="column-width:300px;column-gap:2rem">
 <p style='margin:.25rem 0'><a href="nt/61-Mt.html">Евангелие от Матфея</a></p>
 <p style='margin:.25rem 0'><a href="nt/62-Mk.html">Евангелие от Марка</a></p>
@@ -33,4 +40,32 @@
 <p style='margin:.25rem 0'><a href="nt/85-3Jn.html">3-е послание Иоанна</a></p>
 <p style='margin:.25rem 0'><a href="nt/86-Jud.html">Послание Иуды</a></p>
 <p style='margin:.25rem 0'><a href="nt/87-Re.html">Откровение Иоанна Богослова</a></p>
-</div></main></body></html>
+</div></main><script>
+function toggleAll(state){
+  document.querySelectorAll('.row').forEach(r=>{
+    r.style.display = state ? 'grid' : 'none';
+  });
+}
+function toggleOrig(){
+  document.querySelectorAll('.row').forEach(r=>{
+    r.style.display='grid';
+    r.querySelector('.ar').style.display='block';
+    r.querySelector('.ru').style.display='none';
+  });
+}
+function toggleRu(){
+  document.querySelectorAll('.row').forEach(r=>{
+    r.style.display='grid';
+    r.querySelector('.ar').style.display='none';
+    r.querySelector('.ru').style.display='block';
+  });
+}
+function resetView(){
+  document.querySelectorAll('.row').forEach(r=>{
+    r.style.display='grid';
+    r.querySelector('.ar').style.display='block';
+    r.querySelector('.ru').style.display='block';
+  });
+}
+</script>
+</body></html>

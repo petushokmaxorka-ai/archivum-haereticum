@@ -17,10 +17,20 @@ header.top .sub{color:var(--ink-dim);font-size:14px}
 .idx-card .t{color:var(--gold);font-size:16px}.idx-card .s{color:var(--ink-dim);font-size:12px;margin-top:2px}
 .note{margin:14px 24px;padding:12px 16px;border:1px solid var(--line);background:var(--panel);font-size:13px;color:var(--ink-dim)}
 footer{padding:24px;color:var(--ink-dim);font-size:12px;border-top:1px solid var(--line);margin-top:20px}
+.toolbar{display:flex;justify-content:center;gap:8px;flex-wrap:wrap;margin:12px 0;padding:8px;background:#15151a;border:1px solid #2a2a33;border-radius:4px;font-family:Georgia,serif}
+.toolbar button{background:#1f1a12;border:1px solid #c9a227;color:#c9a227;padding:6px 12px;font-size:11px;letter-spacing:1px;cursor:pointer;font-family:Georgia,serif;text-transform:uppercase}
+.toolbar button:hover{background:#2a2010}
 </style></head><body>
 <header class="top"><div class="brand">ARCHIVUM HAERETICUM · CORPUS DIVINUS · Q6</div>
 <h1>РИГВЕДА (ṚGVEDA)<span class="stamp">◆ FIDELIS</span></h1>
 <div class="sub">«Знание гимнов» · древнейший из четырёх Вед · 10 мандал (книг) · 1028 гимнов (сукт) · 10 261 стих (рич) · ок. 1500-1200 до н.э. · Индия</div></header>
+<div class="toolbar">
+<button onclick="toggleAll(true)">▼ Развернуть все</button>
+<button onclick="toggleAll(false)">▲ Свернуть все</button>
+<button onclick="toggleOrig()">🌙 Только оригинал</button>
+<button onclick="toggleRu()">📖 Только перевод</button>
+<button onclick="resetView()">◉ Оба</button>
+</div>
 <div class="note"><b>Ригведа (Ṛgveda, Риг-Веда)</b> — древнейший из четырёх Вед индуизма, свод религиозных гимнов, собранных в Пенджабе (СЗ Индия) ок. 1500-1200 до н.э. Состоит из 10 мандал (книг) + вводная мандала (обычно = I.1-9). <b>Структура</b>: 1 028 гимнов, 10 261 стих. <b>Боги</b>: Агни (жертвенный огонь), Индра (громовержец), Варуна (космический закон), Сома (священный напиток), Адити (мать богов), Ушас (заря), Ашвины (близнецы-целители) и др. <b>Язык</b>: ведический санскрит (архаичный, с богатой акцентологией). <b>Свидетели</b>: <ul><li><b>Слева</b> — санскрит (bhavykhatri/DharmicData, GitHub, CC-BY-SA): полный текст с метрической разметкой</li><li><b>Справа</b> — перевод Т.Я. Елизаренковой (1989-1999, Институт востоковедения РАН, общественное достояние)</li></ul></div>
 <div class="idx-group"><h2>МАНДАЛЫ (КНИГИ)</h2><div class="idx-grid">
 <a class="idx-card" href="mi.html"><div class="t">Мандала I</div><div class="s">22 гимнов · 257 RU · 245 SK</div></a>
@@ -34,4 +44,24 @@ footer{padding:24px;color:var(--ink-dim);font-size:12px;border-top:1px solid var
 </div></div>
 <div class="note">Всего в корпусе: 188 гимнов (1+ Мандалы I, II, III, IV, V, VIII, IX, X) с полным параллельным текстом · 2083 стихов на русском · 1998 стихов на санскрите. В корпусе нет полностью Мандал VI, VII — санскритский источник bhavykhatri/DharmicData содержит 1 028 из 1 028 гимнов Ригведы, а русский перевод (scriptures.ru) включает 188 гимнов первой половины корпуса.</div>
 <footer>ARCHIVUM HAERETICUM IMPERII HUMANITATIS · Q6 · РИГВЕДА · источники: bhavykhatri/DharmicData (sanskrit, CC-BY-SA), scriptures.ru (рус. перевод Елизаренковой, PD).<br>Sigillum: ◆◆◆ FIDELIS · Datum: 158.M3</footer>
+<script>
+function toggleAll(state){
+  document.querySelectorAll('.verse').forEach(r=>{r.style.display=state?'grid':'none';});
+  document.querySelectorAll('.row').forEach(r=>{r.style.display=state?'grid':'none';});
+  document.querySelectorAll('table.orph tr').forEach(r=>{r.style.display=state?'':'none';});
+}
+function toggleOrig(){
+  document.querySelectorAll('.verse').forEach(r=>{r.style.display='grid';const o=r.querySelector('.sk,.av,.zh,.sa,.en,.dev,.ar,.gr,.he,.grc');if(o)o.style.display='block';const ru=r.querySelector('.ru,.rus');if(ru)ru.style.display='none';});
+  document.querySelectorAll('.row').forEach(r=>{r.style.display='grid';const o=r.querySelector('.sk,.av,.zh,.sa,.en,.dev,.ar,.gr,.he,.grc');if(o)o.style.display='block';const ru=r.querySelector('.ru,.rus');if(ru)ru.style.display='none';});
+}
+function toggleRu(){
+  document.querySelectorAll('.verse').forEach(r=>{r.style.display='grid';const o=r.querySelector('.sk,.av,.zh,.sa,.en,.dev,.ar,.gr,.he,.grc');if(o)o.style.display='none';const ru=r.querySelector('.ru,.rus');if(ru)ru.style.display='block';});
+  document.querySelectorAll('.row').forEach(r=>{r.style.display='grid';const o=r.querySelector('.sk,.av,.zh,.sa,.en,.dev,.ar,.gr,.he,.grc');if(o)o.style.display='none';const ru=r.querySelector('.ru,.rus');if(ru)ru.style.display='block';});
+}
+function resetView(){
+  document.querySelectorAll('.verse,.row').forEach(r=>{r.style.display='grid';});
+  document.querySelectorAll('.sk,.av,.zh,.sa,.en,.dev,.ar,.gr,.he,.grc,.ru,.rus').forEach(c=>{c.style.display='';});
+  document.querySelectorAll('table.orph tr').forEach(r=>{r.style.display='';});
+}
+</script>
 </body></html>

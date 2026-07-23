@@ -5,6 +5,13 @@
   <span style="display:inline-block;border:1px solid #8c2f26;color:#8c2f26;font-size:10px;letter-spacing:2px;padding:4px 10px;margin:0 3px">✠ DAMNATUS</span>
   <span style="display:inline-block;border:1px solid #e8b84a;color:#e8b84a;background:rgba(232,184,74,0.05);font-size:10px;letter-spacing:2px;padding:4px 10px;margin:0 3px">✚ CREDO</span>
 </div><nav><a href="./index.html">✠ Оглавление</a><a href="62-Mk.html">Евангелие от Марка →</a></nav><main><div class="meta">Греческий: SBLGNT (© Logos/SBL, CC BY) · Русский: Синодальный перевод 1876 (Public Domain) · Печать: ◆ FIDELIS</div>
+<div class="toolbar">
+<button onclick="toggleAll(true)">▼ Развернуть все</button>
+<button onclick="toggleAll(false)">▲ Свернуть все</button>
+<button onclick="toggleOrig()">🌙 Только оригинал</button>
+<button onclick="toggleRu()">📖 Только перевод</button>
+<button onclick="resetView()">◉ Оба</button>
+</div>
 <div class="chap">Глава 1</div>
 <div class="row"><span class="num">1:1</span><div class="gr" lang="grc">Βίβλος γενέσεως Ἰησοῦ χριστοῦ υἱοῦ Δαυὶδ υἱοῦ Ἀβραάμ.</div><div class="ru">Родословие Иисуса Христа, Сына Давидова, Сына Авраамова.</div></div>
 <div class="row"><span class="num">1:2</span><div class="gr" lang="grc">Ἀβραὰμ ἐγέννησεν τὸν Ἰσαάκ, Ἰσαὰκ δὲ ἐγέννησεν τὸν Ἰακώβ, Ἰακὼβ δὲ ἐγέννησεν τὸν Ἰούδαν καὶ τοὺς ἀδελφοὺς αὐτοῦ,</div><div class="ru">Авраам родил Исаака; Исаак родил Иакова; Иаков родил Иуду и братьев его;</div></div>
@@ -1103,4 +1110,32 @@
 <div class="row"><span class="num">28:17</span><div class="gr" lang="grc">καὶ ἰδόντες αὐτὸν ⸀προσεκύνησαν, οἱ δὲ ἐδίστασαν.</div><div class="ru">и, увидев Его, поклонились Ему, а иные усомнились.</div></div>
 <div class="row"><span class="num">28:18</span><div class="gr" lang="grc">καὶ προσελθὼν ὁ Ἰησοῦς ἐλάλησεν αὐτοῖς λέγων· Ἐδόθη μοι πᾶσα ἐξουσία ἐν οὐρανῷ καὶ ἐπὶ ⸀τῆς γῆς·</div><div class="ru">И, приблизившись, Иисус сказал им: дана Мне всякая власть на небе и на земле.</div></div>
 <div class="row"><span class="num">28:19</span><div class="gr" lang="grc">πορευθέντες ⸀οὖν μαθητεύσατε πάντα τὰ ἔθνη, ⸀βαπτίζοντες αὐτοὺς εἰς τὸ ὄνομα τοῦ πατρὸς καὶ τοῦ υἱοῦ καὶ τοῦ ἁγίου πνεύματος,</div><div class="ru">Итак, идите, научите все народы, крестя их во имя Отца и Сына и Святого Духа,</div></div>
-<div class="row"><span class="num">28:20</span><div class="gr" lang="grc">διδάσκοντες αὐτοὺς τηρεῖν πάντα ὅσα ἐνετειλάμην ὑμῖν· καὶ ἰδοὺ ἐγὼ μεθ’ ὑμῶν εἰμι πάσας τὰς ἡμέρας ἕως τῆς συντελείας τοῦ ⸀αἰῶνος.</div><div class="ru">уча их соблюдать все, что Я повелел вам; и се, Я с вами во все дни до скончания века. Аминь.</div></div></main></body></html>
+<div class="row"><span class="num">28:20</span><div class="gr" lang="grc">διδάσκοντες αὐτοὺς τηρεῖν πάντα ὅσα ἐνετειλάμην ὑμῖν· καὶ ἰδοὺ ἐγὼ μεθ’ ὑμῶν εἰμι πάσας τὰς ἡμέρας ἕως τῆς συντελείας τοῦ ⸀αἰῶνος.</div><div class="ru">уча их соблюдать все, что Я повелел вам; и се, Я с вами во все дни до скончания века. Аминь.</div></div></main><script>
+function toggleAll(state){
+  document.querySelectorAll('.row').forEach(r=>{
+    r.style.display = state ? 'grid' : 'none';
+  });
+}
+function toggleOrig(){
+  document.querySelectorAll('.row').forEach(r=>{
+    r.style.display='grid';
+    r.querySelector('.ar').style.display='block';
+    r.querySelector('.ru').style.display='none';
+  });
+}
+function toggleRu(){
+  document.querySelectorAll('.row').forEach(r=>{
+    r.style.display='grid';
+    r.querySelector('.ar').style.display='none';
+    r.querySelector('.ru').style.display='block';
+  });
+}
+function resetView(){
+  document.querySelectorAll('.row').forEach(r=>{
+    r.style.display='grid';
+    r.querySelector('.ar').style.display='block';
+    r.querySelector('.ru').style.display='block';
+  });
+}
+</script>
+</body></html>

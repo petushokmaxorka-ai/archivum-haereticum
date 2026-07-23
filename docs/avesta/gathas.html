@@ -22,13 +22,43 @@ tr.vhead td{background:var(--panel);color:var(--gold);font-size:15px;letter-spac
 footer{padding:22px;color:var(--ink-dim);font-size:12px;border-top:1px solid var(--line);margin-top:18px}
 .note{margin:14px 24px;padding:12px 16px;border:1px solid var(--line);background:var(--panel);font-size:13px;color:var(--ink-dim)}
 @media(max-width:900px){td.av{font-size:.95rem}td.ref{width:40px}}
+.toolbar{display:flex;justify-content:center;gap:8px;flex-wrap:wrap;margin:12px 0;padding:8px;background:#15151a;border:1px solid #2a2a33;border-radius:4px;font-family:Georgia,serif}
+.toolbar button{background:#1f1a12;border:1px solid #c9a227;color:#c9a227;padding:6px 12px;font-size:11px;letter-spacing:1px;cursor:pointer;font-family:Georgia,serif;text-transform:uppercase}
+.toolbar button:hover{background:#2a2010}
 </style>
 </head><body>
 <header class="top"><div class="brand">ARCHIVUM HAERETICUM · CORPUS DIVINUS · АВЕСТА</div>
 <h1>Гаты Заратуштры · Ахунаваити (Ясна 28-34)<span class="stamp">◆ FIDELIS</span><span class="stamp fir">✚ ОСНОВА</span></h1>
 <div class="sub">7 гимнов пророка Заратуштры (Зороаштры) · Yasna 28-34 · авестийский транслитерированный + русский перевод М.В. Чистякова (2005)</div></header>
+<div class="toolbar">
+<button onclick="toggleAll(true)">▼ Развернуть все</button>
+<button onclick="toggleAll(false)">▲ Свернуть все</button>
+<button onclick="toggleOrig()">🌙 Только оригинал</button>
+<button onclick="toggleRu()">📖 Только перевод</button>
+<button onclick="resetView()">◉ Оба</button>
+</div>
 <nav class="gathas"><a href="index.html">← Оглавление</a> &nbsp;|&nbsp; <a href="#y28">Ясна 28</a> &nbsp;|&nbsp; <a href="#y29">Ясна 29</a> &nbsp;|&nbsp; <a href="#y30">Ясна 30</a> &nbsp;|&nbsp; <a href="#y31">Ясна 31</a> &nbsp;|&nbsp; <a href="#y32">Ясна 32</a> &nbsp;|&nbsp; <a href="#y33">Ясна 33</a> &nbsp;|&nbsp; <a href="#y34">Ясна 34</a></nav>
 <div class="note"><b>Гаты (Gāθā)</b> — священные гимны пророка Заратуштры, составляющие ядро Авесты. Написаны на древнеавестийском языке (отличном от младшеавестийского) ок. 1200-1000 до н.э. Пять Гат: <b>Ахунаваити (28-34)</b>, <b>Уштаваити (43-46)</b>, <b>Спентамайнью (47-50)</b>, <b>Вохухшатра (51)</b>, <b>Вахиштоишти (53)</b>. Содержат: <ul><li>монотеизм (Ахура Мазда — единый Бог-Творец)</li><li>дуализм (Ангра-Майнью = злой дух, противник Ахура Мазды)</li><li>эсхатология (Фрашокэрти = обновление мира)</li><li>этика Благих Мыслей, Слов и Дел</li></ul> <b>Источник авестийского</b>: Чистяков М.В., Хордэ Авеста, СПб, 2005 (транслитерация). <b>Источник перевода</b>: тот же.</div>
 <table class="verses"><tr class="vhead"><td colspan="3">ЯСНА 28 · Ахунаваити 28 (Ahunavaiti) · 5 строф</td></tr><tr><td class="ref">—</td><td class="av">kaT aßava mazda vanaT drvañtem, / aßava vanaT drujim aßava vanaT drvañtem; / ußi ahurahé mazdÅ Yazamaidé / darelrAi målrahé speñtahé</td><td class="rus">О Мазда, победит ли праведный лживого? Праведный победит Ложь, Праведный победит поборника лжи. Уши Ахура-Мазды почитаем мы для восприятия Святой Мантры.</td></tr><tr class="vhead"><td colspan="3">ЯСНА 29 · Ахунаваити 29 · 7 строф</td></tr><tr><td class="ref">—</td><td class="av">AaT aoKta zaraluStrO, / upa lwA azem mairé anu.daQayaT speñtayÅ ArmatOiS dOilrAbya avAstryata mairyO;</td><td class="rus">И говорил Заратуштра: «В согласии с этим я одержал бы верх над негодяем». И пред очами Святой Армайти повержен негодяй.</td></tr><tr class="vhead"><td colspan="3">ЯСНА 30 · Ахунаваити 30 (Staomi Yesne) · 11 строф</td></tr><tr><td class="ref">—</td><td class="av">stuYtÅ ahurÅ yazamaidé / mazdÅ vouru.gaoyaoitim, / yaTcA ahmÅ nemanghÅ yåcA gayåscA sraošyåscA aßaonyÅscA yazamaidé;</td><td class="rus">Славословим Ахура-Мазду, Святого Духа, все лучшие творения и всех Праведных, да будет это почитание нашим.</td></tr><tr class="vhead"><td colspan="3">ЯСНА 31 · Ахунаваити 31 (Usnemā) · 22 строф</td></tr><tr><td class="ref">—</td><td class="av">ußi ahurahé mazdÅ Yazamaidé darelrAi målrahé speñtahé; KratUm ahurahé mazdÅ Yazamaidé marelrAi målrahé speñtahé; hizvåm ahurahé mazdÅ Yazamaidé fravAkAi målrahé speñtahé;</td><td class="rus">Уши Ахура-Мазды почитаем мы для восприятия Святой Мантры. Разум Ахура-Мазды почитаем мы для запоминания Святой Мантры. Язык Ахура-Мазды почитаем мы для произнесения Святой Мантры.</td></tr><tr class="vhead"><td colspan="3">ЯСНА 32 · Ахунаваити 32 (Yəmā) · 8 строф</td></tr><tr><td class="ref">—</td><td class="av">dAmIm Yazamaidé Yåm ArmaitIm speñtåm Yéhé dAlré aßahéca aßaonåmca aßa.paoiryanåm dAmanåm;</td><td class="rus">Мудрость почитаем мы, ту, что есть Спэнта Армайти, которая (проявилась) при создании Истины и праведников, первых в Истине.</td></tr><tr class="vhead"><td colspan="3">ЯСНА 33 · Ахунаваити 33 (Ātarə-nāfnā) · 5 строф</td></tr><tr><td class="ref">—</td><td class="av">paiti rcAså YAvayaT, paouruyÅ åtarå ahurahe mazdÅ puthrÅ, yaT vohu mazda aSahe yAsnemahi;</td><td class="rus">На Священном Слове основан Огонь Ахура-Мазды, который сияет от рассвета до заката; он — для Свята и Праведного.</td></tr><tr class="vhead"><td colspan="3">ЯСНА 34 · Ахунаваити 34 (Xšaθrā) · 5 строф</td></tr><tr><td class="ref">—</td><td class="av">xšaθrOm ahurA mazdÅ dArayo, / dArayo dAmYūm aßaonō, / apom ahurA mazdÅ aßaonō xšnūθrÅ dArayo;</td><td class="rus">Власть дай, о Ахура Мазда, праведному владыке, и благодать — изобилие праведному, силу в правде.</td></tr></table>
 <footer>ARCHIVUM HAERETICUM IMPERII HUMANITATIS · Q7 · АВЕСТА · источник: М.В. Чистяков, «Хордэ Авеста» (2005).<br>Sigillum: ◆◆◆ FIDELIS · Datum: 159.M3</footer>
+<script>
+function toggleAll(state){
+  document.querySelectorAll('.verse').forEach(r=>{r.style.display=state?'grid':'none';});
+  document.querySelectorAll('.row').forEach(r=>{r.style.display=state?'grid':'none';});
+  document.querySelectorAll('table.orph tr').forEach(r=>{r.style.display=state?'':'none';});
+}
+function toggleOrig(){
+  document.querySelectorAll('.verse').forEach(r=>{r.style.display='grid';const o=r.querySelector('.sk,.av,.zh,.sa,.en,.dev,.ar,.gr,.he,.grc');if(o)o.style.display='block';const ru=r.querySelector('.ru,.rus');if(ru)ru.style.display='none';});
+  document.querySelectorAll('.row').forEach(r=>{r.style.display='grid';const o=r.querySelector('.sk,.av,.zh,.sa,.en,.dev,.ar,.gr,.he,.grc');if(o)o.style.display='block';const ru=r.querySelector('.ru,.rus');if(ru)ru.style.display='none';});
+}
+function toggleRu(){
+  document.querySelectorAll('.verse').forEach(r=>{r.style.display='grid';const o=r.querySelector('.sk,.av,.zh,.sa,.en,.dev,.ar,.gr,.he,.grc');if(o)o.style.display='none';const ru=r.querySelector('.ru,.rus');if(ru)ru.style.display='block';});
+  document.querySelectorAll('.row').forEach(r=>{r.style.display='grid';const o=r.querySelector('.sk,.av,.zh,.sa,.en,.dev,.ar,.gr,.he,.grc');if(o)o.style.display='none';const ru=r.querySelector('.ru,.rus');if(ru)ru.style.display='block';});
+}
+function resetView(){
+  document.querySelectorAll('.verse,.row').forEach(r=>{r.style.display='grid';});
+  document.querySelectorAll('.sk,.av,.zh,.sa,.en,.dev,.ar,.gr,.he,.grc,.ru,.rus').forEach(c=>{c.style.display='';});
+  document.querySelectorAll('table.orph tr').forEach(r=>{r.style.display='';});
+}
+</script>
 </body></html>

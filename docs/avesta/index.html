@@ -20,10 +20,20 @@ footer{padding:24px;color:var(--ink-dim);font-size:12px;border-top:1px solid var
 .legend{padding:14px 24px;background:var(--panel);border-bottom:1px solid var(--line);font-size:12px}
 .legend span{display:inline-block;border:1px solid var(--gold-dim);color:var(--gold);font-size:10px;letter-spacing:2px;padding:3px 8px;margin-right:5px}
 .legend span.fir{color:#e8b84a;background:rgba(232,184,74,0.05);border-color:#e8b84a}
+.toolbar{display:flex;justify-content:center;gap:8px;flex-wrap:wrap;margin:12px 0;padding:8px;background:#15151a;border:1px solid #2a2a33;border-radius:4px;font-family:Georgia,serif}
+.toolbar button{background:#1f1a12;border:1px solid #c9a227;color:#c9a227;padding:6px 12px;font-size:11px;letter-spacing:1px;cursor:pointer;font-family:Georgia,serif;text-transform:uppercase}
+.toolbar button:hover{background:#2a2010}
 </style></head><body>
 <header class="top"><div class="brand">ARCHIVUM HAERETICUM · CORPUS DIVINUS · Q7</div>
 <h1>АВЕСТА (AVESTĀ)<span class="stamp">◆ FIDELIS</span><span class="stamp fir">✚ ОСНОВА</span></h1>
 <div class="sub">Священный свод зороастризма · «Видевдат» + «Хордэ Авеста» + «Гаты» · ок. 1200-1000 до н.э. · Иран (древний)</div></header>
+<div class="toolbar">
+<button onclick="toggleAll(true)">▼ Развернуть все</button>
+<button onclick="toggleAll(false)">▲ Свернуть все</button>
+<button onclick="toggleOrig()">🌙 Только оригинал</button>
+<button onclick="toggleRu()">📖 Только перевод</button>
+<button onclick="resetView()">◉ Оба</button>
+</div>
 <div class="legend">
   <span>◆ FIDELIS</span><span>◇ SUSPECTUS</span><span>✠ DAMNATUS</span><span class="fir">✚ ОСНОВА</span>
 </div>
@@ -32,8 +42,30 @@ footer{padding:24px;color:var(--ink-dim);font-size:12px;border-top:1px solid var
 <div class="idx-grid" id="g0">
 <a class="idx-card" href="gathas.html"><div class="t">Ахунаваити (28-34) — полный текст</div><div class="s">7 строф · Ясна 28-34 · полностью с авестийским + русским</div></a>
 </div></div>
-<div class="idx-group"><h2>ВСЕ 5 ГАТ</h2><div class="idx-grid">
-<a class="idx-card" href="#g1"><div class="t">Ахунаваити (Ahunavaiti)</div><div class="s">Ясна Y28-34 · 7 строф · Самая длинная Гата. Гимны в честь Ахура Мазды и Святых Бессмертных. Открывается </div></a><a class="idx-card" href="#g2"><div class="t">Уштаваити (Ushtavaiti)</div><div class="s">Ясна Y43-46 · 4 строф · Гимны о Святом Духе (Спента-Майнью) и обретении мудрости</div></a><a class="idx-card" href="#g3"><div class="t">Спентамайнью (Spentamainyush)</div><div class="s">Ясна Y47-50 · 4 строф · Гимны о Святой Земле и стремлении праведника к Ахура Мазде</div></a><a class="idx-card" href="#g4"><div class="t">Вохухшатра (Vohukhshathra)</div><div class="s">Ясна Y51 · 1 строф · Гимн «Благая Власть» — о союзе людей ради Истины</div></a><a class="idx-card" href="#g5"><div class="t">Вахиштоишти (Vahishtoishti)</div><div class="s">Ясна Y53 · 1 строф · Гимн «Лучшая Сущность» — об Аше (Истине) и её могуществе</div></a>
+<div class="idx-group"><h2>ВСЕ 5 ГАТ ЗАРАТУШТРЫ</h2>
+<div class="note">Все 17 гимнов Заратуштры, 5 строф (Ahunavaiti · Ushtavaiti · Spentamainyu · Vohukhshathra · Vahistoishti). Ядро Авесты. Ок. VI в. до н.э.</div>
+<div class="idx-grid">
+<a class="idx-card" href="gathas.html"><div class="t">Ахунаваити (Ahunavaiti)</div><div class="s">Ясна Y28-34 · 7 строф · Самая длинная Гата. Гимны в честь Ахура Мазды и Святых Бессмертных. Открывается </div></a><a class="idx-card" href="ushtavaiti.html"><div class="t">Уштаваити (Ushtavaiti)</div><div class="s">Ясна Y43-46 · 4 строф · Гимны о Святом Духе (Спента-Майнью) и обретении мудрости</div></a><a class="idx-card" href="spentamainyu.html"><div class="t">Спентамайнью (Spentamainyush)</div><div class="s">Ясна Y47-50 · 4 строф · Гимны о Святой Земле и стремлении праведника к Ахура Мазде</div></a><a class="idx-card" href="vohukhshathra.html"><div class="t">Вохухшатра (Vohukhshathra)</div><div class="s">Ясна Y51 · 1 строф · Гимн «Благая Власть» — о союзе людей ради Истины</div></a><a class="idx-card" href="vahistoishti.html"><div class="t">Вахиштоишти (Vahishtoishti)</div><div class="s">Ясна Y53 · 1 строф · Гимн «Лучшая Сущность» — об Аше (Истине) и её могуществе</div></a>
 </div></div>
 <footer>ARCHIVUM HAERETICUM IMPERII HUMANITATIS · Q7 · АВЕСТА · источник: М.В. Чистяков, «Хордэ Авеста» (2005).<br>Sigillum: ◆◆◆ FIDELIS · Datum: 159.M3</footer>
+<script>
+function toggleAll(state){
+  document.querySelectorAll('.verse').forEach(r=>{r.style.display=state?'grid':'none';});
+  document.querySelectorAll('.row').forEach(r=>{r.style.display=state?'grid':'none';});
+  document.querySelectorAll('table.orph tr').forEach(r=>{r.style.display=state?'':'none';});
+}
+function toggleOrig(){
+  document.querySelectorAll('.verse').forEach(r=>{r.style.display='grid';const o=r.querySelector('.sk,.av,.zh,.sa,.en,.dev,.ar,.gr,.he,.grc');if(o)o.style.display='block';const ru=r.querySelector('.ru,.rus');if(ru)ru.style.display='none';});
+  document.querySelectorAll('.row').forEach(r=>{r.style.display='grid';const o=r.querySelector('.sk,.av,.zh,.sa,.en,.dev,.ar,.gr,.he,.grc');if(o)o.style.display='block';const ru=r.querySelector('.ru,.rus');if(ru)ru.style.display='none';});
+}
+function toggleRu(){
+  document.querySelectorAll('.verse').forEach(r=>{r.style.display='grid';const o=r.querySelector('.sk,.av,.zh,.sa,.en,.dev,.ar,.gr,.he,.grc');if(o)o.style.display='none';const ru=r.querySelector('.ru,.rus');if(ru)ru.style.display='block';});
+  document.querySelectorAll('.row').forEach(r=>{r.style.display='grid';const o=r.querySelector('.sk,.av,.zh,.sa,.en,.dev,.ar,.gr,.he,.grc');if(o)o.style.display='none';const ru=r.querySelector('.ru,.rus');if(ru)ru.style.display='block';});
+}
+function resetView(){
+  document.querySelectorAll('.verse,.row').forEach(r=>{r.style.display='grid';});
+  document.querySelectorAll('.sk,.av,.zh,.sa,.en,.dev,.ar,.gr,.he,.grc,.ru,.rus').forEach(c=>{c.style.display='';});
+  document.querySelectorAll('table.orph tr').forEach(r=>{r.style.display='';});
+}
+</script>
 </body></html>

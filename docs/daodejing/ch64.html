@@ -26,11 +26,21 @@ h2.ch{color:var(--gold);font-size:18px;letter-spacing:2px;margin:24px 0 14px;pad
 .note{margin:14px 0;padding:12px 16px;border:1px solid var(--line);background:var(--panel);font-size:13px;color:var(--ink-dim)}
 footer{padding:24px;color:var(--ink-dim);font-size:12px;border-top:1px solid var(--line);margin-top:20px}
 @media(max-width:760px){.verse{grid-template-columns:30px 1fr}.verse .zh{border-left:none;border-top:2px solid var(--chinese)}}
+.toolbar{display:flex;justify-content:center;gap:8px;flex-wrap:wrap;margin:12px 0;padding:8px;background:#15151a;border:1px solid #2a2a33;border-radius:4px;font-family:Georgia,serif}
+.toolbar button{background:#1f1a12;border:1px solid #c9a227;color:#c9a227;padding:6px 12px;font-size:11px;letter-spacing:1px;cursor:pointer;font-family:Georgia,serif;text-transform:uppercase}
+.toolbar button:hover{background:#2a2010}
 </style>
 </head><body>
 <header class="top"><div class="brand">ARCHIVUM HAERETICUM · CORPUS DIVINUS · Q11 · ДАО ДЭ ЦЗИН</div>
 <h1>Глава 64. 其安易持<span class="stamp">◆ FIDELIS</span></h1>
 <div class="sub">Устойчивое легко удержать · 81 глава</div></header>
+<div class="toolbar">
+<button onclick="toggleAll(true)">▼ Развернуть все</button>
+<button onclick="toggleAll(false)">▲ Свернуть все</button>
+<button onclick="toggleOrig()">🌙 Только оригинал</button>
+<button onclick="toggleRu()">📖 Только перевод</button>
+<button onclick="resetView()">◉ Оба</button>
+</div>
 <nav class="menu">
 <a href="index.html">← Обзор</a>
 <a href="ch1.html">1</a>
@@ -123,4 +133,24 @@ footer{padding:24px;color:var(--ink-dim);font-size:12px;border-top:1px solid var
 </div>
 </div>
 <footer>ARCHIVUM HAERETICUM · Q11 · Глава 64. 其安易持<br>Sigillum: ◆◆◆ FIDELIS · Datum: 160.M3</footer>
+<script>
+function toggleAll(state){
+  document.querySelectorAll('.verse').forEach(r=>{r.style.display=state?'grid':'none';});
+  document.querySelectorAll('.row').forEach(r=>{r.style.display=state?'grid':'none';});
+  document.querySelectorAll('table.orph tr').forEach(r=>{r.style.display=state?'':'none';});
+}
+function toggleOrig(){
+  document.querySelectorAll('.verse').forEach(r=>{r.style.display='grid';const o=r.querySelector('.sk,.av,.zh,.sa,.en,.dev,.ar,.gr,.he,.grc');if(o)o.style.display='block';const ru=r.querySelector('.ru,.rus');if(ru)ru.style.display='none';});
+  document.querySelectorAll('.row').forEach(r=>{r.style.display='grid';const o=r.querySelector('.sk,.av,.zh,.sa,.en,.dev,.ar,.gr,.he,.grc');if(o)o.style.display='block';const ru=r.querySelector('.ru,.rus');if(ru)ru.style.display='none';});
+}
+function toggleRu(){
+  document.querySelectorAll('.verse').forEach(r=>{r.style.display='grid';const o=r.querySelector('.sk,.av,.zh,.sa,.en,.dev,.ar,.gr,.he,.grc');if(o)o.style.display='none';const ru=r.querySelector('.ru,.rus');if(ru)ru.style.display='block';});
+  document.querySelectorAll('.row').forEach(r=>{r.style.display='grid';const o=r.querySelector('.sk,.av,.zh,.sa,.en,.dev,.ar,.gr,.he,.grc');if(o)o.style.display='none';const ru=r.querySelector('.ru,.rus');if(ru)ru.style.display='block';});
+}
+function resetView(){
+  document.querySelectorAll('.verse,.row').forEach(r=>{r.style.display='grid';});
+  document.querySelectorAll('.sk,.av,.zh,.sa,.en,.dev,.ar,.gr,.he,.grc,.ru,.rus').forEach(c=>{c.style.display='';});
+  document.querySelectorAll('table.orph tr').forEach(r=>{r.style.display='';});
+}
+</script>
 </body></html>

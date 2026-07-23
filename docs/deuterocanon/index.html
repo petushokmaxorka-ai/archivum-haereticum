@@ -22,11 +22,21 @@ footer{padding:24px;color:var(--ink-dim);font-size:12px;border-top:1px solid var
 .legend span{display:inline-block;border:1px solid var(--gold-dim);color:var(--gold);font-size:10px;letter-spacing:2px;padding:3px 8px;margin-right:5px}
 .legend span.cre{color:#e8b84a;background:rgba(232,184,74,0.05);border-color:#e8b84a}
 .legend span.dam{color:var(--red);border-color:var(--red)}
+.toolbar{display:flex;justify-content:center;gap:8px;flex-wrap:wrap;margin:12px 0;padding:8px;background:#15151a;border:1px solid #2a2a33;border-radius:4px;font-family:Georgia,serif}
+.toolbar button{background:#1f1a12;border:1px solid #c9a227;color:#c9a227;padding:6px 12px;font-size:11px;letter-spacing:1px;cursor:pointer;font-family:Georgia,serif;text-transform:uppercase}
+.toolbar button:hover{background:#2a2010}
 </style>
 </head><body>
 <header class="top"><div class="brand">ARCHIVUM HAERETICUM · CORPUS DIVINUS · Q3</div>
 <h1>ДЕВТЕРОКАНОН (ВТОРОКАНИЧЕСКИЕ КНИГИ)<span class="stamp">◆ FIDELIS</span><span class="stamp cre">✚ КАНОН</span></h1>
 <div class="sub">11 книг Ветхого Завета, входящих в каноны Православной и Католической церквей, но не входящих в протестантский канон · LXX (Септуагинта) + Вульгата (IV в.н.э.) + Синодальный перевод (1876) · 5 783 стиха</div></header>
+<div class="toolbar">
+<button onclick="toggleAll(true)">▼ Развернуть все</button>
+<button onclick="toggleAll(false)">▲ Свернуть все</button>
+<button onclick="toggleOrig()">🌙 Только оригинал</button>
+<button onclick="toggleRu()">📖 Только перевод</button>
+<button onclick="resetView()">◉ Оба</button>
+</div>
 <div class="legend">
   <span>◆ FIDELIS</span><span>◇ SUSPECTUS</span><span class="dam">✠ DAMNATUS</span><span class="cre">✚ КАНОН</span>
 </div>
@@ -54,4 +64,31 @@ footer{padding:24px;color:var(--ink-dim);font-size:12px;border-top:1px solid var
 <p style="margin:.25rem 0"><a href="../tanakh/dan.html">Добавления к Даниилу в Танахе</a> — Песнь 3-х отроков, Сусанна, Вид (доп. стихи 67)</p>
 <p style="margin:.25rem 0"><a href="../tanakh/2chr.html">Молитва Манассии</a> — встроена в конец 2-й Паралипоменон</p>
 </div>
-<footer>ARCHIVUM HAERETICUM IMPERII HUMANITATIS · Q3 · ДЕВТЕРОКАНОН · источник: algart.net/bible/synodal (Синодальный 1876, PD).<br>Sigillum: ◆◆◆ FIDELIS · Datum: 156.M3</footer></body></html>
+<footer>ARCHIVUM HAERETICUM IMPERII HUMANITATIS · Q3 · ДЕВТЕРОКАНОН · источник: algart.net/bible/synodal (Синодальный 1876, PD).<br>Sigillum: ◆◆◆ FIDELIS · Datum: 156.M3</footer><script>
+function toggleAll(state){
+  // For .row based layout
+  document.querySelectorAll('.row').forEach(r=>{r.style.display=state?'grid':'none';});
+  // For table-based (tanakh, deuterocanon)
+  document.querySelectorAll('table.orph tr').forEach(r=>{r.style.display=state?'':'none';});
+  // For .verse based (Q sections)
+  document.querySelectorAll('.verse').forEach(r=>{r.style.display=state?'grid':'none';});
+  // For .aya based (any other)
+  document.querySelectorAll('.aya, .v, [data-verse]').forEach(r=>{r.style.display=state?'':'none';});
+}
+function toggleOrig(){
+  document.querySelectorAll('.row').forEach(r=>{r.style.display='grid';const ar=r.querySelector('.ar,.gr,.he,.grc,.sk,.dev,.ar,');if(ar)ar.style.display='block';const ru=r.querySelector('.ru,.rus');if(ru)ru.style.display='none';});
+  document.querySelectorAll('.verse').forEach(r=>{r.style.display='grid';const orig=r.querySelector('.sk,.av,.zh,.sa,.en,.dev,.ar,.gr,.he,.grc');if(orig)orig.style.display='block';const ru=r.querySelector('.ru,.rus');if(ru)ru.style.display='none';});
+  document.querySelectorAll('table.orph tr').forEach(r=>{r.style.display='';r.querySelectorAll('.rus').forEach(c=>c.style.display='none');});
+}
+function toggleRu(){
+  document.querySelectorAll('.row').forEach(r=>{r.style.display='grid';const ar=r.querySelector('.ar,.gr,.he,.grc,.sk,.dev');if(ar)ar.style.display='none';const ru=r.querySelector('.ru,.rus');if(ru)ru.style.display='block';});
+  document.querySelectorAll('.verse').forEach(r=>{r.style.display='grid';const orig=r.querySelector('.sk,.av,.zh,.sa,.en,.dev,.ar,.gr,.he,.grc');if(orig)orig.style.display='none';const ru=r.querySelector('.ru,.rus');if(ru)ru.style.display='block';});
+  document.querySelectorAll('table.orph tr').forEach(r=>{r.style.display='';r.querySelectorAll('.he,.grc').forEach(c=>c.style.display='none');});
+}
+function resetView(){
+  document.querySelectorAll('.row,.verse').forEach(r=>{r.style.display='grid';});
+  document.querySelectorAll('.ar,.gr,.he,.grc,.sk,.dev,.zh,.sa,.en,.av,.ru,.rus').forEach(c=>{c.style.display='';});
+  document.querySelectorAll('table.orph tr').forEach(r=>{r.style.display='';});
+}
+</script>
+</body></html>
