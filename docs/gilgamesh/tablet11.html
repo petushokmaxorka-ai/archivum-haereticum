@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Tablet XI — Utnapishtim i potop</title>
+<style>
+:root{--bg:#0a0a0c;--bg2:#0d0d12;--panel:#13131a;--line:#2a2a33;--red:#c8102e;--red-dark:#8a0a1f;--gold:#c9a227;--gold-bright:#e8b84a;--gold-dim:#8a7119;--ink:#e8e2d5;--ink-dim:#9a937f;--orig:#f2ead6;--accent:#d49a3a;--grid:#1d1d24}
+*{box-sizing:border-box;margin:0;padding:0}body{background:var(--bg);color:var(--ink);font-family:Georgia,'Times New Roman',serif;line-height:1.55}
+a{color:var(--gold);text-decoration:none}a:hover{color:var(--gold-bright);text-decoration:underline}
+header.hos{background:linear-gradient(180deg,var(--red-dark) 0%,#1a0007 30%,var(--bg) 100%);border-bottom:2px solid var(--red);padding:0;position:relative}
+header.hos::before{content:"";position:absolute;left:0;top:0;bottom:0;width:6px;background:var(--red)}
+.hos-strip{display:flex;justify-content:space-between;align-items:center;padding:6px 14px;background:rgba(0,0,0,0.5);border-bottom:1px solid var(--red-dark);font-family:'Courier New',monospace;font-size:10px;letter-spacing:2px;color:var(--ink-dim);text-transform:uppercase}
+.hos-strip .l{color:var(--gold)} .hos-strip .r{color:var(--red);font-weight:bold}
+.hos-body{padding:18px 22px 14px}
+.hos-h1{font-size:1.5rem;letter-spacing:.12em;color:var(--orig);font-weight:normal;margin-bottom:4px;line-height:1.2}
+.hos-h1 .q{color:var(--red);font-family:'Courier New',monospace;font-size:.7em;vertical-align:super;margin-right:6px;padding:3px 7px;background:rgba(200,16,46,0.15);border:1px solid var(--red-dark);letter-spacing:1px}
+.hos-h1 .sig{font-size:.55em;color:var(--gold);font-family:'Courier New',monospace;letter-spacing:2px;margin-left:10px;padding:3px 8px;border:1px solid var(--gold-dim);vertical-align:middle}
+.hos-sub{color:var(--ink-dim);font-size:13px;font-style:italic}
+.stamps{padding:7px 16px;background:var(--bg2);border-bottom:1px solid var(--line);text-align:center;font-family:'Courier New',monospace}
+.stamps span{display:inline-block;border:1px solid var(--gold-dim);color:var(--gold);font-size:9px;letter-spacing:2px;padding:2px 7px;margin:0 2px;text-transform:uppercase}
+.stamps span.fid{color:var(--gold-bright);border-color:var(--gold);background:rgba(201,162,39,0.05)}
+.stamps span.dam{color:var(--red);border-color:var(--red-dark);background:rgba(200,16,46,0.05)}
+.stamps span.cre{color:var(--accent);border-color:var(--accent);background:rgba(212,154,58,0.05)}
+nav.main{padding:8px 18px;background:var(--panel);border-bottom:1px solid var(--line);font-size:12px;text-align:center}
+nav.main a{color:var(--gold);margin:0 6px;letter-spacing:1px;padding:3px 6px}
+.toolbar{display:flex;justify-content:center;gap:6px;flex-wrap:wrap;margin:14px 0 8px;padding:8px;background:var(--panel);border:1px solid var(--line);font-family:'Courier New',monospace}
+.toolbar button{background:transparent;border:1px solid var(--gold-dim);color:var(--gold);padding:5px 11px;font-size:10px;letter-spacing:1px;cursor:pointer;font-family:inherit;text-transform:uppercase}
+.toolbar button:hover{background:var(--gold);color:var(--bg)}
+.meta{color:var(--ink-dim);font-size:11px;font-style:italic;padding:6px 16px;text-align:center;font-family:'Courier New',monospace;letter-spacing:1px}
+.meta b{color:var(--gold);font-style:normal;font-family:Georgia,serif}
+.chap{background:linear-gradient(90deg,var(--red-dark),transparent);color:var(--gold-bright);font-size:.85rem;letter-spacing:.2em;padding:9px 16px;border-bottom:1px solid var(--red-dark);border-top:1px solid var(--red-dark);font-family:'Courier New',monospace;text-transform:uppercase;margin-top:12px}
+main{max-width:1300px;margin:0 auto;padding:0 12px 40px}
+.row{display:grid;grid-template-columns:3rem 1fr 1.1fr;border-bottom:1px solid var(--grid);align-items:start;transition:background 0.15s}
+.row:hover{background:#15110b}
+.num{grid-column:1;color:var(--gold);font-size:12px;padding:10px 4px;text-align:right;font-family:'Courier New',monospace;font-weight:bold;align-self:start}
+.orig,.ar,.gr,.he,.grc,.sk,.dev,.av,.zh,.sa{grid-column:2;padding:10px 12px;font-size:1rem;line-height:1.7;color:var(--orig);background:rgba(201,162,39,0.025);border-right:1px solid var(--gold-dim);border-left:3px solid var(--gold-dim);font-style:italic}
+.ar{direction:rtl;text-align:right;font-family:'Amiri','Scheherazade New','Traditional Arabic',serif;font-size:1.25rem;line-height:1.85}
+.gr,.grc{direction:ltr;font-family:'SBL Greek','Palatino Linotype',Georgia,serif}
+.he{direction:rtl;text-align:right;font-family:'SBL Hebrew','Times New Roman',serif;font-size:1.1rem}
+.sk,.dev{direction:ltr;font-family:'Noto Sans Devanagari','Sanskrit Text',serif;font-size:1.05rem}
+.zh{font-family:'Noto Serif CJK SC','SimSun',serif}
+.ru,.rus{grid-column:3;padding:10px 12px;font-size:.95rem;line-height:1.65;text-align:justify;color:var(--ink)}
+.bismillah{text-align:center;padding:1.5rem 1rem;font-family:'Amiri','Scheherazade New','Traditional Arabic',serif;font-size:1.8rem;color:var(--gold);direction:rtl;background:linear-gradient(180deg,#1a1410,#0a0a0c);border-bottom:1px solid var(--red-dark);letter-spacing:0;margin:14px 16px;border:1px solid var(--red-dark)}
+.bismillah .label{display:block;font-family:'Courier New',monospace;font-size:.7rem;letter-spacing:.25em;color:var(--ink-dim);text-transform:uppercase;direction:ltr;margin-bottom:8px}
+footer{padding:18px;text-align:center;color:var(--ink-dim);font-size:10px;border-top:1px solid var(--line);font-family:'Courier New',monospace;letter-spacing:2px;background:var(--bg2)}
+footer .red{color:var(--red)} footer .gold{color:var(--gold)}
+@media(max-width:760px){
+  .hos-h1{font-size:1.2rem}
+  .row{grid-template-columns:2rem 1fr 1.1fr}
+  .num{font-size:.7rem;padding:.5rem .3rem}
+  .ar{font-size:1.1rem;line-height:1.7;padding:.5rem .4rem}
+  .ru{font-size:.85rem;line-height:1.4;padding:.5rem .4rem}
+}
+
+/* Q17 GILGAMESH */
+.verse .ak{grid-column:1;font-family:'Courier New',monospace;font-size:0.95rem;line-height:1.7;direction:ltr;text-align:left;color:#c9a227;background:rgba(201,162,39,0.04);border-right:3px solid var(--gold-dim);padding:12px 14px}
+.verse .ru{grid-column:2;font-size:0.98rem;line-height:1.7;color:var(--ink);background:rgba(232,184,74,0.025);border-left:1px solid var(--gold-dim);padding:12px 14px}
+.verse .transl-note{grid-column:1/-1;padding:6px 14px;font-size:0.78rem;color:var(--ink-dim);font-style:italic;text-align:right;background:rgba(0,0,0,0.15);border-top:1px solid var(--line)}
+</style>
+</head>
+<body>
+<header class="hos">
+<div class="hos-strip"><span class="l">ARCHIVUM HAERETICUM — CORPUS DIVINUS</span><span class="r">Q17 — EPIC OF GILGAMESH</span></div>
+<div class="hos-body">
+<h1 class="hos-h1"><span class="q">Q17</span>Tablet XI — Utnapishtim i potop</h1>
+<div class="hos-sub">Epos o Gilgameshe, tablet 11 (Utnapishtim, potop, rastenie molodosti), akkadskij transliteratsiya, russkij (Dyakonov 1982)</div>
+</div>
+<div class="stamps">
+<span class="fid">FIDELIS</span>
+<span class="cre">OSNOVA</span>
+<span class="dam">ANTIQUISSIMA</span>
+</div>
+</header>
+
+<nav class="main">
+<a href="index.html">GILGAMESH</a>
+</nav>
+
+<main>
+<div class="toolbar">
+<button onclick="toggleAll(true)">RAZVERNUT</button>
+<button onclick="toggleAll(false)">SVERNUT</button>
+<button onclick="toggleOrig()">ORIGINAL</button>
+<button onclick="toggleRu()">PEREVOD</button>
+<button onclick="resetView()">OBA</button>
+</div>
+
+<div class="note">
+<em>Примечание: Перевод на русский язык И.М. Дьяконова, 1982, "Эпос о Гильгамеше" (издание: "Аккадская литература", М.: Наука, 1982). Аккадский текст — стандартный вавилонский, по изданию: R. Campbell Thompson, "The Epic of Gilgamish" (1930), транслитерация.</em>
+</div>
+
+<div class="verse">
+<div class="num">XI.1</div>
+<div class="ak">dGilgameš a-na Ut-napištim-ma iṭ-ḫe-e-ma</div>
+<div class="ru">Гильгамеш обратился к Утнапиштиму, далекому: «Как ты стоял в сонме богов и нашёл вечную жизнь?»</div>
+<div class="transl-note">Дьяконов 1982</div>
+</div>
+<div class="verse">
+<div class="num">XI.2</div>
+<div class="ak">Ut-napištim a-na iš-šu-ri-šu i-pu-ul</div>
+<div class="ru">Утнапиштим ответил ему: «Я открою тебе тайну богов. Слушай!»</div>
+<div class="transl-note">Дьяконов 1982</div>
+</div>
+<div class="verse">
+<div class="num">XI.3</div>
+<div class="ak">Šuruppak uru-šu-at-tu-rat nāri-šu</div>
+<div class="ru">Шуруппак, город, который ты знаешь, лежит на берегу Евфрата. Этот город был древний, и боги в нём жили.</div>
+<div class="transl-note">Дьяконов 1982</div>
+</div>
+<div class="verse">
+<div class="num">XI.4</div>
+<div class="ak">dEnlil i-ru-ub qí-bít a-bu-bi</div>
+<div class="ru">«Решено было богами — потоп устроить, и Ану, Энлиль, Эа и Нинту, на совет сойдя, об этом условились».</div>
+<div class="transl-note">Дьяконов 1982</div>
+</div>
+<div class="verse">
+<div class="num">XI.5</div>
+<div class="ak">dEa i-na ri-ḫi-i-ia a-na še-er-ri-ia i-ḫi-ir</div>
+<div class="ru">Эа обратился к стене хижины, к тростниковой ограде: «Хижина! Тростник! Хижина! Тростник!»</div>
+<div class="transl-note">Дьяконов 1982</div>
+</div>
+<div class="verse">
+<div class="num">XI.6</div>
+<div class="ak">ša ip-pa-al-lu-ku-ma a-bu-bu</div>
+<div class="ru">«Слушай! Потоп идёт! Разрушь свой дом, построй корабль! Спаси тех, кого сможешь!»</div>
+<div class="transl-note">Дьяконов 1982</div>
+</div>
+<div class="verse">
+<div class="num">XI.7</div>
+<div class="ak">e-le-ep-pa-a e-pu-uš</div>
+<div class="ru">«Корабль ты построишь! Стены его сделай прочными! Спусти его на воду, когда я пошлю тебе дождь!»</div>
+<div class="transl-note">Дьяконов 1982</div>
+</div>
+<div class="verse">
+<div class="num">XI.8</div>
+<div class="ak">a-du-ur 1 šaná-a-ti</div>
+<div class="ru">«Когда наступит вечер, когда я пошлю тебе дождь, — войди в корабль и запри дверь!»</div>
+<div class="transl-note">Дьяконов 1982</div>
+</div>
+<div class="verse">
+<div class="num">XI.9</div>
+<div class="ak">i-na a-bu-bi a-ḫi-iḫ</div>
+<div class="ru">«А ты возьми с собой зерно, всё, что есть у тебя! Возьми живых существ, сколько их есть! И всех, кто тебе дорог!»</div>
+<div class="transl-note">Дьяконов 1982</div>
+</div>
+<div class="verse">
+<div class="num">XI.10</div>
+<div class="ak">ar-ki-šu-ma ḫe-e-pa-a a-bu-bu</div>
+<div class="ru">«Потом в потоп войдёт Шамаш и пойдёт дождь. Потоп поднимется на холмы, и остановится он у подножия гор».</div>
+<div class="transl-note">Дьяконов 1982</div>
+</div>
+<div class="verse">
+<div class="num">XI.11</div>
+<div class="ak">6 ù 6 danna ḫe-pi-i</div>
+<div class="ru">«Шесть дней и шесть ночей дул ветер, потоп и буря смели всё. Когда наступил день седьмой, буря утихла».</div>
+<div class="transl-note">Дьяконов 1982</div>
+</div>
+<div class="verse">
+<div class="num">XI.12</div>
+<div class="ak">a-na ḫa-a-ri-im ù ru-uq-tim</div>
+<div class="ru">«Я вышел, сел на берегу, заплакал. Лицо моё потекло слезами. Взглянул я на мир — и что же? Одна пустыня!»</div>
+<div class="transl-note">Дьяконов 1982</div>
+</div>
+<div class="verse">
+<div class="num">XI.13</div>
+<div class="ak">i-na pa-an ilī rabûti</div>
+<div class="ru">«Семь дней, как рыба, лежала моя лодка посреди моря. Когда наступил день седьмой, вышел я голубицу».</div>
+<div class="transl-note">Дьяконов 1982</div>
+</div>
+<div class="verse">
+<div class="num">XI.14</div>
+<div class="ak">la-a i-na šu-ni-ia dEnlil i-ta-ḫa-az</div>
+<div class="ru">«Выпустил я голубку — она улетела, но не нашла места для себя, и вернулась. Выпустил ласточку — и она вернулась».</div>
+<div class="transl-note">Дьяконов 1982</div>
+</div>
+<div class="verse">
+<div class="num">XI.15</div>
+<div class="ak">uš-šu-ru i-na pa-an ilī rabûti</div>
+<div class="ru">«Выпустил ворона — он полетел и нашёл место. Тогда я выпустил всех птиц, и они полетели в четыре стороны».</div>
+<div class="transl-note">Дьяконов 1982</div>
+</div>
+<div class="verse">
+<div class="num">XI.16</div>
+<div class="ak">u-nap-pa-iš dEnlil a-bu-bi</div>
+<div class="ru">«Я принёс жертву на вершине горы. Семь и семь кувшинов я расставил, и в подножие горы налил тростникового, кедрового и миртового масла».</div>
+<div class="transl-note">Дьяконов 1982</div>
+</div>
+<div class="verse">
+<div class="num">XI.17</div>
+<div class="ak">dEnlil i-nu-ḫi-ip a-na i-di-ia</div>
+<div class="ru">«Боги почуяли запах жертвы, боги слетелись, как мухи, к жертвенной воде».</div>
+<div class="transl-note">Дьяконов 1982</div>
+</div>
+<div class="verse">
+<div class="num">XI.18</div>
+<div class="ak">dEnlil ḫa-ri-is-ma</div>
+<div class="ru">«Когда Энлиль пришёл, он увидел корабль и разгневался на богов, на Энки, и сказал: «Кто уцелел? Никто не должен был остаться в живых!»</div>
+<div class="transl-note">Дьяконов 1982</div>
+</div>
+<div class="verse">
+<div class="num">XI.19</div>
+<div class="ak">dEa a-pa-lam i-pu-ul</div>
+<div class="ru">«Энки ответил Энлилю: «Это я открыл тайну! Я отправил вещего сон, чтобы уцелел человек! Мог ли я делать иначе?»</div>
+<div class="transl-note">Дьяконов 1982</div>
+</div>
+<div class="verse">
+<div class="num">XI.20</div>
+<div class="ak">dEnlil a-na Ut-napištim-ma</div>
+<div class="ru">«Энлиль подошёл к Утнапиштиму и взял его за руку, вывел из корабля. Жена Утнапиштима вышла, села рядом с ним».</div>
+<div class="transl-note">Дьяконов 1982</div>
+</div>
+<div class="verse">
+<div class="num">XI.21</div>
+<div class="ak">i-na pi-i-ia lu-ú-šar-šid-du-ka</div>
+<div class="ru">«Энлиль сказал: «Утнапиштим, доселе не было человека, кто уцелел бы в потоп. Ныне ты и жена твоя — будьте как боги!»</div>
+<div class="transl-note">Дьяконов 1982</div>
+</div>
+<div class="verse">
+<div class="num">XI.22</div>
+<div class="ak">ma-ḫar-ka lu-ú-ni-ir</div>
+<div class="ru">«Я отведу тебя в дальнюю страну, к устью рек. Там вы будете жить в блаженстве, как боги».</div>
+<div class="transl-note">Дьяконов 1982</div>
+</div>
+<div class="verse">
+<div class="num">XI.23</div>
+<div class="ak">dGilgameš a-na Ut-napištim-ma</div>
+<div class="ru">Гильгамеш сказал Утнапиштиму: «Теперь я вижу тебя, Утнапиштим. Ты — как и я! Не отвернёшься ли ты и от меня?»</div>
+<div class="transl-note">Дьяконов 1982</div>
+</div>
+<div class="verse">
+<div class="num">XI.24</div>
+<div class="ak">Ut-napištim a-na iš-šu-ri-šu</div>
+<div class="ru">Утнапиштим ответил: «Гильгамеш, ты не найдёшь вечной жизни, ибо когда боги создали человечество, — они назначили ему смерть».</div>
+<div class="transl-note">Дьяконов 1982</div>
+</div>
+<div class="verse">
+<div class="num">XI.25</div>
+<div class="ak">dGilgameš a-na Ut-napištim-ma</div>
+<div class="ru">Гильгамеш сказал: «Где же путь? Где мне искать?» — Утнапиштим отвечал: «Есть растение, растущее на дне моря, оно вернёт тебе молодость».</div>
+<div class="transl-note">Дьяконов 1982</div>
+</div>
+<div class="verse">
+<div class="num">XI.26</div>
+<div class="ak">ša-ni-iḫ-šu ʾa-pa-ti-i</div>
+<div class="ru">Гильгамеш нырнул на дно, достал растение. «Оно вернёт мне молодость!» — и пошёл обратно.</div>
+<div class="transl-note">Дьяконов 1982</div>
+</div>
+<div class="verse">
+<div class="num">XI.27</div>
+<div class="ak">i-na a-ap-pi-šu ir-bi</div>
+<div class="ru">Но в прохладном колодце он оставил его! Змея учуяла запах цветка, выползла и съела растение.</div>
+<div class="transl-note">Дьяконов 1982</div>
+</div>
+<div class="verse">
+<div class="num">XI.28</div>
+<div class="ak">šá-ru-ur-ru-šu i-nam-ḫi-ri</div>
+<div class="ru">Змея сбросила кожу, и Гильгамеш заплакал. Сел он и заплакал: «Для кого же я трудился? Для кого обливался потом?»</div>
+<div class="transl-note">Дьяконов 1982</div>
+</div>
+</main>
+
+<footer>
+ARCHIVUM HAERETICUM — Q17 — EPIC OF GILGAMESH
+</footer>
+
+<script>
+function toggleAll(open){
+  document.querySelectorAll('details').forEach(d=>d.open=open);
+}
+function toggleOrig(){
+  document.querySelectorAll('.verse .ru').forEach(e=>e.style.display='none');
+  document.querySelectorAll('.verse .ak').forEach(e=>e.style.display='');
+}
+function toggleRu(){
+  document.querySelectorAll('.verse .ak').forEach(e=>e.style.display='none');
+  document.querySelectorAll('.verse .ru').forEach(e=>e.style.display='');
+}
+function resetView(){
+  document.querySelectorAll('.verse .ak,.verse .ru').forEach(e=>e.style.display='');
+}
+</script>
+</body>
+</html>
