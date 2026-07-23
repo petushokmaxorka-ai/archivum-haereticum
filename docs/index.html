@@ -174,9 +174,10 @@ details.corpus[open]>summary::before{content:"▼";color:var(--gold-bright)}
 
 <main>
 <div class="toolbar">
+<button onclick="document.querySelectorAll('details.corpus').forEach(d=>d.open=true)">▼ РАЗВЕРНУТЬ ВСЕ</button>
+<button onclick="document.querySelectorAll('details.corpus').forEach(d=>d.open=false)">▲ СВЕРНУТЬ ВСЕ</button>
 <button onclick="document.querySelectorAll('details.corpus').forEach(d=>d.open=false);document.querySelectorAll('.q1,.q2,.q3,.q3\\.1,.q4,.q5,.q5\\.1,.q18,.q25,.q27').forEach(d=>d.open=true)">✡ АВРААМИЧЕСКИЕ</button>
 <button onclick="document.querySelectorAll('details.corpus').forEach(d=>d.open=false);document.querySelectorAll('.q6,.q7,.q8,.q9,.q10,.q11,.q12,.q13,.q14,.q15,.q16,.q17,.q19,.q20,.q21,.q22,.q23,.q24,.q26').forEach(d=>d.open=true)">◈ НЕ-АВРААМИЧЕСКИЕ</button>
-<button onclick="document.querySelectorAll('details.corpus').forEach(d=>d.open=true)">◆ ВСЕ ТЕКСТЫ</button>
 </div>
 
 </div>
