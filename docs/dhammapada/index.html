@@ -87,13 +87,18 @@ footer .red{color:var(--red)} footer .gold{color:var(--gold)}
   .ru{font-size:.85rem;line-height:1.4;padding:.5rem .4rem}
 }
 
-.idx-group{margin:18px 24px}
-.idx-group h2{color:var(--gold);font-size:16px;letter-spacing:3px;border-bottom:1px solid var(--line);padding-bottom:6px;font-weight:normal}
-.idx-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(320px,1fr));gap:8px;margin-top:10px}
-.idx-card{border:1px solid var(--line);background:var(--panel);padding:12px 16px;display:block}
-.idx-card:hover{border-color:var(--gold-dim);text-decoration:none}
-.idx-card .t{color:var(--gold);font-size:15px;font-weight:bold}
-.idx-card .s{color:var(--ink-dim);font-size:12px;margin-top:4px;line-height:1.5}
+/* Q20 EGYPTIAN additions */
+.verse .egy{grid-column:1;font-family:'Papyrus','Segoe UI Historic',serif;font-size:1.05rem;line-height:1.8;direction:ltr;text-align:left;color:#e8b84a;background:rgba(232,184,74,0.04);border-right:3px solid var(--gold-dim);padding:12px 14px;font-style:italic}
+.verse .ru{grid-column:2;font-size:0.98rem;line-height:1.75;color:var(--ink);background:rgba(201,162,39,0.025);border-left:1px solid var(--gold-dim);padding:12px 14px}
+.verse .transl-note{grid-column:1/-1;padding:6px 14px;font-size:0.78rem;color:var(--ink-dim);font-style:italic;text-align:right;background:rgba(0,0,0,0.15);border-top:1px solid var(--line)}
+.verse .num,.verse .transl-note{color:var(--gold-bright)}
+
+.verse .av,.verse .sk,.verse .he,.verse .grc,.verse .zh,.verse .sa,.verse .ar,.verse .dev,.verse .en,.verse .gr,.verse .csl,.verse .fa,.verse .ak,.verse .bo,.verse .tib{font-family:'Times New Roman',Georgia,serif;font-size:1.05rem;line-height:1.7;color:var(--orig);background:rgba(201,162,39,0.04);border-right:3px solid var(--gold-dim);padding:12px 14px;direction:ltr;text-align:left;font-style:italic}
+.row .av,.row .sk,.row .he,.row .grc,.row .zh,.row .sa,.row .ar,.row .dev,.row .en,.row .gr,.row .csl,.row .fa,.row .ak,.row .bo,.row .tib{font-family:'Times New Roman',Georgia,serif;font-size:1.05rem;line-height:1.7;color:var(--orig);background:rgba(201,162,39,0.04);padding:10px 12px;direction:ltr;text-align:left}
+.verse{display:grid;grid-template-columns:3.2rem 1fr 1.1fr;border-bottom:1px solid var(--grid);align-items:start;transition:background 0.15s}
+.row{display:grid;grid-template-columns:3.2rem 1fr 1.1fr 1fr;border-bottom:1px solid var(--grid);align-items:start;transition:background 0.15s}
+.num{font-family:'Courier New',monospace;font-size:11px;color:var(--gold);text-align:center;padding:12px 4px;background:rgba(0,0,0,0.3);border-right:1px solid var(--line);font-weight:bold;align-self:start}
+.ru{font-size:.92rem;line-height:1.6;color:var(--ink);padding:10px 12px;background:rgba(255,255,255,0.01);border-left:1px solid var(--line);align-self:start;grid-column:3}
 
 .idx-group{margin:20px 14px;border-bottom:1px solid var(--line);padding-bottom:14px}
 .idx-group h2{color:var(--gold);font-size:1.05rem;letter-spacing:.22em;border-left:4px solid var(--red);padding-left:.8rem;margin-bottom:1rem;font-weight:normal}
@@ -102,25 +107,31 @@ footer .red{color:var(--red)} footer .gold{color:var(--gold)}
 .book-card:hover{border-color:var(--gold);background:#1a1410;text-decoration:none;color:var(--gold-bright)}
 .book-card .ttl{color:var(--gold);font-size:14px;font-weight:bold}
 .book-card .s{color:var(--ink-dim);font-size:12px;line-height:1.45}
-.cross-ref{background:rgba(200,16,46,0.04);border:1px solid var(--red-dark);padding:10px 14px;margin:14px;font-size:13px;line-height:1.55}
-.cross-ref b{color:var(--red)}
+.note{font-size:14px;line-height:1.7;padding:14px 16px;background:rgba(201,162,39,0.04);border-left:4px solid var(--gold);margin:14px 0}
+.note p{margin-bottom:10px}
+.note ul{padding-left:24px;margin-bottom:10px}
+.note li{margin-bottom:4px}
 @media(max-width:760px){
   .hos-h1{font-size:1.2rem;letter-spacing:.05em;line-height:1.3}
   .book-grid{grid-template-columns:1fr;gap:6px}
   .book-card{padding:10px;font-size:13px}
-  .note{font-size:12px;line-height:1.55;padding:10px 12px}
+  .note{font-size:13px;line-height:1.55;padding:10px 12px}
   .idx-group{margin:14px 10px}
 }
 </style>
 </head>
 <body>
 <header class="hos">
-<div class="hos-strip"><span class="l">ARCHIVUM HAERETICUM — CORPUS DIVINUS</span><span class="r">Q9 — ДХАММАПАДА</span></div>
+<div class="hos-strip"><span class="l">ARCHIVUM HAERETICUM — CORPUS DIVINUS</span><span class="r">Q9 — DHAMMAPADA</span></div>
 <div class="hos-body">
 <h1 class="hos-h1"><span class="q">Q9</span>ДХАММАПАДА · धम्मपद</h1>
 <div class="hos-sub">26 вагг, 413 строф · пали + рус. · Топоров 1960</div>
 </div>
-<div class="stamps"><span class="fid">◆ FIDELIS</span><span class="cre">✚ MYSTICA</span><span class="dam">✠ BUDDHICA</span></div>
+<div class="stamps">
+<span class="fid">— FIDELIS</span>
+<span class="cre">✚ MYSTICA</span>
+<span class="dam">✠ BUDDHICA</span>
+</div>
 </header>
 
 <nav class="main">
@@ -137,38 +148,43 @@ footer .red{color:var(--red)} footer .gold{color:var(--gold)}
 </div>
 
 <div class="note">
-<p><b>Дхаммапада</b> (пали: धम्मपद, Dharmmapada, «Стопа Закона Будды») — один из самых известных текстов Тхеравады (раннего буддизма). Часть Сутта-питаки (Khuddaka Nikāya), собрание изречений Будды Шакьямуни, сгруппированных по темам.</p><p><b>26 вагг (глав)</b> по темам: парные (1), о бдительности (2), ум (3), цветы (4), глупцы (5), мудрецы (6), мудрецы-просветлённые (7), тысячи (8), зло (9), наказание (10), старость (11), сам (12), мир (13), Будда (14), счастье (15), любимое (16), гнев (17), нечистое (18), правильный (19), путь (20), разное (21), ад (22), слон (23), жажда (24), монах (25), брахман (26).</p>
+<p>Дхаммапада (пали: Dharmmapada, «Стопа Закона Будды») — один из самых известных текстов Тхеравады. Часть Сутта-питаки (Khuddaka Nikāya), собрание изречений Будды Шакьямуни.</p>
+
+<p><b>СОСТАВ КОРПУСА:</b></p>
+<p>26 вагг (глав) по темам:<br>1-2) Парные + О бдительности<br>3-4) Ум + Цветы<br>5-6) Глупцы + Мудрецы<br>7-8) Мудрецы-просветлённые + Тысячи<br>9-10) Зло + Наказание<br>11-12) Старость + Сам<br>13-14) Мир + Будда<br>15-16) Счастье + Любимое<br>17-18) Гнев + Нечистое<br>19-20) Правильный + Путь<br>21-22) Разное + Ад<br>23-24) Слон + Жажда<br>25-26) Монах + Брахман</p>
+
+<p><b>Связь с Q10 Бхагавадгита: оба о «благородном восьмеричном пути» и «дхарме».</b></p>
 </div>
 
 <div class="idx-group">
 <h2>СОДЕРЖАНИЕ</h2>
 <div class="book-grid">
-<a class="book-card" href="v1.html"><span class="ttl">Вагга 1</span><span class="s">пали + рус.</span></a>
-<a class="book-card" href="v2.html"><span class="ttl">Вагга 2</span><span class="s">пали + рус.</span></a>
-<a class="book-card" href="v3.html"><span class="ttl">Вагга 3</span><span class="s">пали + рус.</span></a>
-<a class="book-card" href="v4.html"><span class="ttl">Вагга 4</span><span class="s">пали + рус.</span></a>
-<a class="book-card" href="v5.html"><span class="ttl">Вагга 5</span><span class="s">пали + рус.</span></a>
-<a class="book-card" href="v6.html"><span class="ttl">Вагга 6</span><span class="s">пали + рус.</span></a>
-<a class="book-card" href="v7.html"><span class="ttl">Вагга 7</span><span class="s">пали + рус.</span></a>
-<a class="book-card" href="v8.html"><span class="ttl">Вагга 8</span><span class="s">пали + рус.</span></a>
-<a class="book-card" href="v9.html"><span class="ttl">Вагга 9</span><span class="s">пали + рус.</span></a>
-<a class="book-card" href="v10.html"><span class="ttl">Вагга 10</span><span class="s">пали + рус.</span></a>
-<a class="book-card" href="v11.html"><span class="ttl">Вагга 11</span><span class="s">пали + рус.</span></a>
-<a class="book-card" href="v12.html"><span class="ttl">Вагга 12</span><span class="s">пали + рус.</span></a>
-<a class="book-card" href="v13.html"><span class="ttl">Вагга 13</span><span class="s">пали + рус.</span></a>
-<a class="book-card" href="v14.html"><span class="ttl">Вагга 14</span><span class="s">пали + рус.</span></a>
-<a class="book-card" href="v15.html"><span class="ttl">Вагга 15</span><span class="s">пали + рус.</span></a>
-<a class="book-card" href="v16.html"><span class="ttl">Вагга 16</span><span class="s">пали + рус.</span></a>
-<a class="book-card" href="v17.html"><span class="ttl">Вагга 17</span><span class="s">пали + рус.</span></a>
-<a class="book-card" href="v18.html"><span class="ttl">Вагга 18</span><span class="s">пали + рус.</span></a>
-<a class="book-card" href="v19.html"><span class="ttl">Вагга 19</span><span class="s">пали + рус.</span></a>
-<a class="book-card" href="v20.html"><span class="ttl">Вагга 20</span><span class="s">пали + рус.</span></a>
-<a class="book-card" href="v21.html"><span class="ttl">Вагга 21</span><span class="s">пали + рус.</span></a>
-<a class="book-card" href="v22.html"><span class="ttl">Вагга 22</span><span class="s">пали + рус.</span></a>
-<a class="book-card" href="v23.html"><span class="ttl">Вагга 23</span><span class="s">пали + рус.</span></a>
-<a class="book-card" href="v24.html"><span class="ttl">Вагга 24</span><span class="s">пали + рус.</span></a>
-<a class="book-card" href="v25.html"><span class="ttl">Вагга 25</span><span class="s">пали + рус.</span></a>
-<a class="book-card" href="v26.html"><span class="ttl">Вагга 26</span><span class="s">пали + рус.</span></a>
+<a class="book-card" href="v1.html"><span class="ttl">Вагга 1</span><span class="s">пали + рус. · 1-я из 26</span></a>
+<a class="book-card" href="v2.html"><span class="ttl">Вагга 2</span><span class="s">пали + рус. · 2-я из 26</span></a>
+<a class="book-card" href="v3.html"><span class="ttl">Вагга 3</span><span class="s">пали + рус. · 3-я из 26</span></a>
+<a class="book-card" href="v4.html"><span class="ttl">Вагга 4</span><span class="s">пали + рус. · 4-я из 26</span></a>
+<a class="book-card" href="v5.html"><span class="ttl">Вагга 5</span><span class="s">пали + рус. · 5-я из 26</span></a>
+<a class="book-card" href="v6.html"><span class="ttl">Вагга 6</span><span class="s">пали + рус. · 6-я из 26</span></a>
+<a class="book-card" href="v7.html"><span class="ttl">Вагга 7</span><span class="s">пали + рус. · 7-я из 26</span></a>
+<a class="book-card" href="v8.html"><span class="ttl">Вагга 8</span><span class="s">пали + рус. · 8-я из 26</span></a>
+<a class="book-card" href="v9.html"><span class="ttl">Вагга 9</span><span class="s">пали + рус. · 9-я из 26</span></a>
+<a class="book-card" href="v10.html"><span class="ttl">Вагга 10</span><span class="s">пали + рус. · 10-я из 26</span></a>
+<a class="book-card" href="v11.html"><span class="ttl">Вагга 11</span><span class="s">пали + рус. · 11-я из 26</span></a>
+<a class="book-card" href="v12.html"><span class="ttl">Вагга 12</span><span class="s">пали + рус. · 12-я из 26</span></a>
+<a class="book-card" href="v13.html"><span class="ttl">Вагга 13</span><span class="s">пали + рус. · 13-я из 26</span></a>
+<a class="book-card" href="v14.html"><span class="ttl">Вагга 14</span><span class="s">пали + рус. · 14-я из 26</span></a>
+<a class="book-card" href="v15.html"><span class="ttl">Вагга 15</span><span class="s">пали + рус. · 15-я из 26</span></a>
+<a class="book-card" href="v16.html"><span class="ttl">Вагга 16</span><span class="s">пали + рус. · 16-я из 26</span></a>
+<a class="book-card" href="v17.html"><span class="ttl">Вагга 17</span><span class="s">пали + рус. · 17-я из 26</span></a>
+<a class="book-card" href="v18.html"><span class="ttl">Вагга 18</span><span class="s">пали + рус. · 18-я из 26</span></a>
+<a class="book-card" href="v19.html"><span class="ttl">Вагга 19</span><span class="s">пали + рус. · 19-я из 26</span></a>
+<a class="book-card" href="v20.html"><span class="ttl">Вагга 20</span><span class="s">пали + рус. · 20-я из 26</span></a>
+<a class="book-card" href="v21.html"><span class="ttl">Вагга 21</span><span class="s">пали + рус. · 21-я из 26</span></a>
+<a class="book-card" href="v22.html"><span class="ttl">Вагга 22</span><span class="s">пали + рус. · 22-я из 26</span></a>
+<a class="book-card" href="v23.html"><span class="ttl">Вагга 23</span><span class="s">пали + рус. · 23-я из 26</span></a>
+<a class="book-card" href="v24.html"><span class="ttl">Вагга 24</span><span class="s">пали + рус. · 24-я из 26</span></a>
+<a class="book-card" href="v25.html"><span class="ttl">Вагга 25</span><span class="s">пали + рус. · 25-я из 26</span></a>
+<a class="book-card" href="v26.html"><span class="ttl">Вагга 26</span><span class="s">пали + рус. · 26-я из 26</span></a>
 
 </div>
 </div>

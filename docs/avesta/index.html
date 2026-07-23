@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<title>АВЕСТА · AVESTĀ — Архивум</title>
+<title>АВЕСТА · AVESTĀ · 𐬓𐬀𐬩 — Архивум</title>
 <style>
 :root{--bg:#0a0a0c;--bg2:#0d0d12;--panel:#13131a;--line:#2a2a33;--red:#c8102e;--red-dark:#8a0a1f;--gold:#c9a227;--gold-bright:#e8b84a;--gold-dim:#8a7119;--ink:#e8e2d5;--ink-dim:#9a937f;--orig:#f2ead6;--accent:#d49a3a;--grid:#1d1d24}
 *{box-sizing:border-box;margin:0;padding:0}body{background:var(--bg);color:var(--ink);font-family:Georgia,'Times New Roman',serif;line-height:1.55}
@@ -87,13 +87,18 @@ footer .red{color:var(--red)} footer .gold{color:var(--gold)}
   .ru{font-size:.85rem;line-height:1.4;padding:.5rem .4rem}
 }
 
-.idx-group{margin:18px 24px}
-.idx-group h2{color:var(--gold);font-size:16px;letter-spacing:3px;border-bottom:1px solid var(--line);padding-bottom:6px;font-weight:normal}
-.idx-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(320px,1fr));gap:8px;margin-top:10px}
-.idx-card{border:1px solid var(--line);background:var(--panel);padding:12px 16px;display:block}
-.idx-card:hover{border-color:var(--gold-dim);text-decoration:none}
-.idx-card .t{color:var(--gold);font-size:15px;font-weight:bold}
-.idx-card .s{color:var(--ink-dim);font-size:12px;margin-top:4px;line-height:1.5}
+/* Q20 EGYPTIAN additions */
+.verse .egy{grid-column:1;font-family:'Papyrus','Segoe UI Historic',serif;font-size:1.05rem;line-height:1.8;direction:ltr;text-align:left;color:#e8b84a;background:rgba(232,184,74,0.04);border-right:3px solid var(--gold-dim);padding:12px 14px;font-style:italic}
+.verse .ru{grid-column:2;font-size:0.98rem;line-height:1.75;color:var(--ink);background:rgba(201,162,39,0.025);border-left:1px solid var(--gold-dim);padding:12px 14px}
+.verse .transl-note{grid-column:1/-1;padding:6px 14px;font-size:0.78rem;color:var(--ink-dim);font-style:italic;text-align:right;background:rgba(0,0,0,0.15);border-top:1px solid var(--line)}
+.verse .num,.verse .transl-note{color:var(--gold-bright)}
+
+.verse .av,.verse .sk,.verse .he,.verse .grc,.verse .zh,.verse .sa,.verse .ar,.verse .dev,.verse .en,.verse .gr,.verse .csl,.verse .fa,.verse .ak,.verse .bo,.verse .tib{font-family:'Times New Roman',Georgia,serif;font-size:1.05rem;line-height:1.7;color:var(--orig);background:rgba(201,162,39,0.04);border-right:3px solid var(--gold-dim);padding:12px 14px;direction:ltr;text-align:left;font-style:italic}
+.row .av,.row .sk,.row .he,.row .grc,.row .zh,.row .sa,.row .ar,.row .dev,.row .en,.row .gr,.row .csl,.row .fa,.row .ak,.row .bo,.row .tib{font-family:'Times New Roman',Georgia,serif;font-size:1.05rem;line-height:1.7;color:var(--orig);background:rgba(201,162,39,0.04);padding:10px 12px;direction:ltr;text-align:left}
+.verse{display:grid;grid-template-columns:3.2rem 1fr 1.1fr;border-bottom:1px solid var(--grid);align-items:start;transition:background 0.15s}
+.row{display:grid;grid-template-columns:3.2rem 1fr 1.1fr 1fr;border-bottom:1px solid var(--grid);align-items:start;transition:background 0.15s}
+.num{font-family:'Courier New',monospace;font-size:11px;color:var(--gold);text-align:center;padding:12px 4px;background:rgba(0,0,0,0.3);border-right:1px solid var(--line);font-weight:bold;align-self:start}
+.ru{font-size:.92rem;line-height:1.6;color:var(--ink);padding:10px 12px;background:rgba(255,255,255,0.01);border-left:1px solid var(--line);align-self:start;grid-column:3}
 
 .idx-group{margin:20px 14px;border-bottom:1px solid var(--line);padding-bottom:14px}
 .idx-group h2{color:var(--gold);font-size:1.05rem;letter-spacing:.22em;border-left:4px solid var(--red);padding-left:.8rem;margin-bottom:1rem;font-weight:normal}
@@ -102,25 +107,31 @@ footer .red{color:var(--red)} footer .gold{color:var(--gold)}
 .book-card:hover{border-color:var(--gold);background:#1a1410;text-decoration:none;color:var(--gold-bright)}
 .book-card .ttl{color:var(--gold);font-size:14px;font-weight:bold}
 .book-card .s{color:var(--ink-dim);font-size:12px;line-height:1.45}
-.cross-ref{background:rgba(200,16,46,0.04);border:1px solid var(--red-dark);padding:10px 14px;margin:14px;font-size:13px;line-height:1.55}
-.cross-ref b{color:var(--red)}
+.note{font-size:14px;line-height:1.7;padding:14px 16px;background:rgba(201,162,39,0.04);border-left:4px solid var(--gold);margin:14px 0}
+.note p{margin-bottom:10px}
+.note ul{padding-left:24px;margin-bottom:10px}
+.note li{margin-bottom:4px}
 @media(max-width:760px){
   .hos-h1{font-size:1.2rem;letter-spacing:.05em;line-height:1.3}
   .book-grid{grid-template-columns:1fr;gap:6px}
   .book-card{padding:10px;font-size:13px}
-  .note{font-size:12px;line-height:1.55;padding:10px 12px}
+  .note{font-size:13px;line-height:1.55;padding:10px 12px}
   .idx-group{margin:14px 10px}
 }
 </style>
 </head>
 <body>
 <header class="hos">
-<div class="hos-strip"><span class="l">ARCHIVUM HAERETICUM — CORPUS DIVINUS</span><span class="r">Q7 — АВЕСТА</span></div>
+<div class="hos-strip"><span class="l">ARCHIVUM HAERETICUM — CORPUS DIVINUS</span><span class="r">Q7 — AVESTĀ</span></div>
 <div class="hos-body">
-<h1 class="hos-h1"><span class="q">Q7</span>АВЕСТА · AVESTĀ</h1>
-<div class="hos-sub">Священный свод зороастризма · 17 гимнов · авест. + рус.</div>
+<h1 class="hos-h1"><span class="q">Q7</span>АВЕСТА · AVESTĀ · 𐬓𐬀𐬩</h1>
+<div class="hos-sub">5 гат, 17 гимнов · авест. + рус. · Чистяков 2005</div>
 </div>
-<div class="stamps"><span class="fid">◆ FIDELIS</span><span class="cre">✚ MYSTICA</span><span class="dam">✠ ZOROASTRICA</span></div>
+<div class="stamps">
+<span class="fid">— FIDELIS</span>
+<span class="cre">✚ MYSTICA</span>
+<span class="dam">✠ ZOROASTRICA</span>
+</div>
 </header>
 
 <nav class="main">
@@ -137,13 +148,18 @@ footer .red{color:var(--red)} footer .gold{color:var(--gold)}
 </div>
 
 <div class="note">
-<p><b>Авеста</b> (Avestā) — священный свод зороастризма, одна из древнейших монотеистических религий. Написана на древнеавестийском (Гаты) и младшеавестийском языках (остальные тексты).</p><p><b>Состав:</b> 1. <b>Гаты</b> (Gāθā) — 17 гимнов Заратуштры (Y28-34, 43-46, 47-50, 51, 53); 2. <b>Ясна</b> (Yasnā) — 72 главы; 3. <b>Висперед</b> — гимн Виштаспе; 4. <b>Яшты</b> (Yašt) — 22 гимна божествам; 5. <b>Видевдат</b> (Vidēvdāt) — закон против демонов; 6. <b>Хордэ Авеста</b> — молитвы.</p>
+<p>Авеста — священный свод зороастризма, одна из древнейших монотеических традиций. Составлена в VI в. до н.э. — IV в. н.э. на древнеавестийском (Гаты) и младшеавестийском языках. Содержит 17 гимнов Заратуштры (Гаты), Яшт, Видевдат.</p>
+
+<p><b>СОСТАВ КОРПУСА:</b></p>
+<p>5 разделов Авесты:<br>1) <b>Гаты</b> — 17 гимнов Заратуштры (Y28-34, 43-46, 47-50, 51, 53)<br>2) <b>Ясна</b> — литургический сборник 72 глав<br>3) <b>Висперед</b> — гимн Виштаспе<br>4) <b>Яшты</b> — 22 гимна божествам<br>5) <b>Видевдат</b> — 22 главы закона</p>
+
+<p><b>Связь с Q3 Танах: Зороастризм — древнейшая монотеическая религия, повлиявшая на иудаизм, христианство и ислам.</b></p>
 </div>
 
 <div class="idx-group">
 <h2>СОДЕРЖАНИЕ</h2>
 <div class="book-grid">
-<a class="book-card" href="gathas.html"><span class="ttl">Ахунаваити (Y28-34)</span><span class="s">7 строф · Ясна 28-34 · авест.+рус.</span></a>
+<a class="book-card" href="gathas.html"><span class="ttl">Ахунаваити (Y28-34)</span><span class="s">7 строф · Гаты · авест.+рус.</span></a>
 <a class="book-card" href="ushtavaiti.html"><span class="ttl">Уштаваити (Y43-46)</span><span class="s">4 строфы · о Святом Духе</span></a>
 <a class="book-card" href="spentamainyu.html"><span class="ttl">Спентамайнью (Y47-50)</span><span class="s">4 строфы · о Святой Земле</span></a>
 <a class="book-card" href="vohukhshathra.html"><span class="ttl">Вохухшатра (Y51)</span><span class="s">1 строфа · о Благой Власти</span></a>
