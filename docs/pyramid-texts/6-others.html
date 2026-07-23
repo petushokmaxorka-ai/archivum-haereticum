@@ -134,12 +134,17 @@ footer .red{color:var(--red)} footer .gold{color:var(--gold)}
   .hos-h1{font-size:1.2rem;letter-spacing:.05em;line-height:1.3}
 }
 
+.eg{grid-column:2;padding:10px 12px;font-size:1rem;line-height:1.7;color:var(--orig);background:rgba(201,162,39,0.025);border-right:1px solid var(--gold-dim);border-left:3px solid var(--gold-dim);font-style:italic;direction:ltr;font-family:"Noto Sans Egyptian Hieroglyphs","SBL Egyptian","Times New Roman",serif}
 .toolbar button,.toolbar a.btn-link{display:inline-flex;align-items:center;justify-content:center;height:30px;padding:0 14px;background:transparent;border:1px solid var(--gold-dim);color:var(--gold);font-size:10px;letter-spacing:1.5px;cursor:pointer;font-family:inherit;text-transform:uppercase;text-decoration:none;transition:all 0.15s;box-sizing:border-box;white-space:nowrap;margin:0;text-align:center}
 .toolbar button:hover,.toolbar a.btn-link:hover{background:var(--gold);color:var(--bg)}
 .toolbar-row{display:flex;justify-content:center;align-items:center;gap:6px;flex-wrap:wrap;margin:0 0 5px}
 .toolbar-row:last-child{margin-bottom:0}
 .toolbar-row.half button,.toolbar-row.half a.btn-link{flex:1 1 calc(50% - 3px);min-width:120px;max-width:calc(50% - 3px)}
 .toolbar-row.full a.btn-link{flex:1 1 100%;min-width:200px;max-width:340px}
+.spell-header{background:rgba(201,162,39,0.05);padding:8px 12px;margin:14px 0 4px;border-left:3px solid var(--gold);font-family:'Courier New',monospace}
+.spell-header .qbadge{color:var(--gold-bright);font-size:11px;letter-spacing:1.5px;margin-right:8px;display:inline-block;border:1px solid var(--gold-dim);padding:2px 6px}
+.spell-header .title{color:var(--ink);font-size:14px;font-weight:bold;font-family:Georgia,serif}
+.spell-context{padding:6px 12px;font-size:12px;line-height:1.5;color:var(--ink-dim);font-style:italic;background:rgba(201,162,39,0.03);border-left:3px solid var(--gold-dim);margin:0 0 2px}
 </style>
 </head>
 <body>
@@ -147,7 +152,7 @@ footer .red{color:var(--red)} footer .gold{color:var(--gold)}
 <div class="hos-strip"><span class="l">ARCHIVUM HAERETICUM — Q28 PYRAMID TEXTS</span><span class="r">OTHER V-VI DYNASTY PYRAMIDS</span></div>
 <div class="hos-body">
 <h1 class="hos-h1">ДРУГИЕ ПИРАМИДЫ V-VI ДИН. · OTHER PYRAMIDS</h1>
-<div class="hos-sub">Ипут II · Анхесепепи · фрагменты · 80+ заклинаний · ~2200 до н.э. · дополняют основной корпус</div>
+<div class="hos-sub">Ипут II · Анхесепепи · фрагменты · 80+ заклинаний · ~2200 до н.э.</div>
 </div>
 <div class="stamps">
 <span class="fid">— FIDELIS</span>
@@ -163,93 +168,102 @@ footer .red{color:var(--red)} footer .gold{color:var(--gold)}
 
 <main>
 <div class="toolbar">
-<div class="toolbar-row half"><button onclick="document.querySelectorAll('details.spell').forEach(d=>d.open=true)">▼ РАЗВЕРНУТЬ</button><button onclick="document.querySelectorAll('details.spell').forEach(d=>d.open=false)">▲ СВЕРНУТЬ</button></div>
+<div class="toolbar-row half"><button onclick="document.querySelectorAll('details.corpus').forEach(d=>d.open=true)">▼ РАЗВЕРНУТЬ</button><button onclick="document.querySelectorAll('details.corpus').forEach(d=>d.open=false)">▲ СВЕРНУТЬ</button></div>
 <div class="toolbar-row full"><a class="btn-link" href="../index.html"><svg viewBox="0 0 24 24" width="13" height="13" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" style="flex-shrink:0;margin-right:6px"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/><line x1="9" y1="7" x2="16" y2="7"/><line x1="9" y1="11" x2="16" y2="11"/><line x1="9" y1="15" x2="13" y2="15"/></svg>ВСЕ ТЕКСТЫ</a></div>
 <div class="toolbar-row half"><a class="btn-link" href="../02-libri-deperditi/abram/index.html"><svg viewBox="0 0 24 24" width="13" height="13" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" style="flex-shrink:0;margin-right:6px"><polygon points="12,2.5 21.5,19 2.5,19"/><polygon points="12,21.5 21.5,5 2.5,5"/></svg>АВРААМИЧЕСКИЕ</a><a class="btn-link" href="../02-libri-deperditi/non-abram/index.html"><svg viewBox="0 0 24 24" width="13" height="13" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" style="flex-shrink:0;margin-right:6px"><circle cx="12" cy="12" r="9.5"/><circle cx="12" cy="12" r="2.5"/><line x1="12" y1="2.5" x2="12" y2="9.5"/><line x1="12" y1="14.5" x2="12" y2="21.5"/><line x1="2.5" y1="12" x2="9.5" y2="12"/><line x1="14.5" y1="12" x2="21.5" y2="12"/><line x1="5.3" y1="5.3" x2="9.9" y2="9.9"/><line x1="14.1" y1="14.1" x2="18.7" y2="18.7"/><line x1="5.3" y1="18.7" x2="9.9" y2="14.1"/><line x1="14.1" y1="9.9" x2="18.7" y2="5.3"/></svg>НЕ-АВРААМИЧЕСКИЕ</a></div>
 </div>
 
 <div class="note main-note" style="color:var(--red)">
 <p><b>ДРУГИЕ ПИРАМИДЫ · OTHER PYRAMIDS</b></p>
-<p>Ипут II · Анхесепепи · фрагменты · 80+ заклинаний · ~2200 до н.э. · дополняют основной корпус</p>
+<p>Ипут II · Анхесепепи · фрагменты · 80+ заклинаний · ~2200 до н.э.</p>
+<p><b>Формат:</b> каждый <b>PT 223</b> представлен как параллельный текст — оригинал (египтологическая транслитерация) слева, русский перевод справа. Сверху — исторический контекст. Все заклинания вырезаны иероглифами на стенах погребальной камеры пирамиды.</p>
 </div>
 
-<details class="spell">
-<summary><div class="left"><span class="qbadge">PT 223</span>Изречение о вознесении Ипут II</div><div class="count">~223 заклинание</div></summary>
+<details class="corpus spell" open>
+<summary><div class="left"><span class="qbadge">PT 223</span>Изречение о вознесении Ипут II</div><div class="count">заклинание №223</div></summary>
 <div class="body">
-<div class="note" style="margin:8px 0;font-size:12px;line-height:1.5">Пирамида царицы Ипут II (жена Пепи I) — единственная женская пирамида с текстами.</div>
-<div class="verse" style="display:grid;grid-template-columns:1fr 1fr;gap:8px;margin:8px 0;padding:10px;background:rgba(201,162,39,0.05);border-left:3px solid var(--gold-dim)">
-<div class="he" style="direction:ltr;text-align:left;font-family:'SBL Egyptian','Times New Roman',serif;font-size:14px;color:var(--ink);font-style:italic;line-height:1.6">qꜣi wsjr ꜥp.wt-ꜥꜣ.t r pt</div>
-<div class="ru" style="font-family:Georgia,serif;font-size:14px;color:var(--ink);line-height:1.6">Да вознесётся царица Ипут II на небо!</div>
+<div class="note" style="margin:8px 12px;font-size:12px;line-height:1.5;color:var(--ink-dim);font-style:italic">Пирамида царицы Ипут II (жена Пепи I) — единственная женская пирамида с текстами.</div>
+<div class="row">
+<div class="num">223</div>
+<div class="eg">qꜣi wsjr ꜥp.wt-ꜥꜣ.t r pt</div>
+<div class="ru">Да вознесётся царица Ипут II на небо!</div>
 </div>
 </div>
 </details>
-<details class="spell">
-<summary><div class="left"><span class="qbadge">PT 228</span>Изречение о кобрах</div><div class="count">~228 заклинание</div></summary>
+<details class="corpus spell" open>
+<summary><div class="left"><span class="qbadge">PT 228</span>Изречение о кобрах</div><div class="count">заклинание №228</div></summary>
 <div class="body">
-<div class="note" style="margin:8px 0;font-size:12px;line-height:1.5">Царица как богиня-змея, защитница фараона.</div>
-<div class="verse" style="display:grid;grid-template-columns:1fr 1fr;gap:8px;margin:8px 0;padding:10px;background:rgba(201,162,39,0.05);border-left:3px solid var(--gold-dim)">
-<div class="he" style="direction:ltr;text-align:left;font-family:'SBL Egyptian','Times New Roman',serif;font-size:14px;color:var(--ink);font-style:italic;line-height:1.6">ꜥr.t n wsjr ꜥp.wt-ꜥꜣ.t</div>
-<div class="ru" style="font-family:Georgia,serif;font-size:14px;color:var(--ink);line-height:1.6">Урей (кобра) для царицы Ипут II!</div>
+<div class="note" style="margin:8px 12px;font-size:12px;line-height:1.5;color:var(--ink-dim);font-style:italic">Царица как богиня-змея, защитница фараона.</div>
+<div class="row">
+<div class="num">228</div>
+<div class="eg">ꜥr.t n wsjr ꜥp.wt-ꜥꜣ.t</div>
+<div class="ru">Урей (кобра) для царицы Ипут II!</div>
 </div>
 </div>
 </details>
-<details class="spell">
-<summary><div class="left"><span class="qbadge">PT 244</span>Изречение о Маат</div><div class="count">~244 заклинание</div></summary>
+<details class="corpus spell" open>
+<summary><div class="left"><span class="qbadge">PT 244</span>Изречение о Маат</div><div class="count">заклинание №244</div></summary>
 <div class="body">
-<div class="note" style="margin:8px 0;font-size:12px;line-height:1.5">Царица как воплощение космического порядка.</div>
-<div class="verse" style="display:grid;grid-template-columns:1fr 1fr;gap:8px;margin:8px 0;padding:10px;background:rgba(201,162,39,0.05);border-left:3px solid var(--gold-dim)">
-<div class="he" style="direction:ltr;text-align:left;font-family:'SBL Egyptian','Times New Roman',serif;font-size:14px;color:var(--ink);font-style:italic;line-height:1.6">mꜣꜥ.t n wsjr ꜥp.wt-ꜥꜣ.t</div>
-<div class="ru" style="font-family:Georgia,serif;font-size:14px;color:var(--ink);line-height:1.6">Маат для царицы Ипут II!</div>
+<div class="note" style="margin:8px 12px;font-size:12px;line-height:1.5;color:var(--ink-dim);font-style:italic">Царица как воплощение космического порядка.</div>
+<div class="row">
+<div class="num">244</div>
+<div class="eg">mꜣꜥ.t n wsjr ꜥp.wt-ꜥꜣ.t</div>
+<div class="ru">Маат для царицы Ипут II!</div>
 </div>
 </div>
 </details>
-<details class="spell">
-<summary><div class="left"><span class="qbadge">PT 303</span>Изречение о ночном солнце</div><div class="count">~303 заклинание</div></summary>
+<details class="corpus spell" open>
+<summary><div class="left"><span class="qbadge">PT 303</span>Изречение о ночном солнце</div><div class="count">заклинание №303</div></summary>
 <div class="body">
-<div class="note" style="margin:8px 0;font-size:12px;line-height:1.5">Царица отождествляется с ночным солнцем.</div>
-<div class="verse" style="display:grid;grid-template-columns:1fr 1fr;gap:8px;margin:8px 0;padding:10px;background:rgba(201,162,39,0.05);border-left:3px solid var(--gold-dim)">
-<div class="he" style="direction:ltr;text-align:left;font-family:'SBL Egyptian','Times New Roman',serif;font-size:14px;color:var(--ink);font-style:italic;line-height:1.6">rꜥ grḥ n wsjr ꜥp.wt-ꜥꜣ.t</div>
-<div class="ru" style="font-family:Georgia,serif;font-size:14px;color:var(--ink);line-height:1.6">Ра ночью — царица Ипут II!</div>
+<div class="note" style="margin:8px 12px;font-size:12px;line-height:1.5;color:var(--ink-dim);font-style:italic">Царица отождествляется с ночным солнцем.</div>
+<div class="row">
+<div class="num">303</div>
+<div class="eg">rꜥ grḥ n wsjr ꜥp.wt-ꜥꜣ.t</div>
+<div class="ru">Ра ночью — царица Ипут II!</div>
 </div>
 </div>
 </details>
-<details class="spell">
-<summary><div class="left"><span class="qbadge">PT 335</span>Изречение о венце</div><div class="count">~335 заклинание</div></summary>
+<details class="corpus spell" open>
+<summary><div class="left"><span class="qbadge">PT 335</span>Изречение о венце</div><div class="count">заклинание №335</div></summary>
 <div class="body">
-<div class="note" style="margin:8px 0;font-size:12px;line-height:1.5">Венец Небти (две кобры + два сокола) — царский головной убор.</div>
-<div class="verse" style="display:grid;grid-template-columns:1fr 1fr;gap:8px;margin:8px 0;padding:10px;background:rgba(201,162,39,0.05);border-left:3px solid var(--gold-dim)">
-<div class="he" style="direction:ltr;text-align:left;font-family:'SBL Egyptian','Times New Roman',serif;font-size:14px;color:var(--ink);font-style:italic;line-height:1.6">rꜣ-nb n wsjr ꜥp.wt-ꜥꜣ.t</div>
-<div class="ru" style="font-family:Georgia,serif;font-size:14px;color:var(--ink);line-height:1.6">Венец для царицы Ипут II!</div>
+<div class="note" style="margin:8px 12px;font-size:12px;line-height:1.5;color:var(--ink-dim);font-style:italic">Венец Небти (две кобры + два сокола) — царский головной убор.</div>
+<div class="row">
+<div class="num">335</div>
+<div class="eg">rꜣ-nb n wsjr ꜥp.wt-ꜥꜣ.t</div>
+<div class="ru">Венец для царицы Ипут II!</div>
 </div>
 </div>
 </details>
-<details class="spell">
-<summary><div class="left"><span class="qbadge">PT 390</span>Изречение о сердце</div><div class="count">~390 заклинание</div></summary>
+<details class="corpus spell" open>
+<summary><div class="left"><span class="qbadge">PT 390</span>Изречение о сердце</div><div class="count">заклинание №390</div></summary>
 <div class="body">
-<div class="note" style="margin:8px 0;font-size:12px;line-height:1.5">Сердце царицы праведно на весах загробного суда.</div>
-<div class="verse" style="display:grid;grid-template-columns:1fr 1fr;gap:8px;margin:8px 0;padding:10px;background:rgba(201,162,39,0.05);border-left:3px solid var(--gold-dim)">
-<div class="he" style="direction:ltr;text-align:left;font-family:'SBL Egyptian','Times New Roman',serif;font-size:14px;color:var(--ink);font-style:italic;line-height:1.6">ib nfr n wsjr ꜥp.wt-ꜥꜣ.t</div>
-<div class="ru" style="font-family:Georgia,serif;font-size:14px;color:var(--ink);line-height:1.6">Благое сердце царицы Ипут II!</div>
+<div class="note" style="margin:8px 12px;font-size:12px;line-height:1.5;color:var(--ink-dim);font-style:italic">Сердце царицы праведно на весах загробного суда.</div>
+<div class="row">
+<div class="num">390</div>
+<div class="eg">ib nfr n wsjr ꜥp.wt-ꜥꜣ.t</div>
+<div class="ru">Благое сердце царицы Ипут II!</div>
 </div>
 </div>
 </details>
-<details class="spell">
-<summary><div class="left"><span class="qbadge">PT 455</span>Изречение о змее</div><div class="count">~455 заклинание</div></summary>
+<details class="corpus spell" open>
+<summary><div class="left"><span class="qbadge">PT 455</span>Изречение о змее</div><div class="count">заклинание №455</div></summary>
 <div class="body">
-<div class="note" style="margin:8px 0;font-size:12px;line-height:1.5">Магическая змея, защищающая покойного.</div>
-<div class="verse" style="display:grid;grid-template-columns:1fr 1fr;gap:8px;margin:8px 0;padding:10px;background:rgba(201,162,39,0.05);border-left:3px solid var(--gold-dim)">
-<div class="he" style="direction:ltr;text-align:left;font-family:'SBL Egyptian','Times New Roman',serif;font-size:14px;color:var(--ink);font-style:italic;line-height:1.6">dft n wsjr ꜥp.wt-ꜥꜣ.t</div>
-<div class="ru" style="font-family:Georgia,serif;font-size:14px;color:var(--ink);line-height:1.6">Змея-Мефен (защитник) для царицы Ипут II!</div>
+<div class="note" style="margin:8px 12px;font-size:12px;line-height:1.5;color:var(--ink-dim);font-style:italic">Магическая змея, защищающая покойного.</div>
+<div class="row">
+<div class="num">455</div>
+<div class="eg">dft n wsjr ꜥp.wt-ꜥꜣ.t</div>
+<div class="ru">Змея-Мефен (защитник) для царицы Ипут II!</div>
 </div>
 </div>
 </details>
-<details class="spell">
-<summary><div class="left"><span class="qbadge">PT 580</span>Изречение о зерне</div><div class="count">~580 заклинание</div></summary>
+<details class="corpus spell" open>
+<summary><div class="left"><span class="qbadge">PT 580</span>Изречение о зерне</div><div class="count">заклинание №580</div></summary>
 <div class="body">
-<div class="note" style="margin:8px 0;font-size:12px;line-height:1.5">Символ воскресения, как зерно прорастает из мёртвой земли.</div>
-<div class="verse" style="display:grid;grid-template-columns:1fr 1fr;gap:8px;margin:8px 0;padding:10px;background:rgba(201,162,39,0.05);border-left:3px solid var(--gold-dim)">
-<div class="he" style="direction:ltr;text-align:left;font-family:'SBL Egyptian','Times New Roman',serif;font-size:14px;color:var(--ink);font-style:italic;line-height:1.6">swt n wsjr ꜥp.wt-ꜥꜣ.t</div>
-<div class="ru" style="font-family:Georgia,serif;font-size:14px;color:var(--ink);line-height:1.6">Зерно для царицы Ипут II!</div>
+<div class="note" style="margin:8px 12px;font-size:12px;line-height:1.5;color:var(--ink-dim);font-style:italic">Символ воскресения, как зерно прорастает из мёртвой земли.</div>
+<div class="row">
+<div class="num">580</div>
+<div class="eg">swt n wsjr ꜥp.wt-ꜥꜣ.t</div>
+<div class="ru">Зерно для царицы Ипут II!</div>
 </div>
 </div>
 </details>
