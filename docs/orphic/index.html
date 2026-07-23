@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<title>ORPHIC HYMNS — Ὀρφικοὶ ὕμνοι — ОРФИЧЕСКИЕ ГИМНЫ</title>
+<title>ОРФИЗМ · Ὀρφισμός · Ὀρφικοὶ ὕμνοι — Архивум</title>
 <style>
 :root{--bg:#0a0a0c;--bg2:#0d0d12;--panel:#13131a;--line:#2a2a33;--red:#c8102e;--red-dark:#8a0a1f;--gold:#c9a227;--gold-bright:#e8b84a;--gold-dim:#8a7119;--ink:#e8e2d5;--ink-dim:#9a937f;--orig:#f2ead6;--accent:#d49a3a;--grid:#1d1d24}
 *{box-sizing:border-box;margin:0;padding:0}body{background:var(--bg);color:var(--ink);font-family:Georgia,'Times New Roman',serif;line-height:1.55}
@@ -46,34 +46,96 @@ main{max-width:1300px;margin:0 auto;padding:0 12px 40px}
 footer{padding:18px;text-align:center;color:var(--ink-dim);font-size:10px;border-top:1px solid var(--line);font-family:'Courier New',monospace;letter-spacing:2px;background:var(--bg2)}
 footer .red{color:var(--red)} footer .gold{color:var(--gold)}
 @media(max-width:760px){
-  .hos-h1{font-size:1.2rem}
+  .hos-h1{font-size:1.2rem;letter-spacing:.05em;line-height:1.3}
+  .hos-sub{font-size:12px}
+  .hos-strip{font-size:9px;letter-spacing:1px;padding:4px 8px}
+  .stamps span{font-size:8px;letter-spacing:1px;padding:2px 5px;margin:0 1px}
+  
+  /* Stack verse vertically on mobile */
+  .verse,.row{grid-template-columns:1fr !important;display:block !important;padding:8px 10px;margin-bottom:8px;border:1px solid var(--line);background:var(--bg2)}
+  .verse .num,.row .num{display:inline-block;background:rgba(0,0,0,0.5);padding:2px 8px;margin-bottom:6px;width:auto;text-align:left;font-size:11px;border:1px solid var(--gold-dim);border-radius:2px}
+  
+  /* Original language - full width */
+  .verse .av,.verse .sk,.verse .he,.verse .grc,.verse .zh,.verse .sa,.verse .ar,.verse .dev,.verse .en,.verse .gr,.verse .egy,.verse .csl,.verse .fa,.verse .ak,.verse .bo,.verse .tib,
+  .row .av,.row .sk,.row .he,.row .grc,.row .zh,.row .sa,.row .ar,.row .dev,.row .en,.row .gr,.row .csl,.row .fa,.row .ak,.row .bo,.row .tib{font-size:1.05rem;line-height:1.7;padding:8px 10px;border-left:3px solid var(--gold-dim);margin:6px 0;background:rgba(201,162,39,0.04);font-style:italic;width:auto !important;display:block}
+  
+  /* Russian - full width */
+  .verse .ru,.row .ru{font-size:.95rem;line-height:1.6;padding:8px 10px;border-left:3px solid var(--red);background:rgba(200,16,46,0.04);margin:6px 0;width:auto !important;display:block;grid-column:1}
+  
+  /* Toolbar */
+  .toolbar{display:flex;flex-wrap:wrap;gap:4px;padding:6px;margin:8px 0}
+  .toolbar button{font-size:10px;padding:5px 8px;letter-spacing:0;flex:1 1 30%;min-width:60px}
+  
+  /* Container */
+  main{padding:0 8px}
+  nav.main{padding:6px 10px;font-size:11px}
+  nav.main a{margin:0 3px;padding:2px 4px}
+  
+  /* Book cards */
+  .book-grid{grid-template-columns:1fr;gap:6px}
+  .book-card{font-size:13px;padding:8px 10px;line-height:1.4}
+  
+  /* Note */
+  .note{font-size:13px;line-height:1.55;padding:8px 10px;margin:8px 0}
+  
+  /* Footer */
+  footer{font-size:11px;padding:8px 10px}
+}
   .row{grid-template-columns:2rem 1fr 1.1fr}
   .num{font-size:.7rem;padding:.5rem .3rem}
   .ar{font-size:1.1rem;line-height:1.7;padding:.5rem .4rem}
   .ru{font-size:.85rem;line-height:1.4;padding:.5rem .4rem}
 }
 
-.idx-group{margin:18px 24px}
-.idx-group h2{color:var(--gold);font-size:16px;letter-spacing:3px;border-bottom:1px solid var(--line);padding-bottom:6px;font-weight:normal}
-.idx-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(320px,1fr));gap:8px;margin-top:10px}
-.idx-card{border:1px solid var(--line);background:var(--panel);padding:12px 16px;display:block}
-.idx-card:hover{border-color:var(--gold-dim);text-decoration:none}
-.idx-card .t{color:var(--gold);font-size:15px;font-weight:bold}
-.idx-card .s{color:var(--ink-dim);font-size:12px;margin-top:4px;line-height:1.5}
+/* Q20 EGYPTIAN additions */
+.verse .egy{grid-column:1;font-family:'Papyrus','Segoe UI Historic',serif;font-size:1.05rem;line-height:1.8;direction:ltr;text-align:left;color:#e8b84a;background:rgba(232,184,74,0.04);border-right:3px solid var(--gold-dim);padding:12px 14px;font-style:italic}
+.verse .ru{grid-column:2;font-size:0.98rem;line-height:1.75;color:var(--ink);background:rgba(201,162,39,0.025);border-left:1px solid var(--gold-dim);padding:12px 14px}
+.verse .transl-note{grid-column:1/-1;padding:6px 14px;font-size:0.78rem;color:var(--ink-dim);font-style:italic;text-align:right;background:rgba(0,0,0,0.15);border-top:1px solid var(--line)}
+.verse .num,.verse .transl-note{color:var(--gold-bright)}
+
+.verse .av,.verse .sk,.verse .he,.verse .grc,.verse .zh,.verse .sa,.verse .ar,.verse .dev,.verse .en,.verse .gr,.verse .csl,.verse .fa,.verse .ak,.verse .bo,.verse .tib{font-family:'Times New Roman',Georgia,serif;font-size:1.05rem;line-height:1.7;color:var(--orig);background:rgba(201,162,39,0.04);border-right:3px solid var(--gold-dim);padding:12px 14px;direction:ltr;text-align:left;font-style:italic}
+.row .av,.row .sk,.row .he,.row .grc,.row .zh,.row .sa,.row .ar,.row .dev,.row .en,.row .gr,.row .csl,.row .fa,.row .ak,.row .bo,.row .tib{font-family:'Times New Roman',Georgia,serif;font-size:1.05rem;line-height:1.7;color:var(--orig);background:rgba(201,162,39,0.04);padding:10px 12px;direction:ltr;text-align:left}
+.verse{display:grid;grid-template-columns:3.2rem 1fr 1.1fr;border-bottom:1px solid var(--grid);align-items:start;transition:background 0.15s}
+.row{display:grid;grid-template-columns:3.2rem 1fr 1.1fr 1fr;border-bottom:1px solid var(--grid);align-items:start;transition:background 0.15s}
+.num{font-family:'Courier New',monospace;font-size:11px;color:var(--gold);text-align:center;padding:12px 4px;background:rgba(0,0,0,0.3);border-right:1px solid var(--line);font-weight:bold;align-self:start}
+.ru{font-size:.92rem;line-height:1.6;color:var(--ink);padding:10px 12px;background:rgba(255,255,255,0.01);border-left:1px solid var(--line);align-self:start;grid-column:3}
+
+.idx-group{margin:20px 14px;border-bottom:1px solid var(--line);padding-bottom:14px}
+.idx-group h2{color:var(--gold);font-size:1.05rem;letter-spacing:.22em;border-left:4px solid var(--red);padding-left:.8rem;margin-bottom:1rem;font-weight:normal}
+.book-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:8px;margin-top:6px}
+.book-card{border:1px solid var(--line);background:var(--bg2);padding:8px 12px;display:flex;flex-direction:column;gap:3px;text-decoration:none;color:var(--ink);transition:all 0.15s;font-size:13px}
+.book-card:hover{border-color:var(--gold);background:#1a1410;text-decoration:none;color:var(--gold-bright)}
+.book-card .ttl{color:var(--gold);font-size:14px;font-weight:bold}
+.book-card .s{color:var(--ink-dim);font-size:12px;line-height:1.45}
+.cross-ref{background:rgba(200,16,46,0.04);border:1px solid var(--red-dark);padding:10px 14px;margin:14px;font-size:13px;line-height:1.55}
+.cross-ref b{color:var(--red)}
+.note{font-size:14px;line-height:1.6}
+.note p{margin-bottom:8px}
+@media(max-width:760px){
+  .hos-h1{font-size:1.2rem;letter-spacing:.05em;line-height:1.3}
+  .book-grid{grid-template-columns:1fr;gap:6px}
+  .book-card{padding:10px;font-size:13px}
+  .note{font-size:13px;line-height:1.55;padding:10px 12px}
+  .idx-group{margin:14px 10px}
+}
 </style>
 </head>
 <body>
 <header class="hos">
-<div class="hos-strip"><span class="l">ARCHIVUM HAERETICUM — CORPUS DIVINUS</span><span class="r">Q19 — ORPHIC</span></div>
+<div class="hos-strip"><span class="l">ARCHIVUM HAERETICUM — CORPUS DIVINUS</span><span class="r">Q19 — ORPHICA</span></div>
 <div class="hos-body">
-<h1 class="hos-h1"><span class="q">Q19</span>ORPHIC HYMNS — Ὀρφικοὶ ὕμνοι — ОРФИЧЕСКИЕ ГИМНЫ</h1>
-<div class="hos-sub">Grecheskaya mistika, 87 gimnov, II v. do n.e. - II v. n.e., 34 stikha otbrano, grecheskij + russkij</div>
+<h1 class="hos-h1"><span class="q">Q19</span>ОРФИЗМ · Ὀρφισμός · Ὀρφικοὶ ὕμνοι</h1>
+<div class="hos-sub">Орфические гимны · 34 ключевых гимна · греч. + рус. · Борухович/Тахо-Годи 1999</div>
 </div>
-<div class="stamps"><span class="fid">◆ FIDELIS</span><span class="cre">✚ MYSTICA</span><span class="dam">✠ HELLENICA</span></div>
+<div class="stamps">
+<span class="fid">— FIDELIS</span>
+<span class="cre">✚ MYSTICA</span>
+<span class="dam">✠ HELLENICA</span>
+</div>
 </header>
 
 <nav class="main">
-<a href="../index.html">CORPUS DIVINUS</a>
+<a href="../index.html">— CORPUS DIVINUS</a>
 </nav>
 
 <main>
@@ -86,55 +148,20 @@ footer .red{color:var(--red)} footer .gold{color:var(--gold)}
 </div>
 
 <div class="note">
-<b>ОРФИЗМ</b> (Ὀρφισμός) - drevnegrecheskoe misticheskoe religioznoe dvizhenie, osnovannoye na polulegendoj figure Orfeya (Ὀρφεύς, "Tmy Nochi"). Voznik v Trakii (Severnaya Gretsiya) ok. VI v. do n.e., i shiroko rasprostranilos po antichnomu miru. <b>Tri glavnye osobennosti orfizma:</b> 1) <b>Duhovnoe osvobozhdenie</b> (psyche) ot materialnogo mira - v cheloveke est bozhestvennoe nachalo (daimon, prishedshij iz sveta); 2) <b>Perevoploshchenie</b> (metempsykhosis, μετεμψύχωσις) - dusha posle smerti pererozhdaetsya, poka ne ochistitsya; 3) <b>Askesis</b> (prazdnovanie orficheskogo pita, otkaz ot myasa) - kak sredstvo ochishcheniya. Orfizm rodinil gimnov, ritualov, spiskov Три главные:
-- <b>Гимны</b> (ὕμνοι) — 87 текстов, собранных в сборник
-- <b>Ритуалы</b> (ὄργια) — тайные мистерии
-- <b>Теогония</b> (θεογονία) — генеалогия богов через Эрот, Ночь, Эфир
-
-<b>Связь с Q18 Каббала:</b> Орфизм — «эзотерическая Греция» ≈ Каббала — «эзотерический Иудаизм». Оба корпуса возникли в I в. до н.э. — II в. н.э. как «тайные традиции» в рамках религии. Оба имеют: 1) «первичный» текст, приписанный легендарному основателю (Орфей/Авраам), 2) эманации (Геката=10 сфирот), 3) ритуальное очищение, 4) перевоплощение души (метемпсихоз ≈ тиккун нешама).
+<p><b>ОРФИЗМ</b> (Ὀρφισμός) — древнегреческое мистическое религиозное движение, основанное на полулегендарной фигуре Орфея (Ὀρφεύς, «Тьмы Ночи»). Возник во Фракии (Северная Греция) ок. VI в. до н.э. и широко распространилось по античному миру.</p><p><b>Три главные особенности орфизма:</b> 1) <b>Духовное освобождение</b> (ψυχή) от материального мира — в человеке есть божественное начало (даймон, пришедший из света); 2) <b>Перевоплощение</b> (μετεμψύχωσις, метэмпсихоз) — душа после смерти перерождается, пока не очистится; 3) <b>Аскезис</b> (ἄσκησις) — празднование орфического пита, отказ от мяса — как средство очищения. Орфизм породил гимны, ритуалы, списки.</p><p><b>Связь с Q18 Каббала:</b> Орфизм — «эзотерическая Греция» ≈ Каббала — «эзотерический Иудаизм». Оба корпуса возникли в I в. до н.э. — II в. н.э. как «тайные традиции» в рамках религии. Оба имеют: 1) «первичный» текст, приписанный легендарному основателю (Орфей/Авраам), 2) эманации (Геката=10 сфирот), 3) ритуальное очищение, 4) перевоплощение души (метемпсихоз ≈ тиккун нешама).</p>
 </div>
 
 <div class="idx-group">
-<h2>ГИМНЫ 87 · 34 СТИХА ОТОБРАНО</h2>
-<div class="idx-grid">
-<a class="idx-card" href="hymns.html">
-<div class="t">Ὀρφικοὶ ὕμνοι — Орфические гимны</div>
-<div class="s">87 гимнов, анонимные поэты, II в. до н.э. — II в. н.э., греческий (grc) + русский (Борухович/Тахо-Годи 1999), 34 стиха отобрано. Боги: Зевс, Гера, Аполлон, Афина, Арес, Афродита, Дионис, Артемида, Посейдон, Гелиос, Пан, Геката, Океан, Ночь, Протогонос, Фемида, Геракл, и др.</div>
-</a>
-</div>
-</div>
+<h2>СОДЕРЖАНИЕ</h2>
+<div class="book-grid">
+<a class="book-card" href="hymns.html"><span class="ttl">Ὀρφικοὶ ὕμνοι — 34 ключевых гимна (1-87)</span><span class="s">греч. + рус.</span></a>
 
-<div class="note">
-<b>Связь с другими корпусами архива:</b>
-<br><b>Q17 Гильгамеш</b> (шумерский, 2700 до н.э.) — Орфизм унаследовал от Шумера идею о боге, нисходящем в подземный мир (Орфей спускается за Эвридикой, как Иштар за Таммузом). 
-<br><b>Q3 Быт. 1:1</b> — «В начале сотворил Бог небо и землю». Орфическая теогония: «В начале был Эрот, родивший яйцо мира» (Гесиод). 
-<br><b>Q18 Сефер Йецира 1:4</b> — «10 сфирот». У орфиков: «Гекката» (Геката) = Триединая богиня (Геката-Селена-Артемида), три формы, три лика. 
-<br><b>Q10 Бхагавадгита 7:25</b> — «Я невидим для всех, но Я — сердце всех существ». У орфиков: «Протогонос (Πρωτόγονος)» — Первозданный, двуприродный, мужской и женский. 
-<br><b>Q11 Дао Дэ Цзин 25</b> — «Есть нечто, что прежде Неба и Земли». У орфиков: «Ночь и Эфир — начало всего». 
-<br><b>Q16 Суфизм — Ибн Араби</b> (XIII в., Андалусия): «Вахдат ал-Вуджуд (Единство Бытия)» ≈ Орфический пантеизм. 
-<br><b>Главная мысль:</b> Орфизм — это «греческая Каббала». Два эзотерических корпуса, возникших примерно в одно время, в разных концах ойкумены, говорят об одном: Бог — един, мир — его проявление, душа — божественная искра, очищение — путь возвращения.
+</div>
 </div>
 </main>
 
 <footer>
-ARCHIVUM HAERETICUM — Q19 — ORPHIC HYMNS — HELLENICA MISTIKA
+ARCHIVUM HAERETICUM — Q19 — ORPHICA — <span class="red">◆</span> SIGILLUM VERITATIS
 </footer>
-
-<script>
-function toggleAll(open){
-  document.querySelectorAll('details').forEach(d=>d.open=open);
-}
-function toggleOrig(){
-  document.querySelectorAll('.ru').forEach(e=>e.style.display='none');
-  document.querySelectorAll('.grc').forEach(e=>e.style.display='');
-}
-function toggleRu(){
-  document.querySelectorAll('.grc').forEach(e=>e.style.display='none');
-  document.querySelectorAll('.ru').forEach(e=>e.style.display='');
-}
-function resetView(){
-  document.querySelectorAll('.grc,.ru').forEach(e=>e.style.display='');
-}
-</script>
 </body>
 </html>
