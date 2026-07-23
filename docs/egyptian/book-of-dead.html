@@ -4,6 +4,10 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <title>Kheru-shu-Reqau — Книга Мёртвых (𓂋𓈖𓆎𓅓𓏏𓊖)</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Egyptian+Hieroglyphs&display=swap" rel="stylesheet">
+
 <style>
 :root{--bg:#0a0a0c;--bg2:#0d0d12;--panel:#13131a;--line:#2a2a33;--red:#c8102e;--red-dark:#8a0a1f;--gold:#c9a227;--gold-bright:#e8b84a;--gold-dim:#8a7119;--ink:#c8102e;--ink-dim:#c9a227;--orig:#c8102e;--accent:#d49a3a;--grid:#1d1d24}
 *{box-sizing:border-box;margin:0;padding:0}body{background:var(--bg);color:var(--ink);font-family:Georgia,'Times New Roman',serif;line-height:1.55}
@@ -118,6 +122,14 @@ footer .red{color:var(--red)} footer .gold{color:var(--gold)}
 @font-face{font-family:'Noto Sans Devanagari';font-style:normal;font-weight:400;font-display:swap;src:local('Noto Sans Devanagari'),local('NotoSansDevanagari-Regular')}
 @font-face{font-family:'Noto Sans Tibetan';font-style:normal;font-weight:400;font-display:swap;src:local('Noto Sans Tibetan'),local('NotoSansTibetan-Regular')}
 @font-face{font-family:'SBL Greek';font-style:normal;font-weight:400;font-display:swap;src:local('SBL Greek'),local('SBLGreek')}
+
+.verse .eg-hiero{font-family:'Noto Sans Egyptian Hieroglyphs','NotoSansEgyptianHieroglyphs-Regular','Gardiner','Segoe UI Historic',serif;font-size:1.5rem;line-height:1.8;color:var(--gold-bright);background:rgba(232,184,74,0.05);border-right:3px solid var(--gold-dim);padding:10px 12px;direction:ltr;text-align:left;font-style:normal;grid-column:2;letter-spacing:0.05em;word-break:keep-all;overflow-wrap:break-word}
+.verse .eg-hiero:empty:before{content:attr(data-fallback);color:var(--ink-dim);font-style:italic}
+.verse .ak-cun{font-family:'Noto Sans Cuneiform','SantakkiM','NotoSansCuneiform-Regular',serif;font-size:1.4rem;line-height:1.8;color:var(--gold-bright);background:rgba(232,184,74,0.05);border-right:3px solid var(--gold-dim);padding:10px 12px;direction:ltr;text-align:left;font-style:normal;grid-column:2;letter-spacing:0.05em}
+.verse .cop-uni{font-family:'Noto Sans Coptic','Antinoou','New Athena Unicode','NotoSerifCoptic-Regular',serif;font-size:1.15rem;line-height:1.8;color:var(--orig);background:rgba(201,162,39,0.04);border-right:3px solid var(--gold-dim);padding:10px 12px;direction:ltr;text-align:left;font-style:normal;grid-column:2}
+.verse .ja{font-family:'Noto Serif JP','MS Mincho','Hiragino Mincho Pro','NotoSerifJP-Regular',serif;font-size:1.2rem;line-height:1.8;color:var(--gold-bright);background:rgba(201,162,39,0.05);border-right:3px solid var(--gold-dim);padding:10px 12px;direction:ltr;text-align:left;font-style:normal;grid-column:2}
+.verse .sk-deva{font-family:'Noto Sans Devanagari','Sanskrit Text','NotoSansDevanagari-Regular',serif;font-size:1.15rem;line-height:1.8;color:var(--orig);background:rgba(201,162,39,0.04);border-right:3px solid var(--gold-dim);padding:10px 12px;direction:ltr;text-align:left;font-style:normal;grid-column:2}
+@media(max-width:760px){.verse .eg-hiero{font-size:1.2rem;line-height:1.6;padding:8px 10px;width:auto;display:block;grid-column:1}.verse .ak-cun{font-size:1.2rem;line-height:1.6;padding:8px 10px;width:auto;display:block;grid-column:1}.verse .cop-uni{font-size:1rem;line-height:1.6;padding:8px 10px;width:auto;display:block;grid-column:1}.verse .ja{font-size:1.1rem;line-height:1.6;padding:8px 10px;width:auto;display:block;grid-column:1}.verse .sk-deva{font-size:1rem;line-height:1.6;padding:8px 10px;width:auto;display:block;grid-column:1}}
 </style>
 </head>
 <body>
