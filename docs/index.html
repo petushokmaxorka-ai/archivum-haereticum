@@ -121,40 +121,7 @@ details.corpus[open]>summary::before{content:"▼";color:var(--gold-bright)}
 .book-card .ttl{color:var(--ink)}
 .footnote{background:rgba(200,16,46,0.04);border:1px solid var(--red-dark);padding:10px 14px;margin:14px;font-size:13px;line-height:1.55}
 .footnote b{color:var(--red)}
-/* === СТИЛИ ДЛЯ НОВЫХ Q43-Q49 (qtitle / qmeta / qbody) === */
-details.corpus>summary .qtitle{font-size:1rem;letter-spacing:.08em;color:var(--gold-bright);font-weight:bold;display:inline;margin-left:4px}
-details.corpus>summary .qmeta{color:var(--ink-dim);font-size:.75em;font-weight:normal;letter-spacing:1px;text-align:left;white-space:normal;display:block;width:100%;margin-top:6px;padding-top:6px;border-top:1px dashed rgba(201,162,39,0.2);line-height:1.5}
-.qbody{font-size:14px!important;line-height:1.6!important;color:var(--ink)!important;padding:14px 18px;background:var(--bg2);border-bottom:1px solid var(--line)}
-.qbody,.qbody *{font-size:14px!important;color:var(--ink)!important}
-.qbody p{margin:8px 0;font-size:14px!important;line-height:1.6!important}
-.qbody b{color:var(--red)!important;font-size:14px!important;font-weight:bold}
-.qbody a{color:var(--red)!important;text-decoration:none;border-bottom:1px dashed var(--red);font-weight:bold;font-size:14px!important}
-.qbody a:hover{color:var(--gold-bright)!important;border-bottom:1px solid var(--gold-bright)}
-.qbody ol,.qbody ul{margin:8px 0 8px 24px;line-height:1.7;font-size:14px!important}
-.qbody li{font-size:14px!important;line-height:1.6!important}
-.qbody strong{color:var(--red)!important;font-size:14px!important}
-.qbody i,.qbody em{color:var(--gold-bright)!important;font-size:14px!important}
-.book-card,.book-card *{font-size:13px!important}
-.book-card .ttl{font-size:14px!important;color:var(--gold)!important}
-.book-card .s{font-size:12px!important;color:var(--ink-dim)!important;line-height:1.45!important}
-.book-card .nm{font-size:11px!important;color:var(--gold)!important;font-family:'Courier New',monospace!important}
-
-@media(max-width:760px){
-  .hos-h1{font-size:1.2rem;letter-spacing:.05em;line-height:1.3}
-  .book-card{font-size:12px!important;padding:8px 10px;line-height:1.4}
-  .book-card,.book-card *{font-size:12px!important}
-  .book-card .ttl{font-size:13px!important}
-  .book-card .s{font-size:11px!important}
-  details.corpus>summary{font-size:.85rem;padding:10px 12px;letter-spacing:.03em}
-  details.corpus>summary .left{font-size:.85rem}
-  details.corpus>summary .qtitle{font-size:.85rem;letter-spacing:.04em}
-  details.corpus>summary .qmeta{font-size:.7em;line-height:1.4}
-  .qbody{font-size:12px!important;line-height:1.5!important;padding:10px 12px}
-  .qbody,.qbody *{font-size:12px!important}
-  .qbody p{font-size:12px!important}
-  .qbody b{font-size:12px!important}
-  .qbody a{font-size:12px!important}
-}
+/* qtitle/qmeta/qbody CSS removed - using .left/.count/.body standard structure now */
 
 
 
@@ -936,11 +903,14 @@ details.corpus>summary .qmeta{color:var(--ink-dim);font-size:.75em;font-weight:n
 </div>
 </details>
 <details class="corpus q46" id="q46">
-<summary><span class="qbadge">◆ Q46</span><span class="qtitle">Coma et Calvitium · Волосы и Лысина</span><span class="qmeta">Знаки Избранных · Signa Electorum · АРХЕТИП ВОЛОС в 14 культурах</span></summary>
-<div class="qbody">
-<p><b>Q46 Coma et Calvitium</b> — <b>46-й корпус</b> архива, доказывающий <b>универсальный архетип</b>: <b>длинные волосы</b> или <b>лысина</b> = <b>знак сакральной избранности</b>. От <b>Самсона</b> до <b>Шивы</b>, от <b>египетских жрецов</b> до <b>сикхов</b>, от <b>берсерков</b> до <b>майя</b>.</p>
-<p><b>Три пути</b>: <b>COMA</b> (антенна исходящего сигнала) + <b>CALVITIUM</b> (открытое окно входящего) + <b>SHAMANIC SPLIT</b> (асимметричная двусторонняя стрижка — самая древняя форма).</p>
-<p><a href="coma/">→ Перейти к корпусу Q46</a></p>
+<summary><div class="left"><span class="qbadge">◆ Q46</span>Coma et Calvitium · ВОЛОСЫ И ЛЫСИНА</div><div class="count">24 стиха · Самсон, Кришна, Шива, Аполлон, Друиды, Берсерк, Сикх Кеш + 12 культур сакральной стрижки</div></summary>
+<div class="body">
+<div class="book-grid">
+<a class="book-card" href="coma/index.html"><span class="ttl" style="color:var(--red)">→ Все тексты Coma (обзор)</span></a>
+<a class="book-card" href="coma/coma.html"><span class="ttl">💇‍♂️ Coma · Длинные Волосы</span><span class="s">14 стихов · Самсон (евр.), Кришна (санскр.), Шива, Аполлон (греч.), Кеш (гурмукхи), Берсерк (Old Norse), Друид, Виракоча (кечуа) + 7</span></a>
+<a class="book-card" href="coma/calvitium.html"><span class="ttl">💇‍♀️ Calvitium · Лысина</span><span class="s">12 стихов · Египет, Будда, Назорей, Тонзура, Хаджи (Коран), Весталки, Мани, Ацтек, Майя, Сибирь, Папа Римский</span></a>
+<a class="book-card" href="coma/shamanic-split.html"><span class="ttl">⚡ ТРЕТИЙ ПУТЬ: Шаманский Сплит</span><span class="s">10 стихов · Сибирь, Майя, Ацтеки, Кельты, Тохунга · Полу-выбрит = Длинные + частично бреет = ДВОЙНАЯ СВЯЗЬ с духами</span></a>
+</div>
 </div>
 </details>
 
@@ -954,18 +924,27 @@ details.corpus>summary .qmeta{color:var(--ink-dim);font-size:.75em;font-weight:n
 </details>
 
 <details class="corpus q48" id="q48">
-<summary><span class="qbadge">◆ Q48</span><span class="qtitle">Diluvium · Всемирный Потоп · 12 Спасителей</span><span class="qmeta">Ной + Утнапиштим + Девкалион + Йима + Ману + Coxcox + Tezpi + Manku + 8 Nommo + Wagyl + Tāfaki + Бергельмир · ОДИН миф в 12 культурах</span></summary>
-<div class="qbody">
-<p><b>Q48 Diluvium</b> — <b>48-й корпус</b> архива, посвящённый <b>самому яркому кросс-культурному архетипу</b>: <b>миф о Всемирном Потопе</b>. <b>Ной (Q1), Утнапиштим (Q17), Девкалион (Q33), Йима (Q7), Ману (Q13), Coxcox (Q23), Tezpi (Q34), Manku Qhapaq (Q44), 8 Nommo (Q47), Wagyl (Q36), Tāfaki (Q37), Бергельмир (Q22)</b> — <b>12 СПАСИТЕЛЕЙ</b> в <b>12 культурах</b> на всех континентах. <b>5 подкорпусов</b> с <b>54 стихами</b>.</p>
-<p><a href="diluvium/">→ Перейти к корпусу Q48</a></p>
+<summary><div class="left"><span class="qbadge">◆ Q48</span>Diluvium · ВСЕМИРНЫЙ ПОТОП · 12 СПАСИТЕЛЕЙ</div><div class="count">54 стиха · 12 культур на всех континентах · Ной + Утнапиштим + Девкалион + Йима + Ману + Coxcox + Tezpi + Manku + 8 Nommo + Wagyl + Tāfaki + Бергельмир</div></summary>
+<div class="body">
+<div class="book-grid">
+<a class="book-card" href="diluvium/index.html"><span class="ttl" style="color:var(--red)">→ Все тексты Diluvium (обзор)</span></a>
+<a class="book-card" href="diluvium/noah-utnapishtim.html"><span class="ttl">נֹחַ + 𒀭𒌓𒉌 Ной + Утнапиштим</span><span class="s">12 стихов · Иврит (Быт 6-9) + Шумер. клинопись (табл. XI Эпоса о Гильгамеше) · 300×50 локтей vs 120³ куб · птица + голубь</span></a>
+<a class="book-card" href="diluvium/greek-roman.html"><span class="ttl">Δευκαλίων + Bergelmir · Греция + Сканд.</span><span class="s">10 стихов · Древнегреческий (Apollodorus + Ovid) + Old Norse (Snorri Gylfaginning) · λάρναξ (ковчег-ящик) + lík (гроб-ковчег)</span></a>
+<a class="book-card" href="diluvium/indo-iranian.html"><span class="ttl">Yima + Manu + Matsya · Индо-Иранский мир</span><span class="s">10 стихов · Авест. (Видевдат II) + Санскр. (Шатапатха Брахмана) · Vara (подземный дом) + Рыба-Вишну = 8 Nommo + 7 saptarṣi</span></a>
+<a class="book-card" href="diluvium/americas.html"><span class="ttl">Coxcox + Tezpi + Manku Qhapaq · Новый Свет</span><span class="s">12 стихов · Киче-мая (Пополь-Вух) + Науатль (Sahagún) + Runasimi · 4 Солнца погибли от потопа + колибри с зелёной веткой</span></a>
+<a class="book-card" href="diluvium/africa-pacific.html"><span class="ttl">Dogon + Wagyl + Tāfaki · Южные континенты</span><span class="s">10 стихов · 8 Nommo (Догон) + Wagyl (Австралия) + Tāfaki (Полинезия) + Tāne (Maōri) · wa'a (каноэ) + Uenuku (Радужная Птица)</span></a>
+</div>
 </div>
 </details>
 
 <details class="corpus q49" id="q49">
-<summary><span class="qbadge">◆ Q49</span><span class="qtitle">Jainism · Джайнизм · 24 Tīrthaṅkaras · Ahimsa</span><span class="qmeta">Ришабха → Махавира · 5 Mahāvratas · Śvētāmbara + Digambara · Древнейшая религия Индии</span></summary>
-<div class="qbody">
-<p><b>Q49 Jainism</b> — <b>49-й корпус</b> архива, посвящённый <b>Джайнизму</b> — религии <b>AHIMSA (ненасилия)</b>. <b>24 Tīrthaṅkaras (Учителя)</b> от Ришабхи (1-й) до Махавиры (24-й, современник Будды). <b>5 Mahāvratas</b>: Ahiṃsā, Satya, Asteya, Aparigraha, Brahmacharya. <b>Две ветви</b>: Śvētāmbara (одетые в белое) + Digambara (одетые в небо, нагие). <b>4 подкорпуса</b>: 24 Тиртханкары, 10 Ахимса, 12 Космос, 8 Агамы.</p>
-<p><a href="jainism/">→ Перейти к корпусу Q49</a></p>
+<summary><div class="left"><span class="qbadge">◆ Q49</span>Jainism · ДЖАЙНИЗМ · 24 TĪRTHAṄKARAS · AHIMSĀ</div><div class="count">34 стиха · санскр. (देवनागरी) + пракрит (Ardhamāgadhī) + рус. · 24 Учителя + 5 Mahāvratas · Ahiṃsā = высший дхарма</div></summary>
+<div class="body">
+<div class="book-grid">
+<a class="book-card" href="jainism/index.html"><span class="ttl" style="color:var(--red)">→ Все тексты Jainism (обзор)</span></a>
+<a class="book-card" href="jainism/tirthankaras.html"><span class="ttl">Ṛṣabha → Mahāvīra · 24 Тиртханкары</span><span class="s">24 стиха · санскр. (देवनागरी) + рус. · Ṛṣabha (1-й) = Адам, Ajita (2-й) = Ганеша, Malli (19-й) = ЖЕНЩИНА, Pārśva (23-й) = Змея на шее, Mahāvīra (24-й) = современник Будды</span></a>
+<a class="book-card" href="jainism/ahimsa.html"><span class="ttl">अहिंसा Ahimsā · 5 Mahāvratas</span><span class="s">10 стихов · санскр. + пракрит + рус. · Ahiṃsā (ненасилие), Satya (правда), Asteya (не воровство), Aparigraha (не стяжательство), Brahmacharya (целомудрие) · Ганди получил от матери-джайнистки</span></a>
+</div>
 </div>
 </details>
 </main>
