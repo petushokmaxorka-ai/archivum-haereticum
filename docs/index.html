@@ -124,20 +124,36 @@ details.corpus[open]>summary::before{content:"▼";color:var(--gold-bright)}
 /* === СТИЛИ ДЛЯ НОВЫХ Q43-Q49 (qtitle / qmeta / qbody) === */
 details.corpus>summary .qtitle{font-size:1rem;letter-spacing:.08em;color:var(--gold-bright);font-weight:bold;display:inline;margin-left:4px}
 details.corpus>summary .qmeta{color:var(--ink-dim);font-size:.75em;font-weight:normal;letter-spacing:1px;text-align:left;white-space:normal;display:block;width:100%;margin-top:6px;padding-top:6px;border-top:1px dashed rgba(201,162,39,0.2);line-height:1.5}
-.qbody{padding:14px 18px;background:var(--bg2);border-bottom:1px solid var(--line);font-size:14px;line-height:1.6;color:var(--ink)}
-.qbody p{margin:8px 0}
-.qbody a{color:var(--red);text-decoration:none;border-bottom:1px dashed var(--red);font-weight:bold}
-.qbody a:hover{color:var(--gold-bright);border-bottom:1px solid var(--gold-bright)}
-.qbody ol,.qbody ul{margin:8px 0 8px 24px;line-height:1.7}
+.qbody{font-size:14px!important;line-height:1.6!important;color:var(--ink)!important;padding:14px 18px;background:var(--bg2);border-bottom:1px solid var(--line)}
+.qbody,.qbody *{font-size:14px!important;color:var(--ink)!important}
+.qbody p{margin:8px 0;font-size:14px!important;line-height:1.6!important}
+.qbody b{color:var(--red)!important;font-size:14px!important;font-weight:bold}
+.qbody a{color:var(--red)!important;text-decoration:none;border-bottom:1px dashed var(--red);font-weight:bold;font-size:14px!important}
+.qbody a:hover{color:var(--gold-bright)!important;border-bottom:1px solid var(--gold-bright)}
+.qbody ol,.qbody ul{margin:8px 0 8px 24px;line-height:1.7;font-size:14px!important}
+.qbody li{font-size:14px!important;line-height:1.6!important}
+.qbody strong{color:var(--red)!important;font-size:14px!important}
+.qbody i,.qbody em{color:var(--gold-bright)!important;font-size:14px!important}
+.book-card,.book-card *{font-size:13px!important}
+.book-card .ttl{font-size:14px!important;color:var(--gold)!important}
+.book-card .s{font-size:12px!important;color:var(--ink-dim)!important;line-height:1.45!important}
+.book-card .nm{font-size:11px!important;color:var(--gold)!important;font-family:'Courier New',monospace!important}
 
 @media(max-width:760px){
   .hos-h1{font-size:1.2rem;letter-spacing:.05em;line-height:1.3}
-  .book-card{font-size:13px;padding:8px 10px;line-height:1.4}
+  .book-card{font-size:12px!important;padding:8px 10px;line-height:1.4}
+  .book-card,.book-card *{font-size:12px!important}
+  .book-card .ttl{font-size:13px!important}
+  .book-card .s{font-size:11px!important}
   details.corpus>summary{font-size:.85rem;padding:10px 12px;letter-spacing:.03em}
   details.corpus>summary .left{font-size:.85rem}
   details.corpus>summary .qtitle{font-size:.85rem;letter-spacing:.04em}
   details.corpus>summary .qmeta{font-size:.7em;line-height:1.4}
-  .qbody{padding:12px 14px;font-size:13px;line-height:1.55}
+  .qbody{font-size:12px!important;line-height:1.5!important;padding:10px 12px}
+  .qbody,.qbody *{font-size:12px!important}
+  .qbody p{font-size:12px!important}
+  .qbody b{font-size:12px!important}
+  .qbody a{font-size:12px!important}
 }
 
 

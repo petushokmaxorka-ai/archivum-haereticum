@@ -31,7 +31,6 @@ main{max-width:1100px;margin:0 auto;padding:0 12px 40px}
 .book-card .s{color:var(--ink-dim);font-size:12px;line-height:1.45}
 footer{padding:18px;text-align:center;color:var(--ink-dim);font-size:10px;border-top:1px solid var(--line);font-family:'Courier New',monospace;letter-spacing:2px;background:var(--bg2)}
 
-/* === Q43-49 STYLES === */
 details.corpus>summary .qtitle{font-size:1.05rem;letter-spacing:.08em;color:var(--gold-bright);font-weight:bold;display:inline;margin-left:6px;line-height:1.4}
 details.corpus>summary .qmeta{color:var(--ink-dim);font-size:.78em;font-weight:normal;letter-spacing:1px;text-align:left;white-space:normal;display:block;width:100%;margin-top:6px;padding-top:6px;border-top:1px dashed rgba(201,162,39,0.2);line-height:1.5}
 .qbody{padding:14px 18px;background:var(--bg2);border-bottom:1px solid var(--line);font-size:14px;line-height:1.6;color:var(--ink)}
@@ -53,6 +52,34 @@ details.corpus>summary .qmeta{color:var(--ink-dim);font-size:.78em;font-weight:n
   main{padding:0 8px;width:100% !important;box-sizing:border-box}
   nav.main{padding:6px 10px;font-size:11px}
 }
+
+/* === Q43-49 STYLES — AGGRESSIVE FIX === */
+.qbody{font-size:14px!important;line-height:1.6!important;color:var(--ink)!important;padding:14px 18px;background:var(--bg2);border-bottom:1px solid var(--line)}
+.qbody,.qbody *{font-size:14px!important;color:var(--ink)!important}
+.qbody p{margin:8px 0;font-size:14px!important;line-height:1.6!important}
+.qbody b{color:var(--red)!important;font-size:14px!important;font-weight:bold}
+.qbody a{color:var(--red)!important;text-decoration:none;border-bottom:1px dashed var(--red);font-weight:bold;font-size:14px!important}
+.qbody a:hover{color:var(--gold-bright)!important;border-bottom:1px solid var(--gold-bright)}
+.qbody ol,.qbody ul{margin:8px 0 8px 24px;line-height:1.7;font-size:14px!important}
+.qbody li{font-size:14px!important;line-height:1.6!important}
+.qbody strong{color:var(--red)!important;font-size:14px!important}
+.qbody i,.qbody em{color:var(--gold-bright)!important;font-size:14px!important}
+.book-card,.book-card *{font-size:13px!important}
+.book-card .ttl{font-size:14px!important;color:var(--gold)!important}
+.book-card .s{font-size:12px!important;color:var(--ink-dim)!important;line-height:1.45!important}
+.book-card .nm{font-size:11px!important;color:var(--gold)!important;font-family:'Courier New',monospace!important}
+@media(max-width:760px){
+  .book-card{font-size:12px!important;padding:8px 10px;line-height:1.4}
+  .book-card,.book-card *{font-size:12px!important}
+  .book-card .ttl{font-size:13px!important}
+  .book-card .s{font-size:11px!important}
+  .qbody{font-size:12px!important;line-height:1.5!important;padding:10px 12px}
+  .qbody,.qbody *{font-size:12px!important}
+  .qbody p{font-size:12px!important}
+  .qbody b{font-size:12px!important}
+  .qbody a{font-size:12px!important}
+}
+
 </style>
 </head>
 <body>
