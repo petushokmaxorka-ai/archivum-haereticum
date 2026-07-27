@@ -30,7 +30,20 @@ main{max-width:1100px;margin:0 auto;padding:0 12px 40px}
 .book-card .ttl{color:var(--gold);font-size:15px;font-weight:bold}
 .book-card .s{color:var(--ink-dim);font-size:12px;line-height:1.45}
 footer{padding:18px;text-align:center;color:var(--ink-dim);font-size:10px;border-top:1px solid var(--line);font-family:'Courier New',monospace;letter-spacing:2px;background:var(--bg2)}
+
+/* === Q43-49 STYLES === */
+details.corpus>summary .qtitle{font-size:1.05rem;letter-spacing:.08em;color:var(--gold-bright);font-weight:bold;display:inline;margin-left:6px;line-height:1.4}
+details.corpus>summary .qmeta{color:var(--ink-dim);font-size:.78em;font-weight:normal;letter-spacing:1px;text-align:left;white-space:normal;display:block;width:100%;margin-top:6px;padding-top:6px;border-top:1px dashed rgba(201,162,39,0.2);line-height:1.5}
+.qbody{padding:14px 18px;background:var(--bg2);border-bottom:1px solid var(--line);font-size:14px;line-height:1.6;color:var(--ink)}
+.qbody p{margin:8px 0}
+.qbody a{color:var(--red);text-decoration:none;border-bottom:1px dashed var(--red);font-weight:bold}
+.qbody a:hover{color:var(--gold-bright);border-bottom:1px solid var(--gold-bright)}
+.qbody ol,.qbody ul{margin:8px 0 8px 24px;line-height:1.7}
+
 @media(max-width:760px){
+  details.corpus>summary .qtitle{font-size:.95rem;letter-spacing:.04em;display:inline;margin-left:4px;line-height:1.4}
+  details.corpus>summary .qmeta{font-size:.72em;line-height:1.4;display:block;width:100%;margin-top:4px;padding-top:4px}
+
   .book-grid{grid-template-columns:1fr;gap:6px}
   .book-card{font-size:13px;padding:8px 10px;line-height:1.4}
   .note{font-size:14px;line-height:1.7;padding:14px 18px;margin:14px}
