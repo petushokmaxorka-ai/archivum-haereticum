@@ -1,0 +1,446 @@
+<!DOCTYPE html><html lang="ru"><head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Глава 4. Брахмачарина — Manu-smriti</title>
+<style>
+:root{--bg:#0a0a0c;--bg2:#0d0d12;--panel:#13131a;--line:#2a2a33;--red:#c8102e;--red-dark:#8a0a1f;--gold:#c9a227;--gold-bright:#e8b84a;--gold-dim:#8a7119;--ink:#c8102e;--ink-dim:#c9a227;--orig:#c8102e;--accent:#d49a3a;--grid:#1d1d24}
+*{box-sizing:border-box;margin:0;padding:0}body{background:var(--bg);color:var(--ink);font-family:Georgia,'Times New Roman',serif;line-height:1.55}
+a{color:var(--gold);text-decoration:none}a:hover{color:var(--gold-bright);text-decoration:underline}
+header.hos{background:linear-gradient(180deg,var(--red-dark) 0%,#1a0007 30%,var(--bg) 100%);border-bottom:2px solid var(--red);padding:0;position:relative}
+header.hos::before{content:"";position:absolute;left:0;top:0;bottom:0;width:6px;background:var(--red)}
+.hos-strip{display:flex;justify-content:space-between;align-items:center;padding:6px 14px;background:rgba(0,0,0,0.5);border-bottom:1px solid var(--red-dark);font-family:'Courier New',monospace;font-size:10px;letter-spacing:2px;color:var(--ink-dim);text-transform:uppercase}
+.hos-strip .l{color:var(--gold)} .hos-strip .r{color:var(--red);font-weight:bold}
+.hos-body{padding:18px 22px 14px}
+.hos-h1{font-size:1.5rem;letter-spacing:.12em;color:var(--orig);font-weight:normal;margin-bottom:4px;line-height:1.2}
+.hos-h1 .q{color:var(--red);font-family:'Courier New',monospace;font-size:.7em;vertical-align:super;margin-right:6px;padding:3px 7px;background:rgba(200,16,46,0.15);border:1px solid var(--red-dark);letter-spacing:1px}
+.hos-h1 .sig{font-size:.55em;color:var(--gold);font-family:'Courier New',monospace;letter-spacing:2px;margin-left:10px;padding:3px 8px;border:1px solid var(--gold-dim);vertical-align:middle}
+.hos-sub{color:var(--ink-dim);font-size:13px;font-style:italic}
+.stamps{padding:7px 16px;background:var(--bg2);border-bottom:1px solid var(--line);text-align:center;font-family:'Courier New',monospace}
+.stamps span{display:inline-block;border:1px solid var(--gold-dim);color:var(--gold);font-size:9px;letter-spacing:2px;padding:2px 7px;margin:0 2px;text-transform:uppercase}
+.stamps span.fid{color:var(--gold-bright);border-color:var(--gold);background:rgba(201,162,39,0.05)}
+.stamps span.dam{color:var(--red);border-color:var(--red-dark);background:rgba(200,16,46,0.05)}
+.stamps span.cre{color:var(--accent);border-color:var(--accent);background:rgba(212,154,58,0.05)}
+nav.main{padding:8px 18px;background:var(--panel);border-bottom:1px solid var(--line);font-size:12px;text-align:center}
+nav.main a{color:var(--gold);margin:0 6px;letter-spacing:1px;padding:3px 6px}
+.toolbar{display:flex;justify-content:center;gap:6px;flex-wrap:wrap;margin:14px 0 8px;padding:8px;background:var(--panel);border:1px solid var(--line);font-family:'Courier New',monospace}
+.toolbar button{background:transparent;border:1px solid var(--gold-dim);color:var(--gold);padding:5px 11px;font-size:10px;letter-spacing:1px;cursor:pointer;font-family:inherit;text-transform:uppercase}
+.toolbar button:hover{background:var(--gold);color:var(--bg)}
+.meta{color:var(--ink-dim);font-size:11px;font-style:italic;padding:6px 16px;text-align:center;font-family:'Courier New',monospace;letter-spacing:1px}
+.meta b{color:var(--gold);font-style:normal;font-family:Georgia,serif}
+.chap{background:linear-gradient(90deg,var(--red-dark),transparent);color:var(--gold-bright);font-size:.85rem;letter-spacing:.2em;padding:9px 16px;border-bottom:1px solid var(--red-dark);border-top:1px solid var(--red-dark);font-family:'Courier New',monospace;text-transform:uppercase;margin-top:12px}
+main{max-width:1300px;margin:0 auto;padding:0 12px 40px}
+.row{display:grid;grid-template-columns:3rem 1fr 1.1fr;border-bottom:1px solid var(--grid);align-items:start;transition:background 0.15s}
+.row:hover{background:#15110b}
+.num{grid-column:1;color:var(--gold);font-size:12px;padding:10px 4px;text-align:right;font-family:'Courier New',monospace;font-weight:bold;align-self:start}
+.orig,.ar,.gr,.he,.grc,.sk,.dev,.av,.zh,.sa{grid-column:2;padding:10px 12px;font-size:1rem;line-height:1.7;color:var(--orig);background:rgba(201,162,39,0.025);border-right:1px solid var(--gold-dim);border-left:3px solid var(--gold-dim);font-style:italic}
+.ar{direction:rtl;text-align:right;font-family:'Amiri','Scheherazade New','Traditional Arabic',serif;font-size:1.25rem;line-height:1.85}
+.gr,.grc{direction:ltr;font-family:'SBL Greek','Palatino Linotype',Georgia,serif}
+.he{direction:rtl;text-align:right;font-family:'SBL Hebrew','Times New Roman',serif;font-size:1.1rem}
+.sk,.dev{direction:ltr;font-family:'Noto Sans Devanagari','Sanskrit Text',serif;font-size:1.05rem}
+.zh{font-family:'Noto Serif CJK SC','SimSun',serif}
+.ru,.rus{grid-column:3;padding:10px 12px;font-size:.95rem;line-height:1.65;text-align:justify;color:var(--ink)}
+.bismillah{text-align:center;padding:1.5rem 1rem;font-family:'Amiri','Scheherazade New','Traditional Arabic',serif;font-size:1.8rem;color:var(--gold);direction:rtl;background:linear-gradient(180deg,#1a1410,#0a0a0c);border-bottom:1px solid var(--red-dark);letter-spacing:0;margin:14px 16px;border:1px solid var(--red-dark)}
+.bismillah .label{display:block;font-family:'Courier New',monospace;font-size:.7rem;letter-spacing:.25em;color:var(--ink-dim);text-transform:uppercase;direction:ltr;margin-bottom:8px}
+footer{padding:18px;text-align:center;color:var(--ink-dim);font-size:10px;border-top:1px solid var(--line);font-family:'Courier New',monospace;letter-spacing:2px;background:var(--bg2)}
+footer .red{color:var(--red)} footer .gold{color:var(--gold)}
+
+  .hos-sub{font-size:12px}
+  .hos-strip{font-size:9px;letter-spacing:1px;padding:4px 8px}
+  .stamps span{font-size:8px;letter-spacing:1px;padding:2px 5px;margin:0 1px}
+  
+  /* Stack verse vertically on mobile */
+  .verse,.row{grid-template-columns:1fr !important;display:block !important;padding:8px 10px;margin-bottom:8px;border:1px solid var(--line);background:var(--bg2)}
+  .verse .num,.row .num{display:inline-block;background:rgba(0,0,0,0.5);padding:2px 8px;margin-bottom:6px;width:auto;text-align:left;font-size:11px;border:1px solid var(--gold-dim);border-radius:2px}
+  
+  /* Original language - full width */
+  .verse .av,.verse .sk,.verse .he,.verse .grc,.verse .zh,.verse .sa,.verse .ar,.verse .dev,.verse .en,.verse .gr,.verse .egy,.verse .csl,.verse .fa,.verse .ak,.verse .bo,.verse .tib,
+  .row .av,.row .sk,.row .he,.row .grc,.row .zh,.row .sa,.row .ar,.row .dev,.row .en,.row .gr,.row .csl,.row .fa,.row .ak,.row .bo,.row .tib{font-size:1.05rem;line-height:1.7;padding:8px 10px;border-left:3px solid var(--gold-dim);margin:6px 0;background:rgba(201,162,39,0.04);font-style:italic;width:auto !important;display:block}
+  
+  /* Russian - full width */
+  .verse .ru,.row .ru{font-size:.95rem;line-height:1.6;padding:8px 10px;border-left:3px solid var(--red);background:rgba(200,16,46,0.04);margin:6px 0;width:auto !important;display:block;grid-column:1}
+  
+  /* Toolbar */
+  .toolbar{display:flex;flex-wrap:wrap;gap:4px;padding:6px;margin:8px 0}
+  .toolbar button{font-size:10px;padding:5px 8px;letter-spacing:0;flex:1 1 30%;min-width:60px}
+  
+  /* Container */
+  main{padding:0 8px}
+  nav.main{padding:6px 10px;font-size:11px}
+  nav.main a{margin:0 3px;padding:2px 4px}
+  
+  /* Book cards */
+  .book-grid{grid-template-columns:1fr;gap:6px}
+  .book-card{font-size:13px;padding:8px 10px;line-height:1.4}
+  
+  /* Note */
+  .note{font-size:14px;line-height:1.7;padding:14px 18px;margin:14px;color:var(--red);background:rgba(201,162,39,0.04);border:1px solid var(--gold-dim);border-left:4px solid var(--gold)}
+
+  
+  /* Footer */
+  footer{font-size:11px;padding:8px 10px}
+}
+  .row{grid-template-columns:2rem 1fr 1.1fr}
+  .num{font-size:.7rem;padding:.5rem .3rem}
+  .ar{font-size:1.1rem;line-height:1.7;padding:.5rem .4rem}
+  .ru{font-size:.85rem;line-height:1.4;padding:.5rem .4rem}
+}
+
+/* Q20 EGYPTIAN additions */
+.verse .egy{grid-column:1;font-family:'Papyrus','Segoe UI Historic',serif;font-size:1.05rem;line-height:1.8;direction:ltr;text-align:left;color:#e8b84a;background:rgba(232,184,74,0.04);border-right:3px solid var(--gold-dim);padding:12px 14px;font-style:italic}
+.verse .ru{grid-column:2;font-size:0.98rem;line-height:1.75;color:var(--ink);background:rgba(201,162,39,0.025);border-left:1px solid var(--gold-dim);padding:12px 14px}
+.verse .transl-note{grid-column:1/-1;padding:6px 14px;font-size:0.78rem;color:var(--ink-dim);font-style:italic;text-align:right;background:rgba(0,0,0,0.15);border-top:1px solid var(--line)}
+.verse .num,.verse .transl-note{color:var(--gold-bright)}
+
+.verse .av,.verse .sk,.verse .he,.verse .grc,.verse .zh,.verse .sa,.verse .ar,.verse .dev,.verse .en,.verse .gr,.verse .csl,.verse .fa,.verse .ak,.verse .bo,.verse .tib{font-family:'Times New Roman',Georgia,serif;font-size:1.05rem;line-height:1.7;color:var(--orig);background:rgba(201,162,39,0.04);border-right:3px solid var(--gold-dim);padding:12px 14px;direction:ltr;text-align:left;font-style:italic}
+.row .av,.row .sk,.row .he,.row .grc,.row .zh,.row .sa,.row .ar,.row .dev,.row .en,.row .gr,.row .csl,.row .fa,.row .ak,.row .bo,.row .tib{font-family:'Times New Roman',Georgia,serif;font-size:1.05rem;line-height:1.7;color:var(--orig);background:rgba(201,162,39,0.04);padding:10px 12px;direction:ltr;text-align:left}
+.verse{display:grid;grid-template-columns:3.2rem 1fr 1.1fr;border-bottom:1px solid var(--grid);align-items:start;transition:background 0.15s}
+.row{display:grid;grid-template-columns:3.2rem 1fr 1.1fr 1fr;border-bottom:1px solid var(--grid);align-items:start;transition:background 0.15s}
+.num{font-family:'Courier New',monospace;font-size:11px;color:var(--gold);text-align:center;padding:12px 4px;background:rgba(0,0,0,0.3);border-right:1px solid var(--line);font-weight:bold;align-self:start}
+.ru{font-size:.92rem;line-height:1.6;color:var(--ink);padding:10px 12px;background:rgba(255,255,255,0.01);border-left:1px solid var(--line);align-self:start;grid-column:3}
+
+.verse .sk-deva{font-family:'Noto Sans Devanagari','Sanskrit Text',serif;font-size:1.15rem;line-height:1.8;color:var(--orig);background:rgba(201,162,39,0.04);border-right:3px solid var(--gold-dim);padding:10px 12px;direction:ltr;text-align:left;font-style:normal;grid-column:2}
+}
+
+/* ARCHIVUM HAERETICUM — Original script fonts */
+
+
+
+
+
+
+
+
+/* ARCHIVUM HAERETICUM — Original script fonts */
+
+
+
+
+
+
+
+@font-face{font-family:'Noto Sans Cuneiform';font-style:normal;font-weight:400;font-display:block;src:url('/archivum-haereticum/fonts/noto-cuneiform.ttf') format('truetype')}
+@font-face{font-family:'Noto Sans Egyptian Hieroglyphs';font-style:normal;font-weight:400;font-display:block;src:url('/archivum-haereticum/fonts/noto-hieroglyphs.ttf') format('truetype')}
+@font-face{font-family:'Noto Sans Coptic';font-style:normal;font-weight:400;font-display:block;src:url('/archivum-haereticum/fonts/noto-coptic.ttf') format('truetype')}
+@font-face{font-family:'Noto Serif JP';font-style:normal;font-weight:400;font-display:swap;src:local('Noto Serif JP'),local('NotoSerifJP-Regular')}
+@font-face{font-family:'Noto Sans Devanagari';font-style:normal;font-weight:400;font-display:swap;src:local('Noto Sans Devanagari'),local('NotoSansDevanagari-Regular')}
+@font-face{font-family:'Noto Sans Tibetan';font-style:normal;font-weight:400;font-display:swap;src:local('Noto Sans Tibetan'),local('NotoSansTibetan-Regular')}
+@font-face{font-family:'SBL Greek';font-style:normal;font-weight:400;font-display:swap;src:local('SBL Greek'),local('SBLGreek')}@media(max-width:760px){
+.verse,.row{grid-template-columns:1fr !important;display:block !important;padding:12px 14px;margin:8px 0;border:1px solid var(--line);background:var(--bg2);width:100% !important;max-width:100% !important;overflow:hidden;box-sizing:border-box}
+.verse .num,.row .num{display:inline-block;background:rgba(0,0,0,0.5);padding:3px 10px;margin-bottom:8px;width:auto;text-align:left;font-size:11px;border:1px solid var(--gold-dim);border-radius:2px;font-family:'Courier New',monospace;min-width:0 !important}
+.verse .on,.verse .ru,.verse .csl,.verse .sk,.verse .he,.verse .grc,.verse .zh,.verse .ar,.verse .fa,.verse .bo,.verse .ak,.verse .cop,.verse .pali,.verse .sk-deva,.verse .eg-hiero,.verse .ak-cun,.verse .cop-uni,.verse .ja,.verse .pali-deva,.verse .qu,.verse .av,.verse .egy,.verse .csl,.verse .gr,.verse .on-r,
+.row .on,.row .ru,.row .csl,.row .sk,.row .he,.row .grc,.row .zh,.row .ar,.row .fa,.row .bo,.row .ak,.row .cop,.row .pali,.row .sk-deva,.row .eg-hiero,.row .ak-cun,.row .cop-uni,.row .ja,.row .pali-deva,.row .qu,.row .av,.row .egy,.row .csl,.row .gr{font-size:1.05rem !important;line-height:1.65 !important;padding:10px 12px !important;border-left:3px solid var(--gold-dim);margin:6px 0;background:rgba(201,162,39,0.04);width:auto !important;display:block !important;min-width:0 !important;word-wrap:break-word;overflow-wrap:break-word;max-width:100% !important;box-sizing:border-box}
+.verse .ru,.row .ru{border-left:3px solid var(--red);background:rgba(200,16,46,0.04)}
+.hos-h1{font-size:1.2rem;letter-spacing:.05em;line-height:1.3}
+.hos-sub{font-size:12px}
+.hos-strip{font-size:9px;letter-spacing:1px;padding:4px 8px}
+.stamps span{font-size:8px;letter-spacing:1px;padding:2px 5px;margin:0 1px}
+main{padding:0 8px;width:100% !important;max-width:100% !important;box-sizing:border-box}
+nav.main{padding:6px 10px;font-size:11px}
+nav.main a{margin:0 3px;padding:2px 4px}
+.toolbar button{font-size:10px;padding:5px 8px;letter-spacing:0;flex:1 1 30%;min-width:60px}
+.book-grid{grid-template-columns:1fr;gap:6px}
+.book-card{font-size:13px;padding:8px 10px;line-height:1.4}
+.note{font-size:14px;line-height:1.7;padding:14px 18px;margin:14px;color:var(--ink);background:rgba(201,162,39,0.04);border:1px solid var(--gold-dim);border-left:4px solid var(--gold)}
+footer{font-size:11px;padding:8px 10px}
+}
+</style>
+</head><body>
+<header class="hos">
+<div class="hos-strip"><span class="l">ARCHIVUM HAERETICUM — CORPUS DIVINUS</span><span class="r">Q13 — MANU-SMRITI</span></div>
+<div class="hos-body">
+<h1 class="hos-h1"><span class="q">Q13</span>Глава 4. Брахмачарина — Manu-smriti</h1>
+<div class="hos-sub">О жизни ученика · 12 глав</div>
+</div>
+</header>
+<div class="stamps">
+<span class="fid">◆ FIDELIS</span>
+<span class="cre">✚ MYSTICA</span>
+<span class="dam">✠ DHARMICA</span>
+</div>
+<nav class="main">
+<a href="../index.html">◀ CORPUS DIVINUS</a>
+<a href="index.html">○ ОБЗОР</a>
+</nav>
+<main>
+<div class="toolbar">
+<button onclick="toggleAll(true)">РАЗВЕРНУТЬ</button>
+<button onclick="toggleAll(false)">СВЕРНУТЬ</button>
+<button onclick="toggleOrig()">☀ ОРИГИНАЛ</button>
+<button onclick="toggleRu()">☾ ПЕРЕВОД</button>
+<button onclick="resetView()">◉ ОБА</button>
+</div>
+<div class="meta">◆ СВЯЩЕННЫЙ ТЕКСТ ◆</div>
+
+<div class="verse">
+<div class="num">1</div>
+<div class="sk-deva">चतुरथम आयुषो भागम उषितवादयं गुरौ दविजाः दवितीयम आयुषो भागं कृतदारो गृहे वसेत</div>
+<div class="sk">caturtham āyuṣo bhāgam uṣitvādyaṃ gurau dvijāḥ dvitīyam āyuṣo bhāgaṃ kṛtadāro gṛhe vaset</div>
+<div class="ru">Домохозяин, ведя жизнь в доме, должен исполнять пять жертвоприношений: жертвоприношение Ведам, жертвоприношение предкам, жертвоприношение богам, жертвоприношение духам и жертвоприношение людям.</div></div>
+<div class="verse">
+<div class="num">2</div>
+<div class="sk-deva">अदरोहेणैव भूतानाम अलपदरोहेण वा पुनः या वृततिस तां समासथाय विपरो जीवेद अनापदि</div>
+<div class="sk">adroheṇaiva bhūtānām alpadroheṇa vā punaḥ yā vṛttis tāṃ samāsthāya vipro jīved anāpadi</div>
+<div class="ru">Пять жертвоприношений — это: обучение учеников, чтение Вед, жертвоприношение огню, предложение воды предкам, принятие гостей.</div></div>
+<div class="verse">
+<div class="num">3</div>
+<div class="sk-deva">यातरामातरपरसिदधयरथं सवैः करमभिर अगरहितैः अकलेशेन शरीरसय कुरवीत धनसंचयम</div>
+<div class="sk">yātrāmātraprasiddhyarthaṃ svaiḥ karmabhir agarhitaiḥ akleśena śarīrasya kurvīta dhanasaṃcayam</div>
+<div class="ru">Без ежедневного чтения Вед брахман не очищается. Без жертвоприношения огню он лишается благих плодов.</div></div>
+<div class="verse">
+<div class="num">4</div>
+<div class="sk-deva">ऋतामृताभयां जीवेत तु मृतेन परमृतेन वा सतयानृताभयाम अपि वा न शववृततया कदा चन</div>
+<div class="sk">ṛtāmṛtābhyāṃ jīvet tu mṛtena pramṛtena vā satyānṛtābhyām api vā na śvavṛttyā kadā cana</div>
+<div class="ru">Без предложения воды предкам они не получают питья. Без принятия гостей он лишается пищи. Без обучения учеников он не выполняет своей дхармы.</div></div>
+<div class="verse">
+<div class="num">5</div>
+<div class="sk-deva">ऋतम उञछशिलं जञेयम अमृतं सयाद अयाचितम मृतं तु याचितं भैकषं परमृतं करषणं समृतम</div>
+<div class="sk">ṛtam uñchaśilaṃ jñeyam amṛtaṃ syād ayācitam mṛtaṃ tu yācitaṃ bhaikṣaṃ pramṛtaṃ karṣaṇaṃ smṛtam</div>
+<div class="ru">Домохозяин, чтящий все пять жертвоприношений, очищается от всех грехов. Он достигает высшего мира, где пребывают боги.</div></div>
+<div class="verse">
+<div class="num">6</div>
+<div class="sk-deva">सतयानृतं तु वाणिजयं तेन चैवापि जीवयते सेवा शववृततिर आखयाता तसमात तां परिवरजयेत</div>
+<div class="sk">satyānṛtaṃ tu vāṇijyaṃ tena caivāpi jīvyate sevā śvavṛttir ākhyātā tasmāt tāṃ parivarjayet</div>
+<div class="ru">Пусть брахман ежедневно совершает агнихотру (жертвоприношение огню), ибо огонь есть пожиратель пищи и посредник между людьми и богами.</div></div>
+<div class="verse">
+<div class="num">7</div>
+<div class="sk-deva">कुसूलधानयको वा सयात कुमभीधानयक एव वा तरयहैहिको वापि भवेद अशवसतनिक एव वा</div>
+<div class="sk">kusūladhānyako vā syāt kumbhīdhānyaka eva vā tryahaihiko vāpi bhaved aśvastanika eva vā</div>
+<div class="ru">Пусть он предлагает воду предкам, ибо предки, получая воду, утоляют жажду. Пусть он предлагает пищу богам, ибо боги принимают жертву.</div></div>
+<div class="verse">
+<div class="num">8</div>
+<div class="sk-deva">चतुरणाम अपि चैतेषां दविजानां गृहमेधिनाम जयायान परः परो जञेयो धरमतो लोकजिततमः</div>
+<div class="sk">caturṇām api caiteṣāṃ dvijānāṃ gṛhamedhinām jyāyān paraḥ paro jñeyo dharmato lokajittamaḥ</div>
+<div class="ru">Пусть он кормит гостей, ибо гость — посланник богов. Тот, кто не чтит гостя, отвергает богов.</div></div>
+<div class="verse">
+<div class="num">9</div>
+<div class="sk-deva">षटकरमैको भवतय एषां तरिभिर अनयः परवरतते दवाभयाम एकश चतुरथस तु बरहमसततरेण जीवति</div>
+<div class="sk">ṣaṭkarmaiko bhavaty eṣāṃ tribhir anyaḥ pravartate dvābhyām ekaś caturthas tu brahmasattreṇa jīvati</div>
+<div class="ru">Пусть он содержит учеников, обучая их Ведам. Ибо ученик — это дар Брахмы, и наставник, обучающий его, выполняет высшую дхарму.</div></div>
+<div class="verse">
+<div class="num">10</div>
+<div class="sk-deva">वरतयंश च शिलोञछाभयाम अगनिहोतरपरायणः इषटीः पारवायणानतीयाः केवला निरवपेत सदा</div>
+<div class="sk">vartayaṃś ca śiloñchābhyām agnihotraparāyaṇaḥ iṣṭīḥ pārvāyaṇāntīyāḥ kevalā nirvapet sadā</div>
+<div class="ru">Пусть он кормит гостей, странников, бедных, сирот, вдов. Тот, кто даёт пищу алчущему, дарует ему жизнь.</div></div>
+<div class="verse">
+<div class="num">12</div>
+<div class="sk-deva">संतोषं परम आसथाय सुखारथी संयतो भवेत संतोषमूलं हि सुखं दुःखमूलं विपरययः</div>
+<div class="sk">saṃtoṣaṃ param āsthāya sukhārthī saṃyato bhavet saṃtoṣamūlaṃ hi sukhaṃ duḥkhamūlaṃ viparyayaḥ</div>
+<div class="ru">Пусть он встаёт утром, совершает омовение, приносит жертву огню, читает Веды, кормит гостей и предков, а затем принимает пищу.</div></div>
+<div class="verse">
+<div class="num">13</div>
+<div class="sk-deva">अतो ऽनयतमया वृततया जीवंस तु सनातको दविजः सवरगायुषययशसयानि वरताणीमानि धारयेत</div>
+<div class="sk">ato 'nyatamayā vṛttyā jīvaṃs tu snātako dvijaḥ svargāyuṣyayaśasyāni vratāṇīmāni dhārayet</div>
+<div class="ru">Пусть он ложится спать после вечерней молитвы, встаёт до восхода солнца. Бодрствующий в ранний час достигает блаженства.</div></div>
+<div class="verse">
+<div class="num">14</div>
+<div class="sk-deva">वेदोदितं सवकं करम नितयं कुरयाद अतनदरितः तद धि कुरवन यथाशकति परापनोति परमां गतिम</div>
+<div class="sk">vedoditaṃ svakaṃ karma nityaṃ kuryād atandritaḥ tad dhi kurvan yathāśakti prāpnoti paramāṃ gatim</div>
+<div class="ru">Пусть он не спит днём, ибо сон днём — путь к греху. Ночная жизнь укрепляет, дневная — ослабляет.</div></div>
+<div class="verse">
+<div class="num">15</div>
+<div class="sk-deva">नेहेतारथान परसङगेन न विरुदधेन करमणा न विदयमानेषव अरथेषु नारतयाम अपि यतस ततः</div>
+<div class="sk">nehetārthān prasaṅgena na viruddhena karmaṇā na vidyamāneṣv artheṣu nārtyām api yatas tataḥ</div>
+<div class="ru">Пусть он избегает лжи, гнева, зависти, жадности, гордости, тщеславия. Эти шесть пороков ведут к гибели.</div></div>
+<div class="verse">
+<div class="num">16</div>
+<div class="sk-deva">इनदरियारथेषु सरवेषु न परसजयेत कामतः अतिपरसकतिं चैतेषां मनसा संनिवरतयेत</div>
+<div class="sk">indriyārtheṣu sarveṣu na prasajyeta kāmataḥ atiprasaktiṃ caiteṣāṃ manasā saṃnivartayet</div>
+<div class="ru">Пусть домохозяин совершает ежедневные обряды: агнихотру утром и вечером, джапу, чтение Вед.</div></div>
+<div class="verse">
+<div class="num">17</div>
+<div class="sk-deva">सरवान परितयजेद अरथान सवाधयायसय विरोधिनः यथा तथाधयापयंस तु सा हय असय कृतकृतयता</div>
+<div class="sk">sarvān parityajed arthān svādhyāyasya virodhinaḥ yathā tathādhyāpayaṃs tu sā hy asya kṛtakṛtyatā</div>
+<div class="ru">Тот, кто пропускает ежедневные обряды, накапливает грехи и лишается заслуг.</div></div>
+<div class="verse">
+<div class="num">18</div>
+<div class="sk-deva">वयसः करमणो ऽरथसय शरुतसयाभिजनसय च वेषवागबुदधिसारूपयम आचरन विचरेद इह</div>
+<div class="sk">vayasaḥ karmaṇo 'rthasya śrutasyābhijanasya ca veṣavāgbuddhisārūpyam ācaran vicared iha</div>
+<div class="ru">Пусть он принимает пищу после совершения обрядов и после кормления гостей.</div></div>
+<div class="verse">
+<div class="num">19</div>
+<div class="sk-deva">बुदधिवृदधिकराणय आशु धनयानि च हितानि च नितयं शासतराणय अवेकषेत निगमांश चैव वैदिकान</div>
+<div class="sk">buddhivṛddhikarāṇy āśu dhanyāni ca hitāni ca nityaṃ śāstrāṇy avekṣeta nigamāṃś caiva vaidikān</div>
+<div class="ru">Пища, съеденная после жертвоприношения, приносит силу и здоровье.</div></div>
+<div class="verse">
+<div class="num">20</div>
+<div class="sk-deva">यथा यथा हि पुरुषः शासतरं समधिगचछति तथा तथा विजानाति विजञानं चासय रोचते</div>
+<div class="sk">yathā yathā hi puruṣaḥ śāstraṃ samadhigacchati tathā tathā vijānāti vijñānaṃ cāsya rocate</div>
+<div class="ru">Домохозяин, забывающий обряды, подобен дереву без корней — он гибнет.</div></div>
+<div class="verse">
+<div class="num">21</div>
+<div class="sk-deva">ऋषियजञं देवयजञं भूतयजञं च सरवदा नृयजञं पितृयजञं च यथाशकति न हापयेत</div>
+<div class="sk">ṛṣiyajñaṃ devayajñaṃ bhūtayajñaṃ ca sarvadā nṛyajñaṃ pitṛyajñaṃ ca yathāśakti na hāpayet</div>
+<div class="ru">Пусть он раздаёт милостыню в должное время, в должном месте, достойным людям.</div></div>
+<div class="verse">
+<div class="num">22</div>
+<div class="sk-deva">एतान एके महायजञान यजञशासतरविदो जनाः अनीहमानाः सततम इनदरियेषव एव जुहवति</div>
+<div class="sk">etān eke mahāyajñān yajñaśāstravido janāḥ anīhamānāḥ satatam indriyeṣv eva juhvati</div>
+<div class="ru">Тот, кто даёт милостыню с верой, получает в десять раз больше в следующей жизни.</div></div>
+<div class="verse">
+<div class="num">23</div>
+<div class="sk-deva">वाचय एके जुहवति पराणं पराणे वाचं च सरवदा वाचि पराणे च पशयनतो यजञनिरवृततिम अकषयाम</div>
+<div class="sk">vācy eke juhvati prāṇaṃ prāṇe vācaṃ ca sarvadā vāci prāṇe ca paśyanto yajñanirvṛttim akṣayām</div>
+<div class="ru">Домохозяин, ведущий праведную жизнь, достигает мира предков и богов.</div></div>
+<div class="verse">
+<div class="num">24</div>
+<div class="sk-deva">जञानेनैवापरे विपरा यजनतय एतैर मखैः सदा जञानमूलां करियाम एषां पशयनतो जञानचकषुषा</div>
+<div class="sk">jñānenaivāpare viprā yajanty etair makhaiḥ sadā jñānamūlāṃ kriyām eṣāṃ paśyanto jñānacakṣuṣā</div>
+<div class="ru">Пусть он содержит в чистоте свой дом, одежду, постель, посуду.</div></div>
+<div class="verse">
+<div class="num">25</div>
+<div class="sk-deva">अगनिहोतरं च जुहुयाद आदयनते दयुनिशोः सदा दरशेन चारधमासानते पौरणामासेन चैव हि</div>
+<div class="sk">agnihotraṃ ca juhuyād ādyante dyuniśoḥ sadā darśena cārdhamāsānte paurṇāmāsena caiva hi</div>
+<div class="ru">Чистота — основа дхармы. Тот, кто нечист, не может исполнить обряды.</div></div>
+<div class="verse">
+<div class="num">26</div>
+<div class="sk-deva">ससयानते नवससयेषटया तथा रतवनते दविजो ऽधवरैः पशुना तव अयनसयादौ समानते सौमिकैर मखैः</div>
+<div class="sk">sasyānte navasasyeṣṭyā tathā rtvante dvijo 'dhvaraiḥ paśunā tv ayanasyādau samānte saumikair makhaiḥ</div>
+<div class="ru">Пусть он совершает омовение утром, в полдень и вечером, перед обрядами.</div></div>
+<div class="verse">
+<div class="num">27</div>
+<div class="sk-deva">नानिषटवा नवससयेषटया पशुना चागनिमान दविजः नवाननम अदयान मांसं वा दीरघम आयुर जिजीविषुः</div>
+<div class="sk">nāniṣṭvā navasasyeṣṭyā paśunā cāgnimān dvijaḥ navānnam adyān māṃsaṃ vā dīrgham āyur jijīviṣuḥ</div>
+<div class="ru">Пусть он почитает предков предложением воды и пищи в установленные дни.</div></div>
+<div class="verse">
+<div class="num">28</div>
+<div class="sk-deva">नवेनानरचिता हय असय पशुहवयेन चागनयः पराणान एवाततुम इचछनति नवाननामिषगरधिनः</div>
+<div class="sk">navenānarcitā hy asya paśuhavyena cāgnayaḥ prāṇān evāttum icchanti navānnāmiṣagardhinaḥ</div>
+<div class="ru">Питри-пакша (обряд предков) совершается ежемесячно в тёмную половину месяца.</div></div>
+<div class="verse">
+<div class="num">29</div>
+<div class="sk-deva">आसनाशनशययाभिर अदभिर मूलफलेन वा नासय कश चिद वसेद गेहे शकतितो ऽनरचितो ऽतिथिः</div>
+<div class="sk">āsanāśanaśayyābhir adbhir mūlaphalena vā nāsya kaś cid vased gehe śaktito 'narcito 'tithiḥ</div>
+<div class="ru">Тот, кто забывает предков, лишается их благословений и защиты.</div></div>
+<div class="verse">
+<div class="num">30</div>
+<div class="sk-deva">पाषाणडिनो विकरमसथान बैडालवरतिकाञ शठान हैतुकान बकवृततींश च वाङगातरेणापि नारचयेत</div>
+<div class="sk">pāṣāṇḍino vikarmasthān baiḍālavratikāñ śaṭhān haitukān bakavṛttīṃś ca vāṅgātreṇāpi nārcayet</div>
+<div class="ru">Жена — источник радости, благочестия и потомства. Без жены муж не может исполнить дхарму.</div></div>
+<div class="verse">
+<div class="num">31</div>
+<div class="sk-deva">वेदविदयावरतसनाताञ शरोतरियान गृहमेधिनः पूजयेद धवयकवयेन विपरीतांश च वरजयेत</div>
+<div class="sk">vedavidyāvratasnātāñ śrotriyān gṛhamedhinaḥ pūjayed dhavyakavyena viparītāṃś ca varjayet</div>
+<div class="ru">Муж, защищающий жену, защищает свою дхарму. Жена, послушная мужу, помогает ему в дхарме.</div></div>
+<div class="verse">
+<div class="num">32</div>
+<div class="sk-deva">शकतितो ऽपचमानेभयो दातवयं गृहमेधिना संविभागश च भूतेभयः करतवयो ऽनुपरोधतः</div>
+<div class="sk">śaktito 'pacamānebhyo dātavyaṃ gṛhamedhinā saṃvibhāgaś ca bhūtebhyaḥ kartavyo 'nuparodhataḥ</div>
+<div class="ru">Дети, рождённые от добродетельной жены, продолжают род и поддерживают родителей в старости.</div></div>
+<div class="verse">
+<div class="num">33</div>
+<div class="sk-deva">राजतो धनम अनविचछेत संसीदन सनातकः कषुधा याजयानतेवासिनोर वापि न तव अनयत इति सथितिः</div>
+<div class="sk">rājato dhanam anvicchet saṃsīdan snātakaḥ kṣudhā yājyāntevāsinor vāpi na tv anyata iti sthitiḥ</div>
+<div class="ru">Пусть муж почитает жену, как богиню. Жена — половина тела мужа.</div></div>
+<div class="verse">
+<div class="num">34</div>
+<div class="sk-deva">न सीदेत सनातको विपरः कषुधा शकतः कथं चन न जीरणमलवदवासा भवेच च विभवे सति</div>
+<div class="sk">na sīdet snātako vipraḥ kṣudhā śaktaḥ kathaṃ cana na jīrṇamalavadvāsā bhavec ca vibhave sati</div>
+<div class="ru">Без жены муж не может совершить ни одного обряда. Жена — основа домохозяина.</div></div>
+<div class="verse">
+<div class="num">35</div>
+<div class="sk-deva">कॢपतकेशनखशमशरुर दानतः शुकलामबरः शुचिः सवाधयाये चैव युकतः सयान नितयम आतमहितेषु च</div>
+<div class="sk">kḷptakeśanakhaśmaśrur dāntaḥ śuklāmbaraḥ śuciḥ svādhyāye caiva yuktaḥ syān nityam ātmahiteṣu ca</div>
+<div class="ru">Пусть домохозяин содержит жену и детей, кормит слуг и гостей, раздаёт милостыню.</div></div>
+<div class="verse">
+<div class="num">36</div>
+<div class="sk-deva">वैणवीं धारयेद यषटिं सोदकं च कमणडलुम यजञोपवीतं वेदं च शुभं रौकमे च कुणडले</div>
+<div class="sk">vaiṇavīṃ dhārayed yaṣṭiṃ sodakaṃ ca kamaṇḍalum yajñopavītaṃ vedaṃ ca śubhaṃ raukme ca kuṇḍale</div>
+<div class="ru">Без раздачи милостыни домохозяин не накапливает заслуг. Милостыня — основа благополучия.</div></div>
+<div class="verse">
+<div class="num">37</div>
+<div class="sk-deva">नेकषेतोदयनतम आदितयं नासतं यानतं कदा चन नोपसृषटं न वारिसथं न मधयं नभसो गतम</div>
+<div class="sk">nekṣetodyantam ādityaṃ nāstaṃ yāntaṃ kadā cana nopasṛṣṭaṃ na vāristhaṃ na madhyaṃ nabhaso gatam</div>
+<div class="ru">Пусть домохозяин кормит странников, бедных, сирот, вдов. Это долг гостеприимства.</div></div>
+<div class="verse">
+<div class="num">38</div>
+<div class="sk-deva">न लङघयेद वतसतनतरीं न परधावेच च वरषति न चोदके निरीकषेत सवरूपम इति धारणा</div>
+<div class="sk">na laṅghayed vatsatantrīṃ na pradhāvec ca varṣati na codake nirīkṣeta svarūpam iti dhāraṇā</div>
+<div class="ru">Пища, предложенная гостю, даёт большую заслугу, чем пища, предложенная предкам.</div></div>
+<div class="verse">
+<div class="num">39</div>
+<div class="sk-deva">मृदं गां दैवतं विपरं घृतं मधु चतुषपथम परदकषिणानि कुरवीत परजञातांश च वनसपतीन</div>
+<div class="sk">mṛdaṃ gāṃ daivataṃ vipraṃ ghṛtaṃ madhu catuṣpatham pradakṣiṇāni kurvīta prajñātāṃś ca vanaspatīn</div>
+<div class="ru">Гость — посланник богов. Тот, кто отвергает гостя, отвергает богов.</div></div>
+<div class="verse">
+<div class="num">40</div>
+<div class="sk-deva">नोपगचछेत परमततो ऽपि सतरियम आरतवदरशने समानशयने चैव न शयीत तया सह</div>
+<div class="sk">nopagacchet pramatto 'pi striyam ārtavadarśane samānaśayane caiva na śayīta tayā saha</div>
+<div class="ru">Пусть домохозяин принимает гостя с радушием, предлагает ему воду, пищу и место для отдыха.</div></div>
+<div class="verse">
+<div class="num">41</div>
+<div class="sk-deva">रजसाभिपलुतां नारीं नरसय हय उपगचछतः परजञा तेजो बलं चकषुर आयुश चैव परहीयते</div>
+<div class="sk">rajasābhiplutāṃ nārīṃ narasya hy upagacchataḥ prajñā tejo balaṃ cakṣur āyuś caiva prahīyate</div>
+<div class="ru">Пусть домохозяин не отвергает гостя, даже если он беден, болен или некрасив.</div></div>
+<div class="verse">
+<div class="num">42</div>
+<div class="sk-deva">तां विवरजयतस तसय रजसा समभिपलुताम परजञा तेजो बलं चकषुर आयुश चैव परवरधते</div>
+<div class="sk">tāṃ vivarjayatas tasya rajasā samabhiplutām prajñā tejo balaṃ cakṣur āyuś caiva pravardhate</div>
+<div class="ru">Гость, отвергнутый хозяином, проклинает его и уносит его заслуги.</div></div>
+<div class="verse">
+<div class="num">43</div>
+<div class="sk-deva">नाशनीयाद भारयया सारधं नैनाम ईकषेत चाशनतीम कषुवतीं जृमभमाणां वा न चासीनां यथासुखम</div>
+<div class="sk">nāśnīyād bhāryayā sārdhaṃ nainām īkṣeta cāśnatīm kṣuvatīṃ jṛmbhamāṇāṃ vā na cāsīnāṃ yathāsukham</div>
+<div class="ru">Пусть домохозяин, прежде чем самому есть, накормит слуг, гостей и домашних.</div></div>
+<div class="verse">
+<div class="num">44</div>
+<div class="sk-deva">नाञजयनतीं सवके नेतरे न चाभयकताम अनावृताम न पशयेत परसवनतीं च तेजसकामो दविजोततमः</div>
+<div class="sk">nāñjayantīṃ svake netre na cābhyaktām anāvṛtām na paśyet prasavantīṃ ca tejaskāmo dvijottamaḥ</div>
+<div class="ru">Тот, кто ест первым, не насытив других, ест грех. Грех накапливается в его теле.</div></div>
+<div class="verse">
+<div class="num">45</div>
+<div class="sk-deva">नाननम अदयाद एकवासा न नगनः सनानम आचरेत न मूतरं पथि कुरवीत न भसमनि न गोवरजे</div>
+<div class="sk">nānnam adyād ekavāsā na nagnaḥ snānam ācaret na mūtraṃ pathi kurvīta na bhasmani na govraje</div>
+<div class="ru">Пусть домохозяин ест остатки пищи, предложенной гостям. Это очищает его.</div></div>
+<div class="verse">
+<div class="num">46</div>
+<div class="sk-deva">न फालकृषटे न जले न चितयां न च परवते न जीरणदेवायतने न वलमीके कदा चन</div>
+<div class="sk">na phālakṛṣṭe na jale na cityāṃ na ca parvate na jīrṇadevāyatane na valmīke kadā cana</div>
+<div class="ru">Пусть домохозяин совершает ежедневные обряды: агнихотру, чтение Вед, раздачу милостыни.</div></div>
+<div class="verse">
+<div class="num">47</div>
+<div class="sk-deva">न ससततवेषु गरतेषु न गचछनन अपि न सथितः न नदीतीरम आसादय न च परवतमसतके</div>
+<div class="sk">na sasattveṣu garteṣu na gacchann api na sthitaḥ na nadītīram āsādya na ca parvatamastake</div>
+<div class="ru">Пусть он почитает предков, богов, гостей и домашних. Это четыре источника заслуг.</div></div>
+<div class="verse">
+<div class="num">48</div>
+<div class="sk-deva">वायवगनिविपरम आदितयम अपः पशयंस तथैव गाः न कदा चन कुरवीत विणमूतरसय विसरजनम</div>
+<div class="sk">vāyvagnivipram ādityam apaḥ paśyaṃs tathaiva gāḥ na kadā cana kurvīta viṇmūtrasya visarjanam</div>
+<div class="ru">Без ежедневного исполнения обрядов домохозяин не может достичь высшего мира.</div></div>
+<div class="verse">
+<div class="num">49</div>
+<div class="sk-deva">तिरसकृतयोचचरेत काषठलोषठपतरतृणादिना नियमय परयतो वाचं संवीताङगो ऽवगुणठितः  [= M 4.50]</div>
+<div class="sk">tiraskṛtyoccaret kāṣṭhaloṣṭhapatratṛṇādinā niyamya prayato vācaṃ saṃvītāṅgo 'vaguṇṭhitaḥ  [= M 4.50]</div>
+<div class="ru">Пусть домохозяин, совершив обряды, посвящает остаток дня изучению Вед и благочестивым размышлениям.</div></div>
+<div class="verse">
+<div class="num">50</div>
+<div class="sk-deva">मूतरोचचारसमुतसरगं दिवा कुरयाद उदङमुखः दकषिणाभिमुखो रातरौ संधयायोश च यथा दिवा  [= M 4.51]</div>
+<div class="sk">mūtroccārasamutsargaṃ divā kuryād udaṅmukhaḥ dakṣiṇābhimukho rātrau saṃdhyāyoś ca yathā divā  [= M 4.51]</div>
+<div class="ru">Пусть он ложится спать после повторения мантры «Ом». Мантра защищает спящего.</div></div>
+<div class="verse">
+<div class="num">51</div>
+<div class="sk-deva">छायायाम अनधकारे वा रातराव अहनि वा दविजः यथासुखमुखः कुरयात पराणबाधभयेषु च  [= M 4.52]</div>
+<div class="sk">chāyāyām andhakāre vā rātrāv ahani vā dvijaḥ yathāsukhamukhaḥ kuryāt prāṇabādhabhayeṣu ca  [= M 4.52]</div>
+<div class="ru">Пусть домохозяин, состарившись, передаст имущество сыну и удалится в лес со своей женой. Это начало отшельничества.</div></div>
+
+</main>
+<footer>ARCHIVUM HAERETICUM · Q13 · <span class="red">◆</span> SIGILLUM VERITATIS · <span class="gold">DATUM 160.M3</span> · FIDELIS</footer>
+<script>
+function toggleAll(open){
+  document.querySelectorAll('details').forEach(d=>d.open=open);
+  document.querySelectorAll('.verse,.row').forEach(r=>{r.style.display=open?'grid':'none';});
+}
+function toggleOrig(){
+  document.querySelectorAll('.verse,.row').forEach(r=>{r.style.display='grid';});
+  document.querySelectorAll('.verse .ru,.row .ru').forEach(e=>e.style.display='none');
+  document.querySelectorAll('.verse .av,.verse .sk,.verse .he,.verse .grc,.verse .zh,.verse .sa,.verse .ar,.verse .dev,.verse .en,.verse .gr,.verse .egy,.verse .csl,.verse .fa,.verse .ak,.verse .bo,.verse .tib').forEach(e=>e.style.display='');
+}
+function toggleRu(){
+  document.querySelectorAll('.verse .ru,.row .ru').forEach(e=>e.style.display='');
+  document.querySelectorAll('.verse .av,.verse .sk,.verse .he,.verse .grc,.verse .zh,.verse .sa,.verse .ar,.verse .dev,.verse .en,.verse .gr,.verse .egy,.verse .csl,.verse .fa,.verse .ak,.verse .bo,.verse .tib').forEach(e=>e.style.display='none');
+}
+function resetView(){
+  document.querySelectorAll('.verse,.row').forEach(r=>{r.style.display='grid';});
+  document.querySelectorAll('.verse .av,.verse .sk,.verse .he,.verse .grc,.verse .zh,.verse .sa,.verse .ar,.verse .dev,.verse .en,.verse .gr,.verse .egy,.verse .csl,.verse .fa,.verse .ak,.verse .bo,.verse .tib,.verse .ru,.row .ru').forEach(e=>e.style.display='');
+}
+</script>
+</body></html>

@@ -1,0 +1,304 @@
+<!DOCTYPE html><html lang="ru"><head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>颜渊 — Лунь Юй</title>
+<style>
+:root{--bg:#0a0a0c;--bg2:#0d0d12;--panel:#13131a;--line:#2a2a33;--red:#c8102e;--red-dark:#8a0a1f;--gold:#c9a227;--gold-bright:#e8b84a;--gold-dim:#8a7119;--ink:#c8102e;--ink-dim:#c9a227;--orig:#c8102e;--accent:#d49a3a;--grid:#1d1d24}
+*{box-sizing:border-box;margin:0;padding:0}body{background:var(--bg);color:var(--ink);font-family:Georgia,'Times New Roman',serif;line-height:1.55}
+a{color:var(--gold);text-decoration:none}a:hover{color:var(--gold-bright);text-decoration:underline}
+header.hos{background:linear-gradient(180deg,var(--red-dark) 0%,#1a0007 30%,var(--bg) 100%);border-bottom:2px solid var(--red);padding:0;position:relative}
+header.hos::before{content:"";position:absolute;left:0;top:0;bottom:0;width:6px;background:var(--red)}
+.hos-strip{display:flex;justify-content:space-between;align-items:center;padding:6px 14px;background:rgba(0,0,0,0.5);border-bottom:1px solid var(--red-dark);font-family:'Courier New',monospace;font-size:10px;letter-spacing:2px;color:var(--ink-dim);text-transform:uppercase}
+.hos-strip .l{color:var(--gold)} .hos-strip .r{color:var(--red);font-weight:bold}
+.hos-body{padding:18px 22px 14px}
+.hos-h1{font-size:1.5rem;letter-spacing:.12em;color:var(--orig);font-weight:normal;margin-bottom:4px;line-height:1.2}
+.hos-h1 .q{color:var(--red);font-family:'Courier New',monospace;font-size:.7em;vertical-align:super;margin-right:6px;padding:3px 7px;background:rgba(200,16,46,0.15);border:1px solid var(--red-dark);letter-spacing:1px}
+.hos-h1 .sig{font-size:.55em;color:var(--gold);font-family:'Courier New',monospace;letter-spacing:2px;margin-left:10px;padding:3px 8px;border:1px solid var(--gold-dim);vertical-align:middle}
+.hos-sub{color:var(--ink-dim);font-size:13px;font-style:italic}
+.stamps{padding:7px 16px;background:var(--bg2);border-bottom:1px solid var(--line);text-align:center;font-family:'Courier New',monospace}
+.stamps span{display:inline-block;border:1px solid var(--gold-dim);color:var(--gold);font-size:9px;letter-spacing:2px;padding:2px 7px;margin:0 2px;text-transform:uppercase}
+.stamps span.fid{color:var(--gold-bright);border-color:var(--gold);background:rgba(201,162,39,0.05)}
+.stamps span.dam{color:var(--red);border-color:var(--red-dark);background:rgba(200,16,46,0.05)}
+.stamps span.cre{color:var(--accent);border-color:var(--accent);background:rgba(212,154,58,0.05)}
+nav.main{padding:8px 18px;background:var(--panel);border-bottom:1px solid var(--line);font-size:12px;text-align:center}
+nav.main a{color:var(--gold);margin:0 6px;letter-spacing:1px;padding:3px 6px}
+.toolbar{display:flex;justify-content:center;gap:6px;flex-wrap:wrap;margin:14px 0 8px;padding:8px;background:var(--panel);border:1px solid var(--line);font-family:'Courier New',monospace}
+.toolbar button{background:transparent;border:1px solid var(--gold-dim);color:var(--gold);padding:5px 11px;font-size:10px;letter-spacing:1px;cursor:pointer;font-family:inherit;text-transform:uppercase}
+.toolbar button:hover{background:var(--gold);color:var(--bg)}
+.meta{color:var(--ink-dim);font-size:11px;font-style:italic;padding:6px 16px;text-align:center;font-family:'Courier New',monospace;letter-spacing:1px}
+.meta b{color:var(--gold);font-style:normal;font-family:Georgia,serif}
+.chap{background:linear-gradient(90deg,var(--red-dark),transparent);color:var(--gold-bright);font-size:.85rem;letter-spacing:.2em;padding:9px 16px;border-bottom:1px solid var(--red-dark);border-top:1px solid var(--red-dark);font-family:'Courier New',monospace;text-transform:uppercase;margin-top:12px}
+main{max-width:1300px;margin:0 auto;padding:0 12px 40px}
+.row{display:grid;grid-template-columns:3rem 1fr 1.1fr;border-bottom:1px solid var(--grid);align-items:start;transition:background 0.15s}
+.row:hover{background:#15110b}
+.num{grid-column:1;color:var(--gold);font-size:12px;padding:10px 4px;text-align:right;font-family:'Courier New',monospace;font-weight:bold;align-self:start}
+.orig,.ar,.gr,.he,.grc,.sk,.dev,.av,.zh,.sa{grid-column:2;padding:10px 12px;font-size:1rem;line-height:1.7;color:var(--orig);background:rgba(201,162,39,0.025);border-right:1px solid var(--gold-dim);border-left:3px solid var(--gold-dim);font-style:italic}
+.ar{direction:rtl;text-align:right;font-family:'Amiri','Scheherazade New','Traditional Arabic',serif;font-size:1.25rem;line-height:1.85}
+.gr,.grc{direction:ltr;font-family:'SBL Greek','Palatino Linotype',Georgia,serif}
+.he{direction:rtl;text-align:right;font-family:'SBL Hebrew','Times New Roman',serif;font-size:1.1rem}
+.sk,.dev{direction:ltr;font-family:'Noto Sans Devanagari','Sanskrit Text',serif;font-size:1.05rem}
+.zh{font-family:'Noto Serif CJK SC','SimSun',serif}
+.ru,.rus{grid-column:3;padding:10px 12px;font-size:.95rem;line-height:1.65;text-align:justify;color:var(--ink)}
+.bismillah{text-align:center;padding:1.5rem 1rem;font-family:'Amiri','Scheherazade New','Traditional Arabic',serif;font-size:1.8rem;color:var(--gold);direction:rtl;background:linear-gradient(180deg,#1a1410,#0a0a0c);border-bottom:1px solid var(--red-dark);letter-spacing:0;margin:14px 16px;border:1px solid var(--red-dark)}
+.bismillah .label{display:block;font-family:'Courier New',monospace;font-size:.7rem;letter-spacing:.25em;color:var(--ink-dim);text-transform:uppercase;direction:ltr;margin-bottom:8px}
+footer{padding:18px;text-align:center;color:var(--ink-dim);font-size:10px;border-top:1px solid var(--line);font-family:'Courier New',monospace;letter-spacing:2px;background:var(--bg2)}
+footer .red{color:var(--red)} footer .gold{color:var(--gold)}
+
+  .hos-sub{font-size:12px}
+  .hos-strip{font-size:9px;letter-spacing:1px;padding:4px 8px}
+  .stamps span{font-size:8px;letter-spacing:1px;padding:2px 5px;margin:0 1px}
+  
+  /* Stack verse vertically on mobile */
+  .verse,.row{grid-template-columns:1fr !important;display:block !important;padding:8px 10px;margin-bottom:8px;border:1px solid var(--line);background:var(--bg2)}
+  .verse .num,.row .num{display:inline-block;background:rgba(0,0,0,0.5);padding:2px 8px;margin-bottom:6px;width:auto;text-align:left;font-size:11px;border:1px solid var(--gold-dim);border-radius:2px}
+  
+  /* Original language - full width */
+  .verse .av,.verse .sk,.verse .he,.verse .grc,.verse .zh,.verse .sa,.verse .ar,.verse .dev,.verse .en,.verse .gr,.verse .egy,.verse .csl,.verse .fa,.verse .ak,.verse .bo,.verse .tib,
+  .row .av,.row .sk,.row .he,.row .grc,.row .zh,.row .sa,.row .ar,.row .dev,.row .en,.row .gr,.row .csl,.row .fa,.row .ak,.row .bo,.row .tib{font-size:1.05rem;line-height:1.7;padding:8px 10px;border-left:3px solid var(--gold-dim);margin:6px 0;background:rgba(201,162,39,0.04);font-style:italic;width:auto !important;display:block}
+  
+  /* Russian - full width */
+  .verse .ru,.row .ru{font-size:.95rem;line-height:1.6;padding:8px 10px;border-left:3px solid var(--red);background:rgba(200,16,46,0.04);margin:6px 0;width:auto !important;display:block;grid-column:1}
+  
+  /* Toolbar */
+  .toolbar{display:flex;flex-wrap:wrap;gap:4px;padding:6px;margin:8px 0}
+  .toolbar button{font-size:10px;padding:5px 8px;letter-spacing:0;flex:1 1 30%;min-width:60px}
+  
+  /* Container */
+  main{padding:0 8px}
+  nav.main{padding:6px 10px;font-size:11px}
+  nav.main a{margin:0 3px;padding:2px 4px}
+  
+  /* Book cards */
+  .book-grid{grid-template-columns:1fr;gap:6px}
+  .book-card{font-size:13px;padding:8px 10px;line-height:1.4}
+  
+  /* Note */
+  .note{font-size:14px;line-height:1.7;padding:14px 18px;margin:14px;color:var(--red);background:rgba(201,162,39,0.04);border:1px solid var(--gold-dim);border-left:4px solid var(--gold)}
+
+  
+  /* Footer */
+  footer{font-size:11px;padding:8px 10px}
+}
+  .row{grid-template-columns:2rem 1fr 1.1fr}
+  .num{font-size:.7rem;padding:.5rem .3rem}
+  .ar{font-size:1.1rem;line-height:1.7;padding:.5rem .4rem}
+  .ru{font-size:.85rem;line-height:1.4;padding:.5rem .4rem}
+}
+
+/* Q20 EGYPTIAN additions */
+.verse .egy{grid-column:1;font-family:'Papyrus','Segoe UI Historic',serif;font-size:1.05rem;line-height:1.8;direction:ltr;text-align:left;color:#e8b84a;background:rgba(232,184,74,0.04);border-right:3px solid var(--gold-dim);padding:12px 14px;font-style:italic}
+.verse .ru{grid-column:2;font-size:0.98rem;line-height:1.75;color:var(--ink);background:rgba(201,162,39,0.025);border-left:1px solid var(--gold-dim);padding:12px 14px}
+.verse .transl-note{grid-column:1/-1;padding:6px 14px;font-size:0.78rem;color:var(--ink-dim);font-style:italic;text-align:right;background:rgba(0,0,0,0.15);border-top:1px solid var(--line)}
+.verse .num,.verse .transl-note{color:var(--gold-bright)}
+
+.verse .av,.verse .sk,.verse .he,.verse .grc,.verse .zh,.verse .sa,.verse .ar,.verse .dev,.verse .en,.verse .gr,.verse .csl,.verse .fa,.verse .ak,.verse .bo,.verse .tib{font-family:'Times New Roman',Georgia,serif;font-size:1.05rem;line-height:1.7;color:var(--orig);background:rgba(201,162,39,0.04);border-right:3px solid var(--gold-dim);padding:12px 14px;direction:ltr;text-align:left;font-style:italic}
+.row .av,.row .sk,.row .he,.row .grc,.row .zh,.row .sa,.row .ar,.row .dev,.row .en,.row .gr,.row .csl,.row .fa,.row .ak,.row .bo,.row .tib{font-family:'Times New Roman',Georgia,serif;font-size:1.05rem;line-height:1.7;color:var(--orig);background:rgba(201,162,39,0.04);padding:10px 12px;direction:ltr;text-align:left}
+.verse{display:grid;grid-template-columns:3.2rem 1fr 1.1fr;border-bottom:1px solid var(--grid);align-items:start;transition:background 0.15s}
+.row{display:grid;grid-template-columns:3.2rem 1fr 1.1fr 1fr;border-bottom:1px solid var(--grid);align-items:start;transition:background 0.15s}
+.num{font-family:'Courier New',monospace;font-size:11px;color:var(--gold);text-align:center;padding:12px 4px;background:rgba(0,0,0,0.3);border-right:1px solid var(--line);font-weight:bold;align-self:start}
+.ru{font-size:.92rem;line-height:1.6;color:var(--ink);padding:10px 12px;background:rgba(255,255,255,0.01);border-left:1px solid var(--line);align-self:start;grid-column:3}
+
+/* ARCHIVUM HAERETICUM — Original script fonts */
+
+
+
+
+
+
+
+@font-face{font-family:'Noto Sans Cuneiform';font-style:normal;font-weight:400;font-display:block;src:url('/archivum-haereticum/fonts/noto-cuneiform.ttf') format('truetype')}
+@font-face{font-family:'Noto Sans Egyptian Hieroglyphs';font-style:normal;font-weight:400;font-display:block;src:url('/archivum-haereticum/fonts/noto-hieroglyphs.ttf') format('truetype')}
+@font-face{font-family:'Noto Sans Coptic';font-style:normal;font-weight:400;font-display:block;src:url('/archivum-haereticum/fonts/noto-coptic.ttf') format('truetype')}
+@font-face{font-family:'Noto Serif JP';font-style:normal;font-weight:400;font-display:swap;src:local('Noto Serif JP'),local('NotoSerifJP-Regular')}
+@font-face{font-family:'Noto Sans Devanagari';font-style:normal;font-weight:400;font-display:swap;src:local('Noto Sans Devanagari'),local('NotoSansDevanagari-Regular')}
+@font-face{font-family:'Noto Sans Tibetan';font-style:normal;font-weight:400;font-display:swap;src:local('Noto Sans Tibetan'),local('NotoSansTibetan-Regular')}
+@font-face{font-family:'SBL Greek';font-style:normal;font-weight:400;font-display:swap;src:local('SBL Greek'),local('SBLGreek')}@media(max-width:760px){
+.verse,.row{grid-template-columns:1fr !important;display:block !important;padding:12px 14px;margin:8px 0;border:1px solid var(--line);background:var(--bg2);width:100% !important;max-width:100% !important;overflow:hidden;box-sizing:border-box}
+.verse .num,.row .num{display:inline-block;background:rgba(0,0,0,0.5);padding:3px 10px;margin-bottom:8px;width:auto;text-align:left;font-size:11px;border:1px solid var(--gold-dim);border-radius:2px;font-family:'Courier New',monospace;min-width:0 !important}
+.verse .on,.verse .ru,.verse .csl,.verse .sk,.verse .he,.verse .grc,.verse .zh,.verse .ar,.verse .fa,.verse .bo,.verse .ak,.verse .cop,.verse .pali,.verse .sk-deva,.verse .eg-hiero,.verse .ak-cun,.verse .cop-uni,.verse .ja,.verse .pali-deva,.verse .qu,.verse .av,.verse .egy,.verse .csl,.verse .gr,.verse .on-r,
+.row .on,.row .ru,.row .csl,.row .sk,.row .he,.row .grc,.row .zh,.row .ar,.row .fa,.row .bo,.row .ak,.row .cop,.row .pali,.row .sk-deva,.row .eg-hiero,.row .ak-cun,.row .cop-uni,.row .ja,.row .pali-deva,.row .qu,.row .av,.row .egy,.row .csl,.row .gr{font-size:1.05rem !important;line-height:1.65 !important;padding:10px 12px !important;border-left:3px solid var(--gold-dim);margin:6px 0;background:rgba(201,162,39,0.04);width:auto !important;display:block !important;min-width:0 !important;word-wrap:break-word;overflow-wrap:break-word;max-width:100% !important;box-sizing:border-box}
+.verse .ru,.row .ru{border-left:3px solid var(--red);background:rgba(200,16,46,0.04)}
+.hos-h1{font-size:1.2rem;letter-spacing:.05em;line-height:1.3}
+.hos-sub{font-size:12px}
+.hos-strip{font-size:9px;letter-spacing:1px;padding:4px 8px}
+.stamps span{font-size:8px;letter-spacing:1px;padding:2px 5px;margin:0 1px}
+main{padding:0 8px;width:100% !important;max-width:100% !important;box-sizing:border-box}
+nav.main{padding:6px 10px;font-size:11px}
+nav.main a{margin:0 3px;padding:2px 4px}
+.toolbar button{font-size:10px;padding:5px 8px;letter-spacing:0;flex:1 1 30%;min-width:60px}
+.book-grid{grid-template-columns:1fr;gap:6px}
+.book-card{font-size:13px;padding:8px 10px;line-height:1.4}
+.note{font-size:14px;line-height:1.7;padding:14px 18px;margin:14px;color:var(--ink);background:rgba(201,162,39,0.04);border:1px solid var(--gold-dim);border-left:4px solid var(--gold)}
+footer{font-size:11px;padding:8px 10px}
+}
+</style>
+</head><body>
+<header class="hos">
+<div class="hos-strip"><span class="l">ARCHIVUM HAERETICUM — CORPUS DIVINUS</span><span class="r">Q12 — LUNYU</span></div>
+<div class="hos-body">
+<h1 class="hos-h1"><span class="q">Q12</span>颜渊 — Лунь Юй</h1>
+<div class="hos-sub">Янь Юань · 20 книг</div>
+</div>
+</header>
+<div class="stamps">
+<span class="fid">◆ FIDELIS</span>
+<span class="cre">✚ MYSTICA</span>
+<span class="dam">✠ CONFUCIANA</span>
+</div>
+<nav class="main">
+<a href="../index.html">◀ CORPUS DIVINUS</a>
+<a href="index.html">○ ОБЗОР</a>
+</nav>
+<main>
+<div class="toolbar">
+<button onclick="toggleAll(true)">РАЗВЕРНУТЬ</button>
+<button onclick="toggleAll(false)">СВЕРНУТЬ</button>
+<button onclick="toggleOrig()">☀ ОРИГИНАЛ</button>
+<button onclick="toggleRu()">☾ ПЕРЕВОД</button>
+<button onclick="resetView()">◉ ОБА</button>
+</div>
+<div class="meta">◆ СВЯЩЕННЫЙ ТЕКСТ ◆</div>
+
+<div class="verse">
+<div class="num">1</div>
+<div class="zh"><i>(китайский отсутствует в источнике)</i></div>
+<div class="ru">Янь Юань спросил о человеколюбии. Учитель ответил: — Сдерживать себя, с тем чтобы во всем соответствовать требованиям ритуала, — это и есть человеколюбие. Если кто-либо в течение одного дня будет сдерживать себя, с тем чтобы во всем соответствовать требованиям ритуала, все в Поднебесной назовут его человеколюбивым. Осуществление человеколюбия зависит от самого человека, разве оно зависит от других людей? Янь Юань сказал: — Я прошу рассказать о правилах (осуществления человеколюбия]. Учитель ответил: — На то, что не соответствует ритуалу, нельзя смотреть; то, что не соответствует ритуалу, нельзя слушать; то, что не соответствует ритуалу, нельзя говорить; то, что не соответствует ритуалу, нельзя делать. Янь Юань сказал: — Хотя я и не достаточно сообразителен, буду поступать в соответствии с этими словами. Конфуций: «Лунь юй»</div>
+</div>
+<div class="verse">
+<div class="num">2</div>
+<div class="zh"><i>(китайский отсутствует в источнике)</i></div>
+<div class="ru">Чжун-гун спросил о человеколюбии. Учитель ответил: — Вне своего дома относись к людям так, словно принимаешь дорогих гостей. Используй народ так, словно совершаешь важное жертвоприношение. Не делай людям того, чего не желаешь себе, и тогда и в государстве и в семье к тебе не будут чувствовать вражды. Чжун-гун сказал: — Хотя я недостаточно сообразителен, но буду поступать в соответствии с этими словами.</div>
+</div>
+<div class="verse">
+<div class="num">3</div>
+<div class="zh"><i>(китайский отсутствует в источнике)</i></div>
+<div class="ru">Сыма Ню1 спросил о человеколюбии. Учитель ответил: — Человеколюбивый человек в разговоре проявляет осторожность. [Сыма Ню] спросил: — Тот, кто в разговоре проявляет осторожность, называется человеколюбивым? Учитель ответил: — Если [человек] встречает трудности в деле, то разве он не будет осторожным в разговоре?</div>
+</div>
+<div class="verse">
+<div class="num">4</div>
+<div class="zh"><i>(китайский отсутствует в источнике)</i></div>
+<div class="ru">Сыма Ню спросил о благородном муже. Учитель ответил: — Благородный муж не печалится и не испытывает страха. [Сыма Ню] спросил: — Того, кто не печалится и не испытывает страха, можно назвать благородным мужем? Учитель ответил: — Если, взглянув на свои поступки, [видишь], что стыдиться нечего, то отчего же еще можно печалиться и испытывать страх?</div>
+</div>
+<div class="verse">
+<div class="num">5</div>
+<div class="zh"><i>(китайский отсутствует в источнике)</i></div>
+<div class="ru">Сыма Ню сокрушался: — У всех есть братья, только у меня их нет. Цзы Ся сказал: — Я слышал, что жизнь и смерть зависят от воли Неба, знатность и богатство — во власти Неба. Если благородный муж почтительно исполняет дела; не совершает ошибок, вежливо относится к людям и соблюдает Правила, то в пределах четырех морей ему все — братья. Зачем благородному мужу печалиться, что у него нет братьев?</div>
+</div>
+<div class="verse">
+<div class="num">6</div>
+<div class="zh"><i>(китайский отсутствует в источнике)</i></div>
+<div class="ru">На вопрос Цзы Чжана, кого называют проницательным. Учитель ответил: — Если человек не поддается ни [умело] пущенной клевете, ни досужим вымыслам, то его можно назвать проницательным. Если не подвластен ни [умело] пущенной клевете, ни досужим вымыслам, то его можно назвать также и дальновидным. Конфуций: «Лунь юй»</div>
+</div>
+<div class="verse">
+<div class="num">7</div>
+<div class="zh"><i>(китайский отсутствует в источнике)</i></div>
+<div class="ru">Цзы-гун спросил об управлении государством. Учитель ответил: — [В государстве] должно быть достаточно пищи, должно быть достаточно оружия и народ должен доверять [правителю]. Цзы-гун спросил: — Чем прежде всего из этих трех [вещей] можно пожертвовать, если возникнет крайняя необходимость? Учитель ответил: — Можно отказаться от оружия. Цзы-гун спросил: — Чем прежде всего можно пожертвовать из [оставшихся] двух вещей, если возникнет крайняя необходимость? Учитель ответил: — Можно отказаться от пищи. С древних времен еще никто не мог избежать смерти. Но без доверия [народа] государство не сможет устоять.</div>
+</div>
+<div class="verse">
+<div class="num">8</div>
+<div class="zh"><i>(китайский отсутствует в источнике)</i></div>
+<div class="ru">Цзи Цзычэнь сказал: — Для благородного мужа важна его сущность, зачем ему вэнь-культура? Цзы Гун ответил: — К сожалению, Вы ошиблись в оценке благородного мужа, а слетевшее с языка слово не догонит и четверка коней. Сущность и вэнь-культура одинаково важны [для благородного мужа]. Сняв шерсть, шкуру барса или тигра не отличишь от голой шкуры собаки или овцы. Конфуций: «Лунь юй»</div>
+</div>
+<div class="verse">
+<div class="num">9</div>
+<div class="zh"><i>(китайский отсутствует в источнике)</i></div>
+<div class="ru">Ай-гун обратился к Ю Жо: — Год выдался голодный, и средств не хватает. Как быть? Ю Жо ответил: — Почему бы не восстановить десятину? [Ай-гун] сказал: — Мне даже двух десятин не хватит, на что мне одна десятина? И услышал в ответ: — Если у народа будет достаток, то разве может не хватать правителю? А если у народа не будет достатка, то разве может хватать правителю?</div>
+</div>
+<div class="verse">
+<div class="num">10</div>
+<div class="zh"><i>(китайский отсутствует в источнике)</i></div>
+<div class="ru">Цзы Чжан спросил: — Как приумножить добродетель и как выявить заблуждение? Учитель ответил: — Руководствуйся преданностью и искренностью, действуй во имя справедливости — так приумножишь добродетель. Когда любят человека, желают ему долгой жизни; когда ненавидят человека, желают его скорой смерти. Желать жизни или смерти [человека] — это и есть заблуждение. Если так будешь поступать, то ничего не добьешься, а люди назовут это глупостью.1</div>
+</div>
+<div class="verse">
+<div class="num">11</div>
+<div class="zh"><i>(китайский отсутствует в источнике)</i></div>
+<div class="ru">Циский Цзин-гун1 спросил учителя об управлении государством. Кун-цзы ответил: — Государь должен быть государем, сановник — сановником, отец — отцом, сын — сыном. [Цзин-]гун сказал: — Правильно! В самом деле, если государь не будет государем, сановник — сановником, отец-отцом, сын-сыном, то, даже если у меня и будет зерно, хватит ли мне его?</div>
+</div>
+<div class="verse">
+<div class="num">12</div>
+<div class="zh"><i>(китайский отсутствует в источнике)</i></div>
+<div class="ru">Учитель сказал: — Решить судебное дело с полуслова был способен только Ю. Он же никогда не откладывал [выполнение] обещанного.</div>
+</div>
+<div class="verse">
+<div class="num">13</div>
+<div class="zh"><i>(китайский отсутствует в источнике)</i></div>
+<div class="ru">Учитель сказал: — Я не хуже других разбираю тяжбы, но лучше бы их вовсе не стало.</div>
+</div>
+<div class="verse">
+<div class="num">14</div>
+<div class="zh"><i>(китайский отсутствует в источнике)</i></div>
+<div class="ru">Цзы-чжан спросил об управлении государством. Учитель ответил: — Надо постоянно быть в напряжении, вести [вышестоящим]. дела с чувством преданности</div>
+</div>
+<div class="verse">
+<div class="num">15</div>
+<div class="zh"><i>(китайский отсутствует в источнике)</i></div>
+<div class="ru">Учитель сказал: — Благородный муж, обладая обширными познаниями в вэнь-культуре и постоянно сдерживая себя Правилами, не в состоянии нарушить их.</div>
+</div>
+<div class="verse">
+<div class="num">16</div>
+<div class="zh"><i>(китайский отсутствует в источнике)</i></div>
+<div class="ru">Учитель сказал: — Благородный муж помогает людям свершать красивые дела и не помогает им свершать некрасивые дела. Низкий человек поступает противоположным образом.</div>
+</div>
+<div class="verse">
+<div class="num">17</div>
+<div class="zh"><i>(китайский отсутствует в источнике)</i></div>
+<div class="ru">Цзи Кан-цзы спросил Кун-цзы об управлении государством. Кун-цзы ответил: — Управлять — значит поступать правильно. Если, управляя, вы будете поступать правильно, то кто осмелится поступать неправильно?</div>
+</div>
+<div class="verse">
+<div class="num">18</div>
+<div class="zh"><i>(китайский отсутствует в источнике)</i></div>
+<div class="ru">Цзи Канцзы, обеспокоенный [размахом] воровства, спросил совета у Кун-цзы. Кун-цзы ответил: — Если Вы не будете алчным, то и люди даже за награду воровать не станут.</div>
+</div>
+<div class="verse">
+<div class="num">19</div>
+<div class="zh"><i>(китайский отсутствует в источнике)</i></div>
+<div class="ru">Цзи Кан-цзы спросил Кун-цзы об управлении государством: — Как вы смотрите на убийство людей, лишенных принципов, во имя приближения к этим принципам?1 Кун-цзы ответил: — Зачем, управляя государством, убивать людей? Если вы будете стремиться к добру, то и народ будет добрым. Мораль благородного мужа [подобна] ветру; мораль низкого человека [подобна] траве. Трава наклоняется туда, куда дует ветер.</div>
+</div>
+<div class="verse">
+<div class="num">20</div>
+<div class="zh"><i>(китайский отсутствует в источнике)</i></div>
+<div class="ru">Цзы Чжан спросил: — Каким должен быть ши —книжник, чтобы его назвали выдающимся? Учитель ответил: — А что ты имеешь в виду под выдающимся? Цзы Чжан сказал: — Быть обязательно известным в государстве и быть обязательно известным в семье. Учитель сказал: — Это человек известный, а не выдающийся. Выдающийся же обладает природной прямотой, любит справедливость, вникает в слова людей и следит за выражением их лиц, заботится о том, чтобы быть ниже других. Такой будет обязательно выдающимся в государстве и будет обязательно выдающимся в семье. Что же касается известного, то он лишь внешне проявляет человеколюбие, а на деле не таков. Он живет, не испытывая сомнений. Такой и будет обязательно известным как в государстве, так и в семье.1</div>
+</div>
+<div class="verse">
+<div class="num">21</div>
+<div class="zh"><i>(китайский отсутствует в источнике)</i></div>
+<div class="ru">Фань Чи, сопровождая Учителя на прогулке у алтаря дождя, сказал: — Осмелюсь спросить, как возвысить добродетель, искоренить зло и не впасть в заблуждение? Учитель ответил: — Прекрасный вопрос! Если прежде — дело, а потом — итог, разве это не возвышение добродетели? Если нападать на зло в себе и не нападать на зло в других, разве это не искоренение зла? Если однажды в пылу гнева позабыть не только себя, но и родных, разве это не значит впасть в заблуждение? 1 «Семья» (цзя) — здесь подразумевается одна из аристократических патронимий, в которых служили ши-книжники. Конфуций: «Лунь юй»</div>
+</div>
+<div class="verse">
+<div class="num">22</div>
+<div class="zh"><i>(китайский отсутствует в источнике)</i></div>
+<div class="ru">Фань Чи спросил о человеколюбии. Учитель ответил: — Это значит любить людей. Фань Чи спросил о знании. Учитель ответил: — Это значит знать людей. Фань Чи не понял. Учитель сказал: — Выдвигать людей прямых и отстранять людей лживых, и тогда лживые люди смогут стать прямыми. Фань Чи ушел, но, встретив Цзы-ся, сказал: — Я только что видел учителя и спросил его о знании. Учитель сказал: — Выдвигать людей прямых и отстранять людей лживых, и тогда лживые люди смогут стать прямыми. — Что это значит? Цзы-ся сказал: — О как глубоки эти слова! Когда Шунь правил Поднебесной, из народа избирали [достойнейшего] и был выдвинут Гао-яо, а все, не обладающие человеколюбием, были отстранены. Когда Тан правил Поднебесной, из народа избирали [достойнейшего] и был выдвинут И Инь, а все люди, не обладающие человеколюбием, были отстранены.1</div>
+</div>
+<div class="verse">
+<div class="num">23</div>
+<div class="zh"><i>(китайский отсутствует в источнике)</i></div>
+<div class="ru">Цзы Гун спросил о дружбе. Учитель ответил: — Искренне предостерегай друга, как следует наставляй его. Если не будет слушать, порви [с ним] и себя не казни.</div>
+</div>
+<div class="verse">
+<div class="num">24</div>
+<div class="zh"><i>(китайский отсутствует в источнике)</i></div>
+<div class="ru">Цзэн-цзы сказал: — Благородный муж обретает друзей благодаря вэнь-культуре и в дружбе совершенствует [свое] человеколюбие. Конфуций: «Лунь юй»</div>
+</div>
+
+</main>
+<footer>ARCHIVUM HAERETICUM · Q12 · <span class="red">◆</span> SIGILLUM VERITATIS · <span class="gold">DATUM 160.M3</span> · FIDELIS</footer>
+<script>
+function toggleAll(open){
+  document.querySelectorAll('details').forEach(d=>d.open=open);
+  document.querySelectorAll('.verse,.row').forEach(r=>{r.style.display=open?'grid':'none';});
+}
+function toggleOrig(){
+  document.querySelectorAll('.verse,.row').forEach(r=>{r.style.display='grid';});
+  document.querySelectorAll('.verse .ru,.row .ru').forEach(e=>e.style.display='none');
+  document.querySelectorAll('.verse .av,.verse .sk,.verse .he,.verse .grc,.verse .zh,.verse .sa,.verse .ar,.verse .dev,.verse .en,.verse .gr,.verse .egy,.verse .csl,.verse .fa,.verse .ak,.verse .bo,.verse .tib').forEach(e=>e.style.display='');
+}
+function toggleRu(){
+  document.querySelectorAll('.verse .ru,.row .ru').forEach(e=>e.style.display='');
+  document.querySelectorAll('.verse .av,.verse .sk,.verse .he,.verse .grc,.verse .zh,.verse .sa,.verse .ar,.verse .dev,.verse .en,.verse .gr,.verse .egy,.verse .csl,.verse .fa,.verse .ak,.verse .bo,.verse .tib').forEach(e=>e.style.display='none');
+}
+function resetView(){
+  document.querySelectorAll('.verse,.row').forEach(r=>{r.style.display='grid';});
+  document.querySelectorAll('.verse .av,.verse .sk,.verse .he,.verse .grc,.verse .zh,.verse .sa,.verse .ar,.verse .dev,.verse .en,.verse .gr,.verse .egy,.verse .csl,.verse .fa,.verse .ak,.verse .bo,.verse .tib,.verse .ru,.row .ru').forEach(e=>e.style.display='');
+}
+</script>
+</body></html>

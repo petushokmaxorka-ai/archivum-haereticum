@@ -1,0 +1,265 @@
+<!DOCTYPE html><html lang="ru"><head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Послание Иеремии — Девтероканон · Архивум</title>
+<style>
+:root{--bg:#0a0a0c;--bg2:#0d0d12;--panel:#13131a;--line:#2a2a33;--red:#c8102e;--red-dark:#8a0a1f;--gold:#c9a227;--gold-bright:#e8b84a;--gold-dim:#8a7119;--ink:#c8102e;--ink-dim:#c9a227;--orig:#c8102e;--accent:#d49a3a;--grid:#1d1d24}
+*{box-sizing:border-box;margin:0;padding:0}body{background:var(--bg);color:var(--ink);font-family:Georgia,'Times New Roman',serif;line-height:1.55}
+a{color:var(--gold);text-decoration:none}a:hover{color:var(--gold-bright);text-decoration:underline}
+header.hos{background:linear-gradient(180deg,var(--red-dark) 0%,#1a0007 30%,var(--bg) 100%);border-bottom:2px solid var(--red);padding:0;position:relative}
+header.hos::before{content:"";position:absolute;left:0;top:0;bottom:0;width:6px;background:var(--red)}
+.hos-strip{display:flex;justify-content:space-between;align-items:center;padding:6px 14px;background:rgba(0,0,0,0.5);border-bottom:1px solid var(--red-dark);font-family:'Courier New',monospace;font-size:10px;letter-spacing:2px;color:var(--ink-dim);text-transform:uppercase}
+.hos-strip .l{color:var(--gold)} .hos-strip .r{color:var(--red);font-weight:bold}
+.hos-body{padding:18px 22px 14px}
+.hos-h1{font-size:1.5rem;letter-spacing:.12em;color:var(--orig);font-weight:normal;margin-bottom:4px;line-height:1.2}
+.hos-h1 .q{color:var(--red);font-family:'Courier New',monospace;font-size:.7em;vertical-align:super;margin-right:6px;padding:3px 7px;background:rgba(200,16,46,0.15);border:1px solid var(--red-dark);letter-spacing:1px}
+.hos-h1 .sig{font-size:.55em;color:var(--gold);font-family:'Courier New',monospace;letter-spacing:2px;margin-left:10px;padding:3px 8px;border:1px solid var(--gold-dim);vertical-align:middle}
+.hos-sub{color:var(--ink-dim);font-size:13px;font-style:italic}
+.stamps{padding:7px 16px;background:var(--bg2);border-bottom:1px solid var(--line);text-align:center;font-family:'Courier New',monospace}
+.stamps span{display:inline-block;border:1px solid var(--gold-dim);color:var(--gold);font-size:9px;letter-spacing:2px;padding:2px 7px;margin:0 2px;text-transform:uppercase}
+.stamps span.fid{color:var(--gold-bright);border-color:var(--gold);background:rgba(201,162,39,0.05)}
+.stamps span.dam{color:var(--red);border-color:var(--red-dark);background:rgba(200,16,46,0.05)}
+.stamps span.cre{color:var(--accent);border-color:var(--accent);background:rgba(212,154,58,0.05)}
+nav.main{padding:8px 18px;background:var(--panel);border-bottom:1px solid var(--line);font-size:12px;text-align:center}
+nav.main a{color:var(--gold);margin:0 6px;letter-spacing:1px;padding:3px 6px}
+.toolbar{display:flex;justify-content:center;gap:6px;flex-wrap:wrap;margin:14px 0 8px;padding:8px;background:var(--panel);border:1px solid var(--line);font-family:'Courier New',monospace}
+.toolbar button{background:transparent;border:1px solid var(--gold-dim);color:var(--gold);padding:5px 11px;font-size:10px;letter-spacing:1px;cursor:pointer;font-family:inherit;text-transform:uppercase}
+.toolbar button:hover{background:var(--gold);color:var(--bg)}
+.meta{color:var(--ink-dim);font-size:11px;font-style:italic;padding:6px 16px;text-align:center;font-family:'Courier New',monospace;letter-spacing:1px}
+.meta b{color:var(--gold);font-style:normal;font-family:Georgia,serif}
+.chap{background:linear-gradient(90deg,var(--red-dark),transparent);color:var(--gold-bright);font-size:.85rem;letter-spacing:.2em;padding:9px 16px;border-bottom:1px solid var(--red-dark);border-top:1px solid var(--red-dark);font-family:'Courier New',monospace;text-transform:uppercase;margin-top:12px}
+main{max-width:1300px;margin:0 auto;padding:0 12px 40px}
+.row{display:grid;grid-template-columns:3rem 1fr 1.1fr;border-bottom:1px solid var(--grid);align-items:start;transition:background 0.15s}
+.row:hover{background:#15110b}
+.num{grid-column:1;color:var(--gold);font-size:12px;padding:10px 4px;text-align:right;font-family:'Courier New',monospace;font-weight:bold;align-self:start}
+.orig,.ar,.gr,.he,.grc,.sk,.dev,.av,.zh,.sa{grid-column:2;padding:10px 12px;font-size:1rem;line-height:1.7;color:var(--orig);background:rgba(201,162,39,0.025);border-right:1px solid var(--gold-dim);border-left:3px solid var(--gold-dim);font-style:italic}
+.ar{direction:rtl;text-align:right;font-family:'Amiri','Scheherazade New','Traditional Arabic',serif;font-size:1.25rem;line-height:1.85}
+.gr,.grc{direction:ltr;font-family:'SBL Greek','Palatino Linotype',Georgia,serif}
+.he{direction:rtl;text-align:right;font-family:'SBL Hebrew','Times New Roman',serif;font-size:1.1rem}
+.sk,.dev{direction:ltr;font-family:'Noto Sans Devanagari','Sanskrit Text',serif;font-size:1.05rem}
+.zh{font-family:'Noto Serif CJK SC','SimSun',serif}
+.ru,.rus{grid-column:3;padding:10px 12px;font-size:.95rem;line-height:1.65;text-align:justify;color:var(--ink)}
+.bismillah{text-align:center;padding:1.5rem 1rem;font-family:'Amiri','Scheherazade New','Traditional Arabic',serif;font-size:1.8rem;color:var(--gold);direction:rtl;background:linear-gradient(180deg,#1a1410,#0a0a0c);border-bottom:1px solid var(--red-dark);letter-spacing:0;margin:14px 16px;border:1px solid var(--red-dark)}
+.bismillah .label{display:block;font-family:'Courier New',monospace;font-size:.7rem;letter-spacing:.25em;color:var(--ink-dim);text-transform:uppercase;direction:ltr;margin-bottom:8px}
+footer{padding:18px;text-align:center;color:var(--ink-dim);font-size:10px;border-top:1px solid var(--line);font-family:'Courier New',monospace;letter-spacing:2px;background:var(--bg2)}
+footer .red{color:var(--red)} footer .gold{color:var(--gold)}
+
+  .hos-sub{font-size:12px}
+  .hos-strip{font-size:9px;letter-spacing:1px;padding:4px 8px}
+  .stamps span{font-size:8px;letter-spacing:1px;padding:2px 5px;margin:0 1px}
+  
+  /* Stack verse vertically on mobile */
+  .verse,.row{grid-template-columns:1fr !important;display:block !important;padding:8px 10px;margin-bottom:8px;border:1px solid var(--line);background:var(--bg2)}
+  .verse .num,.row .num{display:inline-block;background:rgba(0,0,0,0.5);padding:2px 8px;margin-bottom:6px;width:auto;text-align:left;font-size:11px;border:1px solid var(--gold-dim);border-radius:2px}
+  
+  /* Original language - full width */
+  .verse .av,.verse .sk,.verse .he,.verse .grc,.verse .zh,.verse .sa,.verse .ar,.verse .dev,.verse .en,.verse .gr,.verse .egy,.verse .csl,.verse .fa,.verse .ak,.verse .bo,.verse .tib,
+  .row .av,.row .sk,.row .he,.row .grc,.row .zh,.row .sa,.row .ar,.row .dev,.row .en,.row .gr,.row .csl,.row .fa,.row .ak,.row .bo,.row .tib{font-size:1.05rem;line-height:1.7;padding:8px 10px;border-left:3px solid var(--gold-dim);margin:6px 0;background:rgba(201,162,39,0.04);font-style:italic;width:auto !important;display:block}
+  
+  /* Russian - full width */
+  .verse .ru,.row .ru{font-size:.95rem;line-height:1.6;padding:8px 10px;border-left:3px solid var(--red);background:rgba(200,16,46,0.04);margin:6px 0;width:auto !important;display:block;grid-column:1}
+  
+  /* Toolbar */
+  .toolbar{display:flex;flex-wrap:wrap;gap:4px;padding:6px;margin:8px 0}
+  .toolbar button{font-size:10px;padding:5px 8px;letter-spacing:0;flex:1 1 30%;min-width:60px}
+  
+  /* Container */
+  main{padding:0 8px}
+  nav.main{padding:6px 10px;font-size:11px}
+  nav.main a{margin:0 3px;padding:2px 4px}
+  
+  /* Book cards */
+  .book-grid{grid-template-columns:1fr;gap:6px}
+  .book-card{font-size:13px;padding:8px 10px;line-height:1.4}
+  
+  /* Note */
+  .note{font-size:14px;line-height:1.7;padding:14px 18px;margin:14px;color:var(--red);background:rgba(201,162,39,0.04);border:1px solid var(--gold-dim);border-left:4px solid var(--gold)}
+
+  
+  /* Footer */
+  footer{font-size:11px;padding:8px 10px}
+}
+  .row{grid-template-columns:2rem 1fr 1.1fr}
+  .num{font-size:.7rem;padding:.5rem .3rem}
+  .ar{font-size:1.1rem;line-height:1.7;padding:.5rem .4rem}
+  .ru{font-size:.85rem;line-height:1.4;padding:.5rem .4rem}
+}
+
+/* Q20 EGYPTIAN additions */
+.verse .egy{grid-column:1;font-family:'Papyrus','Segoe UI Historic',serif;font-size:1.05rem;line-height:1.8;direction:ltr;text-align:left;color:#e8b84a;background:rgba(232,184,74,0.04);border-right:3px solid var(--gold-dim);padding:12px 14px;font-style:italic}
+.verse .ru{grid-column:2;font-size:0.98rem;line-height:1.75;color:var(--ink);background:rgba(201,162,39,0.025);border-left:1px solid var(--gold-dim);padding:12px 14px}
+.verse .transl-note{grid-column:1/-1;padding:6px 14px;font-size:0.78rem;color:var(--ink-dim);font-style:italic;text-align:right;background:rgba(0,0,0,0.15);border-top:1px solid var(--line)}
+.verse .num,.verse .transl-note{color:var(--gold-bright)}
+
+.verse .av,.verse .sk,.verse .he,.verse .grc,.verse .zh,.verse .sa,.verse .ar,.verse .dev,.verse .en,.verse .gr,.verse .csl,.verse .fa,.verse .ak,.verse .bo,.verse .tib{font-family:'Times New Roman',Georgia,serif;font-size:1.05rem;line-height:1.7;color:var(--orig);background:rgba(201,162,39,0.04);border-right:3px solid var(--gold-dim);padding:12px 14px;direction:ltr;text-align:left;font-style:italic}
+.row .av,.row .sk,.row .he,.row .grc,.row .zh,.row .sa,.row .ar,.row .dev,.row .en,.row .gr,.row .csl,.row .fa,.row .ak,.row .bo,.row .tib{font-family:'Times New Roman',Georgia,serif;font-size:1.05rem;line-height:1.7;color:var(--orig);background:rgba(201,162,39,0.04);padding:10px 12px;direction:ltr;text-align:left}
+.verse{display:grid;grid-template-columns:3.2rem 1fr 1.1fr;border-bottom:1px solid var(--grid);align-items:start;transition:background 0.15s}
+.row{display:grid;grid-template-columns:3.2rem 1fr 1.1fr 1fr;border-bottom:1px solid var(--grid);align-items:start;transition:background 0.15s}
+.num{font-family:'Courier New',monospace;font-size:11px;color:var(--gold);text-align:center;padding:12px 4px;background:rgba(0,0,0,0.3);border-right:1px solid var(--line);font-weight:bold;align-self:start}
+.ru{font-size:.92rem;line-height:1.6;color:var(--ink);padding:10px 12px;background:rgba(255,255,255,0.01);border-left:1px solid var(--line);align-self:start;grid-column:3}
+
+/* ARCHIVUM HAERETICUM — Original script fonts */
+
+
+
+
+
+
+
+@font-face{font-family:'Noto Sans Cuneiform';font-style:normal;font-weight:400;font-display:block;src:url('/archivum-haereticum/fonts/noto-cuneiform.ttf') format('truetype')}
+@font-face{font-family:'Noto Sans Egyptian Hieroglyphs';font-style:normal;font-weight:400;font-display:block;src:url('/archivum-haereticum/fonts/noto-hieroglyphs.ttf') format('truetype')}
+@font-face{font-family:'Noto Sans Coptic';font-style:normal;font-weight:400;font-display:block;src:url('/archivum-haereticum/fonts/noto-coptic.ttf') format('truetype')}
+@font-face{font-family:'Noto Serif JP';font-style:normal;font-weight:400;font-display:swap;src:local('Noto Serif JP'),local('NotoSerifJP-Regular')}
+@font-face{font-family:'Noto Sans Devanagari';font-style:normal;font-weight:400;font-display:swap;src:local('Noto Sans Devanagari'),local('NotoSansDevanagari-Regular')}
+@font-face{font-family:'Noto Sans Tibetan';font-style:normal;font-weight:400;font-display:swap;src:local('Noto Sans Tibetan'),local('NotoSansTibetan-Regular')}
+@font-face{font-family:'SBL Greek';font-style:normal;font-weight:400;font-display:swap;src:local('SBL Greek'),local('SBLGreek')}@media(max-width:760px){
+.verse,.row{grid-template-columns:1fr !important;display:block !important;padding:12px 14px;margin:8px 0;border:1px solid var(--line);background:var(--bg2);width:100% !important;max-width:100% !important;overflow:hidden;box-sizing:border-box}
+.verse .num,.row .num{display:inline-block;background:rgba(0,0,0,0.5);padding:3px 10px;margin-bottom:8px;width:auto;text-align:left;font-size:11px;border:1px solid var(--gold-dim);border-radius:2px;font-family:'Courier New',monospace;min-width:0 !important}
+.verse .on,.verse .ru,.verse .csl,.verse .sk,.verse .he,.verse .grc,.verse .zh,.verse .ar,.verse .fa,.verse .bo,.verse .ak,.verse .cop,.verse .pali,.verse .sk-deva,.verse .eg-hiero,.verse .ak-cun,.verse .cop-uni,.verse .ja,.verse .pali-deva,.verse .qu,.verse .av,.verse .egy,.verse .csl,.verse .gr,.verse .on-r,
+.row .on,.row .ru,.row .csl,.row .sk,.row .he,.row .grc,.row .zh,.row .ar,.row .fa,.row .bo,.row .ak,.row .cop,.row .pali,.row .sk-deva,.row .eg-hiero,.row .ak-cun,.row .cop-uni,.row .ja,.row .pali-deva,.row .qu,.row .av,.row .egy,.row .csl,.row .gr{font-size:1.05rem !important;line-height:1.65 !important;padding:10px 12px !important;border-left:3px solid var(--gold-dim);margin:6px 0;background:rgba(201,162,39,0.04);width:auto !important;display:block !important;min-width:0 !important;word-wrap:break-word;overflow-wrap:break-word;max-width:100% !important;box-sizing:border-box}
+.verse .ru,.row .ru{border-left:3px solid var(--red);background:rgba(200,16,46,0.04)}
+.hos-h1{font-size:1.2rem;letter-spacing:.05em;line-height:1.3}
+.hos-sub{font-size:12px}
+.hos-strip{font-size:9px;letter-spacing:1px;padding:4px 8px}
+.stamps span{font-size:8px;letter-spacing:1px;padding:2px 5px;margin:0 1px}
+main{padding:0 8px;width:100% !important;max-width:100% !important;box-sizing:border-box}
+nav.main{padding:6px 10px;font-size:11px}
+nav.main a{margin:0 3px;padding:2px 4px}
+.toolbar button{font-size:10px;padding:5px 8px;letter-spacing:0;flex:1 1 30%;min-width:60px}
+.book-grid{grid-template-columns:1fr;gap:6px}
+.book-card{font-size:13px;padding:8px 10px;line-height:1.4}
+.note{font-size:14px;line-height:1.7;padding:14px 18px;margin:14px;color:var(--ink);background:rgba(201,162,39,0.04);border:1px solid var(--gold-dim);border-left:4px solid var(--gold)}
+footer{font-size:11px;padding:8px 10px}
+}
+</style>
+</head><body>
+<header class="hos">
+<div class="hos-strip"><span class="l">ARCHIVUM HAERETICUM — CORPUS DIVINUS</span><span class="r">Q3.1 — DEUTEROCANON</span></div>
+<div class="hos-body">
+<h1 class="hos-h1"><span class="q">Q3.1</span>Послание Иеремии — Девтероканон · Архивум</h1>
+<div class="hos-sub">11 книг · LXX + Синодальный</div>
+</div>
+</header>
+<div class="stamps">
+<span class="fid">◆ FIDELIS</span>
+<span class="cre">✚ MYSTICA</span>
+<span class="dam">✠ SEPTUAGINTA</span>
+</div>
+<nav class="main">
+<a href="../index.html">◀ CORPUS DIVINUS</a>
+</nav>
+<main>
+<div class="toolbar">
+<button onclick="toggleAll(true)">РАЗВЕРНУТЬ</button>
+<button onclick="toggleAll(false)">СВЕРНУТЬ</button>
+<button onclick="toggleOrig()">☀ ОРИГИНАЛ</button>
+<button onclick="toggleRu()">☾ ПЕРЕВОД</button>
+<button onclick="resetView()">◉ ОБА</button>
+</div>
+
+<div class="toolbar">
+<button onclick="toggleAll(true)">▼ Развернуть все</button>
+<button onclick="toggleAll(false)">▲ Свернуть все</button>
+<button onclick="toggleOrig()">🌙 Только оригинал</button>
+<button onclick="toggleRu()">📖 Только перевод</button>
+<button onclick="resetView()">◉ Оба</button>
+</div>
+<nav class="chapters"><a href="index.html">← Все книги</a> &nbsp;|&nbsp; Главы: <a href="#ch01">01</a></nav>
+<div class="note">ЛЕВАЯ КОЛОНКА: оригинал (LXX Септуагинта, Rahlfs 1935) ✓. ПРАВАЯ КОЛОНКА: Синодальный перевод (1876, общественное достояние), русский текст. Книга входит в канон Православной и Католической церквей (с Тридентского собора 1546 для католиков). Протестантский канон (с Лютера 1534) не включает её в основной канон (лишь в «апокрифы»).</div>
+<details class="corpus-ch" open><summary>Глава 1</summary>
+<div class="verse"><div class="num">01:01</div><div class="grc">ΔΙΑ ΤΑΣ ΑʼΜΑΡΤΙΑΣ ΑʼΣ ΗʼΜΑΡΤΗΚΑΤΕ ΕʽΝΑΝΤΙΟΝ ΤΟΥ ΘΕΟΥ ΑʽΧΘΗΣΕΣΘΕ ΕΙΣ ΒΑΒΥΛΩΝΑ ΑΙΧΜΑΛΩΤΟΙ ΥʼΠΟ ΝΑΒΟΥΧΟΔΟΝΟΣΟΡ ΒΑΣΙΛΕΩΣ ΤΩΝ ΒΑΒΥΛΩΝΙΩΝ</div><div class="ru">Список послания, которое послал Иеремия к пленникам, отводимым в Вавилон царем Вавилонским, чтобы возвестить им, что повелено ему Богом.</div></div>
+<div class="verse"><div class="num">01:02</div><div class="grc">ΕΙΣΕΛΘΟΝΤΕΣ ΟΥΝ ΕΙΣ ΒΑΒΥΛΩΝΑ ΕʽΣΕΣΘΕ ΕʽΚΕΙ ΕʽΤΗ ΠΛΕΙΟΝΑ ΚΑΙ ΧΡΟΝΟΝ ΜΑΚΡΟΝ ΕʼΩΣ ΓΕΝΕΩΝ ΕʼΠΤΑ ΜΕΤΑ ΤΟΥΤΟ ΔΕ ΕʽΞΑΞΩ ΥʼΜΑΣ ΕʽΚΕΙΘΕΝ ΜΕΤ ΕΙΡΗΝΗΣ</div><div class="ru">За грехи, которыми вы согрешили пред Богом, будете отведены пленниками в Вавилон Навуходоносором, царем Вавилонским.</div></div>
+<div class="verse"><div class="num">01:03</div><div class="grc">ΝΥΝΙ ΔΕ ΟʽΨΕΣΘΕ ΕʽΝ ΒΑΒΥΛΩΝΙ ΘΕΟΥΣ ΑʽΡΓΥΡΟΥΣ ΚΑΙ ΧΡΥΣΟΥΣ ΚΑΙ ΞΥΛΙΝΟΥΣ ΕʽΠ ΩʽΜΟΙΣ ΑΙΡΟΜΕΝΟΥΣ ΔΕΙΚΝΥΝΤΑΣ ΦΟΒΟΝ ΤΟΙΣ ΕʽΘΝΕΣΙΝ</div><div class="ru">Войдя в Вавилон, вы пробудете там многие годы и долгое время, даже до семи родов; после же сего Я выведу вас оттуда с миром.</div></div>
+<div class="verse"><div class="num">01:04</div><div class="grc">ΕΥΛΑΒΗΘΗΤΕ ΟΥΝ ΜΗ ΚΑΙ ΥʼΜΕΙΣ ΑʽΦΟΜΟΙΩΘΕΝΤΕΣ ΤΟΙΣ ΑʽΛΛΟΦΥΛΟΙΣ ΑʽΦΟΜΟΙΩΘΗΤΕ ΚΑΙ ΦΟΒΟΣ ΥʼΜΑΣ ΛΑΒΗι ΕʽΠ ΑΥΤΟΙΣ</div><div class="ru">Теперь вы увидите в Вавилоне богов серебряных и золотых и деревянных, носимых на плечах, внушающих страх язычникам.</div></div>
+<div class="verse"><div class="num">01:05</div><div class="grc">ΙʽΔΟΝΤΑΣ ΟʽΧΛΟΝ ΕʽΜΠΡΟΣΘΕΝ ΚΑΙ ΟʽΠΙΣΘΕΝ ΑΥΤΩΝ ΠΡΟΣΚΥΝΟΥΝΤΑΣ ΑΥΤΑ ΕΙΠΑΤΕ ΔΕ ΤΗι ΔΙΑΝΟΙΑι ΣΟΙ ΔΕΙ ΠΡΟΣΚΥΝΕΙΝ ΔΕΣΠΟΤΑ</div><div class="ru">Берегитесь же, чтобы и вам не сделаться подобными иноплеменникам, и чтобы страх пред ними не овладел и вами. Видя толпу спереди и сзади их поклоняющеюся перед ними, скажите в уме: «Тебе должно поклоняться, Владыко!»</div></div>
+<div class="verse"><div class="num">01:06</div><div class="grc">Οʼ ΓΑΡ ΑʽΓΓΕΛΟΣ ΜΟΥ ΜΕΘ ΥʼΜΩΝ ΕʽΣΤΙΝ ΑΥΤΟΣ ΤΕ ΕʽΚΖΗΤΩΝ ΤΑΣ ΨΥΧΑΣ ΥʼΜΩΝ</div><div class="ru">Ибо Ангел Мой с вами, и он защитник душ ваших.</div></div>
+<div class="verse"><div class="num">01:07</div><div class="grc">ΓΛΩΣΣΑ ΓΑΡ ΑΥΤΩΝ ΕʽΣΤΙΝ ΚΑΤΕΞΥΣΜΕΝΗ ΥʼΠΟ ΤΕΚΤΟΝΟΣ ΑΥΤΑ ΤΕ ΠΕΡΙΧΡΥΣΑ ΚΑΙ ΠΕΡΙΑΡΓΥΡΑ ΨΕΥΔΗ Δ ΕʽΣΤΙΝ ΚΑΙ ΟΥ ΔΥΝΑΝΤΑΙ ΛΑΛΕΙΝ</div><div class="ru">Язык их выстроган художником, и сами они оправлены в золото и серебро; но они ложные, и не могут говорить.</div></div>
+<div class="verse"><div class="num">01:08</div><div class="grc">ΚΑΙ ΩʼΣΠΕΡ ΠΑΡΘΕΝΩι ΦΙΛΟΚΟΣΜΩι ΛΑΜΒΑΝΟΝΤΕΣ ΧΡΥΣΙΟΝ ΚΑΤΑΣΚΕΥΑΖΟΥΣΙΝ ΣΤΕΦΑΝΟΥΣ ΕʽΠΙ ΤΑΣ ΚΕΦΑΛΑΣ ΤΩΝ ΘΕΩΝ ΑΥΤΩΝ</div><div class="ru">И как бы для девицы, любящей украшение, берут они золото, и приготовляют венцы на головы богов своих.</div></div>
+<div class="verse"><div class="num">01:09</div><div class="grc">ΕʽΣΤΙ ΔΕ ΚΑΙ ΟʼΤΕ ΥʼΦΑΙΡΟΥΜΕΝΟΙ ΟΙ ΙʼΕΡΕΙΣ ΑʽΠΟ ΤΩΝ ΘΕΩΝ ΑΥΤΩΝ ΧΡΥΣΙΟΝ ΚΑΙ ΑʽΡΓΥΡΙΟΝ ΕΙΣ ΕʼΑΥΤΟΥΣ ΚΑΤΑΝΑΛΩΣΟΥΣΙΝ ΔΩΣΟΥΣΙΝ ΔΕ ΑʽΠ ΑΥΤΩΝ ΚΑΙ ΤΑΙΣ ΕʽΠΙ ΤΟΥ ΤΕΓΟΥΣ ΠΟΡΝΑΙΣ</div><div class="ru">Бывает также, что жрецы похищают у богов своих золото и серебро и употребляют его на себя самих;</div></div>
+<div class="verse"><div class="num">01:10</div><div class="grc">ΚΟΣΜΟΥΣΙ ΤΕ ΑΥΤΟΥΣ ΩʼΣ ΑʽΝΘΡΩΠΟΥΣ ΤΟΙΣ ΕʽΝΔΥΜΑΣΙΝ ΘΕΟΥΣ ΑʽΡΓΥΡΟΥΣ ΚΑΙ ΧΡΥΣΟΥΣ ΚΑΙ ΞΥΛΙΝΟΥΣ ΟΥΤΟΙ ΔΕ ΟΥ ΔΙΑΣΩιΖΟΝΤΑΙ ΑʽΠΟ ΙʽΟΥ ΚΑΙ ΒΡΩΜΑΤΩΝ</div><div class="ru">уделяют из того и блудницам под их кровом; украшают богов золотых и серебряных и деревянных одеждами, как людей.</div></div>
+<div class="verse"><div class="num">01:11</div><div class="grc">ΠΕΡΙΒΕΒΛΗΜΕΝΩΝ ΑΥΤΩΝ ΙʼΜΑΤΙΣΜΟΝ ΠΟΡΦΥΡΟΥΝ ΕʽΚΜΑΣΣΟΝΤΑΙ ΤΟ ΠΡΟΣΩΠΟΝ ΑΥΤΩΝ ΔΙΑ ΤΟΝ ΕʽΚ ΤΗΣ ΟΙΚΙΑΣ ΚΟΝΙΟΡΤΟΝ ΟʼΣ ΕʽΣΤΙΝ ΠΛΕΙΩΝ ΕʽΠ ΑΥΤΟΙΣ</div><div class="ru">Но они не спасаются от ржавчины и моли, хотя облечены в пурпуровую одежду.</div></div>
+<div class="verse"><div class="num">01:12</div><div class="grc">ΚΑΙ ΣΚΗΠΤΡΟΝ ΕʽΧΕΙ ΩʼΣ ΑʽΝΘΡΩΠΟΣ ΚΡΙΤΗΣ ΧΩΡΑΣ ΟʼΣ ΤΟΝ ΕΙΣ ΑΥΤΟΝ ΑʼΜΑΡΤΑΝΟΝΤΑ ΟΥΚ ΑʽΝΕΛΕΙ</div><div class="ru">Обтирают лице их от пыли в капище, которой на них очень много.</div></div>
+<div class="verse"><div class="num">01:13</div><div class="grc">ΕʽΧΕΙ ΔΕ ΕʽΓΧΕΙΡΙΔΙΟΝ ΕʽΝ ΔΕΞΙΑι ΚΑΙ ΠΕΛΕΚΥΝ ΕʼΑΥΤΟΝ ΔΕ ΕʽΚ ΠΟΛΕΜΟΥ ΚΑΙ ΛΗιΣΤΩΝ ΟΥΚ ΕʽΞΕΛΕΙΤΑΙ</div><div class="ru">Имеет и скипетр, как человек — судья страны, но он не может умертвить виновного пред ним.</div></div>
+<div class="verse"><div class="num">01:14</div><div class="grc">ΟʼΘΕΝ ΓΝΩΡΙΜΟΙ ΕΙΣΙΝ ΟΥΚ ΟʽΝΤΕΣ ΘΕΟΙ ΜΗ ΟΥΝ ΦΟΒΗΘΗΤΕ ΑΥΤΟΥΣ</div><div class="ru">Имеет меч в правой руке и секиру, а себя самого от войска и разбойников не защитит: отсюда познается, что они не боги; итак, не бойтесь их.</div></div>
+<div class="verse"><div class="num">01:15</div><div class="grc">ΩʼΣΠΕΡ ΓΑΡ ΣΚΕΥΟΣ ΑʽΝΘΡΩΠΟΥ ΣΥΝΤΡΙΒΕΝ ΑʽΧΡΕΙΟΝ ΓΙΝΕΤΑΙ ΤΟΙΟΥΤΟΙ ΥʼΠΑΡΧΟΥΣΙΝ ΟΙ ΘΕΟΙ ΑΥΤΩΝ ΚΑΘΙΔΡΥΜΕΝΩΝ ΑΥΤΩΝ ΕʽΝ ΤΟΙΣ ΟΙΚΟΙΣ</div><div class="ru">Ибо, как разбитый сосуд делается бесполезным для человека, так и боги их.</div></div>
+<div class="verse"><div class="num">01:16</div><div class="grc">ΟΙ ΟʽΦΘΑΛΜΟΙ ΑΥΤΩΝ ΠΛΗΡΕΙΣ ΕΙΣΙΝ ΚΟΝΙΟΡΤΟΥ ΑʽΠΟ ΤΩΝ ΠΟΔΩΝ ΤΩΝ ΕΙΣΠΟΡΕΥΟΜΕΝΩΝ</div><div class="ru">После того, как они поставлены в капищах, глаза их полны пыли от ног входящих.</div></div>
+<div class="verse"><div class="num">01:17</div><div class="grc">ΚΑΙ ΩʼΣΠΕΡ ΤΙΝΙ ΗʽΔΙΚΗΚΟΤΙ ΒΑΣΙΛΕΑ ΠΕΡΙΠΕΦΡΑΓΜΕΝΑΙ ΕΙΣΙΝ ΑΙ ΑΥΛΑΙ ΩʼΣ ΕʽΠΙ ΘΑΝΑΤΩι ΑʽΠΗΓΜΕΝΩι ΤΟΥΣ ΟΙΚΟΥΣ ΑΥΤΩΝ ΟʽΧΥΡΟΥΣΙΝ ΟΙ ΙʼΕΡΕΙΣ ΘΥΡΩΜΑΣΙΝ ΤΕ ΚΑΙ ΚΛΕΙΘΡΟΙΣ ΚΑΙ ΜΟΧΛΟΙΣ ΟʼΠΩΣ ΥʼΠΟ ΤΩΝ ΛΗιΣΤΩΝ ΜΗ ΣΥΛΗΘΩΣΙ</div><div class="ru">И как у нанесшего оскорбление царю заграждаются входы в жилье, когда он отводится на смерть, так капища их охраняют жрецы их дверями и замками и засовами, чтобы они не были ограблены разбойниками;</div></div>
+<div class="verse"><div class="num">01:18</div><div class="grc">ΛΥΧΝΟΥΣ ΚΑΙΟΥΣΙΝ ΚΑΙ ΠΛΕΙΟΥΣ Ηʽ ΕʼΑΥΤΟΙΣ ΩʼΝ ΟΥΔΕΝΑ ΔΥΝΑΝΤΑΙ ΙʽΔΕΙΝ</div><div class="ru">зажигают для них светильники, и больше, нежели для себя самих, а они ни одного из них не могут видеть.</div></div>
+<div class="verse"><div class="num">01:19</div><div class="grc">ΕʽΣΤΙΝ ΜΕΝ ΩʼΣΠΕΡ ΔΟΚΟΣ ΤΩΝ ΕʽΚ ΤΗΣ ΟΙΚΙΑΣ ΤΑΣ ΔΕ ΚΑΡΔΙΑΣ ΑΥΤΩΝ ΦΑΣΙΝ ΕʽΚΛΕΙΧΕΣΘΑΙ ΤΩΝ ΑʽΠΟ ΤΗΣ ΓΗΣ ΕʼΡΠΕΤΩΝ ΚΑΤΕΣΘΟΝΤΩΝ ΑΥΤΟΥΣ ΤΕ ΚΑΙ ΤΟΝ ΙʼΜΑΤΙΣΜΟΝ ΑΥΤΩΝ ΟΥΚ ΑΙΣΘΑΝΟΝΤΑΙ</div><div class="ru">Они как бревно в доме; сердца их, говорят, точат черви земляные, и съедают их самих и одежду их, — а они не чувствуют.</div></div>
+<div class="verse"><div class="num">01:20</div><div class="grc">ΜΕΜΕΛΑΝΩΜΕΝΟΙ ΤΟ ΠΡΟΣΩΠΟΝ ΑΥΤΩΝ ΑʽΠΟ ΤΟΥ ΚΑΠΝΟΥ ΤΟΥ ΕʽΚ ΤΗΣ ΟΙΚΙΑΣ</div><div class="ru">Лица их черны от курения в капищах.</div></div>
+<div class="verse"><div class="num">01:21</div><div class="grc">ΕʽΠΙ ΤΟ ΣΩΜΑ ΑΥΤΩΝ ΚΑΙ ΕʽΠΙ ΤΗΝ ΚΕΦΑΛΗΝ ΕʽΦΙΠΤΑΝΤΑΙ ΝΥΚΤΕΡΙΔΕΣ ΧΕΛΙΔΟΝΕΣ ΚΑΙ ΤΑ ΟʽΡΝΕΑ ΩʼΣΑΥΤΩΣ ΔΕ ΚΑΙ ΟΙ ΑΙΛΟΥΡΟΙ</div><div class="ru">На тело их и на головы их налетают летучие мыши и ласточки и другие птицы, лазают также по ним и кошки.</div></div>
+<div class="verse"><div class="num">01:22</div><div class="grc">ΟʼΘΕΝ ΓΝΩΣΕΣΘΕ ΟʼΤΙ ΟΥΚ ΕΙΣΙΝ ΘΕΟΙ ΜΗ ΟΥΝ ΦΟΒΕΙΣΘΕ ΑΥΤΑ</div><div class="ru">Из этого уразумеете, что это не боги; итак, не бойтесь их.</div></div>
+<div class="verse"><div class="num">01:23</div><div class="grc">ΤΟ ΓΑΡ ΧΡΥΣΙΟΝ Οʼ ΠΕΡΙΚΕΙΝΤΑΙ ΕΙΣ ΚΑΛΛΟΣ ΕʽΑΝ ΜΗ ΤΙΣ ΕʽΚΜΑΞΗι ΤΟΝ ΙʽΟΝ ΟΥ ΜΗ ΣΤΙΛΨΩΣΙΝ ΟΥΔΕ ΓΑΡ ΟʼΤΕ ΕʽΧΩΝΕΥΟΝΤΟ ΗʽιΣΘΑΝΟΝΤΟ</div><div class="ru">Если кто не очистит от ржавчины золота, которым они обложены для красы, то они не будут блестеть; и когда выливали их, они не чувствовали.</div></div>
+<div class="verse"><div class="num">01:24</div><div class="grc">ΕʽΚ ΠΑΣΗΣ ΤΙΜΗΣ ΗʽΓΟΡΑΣΜΕΝΑ ΕʽΣΤΙΝ ΕʽΝ ΟΙΣ ΟΥΚ ΕʽΣΤΙΝ ΠΝΕΥΜΑ</div><div class="ru">За большую цену они куплены, а духа нет в них.</div></div>
+<div class="verse"><div class="num">01:25</div><div class="grc">ΑʽΝΕΥ ΠΟΔΩΝ ΕʽΠ ΩʽΜΟΙΣ ΦΕΡΟΝΤΑΙ ΕʽΝΔΕΙΚΝΥΜΕΝΟΙ ΤΗΝ ΕʼΑΥΤΩΝ ΑʽΤΙΜΙΑΝ ΤΟΙΣ ΑʽΝΘΡΩΠΟΙΣ ΑΙΣΧΥΝΟΝΤΑΙ ΤΕ ΚΑΙ ΟΙ ΘΕΡΑΠΕΥΟΝΤΕΣ ΑΥΤΑ ΔΙΑ ΤΟ ΜΗΠΟΤΕ ΕʽΠΙ ΤΗΝ ΓΗΝ ΠΕΣΗι ΔΙ ΑΥΤΩΝ ΑʽΝΙΣΤΑΣΘΑΙ</div><div class="ru">Безногие, они носятся на плечах, показывая чрез то свою ничтожность людям; посрамляются же и служащие им;</div></div>
+<div class="verse"><div class="num">01:26</div><div class="grc">ΜΗΤΕ ΕʽΑΝ ΤΙΣ ΑΥΤΟ ΟʽΡΘΟΝ ΣΤΗΣΗι ΔΙ ΕʼΑΥΤΟΥ ΚΙΝΗΘΗΣΕΤΑΙ ΜΗΤΕ ΕʽΑΝ ΚΛΙΘΗι ΟΥ ΜΗ ΟʽΡΘΩΘΗι ΑʽΛΛ ΩʼΣΠΕΡ ΝΕΚΡΟΙΣ ΤΑ ΔΩΡΑ ΑΥΤΟΙΣ ΠΑΡΑΤΙΘΕΤΑΙ</div><div class="ru">потому что, в случае падения их на землю, сами собою они не могут встать; также, если бы кто поставил их прямо, не могут сами собою двигаться и, если бы кто наклонил их, не могут выпрямиться; но как перед мертвыми полагают перед ними дары.</div></div>
+<div class="verse"><div class="num">01:27</div><div class="grc">ΤΑΣ ΔΕ ΘΥΣΙΑΣ ΑΥΤΩΝ ΑʽΠΟΔΟΜΕΝΟΙ ΟΙ ΙʼΕΡΕΙΣ ΑΥΤΩΝ ΚΑΤΑΧΡΩΝΤΑΙ ΩʼΣΑΥΤΩΣ ΔΕ ΚΑΙ ΑΙ ΓΥΝΑΙΚΕΣ ΑΥΤΩΝ ΑʽΠ ΑΥΤΩΝ ΤΑΡΙΧΕΥΟΥΣΑΙ ΟΥΤΕ ΠΤΩΧΩι ΟΥΤΕ ΑʽΔΥΝΑΤΩι ΜΕΤΑΔΙΔΟΑΣΙΝ ΤΩΝ ΘΥΣΙΩΝ ΑΥΤΩΝ ΑʽΠΟΚΑΘΗΜΕΝΗ ΚΑΙ ΛΕΧΩ ΑʼΠΤΟΝΤΑΙ</div><div class="ru">Жертвы их жрецы продают и злоупотребляют ими; равно и жены их часть из них солят, и ничего не уделяют ни нищему, ни больному.</div></div>
+<div class="verse"><div class="num">01:28</div><div class="grc">ΓΝΟΝΤΕΣ ΟΥΝ ΑʽΠΟ ΤΟΥΤΩΝ ΟʼΤΙ ΟΥΚ ΕΙΣΙΝ ΘΕΟΙ ΜΗ ΦΟΒΗΘΗΤΕ ΑΥΤΟΥΣ</div><div class="ru">К жертвам их прикасаются женщины нечистые и родильницы. Итак, познав из сего, что они не боги, не бойтесь их.</div></div>
+<div class="verse"><div class="num">01:29</div><div class="grc">ΠΟΘΕΝ ΓΑΡ ΚΛΗΘΕΙΗΣΑΝ ΘΕΟΙ ΟʼΤΙ ΓΥΝΑΙΚΕΣ ΠΑΡΑΤΙΘΕΑΣΙΝ ΘΕΟΙΣ ΑʽΡΓΥΡΟΙΣ ΚΑΙ ΧΡΥΣΟΙΣ ΚΑΙ ΞΥΛΙΝΟΙΣ</div><div class="ru">Как же назвать их богами? женщины приносят жертвы этим серебряным и золотым и деревянным богам.</div></div>
+<div class="verse"><div class="num">01:30</div><div class="grc">ΚΑΙ ΕʽΝ ΤΟΙΣ ΟΙΚΟΙΣ ΑΥΤΩΝ ΟΙ ΙʼΕΡΕΙΣ ΔΙΦΡΕΥΟΥΣΙΝ ΕʽΧΟΝΤΕΣ ΤΟΥΣ ΧΙΤΩΝΑΣ ΔΙΕΡΡΩΓΟΤΑΣ ΚΑΙ ΤΑΣ ΚΕΦΑΛΑΣ ΚΑΙ ΤΟΥΣ ΠΩΓΩΝΑΣ ΕʽΞΥΡΗΜΕΝΟΥΣ ΩʼΝ ΑΙ ΚΕΦΑΛΑΙ ΑʽΚΑΛΥΠΤΟΙ ΕΙΣΙΝ</div><div class="ru">И в капищах их сидят жрецы в разодранных одеждах, с обритыми головами и бородами и с непокрытыми головами:</div></div>
+<div class="verse"><div class="num">01:31</div><div class="grc">ΩʽΡΥΟΝΤΑΙ ΔΕ ΒΟΩΝΤΕΣ ΕʽΝΑΝΤΙΟΝ ΤΩΝ ΘΕΩΝ ΑΥΤΩΝ ΩʼΣΠΕΡ ΤΙΝΕΣ ΕʽΝ ΠΕΡΙΔΕΙΠΝΩι ΝΕΚΡΟΥ</div><div class="ru">ревут они с воплем пред своими богами, как иные на поминках по умершим.</div></div>
+<div class="verse"><div class="num">01:32</div><div class="grc">ΑʽΠΟ ΤΟΥ ΙʼΜΑΤΙΣΜΟΥ ΑΥΤΩΝ ΑʽΦΕΛΟΜΕΝΟΙ ΟΙ ΙʼΕΡΕΙΣ ΕʽΝΔΥΟΥΣΙΝ ΤΑΣ ΓΥΝΑΙΚΑΣ ΑΥΤΩΝ ΚΑΙ ΤΑ ΠΑΙΔΙΑ</div><div class="ru">Некоторые из одежд их жрецы берут себе и одевают ими своих жен и детей.</div></div>
+<div class="verse"><div class="num">01:33</div><div class="grc">ΟΥΤΕ ΕʽΑΝ ΚΑΚΟΝ ΠΑΘΩΣΙΝ ΥʼΠΟ ΤΙΝΟΣ ΟΥΤΕ ΕʽΑΝ ΑʽΓΑΘΟΝ ΔΥΝΗΣΟΝΤΑΙ ΑʽΝΤΑΠΟΔΟΥΝΑΙ ΟΥΤΕ ΚΑΤΑΣΤΗΣΑΙ ΒΑΣΙΛΕΑ ΔΥΝΑΝΤΑΙ ΟΥΤΕ ΑʽΦΕΛΕΣΘΑΙ</div><div class="ru">Если испытывают от кого-либо злое или доброе, не могут воздать; не могут поставить царя, ни низложить его.</div></div>
+<div class="verse"><div class="num">01:34</div><div class="grc">ΩʼΣΑΥΤΩΣ ΟΥΤΕ ΠΛΟΥΤΟΝ ΟΥΤΕ ΧΑΛΚΟΝ ΟΥ ΜΗ ΔΥΝΩΝΤΑΙ ΔΙΔΟΝΑΙ ΕʽΑΝ ΤΙΣ ΑΥΤΟΙΣ ΕΥΧΗΝ ΕΥΞΑΜΕΝΟΣ ΜΗ ΑʽΠΟΔΩι ΟΥ ΜΗ ΕʽΠΙΖΗΤΗΣΩΣΙΝ</div><div class="ru">Равно ни богатства, ни даже мелкой медной монеты они не могут дать. Если кто, обещав им обет, не исполнил бы его, не взыщут.</div></div>
+<div class="verse"><div class="num">01:35</div><div class="grc">ΕʽΚ ΘΑΝΑΤΟΥ ΑʽΝΘΡΩΠΟΝ ΟΥ ΜΗ ΡʼΥΣΩΝΤΑΙ ΟΥΤΕ ΗʼΤΤΟΝΑ ΑʽΠΟ ΙʽΣΧΥΡΟΥ ΟΥ ΜΗ ΕʽΞΕΛΩΝΤΑΙ</div><div class="ru">От смерти человека не избавят, ни слабейшего у сильного не отнимут;</div></div>
+<div class="verse"><div class="num">01:36</div><div class="grc">ΑʽΝΘΡΩΠΟΝ ΤΥΦΛΟΝ ΕΙΣ ΟʼΡΑΣΙΝ ΟΥ ΜΗ ΠΕΡΙΣΤΗΣΩΣΙΝ ΕʽΝ ΑʽΝΑΓΚΗι ΑʽΝΘΡΩΠΟΝ ΟʽΝΤΑ ΟΥ ΜΗ ΕʽΞΕΛΩΝΤΑΙ</div><div class="ru">человеку слепому не возвратят зрения; человеку в нужде не помогут;</div></div>
+<div class="verse"><div class="num">01:37</div><div class="grc">ΧΗΡΑΝ ΟΥ ΜΗ ΕʽΛΕΗΣΩΣΙΝ ΟΥΤΕ ΟʽΡΦΑΝΟΝ ΕΥ ΠΟΙΗΣΟΥΣΙΝ</div><div class="ru">вдове не окажут сострадания, и сироте не сделают добра. 33-37:</div></div>
+<div class="verse"><div class="num">01:38</div><div class="grc">ΤΟΙΣ ΑʽΠΟ ΤΟΥ ΟʽΡΟΥΣ ΛΙΘΟΙΣ ΩʼΜΟΙΩΜΕΝΟΙ ΕΙΣΙΝ ΤΑ ΞΥΛΙΝΑ ΚΑΙ ΤΑ ΠΕΡΙΧΡΥΣΑ ΚΑΙ ΤΑ ΠΕΡΙΑΡΓΥΡΑ ΟΙ ΔΕ ΘΕΡΑΠΕΥΟΝΤΕΣ ΑΥΤΑ ΚΑΤΑΙΣΧΥΝΘΗΣΟΝΤΑΙ</div><div class="ru">Камням из гор подобны эти боги деревянные и оправленные в золото и серебро, — и служащие им посрамятся.</div></div>
+<div class="verse"><div class="num">01:39</div><div class="grc">ΠΩΣ ΟΥΝ ΝΟΜΙΣΤΕΟΝ Ηʽ ΚΛΗΤΕΟΝ ΑΥΤΟΥΣ ΥʼΠΑΡΧΕΙΝ ΘΕΟΥΣ</div><div class="ru">Как же можно подумать или сказать, что они боги?</div></div>
+<div class="verse"><div class="num">01:40</div><div class="grc">ΕʽΤΙ ΔΕ ΚΑΙ ΑΥΤΩΝ ΤΩΝ ΧΑΛΔΑΙΩΝ ΑʽΤΙΜΑΖΟΝΤΩΝ ΑΥΤΑ ΟΙ ΟʼΤΑΝ ΙʽΔΩΣΙΝ ΕʽΝΕΟΝ ΟΥ ΔΥΝΑΜΕΝΟΝ ΛΑΛΗΣΑΙ ΠΡΟΣΕΝΕΓΚΑΜΕΝΟΙ ΤΟΝ ΒΗΛΟΝ ΑʽΞΙΟΥΣΙΝ ΦΩΝΗΣΑΙ ΩʼΣ ΔΥΝΑΤΟΥ ΟʽΝΤΟΣ ΑΥΤΟΥ ΑΙΣΘΕΣΘΑΙ</div><div class="ru">К тому же сами Халдеи обращаются с ними непочтительно: они, когда увидят немого, не могущего говорить, приносят его к Ваалу и требуют, чтобы он говорил, как будто он может чувствовать.</div></div>
+<div class="verse"><div class="num">01:41</div><div class="grc">ΚΑΙ ΟΥ ΔΥΝΑΝΤΑΙ ΑΥΤΟΙ ΝΟΗΣΑΝΤΕΣ ΚΑΤΑΛΙΠΕΙΝ ΑΥΤΑ ΑΙΣΘΗΣΙΝ ΓΑΡ ΟΥΚ ΕʽΧΟΥΣΙΝ</div><div class="ru">И не могут они, заметив это, оставить их, потому что не имеют смысла.</div></div>
+<div class="verse"><div class="num">01:42</div><div class="grc">ΑΙ ΔΕ ΓΥΝΑΙΚΕΣ ΠΕΡΙΘΕΜΕΝΑΙ ΣΧΟΙΝΙΑ ΕʽΝ ΤΑΙΣ ΟʼΔΟΙΣ ΕʽΓΚΑΘΗΝΤΑΙ ΘΥΜΙΩΣΑΙ ΤΑ ΠΙΤΥΡΑ</div><div class="ru">Женщины, обвязавшись тростниковым поясом, сидят на улицах, сожигая курение из оливковых зерен.</div></div>
+<div class="verse"><div class="num">01:43</div><div class="grc">ΟʼΤΑΝ ΔΕ ΤΙΣ ΑΥΤΩΝ ΕʽΦΕΛΚΥΣΘΕΙΣΑ ΥʼΠΟ ΤΙΝΟΣ ΤΩΝ ΠΑΡΑΠΟΡΕΥΟΜΕΝΩΝ ΚΟΙΜΗΘΗι ΤΗΝ ΠΛΗΣΙΟΝ ΟʽΝΕΙΔΙΖΕΙ ΟʼΤΙ ΟΥΚ ΗʽΞΙΩΤΑΙ ΩʼΣΠΕΡ ΚΑΙ ΑΥΤΗ ΟΥΤΕ ΤΟ ΣΧΟΙΝΙΟΝ ΑΥΤΗΣ ΔΙΕΡΡΑΓΗ</div><div class="ru">И когда какая-либо из них, увлеченная проходящим, переспит с ним, — попрекает своей подруге, что та не удостоена того же, как она, и что перевязь ее не разорвана.</div></div>
+<div class="verse"><div class="num">01:44</div><div class="grc">ΠΑΝΤΑ ΤΑ ΓΙΝΟΜΕΝΑ ΑΥΤΟΙΣ ΕʽΣΤΙΝ ΨΕΥΔΗ ΠΩΣ ΟΥΝ ΝΟΜΙΣΤΕΟΝ Ηʽ ΚΛΗΤΕΟΝ ΩʼΣΤΕ ΘΕΟΥΣ ΑΥΤΟΥΣ ΥʼΠΑΡΧΕΙΝ</div><div class="ru">Все, совершающееся у них, ложно. Посему как можно думать или говорить, что они боги?</div></div>
+<div class="verse"><div class="num">01:45</div><div class="grc">ΥʼΠΟ ΤΕΚΤΟΝΩΝ ΚΑΙ ΧΡΥΣΟΧΟΩΝ ΚΑΤΕΣΚΕΥΑΣΜΕΝΑ ΕΙΣΙΝ ΟΥΘΕΝ ΑʽΛΛΟ ΜΗ ΓΕΝΩΝΤΑΙ Ηʽ Οʼ ΒΟΥΛΟΝΤΑΙ ΟΙ ΤΕΧΝΙΤΑΙ ΑΥΤΑ ΓΕΝΕΣΘΑΙ</div><div class="ru">Устроены они художниками и плавильщиками золота; не чем иным они не делаются, как тем, чем желали их сделать художники.</div></div>
+<div class="verse"><div class="num">01:46</div><div class="grc">ΑΥΤΟΙ ΤΕ ΟΙ ΚΑΤΑΣΚΕΥΑΖΟΝΤΕΣ ΑΥΤΑ ΟΥ ΜΗ ΓΕΝΩΝΤΑΙ ΠΟΛΥΧΡΟΝΙΟΙ ΠΩΣ ΤΕ ΔΗ ΜΕΛΛΕΙ ΤΑ ΥʼΠ ΑΥΤΩΝ ΚΑΤΑΣΚΕΥΑΣΘΕΝΤΑ ΕΙΝΑΙ ΘΕΟΙ</div><div class="ru">И те, которые приготовляют их, не бывают долговечны;</div></div>
+<div class="verse"><div class="num">01:47</div><div class="grc">ΚΑΤΕΛΙΠΟΝ ΓΑΡ ΨΕΥΔΗ ΚΑΙ ΟʽΝΕΙΔΟΣ ΤΟΙΣ ΕʽΠΙΓΙΝΟΜΕΝΟΙΣ</div><div class="ru">как же сделанные ими могут быть богами? Они оставили по себе ложь и срам своим потомкам.</div></div>
+<div class="verse"><div class="num">01:48</div><div class="grc">ΟʼΤΑΝ ΓΑΡ ΕʽΠΕΛΘΗι ΕʽΠ ΑΥΤΑ ΠΟΛΕΜΟΣ ΚΑΙ ΚΑΚΑ ΒΟΥΛΕΥΟΝΤΑΙ ΠΡΟΣ ΕʼΑΥΤΟΥΣ ΟΙ ΙʼΕΡΕΙΣ ΠΟΥ ΣΥΝΑΠΟΚΡΥΒΩΣΙ ΜΕΤ ΑΥΤΩΝ</div><div class="ru">Когда постигают их война и бедствия, жрецы совещаются между собою, где бы им скрыться с ними.</div></div>
+<div class="verse"><div class="num">01:49</div><div class="grc">ΠΩΣ ΟΥΝ ΟΥΚ ΕʽΣΤΙΝ ΑΙΣΘΕΣΘΑΙ ΟʼΤΙ ΟΥΚ ΕΙΣΙΝ ΘΕΟΙ ΟΙ ΟΥΤΕ ΣΩιΖΟΥΣΙΝ ΕʼΑΥΤΟΥΣ ΕʽΚ ΠΟΛΕΜΟΥ ΟΥΤΕ ΕʽΚ ΚΑΚΩΝ</div><div class="ru">Как же не понять, что те не боги, которые самих себя не спасают ни от войн, ни от бедствий?</div></div>
+<div class="verse"><div class="num">01:50</div><div class="grc">ΥʼΠΑΡΧΟΝΤΑ ΓΑΡ ΞΥΛΙΝΑ ΚΑΙ ΠΕΡΙΧΡΥΣΑ ΚΑΙ ΠΕΡΙΑΡΓΥΡΑ ΓΝΩΣΘΗΣΕΤΑΙ ΜΕΤΑ ΤΑΥΤΑ ΟʼΤΙ ΕʽΣΤΙΝ ΨΕΥΔΗ ΤΟΙΣ ΕʽΘΝΕΣΙ ΠΑΣΙ ΤΟΙΣ ΤΕ ΒΑΣΙΛΕΥΣΙ ΦΑΝΕΡΟΝ ΕʽΣΤΑΙ ΟʼΤΙ ΟΥΚ ΕΙΣΙ ΘΕΟΙ ΑʽΛΛΑ ΕʽΡΓΑ ΧΕΙΡΩΝ ΑʽΝΘΡΩΠΩΝ ΚΑΙ ΟΥΔΕΝ ΘΕΟΥ ΕʽΡΓΟΝ ΕʽΝ ΑΥΤΟΙΣ ΕʽΣΤΙΝ</div><div class="ru">Так как они деревянные и оправленные в золото и серебро, то можно познать, что они ложь; всем народам и царям сделается ясным, что это не боги, а дела рук человеческих, и в них нет никакого действия божественного.</div></div>
+<div class="verse"><div class="num">01:51</div><div class="grc">ΤΙΝΙ ΟΥΝ ΓΝΩΣΤΕΟΝ ΕʽΣΤΙΝ ΟʼΤΙ ΟΥΚ ΕΙΣΙΝ ΘΕΟΙ</div><div class="ru">Кому же после сего не понятно, что они не боги?</div></div>
+<div class="verse"><div class="num">01:52</div><div class="grc">ΒΑΣΙΛΕΑ ΓΑΡ ΧΩΡΑΣ ΟΥ ΜΗ ΑʽΝΑΣΤΗΣΩΣΙΝ ΟΥΤΕ ΥʼΕΤΟΝ ΑʽΝΘΡΩΠΟΙΣ ΟΥ ΜΗ ΔΩΣΙΝ</div><div class="ru">Царя стране они не поставят, дождя людям не дадут;</div></div>
+<div class="verse"><div class="num">01:53</div><div class="grc">ΚΡΙΣΙΝ ΤΕ ΟΥ ΜΗ ΔΙΑΚΡΙΝΩΣΙΝ ΑΥΤΩΝ ΟΥΔΕ ΜΗ ΡʼΥΣΩΝΤΑΙ ΑʽΔΙΚΟΥΜΕΝΟΝ ΑʽΔΥΝΑΤΟΙ ΟʽΝΤΕΣ ΩʼΣΠΕΡ ΓΑΡ ΚΟΡΩΝΑΙ ΑʽΝΑ ΜΕΣΟΝ ΤΟΥ ΟΥΡΑΝΟΥ ΚΑΙ ΤΗΣ ΓΗΣ</div><div class="ru">суда не рассудят, обидимого не защитят, будучи бессильны,</div></div>
+<div class="verse"><div class="num">01:54</div><div class="grc">ΚΑΙ ΓΑΡ ΟʼΤΑΝ ΕʽΜΠΕΣΗι ΕΙΣ ΟΙΚΙΑΝ ΘΕΩΝ ΞΥΛΙΝΩΝ Ηʽ ΠΕΡΙΧΡΥΣΩΝ Ηʽ ΠΕΡΙΑΡΓΥΡΩΝ ΠΥΡ ΟΙ ΜΕΝ ΙʼΕΡΕΙΣ ΑΥΤΩΝ ΦΕΥΞΟΝΤΑΙ ΚΑΙ ΔΙΑΣΩΘΗΣΟΝΤΑΙ ΑΥΤΟΙ ΔΕ ΩʼΣΠΕΡ ΔΟΚΟΙ ΜΕΣΟΙ ΚΑΤΑΚΑΥΘΗΣΟΝΤΑΙ</div><div class="ru">как вороны, находящиеся между небом и землею. Ибо и в том случае, когда подверглось бы пожару капище богов деревянных или оправленных в золото и серебро, жрецы их убегут и спасутся, — а они сами, как бревна в средине, сгорят.</div></div>
+<div class="verse"><div class="num">01:55</div><div class="grc">ΒΑΣΙΛΕΙ ΔΕ ΚΑΙ ΠΟΛΕΜΙΟΙΣ ΟΥ ΜΗ ΑʽΝΤΙΣΤΩΣΙΝ</div><div class="ru">Ни царю, ни врагам они не могут противостать. Как же можно принять или подумать, что они боги?</div></div>
+<div class="verse"><div class="num">01:56</div><div class="grc">ΠΩΣ ΟΥΝ ΕʽΚΔΕΚΤΕΟΝ Ηʽ ΝΟΜΙΣΤΕΟΝ ΟʼΤΙ ΕΙΣΙΝ ΘΕΟΙ</div><div class="ru">Ни от воров, ни от грабителей не могут охранить самих себя эти боги, деревянные и оправленные в серебро и золото:</div></div>
+<div class="verse"><div class="num">01:57</div><div class="grc">ΟΥΤΕ ΑʽΠΟ ΚΛΕΠΤΩΝ ΟΥΤΕ ΑʽΠΟ ΛΗιΣΤΩΝ ΟΥ ΜΗ ΔΙΑΣΩΘΩΣΙΝ ΘΕΟΙ ΞΥΛΙΝΟΙ ΚΑΙ ΠΕΡΙΑΡΓΥΡΟΙ ΚΑΙ ΠΕΡΙΧΡΥΣΟΙ ΩʼΝ ΟΙ ΙʽΣΧΥΟΝΤΕΣ ΠΕΡΙΕΛΟΥΝΤΑΙ ΤΟ ΧΡΥΣΙΟΝ ΚΑΙ ΤΟ ΑʽΡΓΥΡΙΟΝ ΚΑΙ ΤΟΝ ΙʼΜΑΤΙΣΜΟΝ ΤΟΝ ΠΕΡΙΚΕΙΜΕΝΟΝ ΑΥΤΟΙΣ ΑʽΠΕΛΕΥΣΟΝΤΑΙ ΕʽΧΟΝΤΕΣ ΟΥΤΕ ΕʼΑΥΤΟΙΣ ΟΥ ΜΗ ΒΟΗΘΗΣΩΣΙΝ</div><div class="ru">превосходя их силою, они снимают золото и серебро и одежды, которые на них, и уходят с добычею, а эти себе самим не в силах помочь.</div></div>
+<div class="verse"><div class="num">01:58</div><div class="grc">ΩʼΣΤΕ ΚΡΕΙΣΣΟΝ ΕΙΝΑΙ ΒΑΣΙΛΕΑ ΕʽΠΙΔΕΙΚΝΥΜΕΝΟΝ ΤΗΝ ΕʼΑΥΤΟΥ ΑʽΝΔΡΕΙΑΝ Ηʽ ΣΚΕΥΟΣ ΕʽΝ ΟΙΚΙΑι ΧΡΗΣΙΜΟΝ ΕʽΦ Ωʼι ΧΡΗΣΕΤΑΙ Οʼ ΚΕΚΤΗΜΕΝΟΣ Ηʽ ΟΙ ΨΕΥΔΕΙΣ ΘΕΟΙ Ηʽ ΚΑΙ ΘΥΡΑ ΕʽΝ ΟΙΚΙΑι ΔΙΑΣΩιΖΟΥΣΑ ΤΑ ΕʽΝ ΑΥΤΗι ΟʽΝΤΑ Ηʽ ΟΙ ΨΕΥΔΕΙΣ ΘΕΟΙ ΚΑΙ ΞΥΛΙΝΟΣ ΣΤΥΛΟΣ ΕʽΝ ΒΑΣΙΛΕΙΟΙΣ Ηʽ ΟΙ ΨΕΥΔΕΙΣ ΘΕΟΙ</div><div class="ru">Поэтому лучше царь, выказывающий мужество, или полезный в доме сосуд, который употребляет хозяин, нежели ложные боги; или лучше дверь в доме, охраняющая в нем имущество, нежели ложные боги; или лучше деревянный столп в царском дворце, нежели ложные боги.</div></div>
+<div class="verse"><div class="num">01:59</div><div class="grc">ΗʼΛΙΟΣ ΜΕΝ ΓΑΡ ΚΑΙ ΣΕΛΗΝΗ ΚΑΙ ΑʽΣΤΡΑ ΟʽΝΤΑ ΛΑΜΠΡΑ ΚΑΙ ΑʽΠΟΣΤΕΛΛΟΜΕΝΑ ΕʽΠΙ ΧΡΕΙΑΣ ΕΥΗΚΟΑ ΕΙΣΙΝ</div><div class="ru">Солнце и луна и звезды, будучи светлы и посылаемы ради потребности, благопослушны.</div></div>
+<div class="verse"><div class="num">01:60</div><div class="grc">ΩʼΣΑΥΤΩΣ ΚΑΙ ΑʽΣΤΡΑΠΗ ΟʼΤΑΝ ΕʽΠΙΦΑΝΗι ΕΥΟΠΤΟΣ ΕʽΣΤΙΝ ΤΟ Δ ΑΥΤΟ ΚΑΙ ΠΝΕΥΜΑ ΕʽΝ ΠΑΣΗι ΧΩΡΑι ΠΝΕΙ</div><div class="ru">Также и молния каждый раз, как является, ясно видима; также ветер во всякой стране веет.</div></div>
+<div class="verse"><div class="num">01:61</div><div class="grc">ΚΑΙ ΝΕΦΕΛΑΙΣ ΟʼΤΑΝ ΕʽΠΙΤΑΓΗι ΥʼΠΟ ΤΟΥ ΘΕΟΥ ΕʽΠΙΠΟΡΕΥΕΣΘΑΙ ΕʽΦ ΟʼΛΗΝ ΤΗΝ ΟΙΚΟΥΜΕΝΗΝ ΣΥΝΤΕΛΟΥΣΙ ΤΟ ΤΑΧΘΕΝ ΤΟ ΤΕ ΠΥΡ ΕʽΞΑΠΟΣΤΑΛΕΝ ΑʽΝΩΘΕΝ ΕʽΞΑΝΑΛΩΣΑΙ ΟʽΡΗ ΚΑΙ ΔΡΥΜΟΥΣ ΠΟΙΕΙ ΤΟ ΣΥΝΤΑΧΘΕΝ</div><div class="ru">И облака, когда повелит им Бог пройти над всею вселенною, исполняют повеление.</div></div>
+<div class="verse"><div class="num">01:62</div><div class="grc">ΤΑΥΤΑ ΔΕ ΟΥΤΕ ΤΑΙΣ ΙʽΔΕΑΙΣ ΟΥΤΕ ΤΑΙΣ ΔΥΝΑΜΕΣΙΝ ΑΥΤΩΝ ΑʽΦΩΜΟΙΩΜΕΝΑ ΕʽΣΤΙΝ</div><div class="ru">Тоже огонь, свыше ниспосылаемый для истребления гор и лесов, делает, что назначено; а эти не подобны им ни видом, ни силами.</div></div>
+<div class="verse"><div class="num">01:63</div><div class="grc">ΟʼΘΕΝ ΟΥΤΕ ΝΟΜΙΣΤΕΟΝ ΟΥΤΕ ΚΛΗΤΕΟΝ ΥʼΠΑΡΧΕΙΝ ΑΥΤΟΥΣ ΘΕΟΥΣ ΟΥ ΔΥΝΑΤΩΝ ΟʽΝΤΩΝ ΑΥΤΩΝ ΟΥΤΕ ΚΡΙΣΙΝ ΚΡΙΝΑΙ ΟΥΤΕ ΕΥ ΠΟΙΕΙΝ ΑʽΝΘΡΩΠΟΙΣ</div><div class="ru">Почему же можно подумать или сказать, что они боги, когда они несильны ни суда рассудить, ни добра делать людям?</div></div>
+<div class="verse"><div class="num">01:64</div><div class="grc">ΓΝΟΝΤΕΣ ΟΥΝ ΟʼΤΙ ΟΥΚ ΕΙΣΙΝ ΘΕΟΙ ΜΗ ΦΟΒΗΘΗΤΕ ΑΥΤΟΥΣ</div><div class="ru">Итак, зная, что они не боги, не бойтесь их.</div></div>
+<div class="verse"><div class="num">01:65</div><div class="grc">ΟΥΤΕ ΓΑΡ ΒΑΣΙΛΕΥΣΙΝ ΟΥ ΜΗ ΚΑΤΑΡΑΣΩΝΤΑΙ ΟΥΤΕ ΜΗ ΕΥΛΟΓΗΣΩΣΙ</div><div class="ru">Царей они ни проклянут, ни благословят;</div></div>
+<div class="verse"><div class="num">01:66</div><div class="grc">ΣΗΜΕΙΑ ΤΕ ΕʽΝ ΕʽΘΝΕΣΙΝ ΕʽΝ ΟΥΡΑΝΩι ΟΥ ΜΗ ΔΕΙΞΩΣΙΝ ΟΥΔΕ ΩʼΣ Οʼ ΗʼΛΙΟΣ ΛΑΜΨΟΥΣΙΝ ΟΥΔΕ ΦΩΤΙΣΟΥΣΙΝ ΩʼΣ ΣΕΛΗΝΗ</div><div class="ru">знамений не покажут на небе и пред народами; не осветят, как солнце, и не осияют, как луна.</div></div>
+<div class="verse"><div class="num">01:67</div><div class="grc">ΤΑ ΘΗΡΙΑ ΕʽΣΤΙΝ ΚΡΕΙΤΤΩ ΑΥΤΩΝ Αʼ ΔΥΝΑΝΤΑΙ ΕʽΚΦΥΓΟΝΤΑ ΕΙΣ ΣΚΕΠΗΝ ΕʼΑΥΤΑ ΩʽΦΕΛΗΣΑΙ</div><div class="ru">Звери лучше их: они, убегая под кров, могут помочь себе.</div></div>
+<div class="verse"><div class="num">01:68</div><div class="grc">ΚΑΤ ΟΥΔΕΝΑ ΟΥΝ ΤΡΟΠΟΝ ΕʽΣΤΙΝ ΗʼΜΙΝ ΦΑΝΕΡΟΝ ΟʼΤΙ ΕΙΣΙΝ ΘΕΟΙ ΔΙΟ ΜΗ ΦΟΒΗΘΗΤΕ ΑΥΤΟΥΣ</div><div class="ru">Итак, ни из чего не видно нам, что они боги; посему не бойтесь их.</div></div>
+<div class="verse"><div class="num">01:69</div><div class="grc">ΩʼΣΠΕΡ ΓΑΡ ΕʽΝ ΣΙΚΥΗΡΑΤΩι ΠΡΟΒΑΣΚΑΝΙΟΝ ΟΥΔΕΝ ΦΥΛΑΣΣΟΝ ΟΥΤΩΣ ΟΙ ΘΕΟΙ ΑΥΤΩΝ ΕΙΣΙΝ ΞΥΛΙΝΟΙ ΚΑΙ ΠΕΡΙΧΡΥΣΟΙ ΚΑΙ ΠΕΡΙΑΡΓΥΡΟΙ</div><div class="ru">Как пугало в огороде ничего не сбережет, так и их деревянные, оправленные в золото и серебро боги.</div></div>
+<div class="verse"><div class="num">01:70</div><div class="grc">ΤΟΝ ΑΥΤΟΝ ΤΡΟΠΟΝ ΚΑΙ ΤΗι ΕʽΝ ΚΗΠΩι ΡʼΑΜΝΩι ΕʽΦ ΗʼΣ ΠΑΝ ΟʽΡΝΕΟΝ ΕʽΠΙΚΑΘΗΤΑΙ ΩʼΣΑΥΤΩΣ ΔΕ ΚΑΙ ΝΕΚΡΩι ΕʽΡΡΙΜΜΕΝΩι ΕʽΝ ΣΚΟΤΕΙ ΑʽΦΩΜΟΙΩΝΤΑΙ ΟΙ ΘΕΟΙ ΑΥΤΩΝ ΞΥΛΙΝΟΙ ΚΑΙ ΠΕΡΙΧΡΥΣΟΙ ΚΑΙ ΠΕΡΙΑΡΓΥΡΟΙ</div><div class="ru">Равным образом их деревянные, оправленные в золото и серебро боги подобны терновому кусту в саду, на который садятся всякие птицы, также и трупу, брошенному во тьме.</div></div>
+<div class="verse"><div class="num">01:71</div><div class="grc">ΑʽΠΟ ΤΕ ΤΗΣ ΠΟΡΦΥΡΑΣ ΚΑΙ ΤΗΣ ΜΑΡΜΑΡΟΥ ΤΗΣ ΕʽΠ ΑΥΤΟΙΣ ΣΗΠΟΜΕΝΗΣ ΓΝΩΣΕΣΘΕ ΟʼΤΙ ΟΥΚ ΕΙΣΙΝ ΘΕΟΙ ΑΥΤΑ ΤΕ ΕʽΞ ΥʼΣΤΕΡΟΥ ΒΡΩΘΗΣΟΝΤΑΙ ΚΑΙ ΕʽΣΤΑΙ ΟʽΝΕΙΔΟΣ ΕʽΝ ΤΗι ΧΩΡΑι</div><div class="ru">Из пурпура и червленицы, которые истлевают на них, вы можете уразуметь, что они не боги; да и сами они будут наконец съедены и будут позором в стране.</div></div>
+<div class="verse"><div class="num">01:72</div><div class="grc">ΚΡΕΙΣΣΩΝ ΟΥΝ ΑʽΝΘΡΩΠΟΣ ΔΙΚΑΙΟΣ ΟΥΚ ΕʽΧΩΝ ΕΙΔΩΛΑ ΕʽΣΤΑΙ ΓΑΡ ΜΑΚΡΑΝ ΑʽΠΟ ΟʽΝΕΙΔΙΣΜΟΥ</div><div class="ru">Итак, лучше человек праведный, не имеющий идолов, ибо он — далеко от позора. Наверх</div></div>
+</details>
+
+</main>
+<footer>ARCHIVUM HAERETICUM · Q3.1 · <span class="red">◆</span> SIGILLUM VERITATIS · <span class="gold">DATUM 160.M3</span> · FIDELIS</footer>
+<script>
+function toggleAll(open){
+  document.querySelectorAll('details').forEach(d=>d.open=open);
+  document.querySelectorAll('.verse,.row').forEach(r=>{r.style.display=open?'grid':'none';});
+}
+function toggleOrig(){
+  document.querySelectorAll('.verse,.row').forEach(r=>{r.style.display='grid';});
+  document.querySelectorAll('.verse .ru,.row .ru').forEach(e=>e.style.display='none');
+  document.querySelectorAll('.verse .av,.verse .sk,.verse .he,.verse .grc,.verse .zh,.verse .sa,.verse .ar,.verse .dev,.verse .en,.verse .gr,.verse .egy,.verse .csl,.verse .fa,.verse .ak,.verse .bo,.verse .tib').forEach(e=>e.style.display='');
+}
+function toggleRu(){
+  document.querySelectorAll('.verse .ru,.row .ru').forEach(e=>e.style.display='');
+  document.querySelectorAll('.verse .av,.verse .sk,.verse .he,.verse .grc,.verse .zh,.verse .sa,.verse .ar,.verse .dev,.verse .en,.verse .gr,.verse .egy,.verse .csl,.verse .fa,.verse .ak,.verse .bo,.verse .tib').forEach(e=>e.style.display='none');
+}
+function resetView(){
+  document.querySelectorAll('.verse,.row').forEach(r=>{r.style.display='grid';});
+  document.querySelectorAll('.verse .av,.verse .sk,.verse .he,.verse .grc,.verse .zh,.verse .sa,.verse .ar,.verse .dev,.verse .en,.verse .gr,.verse .egy,.verse .csl,.verse .fa,.verse .ak,.verse .bo,.verse .tib,.verse .ru,.row .ru').forEach(e=>e.style.display='');
+}
+</script>
+</body></html>

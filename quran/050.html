@@ -1,0 +1,230 @@
+<!DOCTYPE html><html lang="ru"><head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Сура 50 · Каф</title>
+<style>
+:root{--bg:#0a0a0c;--bg2:#0d0d12;--panel:#13131a;--line:#2a2a33;--red:#c8102e;--red-dark:#8a0a1f;--gold:#c9a227;--gold-bright:#e8b84a;--gold-dim:#8a7119;--ink:#c8102e;--ink-dim:#c9a227;--orig:#c8102e;--accent:#d49a3a;--grid:#1d1d24}
+*{box-sizing:border-box;margin:0;padding:0}body{background:var(--bg);color:var(--ink);font-family:Georgia,'Times New Roman',serif;line-height:1.55}
+a{color:var(--gold);text-decoration:none}a:hover{color:var(--gold-bright);text-decoration:underline}
+header.hos{background:linear-gradient(180deg,var(--red-dark) 0%,#1a0007 30%,var(--bg) 100%);border-bottom:2px solid var(--red);padding:0;position:relative}
+header.hos::before{content:"";position:absolute;left:0;top:0;bottom:0;width:6px;background:var(--red)}
+.hos-strip{display:flex;justify-content:space-between;align-items:center;padding:6px 14px;background:rgba(0,0,0,0.5);border-bottom:1px solid var(--red-dark);font-family:'Courier New',monospace;font-size:10px;letter-spacing:2px;color:var(--ink-dim);text-transform:uppercase}
+.hos-strip .l{color:var(--gold)} .hos-strip .r{color:var(--red);font-weight:bold}
+.hos-body{padding:18px 22px 14px}
+.hos-h1{font-size:1.5rem;letter-spacing:.12em;color:var(--orig);font-weight:normal;margin-bottom:4px;line-height:1.2}
+.hos-h1 .q{color:var(--red);font-family:'Courier New',monospace;font-size:.7em;vertical-align:super;margin-right:6px;padding:3px 7px;background:rgba(200,16,46,0.15);border:1px solid var(--red-dark);letter-spacing:1px}
+.hos-h1 .sig{font-size:.55em;color:var(--gold);font-family:'Courier New',monospace;letter-spacing:2px;margin-left:10px;padding:3px 8px;border:1px solid var(--gold-dim);vertical-align:middle}
+.hos-sub{color:var(--ink-dim);font-size:13px;font-style:italic}
+.stamps{padding:7px 16px;background:var(--bg2);border-bottom:1px solid var(--line);text-align:center;font-family:'Courier New',monospace}
+.stamps span{display:inline-block;border:1px solid var(--gold-dim);color:var(--gold);font-size:9px;letter-spacing:2px;padding:2px 7px;margin:0 2px;text-transform:uppercase}
+.stamps span.fid{color:var(--gold-bright);border-color:var(--gold);background:rgba(201,162,39,0.05)}
+.stamps span.dam{color:var(--red);border-color:var(--red-dark);background:rgba(200,16,46,0.05)}
+.stamps span.cre{color:var(--accent);border-color:var(--accent);background:rgba(212,154,58,0.05)}
+nav.main{padding:8px 18px;background:var(--panel);border-bottom:1px solid var(--line);font-size:12px;text-align:center}
+nav.main a{color:var(--gold);margin:0 6px;letter-spacing:1px;padding:3px 6px}
+.toolbar{display:flex;justify-content:center;gap:6px;flex-wrap:wrap;margin:14px 0 8px;padding:8px;background:var(--panel);border:1px solid var(--line);font-family:'Courier New',monospace}
+.toolbar button{background:transparent;border:1px solid var(--gold-dim);color:var(--gold);padding:5px 11px;font-size:10px;letter-spacing:1px;cursor:pointer;font-family:inherit;text-transform:uppercase}
+.toolbar button:hover{background:var(--gold);color:var(--bg)}
+.meta{color:var(--ink-dim);font-size:11px;font-style:italic;padding:6px 16px;text-align:center;font-family:'Courier New',monospace;letter-spacing:1px}
+.meta b{color:var(--gold);font-style:normal;font-family:Georgia,serif}
+.chap{background:linear-gradient(90deg,var(--red-dark),transparent);color:var(--gold-bright);font-size:.85rem;letter-spacing:.2em;padding:9px 16px;border-bottom:1px solid var(--red-dark);border-top:1px solid var(--red-dark);font-family:'Courier New',monospace;text-transform:uppercase;margin-top:12px}
+main{max-width:1300px;margin:0 auto;padding:0 12px 40px}
+.row{display:grid;grid-template-columns:3rem 1fr 1.1fr;border-bottom:1px solid var(--grid);align-items:start;transition:background 0.15s}
+.row:hover{background:#15110b}
+.num{grid-column:1;color:var(--gold);font-size:12px;padding:10px 4px;text-align:right;font-family:'Courier New',monospace;font-weight:bold;align-self:start}
+.orig,.ar,.gr,.he,.grc,.sk,.dev,.av,.zh,.sa{grid-column:2;padding:10px 12px;font-size:1rem;line-height:1.7;color:var(--orig);background:rgba(201,162,39,0.025);border-right:1px solid var(--gold-dim);border-left:3px solid var(--gold-dim);font-style:italic}
+.ar{direction:rtl;text-align:right;font-family:'Amiri','Scheherazade New','Traditional Arabic',serif;font-size:1.25rem;line-height:1.85}
+.gr,.grc{direction:ltr;font-family:'SBL Greek','Palatino Linotype',Georgia,serif}
+.he{direction:rtl;text-align:right;font-family:'SBL Hebrew','Times New Roman',serif;font-size:1.1rem}
+.sk,.dev{direction:ltr;font-family:'Noto Sans Devanagari','Sanskrit Text',serif;font-size:1.05rem}
+.zh{font-family:'Noto Serif CJK SC','SimSun',serif}
+.ru,.rus{grid-column:3;padding:10px 12px;font-size:.95rem;line-height:1.65;text-align:justify;color:var(--ink)}
+.bismillah{text-align:center;padding:1.5rem 1rem;font-family:'Amiri','Scheherazade New','Traditional Arabic',serif;font-size:1.8rem;color:var(--gold);direction:rtl;background:linear-gradient(180deg,#1a1410,#0a0a0c);border-bottom:1px solid var(--red-dark);letter-spacing:0;margin:14px 16px;border:1px solid var(--red-dark)}
+.bismillah .label{display:block;font-family:'Courier New',monospace;font-size:.7rem;letter-spacing:.25em;color:var(--ink-dim);text-transform:uppercase;direction:ltr;margin-bottom:8px}
+footer{padding:18px;text-align:center;color:var(--ink-dim);font-size:10px;border-top:1px solid var(--line);font-family:'Courier New',monospace;letter-spacing:2px;background:var(--bg2)}
+footer .red{color:var(--red)} footer .gold{color:var(--gold)}
+
+  .hos-sub{font-size:12px}
+  .hos-strip{font-size:9px;letter-spacing:1px;padding:4px 8px}
+  .stamps span{font-size:8px;letter-spacing:1px;padding:2px 5px;margin:0 1px}
+  
+  /* Stack verse vertically on mobile */
+  .verse,.row{grid-template-columns:1fr !important;display:block !important;padding:8px 10px;margin-bottom:8px;border:1px solid var(--line);background:var(--bg2)}
+  .verse .num,.row .num{display:inline-block;background:rgba(0,0,0,0.5);padding:2px 8px;margin-bottom:6px;width:auto;text-align:left;font-size:11px;border:1px solid var(--gold-dim);border-radius:2px}
+  
+  /* Original language - full width */
+  .verse .av,.verse .sk,.verse .he,.verse .grc,.verse .zh,.verse .sa,.verse .ar,.verse .dev,.verse .en,.verse .gr,.verse .egy,.verse .csl,.verse .fa,.verse .ak,.verse .bo,.verse .tib,
+  .row .av,.row .sk,.row .he,.row .grc,.row .zh,.row .sa,.row .ar,.row .dev,.row .en,.row .gr,.row .csl,.row .fa,.row .ak,.row .bo,.row .tib{font-size:1.05rem;line-height:1.7;padding:8px 10px;border-left:3px solid var(--gold-dim);margin:6px 0;background:rgba(201,162,39,0.04);font-style:italic;width:auto !important;display:block}
+  
+  /* Russian - full width */
+  .verse .ru,.row .ru{font-size:.95rem;line-height:1.6;padding:8px 10px;border-left:3px solid var(--red);background:rgba(200,16,46,0.04);margin:6px 0;width:auto !important;display:block;grid-column:1}
+  
+  /* Toolbar */
+  .toolbar{display:flex;flex-wrap:wrap;gap:4px;padding:6px;margin:8px 0}
+  .toolbar button{font-size:10px;padding:5px 8px;letter-spacing:0;flex:1 1 30%;min-width:60px}
+  
+  /* Container */
+  main{padding:0 8px}
+  nav.main{padding:6px 10px;font-size:11px}
+  nav.main a{margin:0 3px;padding:2px 4px}
+  
+  /* Book cards */
+  .book-grid{grid-template-columns:1fr;gap:6px}
+  .book-card{font-size:13px;padding:8px 10px;line-height:1.4}
+  
+  /* Note */
+  .note{font-size:14px;line-height:1.7;padding:14px 18px;margin:14px;color:var(--red);background:rgba(201,162,39,0.04);border:1px solid var(--gold-dim);border-left:4px solid var(--gold)}
+
+  
+  /* Footer */
+  footer{font-size:11px;padding:8px 10px}
+}
+  .row{grid-template-columns:2rem 1fr 1.1fr}
+  .num{font-size:.7rem;padding:.5rem .3rem}
+  .ar{font-size:1.1rem;line-height:1.7;padding:.5rem .4rem}
+  .ru{font-size:.85rem;line-height:1.4;padding:.5rem .4rem}
+}
+
+/* Q20 EGYPTIAN additions */
+.verse .egy{grid-column:1;font-family:'Papyrus','Segoe UI Historic',serif;font-size:1.05rem;line-height:1.8;direction:ltr;text-align:left;color:#e8b84a;background:rgba(232,184,74,0.04);border-right:3px solid var(--gold-dim);padding:12px 14px;font-style:italic}
+.verse .ru{grid-column:2;font-size:0.98rem;line-height:1.75;color:var(--ink);background:rgba(201,162,39,0.025);border-left:1px solid var(--gold-dim);padding:12px 14px}
+.verse .transl-note{grid-column:1/-1;padding:6px 14px;font-size:0.78rem;color:var(--ink-dim);font-style:italic;text-align:right;background:rgba(0,0,0,0.15);border-top:1px solid var(--line)}
+.verse .num,.verse .transl-note{color:var(--gold-bright)}
+
+.verse .av,.verse .sk,.verse .he,.verse .grc,.verse .zh,.verse .sa,.verse .ar,.verse .dev,.verse .en,.verse .gr,.verse .csl,.verse .fa,.verse .ak,.verse .bo,.verse .tib{font-family:'Times New Roman',Georgia,serif;font-size:1.05rem;line-height:1.7;color:var(--orig);background:rgba(201,162,39,0.04);border-right:3px solid var(--gold-dim);padding:12px 14px;direction:ltr;text-align:left;font-style:italic}
+.row .av,.row .sk,.row .he,.row .grc,.row .zh,.row .sa,.row .ar,.row .dev,.row .en,.row .gr,.row .csl,.row .fa,.row .ak,.row .bo,.row .tib{font-family:'Times New Roman',Georgia,serif;font-size:1.05rem;line-height:1.7;color:var(--orig);background:rgba(201,162,39,0.04);padding:10px 12px;direction:ltr;text-align:left}
+.verse{display:grid;grid-template-columns:3.2rem 1fr 1.1fr;border-bottom:1px solid var(--grid);align-items:start;transition:background 0.15s}
+.row{display:grid;grid-template-columns:3.2rem 1fr 1.1fr 1fr;border-bottom:1px solid var(--grid);align-items:start;transition:background 0.15s}
+.num{font-family:'Courier New',monospace;font-size:11px;color:var(--gold);text-align:center;padding:12px 4px;background:rgba(0,0,0,0.3);border-right:1px solid var(--line);font-weight:bold;align-self:start}
+.ru{font-size:.92rem;line-height:1.6;color:var(--ink);padding:10px 12px;background:rgba(255,255,255,0.01);border-left:1px solid var(--line);align-self:start;grid-column:3}
+
+/* ARCHIVUM HAERETICUM — Original script fonts */
+
+
+
+
+
+
+
+@font-face{font-family:'Noto Sans Cuneiform';font-style:normal;font-weight:400;font-display:block;src:url('/archivum-haereticum/fonts/noto-cuneiform.ttf') format('truetype')}
+@font-face{font-family:'Noto Sans Egyptian Hieroglyphs';font-style:normal;font-weight:400;font-display:block;src:url('/archivum-haereticum/fonts/noto-hieroglyphs.ttf') format('truetype')}
+@font-face{font-family:'Noto Sans Coptic';font-style:normal;font-weight:400;font-display:block;src:url('/archivum-haereticum/fonts/noto-coptic.ttf') format('truetype')}
+@font-face{font-family:'Noto Serif JP';font-style:normal;font-weight:400;font-display:swap;src:local('Noto Serif JP'),local('NotoSerifJP-Regular')}
+@font-face{font-family:'Noto Sans Devanagari';font-style:normal;font-weight:400;font-display:swap;src:local('Noto Sans Devanagari'),local('NotoSansDevanagari-Regular')}
+@font-face{font-family:'Noto Sans Tibetan';font-style:normal;font-weight:400;font-display:swap;src:local('Noto Sans Tibetan'),local('NotoSansTibetan-Regular')}
+@font-face{font-family:'SBL Greek';font-style:normal;font-weight:400;font-display:swap;src:local('SBL Greek'),local('SBLGreek')}@media(max-width:760px){
+.verse,.row{grid-template-columns:1fr !important;display:block !important;padding:12px 14px;margin:8px 0;border:1px solid var(--line);background:var(--bg2);width:100% !important;max-width:100% !important;overflow:hidden;box-sizing:border-box}
+.verse .num,.row .num{display:inline-block;background:rgba(0,0,0,0.5);padding:3px 10px;margin-bottom:8px;width:auto;text-align:left;font-size:11px;border:1px solid var(--gold-dim);border-radius:2px;font-family:'Courier New',monospace;min-width:0 !important}
+.verse .on,.verse .ru,.verse .csl,.verse .sk,.verse .he,.verse .grc,.verse .zh,.verse .ar,.verse .fa,.verse .bo,.verse .ak,.verse .cop,.verse .pali,.verse .sk-deva,.verse .eg-hiero,.verse .ak-cun,.verse .cop-uni,.verse .ja,.verse .pali-deva,.verse .qu,.verse .av,.verse .egy,.verse .csl,.verse .gr,.verse .on-r,
+.row .on,.row .ru,.row .csl,.row .sk,.row .he,.row .grc,.row .zh,.row .ar,.row .fa,.row .bo,.row .ak,.row .cop,.row .pali,.row .sk-deva,.row .eg-hiero,.row .ak-cun,.row .cop-uni,.row .ja,.row .pali-deva,.row .qu,.row .av,.row .egy,.row .csl,.row .gr{font-size:1.05rem !important;line-height:1.65 !important;padding:10px 12px !important;border-left:3px solid var(--gold-dim);margin:6px 0;background:rgba(201,162,39,0.04);width:auto !important;display:block !important;min-width:0 !important;word-wrap:break-word;overflow-wrap:break-word;max-width:100% !important;box-sizing:border-box}
+.verse .ru,.row .ru{border-left:3px solid var(--red);background:rgba(200,16,46,0.04)}
+.hos-h1{font-size:1.2rem;letter-spacing:.05em;line-height:1.3}
+.hos-sub{font-size:12px}
+.hos-strip{font-size:9px;letter-spacing:1px;padding:4px 8px}
+.stamps span{font-size:8px;letter-spacing:1px;padding:2px 5px;margin:0 1px}
+main{padding:0 8px;width:100% !important;max-width:100% !important;box-sizing:border-box}
+nav.main{padding:6px 10px;font-size:11px}
+nav.main a{margin:0 3px;padding:2px 4px}
+.toolbar button{font-size:10px;padding:5px 8px;letter-spacing:0;flex:1 1 30%;min-width:60px}
+.book-grid{grid-template-columns:1fr;gap:6px}
+.book-card{font-size:13px;padding:8px 10px;line-height:1.4}
+.note{font-size:14px;line-height:1.7;padding:14px 18px;margin:14px;color:var(--ink);background:rgba(201,162,39,0.04);border:1px solid var(--gold-dim);border-left:4px solid var(--gold)}
+footer{font-size:11px;padding:8px 10px}
+}
+</style>
+</head><body>
+<header class="hos">
+<div class="hos-strip"><span class="l">ARCHIVUM HAERETICUM — CORPUS DIVINUS</span><span class="r">Q1 — QURAN</span></div>
+<div class="hos-body">
+<h1 class="hos-h1"><span class="q">Q1</span>СУРА 50 · КАФ</h1>
+<div class="hos-sub">Каф · 45 аятов · Tanzil Uthmani (араб.) + Крачковский И.Ю. 1963 (рус.) · Мекка/Медина</div>
+</div>
+</header>
+<div class="stamps">
+<span class="fid">◆ FIDELIS</span>
+<span class="cre">✚ MYSTICA</span>
+<span class="dam">✠ ISLAMICA</span>
+</div>
+<nav class="main">
+<a href="../index.html">◀ CORPUS DIVINUS</a>
+<a href="index.html">○ 114 СУР</a>
+<a href="049.html">◀ 49</a>
+<a href="051.html">51 ▶</a>
+</nav>
+<main>
+<div class="toolbar">
+<button onclick="toggleAll(true)">РАЗВЕРНУТЬ</button>
+<button onclick="toggleAll(false)">СВЕРНУТЬ</button>
+<button onclick="toggleOrig()">☀ ОРИГИНАЛ</button>
+<button onclick="toggleRu()">☾ ПЕРЕВОД</button>
+<button onclick="resetView()">◉ ОБА</button>
+</div>
+<div class="meta">ОРИГИНАЛ: <b>Tanzil Uthmani (Public Domain)</b> · ПЕРЕВОД: <b>Крачковский И.Ю. (1963; PD с 2022)</b> · ◆ FIDELIS</div>
+<div class="bismillah"><span class="label">◆ БИСМИЛЛЯh · ١</span>بِسْمِ ٱللَّهِ ٱلرَّحْمَٰنِ ٱلرَّحِيمِ</div>
+<div class="chap">СУРА 50 · КАФ · 45 АЯТОВ</div>
+<div class="row"><span class="num">50:2</span><div class="ar" lang="ar">بَلْ عَجِبُوٓا۟ أَن جَآءَهُم مُّنذِرٌ مِّنْهُمْ فَقَالَ ٱلْكَٰفِرُونَ هَٰذَا شَىْءٌ عَجِيبٌ</div><div class="ru">Да! Удивились они, что пришел к ним увещатель из них, и сказали неверные: &quot;Это - дело дивное!</div></div>
+<div class="row"><span class="num">50:3</span><div class="ar" lang="ar">أَءِذَا مِتْنَا وَكُنَّا تُرَابًا ذَٰلِكَ رَجْعٌۢ بَعِيدٌ</div><div class="ru">Разве когда мы умрем и станем прахом? ... Это - возврат далекий!&quot;</div></div>
+<div class="row"><span class="num">50:4</span><div class="ar" lang="ar">قَدْ عَلِمْنَا مَا تَنقُصُ ٱلْأَرْضُ مِنْهُمْ وَعِندَنَا كِتَٰبٌ حَفِيظٌۢ</div><div class="ru">Мы знаем, что земля отнимает от них, и у Нас книга хранящая.</div></div>
+<div class="row"><span class="num">50:5</span><div class="ar" lang="ar">بَلْ كَذَّبُوا۟ بِٱلْحَقِّ لَمَّا جَآءَهُمْ فَهُمْ فِىٓ أَمْرٍ مَّرِيجٍ</div><div class="ru">Да, сочли они ложью истину, когда она пришла к ним; и они - в состоянии смятенном.</div></div>
+<div class="row"><span class="num">50:6</span><div class="ar" lang="ar">أَفَلَمْ يَنظُرُوٓا۟ إِلَى ٱلسَّمَآءِ فَوْقَهُمْ كَيْفَ بَنَيْنَٰهَا وَزَيَّنَّٰهَا وَمَا لَهَا مِن فُرُوجٍ</div><div class="ru">Разве не смотрели они на небо над ними, как мы воздвигли его и разукрасили, и нет в нем расщелин?</div></div>
+<div class="row"><span class="num">50:7</span><div class="ar" lang="ar">وَٱلْأَرْضَ مَدَدْنَٰهَا وَأَلْقَيْنَا فِيهَا رَوَٰسِىَ وَأَنۢبَتْنَا فِيهَا مِن كُلِّ زَوْجٍۭ بَهِيجٍ</div><div class="ru">И землю Мы распростерли и устроили на ней прочно стоящие и произрастили на ней всякие красивые пары</div></div>
+<div class="row"><span class="num">50:8</span><div class="ar" lang="ar">تَبْصِرَةً وَذِكْرَىٰ لِكُلِّ عَبْدٍ مُّنِيبٍ</div><div class="ru">для созерцания и напоминания всякому рабу обращающемуся.</div></div>
+<div class="row"><span class="num">50:9</span><div class="ar" lang="ar">وَنَزَّلْنَا مِنَ ٱلسَّمَآءِ مَآءً مُّبَٰرَكًا فَأَنۢبَتْنَا بِهِۦ جَنَّٰتٍ وَحَبَّ ٱلْحَصِيدِ</div><div class="ru">И низвели Мы с неба воду благословенную и произрастили ею сады и зерна посевов,</div></div>
+<div class="row"><span class="num">50:10</span><div class="ar" lang="ar">وَٱلنَّخْلَ بَاسِقَٰتٍ لَّهَا طَلْعٌ نَّضِيدٌ</div><div class="ru">и пальмы высокие - у них плоды рядами, -</div></div>
+<div class="row"><span class="num">50:11</span><div class="ar" lang="ar">رِّزْقًا لِّلْعِبَادِ وَأَحْيَيْنَا بِهِۦ بَلْدَةً مَّيْتًا كَذَٰلِكَ ٱلْخُرُوجُ</div><div class="ru">в удел рабам, и оживили ею мертвую страну. Таков исход!</div></div>
+<div class="row"><span class="num">50:12</span><div class="ar" lang="ar">كَذَّبَتْ قَبْلَهُمْ قَوْمُ نُوحٍ وَأَصْحَٰبُ ٱلرَّسِّ وَثَمُودُ</div><div class="ru">Считали ложью и до них народ Нуха, и обитатели ар-Расса, и Самуд,</div></div>
+<div class="row"><span class="num">50:13</span><div class="ar" lang="ar">وَعَادٌ وَفِرْعَوْنُ وَإِخْوَٰنُ لُوطٍ</div><div class="ru">и Ад, и Фираун, и братья Лута,</div></div>
+<div class="row"><span class="num">50:14</span><div class="ar" lang="ar">وَأَصْحَٰبُ ٱلْأَيْكَةِ وَقَوْمُ تُبَّعٍ كُلٌّ كَذَّبَ ٱلرُّسُلَ فَحَقَّ وَعِيدِ</div><div class="ru">и обитатели ал-Айки, и народ Тубба, - все они сочли лжецами посланников, и оправдалась Моя угроза.</div></div>
+<div class="row"><span class="num">50:15</span><div class="ar" lang="ar">أَفَعَيِينَا بِٱلْخَلْقِ ٱلْأَوَّلِ بَلْ هُمْ فِى لَبْسٍ مِّنْ خَلْقٍ جَدِيدٍ</div><div class="ru">Разве ж Мы изнемогли в первом творении? Да - они в сомнении о новом творении.</div></div>
+<div class="row"><span class="num">50:16</span><div class="ar" lang="ar">وَلَقَدْ خَلَقْنَا ٱلْإِنسَٰنَ وَنَعْلَمُ مَا تُوَسْوِسُ بِهِۦ نَفْسُهُۥ وَنَحْنُ أَقْرَبُ إِلَيْهِ مِنْ حَبْلِ ٱلْوَرِيدِ</div><div class="ru">Мы сотворили уже человека и знаем, что нашептывает ему душа; и Мы ближе к нему, чем шейная артерия.</div></div>
+<div class="row"><span class="num">50:17</span><div class="ar" lang="ar">إِذْ يَتَلَقَّى ٱلْمُتَلَقِّيَانِ عَنِ ٱلْيَمِينِ وَعَنِ ٱلشِّمَالِ قَعِيدٌ</div><div class="ru">Вот принимают два приемщика, справа и слева, сидя.</div></div>
+<div class="row"><span class="num">50:18</span><div class="ar" lang="ar">مَّا يَلْفِظُ مِن قَوْلٍ إِلَّا لَدَيْهِ رَقِيبٌ عَتِيدٌ</div><div class="ru">Не произнесет он и единого слова, иначе как у него - готовый надсмотрщик.</div></div>
+<div class="row"><span class="num">50:19</span><div class="ar" lang="ar">وَجَآءَتْ سَكْرَةُ ٱلْمَوْتِ بِٱلْحَقِّ ذَٰلِكَ مَا كُنتَ مِنْهُ تَحِيدُ</div><div class="ru">И придет опьянение смерти по истине: вот от чего ты уклонялся!</div></div>
+<div class="row"><span class="num">50:20</span><div class="ar" lang="ar">وَنُفِخَ فِى ٱلصُّورِ ذَٰلِكَ يَوْمُ ٱلْوَعِيدِ</div><div class="ru">И возгласили в трубу: это - день обещанный!</div></div>
+<div class="row"><span class="num">50:21</span><div class="ar" lang="ar">وَجَآءَتْ كُلُّ نَفْسٍ مَّعَهَا سَآئِقٌ وَشَهِيدٌ</div><div class="ru">И пришла всякая душа, а с нею погонщик и свидетель,</div></div>
+<div class="row"><span class="num">50:22</span><div class="ar" lang="ar">لَّقَدْ كُنتَ فِى غَفْلَةٍ مِّنْ هَٰذَا فَكَشَفْنَا عَنكَ غِطَآءَكَ فَبَصَرُكَ ٱلْيَوْمَ حَدِيدٌ</div><div class="ru">Был ты в небрежении об этом, и Мы сняли с тебя твой покров, и взор твой сегодня остр.</div></div>
+<div class="row"><span class="num">50:23</span><div class="ar" lang="ar">وَقَالَ قَرِينُهُۥ هَٰذَا مَا لَدَىَّ عَتِيدٌ</div><div class="ru">И сказал его товарищ: &quot;Вот что у меня подготовлено&quot;.</div></div>
+<div class="row"><span class="num">50:24</span><div class="ar" lang="ar">أَلْقِيَا فِى جَهَنَّمَ كُلَّ كَفَّارٍ عَنِيدٍ</div><div class="ru">Ввергните вдвоем в геенну всякого неверного, упорного!</div></div>
+<div class="row"><span class="num">50:25</span><div class="ar" lang="ar">مَّنَّاعٍ لِّلْخَيْرِ مُعْتَدٍ مُّرِيبٍ</div><div class="ru">Удерживающего от добра, преступника, распространяющего сомнение,</div></div>
+<div class="row"><span class="num">50:26</span><div class="ar" lang="ar">ٱلَّذِى جَعَلَ مَعَ ٱللَّهِ إِلَٰهًا ءَاخَرَ فَأَلْقِيَاهُ فِى ٱلْعَذَابِ ٱلشَّدِيدِ</div><div class="ru">который при Аллахе придал другого бога: ввергните же его в жестокое наказание!</div></div>
+<div class="row"><span class="num">50:27</span><div class="ar" lang="ar">قَالَ قَرِينُهُۥ رَبَّنَا مَآ أَطْغَيْتُهُۥ وَلَٰكِن كَانَ فِى ضَلَٰلٍۭ بَعِيدٍ</div><div class="ru">Сказал его товарищ: &quot;Господи наш, я не сбивал Его; он сам был в далеком заблуждении!&quot;</div></div>
+<div class="row"><span class="num">50:28</span><div class="ar" lang="ar">قَالَ لَا تَخْتَصِمُوا۟ لَدَىَّ وَقَدْ قَدَّمْتُ إِلَيْكُم بِٱلْوَعِيدِ</div><div class="ru">Сказал Он: &quot;Не препирайтесь у Меня: Я предупредил вас угрозой.</div></div>
+<div class="row"><span class="num">50:29</span><div class="ar" lang="ar">مَا يُبَدَّلُ ٱلْقَوْلُ لَدَىَّ وَمَآ أَنَا۠ بِظَلَّٰمٍ لِّلْعَبِيدِ</div><div class="ru">Не меняется слово у Меня, и не тиран Я для рабов&quot;.</div></div>
+<div class="row"><span class="num">50:30</span><div class="ar" lang="ar">يَوْمَ نَقُولُ لِجَهَنَّمَ هَلِ ٱمْتَلَأْتِ وَتَقُولُ هَلْ مِن مَّزِيدٍ</div><div class="ru">В тот день скажем Мы геенне: &quot;Полна ли ты стала?&quot; - и скажет она: &quot;Нет ли добавки?&quot;</div></div>
+<div class="row"><span class="num">50:31</span><div class="ar" lang="ar">وَأُزْلِفَتِ ٱلْجَنَّةُ لِلْمُتَّقِينَ غَيْرَ بَعِيدٍ</div><div class="ru">И приближен будет рай для богобоязненных недалеким.</div></div>
+<div class="row"><span class="num">50:32</span><div class="ar" lang="ar">هَٰذَا مَا تُوعَدُونَ لِكُلِّ أَوَّابٍ حَفِيظٍ</div><div class="ru">Вот что обещано вам для всякого кающегося, соблюдающего,</div></div>
+<div class="row"><span class="num">50:33</span><div class="ar" lang="ar">مَّنْ خَشِىَ ٱلرَّحْمَٰنَ بِٱلْغَيْبِ وَجَآءَ بِقَلْبٍ مُّنِيبٍ</div><div class="ru">того, кто боится Милосердного втайне и приходит с сердцем обращающимся.</div></div>
+<div class="row"><span class="num">50:34</span><div class="ar" lang="ar">ٱدْخُلُوهَا بِسَلَٰمٍ ذَٰلِكَ يَوْمُ ٱلْخُلُودِ</div><div class="ru">&quot;Входите туда с миром, это - день вечности&quot;.</div></div>
+<div class="row"><span class="num">50:35</span><div class="ar" lang="ar">لَهُم مَّا يَشَآءُونَ فِيهَا وَلَدَيْنَا مَزِيدٌ</div><div class="ru">Им - то, что они пожелают там, и у Нас - добавка.</div></div>
+<div class="row"><span class="num">50:36</span><div class="ar" lang="ar">وَكَمْ أَهْلَكْنَا قَبْلَهُم مِّن قَرْنٍ هُمْ أَشَدُّ مِنْهُم بَطْشًا فَنَقَّبُوا۟ فِى ٱلْبِلَٰدِ هَلْ مِن مَّحِيصٍ</div><div class="ru">Сколько Мы погубили до них поколений; они были сильнее их мощью и искали на земле, есть ил убежище!</div></div>
+<div class="row"><span class="num">50:37</span><div class="ar" lang="ar">إِنَّ فِى ذَٰلِكَ لَذِكْرَىٰ لِمَن كَانَ لَهُۥ قَلْبٌ أَوْ أَلْقَى ٱلسَّمْعَ وَهُوَ شَهِيدٌ</div><div class="ru">Поистине, в этом - напоминание тому, у кого есть сердце или кто преклонил слух и сам присутствует!</div></div>
+<div class="row"><span class="num">50:38</span><div class="ar" lang="ar">وَلَقَدْ خَلَقْنَا ٱلسَّمَٰوَٰتِ وَٱلْأَرْضَ وَمَا بَيْنَهُمَا فِى سِتَّةِ أَيَّامٍ وَمَا مَسَّنَا مِن لُّغُوبٍ</div><div class="ru">И сотворили Мы небеса, и землю, и то, что между ними, в шесть дней, и не коснулась нас усталость.</div></div>
+<div class="row"><span class="num">50:39</span><div class="ar" lang="ar">فَٱصْبِرْ عَلَىٰ مَا يَقُولُونَ وَسَبِّحْ بِحَمْدِ رَبِّكَ قَبْلَ طُلُوعِ ٱلشَّمْسِ وَقَبْلَ ٱلْغُرُوبِ</div><div class="ru">Терпи же, что они говорят, и прославляй хвалою Господа твоего до восхода солнца и перед заходом,</div></div>
+<div class="row"><span class="num">50:40</span><div class="ar" lang="ar">وَمِنَ ٱلَّيْلِ فَسَبِّحْهُ وَأَدْبَٰرَ ٱلسُّجُودِ</div><div class="ru">и ночью прославляй Его, и при конце поклонения.</div></div>
+<div class="row"><span class="num">50:41</span><div class="ar" lang="ar">وَٱسْتَمِعْ يَوْمَ يُنَادِ ٱلْمُنَادِ مِن مَّكَانٍ قَرِيبٍ</div><div class="ru">И прислушайся в тот день, когда возгласит зовущий из близкого места.</div></div>
+<div class="row"><span class="num">50:42</span><div class="ar" lang="ar">يَوْمَ يَسْمَعُونَ ٱلصَّيْحَةَ بِٱلْحَقِّ ذَٰلِكَ يَوْمُ ٱلْخُرُوجِ</div><div class="ru">В тот день, когда услышат они вопль, воистину: это - день исхода.</div></div>
+<div class="row"><span class="num">50:43</span><div class="ar" lang="ar">إِنَّا نَحْنُ نُحْىِۦ وَنُمِيتُ وَإِلَيْنَا ٱلْمَصِيرُ</div><div class="ru">Поистине, Мы живим и умерщвляем, и к Нам - возвращение!</div></div>
+<div class="row"><span class="num">50:44</span><div class="ar" lang="ar">يَوْمَ تَشَقَّقُ ٱلْأَرْضُ عَنْهُمْ سِرَاعًا ذَٰلِكَ حَشْرٌ عَلَيْنَا يَسِيرٌ</div><div class="ru">В тот день, когда земля расколется, (изводя) их спешащих; это собирание для Нас легко!</div></div>
+<div class="row"><span class="num">50:45</span><div class="ar" lang="ar">نَّحْنُ أَعْلَمُ بِمَا يَقُولُونَ وَمَآ أَنتَ عَلَيْهِم بِجَبَّارٍ فَذَكِّرْ بِٱلْقُرْءَانِ مَن يَخَافُ وَعِيدِ</div><div class="ru">Мы лучше знаем, что они говорят, и ты - не принудитель для них. Напоминай же Кораном тому, кто боится Моей угрозы!</div></div>
+</main>
+<footer>ARCHIVUM HAERETICUM · Q1 · КОРАН · СУРА 50 · Каф · Каф<br><span class="red">◆</span> SIGILLUM VERITATIS · <span class="gold">DATUM 160.M3</span> · FIDELIS</footer>
+<script>
+function toggleAll(open){
+  document.querySelectorAll('details').forEach(d=>d.open=open);
+  document.querySelectorAll('.verse,.row').forEach(r=>{r.style.display=open?'grid':'none';});
+}
+function toggleOrig(){
+  document.querySelectorAll('.verse,.row').forEach(r=>{r.style.display='grid';});
+  document.querySelectorAll('.verse .ru,.row .ru').forEach(e=>e.style.display='none');
+  document.querySelectorAll('.verse .av,.verse .sk,.verse .he,.verse .grc,.verse .zh,.verse .sa,.verse .ar,.verse .dev,.verse .en,.verse .gr,.verse .egy,.verse .csl,.verse .fa,.verse .ak,.verse .bo,.verse .tib').forEach(e=>e.style.display='');
+}
+function toggleRu(){
+  document.querySelectorAll('.verse .ru,.row .ru').forEach(e=>e.style.display='');
+  document.querySelectorAll('.verse .av,.verse .sk,.verse .he,.verse .grc,.verse .zh,.verse .sa,.verse .ar,.verse .dev,.verse .en,.verse .gr,.verse .egy,.verse .csl,.verse .fa,.verse .ak,.verse .bo,.verse .tib').forEach(e=>e.style.display='none');
+}
+function resetView(){
+  document.querySelectorAll('.verse,.row').forEach(r=>{r.style.display='grid';});
+  document.querySelectorAll('.verse .av,.verse .sk,.verse .he,.verse .grc,.verse .zh,.verse .sa,.verse .ar,.verse .dev,.verse .en,.verse .gr,.verse .egy,.verse .csl,.verse .fa,.verse .ak,.verse .bo,.verse .tib,.verse .ru,.row .ru').forEach(e=>e.style.display='');
+}
+</script>
+</body></html>

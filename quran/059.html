@@ -1,0 +1,209 @@
+<!DOCTYPE html><html lang="ru"><head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Сура 59 · Аль-Хашр</title>
+<style>
+:root{--bg:#0a0a0c;--bg2:#0d0d12;--panel:#13131a;--line:#2a2a33;--red:#c8102e;--red-dark:#8a0a1f;--gold:#c9a227;--gold-bright:#e8b84a;--gold-dim:#8a7119;--ink:#c8102e;--ink-dim:#c9a227;--orig:#c8102e;--accent:#d49a3a;--grid:#1d1d24}
+*{box-sizing:border-box;margin:0;padding:0}body{background:var(--bg);color:var(--ink);font-family:Georgia,'Times New Roman',serif;line-height:1.55}
+a{color:var(--gold);text-decoration:none}a:hover{color:var(--gold-bright);text-decoration:underline}
+header.hos{background:linear-gradient(180deg,var(--red-dark) 0%,#1a0007 30%,var(--bg) 100%);border-bottom:2px solid var(--red);padding:0;position:relative}
+header.hos::before{content:"";position:absolute;left:0;top:0;bottom:0;width:6px;background:var(--red)}
+.hos-strip{display:flex;justify-content:space-between;align-items:center;padding:6px 14px;background:rgba(0,0,0,0.5);border-bottom:1px solid var(--red-dark);font-family:'Courier New',monospace;font-size:10px;letter-spacing:2px;color:var(--ink-dim);text-transform:uppercase}
+.hos-strip .l{color:var(--gold)} .hos-strip .r{color:var(--red);font-weight:bold}
+.hos-body{padding:18px 22px 14px}
+.hos-h1{font-size:1.5rem;letter-spacing:.12em;color:var(--orig);font-weight:normal;margin-bottom:4px;line-height:1.2}
+.hos-h1 .q{color:var(--red);font-family:'Courier New',monospace;font-size:.7em;vertical-align:super;margin-right:6px;padding:3px 7px;background:rgba(200,16,46,0.15);border:1px solid var(--red-dark);letter-spacing:1px}
+.hos-h1 .sig{font-size:.55em;color:var(--gold);font-family:'Courier New',monospace;letter-spacing:2px;margin-left:10px;padding:3px 8px;border:1px solid var(--gold-dim);vertical-align:middle}
+.hos-sub{color:var(--ink-dim);font-size:13px;font-style:italic}
+.stamps{padding:7px 16px;background:var(--bg2);border-bottom:1px solid var(--line);text-align:center;font-family:'Courier New',monospace}
+.stamps span{display:inline-block;border:1px solid var(--gold-dim);color:var(--gold);font-size:9px;letter-spacing:2px;padding:2px 7px;margin:0 2px;text-transform:uppercase}
+.stamps span.fid{color:var(--gold-bright);border-color:var(--gold);background:rgba(201,162,39,0.05)}
+.stamps span.dam{color:var(--red);border-color:var(--red-dark);background:rgba(200,16,46,0.05)}
+.stamps span.cre{color:var(--accent);border-color:var(--accent);background:rgba(212,154,58,0.05)}
+nav.main{padding:8px 18px;background:var(--panel);border-bottom:1px solid var(--line);font-size:12px;text-align:center}
+nav.main a{color:var(--gold);margin:0 6px;letter-spacing:1px;padding:3px 6px}
+.toolbar{display:flex;justify-content:center;gap:6px;flex-wrap:wrap;margin:14px 0 8px;padding:8px;background:var(--panel);border:1px solid var(--line);font-family:'Courier New',monospace}
+.toolbar button{background:transparent;border:1px solid var(--gold-dim);color:var(--gold);padding:5px 11px;font-size:10px;letter-spacing:1px;cursor:pointer;font-family:inherit;text-transform:uppercase}
+.toolbar button:hover{background:var(--gold);color:var(--bg)}
+.meta{color:var(--ink-dim);font-size:11px;font-style:italic;padding:6px 16px;text-align:center;font-family:'Courier New',monospace;letter-spacing:1px}
+.meta b{color:var(--gold);font-style:normal;font-family:Georgia,serif}
+.chap{background:linear-gradient(90deg,var(--red-dark),transparent);color:var(--gold-bright);font-size:.85rem;letter-spacing:.2em;padding:9px 16px;border-bottom:1px solid var(--red-dark);border-top:1px solid var(--red-dark);font-family:'Courier New',monospace;text-transform:uppercase;margin-top:12px}
+main{max-width:1300px;margin:0 auto;padding:0 12px 40px}
+.row{display:grid;grid-template-columns:3rem 1fr 1.1fr;border-bottom:1px solid var(--grid);align-items:start;transition:background 0.15s}
+.row:hover{background:#15110b}
+.num{grid-column:1;color:var(--gold);font-size:12px;padding:10px 4px;text-align:right;font-family:'Courier New',monospace;font-weight:bold;align-self:start}
+.orig,.ar,.gr,.he,.grc,.sk,.dev,.av,.zh,.sa{grid-column:2;padding:10px 12px;font-size:1rem;line-height:1.7;color:var(--orig);background:rgba(201,162,39,0.025);border-right:1px solid var(--gold-dim);border-left:3px solid var(--gold-dim);font-style:italic}
+.ar{direction:rtl;text-align:right;font-family:'Amiri','Scheherazade New','Traditional Arabic',serif;font-size:1.25rem;line-height:1.85}
+.gr,.grc{direction:ltr;font-family:'SBL Greek','Palatino Linotype',Georgia,serif}
+.he{direction:rtl;text-align:right;font-family:'SBL Hebrew','Times New Roman',serif;font-size:1.1rem}
+.sk,.dev{direction:ltr;font-family:'Noto Sans Devanagari','Sanskrit Text',serif;font-size:1.05rem}
+.zh{font-family:'Noto Serif CJK SC','SimSun',serif}
+.ru,.rus{grid-column:3;padding:10px 12px;font-size:.95rem;line-height:1.65;text-align:justify;color:var(--ink)}
+.bismillah{text-align:center;padding:1.5rem 1rem;font-family:'Amiri','Scheherazade New','Traditional Arabic',serif;font-size:1.8rem;color:var(--gold);direction:rtl;background:linear-gradient(180deg,#1a1410,#0a0a0c);border-bottom:1px solid var(--red-dark);letter-spacing:0;margin:14px 16px;border:1px solid var(--red-dark)}
+.bismillah .label{display:block;font-family:'Courier New',monospace;font-size:.7rem;letter-spacing:.25em;color:var(--ink-dim);text-transform:uppercase;direction:ltr;margin-bottom:8px}
+footer{padding:18px;text-align:center;color:var(--ink-dim);font-size:10px;border-top:1px solid var(--line);font-family:'Courier New',monospace;letter-spacing:2px;background:var(--bg2)}
+footer .red{color:var(--red)} footer .gold{color:var(--gold)}
+
+  .hos-sub{font-size:12px}
+  .hos-strip{font-size:9px;letter-spacing:1px;padding:4px 8px}
+  .stamps span{font-size:8px;letter-spacing:1px;padding:2px 5px;margin:0 1px}
+  
+  /* Stack verse vertically on mobile */
+  .verse,.row{grid-template-columns:1fr !important;display:block !important;padding:8px 10px;margin-bottom:8px;border:1px solid var(--line);background:var(--bg2)}
+  .verse .num,.row .num{display:inline-block;background:rgba(0,0,0,0.5);padding:2px 8px;margin-bottom:6px;width:auto;text-align:left;font-size:11px;border:1px solid var(--gold-dim);border-radius:2px}
+  
+  /* Original language - full width */
+  .verse .av,.verse .sk,.verse .he,.verse .grc,.verse .zh,.verse .sa,.verse .ar,.verse .dev,.verse .en,.verse .gr,.verse .egy,.verse .csl,.verse .fa,.verse .ak,.verse .bo,.verse .tib,
+  .row .av,.row .sk,.row .he,.row .grc,.row .zh,.row .sa,.row .ar,.row .dev,.row .en,.row .gr,.row .csl,.row .fa,.row .ak,.row .bo,.row .tib{font-size:1.05rem;line-height:1.7;padding:8px 10px;border-left:3px solid var(--gold-dim);margin:6px 0;background:rgba(201,162,39,0.04);font-style:italic;width:auto !important;display:block}
+  
+  /* Russian - full width */
+  .verse .ru,.row .ru{font-size:.95rem;line-height:1.6;padding:8px 10px;border-left:3px solid var(--red);background:rgba(200,16,46,0.04);margin:6px 0;width:auto !important;display:block;grid-column:1}
+  
+  /* Toolbar */
+  .toolbar{display:flex;flex-wrap:wrap;gap:4px;padding:6px;margin:8px 0}
+  .toolbar button{font-size:10px;padding:5px 8px;letter-spacing:0;flex:1 1 30%;min-width:60px}
+  
+  /* Container */
+  main{padding:0 8px}
+  nav.main{padding:6px 10px;font-size:11px}
+  nav.main a{margin:0 3px;padding:2px 4px}
+  
+  /* Book cards */
+  .book-grid{grid-template-columns:1fr;gap:6px}
+  .book-card{font-size:13px;padding:8px 10px;line-height:1.4}
+  
+  /* Note */
+  .note{font-size:14px;line-height:1.7;padding:14px 18px;margin:14px;color:var(--red);background:rgba(201,162,39,0.04);border:1px solid var(--gold-dim);border-left:4px solid var(--gold)}
+
+  
+  /* Footer */
+  footer{font-size:11px;padding:8px 10px}
+}
+  .row{grid-template-columns:2rem 1fr 1.1fr}
+  .num{font-size:.7rem;padding:.5rem .3rem}
+  .ar{font-size:1.1rem;line-height:1.7;padding:.5rem .4rem}
+  .ru{font-size:.85rem;line-height:1.4;padding:.5rem .4rem}
+}
+
+/* Q20 EGYPTIAN additions */
+.verse .egy{grid-column:1;font-family:'Papyrus','Segoe UI Historic',serif;font-size:1.05rem;line-height:1.8;direction:ltr;text-align:left;color:#e8b84a;background:rgba(232,184,74,0.04);border-right:3px solid var(--gold-dim);padding:12px 14px;font-style:italic}
+.verse .ru{grid-column:2;font-size:0.98rem;line-height:1.75;color:var(--ink);background:rgba(201,162,39,0.025);border-left:1px solid var(--gold-dim);padding:12px 14px}
+.verse .transl-note{grid-column:1/-1;padding:6px 14px;font-size:0.78rem;color:var(--ink-dim);font-style:italic;text-align:right;background:rgba(0,0,0,0.15);border-top:1px solid var(--line)}
+.verse .num,.verse .transl-note{color:var(--gold-bright)}
+
+.verse .av,.verse .sk,.verse .he,.verse .grc,.verse .zh,.verse .sa,.verse .ar,.verse .dev,.verse .en,.verse .gr,.verse .csl,.verse .fa,.verse .ak,.verse .bo,.verse .tib{font-family:'Times New Roman',Georgia,serif;font-size:1.05rem;line-height:1.7;color:var(--orig);background:rgba(201,162,39,0.04);border-right:3px solid var(--gold-dim);padding:12px 14px;direction:ltr;text-align:left;font-style:italic}
+.row .av,.row .sk,.row .he,.row .grc,.row .zh,.row .sa,.row .ar,.row .dev,.row .en,.row .gr,.row .csl,.row .fa,.row .ak,.row .bo,.row .tib{font-family:'Times New Roman',Georgia,serif;font-size:1.05rem;line-height:1.7;color:var(--orig);background:rgba(201,162,39,0.04);padding:10px 12px;direction:ltr;text-align:left}
+.verse{display:grid;grid-template-columns:3.2rem 1fr 1.1fr;border-bottom:1px solid var(--grid);align-items:start;transition:background 0.15s}
+.row{display:grid;grid-template-columns:3.2rem 1fr 1.1fr 1fr;border-bottom:1px solid var(--grid);align-items:start;transition:background 0.15s}
+.num{font-family:'Courier New',monospace;font-size:11px;color:var(--gold);text-align:center;padding:12px 4px;background:rgba(0,0,0,0.3);border-right:1px solid var(--line);font-weight:bold;align-self:start}
+.ru{font-size:.92rem;line-height:1.6;color:var(--ink);padding:10px 12px;background:rgba(255,255,255,0.01);border-left:1px solid var(--line);align-self:start;grid-column:3}
+
+/* ARCHIVUM HAERETICUM — Original script fonts */
+
+
+
+
+
+
+
+@font-face{font-family:'Noto Sans Cuneiform';font-style:normal;font-weight:400;font-display:block;src:url('/archivum-haereticum/fonts/noto-cuneiform.ttf') format('truetype')}
+@font-face{font-family:'Noto Sans Egyptian Hieroglyphs';font-style:normal;font-weight:400;font-display:block;src:url('/archivum-haereticum/fonts/noto-hieroglyphs.ttf') format('truetype')}
+@font-face{font-family:'Noto Sans Coptic';font-style:normal;font-weight:400;font-display:block;src:url('/archivum-haereticum/fonts/noto-coptic.ttf') format('truetype')}
+@font-face{font-family:'Noto Serif JP';font-style:normal;font-weight:400;font-display:swap;src:local('Noto Serif JP'),local('NotoSerifJP-Regular')}
+@font-face{font-family:'Noto Sans Devanagari';font-style:normal;font-weight:400;font-display:swap;src:local('Noto Sans Devanagari'),local('NotoSansDevanagari-Regular')}
+@font-face{font-family:'Noto Sans Tibetan';font-style:normal;font-weight:400;font-display:swap;src:local('Noto Sans Tibetan'),local('NotoSansTibetan-Regular')}
+@font-face{font-family:'SBL Greek';font-style:normal;font-weight:400;font-display:swap;src:local('SBL Greek'),local('SBLGreek')}@media(max-width:760px){
+.verse,.row{grid-template-columns:1fr !important;display:block !important;padding:12px 14px;margin:8px 0;border:1px solid var(--line);background:var(--bg2);width:100% !important;max-width:100% !important;overflow:hidden;box-sizing:border-box}
+.verse .num,.row .num{display:inline-block;background:rgba(0,0,0,0.5);padding:3px 10px;margin-bottom:8px;width:auto;text-align:left;font-size:11px;border:1px solid var(--gold-dim);border-radius:2px;font-family:'Courier New',monospace;min-width:0 !important}
+.verse .on,.verse .ru,.verse .csl,.verse .sk,.verse .he,.verse .grc,.verse .zh,.verse .ar,.verse .fa,.verse .bo,.verse .ak,.verse .cop,.verse .pali,.verse .sk-deva,.verse .eg-hiero,.verse .ak-cun,.verse .cop-uni,.verse .ja,.verse .pali-deva,.verse .qu,.verse .av,.verse .egy,.verse .csl,.verse .gr,.verse .on-r,
+.row .on,.row .ru,.row .csl,.row .sk,.row .he,.row .grc,.row .zh,.row .ar,.row .fa,.row .bo,.row .ak,.row .cop,.row .pali,.row .sk-deva,.row .eg-hiero,.row .ak-cun,.row .cop-uni,.row .ja,.row .pali-deva,.row .qu,.row .av,.row .egy,.row .csl,.row .gr{font-size:1.05rem !important;line-height:1.65 !important;padding:10px 12px !important;border-left:3px solid var(--gold-dim);margin:6px 0;background:rgba(201,162,39,0.04);width:auto !important;display:block !important;min-width:0 !important;word-wrap:break-word;overflow-wrap:break-word;max-width:100% !important;box-sizing:border-box}
+.verse .ru,.row .ru{border-left:3px solid var(--red);background:rgba(200,16,46,0.04)}
+.hos-h1{font-size:1.2rem;letter-spacing:.05em;line-height:1.3}
+.hos-sub{font-size:12px}
+.hos-strip{font-size:9px;letter-spacing:1px;padding:4px 8px}
+.stamps span{font-size:8px;letter-spacing:1px;padding:2px 5px;margin:0 1px}
+main{padding:0 8px;width:100% !important;max-width:100% !important;box-sizing:border-box}
+nav.main{padding:6px 10px;font-size:11px}
+nav.main a{margin:0 3px;padding:2px 4px}
+.toolbar button{font-size:10px;padding:5px 8px;letter-spacing:0;flex:1 1 30%;min-width:60px}
+.book-grid{grid-template-columns:1fr;gap:6px}
+.book-card{font-size:13px;padding:8px 10px;line-height:1.4}
+.note{font-size:14px;line-height:1.7;padding:14px 18px;margin:14px;color:var(--ink);background:rgba(201,162,39,0.04);border:1px solid var(--gold-dim);border-left:4px solid var(--gold)}
+footer{font-size:11px;padding:8px 10px}
+}
+</style>
+</head><body>
+<header class="hos">
+<div class="hos-strip"><span class="l">ARCHIVUM HAERETICUM — CORPUS DIVINUS</span><span class="r">Q1 — QURAN</span></div>
+<div class="hos-body">
+<h1 class="hos-h1"><span class="q">Q1</span>СУРА 59 · АЛЬ-ХАШР</h1>
+<div class="hos-sub">Сбор · 24 аятов · Tanzil Uthmani (араб.) + Крачковский И.Ю. 1963 (рус.) · Мекка/Медина</div>
+</div>
+</header>
+<div class="stamps">
+<span class="fid">◆ FIDELIS</span>
+<span class="cre">✚ MYSTICA</span>
+<span class="dam">✠ ISLAMICA</span>
+</div>
+<nav class="main">
+<a href="../index.html">◀ CORPUS DIVINUS</a>
+<a href="index.html">○ 114 СУР</a>
+<a href="058.html">◀ 58</a>
+<a href="060.html">60 ▶</a>
+</nav>
+<main>
+<div class="toolbar">
+<button onclick="toggleAll(true)">РАЗВЕРНУТЬ</button>
+<button onclick="toggleAll(false)">СВЕРНУТЬ</button>
+<button onclick="toggleOrig()">☀ ОРИГИНАЛ</button>
+<button onclick="toggleRu()">☾ ПЕРЕВОД</button>
+<button onclick="resetView()">◉ ОБА</button>
+</div>
+<div class="meta">ОРИГИНАЛ: <b>Tanzil Uthmani (Public Domain)</b> · ПЕРЕВОД: <b>Крачковский И.Ю. (1963; PD с 2022)</b> · ◆ FIDELIS</div>
+<div class="bismillah"><span class="label">◆ БИСМИЛЛЯh · ١</span>بِسْمِ ٱللَّهِ ٱلرَّحْمَٰنِ ٱلرَّحِيمِ</div>
+<div class="chap">СУРА 59 · АЛЬ-ХАШР · 24 АЯТОВ</div>
+<div class="row"><span class="num">59:2</span><div class="ar" lang="ar">هُوَ ٱلَّذِىٓ أَخْرَجَ ٱلَّذِينَ كَفَرُوا۟ مِنْ أَهْلِ ٱلْكِتَٰبِ مِن دِيَٰرِهِمْ لِأَوَّلِ ٱلْحَشْرِ مَا ظَنَنتُمْ أَن يَخْرُجُوا۟ وَظَنُّوٓا۟ أَنَّهُم مَّانِعَتُهُمْ حُصُونُهُم مِّنَ ٱللَّهِ فَأَتَىٰهُمُ ٱللَّهُ مِنْ حَيْثُ لَمْ يَحْتَسِبُوا۟ وَقَذَفَ فِى قُلُوبِهِمُ ٱلرُّعْبَ يُخْرِبُونَ بُيُوتَهُم بِأَيْدِيهِمْ وَأَيْدِى ٱلْمُؤْمِنِينَ فَٱعْتَبِرُوا۟ يَٰٓأُو۟لِى ٱلْأَبْصَٰرِ</div><div class="ru">Он - тот, кто вывел тех из обитателей писания, кто не веровал, из их обиталищ при первом собрании. Вы не думали, что они уйдут, и они не думали, что их защитят их крепости от Аллаха. Аллах пришел к ним оттуда, откуда они не рассчитывали, и вверг в их сердца страх. Они разрушают свои дома своими руками и руками верующих. Назидайтесь, обладающие зрением!</div></div>
+<div class="row"><span class="num">59:3</span><div class="ar" lang="ar">وَلَوْلَآ أَن كَتَبَ ٱللَّهُ عَلَيْهِمُ ٱلْجَلَآءَ لَعَذَّبَهُمْ فِى ٱلدُّنْيَا وَلَهُمْ فِى ٱلْـَٔاخِرَةِ عَذَابُ ٱلنَّارِ</div><div class="ru">Если бы Аллах не предписал им выселения, то Он наказал бы их в ближайшем мире, а в последнем им - наказание огня.</div></div>
+<div class="row"><span class="num">59:4</span><div class="ar" lang="ar">ذَٰلِكَ بِأَنَّهُمْ شَآقُّوا۟ ٱللَّهَ وَرَسُولَهُۥ وَمَن يُشَآقِّ ٱللَّهَ فَإِنَّ ٱللَّهَ شَدِيدُ ٱلْعِقَابِ</div><div class="ru">Это - за то, что они откололись от Аллаха и Его посланника, а кто откалывается от Аллаха... , то ведь Аллах силен в наказании!</div></div>
+<div class="row"><span class="num">59:5</span><div class="ar" lang="ar">مَا قَطَعْتُم مِّن لِّينَةٍ أَوْ تَرَكْتُمُوهَا قَآئِمَةً عَلَىٰٓ أُصُولِهَا فَبِإِذْنِ ٱللَّهِ وَلِيُخْزِىَ ٱلْفَٰسِقِينَ</div><div class="ru">Что вы ссекли из пальм или оставили стоящим на своих корнях, - то по соизволению Аллаха и чтобы Он посрамил нечестивых.</div></div>
+<div class="row"><span class="num">59:6</span><div class="ar" lang="ar">وَمَآ أَفَآءَ ٱللَّهُ عَلَىٰ رَسُولِهِۦ مِنْهُمْ فَمَآ أَوْجَفْتُمْ عَلَيْهِ مِنْ خَيْلٍ وَلَا رِكَابٍ وَلَٰكِنَّ ٱللَّهَ يُسَلِّطُ رُسُلَهُۥ عَلَىٰ مَن يَشَآءُ وَٱللَّهُ عَلَىٰ كُلِّ شَىْءٍ قَدِيرٌ</div><div class="ru">И что дал Аллах в добычу о них Своему посланнику, для этого не приходилось вам гнать ни коней, ни верблюдов, но Аллах дает власть Своим посланникам, над кем хочет. Аллах мощен над каждой вещью!</div></div>
+<div class="row"><span class="num">59:7</span><div class="ar" lang="ar">مَّآ أَفَآءَ ٱللَّهُ عَلَىٰ رَسُولِهِۦ مِنْ أَهْلِ ٱلْقُرَىٰ فَلِلَّهِ وَلِلرَّسُولِ وَلِذِى ٱلْقُرْبَىٰ وَٱلْيَتَٰمَىٰ وَٱلْمَسَٰكِينِ وَٱبْنِ ٱلسَّبِيلِ كَىْ لَا يَكُونَ دُولَةًۢ بَيْنَ ٱلْأَغْنِيَآءِ مِنكُمْ وَمَآ ءَاتَىٰكُمُ ٱلرَّسُولُ فَخُذُوهُ وَمَا نَهَىٰكُمْ عَنْهُ فَٱنتَهُوا۟ وَٱتَّقُوا۟ ٱللَّهَ إِنَّ ٱللَّهَ شَدِيدُ ٱلْعِقَابِ</div><div class="ru">Что дал Аллах в добычу посланнику Своему от обитателей селений, - то принадлежит Аллаху, и посланнику, и близким, и сиротам, и бедным, и путнику, чтобы не оказалось это распределением между богатыми у вас. И что даровал вам посланник, то берите, а что он вам запретил, от того удержитесь. И бойтесь Аллаха, ведь Аллах силен наказанием!</div></div>
+<div class="row"><span class="num">59:8</span><div class="ar" lang="ar">لِلْفُقَرَآءِ ٱلْمُهَٰجِرِينَ ٱلَّذِينَ أُخْرِجُوا۟ مِن دِيَٰرِهِمْ وَأَمْوَٰلِهِمْ يَبْتَغُونَ فَضْلًا مِّنَ ٱللَّهِ وَرِضْوَٰنًا وَيَنصُرُونَ ٱللَّهَ وَرَسُولَهُۥٓ أُو۟لَٰٓئِكَ هُمُ ٱلصَّٰدِقُونَ</div><div class="ru">...беднякам, выселившимся, которые изгнаны из своих земель и имущества в поисках щедрости от Аллаха и расположения для помощи Аллаху и Его посланнику. Эти - правдивые!</div></div>
+<div class="row"><span class="num">59:9</span><div class="ar" lang="ar">وَٱلَّذِينَ تَبَوَّءُو ٱلدَّارَ وَٱلْإِيمَٰنَ مِن قَبْلِهِمْ يُحِبُّونَ مَنْ هَاجَرَ إِلَيْهِمْ وَلَا يَجِدُونَ فِى صُدُورِهِمْ حَاجَةً مِّمَّآ أُوتُوا۟ وَيُؤْثِرُونَ عَلَىٰٓ أَنفُسِهِمْ وَلَوْ كَانَ بِهِمْ خَصَاصَةٌ وَمَن يُوقَ شُحَّ نَفْسِهِۦ فَأُو۟لَٰٓئِكَ هُمُ ٱلْمُفْلِحُونَ</div><div class="ru">Те, которые утвердились в своем жилище и вере до них, любят выселившихся к ним и не находят в груди своей никакой нужды к тому, что им даровано. Они дают предпочтение пред собой, хотя бы и было у них стеснение. Кто обезопашен от скупости самого себя, - те счастливы!</div></div>
+<div class="row"><span class="num">59:10</span><div class="ar" lang="ar">وَٱلَّذِينَ جَآءُو مِنۢ بَعْدِهِمْ يَقُولُونَ رَبَّنَا ٱغْفِرْ لَنَا وَلِإِخْوَٰنِنَا ٱلَّذِينَ سَبَقُونَا بِٱلْإِيمَٰنِ وَلَا تَجْعَلْ فِى قُلُوبِنَا غِلًّا لِّلَّذِينَ ءَامَنُوا۟ رَبَّنَآ إِنَّكَ رَءُوفٌ رَّحِيمٌ</div><div class="ru">Те, которые пришли после них, говорят: &quot;Господи, прости нам и нашим братьям, которые опередили нас в вере! Не утверждай в сердцах наших злобы к тем, которые уверовали. Господи наш! Ведь Ты - кроткий, милостивый!&quot;</div></div>
+<div class="row"><span class="num">59:11</span><div class="ar" lang="ar">أَلَمْ تَرَ إِلَى ٱلَّذِينَ نَافَقُوا۟ يَقُولُونَ لِإِخْوَٰنِهِمُ ٱلَّذِينَ كَفَرُوا۟ مِنْ أَهْلِ ٱلْكِتَٰبِ لَئِنْ أُخْرِجْتُمْ لَنَخْرُجَنَّ مَعَكُمْ وَلَا نُطِيعُ فِيكُمْ أَحَدًا أَبَدًا وَإِن قُوتِلْتُمْ لَنَنصُرَنَّكُمْ وَٱللَّهُ يَشْهَدُ إِنَّهُمْ لَكَٰذِبُونَ</div><div class="ru">Разве ты не видел тех, которые лицемерят, как они говорят своим братьям из обладателей писания, которые не уверовали: &quot;Если вы будете изгнаны, то мы выйдем вместе с вами и не подчинимся из-за вас никогда никому. Если с вами будут сражаться, мы непременно поможем вам&quot;. А Аллах свидетельствует, что они лжецы!</div></div>
+<div class="row"><span class="num">59:12</span><div class="ar" lang="ar">لَئِنْ أُخْرِجُوا۟ لَا يَخْرُجُونَ مَعَهُمْ وَلَئِن قُوتِلُوا۟ لَا يَنصُرُونَهُمْ وَلَئِن نَّصَرُوهُمْ لَيُوَلُّنَّ ٱلْأَدْبَٰرَ ثُمَّ لَا يُنصَرُونَ</div><div class="ru">Если они будут изгнаны, то они не выйдут вместе с ними; если с ними будут сражаться, то они им не помогут, а если они и помогут, то обратят тыл, и не будет им помощи.</div></div>
+<div class="row"><span class="num">59:13</span><div class="ar" lang="ar">لَأَنتُمْ أَشَدُّ رَهْبَةً فِى صُدُورِهِم مِّنَ ٱللَّهِ ذَٰلِكَ بِأَنَّهُمْ قَوْمٌ لَّا يَفْقَهُونَ</div><div class="ru">Ведь вы страшнее в их душах, чем Аллах. Это - за то, что они - народ, который не разумеет.</div></div>
+<div class="row"><span class="num">59:14</span><div class="ar" lang="ar">لَا يُقَٰتِلُونَكُمْ جَمِيعًا إِلَّا فِى قُرًى مُّحَصَّنَةٍ أَوْ مِن وَرَآءِ جُدُرٍۭ بَأْسُهُم بَيْنَهُمْ شَدِيدٌ تَحْسَبُهُمْ جَمِيعًا وَقُلُوبُهُمْ شَتَّىٰ ذَٰلِكَ بِأَنَّهُمْ قَوْمٌ لَّا يَعْقِلُونَ</div><div class="ru">Они не будут сражаться с вами все, а только в укрепленных селениях или из-за стен. Ярость их между ними сильна: ты думаешь, что они вместе, а сердца их врозь. Это - за то, что они - народ, который не понимает.</div></div>
+<div class="row"><span class="num">59:15</span><div class="ar" lang="ar">كَمَثَلِ ٱلَّذِينَ مِن قَبْلِهِمْ قَرِيبًا ذَاقُوا۟ وَبَالَ أَمْرِهِمْ وَلَهُمْ عَذَابٌ أَلِيمٌ</div><div class="ru">Наподобие тех, что были до них недавно: они вкусили зловредность своих дел, и им - мучительное наказание.</div></div>
+<div class="row"><span class="num">59:16</span><div class="ar" lang="ar">كَمَثَلِ ٱلشَّيْطَٰنِ إِذْ قَالَ لِلْإِنسَٰنِ ٱكْفُرْ فَلَمَّا كَفَرَ قَالَ إِنِّى بَرِىٓءٌ مِّنكَ إِنِّىٓ أَخَافُ ٱللَّهَ رَبَّ ٱلْعَٰلَمِينَ</div><div class="ru">Наподобие сатаны: вот он сказал человеку: &quot;Будь неверным!&quot; А когда тот стал неверным, он сказал: &quot;Я отрекаюсь от тебя. Я боюсь Аллаха, Господа миров!&quot;</div></div>
+<div class="row"><span class="num">59:17</span><div class="ar" lang="ar">فَكَانَ عَٰقِبَتَهُمَآ أَنَّهُمَا فِى ٱلنَّارِ خَٰلِدَيْنِ فِيهَا وَذَٰلِكَ جَزَٰٓؤُا۟ ٱلظَّٰلِمِينَ</div><div class="ru">И завершением для них обоих было то, что они - в огне, вечно пребывая там. Таково воздаяние неправедным!</div></div>
+<div class="row"><span class="num">59:18</span><div class="ar" lang="ar">يَٰٓأَيُّهَا ٱلَّذِينَ ءَامَنُوا۟ ٱتَّقُوا۟ ٱللَّهَ وَلْتَنظُرْ نَفْسٌ مَّا قَدَّمَتْ لِغَدٍ وَٱتَّقُوا۟ ٱللَّهَ إِنَّ ٱللَّهَ خَبِيرٌۢ بِمَا تَعْمَلُونَ</div><div class="ru">О вы, которые уверовали! Бойтесь Аллаха, и пусть душа посмотрит, что она уготовала раньше на завтра. Бойтесь Аллаха, ведь Аллах сведущ в том, что вы делаете!</div></div>
+<div class="row"><span class="num">59:19</span><div class="ar" lang="ar">وَلَا تَكُونُوا۟ كَٱلَّذِينَ نَسُوا۟ ٱللَّهَ فَأَنسَىٰهُمْ أَنفُسَهُمْ أُو۟لَٰٓئِكَ هُمُ ٱلْفَٰسِقُونَ</div><div class="ru">Не будьте, как те, которые забыли Аллаха, и Аллах заставил из забыть самих себя. Они - распутники.</div></div>
+<div class="row"><span class="num">59:20</span><div class="ar" lang="ar">لَا يَسْتَوِىٓ أَصْحَٰبُ ٱلنَّارِ وَأَصْحَٰبُ ٱلْجَنَّةِ أَصْحَٰبُ ٱلْجَنَّةِ هُمُ ٱلْفَآئِزُونَ</div><div class="ru">Не равны обитатели огня и обитатели рая. Обитатели рая, они - достигшие успеха.</div></div>
+<div class="row"><span class="num">59:21</span><div class="ar" lang="ar">لَوْ أَنزَلْنَا هَٰذَا ٱلْقُرْءَانَ عَلَىٰ جَبَلٍ لَّرَأَيْتَهُۥ خَٰشِعًا مُّتَصَدِّعًا مِّنْ خَشْيَةِ ٱللَّهِ وَتِلْكَ ٱلْأَمْثَٰلُ نَضْرِبُهَا لِلنَّاسِ لَعَلَّهُمْ يَتَفَكَّرُونَ</div><div class="ru">Если бы Мы низвели этот Коран на гору, ты бы увидел ее смиренно расколовшейся от страха пред Аллахом. Таковы притчи, которые Мы предлагаем людям, - может быть, они одумаются!</div></div>
+<div class="row"><span class="num">59:22</span><div class="ar" lang="ar">هُوَ ٱللَّهُ ٱلَّذِى لَآ إِلَٰهَ إِلَّا هُوَ عَٰلِمُ ٱلْغَيْبِ وَٱلشَّهَٰدَةِ هُوَ ٱلرَّحْمَٰنُ ٱلرَّحِيمُ</div><div class="ru">Он - Аллах, нет божества, кроме Него, знающий скрытое и созерцаемое. Он - милостивый, милосердный!</div></div>
+<div class="row"><span class="num">59:23</span><div class="ar" lang="ar">هُوَ ٱللَّهُ ٱلَّذِى لَآ إِلَٰهَ إِلَّا هُوَ ٱلْمَلِكُ ٱلْقُدُّوسُ ٱلسَّلَٰمُ ٱلْمُؤْمِنُ ٱلْمُهَيْمِنُ ٱلْعَزِيزُ ٱلْجَبَّارُ ٱلْمُتَكَبِّرُ سُبْحَٰنَ ٱللَّهِ عَمَّا يُشْرِكُونَ</div><div class="ru">Он - Аллах, нет божества, кроме Него, царь, святой, мирный, верный, охранитель, великий, могучий, превознесенный; хвала Аллаху, превыше Он того, что они придают Ему в соучастники!</div></div>
+<div class="row"><span class="num">59:24</span><div class="ar" lang="ar">هُوَ ٱللَّهُ ٱلْخَٰلِقُ ٱلْبَارِئُ ٱلْمُصَوِّرُ لَهُ ٱلْأَسْمَآءُ ٱلْحُسْنَىٰ يُسَبِّحُ لَهُۥ مَا فِى ٱلسَّمَٰوَٰتِ وَٱلْأَرْضِ وَهُوَ ٱلْعَزِيزُ ٱلْحَكِيمُ</div><div class="ru">Он - Аллах, творец, создатель, образователь. У Него самые прекрасные имена. Хвалит Его то, что в небесах и на земле. Он - великий, мудрый!</div></div>
+</main>
+<footer>ARCHIVUM HAERETICUM · Q1 · КОРАН · СУРА 59 · Аль-Хашр · Сбор<br><span class="red">◆</span> SIGILLUM VERITATIS · <span class="gold">DATUM 160.M3</span> · FIDELIS</footer>
+<script>
+function toggleAll(open){
+  document.querySelectorAll('details').forEach(d=>d.open=open);
+  document.querySelectorAll('.verse,.row').forEach(r=>{r.style.display=open?'grid':'none';});
+}
+function toggleOrig(){
+  document.querySelectorAll('.verse,.row').forEach(r=>{r.style.display='grid';});
+  document.querySelectorAll('.verse .ru,.row .ru').forEach(e=>e.style.display='none');
+  document.querySelectorAll('.verse .av,.verse .sk,.verse .he,.verse .grc,.verse .zh,.verse .sa,.verse .ar,.verse .dev,.verse .en,.verse .gr,.verse .egy,.verse .csl,.verse .fa,.verse .ak,.verse .bo,.verse .tib').forEach(e=>e.style.display='');
+}
+function toggleRu(){
+  document.querySelectorAll('.verse .ru,.row .ru').forEach(e=>e.style.display='');
+  document.querySelectorAll('.verse .av,.verse .sk,.verse .he,.verse .grc,.verse .zh,.verse .sa,.verse .ar,.verse .dev,.verse .en,.verse .gr,.verse .egy,.verse .csl,.verse .fa,.verse .ak,.verse .bo,.verse .tib').forEach(e=>e.style.display='none');
+}
+function resetView(){
+  document.querySelectorAll('.verse,.row').forEach(r=>{r.style.display='grid';});
+  document.querySelectorAll('.verse .av,.verse .sk,.verse .he,.verse .grc,.verse .zh,.verse .sa,.verse .ar,.verse .dev,.verse .en,.verse .gr,.verse .egy,.verse .csl,.verse .fa,.verse .ak,.verse .bo,.verse .tib,.verse .ru,.row .ru').forEach(e=>e.style.display='');
+}
+</script>
+</body></html>

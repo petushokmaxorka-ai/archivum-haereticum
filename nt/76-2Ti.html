@@ -1,0 +1,275 @@
+<!DOCTYPE html><html lang="ru"><head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>2-е послание к Тимофею</title>
+<style>
+:root{--bg:#0a0a0c;--bg2:#0d0d12;--panel:#13131a;--line:#2a2a33;--red:#c8102e;--red-dark:#8a0a1f;--gold:#c9a227;--gold-bright:#e8b84a;--gold-dim:#8a7119;--ink:#c8102e;--ink-dim:#c9a227;--orig:#c8102e;--accent:#d49a3a;--grid:#1d1d24}
+*{box-sizing:border-box;margin:0;padding:0}body{background:var(--bg);color:var(--ink);font-family:Georgia,'Times New Roman',serif;line-height:1.55}
+a{color:var(--gold);text-decoration:none}a:hover{color:var(--gold-bright);text-decoration:underline}
+header.hos{background:linear-gradient(180deg,var(--red-dark) 0%,#1a0007 30%,var(--bg) 100%);border-bottom:2px solid var(--red);padding:0;position:relative}
+header.hos::before{content:"";position:absolute;left:0;top:0;bottom:0;width:6px;background:var(--red)}
+.hos-strip{display:flex;justify-content:space-between;align-items:center;padding:6px 14px;background:rgba(0,0,0,0.5);border-bottom:1px solid var(--red-dark);font-family:'Courier New',monospace;font-size:10px;letter-spacing:2px;color:var(--ink-dim);text-transform:uppercase}
+.hos-strip .l{color:var(--gold)} .hos-strip .r{color:var(--red);font-weight:bold}
+.hos-body{padding:18px 22px 14px}
+.hos-h1{font-size:1.5rem;letter-spacing:.12em;color:var(--orig);font-weight:normal;margin-bottom:4px;line-height:1.2}
+.hos-h1 .q{color:var(--red);font-family:'Courier New',monospace;font-size:.7em;vertical-align:super;margin-right:6px;padding:3px 7px;background:rgba(200,16,46,0.15);border:1px solid var(--red-dark);letter-spacing:1px}
+.hos-h1 .sig{font-size:.55em;color:var(--gold);font-family:'Courier New',monospace;letter-spacing:2px;margin-left:10px;padding:3px 8px;border:1px solid var(--gold-dim);vertical-align:middle}
+.hos-sub{color:var(--ink-dim);font-size:13px;font-style:italic}
+.stamps{padding:7px 16px;background:var(--bg2);border-bottom:1px solid var(--line);text-align:center;font-family:'Courier New',monospace}
+.stamps span{display:inline-block;border:1px solid var(--gold-dim);color:var(--gold);font-size:9px;letter-spacing:2px;padding:2px 7px;margin:0 2px;text-transform:uppercase}
+.stamps span.fid{color:var(--gold-bright);border-color:var(--gold);background:rgba(201,162,39,0.05)}
+.stamps span.dam{color:var(--red);border-color:var(--red-dark);background:rgba(200,16,46,0.05)}
+.stamps span.cre{color:var(--accent);border-color:var(--accent);background:rgba(212,154,58,0.05)}
+nav.main{padding:8px 18px;background:var(--panel);border-bottom:1px solid var(--line);font-size:12px;text-align:center}
+nav.main a{color:var(--gold);margin:0 6px;letter-spacing:1px;padding:3px 6px}
+.toolbar{display:flex;justify-content:center;gap:6px;flex-wrap:wrap;margin:14px 0 8px;padding:8px;background:var(--panel);border:1px solid var(--line);font-family:'Courier New',monospace}
+.toolbar button{background:transparent;border:1px solid var(--gold-dim);color:var(--gold);padding:5px 11px;font-size:10px;letter-spacing:1px;cursor:pointer;font-family:inherit;text-transform:uppercase}
+.toolbar button:hover{background:var(--gold);color:var(--bg)}
+.meta{color:var(--ink-dim);font-size:11px;font-style:italic;padding:6px 16px;text-align:center;font-family:'Courier New',monospace;letter-spacing:1px}
+.meta b{color:var(--gold);font-style:normal;font-family:Georgia,serif}
+.chap{background:linear-gradient(90deg,var(--red-dark),transparent);color:var(--gold-bright);font-size:.85rem;letter-spacing:.2em;padding:9px 16px;border-bottom:1px solid var(--red-dark);border-top:1px solid var(--red-dark);font-family:'Courier New',monospace;text-transform:uppercase;margin-top:12px}
+main{max-width:1300px;margin:0 auto;padding:0 12px 40px}
+.row{display:grid;grid-template-columns:3rem 1fr 1.1fr;border-bottom:1px solid var(--grid);align-items:start;transition:background 0.15s}
+.row:hover{background:#15110b}
+.num{grid-column:1;color:var(--gold);font-size:12px;padding:10px 4px;text-align:right;font-family:'Courier New',monospace;font-weight:bold;align-self:start}
+.orig,.ar,.gr,.he,.grc,.sk,.dev,.av,.zh,.sa{grid-column:2;padding:10px 12px;font-size:1rem;line-height:1.7;color:var(--orig);background:rgba(201,162,39,0.025);border-right:1px solid var(--gold-dim);border-left:3px solid var(--gold-dim);font-style:italic}
+.ar{direction:rtl;text-align:right;font-family:'Amiri','Scheherazade New','Traditional Arabic',serif;font-size:1.25rem;line-height:1.85}
+.gr,.grc{direction:ltr;font-family:'SBL Greek','Palatino Linotype',Georgia,serif}
+.he{direction:rtl;text-align:right;font-family:'SBL Hebrew','Times New Roman',serif;font-size:1.1rem}
+.sk,.dev{direction:ltr;font-family:'Noto Sans Devanagari','Sanskrit Text',serif;font-size:1.05rem}
+.zh{font-family:'Noto Serif CJK SC','SimSun',serif}
+.ru,.rus{grid-column:3;padding:10px 12px;font-size:.95rem;line-height:1.65;text-align:justify;color:var(--ink)}
+.bismillah{text-align:center;padding:1.5rem 1rem;font-family:'Amiri','Scheherazade New','Traditional Arabic',serif;font-size:1.8rem;color:var(--gold);direction:rtl;background:linear-gradient(180deg,#1a1410,#0a0a0c);border-bottom:1px solid var(--red-dark);letter-spacing:0;margin:14px 16px;border:1px solid var(--red-dark)}
+.bismillah .label{display:block;font-family:'Courier New',monospace;font-size:.7rem;letter-spacing:.25em;color:var(--ink-dim);text-transform:uppercase;direction:ltr;margin-bottom:8px}
+footer{padding:18px;text-align:center;color:var(--ink-dim);font-size:10px;border-top:1px solid var(--line);font-family:'Courier New',monospace;letter-spacing:2px;background:var(--bg2)}
+footer .red{color:var(--red)} footer .gold{color:var(--gold)}
+
+  .hos-sub{font-size:12px}
+  .hos-strip{font-size:9px;letter-spacing:1px;padding:4px 8px}
+  .stamps span{font-size:8px;letter-spacing:1px;padding:2px 5px;margin:0 1px}
+  
+  /* Stack verse vertically on mobile */
+  .verse,.row{grid-template-columns:1fr !important;display:block !important;padding:8px 10px;margin-bottom:8px;border:1px solid var(--line);background:var(--bg2)}
+  .verse .num,.row .num{display:inline-block;background:rgba(0,0,0,0.5);padding:2px 8px;margin-bottom:6px;width:auto;text-align:left;font-size:11px;border:1px solid var(--gold-dim);border-radius:2px}
+  
+  /* Original language - full width */
+  .verse .av,.verse .sk,.verse .he,.verse .grc,.verse .zh,.verse .sa,.verse .ar,.verse .dev,.verse .en,.verse .gr,.verse .egy,.verse .csl,.verse .fa,.verse .ak,.verse .bo,.verse .tib,
+  .row .av,.row .sk,.row .he,.row .grc,.row .zh,.row .sa,.row .ar,.row .dev,.row .en,.row .gr,.row .csl,.row .fa,.row .ak,.row .bo,.row .tib{font-size:1.05rem;line-height:1.7;padding:8px 10px;border-left:3px solid var(--gold-dim);margin:6px 0;background:rgba(201,162,39,0.04);font-style:italic;width:auto !important;display:block}
+  
+  /* Russian - full width */
+  .verse .ru,.row .ru{font-size:.95rem;line-height:1.6;padding:8px 10px;border-left:3px solid var(--red);background:rgba(200,16,46,0.04);margin:6px 0;width:auto !important;display:block;grid-column:1}
+  
+  /* Toolbar */
+  .toolbar{display:flex;flex-wrap:wrap;gap:4px;padding:6px;margin:8px 0}
+  .toolbar button{font-size:10px;padding:5px 8px;letter-spacing:0;flex:1 1 30%;min-width:60px}
+  
+  /* Container */
+  main{padding:0 8px}
+  nav.main{padding:6px 10px;font-size:11px}
+  nav.main a{margin:0 3px;padding:2px 4px}
+  
+  /* Book cards */
+  .book-grid{grid-template-columns:1fr;gap:6px}
+  .book-card{font-size:13px;padding:8px 10px;line-height:1.4}
+  
+  /* Note */
+  .note{font-size:14px;line-height:1.7;padding:14px 18px;margin:14px;color:var(--red);background:rgba(201,162,39,0.04);border:1px solid var(--gold-dim);border-left:4px solid var(--gold)}
+
+  
+  /* Footer */
+  footer{font-size:11px;padding:8px 10px}
+}
+  .row{grid-template-columns:2rem 1fr 1.1fr}
+  .num{font-size:.7rem;padding:.5rem .3rem}
+  .ar{font-size:1.1rem;line-height:1.7;padding:.5rem .4rem}
+  .ru{font-size:.85rem;line-height:1.4;padding:.5rem .4rem}
+}
+
+/* Q20 EGYPTIAN additions */
+.verse .egy{grid-column:1;font-family:'Papyrus','Segoe UI Historic',serif;font-size:1.05rem;line-height:1.8;direction:ltr;text-align:left;color:#e8b84a;background:rgba(232,184,74,0.04);border-right:3px solid var(--gold-dim);padding:12px 14px;font-style:italic}
+.verse .ru{grid-column:2;font-size:0.98rem;line-height:1.75;color:var(--ink);background:rgba(201,162,39,0.025);border-left:1px solid var(--gold-dim);padding:12px 14px}
+.verse .transl-note{grid-column:1/-1;padding:6px 14px;font-size:0.78rem;color:var(--ink-dim);font-style:italic;text-align:right;background:rgba(0,0,0,0.15);border-top:1px solid var(--line)}
+.verse .num,.verse .transl-note{color:var(--gold-bright)}
+
+.verse .av,.verse .sk,.verse .he,.verse .grc,.verse .zh,.verse .sa,.verse .ar,.verse .dev,.verse .en,.verse .gr,.verse .csl,.verse .fa,.verse .ak,.verse .bo,.verse .tib{font-family:'Times New Roman',Georgia,serif;font-size:1.05rem;line-height:1.7;color:var(--orig);background:rgba(201,162,39,0.04);border-right:3px solid var(--gold-dim);padding:12px 14px;direction:ltr;text-align:left;font-style:italic}
+.row .av,.row .sk,.row .he,.row .grc,.row .zh,.row .sa,.row .ar,.row .dev,.row .en,.row .gr,.row .csl,.row .fa,.row .ak,.row .bo,.row .tib{font-family:'Times New Roman',Georgia,serif;font-size:1.05rem;line-height:1.7;color:var(--orig);background:rgba(201,162,39,0.04);padding:10px 12px;direction:ltr;text-align:left}
+.verse{display:grid;grid-template-columns:3.2rem 1fr 1.1fr;border-bottom:1px solid var(--grid);align-items:start;transition:background 0.15s}
+.row{display:grid;grid-template-columns:3.2rem 1fr 1.1fr 1fr;border-bottom:1px solid var(--grid);align-items:start;transition:background 0.15s}
+.num{font-family:'Courier New',monospace;font-size:11px;color:var(--gold);text-align:center;padding:12px 4px;background:rgba(0,0,0,0.3);border-right:1px solid var(--line);font-weight:bold;align-self:start}
+.ru{font-size:.92rem;line-height:1.6;color:var(--ink);padding:10px 12px;background:rgba(255,255,255,0.01);border-left:1px solid var(--line);align-self:start;grid-column:3}
+
+/* ARCHIVUM HAERETICUM — Original script fonts */
+
+
+
+
+
+
+
+@font-face{font-family:'Noto Sans Cuneiform';font-style:normal;font-weight:400;font-display:block;src:url('/archivum-haereticum/fonts/noto-cuneiform.ttf') format('truetype')}
+@font-face{font-family:'Noto Sans Egyptian Hieroglyphs';font-style:normal;font-weight:400;font-display:block;src:url('/archivum-haereticum/fonts/noto-hieroglyphs.ttf') format('truetype')}
+@font-face{font-family:'Noto Sans Coptic';font-style:normal;font-weight:400;font-display:block;src:url('/archivum-haereticum/fonts/noto-coptic.ttf') format('truetype')}
+@font-face{font-family:'Noto Serif JP';font-style:normal;font-weight:400;font-display:swap;src:local('Noto Serif JP'),local('NotoSerifJP-Regular')}
+@font-face{font-family:'Noto Sans Devanagari';font-style:normal;font-weight:400;font-display:swap;src:local('Noto Sans Devanagari'),local('NotoSansDevanagari-Regular')}
+@font-face{font-family:'Noto Sans Tibetan';font-style:normal;font-weight:400;font-display:swap;src:local('Noto Sans Tibetan'),local('NotoSansTibetan-Regular')}
+@font-face{font-family:'SBL Greek';font-style:normal;font-weight:400;font-display:swap;src:local('SBL Greek'),local('SBLGreek')}@media(max-width:760px){
+.verse,.row{grid-template-columns:1fr !important;display:block !important;padding:12px 14px;margin:8px 0;border:1px solid var(--line);background:var(--bg2);width:100% !important;max-width:100% !important;overflow:hidden;box-sizing:border-box}
+.verse .num,.row .num{display:inline-block;background:rgba(0,0,0,0.5);padding:3px 10px;margin-bottom:8px;width:auto;text-align:left;font-size:11px;border:1px solid var(--gold-dim);border-radius:2px;font-family:'Courier New',monospace;min-width:0 !important}
+.verse .on,.verse .ru,.verse .csl,.verse .sk,.verse .he,.verse .grc,.verse .zh,.verse .ar,.verse .fa,.verse .bo,.verse .ak,.verse .cop,.verse .pali,.verse .sk-deva,.verse .eg-hiero,.verse .ak-cun,.verse .cop-uni,.verse .ja,.verse .pali-deva,.verse .qu,.verse .av,.verse .egy,.verse .csl,.verse .gr,.verse .on-r,
+.row .on,.row .ru,.row .csl,.row .sk,.row .he,.row .grc,.row .zh,.row .ar,.row .fa,.row .bo,.row .ak,.row .cop,.row .pali,.row .sk-deva,.row .eg-hiero,.row .ak-cun,.row .cop-uni,.row .ja,.row .pali-deva,.row .qu,.row .av,.row .egy,.row .csl,.row .gr{font-size:1.05rem !important;line-height:1.65 !important;padding:10px 12px !important;border-left:3px solid var(--gold-dim);margin:6px 0;background:rgba(201,162,39,0.04);width:auto !important;display:block !important;min-width:0 !important;word-wrap:break-word;overflow-wrap:break-word;max-width:100% !important;box-sizing:border-box}
+.verse .ru,.row .ru{border-left:3px solid var(--red);background:rgba(200,16,46,0.04)}
+.hos-h1{font-size:1.2rem;letter-spacing:.05em;line-height:1.3}
+.hos-sub{font-size:12px}
+.hos-strip{font-size:9px;letter-spacing:1px;padding:4px 8px}
+.stamps span{font-size:8px;letter-spacing:1px;padding:2px 5px;margin:0 1px}
+main{padding:0 8px;width:100% !important;max-width:100% !important;box-sizing:border-box}
+nav.main{padding:6px 10px;font-size:11px}
+nav.main a{margin:0 3px;padding:2px 4px}
+.toolbar button{font-size:10px;padding:5px 8px;letter-spacing:0;flex:1 1 30%;min-width:60px}
+.book-grid{grid-template-columns:1fr;gap:6px}
+.book-card{font-size:13px;padding:8px 10px;line-height:1.4}
+.note{font-size:14px;line-height:1.7;padding:14px 18px;margin:14px;color:var(--ink);background:rgba(201,162,39,0.04);border:1px solid var(--gold-dim);border-left:4px solid var(--gold)}
+footer{font-size:11px;padding:8px 10px}
+}
+</style>
+</head><body>
+<header class="hos">
+<div class="hos-strip"><span class="l">ARCHIVUM HAERETICUM — CORPUS DIVINUS</span><span class="r">Q2 — NOVUM-TESTAMENTUM</span></div>
+<div class="hos-body">
+<h1 class="hos-h1"><span class="q">Q2</span>2-е послание к Тимофею</h1>
+<div class="hos-sub">27 книг · SBLGNT + Синодальный 1876</div>
+</div>
+</header>
+<div class="stamps">
+<span class="fid">◆ FIDELIS</span>
+<span class="cre">✚ MYSTICA</span>
+<span class="dam">✠ CHRISTIANA</span>
+</div>
+<nav class="main">
+<a href="../index.html">◀ CORPUS DIVINUS</a>
+</nav>
+<main>
+<div class="toolbar">
+<button onclick="toggleAll(true)">РАЗВЕРНУТЬ</button>
+<button onclick="toggleAll(false)">СВЕРНУТЬ</button>
+<button onclick="toggleOrig()">☀ ОРИГИНАЛ</button>
+<button onclick="toggleRu()">☾ ПЕРЕВОД</button>
+<button onclick="resetView()">◉ ОБА</button>
+</div>
+<div class="meta">Греческий: SBLGNT (© Logos/SBL, CC BY) · Русский: Синодальный перевод 1876 (Public Domain) · Печать: ◆ FIDELIS</div>
+<div class="toolbar">
+<button onclick="toggleAll(true)">▼ Развернуть все</button>
+<button onclick="toggleAll(false)">▲ Свернуть все</button>
+<button onclick="toggleOrig()">🌙 Только оригинал</button>
+<button onclick="toggleRu()">📖 Только перевод</button>
+<button onclick="resetView()">◉ Оба</button>
+</div>
+<div class="chap">Глава 1</div>
+<div class="row"><span class="num">1:1</span><div class="gr" lang="grc">Παῦλος ἀπόστολος ⸂Χριστοῦ Ἰησοῦ⸃ διὰ θελήματος θεοῦ κατ’ ἐπαγγελίαν ζωῆς τῆς ἐν Χριστῷ Ἰησοῦ</div><div class="ru">Павел, волею Божиею Апостол Иисуса Христа, по обетованию жизни во Христе Иисусе,</div></div>
+<div class="row"><span class="num">1:2</span><div class="gr" lang="grc">Τιμοθέῳ ἀγαπητῷ τέκνῳ· χάρις, ἔλεος, εἰρήνη ἀπὸ θεοῦ πατρὸς καὶ Χριστοῦ Ἰησοῦ τοῦ κυρίου ἡμῶν.</div><div class="ru">Тимофею, возлюбленному сыну: благодать, милость, мир от Бога Отца и Христа Иисуса, Господа нашего.</div></div>
+<div class="row"><span class="num">1:3</span><div class="gr" lang="grc">Χάριν ἔχω τῷ θεῷ, ᾧ λατρεύω ἀπὸ προγόνων ἐν καθαρᾷ συνειδήσει, ὡς ἀδιάλειπτον ἔχω τὴν περὶ σοῦ μνείαν ἐν ταῖς δεήσεσίν μου, νυκτὸς καὶ ἡμέρας</div><div class="ru">Благодарю Бога, Которому служу от прародителей с чистою совестью, что непрестанно вспоминаю о тебе в молитвах моих днем и ночью,</div></div>
+<div class="row"><span class="num">1:4</span><div class="gr" lang="grc">ἐπιποθῶν σε ἰδεῖν, μεμνημένος σου τῶν δακρύων, ἵνα χαρᾶς πληρωθῶ</div><div class="ru">и желаю видеть тебя, вспоминая о слезах твоих, дабы мне исполниться радости,</div></div>
+<div class="row"><span class="num">1:5</span><div class="gr" lang="grc">ὑπόμνησιν ⸀λαβὼν τῆς ἐν σοὶ ἀνυποκρίτου πίστεως, ἥτις ἐνῴκησεν πρῶτον ἐν τῇ μάμμῃ σου Λωΐδι καὶ τῇ μητρί σου Εὐνίκῃ, πέπεισμαι δὲ ὅτι καὶ ἐν σοί.</div><div class="ru">приводя на память нелицемерную веру твою, которая прежде обитала в бабке твоей Лоиде и матери твоей Евнике; уверен, что она и в тебе.</div></div>
+<div class="row"><span class="num">1:6</span><div class="gr" lang="grc">δι’ ἣν αἰτίαν ἀναμιμνῄσκω σε ἀναζωπυρεῖν τὸ χάρισμα τοῦ θεοῦ, ὅ ἐστιν ἐν σοὶ διὰ τῆς ἐπιθέσεως τῶν χειρῶν μου·</div><div class="ru">По сей причине напоминаю тебе возгревать дар Божий, который в тебе через мое рукоположение;</div></div>
+<div class="row"><span class="num">1:7</span><div class="gr" lang="grc">οὐ γὰρ ἔδωκεν ἡμῖν ὁ θεὸς πνεῦμα δειλίας, ἀλλὰ δυνάμεως καὶ ἀγάπης καὶ σωφρονισμοῦ.</div><div class="ru">ибо дал нам Бог духа не боязни, но силы и любви и целомудрия.</div></div>
+<div class="row"><span class="num">1:8</span><div class="gr" lang="grc">Μὴ οὖν ἐπαισχυνθῇς τὸ μαρτύριον τοῦ κυρίου ἡμῶν μηδὲ ἐμὲ τὸν δέσμιον αὐτοῦ, ἀλλὰ συγκακοπάθησον τῷ εὐαγγελίῳ κατὰ δύναμιν θεοῦ,</div><div class="ru">Итак, не стыдись свидетельства Господа нашего Иисуса Христа, ни меня, узника Его; но страдай с благовестием Христовым силою Бога,</div></div>
+<div class="row"><span class="num">1:9</span><div class="gr" lang="grc">τοῦ σώσαντος ἡμᾶς καὶ καλέσαντος κλήσει ἁγίᾳ, οὐ κατὰ τὰ ἔργα ἡμῶν ἀλλὰ κατὰ ἰδίαν πρόθεσιν καὶ χάριν, τὴν δοθεῖσαν ἡμῖν ἐν Χριστῷ Ἰησοῦ πρὸ χρόνων αἰωνίων,</div><div class="ru">спасшего нас и призвавшего званием святым, не по делам нашим, но по Своему изволению и благодати, данной нам во Христе Иисусе прежде вековых времен,</div></div>
+<div class="row"><span class="num">1:10</span><div class="gr" lang="grc">φανερωθεῖσαν δὲ νῦν διὰ τῆς ἐπιφανείας τοῦ σωτῆρος ἡμῶν ⸂Ἰησοῦ Χριστοῦ⸃, καταργήσαντος μὲν τὸν θάνατον φωτίσαντος δὲ ζωὴν καὶ ἀφθαρσίαν διὰ τοῦ εὐαγγελίου,</div><div class="ru">открывшейся же ныне явлением Спасителя нашего Иисуса Христа, разрушившего смерть и явившего жизнь и нетление через благовестие,</div></div>
+<div class="row"><span class="num">1:11</span><div class="gr" lang="grc">εἰς ὃ ἐτέθην ἐγὼ κῆρυξ καὶ ἀπόστολος καὶ ⸀διδάσκαλος.</div><div class="ru">для которого я поставлен проповедником и Апостолом и учителем язычников.</div></div>
+<div class="row"><span class="num">1:12</span><div class="gr" lang="grc">δι’ ἣν αἰτίαν καὶ ταῦτα πάσχω, ἀλλ’ οὐκ ἐπαισχύνομαι, οἶδα γὰρ ᾧ πεπίστευκα, καὶ πέπεισμαι ὅτι δυνατός ἐστιν τὴν παραθήκην μου φυλάξαι εἰς ἐκείνην τὴν ἡμέραν.</div><div class="ru">По сей причине я и страдаю так; но не стыжусь. Ибо я знаю, в Кого уверовал, и уверен, что Он силен сохранить залог мой на оный день.</div></div>
+<div class="row"><span class="num">1:13</span><div class="gr" lang="grc">ὑποτύπωσιν ἔχε ὑγιαινόντων λόγων ὧν παρ’ ἐμοῦ ἤκουσας ἐν πίστει καὶ ἀγάπῃ τῇ ἐν Χριστῷ Ἰησοῦ·</div><div class="ru">Держись образца здравого учения, которое ты слышал от меня, с верою и любовью во Христе Иисусе.</div></div>
+<div class="row"><span class="num">1:14</span><div class="gr" lang="grc">τὴν καλὴν παραθήκην φύλαξον διὰ πνεύματος ἁγίου τοῦ ἐνοικοῦντος ἐν ἡμῖν.</div><div class="ru">Храни добрый залог Духом Святым, живущим в нас.</div></div>
+<div class="row"><span class="num">1:15</span><div class="gr" lang="grc">Οἶδας τοῦτο ὅτι ἀπεστράφησάν με πάντες οἱ ἐν τῇ Ἀσίᾳ, ὧν ἐστιν Φύγελος καὶ Ἑρμογένης.</div><div class="ru">Ты знаешь, что все Асийские оставили меня; в числе их Фигелл и Ермоген.</div></div>
+<div class="row"><span class="num">1:16</span><div class="gr" lang="grc">δῴη ἔλεος ὁ κύριος τῷ Ὀνησιφόρου οἴκῳ, ὅτι πολλάκις με ἀνέψυξεν, καὶ τὴν ἅλυσίν μου οὐκ ἐπαισχύνθη·</div><div class="ru">Да даст Господь милость дому Онисифора за то, что он многократно покоил меня и не стыдился уз моих,</div></div>
+<div class="row"><span class="num">1:17</span><div class="gr" lang="grc">ἀλλὰ γενόμενος ἐν Ῥώμῃ ⸀σπουδαίως ἐζήτησέν με καὶ εὗρεν—</div><div class="ru">но, быв в Риме, с великим тщанием искал меня и нашел.</div></div>
+<div class="row"><span class="num">1:18</span><div class="gr" lang="grc">δῴη αὐτῷ ὁ κύριος εὑρεῖν ἔλεος παρὰ κυρίου ἐν ἐκείνῃ τῇ ἡμέρᾳ— καὶ ὅσα ἐν Ἐφέσῳ διηκόνησεν, βέλτιον σὺ γινώσκεις.</div><div class="ru">Да даст ему Господь обрести милость у Господа в оный день; а сколько он служил мне в Ефесе, ты лучше знаешь.</div></div>
+<div class="chap">Глава 2</div>
+<div class="row"><span class="num">2:1</span><div class="gr" lang="grc">Σὺ οὖν, τέκνον μου, ἐνδυναμοῦ ἐν τῇ χάριτι τῇ ἐν Χριστῷ Ἰησοῦ,</div><div class="ru">Итак, укрепляйся, сын мой, в благодати Христом Иисусом,</div></div>
+<div class="row"><span class="num">2:2</span><div class="gr" lang="grc">καὶ ἃ ἤκουσας παρ’ ἐμοῦ διὰ πολλῶν μαρτύρων, ταῦτα παράθου πιστοῖς ἀνθρώποις, οἵτινες ἱκανοὶ ἔσονται καὶ ἑτέρους διδάξαι.</div><div class="ru">и что слышал от меня при многих свидетелях, то передай верным людям, которые были бы способны и других научить.</div></div>
+<div class="row"><span class="num">2:3</span><div class="gr" lang="grc">⸀συγκακοπάθησον ὡς καλὸς στρατιώτης ⸂Χριστοῦ Ἰησοῦ⸃.</div><div class="ru">Итак, переноси страдания, как добрый воин Иисуса Христа.</div></div>
+<div class="row"><span class="num">2:4</span><div class="gr" lang="grc">οὐδεὶς στρατευόμενος ἐμπλέκεται ταῖς τοῦ βίου πραγματείαις, ἵνα τῷ στρατολογήσαντι ἀρέσῃ·</div><div class="ru">Никакой воин не связывает себя делами житейскими, чтобы угодить военачальнику.</div></div>
+<div class="row"><span class="num">2:5</span><div class="gr" lang="grc">ἐὰν δὲ καὶ ἀθλῇ τις, οὐ στεφανοῦται ἐὰν μὴ νομίμως ἀθλήσῃ·</div><div class="ru">Если же кто и подвизается, не увенчивается, если незаконно будет подвизаться.</div></div>
+<div class="row"><span class="num">2:6</span><div class="gr" lang="grc">τὸν κοπιῶντα γεωργὸν δεῖ πρῶτον τῶν καρπῶν μεταλαμβάνειν.</div><div class="ru">Трудящемуся земледельцу первому должно вкусить от плодов.</div></div>
+<div class="row"><span class="num">2:7</span><div class="gr" lang="grc">νόει ⸀ὃ λέγω· ⸀δώσει γάρ σοι ὁ κύριος σύνεσιν ἐν πᾶσιν.</div><div class="ru">Разумей, что я говорю. Да даст тебе Господь разумение во всем.</div></div>
+<div class="row"><span class="num">2:8</span><div class="gr" lang="grc">Μνημόνευε Ἰησοῦν Χριστὸν ἐγηγερμένον ἐκ νεκρῶν, ἐκ σπέρματος Δαυίδ, κατὰ τὸ εὐαγγέλιόν μου·</div><div class="ru">Помни Господа Иисуса Христа от семени Давидова, воскресшего из мертвых, по благовествованию моему,</div></div>
+<div class="row"><span class="num">2:9</span><div class="gr" lang="grc">ἐν ᾧ κακοπαθῶ μέχρι δεσμῶν ὡς κακοῦργος. ἀλλὰ ὁ λόγος τοῦ θεοῦ οὐ δέδεται·</div><div class="ru">за которое я страдаю даже до уз, как злодей; но для слова Божия нет уз.</div></div>
+<div class="row"><span class="num">2:10</span><div class="gr" lang="grc">διὰ τοῦτο πάντα ὑπομένω διὰ τοὺς ἐκλεκτούς, ἵνα καὶ αὐτοὶ σωτηρίας τύχωσιν τῆς ἐν Χριστῷ Ἰησοῦ μετὰ δόξης αἰωνίου.</div><div class="ru">Посему я все терплю ради избранных, дабы и они получили спасение во Христе Иисусе с вечною славою.</div></div>
+<div class="row"><span class="num">2:11</span><div class="gr" lang="grc">πιστὸς ὁ λόγος· εἰ γὰρ συναπεθάνομεν, καὶ συζήσομεν·</div><div class="ru">Верно слово: если мы с Ним умерли, то с Ним и оживем;</div></div>
+<div class="row"><span class="num">2:12</span><div class="gr" lang="grc">εἰ ὑπομένομεν, καὶ συμβασιλεύσομεν· εἰ ⸀ἀρνησόμεθα, κἀκεῖνος ἀρνήσεται ἡμᾶς·</div><div class="ru">если терпим, то с Ним и царствовать будем; если отречемся, и Он отречется от нас;</div></div>
+<div class="row"><span class="num">2:13</span><div class="gr" lang="grc">εἰ ἀπιστοῦμεν, ἐκεῖνος πιστὸς μένει· ⸀ἀρνήσασθαι ἑαυτὸν οὐ δύναται.</div><div class="ru">если мы неверны, Он пребывает верен, ибо Себя отречься не может.</div></div>
+<div class="row"><span class="num">2:14</span><div class="gr" lang="grc">Ταῦτα ὑπομίμνῃσκε, διαμαρτυρόμενος ἐνώπιον τοῦ ⸀κυρίου, μὴ λογομαχεῖν, ⸀ἐπ’ οὐδὲν χρήσιμον, ἐπὶ καταστροφῇ τῶν ἀκουόντων.</div><div class="ru">Сие напоминай, заклиная пред Господом не вступать в словопрения, что нимало не служит к пользе, а к расстройству слушающих.</div></div>
+<div class="row"><span class="num">2:15</span><div class="gr" lang="grc">σπούδασον σεαυτὸν δόκιμον παραστῆσαι τῷ θεῷ, ἐργάτην ἀνεπαίσχυντον, ὀρθοτομοῦντα τὸν λόγον τῆς ἀληθείας.</div><div class="ru">Старайся представить себя Богу достойным, делателем неукоризненным, верно преподающим слово истины.</div></div>
+<div class="row"><span class="num">2:16</span><div class="gr" lang="grc">τὰς δὲ βεβήλους κενοφωνίας περιΐστασο· ἐπὶ πλεῖον γὰρ προκόψουσιν ἀσεβείας,</div><div class="ru">А непотребного пустословия удаляйся; ибо они еще более будут преуспевать в нечестии,</div></div>
+<div class="row"><span class="num">2:17</span><div class="gr" lang="grc">καὶ ὁ λόγος αὐτῶν ὡς γάγγραινα νομὴν ἕξει· ὧν ἐστιν Ὑμέναιος καὶ Φίλητος,</div><div class="ru">и слово их, как рак, будет распространяться. Таковы Именей и Филит,</div></div>
+<div class="row"><span class="num">2:18</span><div class="gr" lang="grc">οἵτινες περὶ τὴν ἀλήθειαν ἠστόχησαν, ⸀λέγοντες ἀνάστασιν ἤδη γεγονέναι, καὶ ἀνατρέπουσιν τήν τινων πίστιν.</div><div class="ru">которые отступили от истины, говоря, что воскресение уже было, и разрушают в некоторых веру.</div></div>
+<div class="row"><span class="num">2:19</span><div class="gr" lang="grc">ὁ μέντοι στερεὸς θεμέλιος τοῦ θεοῦ ἕστηκεν, ἔχων τὴν σφραγῖδα ταύτην· Ἔγνω κύριος τοὺς ὄντας αὐτοῦ, καί· Ἀποστήτω ἀπὸ ἀδικίας πᾶς ὁ ὀνομάζων τὸ ὄνομα κυρίου.</div><div class="ru">Но твердое основание Божие стоит, имея печать сию: «познал Господь Своих»; и: «да отступит от неправды всякий, исповедующий имя Господа».</div></div>
+<div class="row"><span class="num">2:20</span><div class="gr" lang="grc">Ἐν μεγάλῃ δὲ οἰκίᾳ οὐκ ἔστιν μόνον σκεύη χρυσᾶ καὶ ἀργυρᾶ ἀλλὰ καὶ ξύλινα καὶ ὀστράκινα, καὶ ἃ μὲν εἰς τιμὴν ἃ δὲ εἰς ἀτιμίαν·</div><div class="ru">А в большом доме есть сосуды не только золотые и серебряные, но и деревянные и глиняные; и одни в почетном, а другие в низком употреблении.</div></div>
+<div class="row"><span class="num">2:21</span><div class="gr" lang="grc">ἐὰν οὖν τις ἐκκαθάρῃ ἑαυτὸν ἀπὸ τούτων, ἔσται σκεῦος εἰς τιμήν, ἡγιασμένον, ⸀εὔχρηστον τῷ δεσπότῃ, εἰς πᾶν ἔργον ἀγαθὸν ἡτοιμασμένον.</div><div class="ru">Итак, кто будет чист от сего, тот будет сосудом в чести, освященным и благопотребным Владыке, годным на всякое доброе дело.</div></div>
+<div class="row"><span class="num">2:22</span><div class="gr" lang="grc">τὰς δὲ νεωτερικὰς ἐπιθυμίας φεῦγε, δίωκε δὲ δικαιοσύνην, πίστιν, ἀγάπην, εἰρήνην μετὰ τῶν ἐπικαλουμένων τὸν κύριον ἐκ καθαρᾶς καρδίας.</div><div class="ru">Юношеских похотей убегай, а держись правды, веры, любви, мира со всеми призывающими Господа от чистого сердца.</div></div>
+<div class="row"><span class="num">2:23</span><div class="gr" lang="grc">τὰς δὲ μωρὰς καὶ ἀπαιδεύτους ζητήσεις παραιτοῦ, εἰδὼς ὅτι γεννῶσι μάχας·</div><div class="ru">От глупых и невежественных состязаний уклоняйся, зная, что они рождают ссоры;</div></div>
+<div class="row"><span class="num">2:24</span><div class="gr" lang="grc">δοῦλον δὲ κυρίου οὐ δεῖ μάχεσθαι, ἀλλὰ ἤπιον εἶναι πρὸς πάντας, διδακτικόν, ἀνεξίκακον,</div><div class="ru">рабу же Господа не должно ссориться, но быть приветливым ко всем, учительным, незлобивым,</div></div>
+<div class="row"><span class="num">2:25</span><div class="gr" lang="grc">ἐν πραΰτητι παιδεύοντα τοὺς ἀντιδιατιθεμένους, μήποτε ⸀δώῃ αὐτοῖς ὁ θεὸς μετάνοιαν εἰς ἐπίγνωσιν ἀληθείας,</div><div class="ru">с кротостью наставлять противников, не даст ли им Бог покаяния к познанию истины,</div></div>
+<div class="row"><span class="num">2:26</span><div class="gr" lang="grc">καὶ ἀνανήψωσιν ἐκ τῆς τοῦ διαβόλου παγίδος, ἐζωγρημένοι ὑπ’ αὐτοῦ εἰς τὸ ἐκείνου θέλημα.</div><div class="ru">чтобы они освободились от сети диавола, который уловил их в свою волю.</div></div>
+<div class="chap">Глава 3</div>
+<div class="row"><span class="num">3:1</span><div class="gr" lang="grc">Τοῦτο δὲ γίνωσκε ὅτι ἐν ἐσχάταις ἡμέραις ἐνστήσονται καιροὶ χαλεποί·</div><div class="ru">Знай же, что в последние дни наступят времена тяжкие.</div></div>
+<div class="row"><span class="num">3:2</span><div class="gr" lang="grc">ἔσονται γὰρ οἱ ἄνθρωποι φίλαυτοι, φιλάργυροι, ἀλαζόνες, ὑπερήφανοι, βλάσφημοι, γονεῦσιν ἀπειθεῖς, ἀχάριστοι, ἀνόσιοι,</div><div class="ru">Ибо люди будут самолюбивы, сребролюбивы, горды, надменны, злоречивы, родителям непокорны, неблагодарны, нечестивы, недружелюбны,</div></div>
+<div class="row"><span class="num">3:3</span><div class="gr" lang="grc">ἄστοργοι, ἄσπονδοι, διάβολοι, ἀκρατεῖς, ἀνήμεροι, ἀφιλάγαθοι,</div><div class="ru">непримирительны, клеветники, невоздержны, жестоки, не любящие добра,</div></div>
+<div class="row"><span class="num">3:4</span><div class="gr" lang="grc">προδόται, προπετεῖς, τετυφωμένοι, φιλήδονοι μᾶλλον ἢ φιλόθεοι,</div><div class="ru">предатели, наглы, напыщенны, более сластолюбивы, нежели боголюбивы,</div></div>
+<div class="row"><span class="num">3:5</span><div class="gr" lang="grc">ἔχοντες μόρφωσιν εὐσεβείας τὴν δὲ δύναμιν αὐτῆς ἠρνημένοι· καὶ τούτους ἀποτρέπου.</div><div class="ru">имеющие вид благочестия, силы же его отрекшиеся. Таковых удаляйся.</div></div>
+<div class="row"><span class="num">3:6</span><div class="gr" lang="grc">ἐκ τούτων γάρ εἰσιν οἱ ἐνδύνοντες εἰς τὰς οἰκίας καὶ ⸀αἰχμαλωτίζοντες γυναικάρια σεσωρευμένα ἁμαρτίαις, ἀγόμενα ἐπιθυμίαις ποικίλαις,</div><div class="ru">К сим принадлежат те, которые вкрадываются в дома и обольщают женщин, утопающих во грехах, водимых различными похотями,</div></div>
+<div class="row"><span class="num">3:7</span><div class="gr" lang="grc">πάντοτε μανθάνοντα καὶ μηδέποτε εἰς ἐπίγνωσιν ἀληθείας ἐλθεῖν δυνάμενα.</div><div class="ru">всегда учащихся и никогда не могущих дойти до познания истины.</div></div>
+<div class="row"><span class="num">3:8</span><div class="gr" lang="grc">ὃν τρόπον δὲ Ἰάννης καὶ Ἰαμβρῆς ἀντέστησαν Μωϋσεῖ, οὕτως καὶ οὗτοι ἀνθίστανται τῇ ἀληθείᾳ, ἄνθρωποι κατεφθαρμένοι τὸν νοῦν, ἀδόκιμοι περὶ τὴν πίστιν.</div><div class="ru">Как Ианний и Иамврий противились Моисею, так и сии противятся истине, люди, развращенные умом, невежды в вере.</div></div>
+<div class="row"><span class="num">3:9</span><div class="gr" lang="grc">ἀλλ’ οὐ προκόψουσιν ἐπὶ πλεῖον, ἡ γὰρ ἄνοια αὐτῶν ἔκδηλος ἔσται πᾶσιν, ὡς καὶ ἡ ἐκείνων ἐγένετο.</div><div class="ru">Но они не много успеют; ибо их безумие обнаружится перед всеми, как и с теми случилось.</div></div>
+<div class="row"><span class="num">3:10</span><div class="gr" lang="grc">Σὺ δὲ ⸀παρηκολούθησάς μου τῇ διδασκαλίᾳ, τῇ ἀγωγῇ, τῇ προθέσει, τῇ πίστει, τῇ μακροθυμίᾳ, τῇ ἀγάπῃ, τῇ ὑπομονῇ,</div><div class="ru">А ты последовал мне в учении, житии, расположении, вере, великодушии, любви, терпении,</div></div>
+<div class="row"><span class="num">3:11</span><div class="gr" lang="grc">τοῖς διωγμοῖς, τοῖς παθήμασιν, οἷά μοι ἐγένετο ἐν Ἀντιοχείᾳ, ἐν Ἰκονίῳ, ἐν Λύστροις, οἵους διωγμοὺς ὑπήνεγκα· καὶ ἐκ πάντων με ἐρρύσατο ὁ κύριος.</div><div class="ru">в гонениях, страданиях, постигших меня в Антиохии, Иконии, Листрах; каковые гонения я перенес, и от всех избавил меня Господь.</div></div>
+<div class="row"><span class="num">3:12</span><div class="gr" lang="grc">καὶ πάντες δὲ οἱ θέλοντες ⸂ζῆν εὐσεβῶς⸃ ἐν Χριστῷ Ἰησοῦ διωχθήσονται·</div><div class="ru">Да и все, желающие жить благочестиво во Христе Иисусе, будут гонимы.</div></div>
+<div class="row"><span class="num">3:13</span><div class="gr" lang="grc">πονηροὶ δὲ ἄνθρωποι καὶ γόητες προκόψουσιν ἐπὶ τὸ χεῖρον, πλανῶντες καὶ πλανώμενοι.</div><div class="ru">Злые же люди и обманщики будут преуспевать во зле, вводя в заблуждение и заблуждаясь.</div></div>
+<div class="row"><span class="num">3:14</span><div class="gr" lang="grc">σὺ δὲ μένε ἐν οἷς ἔμαθες καὶ ἐπιστώθης, εἰδὼς παρὰ ⸀τίνων ἔμαθες,</div><div class="ru">А ты пребывай в том, чему научен и что тебе вверено, зная, кем ты научен.</div></div>
+<div class="row"><span class="num">3:15</span><div class="gr" lang="grc">καὶ ὅτι ἀπὸ βρέφους ⸀ἱερὰ γράμματα οἶδας, τὰ δυνάμενά σε σοφίσαι εἰς σωτηρίαν διὰ πίστεως τῆς ἐν Χριστῷ Ἰησοῦ·</div><div class="ru">Притом же ты из детства знаешь священные писания, которые могут умудрить тебя во спасение верою во Христа Иисуса.</div></div>
+<div class="row"><span class="num">3:16</span><div class="gr" lang="grc">πᾶσα γραφὴ θεόπνευστος καὶ ὠφέλιμος πρὸς διδασκαλίαν, πρὸς ⸀ἐλεγμόν, πρὸς ἐπανόρθωσιν, πρὸς παιδείαν τὴν ἐν δικαιοσύνῃ,</div><div class="ru">Все Писание богодухновенно и полезно для научения, для обличения, для исправления, для наставления в праведности,</div></div>
+<div class="row"><span class="num">3:17</span><div class="gr" lang="grc">ἵνα ἄρτιος ᾖ ὁ τοῦ θεοῦ ἄνθρωπος, πρὸς πᾶν ἔργον ἀγαθὸν ἐξηρτισμένος.</div><div class="ru">да будет совершен Божий человек, ко всякому доброму делу приготовлен.</div></div>
+<div class="chap">Глава 4</div>
+<div class="row"><span class="num">4:1</span><div class="gr" lang="grc">⸀Διαμαρτύρομαι ἐνώπιον τοῦ θεοῦ καὶ ⸂Χριστοῦ Ἰησοῦ⸃, τοῦ μέλλοντος κρίνειν ζῶντας καὶ νεκρούς, ⸀καὶ τὴν ἐπιφάνειαν αὐτοῦ καὶ τὴν βασιλείαν αὐτοῦ·</div><div class="ru">Итак, заклинаю тебя пред Богом и Господом нашим Иисусом Христом, Который будет судить живых и мертвых в явление Его и Царствие Его:</div></div>
+<div class="row"><span class="num">4:2</span><div class="gr" lang="grc">κήρυξον τὸν λόγον, ἐπίστηθι εὐκαίρως ἀκαίρως, ἔλεγξον, ἐπιτίμησον, παρακάλεσον, ἐν πάσῃ μακροθυμίᾳ καὶ διδαχῇ.</div><div class="ru">проповедуй слово, настой во время и не во время, обличай, запрещай, увещевай со всяким долготерпением и назиданием.</div></div>
+<div class="row"><span class="num">4:3</span><div class="gr" lang="grc">ἔσται γὰρ καιρὸς ὅτε τῆς ὑγιαινούσης διδασκαλίας οὐκ ἀνέξονται, ἀλλὰ κατὰ τὰς ⸂ἰδίας ἐπιθυμίας⸃ ἑαυτοῖς ἐπισωρεύσουσιν διδασκάλους κνηθόμενοι τὴν ἀκοήν,</div><div class="ru">Ибо будет время, когда здравого учения принимать не будут, но по своим прихотям будут избирать себе учителей, которые льстили бы слуху;</div></div>
+<div class="row"><span class="num">4:4</span><div class="gr" lang="grc">καὶ ἀπὸ μὲν τῆς ἀληθείας τὴν ἀκοὴν ἀποστρέψουσιν, ἐπὶ δὲ τοὺς μύθους ἐκτραπήσονται.</div><div class="ru">и от истины отвратят слух и обратятся к басням.</div></div>
+<div class="row"><span class="num">4:5</span><div class="gr" lang="grc">σὺ δὲ νῆφε ἐν πᾶσιν, κακοπάθησον, ἔργον ποίησον εὐαγγελιστοῦ, τὴν διακονίαν σου πληροφόρησον.</div><div class="ru">Но ты будь бдителен во всем, переноси скорби, совершай дело благовестника, исполняй служение твое.</div></div>
+<div class="row"><span class="num">4:6</span><div class="gr" lang="grc">Ἐγὼ γὰρ ἤδη σπένδομαι, καὶ ὁ καιρὸς τῆς ⸂ἀναλύσεώς μου⸃ ἐφέστηκεν.</div><div class="ru">Ибо я уже становлюсь жертвою, и время моего отшествия настало.</div></div>
+<div class="row"><span class="num">4:7</span><div class="gr" lang="grc">τὸν ⸂καλὸν ἀγῶνα⸃ ἠγώνισμαι, τὸν δρόμον τετέλεκα, τὴν πίστιν τετήρηκα·</div><div class="ru">Подвигом добрым я подвизался, течение совершил, веру сохранил;</div></div>
+<div class="row"><span class="num">4:8</span><div class="gr" lang="grc">λοιπὸν ἀπόκειταί μοι ὁ τῆς δικαιοσύνης στέφανος, ὃν ἀποδώσει μοι ὁ κύριος ἐν ἐκείνῃ τῇ ἡμέρᾳ, ὁ δίκαιος κριτής, οὐ μόνον δὲ ἐμοὶ ἀλλὰ καὶ πᾶσιν τοῖς ἠγαπηκόσι τὴν ἐπιφάνειαν αὐτοῦ.</div><div class="ru">а теперь готовится мне венец правды, который даст мне Господь, праведный Судия, в день оный; и не только мне, но и всем, возлюбившим явление Его.</div></div>
+<div class="row"><span class="num">4:9</span><div class="gr" lang="grc">Σπούδασον ἐλθεῖν πρός με ταχέως·</div><div class="ru">Постарайся прийти ко мне скоро.</div></div>
+<div class="row"><span class="num">4:10</span><div class="gr" lang="grc">Δημᾶς γάρ με ⸀ἐγκατέλιπεν ἀγαπήσας τὸν νῦν αἰῶνα, καὶ ἐπορεύθη εἰς Θεσσαλονίκην, Κρήσκης εἰς Γαλατίαν, Τίτος εἰς Δαλματίαν·</div><div class="ru">Ибо Димас оставил меня, возлюбив нынешний век, и пошел в Фессалонику, Крискент – в Галатию, Тит – в Далматию; один Лука со мною.</div></div>
+<div class="row"><span class="num">4:11</span><div class="gr" lang="grc">Λουκᾶς ἐστιν μόνος μετ’ ἐμοῦ. Μᾶρκον ἀναλαβὼν ἄγε μετὰ σεαυτοῦ, ἔστιν γάρ μοι εὔχρηστος εἰς διακονίαν,</div><div class="ru">Марка возьми и приведи с собою, ибо он мне нужен для служения.</div></div>
+<div class="row"><span class="num">4:12</span><div class="gr" lang="grc">Τυχικὸν δὲ ἀπέστειλα εἰς Ἔφεσον.</div><div class="ru">Тихика я послал в Ефес.</div></div>
+<div class="row"><span class="num">4:13</span><div class="gr" lang="grc">τὸν φαιλόνην, ὃν ⸀ἀπέλιπον ἐν Τρῳάδι παρὰ Κάρπῳ, ἐρχόμενος φέρε, καὶ τὰ βιβλία, μάλιστα τὰς μεμβράνας.</div><div class="ru">Когда пойдешь, принеси фелонь, который я оставил в Троаде у Карпа, и книги, особенно кожаные.</div></div>
+<div class="row"><span class="num">4:14</span><div class="gr" lang="grc">Ἀλέξανδρος ὁ χαλκεὺς πολλά μοι κακὰ ἐνεδείξατο— ⸀ἀποδώσει αὐτῷ ὁ κύριος κατὰ τὰ ἔργα αὐτοῦ—</div><div class="ru">Александр медник много сделал мне зла. Да воздаст ему Господь по делам его!</div></div>
+<div class="row"><span class="num">4:15</span><div class="gr" lang="grc">ὃν καὶ σὺ φυλάσσου, λίαν γὰρ ⸀ἀντέστη τοῖς ἡμετέροις λόγοις.</div><div class="ru">Берегись его и ты, ибо он сильно противился нашим словам.</div></div>
+<div class="row"><span class="num">4:16</span><div class="gr" lang="grc">Ἐν τῇ πρώτῃ μου ἀπολογίᾳ οὐδείς μοι ⸀παρεγένετο, ἀλλὰ πάντες με ⸀ἐγκατέλιπον— μὴ αὐτοῖς λογισθείη—</div><div class="ru">При первом моем ответе никого не было со мною, но все меня оставили. Да не вменится им!</div></div>
+<div class="row"><span class="num">4:17</span><div class="gr" lang="grc">ὁ δὲ κύριός μοι παρέστη καὶ ἐνεδυνάμωσέν με, ἵνα δι’ ἐμοῦ τὸ κήρυγμα πληροφορηθῇ καὶ ⸀ἀκούσωσιν πάντα τὰ ἔθνη, καὶ ἐρρύσθην ἐκ στόματος λέοντος.</div><div class="ru">Господь же предстал мне и укрепил меня, дабы через меня утвердилось благовестие и услышали все язычники; и я избавился из львиных челюстей.</div></div>
+<div class="row"><span class="num">4:18</span><div class="gr" lang="grc">⸀ῥύσεταί με ὁ κύριος ἀπὸ παντὸς ἔργου</div><div class="ru">И избавит меня Господь от всякого злого дела и сохранит для Своего Небесного Царства, Ему слава во веки веков. Аминь.</div></div>
+<div class="row"><span class="num">4:19</span><div class="gr" lang="grc"></div><div class="ru">Приветствуй Прискиллу и Акилу и дом Онисифоров.</div></div>
+<div class="row"><span class="num">4:20</span><div class="gr" lang="grc"></div><div class="ru">Ераст остался в Коринфе; Трофима же я оставил больного в Милите.</div></div>
+<div class="row"><span class="num">4:21</span><div class="gr" lang="grc"></div><div class="ru">Постарайся прийти до зимы. Приветствуют тебя Еввул, и Пуд, и Лин, и Клавдия, и все братия.</div></div>
+<div class="row"><span class="num">4:22</span><div class="gr" lang="grc"></div><div class="ru">Господь Иисус Христос со духом твоим. Благодать с вами. Аминь.</div></div>
+</main>
+<footer>ARCHIVUM HAERETICUM · Q2 · <span class="red">◆</span> SIGILLUM VERITATIS · <span class="gold">DATUM 160.M3</span> · FIDELIS</footer>
+<script>
+function toggleAll(open){
+  document.querySelectorAll('details').forEach(d=>d.open=open);
+  document.querySelectorAll('.verse,.row').forEach(r=>{r.style.display=open?'grid':'none';});
+}
+function toggleOrig(){
+  document.querySelectorAll('.verse,.row').forEach(r=>{r.style.display='grid';});
+  document.querySelectorAll('.verse .ru,.row .ru').forEach(e=>e.style.display='none');
+  document.querySelectorAll('.verse .av,.verse .sk,.verse .he,.verse .grc,.verse .zh,.verse .sa,.verse .ar,.verse .dev,.verse .en,.verse .gr,.verse .egy,.verse .csl,.verse .fa,.verse .ak,.verse .bo,.verse .tib').forEach(e=>e.style.display='');
+}
+function toggleRu(){
+  document.querySelectorAll('.verse .ru,.row .ru').forEach(e=>e.style.display='');
+  document.querySelectorAll('.verse .av,.verse .sk,.verse .he,.verse .grc,.verse .zh,.verse .sa,.verse .ar,.verse .dev,.verse .en,.verse .gr,.verse .egy,.verse .csl,.verse .fa,.verse .ak,.verse .bo,.verse .tib').forEach(e=>e.style.display='none');
+}
+function resetView(){
+  document.querySelectorAll('.verse,.row').forEach(r=>{r.style.display='grid';});
+  document.querySelectorAll('.verse .av,.verse .sk,.verse .he,.verse .grc,.verse .zh,.verse .sa,.verse .ar,.verse .dev,.verse .en,.verse .gr,.verse .egy,.verse .csl,.verse .fa,.verse .ak,.verse .bo,.verse .tib,.verse .ru,.row .ru').forEach(e=>e.style.display='');
+}
+</script>
+</body></html>

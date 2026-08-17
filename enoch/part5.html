@@ -1,0 +1,386 @@
+<!DOCTYPE html><html lang="ru"><head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>ПОСЛАНИЕ ЕНОХА — 1 Енох · Архивум</title>
+<style>
+:root{--bg:#0a0a0c;--bg2:#0d0d12;--panel:#13131a;--line:#2a2a33;--red:#c8102e;--red-dark:#8a0a1f;--gold:#c9a227;--gold-bright:#e8b84a;--gold-dim:#8a7119;--ink:#c8102e;--ink-dim:#c9a227;--orig:#c8102e;--accent:#d49a3a;--grid:#1d1d24}
+*{box-sizing:border-box;margin:0;padding:0}body{background:var(--bg);color:var(--ink);font-family:Georgia,'Times New Roman',serif;line-height:1.55}
+a{color:var(--gold);text-decoration:none}a:hover{color:var(--gold-bright);text-decoration:underline}
+header.hos{background:linear-gradient(180deg,var(--red-dark) 0%,#1a0007 30%,var(--bg) 100%);border-bottom:2px solid var(--red);padding:0;position:relative}
+header.hos::before{content:"";position:absolute;left:0;top:0;bottom:0;width:6px;background:var(--red)}
+.hos-strip{display:flex;justify-content:space-between;align-items:center;padding:6px 14px;background:rgba(0,0,0,0.5);border-bottom:1px solid var(--red-dark);font-family:'Courier New',monospace;font-size:10px;letter-spacing:2px;color:var(--ink-dim);text-transform:uppercase}
+.hos-strip .l{color:var(--gold)} .hos-strip .r{color:var(--red);font-weight:bold}
+.hos-body{padding:18px 22px 14px}
+.hos-h1{font-size:1.5rem;letter-spacing:.12em;color:var(--orig);font-weight:normal;margin-bottom:4px;line-height:1.2}
+.hos-h1 .q{color:var(--red);font-family:'Courier New',monospace;font-size:.7em;vertical-align:super;margin-right:6px;padding:3px 7px;background:rgba(200,16,46,0.15);border:1px solid var(--red-dark);letter-spacing:1px}
+.hos-h1 .sig{font-size:.55em;color:var(--gold);font-family:'Courier New',monospace;letter-spacing:2px;margin-left:10px;padding:3px 8px;border:1px solid var(--gold-dim);vertical-align:middle}
+.hos-sub{color:var(--ink-dim);font-size:13px;font-style:italic}
+.stamps{padding:7px 16px;background:var(--bg2);border-bottom:1px solid var(--line);text-align:center;font-family:'Courier New',monospace}
+.stamps span{display:inline-block;border:1px solid var(--gold-dim);color:var(--gold);font-size:9px;letter-spacing:2px;padding:2px 7px;margin:0 2px;text-transform:uppercase}
+.stamps span.fid{color:var(--gold-bright);border-color:var(--gold);background:rgba(201,162,39,0.05)}
+.stamps span.dam{color:var(--red);border-color:var(--red-dark);background:rgba(200,16,46,0.05)}
+.stamps span.cre{color:var(--accent);border-color:var(--accent);background:rgba(212,154,58,0.05)}
+nav.main{padding:8px 18px;background:var(--panel);border-bottom:1px solid var(--line);font-size:12px;text-align:center}
+nav.main a{color:var(--gold);margin:0 6px;letter-spacing:1px;padding:3px 6px}
+.toolbar{display:flex;justify-content:center;gap:6px;flex-wrap:wrap;margin:14px 0 8px;padding:8px;background:var(--panel);border:1px solid var(--line);font-family:'Courier New',monospace}
+.toolbar button{background:transparent;border:1px solid var(--gold-dim);color:var(--gold);padding:5px 11px;font-size:10px;letter-spacing:1px;cursor:pointer;font-family:inherit;text-transform:uppercase}
+.toolbar button:hover{background:var(--gold);color:var(--bg)}
+.meta{color:var(--ink-dim);font-size:11px;font-style:italic;padding:6px 16px;text-align:center;font-family:'Courier New',monospace;letter-spacing:1px}
+.meta b{color:var(--gold);font-style:normal;font-family:Georgia,serif}
+.chap{background:linear-gradient(90deg,var(--red-dark),transparent);color:var(--gold-bright);font-size:.85rem;letter-spacing:.2em;padding:9px 16px;border-bottom:1px solid var(--red-dark);border-top:1px solid var(--red-dark);font-family:'Courier New',monospace;text-transform:uppercase;margin-top:12px}
+main{max-width:1300px;margin:0 auto;padding:0 12px 40px}
+.row{display:grid;grid-template-columns:3rem 1fr 1.1fr;border-bottom:1px solid var(--grid);align-items:start;transition:background 0.15s}
+.row:hover{background:#15110b}
+.num{grid-column:1;color:var(--gold);font-size:12px;padding:10px 4px;text-align:right;font-family:'Courier New',monospace;font-weight:bold;align-self:start}
+.orig,.ar,.gr,.he,.grc,.sk,.dev,.av,.zh,.sa{grid-column:2;padding:10px 12px;font-size:1rem;line-height:1.7;color:var(--orig);background:rgba(201,162,39,0.025);border-right:1px solid var(--gold-dim);border-left:3px solid var(--gold-dim);font-style:italic}
+.ar{direction:rtl;text-align:right;font-family:'Amiri','Scheherazade New','Traditional Arabic',serif;font-size:1.25rem;line-height:1.85}
+.gr,.grc{direction:ltr;font-family:'SBL Greek','Palatino Linotype',Georgia,serif}
+.he{direction:rtl;text-align:right;font-family:'SBL Hebrew','Times New Roman',serif;font-size:1.1rem}
+.sk,.dev{direction:ltr;font-family:'Noto Sans Devanagari','Sanskrit Text',serif;font-size:1.05rem}
+.zh{font-family:'Noto Serif CJK SC','SimSun',serif}
+.ru,.rus{grid-column:3;padding:10px 12px;font-size:.95rem;line-height:1.65;text-align:justify;color:var(--ink)}
+.bismillah{text-align:center;padding:1.5rem 1rem;font-family:'Amiri','Scheherazade New','Traditional Arabic',serif;font-size:1.8rem;color:var(--gold);direction:rtl;background:linear-gradient(180deg,#1a1410,#0a0a0c);border-bottom:1px solid var(--red-dark);letter-spacing:0;margin:14px 16px;border:1px solid var(--red-dark)}
+.bismillah .label{display:block;font-family:'Courier New',monospace;font-size:.7rem;letter-spacing:.25em;color:var(--ink-dim);text-transform:uppercase;direction:ltr;margin-bottom:8px}
+footer{padding:18px;text-align:center;color:var(--ink-dim);font-size:10px;border-top:1px solid var(--line);font-family:'Courier New',monospace;letter-spacing:2px;background:var(--bg2)}
+footer .red{color:var(--red)} footer .gold{color:var(--gold)}
+
+  .hos-sub{font-size:12px}
+  .hos-strip{font-size:9px;letter-spacing:1px;padding:4px 8px}
+  .stamps span{font-size:8px;letter-spacing:1px;padding:2px 5px;margin:0 1px}
+  
+  /* Stack verse vertically on mobile */
+  .verse,.row{grid-template-columns:1fr !important;display:block !important;padding:8px 10px;margin-bottom:8px;border:1px solid var(--line);background:var(--bg2)}
+  .verse .num,.row .num{display:inline-block;background:rgba(0,0,0,0.5);padding:2px 8px;margin-bottom:6px;width:auto;text-align:left;font-size:11px;border:1px solid var(--gold-dim);border-radius:2px}
+  
+  /* Original language - full width */
+  .verse .av,.verse .sk,.verse .he,.verse .grc,.verse .zh,.verse .sa,.verse .ar,.verse .dev,.verse .en,.verse .gr,.verse .egy,.verse .csl,.verse .fa,.verse .ak,.verse .bo,.verse .tib,
+  .row .av,.row .sk,.row .he,.row .grc,.row .zh,.row .sa,.row .ar,.row .dev,.row .en,.row .gr,.row .csl,.row .fa,.row .ak,.row .bo,.row .tib{font-size:1.05rem;line-height:1.7;padding:8px 10px;border-left:3px solid var(--gold-dim);margin:6px 0;background:rgba(201,162,39,0.04);font-style:italic;width:auto !important;display:block}
+  
+  /* Russian - full width */
+  .verse .ru,.row .ru{font-size:.95rem;line-height:1.6;padding:8px 10px;border-left:3px solid var(--red);background:rgba(200,16,46,0.04);margin:6px 0;width:auto !important;display:block;grid-column:1}
+  
+  /* Toolbar */
+  .toolbar{display:flex;flex-wrap:wrap;gap:4px;padding:6px;margin:8px 0}
+  .toolbar button{font-size:10px;padding:5px 8px;letter-spacing:0;flex:1 1 30%;min-width:60px}
+  
+  /* Container */
+  main{padding:0 8px}
+  nav.main{padding:6px 10px;font-size:11px}
+  nav.main a{margin:0 3px;padding:2px 4px}
+  
+  /* Book cards */
+  .book-grid{grid-template-columns:1fr;gap:6px}
+  .book-card{font-size:13px;padding:8px 10px;line-height:1.4}
+  
+  /* Note */
+  .note{font-size:14px;line-height:1.7;padding:14px 18px;margin:14px;color:var(--red);background:rgba(201,162,39,0.04);border:1px solid var(--gold-dim);border-left:4px solid var(--gold)}
+
+  
+  /* Footer */
+  footer{font-size:11px;padding:8px 10px}
+}
+  .row{grid-template-columns:2rem 1fr 1.1fr}
+  .num{font-size:.7rem;padding:.5rem .3rem}
+  .ar{font-size:1.1rem;line-height:1.7;padding:.5rem .4rem}
+  .ru{font-size:.85rem;line-height:1.4;padding:.5rem .4rem}
+}
+
+/* Q20 EGYPTIAN additions */
+.verse .egy{grid-column:1;font-family:'Papyrus','Segoe UI Historic',serif;font-size:1.05rem;line-height:1.8;direction:ltr;text-align:left;color:#e8b84a;background:rgba(232,184,74,0.04);border-right:3px solid var(--gold-dim);padding:12px 14px;font-style:italic}
+.verse .ru{grid-column:2;font-size:0.98rem;line-height:1.75;color:var(--ink);background:rgba(201,162,39,0.025);border-left:1px solid var(--gold-dim);padding:12px 14px}
+.verse .transl-note{grid-column:1/-1;padding:6px 14px;font-size:0.78rem;color:var(--ink-dim);font-style:italic;text-align:right;background:rgba(0,0,0,0.15);border-top:1px solid var(--line)}
+.verse .num,.verse .transl-note{color:var(--gold-bright)}
+
+.verse .av,.verse .sk,.verse .he,.verse .grc,.verse .zh,.verse .sa,.verse .ar,.verse .dev,.verse .en,.verse .gr,.verse .csl,.verse .fa,.verse .ak,.verse .bo,.verse .tib{font-family:'Times New Roman',Georgia,serif;font-size:1.05rem;line-height:1.7;color:var(--orig);background:rgba(201,162,39,0.04);border-right:3px solid var(--gold-dim);padding:12px 14px;direction:ltr;text-align:left;font-style:italic}
+.row .av,.row .sk,.row .he,.row .grc,.row .zh,.row .sa,.row .ar,.row .dev,.row .en,.row .gr,.row .csl,.row .fa,.row .ak,.row .bo,.row .tib{font-family:'Times New Roman',Georgia,serif;font-size:1.05rem;line-height:1.7;color:var(--orig);background:rgba(201,162,39,0.04);padding:10px 12px;direction:ltr;text-align:left}
+.verse{display:grid;grid-template-columns:3.2rem 1fr 1.1fr;border-bottom:1px solid var(--grid);align-items:start;transition:background 0.15s}
+.row{display:grid;grid-template-columns:3.2rem 1fr 1.1fr 1fr;border-bottom:1px solid var(--grid);align-items:start;transition:background 0.15s}
+.num{font-family:'Courier New',monospace;font-size:11px;color:var(--gold);text-align:center;padding:12px 4px;background:rgba(0,0,0,0.3);border-right:1px solid var(--line);font-weight:bold;align-self:start}
+.ru{font-size:.92rem;line-height:1.6;color:var(--ink);padding:10px 12px;background:rgba(255,255,255,0.01);border-left:1px solid var(--line);align-self:start;grid-column:3}
+
+/* ARCHIVUM HAERETICUM — Original script fonts */
+
+
+
+
+
+
+
+@font-face{font-family:'Noto Sans Cuneiform';font-style:normal;font-weight:400;font-display:block;src:url('/archivum-haereticum/fonts/noto-cuneiform.ttf') format('truetype')}
+@font-face{font-family:'Noto Sans Egyptian Hieroglyphs';font-style:normal;font-weight:400;font-display:block;src:url('/archivum-haereticum/fonts/noto-hieroglyphs.ttf') format('truetype')}
+@font-face{font-family:'Noto Sans Coptic';font-style:normal;font-weight:400;font-display:block;src:url('/archivum-haereticum/fonts/noto-coptic.ttf') format('truetype')}
+@font-face{font-family:'Noto Serif JP';font-style:normal;font-weight:400;font-display:swap;src:local('Noto Serif JP'),local('NotoSerifJP-Regular')}
+@font-face{font-family:'Noto Sans Devanagari';font-style:normal;font-weight:400;font-display:swap;src:local('Noto Sans Devanagari'),local('NotoSansDevanagari-Regular')}
+@font-face{font-family:'Noto Sans Tibetan';font-style:normal;font-weight:400;font-display:swap;src:local('Noto Sans Tibetan'),local('NotoSansTibetan-Regular')}
+@font-face{font-family:'SBL Greek';font-style:normal;font-weight:400;font-display:swap;src:local('SBL Greek'),local('SBLGreek')}@media(max-width:760px){
+.verse,.row{grid-template-columns:1fr !important;display:block !important;padding:12px 14px;margin:8px 0;border:1px solid var(--line);background:var(--bg2);width:100% !important;max-width:100% !important;overflow:hidden;box-sizing:border-box}
+.verse .num,.row .num{display:inline-block;background:rgba(0,0,0,0.5);padding:3px 10px;margin-bottom:8px;width:auto;text-align:left;font-size:11px;border:1px solid var(--gold-dim);border-radius:2px;font-family:'Courier New',monospace;min-width:0 !important}
+.verse .on,.verse .ru,.verse .csl,.verse .sk,.verse .he,.verse .grc,.verse .zh,.verse .ar,.verse .fa,.verse .bo,.verse .ak,.verse .cop,.verse .pali,.verse .sk-deva,.verse .eg-hiero,.verse .ak-cun,.verse .cop-uni,.verse .ja,.verse .pali-deva,.verse .qu,.verse .av,.verse .egy,.verse .csl,.verse .gr,.verse .on-r,
+.row .on,.row .ru,.row .csl,.row .sk,.row .he,.row .grc,.row .zh,.row .ar,.row .fa,.row .bo,.row .ak,.row .cop,.row .pali,.row .sk-deva,.row .eg-hiero,.row .ak-cun,.row .cop-uni,.row .ja,.row .pali-deva,.row .qu,.row .av,.row .egy,.row .csl,.row .gr{font-size:1.05rem !important;line-height:1.65 !important;padding:10px 12px !important;border-left:3px solid var(--gold-dim);margin:6px 0;background:rgba(201,162,39,0.04);width:auto !important;display:block !important;min-width:0 !important;word-wrap:break-word;overflow-wrap:break-word;max-width:100% !important;box-sizing:border-box}
+.verse .ru,.row .ru{border-left:3px solid var(--red);background:rgba(200,16,46,0.04)}
+.hos-h1{font-size:1.2rem;letter-spacing:.05em;line-height:1.3}
+.hos-sub{font-size:12px}
+.hos-strip{font-size:9px;letter-spacing:1px;padding:4px 8px}
+.stamps span{font-size:8px;letter-spacing:1px;padding:2px 5px;margin:0 1px}
+main{padding:0 8px;width:100% !important;max-width:100% !important;box-sizing:border-box}
+nav.main{padding:6px 10px;font-size:11px}
+nav.main a{margin:0 3px;padding:2px 4px}
+.toolbar button{font-size:10px;padding:5px 8px;letter-spacing:0;flex:1 1 30%;min-width:60px}
+.book-grid{grid-template-columns:1fr;gap:6px}
+.book-card{font-size:13px;padding:8px 10px;line-height:1.4}
+.note{font-size:14px;line-height:1.7;padding:14px 18px;margin:14px;color:var(--ink);background:rgba(201,162,39,0.04);border:1px solid var(--gold-dim);border-left:4px solid var(--gold)}
+footer{font-size:11px;padding:8px 10px}
+}
+</style>
+</head><body>
+<header class="hos">
+<div class="hos-strip"><span class="l">ARCHIVUM HAERETICUM — CORPUS DIVINUS</span><span class="r">Q4 — LIBRI-ENOCH</span></div>
+<div class="hos-body">
+<h1 class="hos-h1"><span class="q">Q4</span>ПОСЛАНИЕ ЕНОХА — 1 Енох · Архивум</h1>
+<div class="hos-sub">EPISTULA HENOCH · гл. 91–105 · недели мира, увещания · Геэз (эфиопский канон) · Греч. фрагменты (Ахмим) · Смирнов 1888 · Charles 1917</div>
+</div>
+</header>
+<div class="stamps">
+<span class="fid">◆ FIDELIS</span>
+<span class="cre">✚ MYSTICA</span>
+<span class="dam">✠ APOCRYPHA</span>
+</div>
+<nav class="main">
+<a href="../index.html">◀ CORPUS DIVINUS</a>
+</nav>
+<main>
+<div class="toolbar">
+<button onclick="toggleAll(true)">РАЗВЕРНУТЬ</button>
+<button onclick="toggleAll(false)">СВЕРНУТЬ</button>
+<button onclick="toggleOrig()">☀ ОРИГИНАЛ</button>
+<button onclick="toggleRu()">☾ ПЕРЕВОД</button>
+<button onclick="resetView()">◉ ОБА</button>
+</div>
+
+<div class="toolbar">
+<button onclick="toggleAll(true)">▼ Развернуть все</button>
+<button onclick="toggleAll(false)">▲ Свернуть все</button>
+<button onclick="toggleOrig()">🌙 Только оригинал</button>
+<button onclick="toggleRu()">📖 Только перевод</button>
+<button onclick="resetView()">◉ Оба</button>
+</div>
+<nav class="chapters"><a href="index.html">← 1 Енох</a> &nbsp;|&nbsp; Главы: <a href="#ch91">91</a> <a href="#ch92">92</a> <a href="#ch93">93</a> <a href="#ch94">94</a> <a href="#ch95">95</a> <a href="#ch96">96</a> <a href="#ch97">97</a> <a href="#ch98">98</a> <a href="#ch99">99</a> <a href="#ch100">100</a> <a href="#ch101">101</a> <a href="#ch102">102</a> <a href="#ch103">103</a> <a href="#ch104">104</a> <a href="#ch105">105</a></nav>
+<details class="corpus-ch" open><summary>Глава 91</summary>
+<div class="verse"><div class="num">91:1</div><div class="gez">ወይእዜኒ፡ ወልድየ፡ ማቱሳላ፡ ጸውዕ፡ ሊተ፡ ኵሎሙ፡ አኀዊከ፡ ወአስተጋብእ፡ ሊተ፡ ኵሎ፡ ደቂቀ፡ እምከ፡ እስመ፡ ቃል፡ ይጼውዐኒ፡ ወመንፈስ፡ ተክዕወ፡ በላዕሌየ፡ ከመ፡ አርእይክሙ፡ ኵሎ፡ ዘይበጽሐክሙ፡ እስከ፡ ለዓለም።</div><div class="ru">И теперь, мой сын Мафусаил, призови ко мне всех своих братьев, и собери ко мне всех сыновей твоей матери; ибо слово побуждает меня и дух излился на меня, чтобы я открыл вам все, что придет на вас до вечности.</div></div>
+<div class="verse"><div class="num">91:2</div><div class="gez">ወእምኔሁ፡ ሖረ፡ ማቱሳላ፡ ወጸውዖሙ፡ ለኵሎሙ፡ አኀዊሁ፡ ኀቤሁ፡ ወአስተጋብኦሙ፡ ለአዝማደ፡ ዚኣሁ።</div><div class="ru">После этого Мафусаил пошел и призвал всех своих братьев к себе, и собрал своих родственников.</div></div>
+<div class="verse"><div class="num">91:3</div><div class="gez">ወተናገሮሙ፡ ለኵሎሙ፡ ውሉዱ፡ ጽድቅ፡ ወይቤ፡ ስምዑ፡ ደቂቅየ፡ ኵሎ፡ ነገረ፡ አቡክሙ፡ ወአጽምኡ፡ በርትዕ፡ ቃለ፡ አፉየ፡ እስመ፡ ኣሰምዕ፡ ዲቤክሙ፡ ወእነግረክሙ፡ ፍቁራንየ፡ አፍቅርዋ፡ ለርትዕ፡ ወባቲ፡ ሑሩ።</div><div class="ru">И он (Енох) говорил со всеми своими детьми о правде, и сказал: &amp;quot;вслушайтесь, сыны мои, каждую речь вашего отца и должным образом внемли гласу моих уст, ибо я увещеваю вам, возлюбленные мои: любите праведность и ходите в ней.</div></div>
+<div class="verse"><div class="num">91:4</div><div class="gez">ወኢትቅረቡ፡ ኀበ፡ ርትዕ፡ በክልኤ፡ ልብ፡ ወኢትኅበሩ፡ ምስለ፡ እለ፡ ክልኤ፡ ልብ፡ አላ፡ ሑሩ፡ በጽድቅ፡ ደቂቅየ፡ ወይእቲ፡ ትመርሐክሙ፡ በፍናዋት፡ ኄራት፡ ወጽድቅ፡ ይከውን፡ ለክሙ፡ ሱታፌ።</div><div class="ru">И не приближайтесь к праведности с двояким сердцем, и не присоединяйтесь к тем, у которых двоякое сердце, но ходите в правде, сыны мои; и она приведет вас на добрые пути, и правда будет вашей помощницей.</div></div>
+<div class="verse"><div class="num">91:5</div><div class="gez">እስመ፡ ኣአምር፡ ከመ፡ ይጸንዕ፡ ህላዌ፡ ግፍዕ፡ ዲበ፡ ምድር፡ ወይትፌጸም፡ መቅሠፍት፡ ዐቢይ፡ ዲበ፡ ምድር፡ ወትትፌጸም፡ ኵላ፡ ዐመፃ፡ ወትትገዘም፡ እምሥረዊሃ፡ ወኵሉ፡ ሕንጻ፡ የኀልፍ።</div><div class="ru">Ибо я знаю, что дела насилия возьмут верх на земле, и великое осуждение совершится на земле; и всякая неправда прекратится и будет отделена от своих корней, и все здание ее исчезнет.</div></div>
+<div class="verse"><div class="num">91:6</div><div class="gez">ወትደግም፡ ካዕበ፡ ዐመፃ፡ ወትትፌጸም፡ ዲበ፡ ምድር፡ ወትትአኀዝ፡ ኵላ፡ ግብረ፡ ዐመፃ፡ ወግብረ፡ ግፍዕ፡ ወአበሳ፡ ካዕበተ።</div><div class="ru">И неправда опять повторится, и все дела неправды и все дела насилия и беззакония вторично совершатся на земле.</div></div>
+<div class="verse"><div class="num">91:7</div><div class="gez">ወእመኒ፡ ትልህቅ፡ ዐመፃ፡ ወኀጢአት፡ ወፅርፈት፡ ወግፍዕ፡ ወኵሉ፡ ግብር፡ ወትልህቅ፡ ዕልወት፡ ወአበሳ፡ ወርኵስ፡ መቅሠፍት፡ ዐቢይ፡ ይከውን፡ እምሰማይ፡ ዲበ፡ እሉ፡ ኵሎሙ፡ ወይወፅእ፡ እግዚእ፡ ቅዱስ፡ በመዓት፡ ወመቅሠፍት፡ ዐቢይ፡ ከመ፡ ይግበር፡ ኵነኔ፡ ዲበ፡ ምድር።</div><div class="ru">И так как тогда усилится неправда, и грех, и хула, и насилие, и другого рода действия, и увеличится отпадение, и беззаконие, и нечистота, то придет великое осуждение с неба на всех них, и святой Господь выйдет с гневом и наказанием, чтобы совершить суд на земле.</div></div>
+<div class="verse"><div class="num">91:8</div><div class="gez">ወበእማንቱ፡ መዋዕል፡ ትትገዘም፡ ግፍዕ፡ እምነ፡ ሥረዊሃ፡ ወአሥራወ፡ ዐመፃ፡ ምስለ፡ ጕሕሉት፡ ወይትሀጐሉ፡ እምታሕተ፡ ሰማይ።</div><div class="ru">В те дни насилие будет отделено от своих корней, и корни неправды погибнут вместе с ложью, и они исчезнут из-под неба.</div></div>
+<div class="verse"><div class="num">91:9</div><div class="gez">ወኵሉ፡ ይትወሀብ፡ ምስለ፡ አሕዛብ፡ ወማኅፈድ፡ በእሳት፡ ትነድድ፡ ወያወፅእዎሙ፡ እምኵሉ፡ ምድር፡ ወይትገደፉ፡ በኵነኔ፡ እሳት፡ ወይትሀጐሉ፡ በመዓት፡ ወበኵነኔ፡ ኀያል፡ እንተ፡ ለዓለም።</div><div class="ru">И все идолы язычников будут преданы погибели; башни будут сожжены огнем, и их уберут со всей земли; и они будут брошены по осуждению в огнь, и погибнут в гневе и жестоком осуждении, которое продолжится вовек.</div></div>
+<div class="verse"><div class="num">91:10</div><div class="gez">ወይትነሣእ፡ ጻድቅ፡ እምንዋም፡ ወይትነሣእ፡ ጥበብ፡ ወይትወሀብ፡ ሎሙ።</div><div class="ru">И восстанет тогда праведный от сна, и мудрость восстанет и будет дана им.</div></div>
+<div class="verse"><div class="num">91:11</div><div class="gez">ወእምኔሁ፡ ይትገዘሙ፡ አሥራወ፡ ዐመፃ፡ ወኃጥኣን፡ ይትሀጐሉ፡ በሰይፍ፡ ወእምነ፡ ፅሩፋን፡ ይትገዘሙ፡ በኵሉ፡ መካን፡ ወእለ፡ ይኄልይዋ፡ ለግፍዕ፡ ወእለ፡ ይገብርዋ፡ ለፅርፈት፡ ይትሀጐሉ፡ በመጥባሕት።</div><div class="ru">И после того корни неправды будет отделены, и грешники погибнут от меча, у клеветников будут отделены корни во всяком месте, и те, которые замышляют насилие и произносят хулу, погибнут от острия меча.</div></div>
+<div class="verse"><div class="num">91:12</div><div class="gez">ወእምድኅረ፡ ዝ፡ ትከውን፡ ካልእት፡ ሰንበት፡ ሳምኒት፡ እንተ፡ ጽድቅ፡ ወይትወሀብ፡ ላቲ፡ ሰይፍ፡ ከመ፡ ይትገበር፡ ኵነኔ፡ ጽድቅ፡ እምእለ፡ ይገፍዑ፡ ወይትመጠዉ፡ ኃጥኣን፡ ለጻድቃን።</div><div class="ru">И после этого будет другая седмина— восьмая, седмина правды; и будет дан ей меч, чтобы судить и справедливость исполнить над теми, которые поступают насильственно, и грешники будут преданы в руки праведных.</div></div>
+<div class="verse"><div class="num">91:13</div><div class="gez">በተፍጻሜታ፡ ያጠርዩ፡ አብያተ፡ እምጽድቀ፡ ዚኣሆሙ፡ ወይትሐነጽ፡ ቤት፡ ለንጉሥ፡ ዐቢይ፡ በስብሐት፡ እስከ፡ ለዓለም።</div><div class="ru">И в конце ее они приобретут домы своею спаведливостю, и создастся дом великому Царю в прославление навсегда и навечно.</div></div>
+<div class="verse"><div class="num">91:14</div><div class="gez">ወእምድኅረ፡ ዝ፡ በሰንበት፡ ታስዕት፡ ባቲ፡ ኵነኔ፡ ጽድቅ፡ ትትከሠት፡ ለኵሉ፡ ዓለም፡ ወኵሉ፡ ተግባረ፡ ረሲዓን፡ ይወፅእ፡ እምዲበ፡ ምድር፡ ወይጸሐፍ፡ ዓለም፡ ለሀጕል፡ ወኵሉ፡ ሰብእ፡ ይኔጽሩ፡ ለፍኖተ፡ ርትዕ።</div><div class="ru">И после этого в девятую седмину откроется всему миру праведный суд, и все деяния нечестивых исчезнут со всей земли; и мир будет присужден к погибели, и все люди будут взирать на путь праведности.</div></div>
+<div class="verse"><div class="num">91:15</div><div class="gez">ወእምድኅረ፡ ዝንቱ፡ በሰንበት፡ ዐሥርት፡ ሳብዓቱ፡ እድ፡ ባቲ፡ ኵነኔ፡ እንተ፡ ለዓለም፡ ወትትገበር፡ እምትጉሃን፡ ወሰማይ፡ ዘለዓለም፡ ዐቢይ፡ ዘይበቊል፡ እማእከሎሙ፡ ለመላእክት።</div><div class="ru">И после этого в десятую седьмину, в седьмую ее часть, будет суд на вечность, который совершится над стражами, и явится великое небо, произрастающее из среды ангелов.</div></div>
+<div class="verse"><div class="num">91:16</div><div class="gez">ወሰማይ፡ ቀዳማይ፡ ይወፅእ፡ ወየኀልፍ፡ ወሰማይ፡ ሐዲስ፡ ይትረአይ፡ ወኵሉ፡ ኀይላተ፡ ሰማያት፡ ያበርሁ፡ ለዓለም፡ ሰብዐተ፡ ምክዕቢተ።</div><div class="ru">И прежнее небо уменьшится и исчезнет, и явится новое небо, и все силы небесные седмерицею будут светить вовек.</div></div>
+<div class="verse"><div class="num">91:17</div><div class="gez">ወእምድኅረ፡ ዝ፡ ብዙኃን፡ ሰንበታት፡ እለ፡ አልቦሙ፡ ኍልቊ፡ ለዓለም፡ በኂሩት፡ ወበጽድቅ፡ ይከውኑ፡ ወኀጢአት፡ እምህየ፡ ኢትትበሃል፡ እስከ፡ ለዓለም።</div><div class="ru">И после этого будет много седьмин без числа в вечность во благо и в правду, и с тех пор грех не будет более именоваться до вечности.</div></div>
+<div class="verse"><div class="num">91:18</div><div class="gez">ወይእዜኒ፡ እብለክሙ፡ ደቂቅየ፡ ወኣርእየክሙ፡ ፍናዋተ፡ ጽድቅ፡ ወፍናዋተ፡ ግፍዕ፡ ወኣርእየክሙ፡ ካዕበ፡ ከመ፡ ታእምሩ፡ ዘይመጽእ።</div><div class="ru">И теперь я говорю вам, мои сыны, и указываю вам пути правды и пути насилия, и я укажу вам их опять, чтобы вы знали, что придет.</div></div>
+<div class="verse"><div class="num">91:19</div><div class="gez">ወይእዜኒ፡ ስምዑኒ፡ ደቂቅየ፡ ወሑሩ፡ በፍናዋተ፡ ጽድቅ፡ ወኢትሑሩ፡ በፍናዋተ፡ ግፍዕ፡ እስመ፡ ይትሀጐሉ፡ ለዓለም፡ ኵሎሙ፡ እለ፡ የሐውሩ፡ በፍኖተ፡ ዐመፃ።</div><div class="ru">И теперь послушайте, мои сыны, и ходите в путях правды, и не ходите по путям насилия, ибо навеки погибнут все, ходящие путями неправды.</div></div>
+
+<details class="corpus-ch" open><summary>Глава 92</summary>
+<div class="verse"><div class="num">92:1</div><div class="gez">ዘተጽሕፈ፡ እምሄኖክ፡ ጸሐፈ፡ ዝ፡ ኵሉ፡ ትምህርተ፡ ጥበብ፡ እምኵሉ፡ ሰብእ፡ ስቡሕ፡ ወመኰንነ፡ ኵሉ፡ ምድር፡ ለኵሎሙ፡ ውሉድየ፡ እለ፡ የኀድሩ፡ ዲበ፡ ምድር፡ ወለትውልድ፡ ደኃራውያን፡ እለ፡ ይገብሩ፡ ርትዐ፡ ወሰላመ።</div><div class="ru">Написанное Енохом писцом пространное учение мудрости,— которое заслуживает прославления от всех людей и есть судья всей земли,— для всех моих детей, которые будут жить на земле, и для будущих родов, которые будут ходить в праведности и мире.</div></div>
+<div class="verse"><div class="num">92:2</div><div class="gez">ኢትሕዘን፡ መንፈሰክሙ፡ በአዝማን፡ እስመ፡ መዋዕለ፡ ወሀበ፡ ቅዱስ፡ ወዐቢይ፡ ለኵሉ።</div><div class="ru">Да не смущается дух ваш из-за времен, ибо Святой и Великий всему положил дни.</div></div>
+<div class="verse"><div class="num">92:3</div><div class="gez">ወይትነሣእ፡ ጻድቅ፡ እምንዋም፡ ይትነሣእ፡ ወየኀልፍ፡ በፍኖተ፡ ጽድቅ፡ ወኵሉ፡ ፍኖቱ፡ ወምሕዋሪሁ፡ በኂሩት፡ ወበሣህል፡ ዘለዓለም።</div><div class="ru">И праведный восстанет от сна, восстанет и пойдет по пути правды, и весь</div></div>
+<div class="verse"><div class="num">92:4</div><div class="gez">ይሠሀሎ፡ ለጻድቅ፡ ወሎቱ፡ ይሁብ፡ ርትዐ፡ ዘለዓለም፡ ወይሁብ፡ ሥልጣነ፡ ወይከውን፡ በኂሩት፡ ወበጽድቅ፡ ወየሐውር፡ ብርሃን፡ ዘለዓለም።</div><div class="ru">его путь и стезя будут в вечном благе и милости для праведного, и даст господство, и он будет жить во благе и правде, будет ходить в вечном свете.</div></div>
+<div class="verse"><div class="num">92:5</div><div class="gez">ወኀጢአት፡ በጽልመት፡ ትትሀጐል፡ እስከ፡ ለዓለም፡ ወኢትትረአይ፡ እንከ፡ እምይእቲ፡ ዕለት፡ እስከ፡ ለዓለም።</div><div class="ru">И погибнет грех во мраке навсегда и навечно, и более уже не появится от того дня до вечности.</div></div>
+
+<details class="corpus-ch" open><summary>Глава 93</summary>
+<div class="verse"><div class="num">93:1</div><div class="gez">ወእምድኅረ፡ ዝ፡ ኮነ፡ ሄኖክ፡ ወአኀዘ፡ ይትናገር፡ እመጻሕፍት።</div><div class="ru">И после этого Енох начал возвещать из книг.</div></div>
+<div class="verse"><div class="num">93:2</div><div class="gez">ወይቤ፡ ሄኖክ፡ በእንተ፡ ውሉደ፡ ጽድቅ፡ ወበእንተ፡ ኅሩያነ፡ ዓለም፡ ወበእንተ፡ ተክለ፡ ጽድቅ፡ ወርትዕ፡ እሎንተ፡ እብለክሙ፡ ወኣየድዐክሙ፡ ደቂቅየ፡ አነ፡ ውእቱ፡ ሄኖክ፡ ዘአስተርአየኒ፡ እምራእየ፡ ሰማይ፡ ወእምቃለ፡ ቅዱሳን፡ መላእክት፡ አእመርኩ፡ ወእምጸፍጸፈ፡ ሰማይ፡ ለበውኩ።</div><div class="ru">И сказал Енох: &amp;quot;о детях правды, и об избранных мира, и о растении справедливости и праведности, говорю я это вам, мои сыны,— я Енох,— согласно с тем, что мне открыто в небесном видении, и что я знаю чрез слово святых ангелов и что узнал из скрижалей небесных&amp;quot;.</div></div>
+<div class="verse"><div class="num">93:3</div><div class="gez">ወአኀዘ፡ እንከ፡ ይትናገር፡ ሄኖክ፡ እመጻሕፍት፡ ወይቤ፡ አነ፡ ሳብዕ፡ ተወለድኩ፡ በቀዳሚት፡ ሰንበት፡ እስከ፡ አመ፡ ኵነኔ፡ ጽድቅ፡ ተዐገሠ።</div><div class="ru">И Енох начал теперь повествовать из книг и сказал: &amp;quot;я родился седьмым в первую седьмину, когда суд и правда еще медлили.</div></div>
+<div class="verse"><div class="num">93:4</div><div class="gez">ወትቀውም፡ እምድኅሬየ፡ በካልእት፡ ሰንበት፡ ዐባይ፡ እኪት፡ ወጕሕሉት፡ በቈለት፡ ወባቲ፡ ትከውን፡ ፍጻሜ፡ ቀዳሚት፡ ወባቲ፡ ይድኅን፡ ብእሲ፡ ወእምድኅረ፡ ተፈጸመ፡ ትልህቅ፡ ዐመፃ፡ ወሥርዐተ፡ ይገብር፡ ለኃጥኣን።</div><div class="ru">И после меня во вторую седьмину восстанет великая злоба и произрастет обман, и во время нее будет первый конец, и во время ее спасется один муж; и после того, как он (конец) совершится, возрастет неправда, и Он даст закон грешникам.</div></div>
+<div class="verse"><div class="num">93:5</div><div class="gez">ወእምድኅረ፡ ዝ፡ በሣልስት፡ ሰንበት፡ በተፍጻሜታ፡ ይትኀረይ፡ ብእሲ፡ ለተክለ፡ ኵነኔ፡ ጽድቅ፡ ወእምድኅሬሁ፡ ይወፅእ፡ ተክለ፡ ጽድቅ፡ ወርትዕ፡ ለዓለም።</div><div class="ru">И после этого в третью седьмину, в конце ее, будет избран в растение праведного суда один муж, и после него явится растение правды навсегда и навечно.</div></div>
+<div class="verse"><div class="num">93:6</div><div class="gez">ወእምድኅረ፡ ዝ፡ በራብዕት፡ ሰንበት፡ በተፍጻሜታ፡ ራእያተ፡ ቅዱሳን፡ ወጻድቃን፡ ይትረአዩ፡ ወሥርዐት፡ ለትውልደ፡ ትውልድ፡ ወዐጸድ፡ ይትገበር፡ ሎሙ።</div><div class="ru">И после этого в четвертую седьмину, в конце ее, будут видимы видения святых и праведных, и закон для всех будущих родов и двор будет сделан (дан)</div></div>
+<div class="verse"><div class="num">93:7</div><div class="gez">ወእምድኅረ፡ ዝ፡ በኀምስ፡ ሰንበት፡ በተፍጻሜታ፡ ቤተ፡ ስብሐት፡ ወመንግሥት፡ ይትሐነጽ፡ እስከ፡ ለዓለም።</div><div class="ru">им, И после этого в пятую седьмину, в конце ее, будет устроен дом славы и господства навсегда и навечно.</div></div>
+<div class="verse"><div class="num">93:8</div><div class="gez">ወእምድኅረ፡ ዝ፡ በሳድስት፡ ሰንበት፡ እለ፡ ይከውኑ፡ ውስቴታ፡ ጽሉላን፡ ኵሎሙ፡ ወይትረሳዕ፡ ልቦሙ፡ ለኵሎሙ፡ እምጥበብ፡ ወባቲ፡ የዐርግ፡ ብእሲ፡ ወበተፍጻሜታ፡ ይውዒ፡ ቤተ፡ መንግሥት፡ በእሳት፡ ወባቲ፡ ይዘረዉ፡ ኵሉ፡ ዘመደ፡ ሥርወ፡ ኅሩይ።</div><div class="ru">И после этого в шестую седмину все, которые будут жить во время ее, будут ослеплены, и все они погрузятся своею мыслью в неразумие, забыв мудрость; и во время нее будет взят вверх один муж; и в конце его господства будет сожжен огнем, и весь род избранного корня будет рассеян.</div></div>
+<div class="verse"><div class="num">93:9</div><div class="gez">ወእምድኅረ፡ ዝ፡ በሳብዕት፡ ሰንበት፡ ትትነሣእ፡ ትውልድ፡ ዕሉት፡ ወብዙኅ፡ ምግባራቲሃ፡ ወኵሉ፡ ምግባራቲሃ፡ ዕልወት።</div><div class="ru">И после этого в седьмую седьмину восстанет отпадший (или развращенный) род, и много будет деяний его, и все его деяния будут отпадением.</div></div>
+<div class="verse"><div class="num">93:10</div><div class="gez">ወበተፍጻሜታ፡ ይትዐሰዩ፡ ኅሩያነ፡ ጽድቅ፡ እምተክለ፡ ጽድቅ፡ ዘለዓለም፡ እለ፡ ይትወሀብ፡ ሎሙ፡ ሰብዐቱ፡ ምክዕቢታተ፡ ትምህርት፡ ለኵሉ፡ ፍጥረተ፡ ዚኣሁ።</div><div class="ru">И в конце ее будут награждены избранные и праведные от вечного растения правды, между тем как им будет дано седьмикратное наставление обо всем Его творении.</div></div>
+<div class="verse"><div class="num">93:11</div><div class="gez">እስመ፡ መኑ፡ ውእቱ፡ እምውሉደ፡ ሰብእ፡ ዘይክል፡ ሰሚዐ፡ ቃሉ፡ ለቅዱስ፡ ወኢይትሀወክ፡ ወመኑ፡ ዘይክል፡ ከመ፡ የኀሊ፡ ኅሊናሁ፡ ወመኑ፡ ዘይክል፡ ነጽሮቶ፡ ለሰማይ፡ ወኵሎ፡ ምግባራቲሃ።</div><div class="ru">Ибо есть ли где-нибудь сын человеческий, который услышал бы голос Святого и не был бы потрясен? И есть ли где-нибудь такой, кто мог бы мыслить его мысли? И где есть такой, кто мог бы видеть все произведения неба?</div></div>
+<div class="verse"><div class="num">93:12</div><div class="gez">ወምንት፡ ውእቱ፡ ዘይክል፡ አእምሮ፡ ግብረ፡ ሰማይ፡ ወከመ፡ ይርአይ፡ ነፍሶ፡ ወእመ፡ አኮ፡ መንፈሶ፡ ወይክል፡ ነጊረ፡ ወእመ፡ አኮ፡ ዐሪገ፡ ወይሬኢ፡ ኵሎ፡ አክናፊሆሙ፡ ወይኄልይዎሙ፡ ወእመ፡ አኮ፡ ይገብር፡ ከማሆሙ።</div><div class="ru">И как мог бы существовать тот, кто узнал бы произведения неба, и увидел бы Его дыхание, и Его дух, и подсказал бы о том, или вошел бы наверх и увидел все концы (буквально— крылья) их (небес), и мог бы придумать их, или сделать что подобное им?</div></div>
+<div class="verse"><div class="num">93:13</div><div class="gez">ወመኑ፡ ውእቱ፡ ኵሉ፡ ብእሲ፡ ዘይክል፡ አእምሮተ፡ እፎ፡ ውእቱ፡ ራሕባ፡ ወኑኃ፡ ለምድር፡ ወለመኑ፡ ተርእያ፡ አምጣነ፡ ኵሎሙ።</div><div class="ru">И есть ли где-нибудь такой муж, который мог бы знать, какова широта и длина земли, и кому открыта мера всего этого?</div></div>
+<div class="verse"><div class="num">93:14</div><div class="gez">ወእፎመ፡ ቦቱ፡ ኵሉ፡ ብእሲ፡ ዘይክል፡ አእምሮተ፡ ኑኃ፡ ለሰማይ፡ ውእቱ፡ ልዕልናሃ፡ ወዲበ፡ ምንት፡ ጸንዐት፡ ወሚ፡ መጠን፡ ውእቱ፡ ኍልቆሙ፡ ለከዋክብት፡ ወበአይቴ፡ የዐርፉ፡ ኵሎሙ፡ ብርሃናት።</div><div class="ru">И найдется ли кто-нибудь, который мог бы знать длину неба, и какова его высота, и на чем оно утверждено, и как велико число звезд, и где покоятся все светила?</div></div>
+
+<details class="corpus-ch" open><summary>Глава 94</summary>
+<div class="verse"><div class="num">94:1</div><div class="gez">ወይእዜኒ፡ እብለክሙ፡ ደቂቅየ፡ አፍቅርዋ፡ ለጽድቅ፡ ወባቲ፡ ሑሩ፡ እስመ፡ ፍናዋተ፡ ጽድቅ፡ ይደሉ፡ ይትወከፍዎሙ፡ ወፍናዋተ፡ ዐመፃ፡ ፍጡነ፡ ይትሀጐሉ፡ ወየሐጽጹ።</div><div class="ru">И теперь я говорю вам, мои сыны, любите правду и ходите в ней, ибо пути правды достойны, чтобы принять их; а пути неправды исчезают внезапно и погибают.</div></div>
+<div class="verse"><div class="num">94:2</div><div class="gez">ወለሰብእ፡ እሙራን፡ እምትውልድ፡ ይትከሠቱ፡ ፍናዋተ፡ ግፍዕ፡ ወሞት፡ ወይርሕቁ፡ እምኔሆሙ፡ ወኢይተልውዎሙ።</div><div class="ru">И некоторым людям из грядущих родов будут открыты пути насилия и смерти, и они будут держать себя далеко от них, и не будут им следовать.</div></div>
+<div class="verse"><div class="num">94:3</div><div class="gez">ወይእዜኒ፡ ለክሙ፡ እብለክሙ፡ ለጻድቃን፡ ኢትሑሩ፡ በፍናዋተ፡ እኩይ፡ ወግፍዕ፡ ወኢ፡ በፍናዋተ፡ ሞት፡ ወኢትቅረቡ፡ ኀቤሆሙ፡ ከመ፡ ኢትትሀጐሉ።</div><div class="ru">И теперь я говорю вам— праведным: ходите не по злому пути и не в насилии, и не по путям смерти, и не приближайтесь к ним, чтобы вам не погибнуть.</div></div>
+<div class="verse"><div class="num">94:4</div><div class="gez">አላ፡ ፍቅዱ፡ ወኅረዩ፡ ለክሙ፡ ጽድቀ፡ ወሕይወተ፡ ኅሪተ፡ ወሑሩ፡ በፍናዋተ፡ ሰላም፡ ከመ፡ ትሕየዉ፡ ወትደለዉ።</div><div class="ru">Но ищите и изберите себе правду и приятную для Бога жизнь, и ходите по путям мира, чтобы выжили и имели радость.</div></div>
+<div class="verse"><div class="num">94:5</div><div class="gez">ወትእኅዙ፡ በኅሊና፡ ልብክሙ፡ ወኢይደምሰስ፡ ነገርየ፡ እምልብክሙ፡ እስመ፡ ኣአምር፡ ከመ፡ ያመክርዎሙ፡ ኃጥኣን፡ ለሰብእ፡ ከመ፡ ይግበሩ፡ ጥበበ፡ እኩየ፡ ወኵሉ፡ መካን፡ ኢይትረከብ፡ ላቲ፡ ወኵሉ፡ መከራ፡ ኢየሐጽጽ።</div><div class="ru">И держите в мыслях вашего сердца и не допускайте, чтобы речь моя искоренилась из вашего сердца, ибо я знаю, что грешники соблазнят людей— унижать мудрость, и она не приобретет нигде места, и искушения всякого рода не уменьшатся.</div></div>
+<div class="verse"><div class="num">94:6</div><div class="gez">አሌ፡ ሎሙ፡ ለእለ፡ የሐንጽዋ፡ ለዐመፃ፡ ወለግፍዕ፡ ወይሣርርዋ፡ ለጕሕሉት፡ እስመ፡ ፍጡነ፡ ይትነሠቱ፡ ወአልቦሙ፡ ሰላም።</div><div class="ru">Горе тем, которые созидают неправду и насилие, и полагают основание обману; ибо они внезапно будут искоренены и не будут иметь мира.</div></div>
+<div class="verse"><div class="num">94:7</div><div class="gez">አሌ፡ ሎሙ፡ ለእለ፡ የሐንጹ፡ አብያቲሆሙ፡ በኀጢአት፡ እስመ፡ እምኵሉ፡ መሠረቶሙ፡ ይትነሠቱ፡ ወበሰይፍ፡ ይወድቁ፡ ወእለ፡ ያጠርይዋ፡ ለወርቅ፡ ወለብሩር፡ በኵነኔ፡ ፍጡነ፡ ይትሀጐሉ።</div><div class="ru">Горе тем, которые строят свои дома грехом, ибо они будут искоренены до основания и падут от меча; и приобретающие золото и серебро внезапно погибнут на суде.</div></div>
+<div class="verse"><div class="num">94:8</div><div class="gez">አሌ፡ ለክሙ፡ አብዕልት፡ እስመ፡ ዲበ፡ ብዕልክሙ፡ ተወከልክሙ፡ ወእምነ፡ ብዕልክሙ፡ ትወፅኡ፡ እስመ፡ ኢተዘከርክምዎ፡ ለልዑል፡ በዕለተ፡ ብዕልክሙ።</div><div class="ru">Горе вам, богатые, ибо вы положитесь на ваше богатство, и вы лишитесь своего богатства, так как вы не думали о Всевышнем в дни своего богатства.</div></div>
+<div class="verse"><div class="num">94:9</div><div class="gez">ወገበርክምዎ፡ ለፅርፈት፡ ወለዐመፃ፡ ወድልዋነ፡ ኮንክሙ፡ ለዕለተ፡ ክዕወተ፡ ደም፡ ወለዕለተ፡ ጽልመት፡ ወለዕለተ፡ ኵነኔ፡ ዐባይ።</div><div class="ru">Вы творили хулу и неправду, и приготовили себя ко дню кровопролития, и ко дню мрака, и ко дню великого суда.</div></div>
+<div class="verse"><div class="num">94:10</div><div class="gez">ከመ፡ ዝ፡ አነ፡ እብል፡ ወኣየድዐክሙ፡ ከመ፡ ይገፈትዐክሙ፡ ዘፈጠረክሙ፡ ወዲበ፡ ድቀትክሙ፡ ከመ፡ ኢይከውን፡ ምሕረት፡ ወፈጣሪክሙ፡ ይትፌሣሕ፡ በሀጕልክሙ።</div><div class="ru">Это я говорю вам, что вас истребит до основания Тот, Кто сотворил вас: и не будет никакого сострадания к вашему падению; и ваш Творец будет радоваться вашей погибели.</div></div>
+<div class="verse"><div class="num">94:11</div><div class="gez">ወጻድቃነ፡ ዚኣክሙ፡ ይከውኑ፡ በእማንቱ፡ መዋዕል፡ ጽእለተ፡ ለኃጥኣን፡ ወለረሲዓን።</div><div class="ru">И ваши праведники в те дни будут служить поношением для грешников и нечестивых.</div></div>
+
+<details class="corpus-ch" open><summary>Глава 95</summary>
+<div class="verse"><div class="num">95:1</div><div class="gez">መኑ፡ ይሁበኒ፡ አዕይንትየ፡ ከመ፡ ይኩና፡ ደመናተ፡ ሰማይ፡ ወእብኪ፡ ዲቤክሙ፡ ወእክዐው፡ አንብዕየ፡ ከመ፡ ደመና፡ ማይ፡ ወኣዕርፍ፡ እምሐዘነ፡ ልብየ።</div><div class="ru">О, если бы мои очи были водной тучей, чтобы плакать о вас, и излить мои слезы как водную тучу, дабы я получил успокоение для своего сердца от печали!</div></div>
+<div class="verse"><div class="num">95:2</div><div class="gez">መኑ፡ ወሀበክሙ፡ ከመ፡ ትግበሩ፡ ጽልአ፡ ወእከየ፡ ወይረክበክሙ፡ ለኃጥኣን፡ ኵነኔ።</div><div class="ru">Кто позволил вам совершать ненависть и злобу? Так пусть же постигнет вас, грешники, суд!</div></div>
+<div class="verse"><div class="num">95:3</div><div class="gez">ኢትፍርሁ፡ ጻድቃን፡ እምኃጥኣን፡ እስመ፡ ካዕበ፡ ያገብኦሙ፡ እግዚአብሔር፡ ውስተ፡ እዴክሙ፡ ከመ፡ ትግበሩ፡ ኵነኔ፡ ላዕሌሆሙ፡ በከመ፡ ፈቀድክሙ።</div><div class="ru">Не страшитесь грешников, вы— праведные, ибо Господь опять предаст их в ваши руки, чтобы вы совершили над ними суд, как желаете.</div></div>
+<div class="verse"><div class="num">95:4</div><div class="gez">አሌ፡ ለክሙ፡ እለ፡ ታወግዙ፡ ግዘታተ፡ ከመ፡ ኢትፍትሑ፡ ወፈውስ፡ ርሑቅ፡ እምኔክሙ፡ በእንተ፡ ኀጢአተ፡ ዚኣክሙ።</div><div class="ru">Горе вам, изрекающим проклятие, чтобы проклинать неразрешимо; и ваше исцеление должно быть далеко от вас вследствие ваших грехов!</div></div>
+<div class="verse"><div class="num">95:5</div><div class="gez">አሌ፡ ለክሙ፡ እለ፡ ትፈድዩ፡ እኩየ፡ ለቢጽክሙ፡ እስመ፡ ትትፈደዩ፡ በከመ፡ ምግባሪክሙ።</div><div class="ru">Горе вам, воздающим своему ближнему злом, ибо вам будет уготовано по вашим делам!</div></div>
+<div class="verse"><div class="num">95:6</div><div class="gez">አሌ፡ ለክሙ፡ ለሰማዕተ፡ ሐሰት፡ ወእለ፡ ትደልውዋ፡ ለዐመፃ፡ እስመ፡ ፍጡነ፡ ትትሀጐሉ።</div><div class="ru">Горе вам лжесвидетелям и тем, которые показывают неправду, ибо вы внезапно погибнете!</div></div>
+<div class="verse"><div class="num">95:7</div><div class="gez">አሌ፡ ለክሙ፡ ለኃጥኣን፡ እስመ፡ ለጻድቃን፡ ትሰድድዎሙ፡ እስመ፡ አንትሙ፡ ትትሜጠዉ፡ ወትሰደዱ፡ እምዐመፃ፡ ወይጸንዕ፡ በላዕሌክሙ፡ አርዑተ፡ ዚኣሆሙ።</div><div class="ru">Горе вам, грешникам, так как вы преследуете праведных; ибо вы будете преданы и преследуемы, вы— люди неправды, и тяжело будет на вас их (праведных) ярмо.</div></div>
+
+<details class="corpus-ch" open><summary>Глава 96</summary>
+<div class="verse"><div class="num">96:1</div><div class="gez">ተሰፈዉ፡ ጻድቃን፡ እስመ፡ ፍጡነ፡ ይትሀጐሉ፡ ኃጥኣን፡ እምቅድሜክሙ፡ ወሥልጣን፡ ይከውን፡ ለክሙ፡ ዲቤሆሙ፡ በከመ፡ ፈቀድክሙ።</div><div class="ru">Вы, праведные, надейтесь, ибо грешники внезапно погибнут пред вами, и вы будете господствовать над ними, как желаете!</div></div>
+<div class="verse"><div class="num">96:2</div><div class="gez">ወበዕለተ፡ ምንዳቤሆሙ፡ ለኃጥኣን፡ ይትሌዐሉ፡ ወይትነሥኡ፡ ከመ፡ አንስርት፡ ዕጕለ፡ ዚኣክሙ፡ ወፈድፋደ፡ እምነ፡ አውስት፡ ይከውን፡ ምጽላልክሙ፡ ወተዐርጉ፡ ወትበውኡ፡ በንድለታተ፡ ምድር፡ ወበንቅዐታተ፡ ኰኵሕ፡ ለዓለም፡ ከመ፡ ግሔ፡ እምቅድመ፡ ዐማፅያን፡ ወይንእኩ፡ ዲቤክሙ።</div><div class="ru">И в день страдания грешников ваши юнцы вознесутся и взлетят, как орлы, и выше, чем у коршуна, будет ваше гнездо, вознесетесь; и как кролики вы проникнете в ущелье земли и в расселины скал навсегда пред праведными; а они будут воздыхать из-за вас и плакать, как лесные духи.</div></div>
+<div class="verse"><div class="num">96:3</div><div class="gez">ወአንትሙ፡ ኢትከውኑ፡ ከማሆሙ፡ አላ፡ ሰማዕተ፡ ይከውን፡ ዲቤክሙ፡ ዝንቱ፡ ከመ፡ ሱቱፋነ፡ ኮንክሙ፡ ለኃጥኣን፡ ወይበክዩ፡ ከመ፡ ጼዴናታት፡ ወአንትሙሰ፡ ኢትፍርሁ፡ እለ፡ ሐመምክሙ፡ እስመ፡ ፈውስ፡ ይከውነክሙ፡ ወብርሃን፡ ብሩህ፡ ያበርህ፡ ለክሙ፡ ወቃለ፡ ዕረፍት፡ ትሰምዑ፡ እምሰማይ።</div><div class="ru">Но и вы не бойтесь,— вы страдающие, ибо для вас будет исцеление, и будет светить вам блестящий свет, и призыв к покою вы услышите с неба.</div></div>
+<div class="verse"><div class="num">96:4</div><div class="gez">አሌ፡ ለክሙ፡ ኃጥኣን፡ እስመ፡ ብዕልክሙ፡ ያመስለክሙ፡ ጻድቃነ፡ ወልብክሙ፡ ይዛለፈክሙ፡ ከመ፡ ኃጥኣን፡ አንትሙ፡ ወዝንቱ፡ ነገር፡ ይከውን፡ ዲቤክሙ፡ ሰማዕተ፡ ለተዝካረ፡ እከያት።</div><div class="ru">Горе вам, вы— грешники, ибо ваше богатство позволяет вам казаться праведным, но ваше сердце изобличает вас, что вы грешники, и эта речь будет свидетельствовать против вас для напоминания о ваших злодеяниях.</div></div>
+<div class="verse"><div class="num">96:5</div><div class="gez">አሌ፡ ለክሙ፡ እለ፡ ትበልዑ፡ ስብሐ፡ ሥርናይ፡ ወትሰትዩ፡ ኀይለ፡ ሥርወ፡ ነቅዕ፡ ወትከይድዎሙ፡ ለኃጥኣን፡ በኀይልክሙ።</div><div class="ru">Горе вам, которые едите тук пшеницы и пьете силу корня источника, и попираете своею силою приниженных!</div></div>
+<div class="verse"><div class="num">96:6</div><div class="gez">አሌ፡ ለክሙ፡ እለ፡ ትሰትዩ፡ ማየ፡ በኵሉ፡ ጊዜ፡ እስመ፡ ፍጡነ፡ ትትፈደዩ፡ ወትትዌድኡ፡ ወትየብሱ፡ እስመ፡ ኀደግሙ፡ ነቅዐ፡ ሕይወት።</div><div class="ru">Горе вам, которые всегда пьете воду, ибо вам внезапно будет воздано, и вы завянете и иссохнете, так как вы оставили источник жизни!</div></div>
+<div class="verse"><div class="num">96:7</div><div class="gez">አሌ፡ ለክሙ፡ እለ፡ ትገብሩ፡ ዐመፃ፡ ወጕሕሉተ፡ ወፅርፈተ፡ ወዝንቱ፡ ተዝካረ፡ ይከውን፡ ዲቤክሙ፡ ለእከይ።</div><div class="ru">Горе вам, совершающим неправду, и обман, и хулу: это будет памятью против вас к вашему злу!</div></div>
+<div class="verse"><div class="num">96:8</div><div class="gez">አሌ፡ ለክሙ፡ ኃጥኣን፡ እለ፡ በኀይል፡ ትኰርዕዎ፡ ለጻድቅ፡ እስመ፡ ትመጽእ፡ ዕለተ፡ ሀጕልክሙ፡ ወበእማንቱ፡ መዋዕል፡ ይመጽኣ፡ ለጻድቃን፡ መዋዕል፡ ብዙኃት፡ ወኄራት፡ በዕለተ፡ ኵነኔ፡ ዚኣክሙ።</div><div class="ru">Горе вам, сильные, поражающие своею силою праведного, ибо придет день вашей погибели, в то время много хороших дней придет для праведных день— вашего суда.</div></div>
+
+<details class="corpus-ch" open><summary>Глава 97</summary>
+<div class="verse"><div class="num">97:1</div><div class="gez">ተአመኑ፡ ጻድቃን፡ እስመ፡ ለጽእለት፡ ይከውኑ፡ ኃጥኣን፡ ወይትሀጐሉ፡ በዕለተ፡ ዐመፃ።</div><div class="ru">Веруйте вы, праведные, ибо грешники будут позором для вас и погибнут в день неправды.</div></div>
+<div class="verse"><div class="num">97:2</div><div class="gez">እሙረ፡ ይከውን፡ ለክሙ፡ እስመ፡ ልዑል፡ ይዜክር፡ ሀጕለክሙ፡ ወይትፌሥሑ፡ መላእክት፡ ዲበ፡ ሀጕለ፡ ዚኣክሙ።</div><div class="ru">Да будет вам (грешникам) известно, что Всевышний думает о вашей погибели, и ангелы радуются вашей погибели.</div></div>
+<div class="verse"><div class="num">97:3</div><div class="gez">ምንተ፡ ትግበሩ፡ ሀለወክሙ፡ ኃጥኣን፡ ወአይቴ፡ ትጐይዩ፡ በይእቲ፡ ዕለት፡ እንተ፡ ኵነኔ፡ ሶበ፡ ትሰምዑ፡ ቃለ፡ ጸሎቶሙ፡ ለጻድቃን።</div><div class="ru">Что будете вы делать, грешники, и куда убежите в тот день суда, когда услышите голос молитвы праведных?</div></div>
+<div class="verse"><div class="num">97:4</div><div class="gez">ወአንትሙ፡ ኢትከውኑ፡ ከማሆሙ፡ አላ፡ ሰማዕተ፡ ይከውን፡ ዲቤሆሙ፡ ዝንቱ፡ ነገር፡ ሱቱፋነ፡ ኮንክሙ፡ ለኃጥኣን።</div><div class="ru">И для вас не будет того, что для них,— для вас, против которых будет свидетельством это слово: &amp;quot;вы сделались союзниками грешников&amp;quot;.</div></div>
+<div class="verse"><div class="num">97:5</div><div class="gez">ወበእማንቱ፡ መዋዕል፡ ትበጽሕ፡ ጸሎቶሙ፡ ለቅዱሳን፡ ኀበ፡ እግዚእ፡ ወለክሙ፡ ይበጽሕ፡ መዋዕለ፡ ኵነኔክሙ።</div><div class="ru">И в те дни молитва праведных проникнет к Господу, и для вас наступят дни вашего суда.</div></div>
+<div class="verse"><div class="num">97:6</div><div class="gez">ወይትነበብ፡ ኵሉ፡ ነገረ፡ ዐመፃሆሙ፡ ቅድመ፡ ዐቢይ፡ ወቅዱስ፡ ወይትኀፈር፡ ገጽክሙ፡ ወይትገድፍ፡ ኵሉ፡ ተግባረ፡ ዘጸንዐ፡ በዐመፃ።</div><div class="ru">И все ваши неправедные речи будут прочитаны пред Великим и Святым, и ваше лицо пристыдится, и всякое дело, основанное на неправде, будет отринуто.</div></div>
+<div class="verse"><div class="num">97:7</div><div class="gez">አሌ፡ ለክሙ፡ ኃጥኣን፡ እለ፡ ማእከለ፡ ባሕር፡ ወዲበ፡ የብስ፡ እለ፡ ዝክሮሙ፡ እኩይ፡ ዲቤክሙ።</div><div class="ru">Горе вам, грешникам, в средине моря и на суше, воспоминание которых о вас недоброе!</div></div>
+<div class="verse"><div class="num">97:8</div><div class="gez">አሌ፡ ለክሙ፡ እለ፡ ታጠርዩ፡ ብሩረ፡ ወወርቀ፡ ዚኢኮነ፡ በጽድቅ፡ ወትብሉ፡ ብዕልነ፡ ብዕለ፡ ወኮነ፡ ለነ፡ ንዋይ፡ ወአጥረይነ፡ ኵሎ፡ ዘፈቀድነ።</div><div class="ru">Горе вам, приобретающим себе серебро и золото не по правде и говорящим: &amp;quot;мы сделались богатыми и имеем сокровища, и владеем всем, чего хотим; и теперь мы исполним все то, что нам думается, ибо мы собрали серебра и наполнили наши кладовые, и как воды много у нас оберегающих наши дома&amp;quot;.</div></div>
+<div class="verse"><div class="num">97:9</div><div class="gez">ወይእዜኒ፡ ንግበር፡ ዘኀለይነ፡ እስመ፡ ብሩረ፡ አስተጋባእነ፡ ወመላእነ፡ መዛግብቲነ፡ ወከመ፡ ማይ፡ ብዙኅ፡ ሐረስተ፡ አብያቲነ።</div><div class="ru">как вода, разольется ваша ложь, ибо богатство не сохранится у вас, но внезапно будет у вас отнято, так как вы все приобрели неправдою, и вы сами подвергнетесь великому осуждению.</div></div>
+<div class="verse"><div class="num">97:10</div><div class="gez">ወከመ፡ ማይ፡ ይውሕዝ፡ ሐሰትክሙ፡ እስመ፡ ኢይነብር፡ ለክሙ፡ ብዕል፡ አላ፡ ፍጡነ፡ የዐርግ፡ እምኔክሙ፡ እስመ፡ ኵሎ፡ በዐመፃ፡ አጥረይክሙ፡ ወአንትሙሰ፡ ለመርገም፡ ዐቢይ፡ ትትወሀቡ።</div><div class="ru">И теперь я клянусь вам, мудрым и безумным; ибо вы много переживете (или увидите) на земле.</div></div>
+
+<details class="corpus-ch" open><summary>Глава 98</summary>
+<div class="verse"><div class="num">98:1</div><div class="gez">ወይእዜኒ፡ አነ፡ እምሕል፡ ለክሙ፡ ለጠቢባን፡ ወለአብዳን፡ እስመ፡ ብዙኀ፡ ትሬእዩ፡ በዲበ፡ ምድር።</div><div class="ru">Ибо вы, мужи, будете возлагать на себя украшений более, нежели жены, и разноцветного более, чем дева, в царском достоинстве и величии и власти, и в серебре, и в золоте, и в пурпуре, и в почести, и в пище они разольются, как вода.</div></div>
+<div class="verse"><div class="num">98:2</div><div class="gez">እስመ፡ ሥነ፡ ትወድዩ፡ ላዕሌክሙ፡ አንትሙ፡ ዕደው፡ ፈድፋደ፡ እምአንስት፡ ወኅብረ፡ ፈድፋደ፡ እምድንግል፡ በመንግል፡ በመንግሥት፡ ወበዕበይ፡ ወበሥልጣን፡ ወበብሩር፡ ወወርቅ፡ ወሜላት፡ ወክብር፡ ወመባልዕት፡ ከመ፡ ማይ፡ ይውሕዝ።</div><div class="ru">Посему им не достает учения и мудрости, и чрез то они погибнут вместе со своими сокровищами, и со всею своею силою и почестью; и в позоре, и в умертвлении, и в великой бедности их дух будет брошен в огненную печь.</div></div>
+<div class="verse"><div class="num">98:3</div><div class="gez">ወበእንተ፡ ዝ፡ ትምህርት፡ ወጥበብ፡ አልቦሙ፡ ወቦቱ፡ ይትሀጐሉ፡ ኅቡረ፡ ምስለ፡ ንዋያቲሆሙ፡ ወምስለ፡ ኵሉ፡ ስብሐቶሙ፡ ወክብሮሙ፡ ወበጽእለት፡ ወበንዴት፡ ወበቀትለ፡ ነፍስ፡ ወበንዴት፡ ዐቢይ፡ ትትወደይ፡ መንፈሶሙ፡ ውስተ፡ እቶነ፡ እሳት።</div><div class="ru">Я клянусь вам, грешники: как гора не была и не будет рабой, ни возвышенность служанкой жены, так точно и грех не был послан на землю, но люди произвели его из своей головы; и великому осуждению подпадут те, которые совершают его.</div></div>
+<div class="verse"><div class="num">98:4</div><div class="gez">መሐልኩ፡ ለክሙ፡ ኃጥኣን፡ ከመ፡ ኢኮነ፡ ደብር፡ ገብረ፡ ወኢይከውን፡ ወኢ፡ ወግር፡ ለብእሲት፡ አመተ፡ ከመ፡ ዝ፡ ኀጢአተኒ፡ ኢተፈነወት፡ ዲበ፡ ምድር፡ አላ፡ ሰብእ፡ እምርእሶሙ፡ ፈጠርዋ፡ ወለመርገም፡ ዐቢይ፡ ይከውኑ፡ እለ፡ ገብርዋ።</div><div class="ru">И неплодие не дано было жене, но ради дела своих рук она умирает без детей, Я клянусь вам, грешники, Святым и Великим, что всякое злое дело ваше открыто на небесах, и ни одно из ваших деяний насилия не утаено или прикрыто.</div></div>
+<div class="verse"><div class="num">98:5</div><div class="gez">ወምክነት፡ ለብእሲት፡ ኢተውህበት፡ አላ፡ በእንተ፡ ግብረ፡ እደዊሃ፡ ትመውት፡ ዘእንበለ፡ ውሉድ።</div><div class="ru">И не думайте в своем духе и не говорите в своем сердце,— вы не знаете и не видите, что каждый грех записывается ежедневно на небе пред Всевышним.</div></div>
+<div class="verse"><div class="num">98:6</div><div class="gez">መሐልኩ፡ ለክሙ፡ ኃጥኣን፡ በቅዱስ፡ ወዐቢይ፡ እስመ፡ ኵሉ፡ ግብርክሙ፡ እኩይ፡ ክሡት፡ ውእቱ፡ በሰማያት፡ ወአልብክሙ፡ ግብረ፡ ግፍዕ፡ ክዱን፡ ወኢኅቡእ።</div><div class="ru">Отныне вы знайте, что все ваше насилие, которое вы совершаете, записывается каждый день до дня вашего суда, Горе вам, безумные, ибо вы погибнете чрез ваше безумие; и так как вы не слушаетесь мудрых, то ничто доброе не будет вашим уделом.</div></div>
+<div class="verse"><div class="num">98:7</div><div class="gez">ወኢታምስሉ፡ በመንፈስክሙ፡ ወኢትበሉ፡ በልብክሙ፡ እስመ፡ ኢተአምሩ፡ ወኢትሬእዩ፡ ኵሎ፡ ኀጢአተክሙ፡ ዘበሰማይ፡ ይጸሐፍ፡ ሀሎ፡ በኵሉ፡ ዕለት፡ በቅድሜሁ፡ ለልዑል።</div><div class="ru">И теперь знайте, что вы приготовлены на день погибели, и не надейтесь, что вы будете жить,— вы грешники,— но вы погибнете и умрете, так как вы не знаете никакого выкупа: ибо вы приготовлены на день великого суда, и на день страдания и великого позора для вашего духа.</div></div>
+<div class="verse"><div class="num">98:8</div><div class="gez">ወእምይእዜ፡ ተአምሩ፡ እስመ፡ ኵሉ፡ ግፍዕክሙ፡ ዘትገፍዑ፡ ይጸሐፍ፡ በኵሉ፡ ዕለት፡ እስከ፡ ዕለተ፡ ኵነኔክሙ።</div><div class="ru">Горе вам,— вы ожесточенные, которые делаете зло и едите кровь!</div></div>
+<div class="verse"><div class="num">98:9</div><div class="gez">አሌ፡ ለክሙ፡ አብዳን፡ እስመ፡ ትትሀጐሉ፡ በእበድክሙ፡ ወለጠቢባን፡ ኢትሰምዕዎሙ፡ ወሠናይ፡ ኢይረክበክሙ።</div><div class="ru">Откуда у вас хорошая пища, и питье, и насыщение?</div></div>
+<div class="verse"><div class="num">98:10</div><div class="gez">ወይእዜኒ፡ አእምሩ፡ ከመ፡ ድልዋን፡ አንትሙ፡ ለዕለተ፡ ሀጕል፡ ወኢትሰፈዉ፡ ከመ፡ ትሕየዉ፡ ኃጥኣን፡ አላ፡ ተሐውሩ፡ ወትመውቱ፡ እስመ፡ ኢተአምሩ፡ ቤዛ፡ እስመ፡ ተደለውክሙ፡ ለዕለተ፡ ኵነኔ፡ ዐባይ፡ ወለዕለተ፡ ምንዳቤ፡ ወኀሳር፡ ዐቢይ፡ በመንፈስክሙ።</div><div class="ru">От всякого блага, которое наш Господь, Всевышний в изобилии послал на землю: посему вы не должны иметь мира.</div></div>
+<div class="verse"><div class="num">98:11</div><div class="gez">አሌ፡ ለክሙ፡ ግዙፋነ፡ ልብ፡ እለ፡ ትገብሩ፡ እኩየ፡ ወትበልዑ፡ ደመ፡ እምአይቴ፡ አንትሙ፡ ትበልዑ፡ በሠናይ፡ ወትበልዑ፡ ወትሰትዩ፡ ወትጸግቡ፡ እስመ፡ ኵሉ፡ ሠናይ፡ ዘአፈድፈደ፡ እግዚእነ፡ ልዑል፡ ዲበ፡ ምድር፡ ወአልብክሙ፡ ሰላመ።</div><div class="ru">Горе вам, любящим свои деяния неправды!</div></div>
+<div class="verse"><div class="num">98:12</div><div class="gez">አሌ፡ ለክሙ፡ እለ፡ ታፈቅርዎ፡ ለግብረ፡ ዐመፃ፡ ለምንት፡ ለክሙ፡ ትሴፈውዋ፡ ለሠናይት፡ አእምሩ፡ ከመ፡ ሀለወክሙ፡ ትትወሀቡ፡ በእደዊሆሙ፡ ለጻድቃን፡ ወይመትሩ፡ ክሳውዲክሙ፡ ወይቀትሉክሙ፡ ወኢይምሕሩክሙ።</div><div class="ru">Почему вы чаете блага для себя? Знайте, что вы будете преданы в руки праведных; они перережут ваши шеи и умертвят вас, и не будут иметь сострадания к вам.</div></div>
+<div class="verse"><div class="num">98:13</div><div class="gez">አሌ፡ ለክሙ፡ እለ፡ ትትፌሥሑ፡ በምንዳቤሆሙ፡ ለጻድቃን፡ እስመ፡ መቃብር፡ ኢይትከረይ፡ ለክሙ።</div><div class="ru">Горе вам, радующимся страданию праведных, ибо для вас не будет вырыта могила!</div></div>
+<div class="verse"><div class="num">98:14</div><div class="gez">አሌ፡ ለክሙ፡ እለ፡ ታበጥሉ፡ ነገረ፡ ጻድቃን፡ እስመ፡ ኢይከውን፡ ለክሙ፡ ተስፋ፡ ሕይወት።</div><div class="ru">Горе вам, для которых слова праведных только пустые речи, ибо для вас не будет надежды на жизнь!</div></div>
+<div class="verse"><div class="num">98:15</div><div class="gez">አሌ፡ ለክሙ፡ እለ፡ ትጽሕፉ፡ ነገረ፡ ሐሰት፡ ወነገረ፡ ረሲዓን፡ እስመ፡ ውእቶሙ፡ ይጽሕፉ፡ ሐሰቶሙ፡ ከመ፡ ይስምዕዋ፡ ወኢይርስዕዋ፡ ለእበድ፡ ወኢይከውን፡ ሎሙ፡ ሰላም፡ አላ፡ ሞተ፡ ይመውቱ፡ ወኢይጐነድዩ።</div><div class="ru">Горе вам, записывающим лживые речи и беззаконные слова; ибо они записывают свою ложь, чтобы их слушали и не забывали их безумия; так не будет же для них мира, но они умрут внезапной смертью!</div></div>
+
+<details class="corpus-ch" open><summary>Глава 99</summary>
+<div class="verse"><div class="num">99:1</div><div class="gez">አሌ፡ ለክሙ፡ እለ፡ ትገብሩ፡ ርስዕናተ፡ ወነገረ፡ ሐሰት፡ ይሴብሑ፡ ወያከብሩ፡ ተሀጐልክሙ፡ ወአልብክሙ፡ ሕይወት፡ ወሠናይተ።</div><div class="ru">Горе тем, которые совершают нечестие, и похваляют и сохраняют в уважении лживые речи: вы погибнете чрез это и для вас нет хорошей жизни!</div></div>
+<div class="verse"><div class="num">99:2</div><div class="gez">አሌ፡ ለክሙ፡ እለ፡ ትዌልጥዎን፡ ለነገራተ፡ ርትዕ፡ ወሥርዐተ፡ እንተ፡ ለዓለም፡ የዐልዉ፡ ወይሬስዩ፡ ርእሶሙ፡ ዘኢኮኑ፡ ኃጥኣነ፡ ዲበ፡ ምድር፡ ሀለዉ፡ ይትከየዱ።</div><div class="ru">Горе вам, искажающим слова праведности! И они отпадут от вечного закона и сами себя делают тем, чем не были, именно— грешниками; они будут попираемы на земле.</div></div>
+<div class="verse"><div class="num">99:3</div><div class="gez">በእማንቱ፡ መዋዕል፡ ተደለዉ፡ ጻድቃን፡ ከመ፡ ትንሥኡ፡ ጸሎታቲክሙ፡ ለተዝካር፡ ወአንብርዎሙ፡ ሰማዕተ፡ በቅድመ፡ መላእክት፡ ከመ፡ ያነብርዎ፡ ለኀጢአተ፡ ኃጥኣን፡ ቅድመ፡ ልዑል፡ ለተዝካር።</div><div class="ru">В те дни вы, праведные, приготовьтесь вознести свои мысленные молитвы, вы представите их как свидетельство ангелам, чтобы они представили беззакония грешников Всевышнему в напоминание.</div></div>
+<div class="verse"><div class="num">99:4</div><div class="gez">ወበእማንቱ፡ መዋዕል፡ ይትሀወኩ፡ አሕዛብ፡ ወይትነሥኡ፡ አዝማደ፡ አሕዛብ፡ በዕለት፡ እንተ፡ ሀጕል።</div><div class="ru">В те дни народы придут в смятение, и поколения народов восстанут ко дню погибели.</div></div>
+<div class="verse"><div class="num">99:5</div><div class="gez">ወበእማንቱ፡ መዋዕል፡ እለ፡ ይጼነሱ፡ ይወፅኡ፡ ወይመሥጡ፡ ደቂቆሙ፡ ወይገድፍዎሙ፡ ለደቂቆሙ፡ ወእምኔሆሙ፡ ይድኅፁ፡ ውሉዶሙ፡ ወእንዘ፡ ይጠብዉ፡ ይገድፍዎሙ፡ ወኢይገብኡ፡ ኀቤሆሙ፡ ወኢይምሕርዎሙ፡ ለፍቁራኒሆሙ።</div><div class="ru">И в те дни выйдет плод материного чрева, и они (матери) растерзают своих собственных детей; они оттолкнут от себя своих детей, и у них выпадет недоношенный плод; грудных детей они оттолкнут от себя, и не возвратятся опять к ним, и не сжалятся над своими любимцами.</div></div>
+<div class="verse"><div class="num">99:6</div><div class="gez">ወካዕበ፡ አነ፡ እምሕል፡ ለክሙ፡ ለኃጥኣን፡ እስመ፡ ለዕለተ፡ ደም፡ ዘኢየሀድእ፡ ተደለወት፡ ኀጢአት።</div><div class="ru">Опять клянусь вам, грешники, что грех уготован на день беспрерывного кровопролития.</div></div>
+<div class="verse"><div class="num">99:7</div><div class="gez">ወይሰግዱ፡ ለእብን፡ ወእለ፡ ይገልፉ፡ ምስለ፡ ዘወርቅ፡ ወዘብሩር፡ ወዘዕፅ፡ ወዘልሕኵት፡ ወእለ፡ ይሰግዱ፡ ለነፍሳት፡ ርኩሳን፡ ወለእኩያን፡ አጋንንት፡ ወለኵሉ፡ ጣዖት፡ ወለምሕራማት፡ ወኵሉ፡ ረድኤት፡ ኢይትረከብ፡ እምኔሆሙ።</div><div class="ru">И они будут поклоняться камням, и другие будут делать изображения из золота и серебра, и из дерева и глины; и другие будут поклоняться нечистым духам, и демонам, и разного рода идолам в идольских капищах: между тем у них (идолов) нельзя найти никакой помощи.</div></div>
+<div class="verse"><div class="num">99:8</div><div class="gez">ወይትረስዑ፡ በእንተ፡ እበደ፡ ልቦሙ፡ ወይጼለላ፡ አዕይንቲሆሙ፡ በፍርሀተ፡ ልቦሙ፡ ወበርእየ፡ አሕላሞሙ።</div><div class="ru">И они погрузятся в неведение вследствие безумия своего сердца, и их очи будут ослеплены страхом их сердца и сновидениями.</div></div>
+<div class="verse"><div class="num">99:9</div><div class="gez">ቦሙ፡ ይረስዑ፡ ወይፈርሁ፡ እስመ፡ ኵሎ፡ ግብሮሙ፡ በሐሰት፡ ገብሩ፡ ወሰገዱ፡ ለእብን፡ ወይትሀጐሉ፡ በምዕር።</div><div class="ru">Чрез них они впадут в неведенье и страх, ибо они все свои дела совершают во лжи, и поклоняются камням; и они погибнут все разом.</div></div>
+<div class="verse"><div class="num">99:10</div><div class="gez">ወበእማንቱ፡ መዋዕል፡ ብፁዓን፡ ኵሎሙ፡ እለ፡ ይትሜጠዉ፡ ነገረ፡ ጥበብ፡ ወየአምርዋ፡ ወይገብርዎን፡ ለፍናዋተ፡ ልዑል፡ ወየሐውሩ፡ በፍኖተ፡ ጽድቅ፡ ወኢይረስዑ፡ ምስለ፡ እለ፡ ይረስዑ፡ እስመ፡ እሙንቱ፡ ይድኅኑ።</div><div class="ru">Но в те дни блаженны все те, которые принимают слова мудрости, и знают ее, и исполняют пути Всевышнего, и ходят по пути правды, и с безбожными: ибо они будут спасены.</div></div>
+<div class="verse"><div class="num">99:11</div><div class="gez">አሌ፡ ለክሙ፡ እለ፡ ትሰፍሕዋ፡ ለእኪት፡ ለቢጽክሙ፡ እስመ፡ በሲኦል፡ ትትቀተሉ።</div><div class="ru">Горе вам, распространяющим зло между своими ближними, ибо вы будете умерщвленны в геенне.</div></div>
+<div class="verse"><div class="num">99:12</div><div class="gez">አሌ፡ ለክሙ፡ እለ፡ ትገብርዎ፡ ለመሠረተ፡ ኀጢአት፡ ወጕሕሉት፡ ወእለ፡ ታመርሩ፡ ዲበ፡ ምድር፡ እስመ፡ ቦቱ፡ ይትዌድኡ።</div><div class="ru">Горе вам, полагающим основание греху и лжи, и вызывающим ожесточение на земле: ибо за это их постигнет конец.</div></div>
+<div class="verse"><div class="num">99:13</div><div class="gez">አሌ፡ ለክሙ፡ እለ፡ ትነድቁ፡ አብያቲክሙ፡ በጻማ፡ ባዕድ፡ ወኵሉ፡ መንድቆሙ፡ ግንፋል፡ ወእብነ፡ ኀጢአት፡ እብለክሙ፡ ከመ፡ አልብክሙ፡ ሰላመ።</div><div class="ru">Горе вам, которые строите свои дома потом других и у которых строительный материал есть не что иное, как черепица и камень греха; я говорю вам, что для вас нет мира.</div></div>
+<div class="verse"><div class="num">99:14</div><div class="gez">አሌ፡ ሎሙ፡ ለእለ፡ ይሜንኑ፡ መስፈርተ፡ ወርስተ፡ አበዊሆሙ፡ እንተ፡ ለዓለም፡ ወያተልዉ፡ ነፍሶሙ፡ ድኅረ፡ ጣዖት፡ እስመ፡ ኢይከውን፡ ሎሙ፡ ዕረፍት።</div><div class="ru">Горе тем, которые отвергают меру и наследие своих отцов, пребывающее вечно, и прилепляют свои души к идолам: ибо для них не будет покоя.</div></div>
+<div class="verse"><div class="num">99:15</div><div class="gez">አሌ፡ ለክሙ፡ እለ፡ ትገብርዋ፡ ለዐመፃ፡ ወትረድእዋ፡ ለግፍዕ፡ ወትቀትሉ፡ ቢጸክሙ፡ እስከ፡ ዕለተ፡ ኵነኔ፡ ዐባይ።</div><div class="ru">Горе тем, которые делают неправду, и помогают насилию, и умерщвляют</div></div>
+<div class="verse"><div class="num">99:16</div><div class="gez">ወያወድቅ፡ ስብሐቲክሙ፡ ወይወዲ፡ እከየ፡ ውስተ፡ ልብክሙ፡ ወያነሥእ፡ መንፈሰ፡ መዓቱ፡ ያህጕልክሙ፡ ለኵልክሙ፡ በሰይፍ፡ ወኵሎሙ፡ ጻድቃን፡ ወቅዱሳን፡ ይዜክሩ፡ ኀጢአተ፡ ዚኣክሙ።</div><div class="ru">своих ближних, в день великого суда: ибо Он низринет вашу славу, и положит вам злобу на сердце, и возбудит дух Своего гнева, чтобы погубить вас всех мечом; и все праведные и святые припомнят ваши грехи.</div></div>
+
+<details class="corpus-ch" open><summary>Глава 100</summary>
+<div class="verse"><div class="num">100:1</div><div class="gez">ወበእማንቱ፡ መዋዕል፡ በአሐዱ፡ መካን፡ አበው፡ ምስለ፡ ውሉዶሙ፡ ይትጓድኡ፡ ወአኀው፡ ምስለ፡ ቢጾሙ፡ ይወድቁ፡ በሞት፡ እስከ፡ ይውሕዝ፡ ከመ፡ ተከዚ፡ እምደመ፡ ዚኣሆሙ።</div><div class="ru">И в те дни будут умерщвлены в одном месте отцы вместе со своими сынами, и братья друг с другом упадут от смерти, пока их кровь не потечет подобно потоку.</div></div>
+<div class="verse"><div class="num">100:2</div><div class="gez">እስመ፡ ብእሲ፡ ኢይከልእ፡ እዴሁ፡ እምውሉዱ፡ ወእምውሉደ፡ ውሉዱ፡ ምሒረ፡ ከመ፡ ይቅትሎ፡ ወኃጥእ፡ ኢይከልእ፡ እዴሁ፡ እምነ፡ እኁሁ፡ ክቡር፡ እምጎህ፡ እስከ፡ የዐርብ፡ ፀሓይ፡ ወይትቃተሉ።</div><div class="ru">Ибо муж не будет из сострадания удерживать свою руку от своих сынов и от своих внуков, убивая их; и грешник не будет сдерживать своей руки от своего почетнейшего брата; от утренней зари до солнечного захода они будут умерщвлять друг друга.</div></div>
+<div class="verse"><div class="num">100:3</div><div class="gez">ወየሐውር፡ ፈረስ፡ እስከ፡ እንግድዓሁ፡ ውስተ፡ ደመ፡ ኃጥኣን፡ ወሠረገላ፡ እስከ፡ መልዕልታ፡ ትሰጠም።</div><div class="ru">И конь будет по самую грудь ходить в крови грешников, и колесница потонет до своего верха.</div></div>
+<div class="verse"><div class="num">100:4</div><div class="gez">ወበእማንቱ፡ መዋዕል፡ መላእክት፡ ይወርዱ፡ ውስተ፡ ምኅባኣት፡ ወያገብእዎሙ፡ በአሐዱ፡ መካን፡ ለኵሎሙ፡ ለእለ፡ ያረድእዋ፡ ለኀጢአት፡ ወይትነሣእ፡ ልዑል፡ በይእቲ፡ ዕለት፡ ከመ፡ ይግበር፡ ኵነኔ፡ ዐቢየ፡ እምኵሎሙ፡ ለኃጥኣን።</div><div class="ru">И в те дни ангелы сойдут в убежища грешников и соберут в одно место всех тех, которые помогали греху; и Всевышний восстанет в тот день, чтобы произвести великий суд над всеми грешниками.</div></div>
+<div class="verse"><div class="num">100:5</div><div class="gez">ወዐቀብተ፡ ይሁብ፡ ዲበ፡ ኵሎሙ፡ ጻድቃን፡ ወቅዱሳን፡ እመላእክት፡ ቅዱሳን፡ ወየዐቅብዎሙ፡ ከመ፡ ብንተ፡ ዐይን፡ እስከ፡ ይትዌዳእ፡ ኵሉ፡ እከይ፡ ወኵሉ፡ ኀጢአት፡ ወእመኒ፡ ይነውሙ፡ ጻድቃን፡ ንዋመ፡ ነዋኀ፡ ይነውሙ፡ ወአልቦሙ፡ ዘይፈርሁ።</div><div class="ru">Но над всеми праведными и святыми Он поставит стражами святых ангелов, чтобы они берегли их, как зеницу ока, пока не наступит конец всякой злобе и всякого греха; и если даже праведные спят продолжительным сном, то и тогда они не должны ничего бояться.</div></div>
+<div class="verse"><div class="num">100:6</div><div class="gez">ወእሙነ፡ ይሬእዩ፡ ሰብእ፡ ጠቢባን፡ ወይሌብዉ፡ ውሉደ፡ ምድር፡ ኵሎ፡ ነገረ፡ ዛቲ፡ መጽሐፍ፡ ወየአምሩ፡ ከመ፡ ኢይክል፡ ብዕሎሙ፡ አድኅኖቶሙ፡ በሙዳቀ፡ ኀጢአቶሙ።</div><div class="ru">И кто мудр между людьми, тот увидит истину, и дети земли поймут все слова этой книги, и узнают, что их богатство не может спасти их при погибели их греха.</div></div>
+<div class="verse"><div class="num">100:7</div><div class="gez">አሌ፡ ለክሙ፡ ኃጥኣን፡ ሶበ፡ ታመነድብዎሙ፡ ለጻድቃን፡ በዕለተ፡ ጻሕብ፡ ኀያል፡ ወታነድድዎሙ፡ በእሳት፡ ወትትፈደዩ፡ በከመ፡ ምግባሪክሙ።</div><div class="ru">Горе вам, грешники, если вы мучите праведных,— в день жестокого страдания,— и сжигаете их огнем: вам будет воздано по вашим делам.</div></div>
+<div class="verse"><div class="num">100:8</div><div class="gez">አሌ፡ ለክሙ፡ ግፍቱዓነ፡ ልብ፡ እለ፡ ትተግሁ፡ ከመ፡ ትለብውዎ፡ ለእኩይ፡ ወሀለወክሙ፡ ይርከብክሙ፡ ፍርሀት፡ ወአልቦ፡ ዘይረድአክሙ።</div><div class="ru">Горе вам, развращенные сердцем, заботящиеся о том, чтобы измышлять злое; на вас нападет страх, и никто не поможет вам.</div></div>
+<div class="verse"><div class="num">100:9</div><div class="gez">አሌ፡ ለክሙ፡ ኃጥኣን፡ እስመ፡ ዲበ፡ ቃለ፡ አፉክሙ፡ ወዲበ፡ ተግባረ፡ እደዊክሙ፡ እለ፡ ግብረ፡ ረሳዕክሙ፡ በዋዕየ፡ ላህበ፡ እሳት፡ ትውዕዩ።</div><div class="ru">Горе вам, грешники, ибо вы будете гореть в озере огненного пламени за слова своих уст и за дела своих рук, которыми вы действуете нечестиво.</div></div>
+<div class="verse"><div class="num">100:10</div><div class="gez">ወይእዜኒ፡ አእምሩ፡ እስመ፡ እመላእክት፡ ይትኀሠሥ፡ ምግባሪክሙ፡ በሰማይ፡ እምፀሓይ፡ ወእምወርኅ፡ ወእምከዋክብት፡ በእንተ፡ ኀጢአተ፡ ዚኣክሙ፡ እስመ፡ በዲበ፡ ምድር፡ ትገብሩ፡ ኀበ፡ ጻድቃን፡ ኵነኔ።</div><div class="ru">И теперь знайте, что ангелы на небе будут выведывать о ваших делах у солнца, и луны, и звезд,— выведывать о ваших греховных делах, ибо вы совершаете на земле суд над праведными.</div></div>
+<div class="verse"><div class="num">100:11</div><div class="gez">ወያሰምዕ፡ ላዕሌክሙ፡ ኵሎ፡ ደመና፡ ወጊሜ፡ ወጠለ፡ ወዝናመ፡ እስመ፡ ሀለዉ፡ ኵሎሙ፡ ይትከልኡ፡ እምኔክሙ፡ ከመ፡ ኢይረዱ፡ ዲቤክሙ፡ ወኢይኄልዩ፡ ዲበ፡ ኀጢአትክሙ።</div><div class="ru">И Он сделает свидетелями против вас каждую тучу, и облако, и росу, и дождь, ибо все они задерживаются вами, чтобы не ходить на вас; и не должны ли они думать о ваших грехах?</div></div>
+<div class="verse"><div class="num">100:12</div><div class="gez">ወይእዜኒ፡ ሀቡ፡ አምኃ፡ ለዝናም፡ ከመ፡ ኢትትከላእ፡ ወሪደ፡ ዲቤክሙ፡ ወጠል፡ እመ፡ ተመጠወ፡ እምኔክሙ፡ ወርቀ፡ ወብሩረ፡ ከመ፡ ይረድ፡ ሶበ፡ ይወድቅ፡ እምኔክሙ፡ አስሐትያ፡ ወሐመዳ፡ ወቍረ፡ ዚኣሆሙ፡ ወኵሎሙ፡ ነፋሳተ፡ ሐመዳ፡ ወኵሎ፡ ጻዕራተ፡ ዚኣሆሙ፡ በእማንቱ፡ መዋዕል፡ ኢትክሉ፡ ቀዊመ፡ ቅድሜሆሙ።</div><div class="ru">И теперь дайте дары дождю, чтобы он не был задержан от снисхождения на вас, а также не была бы задержана роса, если она получила от вас золото и серебро.</div></div>
+
+<details class="corpus-ch" open><summary>Глава 101</summary>
+<div class="verse"><div class="num">101:1</div><div class="gez">ጠይቅዋ፡ ለሰማይ፡ ኵልክሙ፡ ውሉደ፡ ሰማይ፡ ወኵሎ፡ ግብሮ፡ ለልዑል፡ ወፍርሁ፡ እምኔሁ፡ ወኢትግበሩ፡ እኩየ፡ በቅድሜሁ።</div><div class="ru">Когда будут падать на вас иней и снег вместе с их холодом, и все снежные ветры со всеми своими бедствиями, то вы не устоите в те дни против них.</div></div>
+<div class="verse"><div class="num">101:2</div><div class="gez">እመ፡ ዐጸወ፡ መስኮተ፡ ሰማይ፡ ወከልአ፡ ዝናመ፡ ወጠለ፡ ከመ፡ ኢይረድ፡ ዲበ፡ ምድር፡ በእንቲኣክሙ፡ ሚ፡ ሀለወክሙ፡ ትግበሩ።</div><div class="ru">Рассмотрите небо, все дети земли, и каждое произведение Всевышнего, и устрашайтесь пред Ним, и не делайте пред Ним ничего злого!</div></div>
+<div class="verse"><div class="num">101:3</div><div class="gez">ወእመ፡ ፈነወ፡ መዓቶ፡ ዲቤክሙ፡ ወዲበ፡ ኵሉ፡ ምግባሪክሙ፡ አኮኑ፡ አንትሙ፡ ዘታስተበቍዕዎ፡ እስመ፡ ትትናገሩ፡ ዲበ፡ ጽድቀ፡ ዚኣሁ፡ ዐቢያተ፡ ወጽኑዓተ፡ ወአልብክሙ፡ ሰላም።</div><div class="ru">Если бы Он закрыл окна небесные и задержал из-за вас дождь и росу, чтобы они не падали на землю, то что вы стали бы тогда делать?</div></div>
+<div class="verse"><div class="num">101:4</div><div class="gez">ኢትሬእይዎሙኑ፡ ለነገሥተ፡ አሕማር፡ እለ፡ ይትሀወኩ፡ እሞገድ፡ ወያንቀለቅሉ፡ እምነፋሳት፡ አሕማሮሙ፡ ወይትመነደቡ።</div><div class="ru">И если Он посылает Свой гнев на вас и на все ваши произведения, то можете ли вы не поклоняться Ему, так как вы высказываете надменные и бесстыдные речи против Его правды, и для вас не будет мира.</div></div>
+<div class="verse"><div class="num">101:5</div><div class="gez">ወበእንተ፡ ዝንቱ፡ ይፈርሁ፡ እስመ፡ ኵሉ፡ ንዋዮሙ፡ ሠናይ፡ ይወፅእ፡ ውስተ፡ ባሕር፡ ምስሌሆሙ፡ ወሠናየ፡ ኢይኄልዩ፡ በልቦሙ፡ እስመ፡ ባሕር፡ ትውኅጦሙ፡ ወይትሀጐሉ፡ ውስቴታ።</div><div class="ru">И не видите ли вы управителей кораблей, как их корабли бросаются волнами, качаются ветрами, и подвергаются опасности; и они вследствие этого впадают в страх, так как они взяли с собою в море самое лучшее из своего имения, и они беспокоятся в своем сердце, как бы море не поглотило их и как бы они не погибли в нем?</div></div>
+<div class="verse"><div class="num">101:6</div><div class="gez">አኮኑ፡ ኵሉ፡ ባሕር፡ ወኵሉ፡ ማያቲሃ፡ ወኵሉ፡ ሑሰታ፡ ግብረ፡ ልዑል፡ ውእቱ፡ ወውእቱ፡ ኵሎ፡ ግብረታ፡ ወማያቲሃ፡ ኀተመ፡ ወአሰረ፡ ኵለንታሃ፡ በኆጻ።</div><div class="ru">Все море, и все его воды, и все его движение— не есть ли творение Всевышнего, и не запечатал ли Он все Свое дело и не заключил ли его совсем в песок?</div></div>
+<div class="verse"><div class="num">101:7</div><div class="gez">ወበተግሣጹ፡ ትየብስ፡ ወትፈርህ፡ ወኵሉ፡ ዓሣቲሃ፡ ይመውቱ፡ ወኵሉ፡ ዘሀሎ፡ ውስቴታ፡ ወአንትሙሰ፡ ኃጥኣን፡ እለ፡ ውስተ፡ ምድር፡ ኢትፍርህዎ።</div><div class="ru">Оно засыхает от Его угроз и устрашается, и все его рабы и все, что есть в нем, умирают: и вы, грешники, живущие на земле, не боитесь Его.</div></div>
+<div class="verse"><div class="num">101:8</div><div class="gez">አኮኑ፡ ውእቱ፡ ገብረ፡ ሰማየ፡ ወምድረ፡ ወኵሉ፡ ዘሀሎ፡ ውስቴቶሙ፡ ወመኑ፡ ወሀበ፡ ትምህርተ፡ ወጥበበ፡ ለኵሎሙ፡ እለ፡ ይትሐወሱ፡ ዲበ፡ ምድር፡ ወለእለ፡ ውስተ፡ ባሕር።</div><div class="ru">Не сотворил ли Он небо, и землю, и все, что есть на них?</div></div>
+<div class="verse"><div class="num">101:9</div><div class="gez">አኮኑ፡ ውእቶሙ፡ ነገሥተ፡ አሕማር፡ ይፈርህዎ፡ ለባሕር፡ ወኃጥኣንሰ፡ ኢይፈርህዎ፡ ለልዑል።</div><div class="ru">И кто дал учение и мудрость всем, которые движутся на земле и которые живут в море?</div></div>
+
+<details class="corpus-ch" open><summary>Глава 102</summary>
+<div class="verse"><div class="num">102:1</div><div class="gez">ወበእማንቱ፡ መዋዕል፡ ለእመ፡ ወደየ፡ ዲቤክሙ፡ እሳተ፡ ዕጹበ፡ በአይቴ፡ ትነፍጹ፡ ወበአይቴ፡ ትድኅኑ፡ ወሶበ፡ ይወዲ፡ ቃሎ፡ ዲቤክሙ፡ አኮኑ፡ ትትመሀከዉ፡ ወትፈርሁ።</div><div class="ru">Не боятся ли моря все цари кораблей?</div></div>
+<div class="verse"><div class="num">102:2</div><div class="gez">ወኵሎሙ፡ ብርሃናት፡ ይትመሀከዉ፡ ወይትሀወኩ፡ በፍርሀት፡ ዐቢይ፡ ወኵላ፡ ምድር፡ ትትመሀከው፡ በፍርሀት፡ ዐቢይ፡ ወትርዕድ፡ ወትጔጕእ።</div><div class="ru">А грешники не боятся Всевышнего.</div></div>
+<div class="verse"><div class="num">102:3</div><div class="gez">ወኵሎሙ፡ መላእክት፡ ይፌጽሙ፡ ትእዛዞሙ፡ ወይፈቅዱ፡ ከመ፡ ይትኀብኡ፡ እምቅድመ፡ ዐቢይ፡ ስብሐት፡ ወይርዕዱ፡ ደቂቀ፡ ምድር፡ ወይትሀወኩ፡ ወአንትሙ፡ ኃጥኣን፡ ርጉማን፡ ለዓለም፡ ወአልብክሙ፡ ሰላመ።</div><div class="ru">В те дни, когда Он пошлет на вас мучительный огонь, куда вы убежите, и где спасетесь? И когда Он пошлет на вас Свое слово, не будете ли вы поражены тогда и не устрашитесь ли?</div></div>
+<div class="verse"><div class="num">102:4</div><div class="gez">ኢትፍርሁ፡ አንትሙ፡ ነፍሳተ፡ ጻድቃን፡ ወተሰፈዉ፡ እለ፡ ሞትክሙ፡ በጽድቅ።</div><div class="ru">Все светила потрясутся тогда от великого страха, и вся земля будет поражена, и она задрожит и устрашится.</div></div>
+<div class="verse"><div class="num">102:5</div><div class="gez">ወኢትሕዝኑ፡ እስመ፡ ወረደት፡ ነፍስክሙ፡ ውስተ፡ ዐቢይ፡ ምንዳቤ፡ ወገዓር፡ ወናእክ፡ ወውስተ፡ ሲኦል፡ በሐዘን፡ ወኢረከበ፡ ሥጋክሙ፡ በሕይወትክሙ፡ በከመ፡ ኂሩትክሙ፡ አላ፡ እንከ፡ በዕለት፡ እንተ፡ ባቲ፡ ኮንክሙ፡ ኃጥኣነ፡ ወበዕለተ፡ መርገም፡ ወመቅሠፍት።</div><div class="ru">И все ангелы выполнят данные им повеления и будут стараться укрыться пред Тем, Кто велик во славе, и дети земли задрожат и затрепещут; и вы, о грешники, будете прокляты навеки, и пусть не будет для вас мира!</div></div>
+<div class="verse"><div class="num">102:6</div><div class="gez">ወሶበ፡ ትመውቱ፡ ይብሉ፡ ኃጥኣን፡ በላዕሌክሙ፡ ከመ፡ ሞትነ፡ ሞቱ፡ ጻድቃን፡ ወምንት፡ ኮነ፡ በቍዔቶሙ፡ በምግባሮሙ።</div><div class="ru">--- Не страшитесь вы, души праведных, и уповайте на день своей смерти в правде!</div></div>
+<div class="verse"><div class="num">102:7</div><div class="gez">ነዋ፡ ከማነ፡ ሞቱ፡ በሐዘን፡ ወበጽልመት፡ ወምንት፡ ፍድፋዶሙ፡ እምኔነ፡ እምይእዜ፡ ተዐረይነ።</div><div class="ru">И не печальтесь, что ваша душа нисходит в царство мертвых в великой скорби, в горе, и воздыхании, и печали, и что ваше тело не обрело в вашей жизни того, чего заслужила ваша благость, скорее теперь в день, когда вы стали одинаковыми с грешниками, и в день проклятия и осуждения.</div></div>
+<div class="verse"><div class="num">102:8</div><div class="gez">ወምንተ፡ ይነሥኡ፡ ወምንተ፡ ይሬእዩ፡ ለዓለም፡ እስመ፡ እሙንቱሂ፡ ነዋ፡ ሞቱ፡ ወእምይእዜ፡ ለዓለም፡ ኢይሬእዩ፡ ብርሃነ።</div><div class="ru">И когда вы умираете, грешники говорят над вами: &amp;quot;праведники умирают, как и мы, и какая для них польза от их дел?</div></div>
+<div class="verse"><div class="num">102:9</div><div class="gez">እብለክሙ፡ አንትሙ፡ ኃጥኣን፡ አከለክሙ፡ በሊዕ፡ ወሰትይ፡ ሀይድ፡ ወኀጢአት፡ ወአዕርቆተ፡ ሰብእ፡ ወአጥርዮተ፡ ንዋይ፡ ወርእዮተ፡ መዋዕል፡ ሠናያት።</div><div class="ru">Вот они, как и мы, умерли в печали и мраке, и какое преимущество они имеют пред нами?</div></div>
+<div class="verse"><div class="num">102:10</div><div class="gez">ርኢክምዎሙኑ፡ ለጻድቃን፡ እፎ፡ ኮነ፡ ተፍጻሜቶሙ፡ ሰላመ፡ እስመ፡ ኵሉ፡ ግፍዕ፡ ኢተረክበ፡ በላዕሌሆሙ፡ እስከ፡ ዕለተ፡ ሞቶሙ።</div><div class="ru">отныне мы одинаковы.</div></div>
+<div class="verse"><div class="num">102:11</div><div class="gez">ወተሀጕሉ፡ ወኮኑ፡ ከመ፡ ዘኢኮኑ፡ ወወረዱ፡ ውስተ፡ ሲኦል፡ ነፍሳቲሆሙ፡ በምንዳቤ።</div><div class="ru">И чего они достигнут этим, и что они увидят в вечности?</div></div>
+
+<details class="corpus-ch" open><summary>Глава 103</summary>
+<div class="verse"><div class="num">103:1</div><div class="gez">ወይእዜኒ፡ አነ፡ እምሕል፡ ለክሙ፡ ለጻድቃን፡ በዐቢይ፡ ስብሐቱ፡ ወክብሩ፡ ወበክቡር፡ መንግሥቱ፡ ወበዕበዩ፡ እምሕል፡ ለክሙ።</div><div class="ru">Ибо вот они также умерли и отныне не увидят света до века&amp;quot;.</div></div>
+<div class="verse"><div class="num">103:2</div><div class="gez">እስመ፡ አነ፡ ኣአምር፡ ዘንተ፡ ምሥጢረ፡ ወአንበብኩ፡ በጸፍጸፈ፡ ሰማይ፡ ወርኢኩ፡ ጽሕፈተ፡ ቅዱሳን፡ ወረከብኩ፡ ጽሑፈ፡ ውስቴቶሙ፡ ወልኩዐ፡ በእንቲኣሆሙ።</div><div class="ru">Я говорю вам, грешники: для вас достаточно есть, и пить, и обнажать человека, и расхищать, и согрешать, и приобретать силу, и видеть хорошие дни.</div></div>
+<div class="verse"><div class="num">103:3</div><div class="gez">እስመ፡ ኵሉ፡ ሠናይ፡ ወፍሥሓ፡ ወክብር፡ ተደለወ፡ ሎሙ፡ ወተጽሕፈ፡ ለመናፍስቲሆሙ፡ ለእለ፡ ሞቱ፡ በጽድቅ፡ ወበርትዕ፡ ወበብዙኅ፡ ሠናይ፡ ይትወሀብ፡ ለክሙ፡ ተክለ፡ ጻማክሙ፡ ወክፍልክሙ፡ ፈድፈደ፡ እምክፍለ፡ ሕያዋን።</div><div class="ru">Видели ли вы праведных, как конец их был мирен, ибо никакого рода насилия не было в них по день их смерти, &amp;quot;И они погибли, как бы и не существовали, и их души в печали сошли в царство мертвых&amp;quot;.</div></div>
+<div class="verse"><div class="num">103:4</div><div class="gez">ወየሐዩ፡ መንፈሰክሙ፡ ለእለ፡ ሞትክሙ፡ በጽድቅ፡ ወይትፌሥሑ፡ ወይትሐሠዩ፡ መናፍስቲሆሙ፡ ወተዝካሮሙ፡ እምቅድመ፡ ገጹ፡ ለዐቢይ፡ ለኵሉ፡ ትውልደ፡ ዓለም፡ ወይእዜኒ፡ ኢትፍርህዎ፡ ለኀሳሮሙ።</div><div class="ru">И теперь я клянусь вам праведным Его великою славою и честью, и Его достохвальным царством, и Его владычеством я клянусь вам: я знаю эту тайну и прочитал ее на небесных скрижалях, и видел книгу святых, и нашел написанное и</div></div>
+<div class="verse"><div class="num">103:5</div><div class="gez">አሌ፡ ለክሙ፡ ኃጥኣን፡ ሶበ፡ ትመውቱ፡ በኀጢአትክሙ፡ ወይብሉ፡ በእንቲኣክሙ፡ እለ፡ ከማክሙ፡ ብፁዓን፡ እሙንቱ፡ ኃጥኣን፡ ኵሎ፡ መዋዕሊሆሙ፡ ርእዩ።</div><div class="ru">отмеченное в ней относительно них, что для них уготовано всякое благо, и радость и почесть; и я нашел записанное относительно духов тех, которые умерли в правде; и узнали, что вам будет воздано многими благами за ваши труды, и ваша участь лучше, чем участь живущих.</div></div>
+<div class="verse"><div class="num">103:6</div><div class="gez">ወይእዜኒ፡ ሞቱ፡ በሠናይ፡ ወበብዕል፡ ወምንዳቤ፡ ወቀትለ፡ ኢርእዩ፡ በሕይወቶሙ፡ ወበስብሐት፡ ሞቱ፡ ወኵነኔ፡ ኢተገብረ፡ ሎሙ፡ በሕይወቶሙ።</div><div class="ru">И будут жить ваши духи,— вы, умершие в правде; и будут радоваться и ликовать их духи, и память о них будет пред лицом Великого на все роды мира: так не страшитесь же их поношения!</div></div>
+<div class="verse"><div class="num">103:7</div><div class="gez">ኢተአምርዎሙኑ፡ እስመ፡ ውስተ፡ ሲኦል፡ ያወርድዎሙ፡ ለነፍሳቲሆሙ፡ ወእኩያተ፡ ይከውና፡ ምንዳቤሆሙ፡ ዐቢየ።</div><div class="ru">Горе вам, грешники, когда вы умираете в своих грехах и подобные вам говорят о вас: &amp;quot;блаженны грешники, они видели все свои дни; и теперь они умерли в счастье и в богатстве, и не видели в своей жизни ни горести, ни убийства; в славе они умерли, и во время их жизни суд не совершился над ними&amp;quot;.</div></div>
+<div class="verse"><div class="num">103:8</div><div class="gez">ወበጽልመት፡ ወበመርበብት፡ ወበላህብ፡ ዘይነድድ፡ ኀበ፡ ኵነኔ፡ ዐባይ፡ ትበውእ፡ መንፈሰክሙ፡ ወኵነኔ፡ ዐባይ፡ ትከውን፡ ለኵሉ፡ ትውልድ፡ እስከ፡ ለዓለም፡ አሌ፡ ለክሙ፡ እስመ፡ አልብክሙ፡ ሰላመ።</div><div class="ru">Но знаете ли вы, что души их должны сойти в царство мертвых, и они найдут его невыносимым, и велика будет печаль их?</div></div>
+<div class="verse"><div class="num">103:9</div><div class="gez">ኢትበልዎሙ፡ ለጻድቃን፡ ወለኄራን፡ እለ፡ ሀለዉ፡ ውስተ፡ ሕይወት፡ በመዋዕለ፡ ሥራሕነ፡ ጻማ፡ ጻመውነ፡ ወኵሎ፡ ሥራሐ፡ ርኢነ፡ ወእኩያተ፡ ብዙኃተ፡ ረከብነ፡ ወተወዳእነ፡ ወውኅድነ፡ ወንእሰት፡ መንፈሰነ።</div><div class="ru">И во время великого суда ваш дух сойдет во мраке, и в сети, и в плавающее пламя, и великий суд будет для всех родов до века: горе вам, ибо для вас нет мира!</div></div>
+<div class="verse"><div class="num">103:10</div><div class="gez">ወተሀጐልነ፡ ወአልቦ፡ ዘረድአነ፡ በነገር፡ ወበምግባር፡ ስእነ፡ ወኢ፡ ምንተኒ፡ ኢረከብነ፡ ወተጽዕርነ፡ ወተሀጐልነ፡ ወኢተሰፈውነ፡ ከመ፡ ንርአይ፡ ሕይወተ፡ ዕለተ፡ እምዕለት።</div><div class="ru">Не говорите праведным и добрым, которые еще живут: &amp;quot;в дни нашего бедствия мы трудились, и побеждали всякую нужду, и встречались со всякими бедствиями; мы не могли ничего сделать против врагов ни словом, ни делом, и совершенно ничего не достигли; мы мучились и погибали, и не могли надеяться видеть жизнь день за днем.</div></div>
+<div class="verse"><div class="num">103:11</div><div class="gez">ወተሰፈውነ፡ ከመ፡ ንኩን፡ ርእሰ፡ ወኮነ፡ ዘነበ፡ ጻመውነ፡ እንዘ፡ ንትጌበር፡ ወኢሠለጥነ፡ ዲበ፡ ጻማነ፡ ወኮነ፡ መባልዕተ፡ ለኃጥኣን፡ ወዐማፅያን፡ አክበዱ፡ ላዕሌነ፡ አርዑተ፡ ዚኣሆሙ።</div><div class="ru">Мы надеялись быть главою, а сделались хвостом; мы измучились в работах и не получили плодов своего труда, мы сделались пищею для грешников, неправедные сделали для нас тяжким свое ярмо.</div></div>
+<div class="verse"><div class="num">103:12</div><div class="gez">ወተሠልጡ፡ ዲቤነ፡ እለ፡ ይጸልኡነ፡ ወእለ፡ ይደጕጹነ፡ ወለእለ፡ ይጸልኡነ፡ አትሐትነ፡ ክሳደነ፡ ወኢመሐሩነ።</div><div class="ru">Владыками над нами были те, которые ненавидели нас и били нас: и мы должны были склонять свои головы пред ненавидящими нас, и они не имели сострадания к нам.</div></div>
+<div class="verse"><div class="num">103:13</div><div class="gez">ወፈቀድነ፡ ንሑር፡ እምኔሆሙ፡ ከመ፡ ንንፍጽ፡ ወናዕርፍ፡ ወኢረከብነ፡ ኀበ፡ ንጐይይ፡ ወንድኅን፡ እምኔሆሙ።</div><div class="ru">Мы старались ускользнуть от них, чтобы убежать и получить успокоение, но мы не находили, куда бежать нам и спастись от них.</div></div>
+<div class="verse"><div class="num">103:14</div><div class="gez">ወሰከይናሆሙ፡ ኀበ፡ መላእክት፡ በምንዳቤነ፡ ወጸራሕነ፡ ዲበ፡ እለ፡ ይበልዑነ፡ ወጽራሐ፡ ዚኣነ፡ ኢይሬእዩ፡ ወኢይፈቅዱ፡ ከመ፡ ይስምዑ፡ ቃለነ።</div><div class="ru">Мы жаловались на них в своей горести властителям, и сетовали на тех, которые поедали нас; но они не взирали на наш вопль и не хотели слышать нашего голоса.</div></div>
+<div class="verse"><div class="num">103:15</div><div class="gez">ወይረድእዎሙ፡ ለእለ፡ የሀይዱነ፡ ወይበልዑነ፡ ወለእለ፡ አውኀዱነ፡ ወየኀብኡ፡ ግፍዖሙ፡ ወኢያወፅኡ፡ እምኔነ፡ አርዑቶሙ፡ እለ፡ ይበልዑነ፡ ወይዘረዝሩነ፡ ወይቀትሉነ፡ ወየኀብኡ፡ ቀትለነ፡ ወኢተዘከሩ፡ ከመ፡ ያንሥኡ፡ እደዊሆሙ፡ ላዕሌነ።</div><div class="ru">И они помогали тем, которые обкрадывали нас и поедали, и тем, которые принижали нас; и они утаивали их притеснения, так что не снимали с нас их ярма, но поедали нас, и прогоняли, и убивали: и они утаивали умерщвление нас, и не думали о том, что они подняли свои руки против нас&amp;quot;.</div></div>
+
+<details class="corpus-ch" open><summary>Глава 104</summary>
+<div class="verse"><div class="num">104:1</div><div class="gez">እምሕል፡ ለክሙ፡ ጻድቃን፡ እስመ፡ በሰማይ፡ ይዜከሩ፡ መላእክት፡ በእንቲኣክሙ፡ ለሠናይ፡ በቅድመ፡ ስብሐቲሁ፡ ለዐቢይ፡ ወአስማቲክሙ፡ ይጸሐፉ፡ በቅድመ፡ ስብሐቲሁ፡ ለዐቢይ።</div><div class="ru">Я клянусь вам, праведные, что ангелы на небе напоминают о вас пред славою Великого к вашему благу, и ваши имена записаны пред славою Великого.</div></div>
+<div class="verse"><div class="num">104:2</div><div class="gez">ተሰፈዉ፡ እስመ፡ በቀዳሚ፡ ኀሰርክሙ፡ በእከይ፡ ወበሥራሕ፡ ወይእዜኒ፡ ትበርሁ፡ ከመ፡ ብርሃነ፡ ሰማይ፡ ወትትረአዩ፡ ወኆኅተ፡ ሰማይ፡ ይትረኀው፡ ለክሙ።</div><div class="ru">Надейтесь вы, праведные, ибо прежде вы были в позоре, и несчастии, и бедствии, а теперь вы будете светить, как светила небесные, и будете видимы, и врата небесные отверзнутся для вас.</div></div>
+<div class="verse"><div class="num">104:3</div><div class="gez">ወጽራሐ፡ ዚኣክሙ፡ ኵነኔ፡ ጽርሑ፡ ወያስተርኢ፡ ለክሙ፡ እስመ፡ እምነ፡ መላእክት፡ ይትኅሠሥ፡ ኵሎ፡ ምንዳቤክሙ፡ ወእምኵሎሙ፡ እለ፡ አርድእዎሙ፡ ለእለ፡ የሀይዱክሙ።</div><div class="ru">И ваш вопль о суде продолжается: он откроется для вас, ибо властителям отомстится за ваше страдание, и всем помощникам тех, которые обкрадывали вас.</div></div>
+<div class="verse"><div class="num">104:4</div><div class="gez">ተሰፈዉ፡ ወኢትኅድጉ፡ ተስፋክሙ፡ እስመ፡ ትከውን፡ ለክሙ፡ ፍሥሓ፡ ዐባይ፡ ከመ፡ መላእክት፡ በሰማይ።</div><div class="ru">Надейтесь и не покидайте свои надежды: ибо вы будете иметь великую</div></div>
+<div class="verse"><div class="num">104:5</div><div class="gez">እንተ፡ ሀለወክሙ፡ ትግበሩ፡ አኮ፡ ከመ፡ ትትኀብኡ፡ ሀለወክሙ፡ በዕለተ፡ ኵነኔ፡ ዐባይ፡ ወኢትትረከቡ፡ ከመ፡ ኃጥኣን፡ ወኵነኔ፡ እንተ፡ ለዓለም፡ ትከውን፡ እምኔክሙ፡ ለኵሉ፡ ትውልደ፡ ዓለም።</div><div class="ru">радость, как ангелы небесные, Так как вам предстоит таковое, то вы не будете скрываться в день великого суда, и не будете найдены подобными грешникам, и от вас далеко будет вечное осуждение, на все роды мира.</div></div>
+<div class="verse"><div class="num">104:6</div><div class="gez">ወይእዜኒ፡ ኢትፍርሁ፡ ጻድቃን፡ ሶበ፡ ትሬእይዎሙ፡ ለኃጥኣን፡ ይጸንዑ፡ ወይዴለዉ፡ በፍትወቶሙ፡ ወኢትኩኑ፡ ሱቱፋነ፡ ምስሌሆሙ፡ አላ፡ ረሐቁ፡ እምግፍዐ፡ ዚኣሆሙ፡ እስመ፡ ለሐራ፡ ሰማይ፡ ሀለወክሙ፡ ትኩኑ፡ ሱቱፋነ።</div><div class="ru">И теперь вы не бойтесь, праведные, когда видите грешников усиливающимися и услаждающимися в своем веселие, и не имейте никакого общения с ними, но держитесь в отдалении, ибо вы должны быть союзниками небесных воинств.</div></div>
+<div class="verse"><div class="num">104:7</div><div class="gez">እስመ፡ ትብሉ፡ አንትሙ፡ ኃጥኣን፡ ኢይትኀሠሡ፡ ወኢይጸሐፍ፡ ኵሉ፡ ኀጢአትነ፡ ይጽሐፉ፡ ሀለዉ፡ ኵሎ፡ ኀጢአተክሙ፡ በኵሉ፡ ዕለት።</div><div class="ru">Вы грешники, хотя и говорите: &amp;quot;вы не можете разузнать этого и наши грехи не записаны все&amp;quot;, однако же они (ангелы) каждый день записывают ваши грехи.</div></div>
+<div class="verse"><div class="num">104:8</div><div class="gez">ወይእዜኒ፡ አነ፡ ኣርእየክሙ፡ እስመ፡ ብርሃን፡ ወጽልመት፡ ዕለት፡ ወሌሊት፡ ይሬእዩ፡ ኵሎ፡ ኀጢአተክሙ።</div><div class="ru">И теперь я открываю вам, что свет и мрак, день и ночь видят все ваши грехи.</div></div>
+<div class="verse"><div class="num">104:9</div><div class="gez">ወኢትርስዑ፡ በልብክሙ፡ ወኢተሐስዉ፡ ወኢትሚጥዎ፡ ለነገረ፡ ርትዕ፡ ወኢተሐስውዎ፡ ለነገረ፡ ቅዱስ፡ ወዐቢይ፡ ወኢትሰብሕዎ፡ ለጣዖትክሙ፡ እስመ፡ ኢኮነት፡ ኵላ፡ ሐሰትክሙ፡ ወኵሉ፡ ርስዐትክሙ፡ ለጽድቅ፡ አላ፡ ለኀጢአት፡ ዐቢይ።</div><div class="ru">Не будьте нечестивыми в своем сердце, и не лгите, не изменяйте слов праведности (или истины), и не выдавайте за ложь слов Святого и Великого, и не прославляйте своих идолов; ибо вся ваша ложь и ваше нечестие служит не к правде, а к великому греху.</div></div>
+<div class="verse"><div class="num">104:10</div><div class="gez">ወይእዜኒ፡ አነ፡ ኣአምሮ፡ ለዝንቱ፡ ምሥጢር፡ እስመ፡ ነገረ፡ ርትዕ፡ ይመይጡ፡ ወየዐልዉ፡ ብዙኃን፡ ኃጥኣን፡ ወይትናገሩ፡ ነገራት፡ እኩያተ፡ ወይሔስዉ፡ ወይፈጥሩ፡ ፍጥረታተ፡ ዐቢያተ፡ ወመጻሕፍተ፡ ይጽሕፉ፡ ዲበ፡ ነገራቲሆሙ።</div><div class="ru">И теперь я знаю эту тайну, что многие грешники изменят слова праведности (или истины) и отпадут от них, и будут говорить двойные речи, и говорить ложь, и творить великие (греховные) дела, и писать книги о своих речах.</div></div>
+<div class="verse"><div class="num">104:11</div><div class="gez">ወሶበሰ፡ ኵሎ፡ ነገራትየ፡ ይጽሕፉ፡ በርትዕ፡ ዲበ፡ ልሳናቲሆሙ፡ ወኢይዌልጡ፡ ወኢየሐጽጹ፡ እምነገራትየ፡ አላ፡ ኵሎ፡ በርትዕ፡ ይጽሕፉ፡ ኵሎ፡ ዘቀዳሚ፡ አስማዕኩ፡ በእንቲኣሆሙ።</div><div class="ru">Но когда они все мои слова пишут правильно на своих языках, и ничего не изменяют и не пропускают из моих слов, но все пишут правильно,— все, что я</div></div>
+<div class="verse"><div class="num">104:12</div><div class="gez">ወካልአ፡ ምሥጢረ፡ ኣአምር፡ እስመ፡ ለጻድቃን፡ ወለጠቢባን፡ ይትወሀባ፡ መጻሕፍት፡ ለፍሥሓ፡ ወለርትዕ፡ ወለጥበብ፡ ብዙኅ።</div><div class="ru">прежде утверждал относительно них; то я знаю другую тайну, что именно только праведным и мудрым даны книги к радости, и к праведности, и к великой мудрости, и им даны книги, и они уверуют в них и возрадуются о них; и получат награду все праведные, научившиеся из них знать все пути праведности.</div></div>
+<div class="verse"><div class="num">104:13</div><div class="gez">ወሎሙ፡ ይትወሀባ፡ መጻሕፍት፡ ወእሙንቱ፡ የአምኑ፡ ቦሙ፡ ወይትፌሥሑ፡ ቦሙ፡ ወይትሐሠዩ፡ ኵሎሙ፡ ጻድቃን፡ እለ፡ እምኔሆሙ፡ አእመሩ፡ ኵሎ፡ ፍናዋተ፡ ርትዕ።</div><div class="ru">&amp;quot;И в те дни, говорит Господь, они (праведные) должны воззвать к сынам земли и представить свидетельство относительно мудрости их (книг); покажите им их,— ибо вы их вожди,— и награды для всей земли.</div></div>
+
+<details class="corpus-ch" open><summary>Глава 105</summary>
+<div class="verse"><div class="num">105:1</div><div class="gez">ወበእማንቱ፡ መዋዕል፡ ይቤ፡ እግዚእ፡ ከመ፡ ይጸውዑ፡ ወያስምዑ፡ ለውሉደ፡ ሰብእ፡ በጥበቦሙ፡ አርእዩ፡ ሎሙ፡ እስመ፡ አንትሙ፡ መራሕያኒሆሙ፡ ወዕሴያተ፡ ዲበ፡ ኵሉ፡ ምድር።</div><div class="ru">Ибо Я и Мой Сын соединимся с ними навсегда и навечно на путях праведности в их жизни.</div></div>
+<div class="verse"><div class="num">105:2</div><div class="gez">እስመ፡ አነ፡ ወወልድየ፡ ንዴመር፡ ምስሌሆሙ፡ ለዓለም፡ በፍናዋተ፡ ርትዕ፡ በሕይወቶሙ፡ ወሰላመ፡ ይከውን፡ ለክሙ፡ ተፈሥሑ፡ ውሉደ፡ ርትዕ፡ በአማን።</div><div class="ru">И мир будет с вами: радуйтесь, вы— дети праведности, воистину&amp;quot;!</div></div>
+</details>
+</main>
+<footer>ARCHIVUM HAERETICUM · Q4 · <span class="red">◆</span> SIGILLUM VERITATIS · <span class="gold">DATUM 160.M3</span> · FIDELIS</footer>
+<script>
+function toggleAll(open){
+  document.querySelectorAll('details').forEach(d=>d.open=open);
+  document.querySelectorAll('.verse,.row').forEach(r=>{r.style.display=open?'grid':'none';});
+}
+function toggleOrig(){
+  document.querySelectorAll('.verse,.row').forEach(r=>{r.style.display='grid';});
+  document.querySelectorAll('.verse .ru,.row .ru').forEach(e=>e.style.display='none');
+  document.querySelectorAll('.verse .av,.verse .sk,.verse .he,.verse .grc,.verse .zh,.verse .sa,.verse .ar,.verse .dev,.verse .en,.verse .gr,.verse .egy,.verse .csl,.verse .fa,.verse .ak,.verse .bo,.verse .tib').forEach(e=>e.style.display='');
+}
+function toggleRu(){
+  document.querySelectorAll('.verse .ru,.row .ru').forEach(e=>e.style.display='');
+  document.querySelectorAll('.verse .av,.verse .sk,.verse .he,.verse .grc,.verse .zh,.verse .sa,.verse .ar,.verse .dev,.verse .en,.verse .gr,.verse .egy,.verse .csl,.verse .fa,.verse .ak,.verse .bo,.verse .tib').forEach(e=>e.style.display='none');
+}
+function resetView(){
+  document.querySelectorAll('.verse,.row').forEach(r=>{r.style.display='grid';});
+  document.querySelectorAll('.verse .av,.verse .sk,.verse .he,.verse .grc,.verse .zh,.verse .sa,.verse .ar,.verse .dev,.verse .en,.verse .gr,.verse .egy,.verse .csl,.verse .fa,.verse .ak,.verse .bo,.verse .tib,.verse .ru,.row .ru').forEach(e=>e.style.display='');
+}
+</script>
+</body></html>

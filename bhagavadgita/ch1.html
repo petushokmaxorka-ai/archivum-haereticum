@@ -1,0 +1,472 @@
+<!DOCTYPE html><html lang="ru"><head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Глава 1. Arjuna Viṣāda Yoga — Бхагавадгита</title>
+<style>
+:root{--bg:#0a0a0c;--bg2:#0d0d12;--panel:#13131a;--line:#2a2a33;--red:#c8102e;--red-dark:#8a0a1f;--gold:#c9a227;--gold-bright:#e8b84a;--gold-dim:#8a7119;--ink:#c8102e;--ink-dim:#c9a227;--orig:#c8102e;--accent:#d49a3a;--grid:#1d1d24}
+*{box-sizing:border-box;margin:0;padding:0}body{background:var(--bg);color:var(--ink);font-family:Georgia,'Times New Roman',serif;line-height:1.55}
+a{color:var(--gold);text-decoration:none}a:hover{color:var(--gold-bright);text-decoration:underline}
+header.hos{background:linear-gradient(180deg,var(--red-dark) 0%,#1a0007 30%,var(--bg) 100%);border-bottom:2px solid var(--red);padding:0;position:relative}
+header.hos::before{content:"";position:absolute;left:0;top:0;bottom:0;width:6px;background:var(--red)}
+.hos-strip{display:flex;justify-content:space-between;align-items:center;padding:6px 14px;background:rgba(0,0,0,0.5);border-bottom:1px solid var(--red-dark);font-family:'Courier New',monospace;font-size:10px;letter-spacing:2px;color:var(--ink-dim);text-transform:uppercase}
+.hos-strip .l{color:var(--gold)} .hos-strip .r{color:var(--red);font-weight:bold}
+.hos-body{padding:18px 22px 14px}
+.hos-h1{font-size:1.5rem;letter-spacing:.12em;color:var(--orig);font-weight:normal;margin-bottom:4px;line-height:1.2}
+.hos-h1 .q{color:var(--red);font-family:'Courier New',monospace;font-size:.7em;vertical-align:super;margin-right:6px;padding:3px 7px;background:rgba(200,16,46,0.15);border:1px solid var(--red-dark);letter-spacing:1px}
+.hos-h1 .sig{font-size:.55em;color:var(--gold);font-family:'Courier New',monospace;letter-spacing:2px;margin-left:10px;padding:3px 8px;border:1px solid var(--gold-dim);vertical-align:middle}
+.hos-sub{color:var(--ink-dim);font-size:13px;font-style:italic}
+.stamps{padding:7px 16px;background:var(--bg2);border-bottom:1px solid var(--line);text-align:center;font-family:'Courier New',monospace}
+.stamps span{display:inline-block;border:1px solid var(--gold-dim);color:var(--gold);font-size:9px;letter-spacing:2px;padding:2px 7px;margin:0 2px;text-transform:uppercase}
+.stamps span.fid{color:var(--gold-bright);border-color:var(--gold);background:rgba(201,162,39,0.05)}
+.stamps span.dam{color:var(--red);border-color:var(--red-dark);background:rgba(200,16,46,0.05)}
+.stamps span.cre{color:var(--accent);border-color:var(--accent);background:rgba(212,154,58,0.05)}
+nav.main{padding:8px 18px;background:var(--panel);border-bottom:1px solid var(--line);font-size:12px;text-align:center}
+nav.main a{color:var(--gold);margin:0 6px;letter-spacing:1px;padding:3px 6px}
+.toolbar{display:flex;justify-content:center;gap:6px;flex-wrap:wrap;margin:14px 0 8px;padding:8px;background:var(--panel);border:1px solid var(--line);font-family:'Courier New',monospace}
+.toolbar button{background:transparent;border:1px solid var(--gold-dim);color:var(--gold);padding:5px 11px;font-size:10px;letter-spacing:1px;cursor:pointer;font-family:inherit;text-transform:uppercase}
+.toolbar button:hover{background:var(--gold);color:var(--bg)}
+.meta{color:var(--ink-dim);font-size:11px;font-style:italic;padding:6px 16px;text-align:center;font-family:'Courier New',monospace;letter-spacing:1px}
+.meta b{color:var(--gold);font-style:normal;font-family:Georgia,serif}
+.chap{background:linear-gradient(90deg,var(--red-dark),transparent);color:var(--gold-bright);font-size:.85rem;letter-spacing:.2em;padding:9px 16px;border-bottom:1px solid var(--red-dark);border-top:1px solid var(--red-dark);font-family:'Courier New',monospace;text-transform:uppercase;margin-top:12px}
+main{max-width:1300px;margin:0 auto;padding:0 12px 40px}
+.row{display:grid;grid-template-columns:3rem 1fr 1.1fr;border-bottom:1px solid var(--grid);align-items:start;transition:background 0.15s}
+.row:hover{background:#15110b}
+.num{grid-column:1;color:var(--gold);font-size:12px;padding:10px 4px;text-align:right;font-family:'Courier New',monospace;font-weight:bold;align-self:start}
+.orig,.ar,.gr,.he,.grc,.sk,.dev,.av,.zh,.sa{grid-column:2;padding:10px 12px;font-size:1rem;line-height:1.7;color:var(--orig);background:rgba(201,162,39,0.025);border-right:1px solid var(--gold-dim);border-left:3px solid var(--gold-dim);font-style:italic}
+.ar{direction:rtl;text-align:right;font-family:'Amiri','Scheherazade New','Traditional Arabic',serif;font-size:1.25rem;line-height:1.85}
+.gr,.grc{direction:ltr;font-family:'SBL Greek','Palatino Linotype',Georgia,serif}
+.he{direction:rtl;text-align:right;font-family:'SBL Hebrew','Times New Roman',serif;font-size:1.1rem}
+.sk,.dev{direction:ltr;font-family:'Noto Sans Devanagari','Sanskrit Text',serif;font-size:1.05rem}
+.zh{font-family:'Noto Serif CJK SC','SimSun',serif}
+.ru,.rus{grid-column:3;padding:10px 12px;font-size:.95rem;line-height:1.65;text-align:justify;color:var(--ink)}
+.bismillah{text-align:center;padding:1.5rem 1rem;font-family:'Amiri','Scheherazade New','Traditional Arabic',serif;font-size:1.8rem;color:var(--gold);direction:rtl;background:linear-gradient(180deg,#1a1410,#0a0a0c);border-bottom:1px solid var(--red-dark);letter-spacing:0;margin:14px 16px;border:1px solid var(--red-dark)}
+.bismillah .label{display:block;font-family:'Courier New',monospace;font-size:.7rem;letter-spacing:.25em;color:var(--ink-dim);text-transform:uppercase;direction:ltr;margin-bottom:8px}
+footer{padding:18px;text-align:center;color:var(--ink-dim);font-size:10px;border-top:1px solid var(--line);font-family:'Courier New',monospace;letter-spacing:2px;background:var(--bg2)}
+footer .red{color:var(--red)} footer .gold{color:var(--gold)}
+
+  .hos-sub{font-size:12px}
+  .hos-strip{font-size:9px;letter-spacing:1px;padding:4px 8px}
+  .stamps span{font-size:8px;letter-spacing:1px;padding:2px 5px;margin:0 1px}
+  
+  /* Stack verse vertically on mobile */
+  .verse,.row{grid-template-columns:1fr !important;display:block !important;padding:8px 10px;margin-bottom:8px;border:1px solid var(--line);background:var(--bg2)}
+  .verse .num,.row .num{display:inline-block;background:rgba(0,0,0,0.5);padding:2px 8px;margin-bottom:6px;width:auto;text-align:left;font-size:11px;border:1px solid var(--gold-dim);border-radius:2px}
+  
+  /* Original language - full width */
+  .verse .av,.verse .sk,.verse .he,.verse .grc,.verse .zh,.verse .sa,.verse .ar,.verse .dev,.verse .en,.verse .gr,.verse .egy,.verse .csl,.verse .fa,.verse .ak,.verse .bo,.verse .tib,
+  .row .av,.row .sk,.row .he,.row .grc,.row .zh,.row .sa,.row .ar,.row .dev,.row .en,.row .gr,.row .csl,.row .fa,.row .ak,.row .bo,.row .tib{font-size:1.05rem;line-height:1.7;padding:8px 10px;border-left:3px solid var(--gold-dim);margin:6px 0;background:rgba(201,162,39,0.04);font-style:italic;width:auto !important;display:block}
+  
+  /* Russian - full width */
+  .verse .ru,.row .ru{font-size:.95rem;line-height:1.6;padding:8px 10px;border-left:3px solid var(--red);background:rgba(200,16,46,0.04);margin:6px 0;width:auto !important;display:block;grid-column:1}
+  
+  /* Toolbar */
+  .toolbar{display:flex;flex-wrap:wrap;gap:4px;padding:6px;margin:8px 0}
+  .toolbar button{font-size:10px;padding:5px 8px;letter-spacing:0;flex:1 1 30%;min-width:60px}
+  
+  /* Container */
+  main{padding:0 8px}
+  nav.main{padding:6px 10px;font-size:11px}
+  nav.main a{margin:0 3px;padding:2px 4px}
+  
+  /* Book cards */
+  .book-grid{grid-template-columns:1fr;gap:6px}
+  .book-card{font-size:13px;padding:8px 10px;line-height:1.4}
+  
+  /* Note */
+  .note{font-size:14px;line-height:1.7;padding:14px 18px;margin:14px;color:var(--red);background:rgba(201,162,39,0.04);border:1px solid var(--gold-dim);border-left:4px solid var(--gold)}
+
+  
+  /* Footer */
+  footer{font-size:11px;padding:8px 10px}
+}
+  .row{grid-template-columns:2rem 1fr 1.1fr}
+  .num{font-size:.7rem;padding:.5rem .3rem}
+  .ar{font-size:1.1rem;line-height:1.7;padding:.5rem .4rem}
+  .ru{font-size:.85rem;line-height:1.4;padding:.5rem .4rem}
+}
+
+/* Q20 EGYPTIAN additions */
+.verse .egy{grid-column:1;font-family:'Papyrus','Segoe UI Historic',serif;font-size:1.05rem;line-height:1.8;direction:ltr;text-align:left;color:#e8b84a;background:rgba(232,184,74,0.04);border-right:3px solid var(--gold-dim);padding:12px 14px;font-style:italic}
+.verse .ru{grid-column:2;font-size:0.98rem;line-height:1.75;color:var(--ink);background:rgba(201,162,39,0.025);border-left:1px solid var(--gold-dim);padding:12px 14px}
+.verse .transl-note{grid-column:1/-1;padding:6px 14px;font-size:0.78rem;color:var(--ink-dim);font-style:italic;text-align:right;background:rgba(0,0,0,0.15);border-top:1px solid var(--line)}
+.verse .num,.verse .transl-note{color:var(--gold-bright)}
+
+.verse .av,.verse .sk,.verse .he,.verse .grc,.verse .zh,.verse .sa,.verse .ar,.verse .dev,.verse .en,.verse .gr,.verse .csl,.verse .fa,.verse .ak,.verse .bo,.verse .tib{font-family:'Times New Roman',Georgia,serif;font-size:1.05rem;line-height:1.7;color:var(--orig);background:rgba(201,162,39,0.04);border-right:3px solid var(--gold-dim);padding:12px 14px;direction:ltr;text-align:left;font-style:italic}
+.row .av,.row .sk,.row .he,.row .grc,.row .zh,.row .sa,.row .ar,.row .dev,.row .en,.row .gr,.row .csl,.row .fa,.row .ak,.row .bo,.row .tib{font-family:'Times New Roman',Georgia,serif;font-size:1.05rem;line-height:1.7;color:var(--orig);background:rgba(201,162,39,0.04);padding:10px 12px;direction:ltr;text-align:left}
+.verse{display:grid;grid-template-columns:3.2rem 1fr 1.1fr;border-bottom:1px solid var(--grid);align-items:start;transition:background 0.15s}
+.row{display:grid;grid-template-columns:3.2rem 1fr 1.1fr 1fr;border-bottom:1px solid var(--grid);align-items:start;transition:background 0.15s}
+.num{font-family:'Courier New',monospace;font-size:11px;color:var(--gold);text-align:center;padding:12px 4px;background:rgba(0,0,0,0.3);border-right:1px solid var(--line);font-weight:bold;align-self:start}
+.ru{font-size:.92rem;line-height:1.6;color:var(--ink);padding:10px 12px;background:rgba(255,255,255,0.01);border-left:1px solid var(--line);align-self:start;grid-column:3}
+
+/* ARCHIVUM HAERETICUM — Original script fonts */
+
+
+
+
+
+
+
+@font-face{font-family:'Noto Sans Cuneiform';font-style:normal;font-weight:400;font-display:block;src:url('/archivum-haereticum/fonts/noto-cuneiform.ttf') format('truetype')}
+@font-face{font-family:'Noto Sans Egyptian Hieroglyphs';font-style:normal;font-weight:400;font-display:block;src:url('/archivum-haereticum/fonts/noto-hieroglyphs.ttf') format('truetype')}
+@font-face{font-family:'Noto Sans Coptic';font-style:normal;font-weight:400;font-display:block;src:url('/archivum-haereticum/fonts/noto-coptic.ttf') format('truetype')}
+@font-face{font-family:'Noto Serif JP';font-style:normal;font-weight:400;font-display:swap;src:local('Noto Serif JP'),local('NotoSerifJP-Regular')}
+@font-face{font-family:'Noto Sans Devanagari';font-style:normal;font-weight:400;font-display:swap;src:local('Noto Sans Devanagari'),local('NotoSansDevanagari-Regular')}
+@font-face{font-family:'Noto Sans Tibetan';font-style:normal;font-weight:400;font-display:swap;src:local('Noto Sans Tibetan'),local('NotoSansTibetan-Regular')}
+@font-face{font-family:'SBL Greek';font-style:normal;font-weight:400;font-display:swap;src:local('SBL Greek'),local('SBLGreek')}@media(max-width:760px){
+.verse,.row{grid-template-columns:1fr !important;display:block !important;padding:12px 14px;margin:8px 0;border:1px solid var(--line);background:var(--bg2);width:100% !important;max-width:100% !important;overflow:hidden;box-sizing:border-box}
+.verse .num,.row .num{display:inline-block;background:rgba(0,0,0,0.5);padding:3px 10px;margin-bottom:8px;width:auto;text-align:left;font-size:11px;border:1px solid var(--gold-dim);border-radius:2px;font-family:'Courier New',monospace;min-width:0 !important}
+.verse .on,.verse .ru,.verse .csl,.verse .sk,.verse .he,.verse .grc,.verse .zh,.verse .ar,.verse .fa,.verse .bo,.verse .ak,.verse .cop,.verse .pali,.verse .sk-deva,.verse .eg-hiero,.verse .ak-cun,.verse .cop-uni,.verse .ja,.verse .pali-deva,.verse .qu,.verse .av,.verse .egy,.verse .csl,.verse .gr,.verse .on-r,
+.row .on,.row .ru,.row .csl,.row .sk,.row .he,.row .grc,.row .zh,.row .ar,.row .fa,.row .bo,.row .ak,.row .cop,.row .pali,.row .sk-deva,.row .eg-hiero,.row .ak-cun,.row .cop-uni,.row .ja,.row .pali-deva,.row .qu,.row .av,.row .egy,.row .csl,.row .gr{font-size:1.05rem !important;line-height:1.65 !important;padding:10px 12px !important;border-left:3px solid var(--gold-dim);margin:6px 0;background:rgba(201,162,39,0.04);width:auto !important;display:block !important;min-width:0 !important;word-wrap:break-word;overflow-wrap:break-word;max-width:100% !important;box-sizing:border-box}
+.verse .ru,.row .ru{border-left:3px solid var(--red);background:rgba(200,16,46,0.04)}
+.hos-h1{font-size:1.2rem;letter-spacing:.05em;line-height:1.3}
+.hos-sub{font-size:12px}
+.hos-strip{font-size:9px;letter-spacing:1px;padding:4px 8px}
+.stamps span{font-size:8px;letter-spacing:1px;padding:2px 5px;margin:0 1px}
+main{padding:0 8px;width:100% !important;max-width:100% !important;box-sizing:border-box}
+nav.main{padding:6px 10px;font-size:11px}
+nav.main a{margin:0 3px;padding:2px 4px}
+.toolbar button{font-size:10px;padding:5px 8px;letter-spacing:0;flex:1 1 30%;min-width:60px}
+.book-grid{grid-template-columns:1fr;gap:6px}
+.book-card{font-size:13px;padding:8px 10px;line-height:1.4}
+.note{font-size:14px;line-height:1.7;padding:14px 18px;margin:14px;color:var(--ink);background:rgba(201,162,39,0.04);border:1px solid var(--gold-dim);border-left:4px solid var(--gold)}
+footer{font-size:11px;padding:8px 10px}
+}
+</style>
+</head><body>
+<header class="hos">
+<div class="hos-strip"><span class="l">ARCHIVUM HAERETICUM — CORPUS DIVINUS</span><span class="r">Q10 — BHAGAVADGITA</span></div>
+<div class="hos-body">
+<h1 class="hos-h1"><span class="q">Q10</span>Глава 1. Arjuna Viṣāda Yoga — Бхагавадгита</h1>
+<div class="hos-sub">Арджуна Вишада Йога — Отчаяние Арджуны · 47 стихов</div>
+</div>
+</header>
+<div class="stamps">
+<span class="fid">◆ FIDELIS</span>
+<span class="cre">✚ MYSTICA</span>
+<span class="dam">✠ GITICA</span>
+</div>
+<nav class="main">
+<a href="../index.html">◀ CORPUS DIVINUS</a>
+<a href="index.html">○ ОБЗОР</a>
+</nav>
+<main>
+<div class="toolbar">
+<button onclick="toggleAll(true)">РАЗВЕРНУТЬ</button>
+<button onclick="toggleAll(false)">СВЕРНУТЬ</button>
+<button onclick="toggleOrig()">☀ ОРИГИНАЛ</button>
+<button onclick="toggleRu()">☾ ПЕРЕВОД</button>
+<button onclick="resetView()">◉ ОБА</button>
+</div>
+<div class="meta">◆ СВЯЩЕННЫЙ ТЕКСТ ◆</div>
+
+<div class="verse">
+<div class="num">1</div>
+<div class="sk">धृतराष्ट्र उवाच<br>धर्मक्षेत्रे कुरुक्षेत्रे समवेता युयुत्सवः।<br>मामकाः पाण्डवाश्चैव किमकुर्वत सञ्जय।।1.1।।<span class="translit">dhṛitarāśhtra uvācha
+dharma-kṣhetre kuru-kṣhetre samavetā yuyutsavaḥ
+māmakāḥ pāṇḍavāśhchaiva kimakurvata sañjaya</span></div>
+<div class="ru">Что свершали - скажи, Санджая,- сыновья мои и Пандавы, ради битвы сойдясь на поле Курукшетры, на поле дхармы? Санджая сказал:</div>
+</div>
+<div class="verse">
+<div class="num">2</div>
+<div class="sk">सञ्जय उवाच<br>दृष्ट्वा तु पाण्डवानीकं व्यूढं दुर्योधनस्तदा।<br>आचार्यमुपसङ्गम्य राजा वचनमब्रवीत्।।1.2।।<span class="translit">sañjaya uvācha
+dṛiṣhṭvā tu pāṇḍavānīkaṁ vyūḍhaṁ duryodhanastadā
+āchāryamupasaṅgamya rājā vachanamabravīt</span></div>
+<div class="ru">Пред собою тогда увидев строй Пандавов, к бою готовых, царь к учителю шаг направил, ему слово Дурьодхана молвил: 3. &quot;Посмотри, учитель, на это сынов Панду мощное войско! Ученик твой, потомок Друпады, его к битве построил искусно.</div>
+</div>
+<div class="verse">
+<div class="num">3</div>
+<div class="sk">पश्यैतां पाण्डुपुत्राणामाचार्य महतीं चमूम्।<br>व्यूढां द्रुपदपुत्रेण तव शिष्येण धीमता।।1.3।।<span class="translit">paśhyaitāṁ pāṇḍu-putrāṇām āchārya mahatīṁ chamūm
+vyūḍhāṁ drupada-putreṇa tava śhiṣhyeṇa dhīmatā</span></div>
+<div class="ru pali-only"><i>(в распарсенном Семенцове отсутствует)</i></div>
+</div>
+<div class="verse">
+<div class="num">4</div>
+<div class="sk">अत्र शूरा महेष्वासा भीमार्जुनसमा युधि।<br>युयुधानो विराटश्च द्रुपदश्च महारथः।।1.4।।<span class="translit">atra śhūrā maheṣhvāsā bhīmārjuna-samā yudhi
+yuyudhāno virāṭaśhcha drupadaśhcha mahā-rathaḥ</span></div>
+<div class="ru">Эти лучники, эти герои не уступят Арджуне с Бхимой: здесь Вирата и Ююдхана, колесничий великий Друпада,</div>
+</div>
+<div class="verse">
+<div class="num">5</div>
+<div class="sk">धृष्टकेतुश्चेकितानः काशिराजश्च वीर्यवान्।<br>पुरुजित्कुन्तिभोजश्च शैब्यश्च नरपुङ्गवः।।1.5।।<span class="translit">dhṛiṣhṭaketuśhchekitānaḥ kāśhirājaśhcha vīryavān
+purujit kuntibhojaśhcha śhaibyaśhcha nara-puṅgavaḥ
+yudhāmanyuśhcha vikrānta uttamaujāśhcha vīryavān</span></div>
+<div class="ru">Дхриштакету и Чекитана, и Бенареса царь отважный, Пуруджит, за ним Кунтибходжа, бык средь Бхаратов - царь страны Шиби.</div>
+</div>
+<div class="verse">
+<div class="num">6</div>
+<div class="sk">युधामन्युश्च विक्रान्त उत्तमौजाश्च वीर्यवान्।<br>सौभद्रो द्रौपदेयाश्च सर्व एव महारथाः।।1.6।।<span class="translit">saubhadro draupadeyāśhcha sarva eva mahā-rathāḥ</span></div>
+<div class="ru">Вон стоят Юдхаманью смелый, Уттамоджас несокрушимый, сын Субхадры, сыны Драупади - в колесничном бою нет им равных.</div>
+</div>
+<div class="verse">
+<div class="num">7</div>
+<div class="sk">अस्माकं तु विशिष्टा ये तान्निबोध द्विजोत्तम।<br>नायका मम सैन्यस्य संज्ञार्थं तान्ब्रवीमि ते।।1.7।।<span class="translit">asmākaṁ tu viśhiṣhṭā ye tānnibodha dwijottama
+nāyakā mama sainyasya sanjñārthaṁ tānbravīmi te</span></div>
+<div class="ru">А вот лучшие среди наших, знай о них, о дваждырожденный; их назвав, я тебе перечислю предводителей нашей рати.</div>
+</div>
+<div class="verse">
+<div class="num">8</div>
+<div class="sk">भवान्भीष्मश्च कर्णश्च कृपश्च समितिञ्जयः।<br>अश्वत्थामा विकर्णश्च सौमदत्तिस्तथैव च।।1.8।।<span class="translit">bhavānbhīṣhmaśhcha karṇaśhcha kṛipaśhcha samitiñjayaḥ
+aśhvatthāmā vikarṇaśhcha saumadattis tathaiva cha</span></div>
+<div class="ru">Это ты, учитель, и Бхишма, Карна, Крипа непобедимый, и Викарна, и Ашваттхаман, и прославленный сын Сомадатты.</div>
+</div>
+<div class="verse">
+<div class="num">9</div>
+<div class="sk">अन्ये च बहवः शूरा मदर्थे त्यक्तजीविताः।<br>नानाशस्त्रप्रहरणाः सर्वे युद्धविशारदाः।।1.9।।<span class="translit">anye cha bahavaḥ śhūrā madarthe tyaktajīvitāḥ
+nānā-śhastra-praharaṇāḥ sarve yuddha-viśhāradāḥ</span></div>
+<div class="ru">И других здесь немало героев, для меня не щадящих жизни: они опытны в ратном деле. всевозможным владеют оружьем.</div>
+</div>
+<div class="verse">
+<div class="num">10</div>
+<div class="sk">अपर्याप्तं तदस्माकं बलं भीष्माभिरक्षितम्।<br>पर्याप्तं त्विदमेतेषां बलं भीमाभिरक्षितम्।।1.10।।<span class="translit">aparyāptaṁ tadasmākaṁ balaṁ bhīṣhmābhirakṣhitam
+paryāptaṁ tvidameteṣhāṁ balaṁ bhīmābhirakṣhitam</span></div>
+<div class="ru">Оба войска сравнив, убедишься - нас враги превосходят в силе: ведь у нас во главе - старый Бхишма, а у них - ужасающий Бхима.</div>
+</div>
+<div class="verse">
+<div class="num">11</div>
+<div class="sk">अयनेषु च सर्वेषु यथाभागमवस्थिताः।<br>भीष्ममेवाभिरक्षन्तु भवन्तः सर्व एव हि।।1.11।।<span class="translit">ayaneṣhu cha sarveṣhu yathā-bhāgamavasthitāḥ
+bhīṣhmamevābhirakṣhantu bhavantaḥ sarva eva hi</span></div>
+<div class="ru">Пусть же каждый боец в нашей рати, где б ему ни пришлось сражаться, помнит прежде всего о Бхишме, пусть он Бхишму всегда охраняет&quot;.</div>
+</div>
+<div class="verse">
+<div class="num">12</div>
+<div class="sk">तस्य संजनयन्हर्षं कुरुवृद्धः पितामहः।<br>सिंहनादं विनद्योच्चैः शङ्खं दध्मौ प्रतापवान्।।1.12।।<span class="translit">tasya sañjanayan harṣhaṁ kuru-vṛiddhaḥ pitāmahaḥ
+siṁha-nādaṁ vinadyochchaiḥ śhaṅkhaṁ dadhmau pratāpavān</span></div>
+<div class="ru">Чтоб вдохнуть ему в сердце отвагу, львиный клич издал тогда Бхишма, в свою раковину боевую протрубил старейшина Куру.</div>
+</div>
+<div class="verse">
+<div class="num">13</div>
+<div class="sk">ततः शङ्खाश्च भेर्यश्च पणवानकगोमुखाः।<br>सहसैवाभ्यहन्यन्त स शब्दस्तुमुलोऽभवत्।।1.13।।<span class="translit">tataḥ śhaṅkhāśhcha bheryaśhcha paṇavānaka-gomukhāḥ
+sahasaivābhyahanyanta sa śhabdastumulo ’bhavat</span></div>
+<div class="ru">Тотчас раковины и литавры, барабаны, кимвалы, трубы тишину разорвали на поле - был их рев громогласный ужасен.</div>
+</div>
+<div class="verse">
+<div class="num">14</div>
+<div class="sk">ततः श्वेतैर्हयैर्युक्ते महति स्यन्दने स्थितौ।<br>माधवः पाण्डवश्चैव दिव्यौ शङ्खौ प्रदध्मतुः।।1.14।।<span class="translit">tataḥ śhvetairhayairyukte mahati syandane sthitau
+mādhavaḥ pāṇḍavaśhchaiva divyau śhaṅkhau pradadhmatuḥ</span></div>
+<div class="ru">Со своей большой колесницы, запряженной четверкою белой, Панду сын и потомок Мадху в свои раковины затрубили.</div>
+</div>
+<div class="verse">
+<div class="num">15</div>
+<div class="sk">पाञ्चजन्यं हृषीकेशो देवदत्तं धनंजयः।<br>पौण्ड्रं दध्मौ महाशङ्खं भीमकर्मा वृकोदरः।।1.15।।<span class="translit">pāñchajanyaṁ hṛiṣhīkeśho devadattaṁ dhanañjayaḥ
+pauṇḍraṁ dadhmau mahā-śhaṅkhaṁ bhīma-karmā vṛikodaraḥ</span></div>
+<div class="ru">В Девадатту трубил Арджуна, в Панчаджанью дивную - Кришна; Волчье Брюхо, убийца свирепый, дул в гигантскую шанкху Паундру.</div>
+</div>
+<div class="verse">
+<div class="num">16</div>
+<div class="sk">अनन्तविजयं राजा कुन्तीपुत्रो युधिष्ठिरः।<br>नकुलः सहदेवश्च सुघोषमणिपुष्पकौ।।1.16।।<span class="translit">anantavijayaṁ rājā kuntī-putro yudhiṣhṭhiraḥ
+nakulaḥ sahadevaśhcha sughoṣha-maṇipuṣhpakau</span></div>
+<div class="ru">Кунти праведный сын Юдхиштхира протрубил в Анантавиджаю, близнецы Сахадева с Накулой - в Манипушпаку и Сугхошу.</div>
+</div>
+<div class="verse">
+<div class="num">17</div>
+<div class="sk">काश्यश्च परमेष्वासः शिखण्डी च महारथः।<br>धृष्टद्युम्नो विराटश्च सात्यकिश्चापराजितः।।1.17।।<span class="translit">kāśhyaśhcha parameṣhvāsaḥ śhikhaṇḍī cha mahā-rathaḥ
+dhṛiṣhṭadyumno virāṭaśhcha sātyakiśh chāparājitaḥ</span></div>
+<div class="ru">Царь Бенареса, лучник отменный, колесничий великий Шикхандин, и Вирата, и Дхриштадьюмна, с ними Сатьяки непобедимый,</div>
+</div>
+<div class="verse">
+<div class="num">18</div>
+<div class="sk">द्रुपदो द्रौपदेयाश्च सर्वशः पृथिवीपते।<br>सौभद्रश्च महाबाहुः शङ्खान्दध्मुः पृथक्पृथक्।।1.18।।<span class="translit">drupado draupadeyāśhcha sarvaśhaḥ pṛithivī-pate
+saubhadraśhcha mahā-bāhuḥ śhaṅkhāndadhmuḥ pṛithak pṛithak</span></div>
+<div class="ru">И Друпада с сынами Драупади, и Субхадры сын мощнорукий - все они, о владыка, разом в свои раковины затрубили.</div>
+</div>
+<div class="verse">
+<div class="num">19</div>
+<div class="sk">स घोषो धार्तराष्ट्राणां हृदयानि व्यदारयत्।<br>नभश्च पृथिवीं चैव तुमुलो व्यनुनादयन्।।1.19।।<span class="translit">sa ghoṣho dhārtarāṣhṭrāṇāṁ hṛidayāni vyadārayat
+nabhaśhcha pṛithivīṁ chaiva tumulo nunādayan</span></div>
+<div class="ru">Этот звук переполнил уныньем сыновей Дхритараштры несмелых, тяжким гулом своим, ужасный, сотрясал он небо и землю.</div>
+</div>
+<div class="verse">
+<div class="num">20</div>
+<div class="sk">अथ व्यवस्थितान् दृष्ट्वा धार्तराष्ट्रान्कपिध्वजः।<br>प्रवृत्ते शस्त्रसंपाते धनुरुद्यम्य पाण्डवः।।1.20।।<span class="translit">atha vyavasthitān dṛiṣhṭvā dhārtarāṣhṭrān kapi-dhwajaḥ
+pravṛitte śhastra-sampāte dhanurudyamya pāṇḍavaḥ
+hṛiṣhīkeśhaṁ tadā vākyam idam āha mahī-pate</span></div>
+<div class="ru">И затем, пред собою увидев сыновей Дхритараштры в шеренгах, подняв лук - ибо уж начиналась между лучниками перестрелка, -</div>
+</div>
+<div class="verse">
+<div class="num">21</div>
+<div class="sk">अर्जुन उवाच<br>हृषीकेशं तदा वाक्यमिदमाह महीपते।<br>सेनयोरुभयोर्मध्ये रथं स्थापय मेऽच्युत।।1.21।।<span class="translit">arjuna uvācha
+senayor ubhayor madhye rathaṁ sthāpaya me ’chyuta</span></div>
+<div class="ru">Хришикеше промолвил слово с Хануманом на знамени воин: &quot;Между армиями поставь колесницу. Неколебимый.</div>
+</div>
+<div class="verse">
+<div class="num">22</div>
+<div class="sk">यावदेतान्निरीक्षेऽहं योद्धुकामानवस्थितान्।<br>कैर्मया सह योद्धव्यमस्मिन्रणसमुद्यमे।।1.22।।<span class="translit">yāvadetān nirīkṣhe ’haṁ yoddhu-kāmān avasthitān
+kairmayā saha yoddhavyam asmin raṇa-samudyame</span></div>
+<div class="ru">Рассмотреть мне б хотелось поближе этих воинов, жаждущих битвы; с ними вскоре померяюсь силой я в сраженья труде опасном.</div>
+</div>
+<div class="verse">
+<div class="num">23</div>
+<div class="sk">योत्स्यमानानवेक्षेऽहं य एतेऽत्र समागताः।<br>धार्तराष्ट्रस्य दुर्बुद्धेर्युद्धे प्रियचिकीर्षवः।।1.23।।<span class="translit">yotsyamānān avekṣhe ’haṁ ya ete ’tra samāgatāḥ
+dhārtarāṣhṭrasya durbuddher yuddhe priya-chikīrṣhavaḥ</span></div>
+<div class="ru">Я желаю узреть Кауравов, здесь стоящих, к бою готовых, всех, стремящихся сделать благо Дхритараштры зломудрому сыну&quot;.</div>
+</div>
+<div class="verse">
+<div class="num">24</div>
+<div class="sk">संजय उवाच<br>एवमुक्तो हृषीकेशो गुडाकेशेन भारत।<br>सेनयोरुभयोर्मध्ये स्थापयित्वा रथोत्तमम्।।1.24।।<span class="translit">sañjaya uvācha
+evam ukto hṛiṣhīkeśho guḍākeśhena bhārata
+senayor ubhayor madhye sthāpayitvā rathottamam</span></div>
+<div class="ru">О сын Бхараты! Слово такое услыхав из уст Гудакеши, колесницу великую Кришна меж обеих армий поставил, 25. перед воинами и царями под водительством Бхишмы и Дроны, и сказал: &quot;Посмотри же, Партха, на собравшихся вместе Куру!&quot;</div>
+</div>
+<div class="verse">
+<div class="num">25</div>
+<div class="sk">भीष्मद्रोणप्रमुखतः सर्वेषां च महीक्षिताम्।<br>उवाच पार्थ पश्यैतान्समवेतान्कुरूनिति।।1.25।।<span class="translit">bhīṣhma-droṇa-pramukhataḥ sarveṣhāṁ cha mahī-kṣhitām
+uvācha pārtha paśhyaitān samavetān kurūn iti</span></div>
+<div class="ru pali-only"><i>(в распарсенном Семенцове отсутствует)</i></div>
+</div>
+<div class="verse">
+<div class="num">26</div>
+<div class="sk">तत्रापश्यत्स्थितान्पार्थः पितृ़नथ पितामहान्।<br>आचार्यान्मातुलान्भ्रातृ़न्पुत्रान्पौत्रान्सखींस्तथा।।1.26।।<span class="translit">tatrāpaśhyat sthitān pārthaḥ pitṝīn atha pitāmahān
+āchāryān mātulān bhrātṝīn putrān pautrān sakhīṁs tathā
+śhvaśhurān suhṛidaśh chaiva senayor ubhayor api</span></div>
+<div class="ru">И тотчас сын Притхи увидел пред собою отцов и дедов, также дядей, наставников, братьев, сыновей, и друзей, и внуков, 27. и товарищей давних, и свекров, разведенных по ратям враждебным. Всех их рядом - весь род свой увидев, сам себя истребить готовый, 28. потрясенный скорбью великой, сокрушенный, сказал Арджуна: &quot;Когда вижу я родичей этих, что сошлись сюда, Кришна, для битвы, 29. мои члены никнут бессильно, рот от ужаса пересыхает, сотрясается дрожью тело, волоски подымаются дыбом.</div>
+</div>
+<div class="verse">
+<div class="num">27</div>
+<div class="sk">श्वशुरान्सुहृदश्चैव सेनयोरुभयोरपि।<br>तान्समीक्ष्य स कौन्तेयः सर्वान्बन्धूनवस्थितान्।।1.27।।<span class="translit">tān samīkṣhya sa kaunteyaḥ sarvān bandhūn avasthitān
+kṛipayā parayāviṣhṭo viṣhīdann idam abravīt</span></div>
+<div class="ru pali-only"><i>(в распарсенном Семенцове отсутствует)</i></div>
+</div>
+<div class="verse">
+<div class="num">28</div>
+<div class="sk">अर्जुन उवाच<br>कृपया परयाऽऽविष्टो विषीदन्निदमब्रवीत्।<br>दृष्ट्वेमं स्वजनं कृष्ण युयुत्सुं समुपस्थितम्।।1.28।।<span class="translit">arjuna uvācha
+dṛiṣhṭvemaṁ sva-janaṁ kṛiṣhṇa yuyutsuṁ samupasthitam</span></div>
+<div class="ru pali-only"><i>(в распарсенном Семенцове отсутствует)</i></div>
+</div>
+<div class="verse">
+<div class="num">29</div>
+<div class="sk">सीदन्ति मम गात्राणि मुखं च परिशुष्यति।<br>वेपथुश्च शरीरे मे रोमहर्षश्च जायते।।1.29।।<span class="translit">sīdanti mama gātrāṇi mukhaṁ cha pariśhuṣhyati
+vepathuśh cha śharīre me roma-harṣhaśh cha jāyate</span></div>
+<div class="ru pali-only"><i>(в распарсенном Семенцове отсутствует)</i></div>
+</div>
+<div class="verse">
+<div class="num">30</div>
+<div class="sk">गाण्डीवं स्रंसते हस्तात्त्वक्चैव परिदह्यते।<br>न च शक्नोम्यवस्थातुं भ्रमतीव च मे मनः।।1.30।।<span class="translit">gāṇḍīvaṁ sraṁsate hastāt tvak chaiva paridahyate
+na cha śhaknomy avasthātuṁ bhramatīva cha me manaḥ</span></div>
+<div class="ru">Моя кожа горит; лук Гандиву эти руки вот-вот уронят; подкоситься готовы ноги, как потерянный, ум блуждает.</div>
+</div>
+<div class="verse">
+<div class="num">31</div>
+<div class="sk">निमित्तानि च पश्यामि विपरीतानि केशव।<br>न च श्रेयोऽनुपश्यामि हत्वा स्वजनमाहवे।।1.31।।<span class="translit">nimittāni cha paśhyāmi viparītāni keśhava
+na cha śhreyo ’nupaśhyāmi hatvā sva-janam āhave</span></div>
+<div class="ru">Не провижу благого исхода, коль убью своих родичей в битве, отовсюду знамения злые на меня наступают, Кешава.</div>
+</div>
+<div class="verse">
+<div class="num">32</div>
+<div class="sk">न काङ्क्षे विजयं कृष्ण न च राज्यं सुखानि च।<br>किं नो राज्येन गोविन्द किं भोगैर्जीवितेन वा।।1.32।।<span class="translit">na kāṅkṣhe vijayaṁ kṛiṣhṇa na cha rājyaṁ sukhāni cha
+kiṁ no rājyena govinda kiṁ bhogair jīvitena vā</span></div>
+<div class="ru">Я не жажду победы, Кришна! Ни богатств мне не надо, ни царства. Что за радость нам в царстве, Говинда, что за польза в усладах, в жизни?</div>
+</div>
+<div class="verse">
+<div class="num">33</div>
+<div class="sk">येषामर्थे काङ्क्षितं नो राज्यं भोगाः सुखानि च।<br>त इमेऽवस्थिता युद्धे प्राणांस्त्यक्त्वा धनानि च।।1.33।।<span class="translit">yeṣhām arthe kāṅkṣhitaṁ no rājyaṁ bhogāḥ sukhāni cha
+ta ime ’vasthitā yuddhe prāṇāṁs tyaktvā dhanāni cha</span></div>
+<div class="ru">Ведь все те, для кого нам желанны удовольствия, царство, услады, здесь сошлись в этих ратях враждебных, презирая и жизнь и богатства.</div>
+</div>
+<div class="verse">
+<div class="num">34</div>
+<div class="sk">आचार्याः पितरः पुत्रास्तथैव च पितामहाः।<br>मातुलाः श्चशुराः पौत्राः श्यालाः सम्बन्धिनस्तथा।।1.34।।<span class="translit">āchāryāḥ pitaraḥ putrās tathaiva cha pitāmahāḥ
+mātulāḥ śhvaśhurāḥ pautrāḥ śhyālāḥ sambandhinas tathā</span></div>
+<div class="ru">Здесь отцы и наставники наши, сыновья здесь стоят и деды, дядья, внуки, шурины, свекры, друг на друга восставшие в гневе.</div>
+</div>
+<div class="verse">
+<div class="num">35</div>
+<div class="sk">एतान्न हन्तुमिच्छामि घ्नतोऽपि मधुसूदन।<br>अपि त्रैलोक्यराज्यस्य हेतोः किं नु महीकृते।।1.35।।<span class="translit">etān na hantum ichchhāmi ghnato ’pi madhusūdana
+api trailokya-rājyasya hetoḥ kiṁ nu mahī-kṛite</span></div>
+<div class="ru">Пусть меня убивают; но я их не убью, о Убийца Мадху! Над тремя мирами я власти не желаю. К чему тогда царство?</div>
+</div>
+<div class="verse">
+<div class="num">36</div>
+<div class="sk">निहत्य धार्तराष्ट्रान्नः का प्रीतिः स्याज्जनार्दन।<br>पापमेवाश्रयेदस्मान्हत्वैतानाततायिनः।।1.36।।<span class="translit">nihatya dhārtarāṣhṭrān naḥ kā prītiḥ syāj janārdana
+pāpam evāśhrayed asmān hatvaitān ātatāyinaḥ</span></div>
+<div class="ru">Не прибудет нам радости, Кришна, от убийства сынов Дхритараштры; лишь грехи мы свои умножим, поразив этих воинов гневных.</div>
+</div>
+<div class="verse">
+<div class="num">37</div>
+<div class="sk">तस्मान्नार्हा वयं हन्तुं धार्तराष्ट्रान्स्वबान्धवान्।<br>स्वजनं हि कथं हत्वा सुखिनः स्याम माधव।।1.37।।<span class="translit">tasmān nārhā vayaṁ hantuṁ dhārtarāṣhṭrān sa-bāndhavān 
+sva-janaṁ hi kathaṁ hatvā sukhinaḥ syāma mādhava</span></div>
+<div class="ru">Потому - убивать нам не должно ни сынов Дхритараштры, ни прочих. Как мы сможем потом наслаждаться, осквернив себя родичей кровью?</div>
+</div>
+<div class="verse">
+<div class="num">38</div>
+<div class="sk">यद्यप्येते न पश्यन्ति लोभोपहतचेतसः।<br>कुलक्षयकृतं दोषं मित्रद्रोहे च पातकम्।।1.38।।<span class="translit">yady apy ete na paśhyanti lobhopahata-chetasaḥ
+kula-kṣhaya-kṛitaṁ doṣhaṁ mitra-drohe cha pātakam</span></div>
+<div class="ru">Ослепленные жадностью, эти уж не видят, не различают в истреблении рода - скверны и в предательстве - преступленья.</div>
+</div>
+<div class="verse">
+<div class="num">39</div>
+<div class="sk">कथं न ज्ञेयमस्माभिः पापादस्मान्निवर्तितुम्।<br>कुलक्षयकृतं दोषं प्रपश्यद्भिर्जनार्दन।।1.39।।<span class="translit">kathaṁ na jñeyam asmābhiḥ pāpād asmān nivartitum
+kula-kṣhaya-kṛitaṁ doṣhaṁ prapaśhyadbhir janārdana</span></div>
+<div class="ru">Но ведь мы все то зло провидим, что грядет от погибели рода: разве можем мы не отвратиться от подобного злодеянья?</div>
+</div>
+<div class="verse">
+<div class="num">40</div>
+<div class="sk">कुलक्षये प्रणश्यन्ति कुलधर्माः सनातनाः।<br>धर्मे नष्टे कुलं कृत्स्नमधर्मोऽभिभवत्युत।।1.40।।<span class="translit">kula-kṣhaye praṇaśhyanti kula-dharmāḥ sanātanāḥ
+dharme naṣhṭe kulaṁ kṛitsnam adharmo ’bhibhavaty uta</span></div>
+<div class="ru">С истреблением рода гибнут неизменные рода законы; если ж гибнет закон, то род весь погружается в беззаконье.</div>
+</div>
+<div class="verse">
+<div class="num">41</div>
+<div class="sk">अधर्माभिभवात्कृष्ण प्रदुष्यन्ति कुलस्त्रियः।<br>स्त्रीषु दुष्टासु वार्ष्णेय जायते वर्णसङ्करः।।1.41।।<span class="translit">adharmābhibhavāt kṛiṣhṇa praduṣhyanti kula-striyaḥ
+strīṣhu duṣhṭāsu vārṣhṇeya jāyate varṇa-saṅkaraḥ</span></div>
+<div class="ru">С воцарением беззаконья развращаются женщины рода; когда женщины рода растлились, наступает всех варн смешенье.</div>
+</div>
+<div class="verse">
+<div class="num">42</div>
+<div class="sk">सङ्करो नरकायैव कुलघ्नानां कुलस्य च।<br>पतन्ति पितरो ह्येषां लुप्तपिण्डोदकक्रियाः।।1.42।।<span class="translit">saṅkaro narakāyaiva kula-ghnānāṁ kulasya cha
+patanti pitaro hy eṣhāṁ lupta-piṇḍodaka-kriyāḥ</span></div>
+<div class="ru">Варн смешенье приводит к аду весь тот род и губителей рода, ибо падают в ад их предки без воды и без жертвенных клецек.</div>
+</div>
+<div class="verse">
+<div class="num">43</div>
+<div class="sk">दोषैरेतैः कुलघ्नानां वर्णसङ्करकारकैः।<br>उत्साद्यन्ते जातिधर्माः कुलधर्माश्च शाश्वताः।।1.43।।<span class="translit">doṣhair etaiḥ kula-ghnānāṁ varṇa-saṅkara-kārakaiḥ
+utsādyante jāti-dharmāḥ kula-dharmāśh cha śhāśhvatāḥ</span></div>
+<div class="ru">Так злодеи, рода убийцы и виновники варн смешенья растлевают и каст законы, и законы вечные рода.</div>
+</div>
+<div class="verse">
+<div class="num">44</div>
+<div class="sk">उत्सन्नकुलधर्माणां मनुष्याणां जनार्दन।<br>नरकेऽनियतं वासो भवतीत्यनुशुश्रुम।।1.44।।<span class="translit">utsanna-kula-dharmāṇāṁ manuṣhyāṇāṁ janārdana
+narake ‘niyataṁ vāso bhavatītyanuśhuśhruma</span></div>
+<div class="ru">О Джанардана! Все те люди, чьи законы рода растлились, обретают в аду жилище - так нас учит святое шрути.</div>
+</div>
+<div class="verse">
+<div class="num">45</div>
+<div class="sk">अहो बत महत्पापं कर्तुं व्यवसिता वयम्।<br>यद्राज्यसुखलोभेन हन्तुं स्वजनमुद्यताः।।1.45।।<span class="translit">aho bata mahat pāpaṁ kartuṁ vyavasitā vayam
+yad rājya-sukha-lobhena hantuṁ sva-janam udyatāḥ</span></div>
+<div class="ru">Что за грех великий, о, горе, совершить приготовились все мы! Ведь родных мы убить готовы, вожделея услад и царства.</div>
+</div>
+<div class="verse">
+<div class="num">46</div>
+<div class="sk">यदि मामप्रतीकारमशस्त्रं शस्त्रपाणयः।<br>धार्तराष्ट्रा रणे हन्युस्तन्मे क्षेमतरं भवेत्।।1.46।।<span class="translit">yadi mām apratīkāram aśhastraṁ śhastra-pāṇayaḥ
+dhārtarāṣhṭrā raṇe hanyus tan me kṣhemataraṁ bhavet</span></div>
+<div class="ru">Пусть меня, безоружного, ныне убивают сыны Дхритараштры: я не стану им сопротивляться - смерть такая мне будет не в тягость&quot;.</div>
+</div>
+<div class="verse">
+<div class="num">47</div>
+<div class="sk">सञ्जय उवाच<br>एवमुक्त्वाऽर्जुनः संख्ये रथोपस्थ उपाविशत्।<br>विसृज्य सशरं चापं शोकसंविग्नमानसः।।1.47।।<span class="translit">sañjaya uvācha
+evam uktvārjunaḥ saṅkhye rathopastha upāviśhat
+visṛijya sa-śharaṁ chāpaṁ śhoka-saṁvigna-mānasaḥ</span></div>
+<div class="ru">Так сказав, среди битвы Арджуна на сиденье упал колесницы, лук отбросив и стрелы, с душою, пораженной тяжким страданьем. Om namah shivaya Оглавление Следующая глава Используются технологии uCoz</div>
+</div>
+
+</main>
+<footer>ARCHIVUM HAERETICUM · Q10 · <span class="red">◆</span> SIGILLUM VERITATIS · <span class="gold">DATUM 160.M3</span> · FIDELIS</footer>
+<script>
+function toggleAll(open){
+  document.querySelectorAll('details').forEach(d=>d.open=open);
+  document.querySelectorAll('.verse,.row').forEach(r=>{r.style.display=open?'grid':'none';});
+}
+function toggleOrig(){
+  document.querySelectorAll('.verse,.row').forEach(r=>{r.style.display='grid';});
+  document.querySelectorAll('.verse .ru,.row .ru').forEach(e=>e.style.display='none');
+  document.querySelectorAll('.verse .av,.verse .sk,.verse .he,.verse .grc,.verse .zh,.verse .sa,.verse .ar,.verse .dev,.verse .en,.verse .gr,.verse .egy,.verse .csl,.verse .fa,.verse .ak,.verse .bo,.verse .tib').forEach(e=>e.style.display='');
+}
+function toggleRu(){
+  document.querySelectorAll('.verse .ru,.row .ru').forEach(e=>e.style.display='');
+  document.querySelectorAll('.verse .av,.verse .sk,.verse .he,.verse .grc,.verse .zh,.verse .sa,.verse .ar,.verse .dev,.verse .en,.verse .gr,.verse .egy,.verse .csl,.verse .fa,.verse .ak,.verse .bo,.verse .tib').forEach(e=>e.style.display='none');
+}
+function resetView(){
+  document.querySelectorAll('.verse,.row').forEach(r=>{r.style.display='grid';});
+  document.querySelectorAll('.verse .av,.verse .sk,.verse .he,.verse .grc,.verse .zh,.verse .sa,.verse .ar,.verse .dev,.verse .en,.verse .gr,.verse .egy,.verse .csl,.verse .fa,.verse .ak,.verse .bo,.verse .tib,.verse .ru,.row .ru').forEach(e=>e.style.display='');
+}
+</script>
+</body></html>

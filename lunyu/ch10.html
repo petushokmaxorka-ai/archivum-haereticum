@@ -1,0 +1,274 @@
+<!DOCTYPE html><html lang="ru"><head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>乡党 — Лунь Юй</title>
+<style>
+:root{--bg:#0a0a0c;--bg2:#0d0d12;--panel:#13131a;--line:#2a2a33;--red:#c8102e;--red-dark:#8a0a1f;--gold:#c9a227;--gold-bright:#e8b84a;--gold-dim:#8a7119;--ink:#c8102e;--ink-dim:#c9a227;--orig:#c8102e;--accent:#d49a3a;--grid:#1d1d24}
+*{box-sizing:border-box;margin:0;padding:0}body{background:var(--bg);color:var(--ink);font-family:Georgia,'Times New Roman',serif;line-height:1.55}
+a{color:var(--gold);text-decoration:none}a:hover{color:var(--gold-bright);text-decoration:underline}
+header.hos{background:linear-gradient(180deg,var(--red-dark) 0%,#1a0007 30%,var(--bg) 100%);border-bottom:2px solid var(--red);padding:0;position:relative}
+header.hos::before{content:"";position:absolute;left:0;top:0;bottom:0;width:6px;background:var(--red)}
+.hos-strip{display:flex;justify-content:space-between;align-items:center;padding:6px 14px;background:rgba(0,0,0,0.5);border-bottom:1px solid var(--red-dark);font-family:'Courier New',monospace;font-size:10px;letter-spacing:2px;color:var(--ink-dim);text-transform:uppercase}
+.hos-strip .l{color:var(--gold)} .hos-strip .r{color:var(--red);font-weight:bold}
+.hos-body{padding:18px 22px 14px}
+.hos-h1{font-size:1.5rem;letter-spacing:.12em;color:var(--orig);font-weight:normal;margin-bottom:4px;line-height:1.2}
+.hos-h1 .q{color:var(--red);font-family:'Courier New',monospace;font-size:.7em;vertical-align:super;margin-right:6px;padding:3px 7px;background:rgba(200,16,46,0.15);border:1px solid var(--red-dark);letter-spacing:1px}
+.hos-h1 .sig{font-size:.55em;color:var(--gold);font-family:'Courier New',monospace;letter-spacing:2px;margin-left:10px;padding:3px 8px;border:1px solid var(--gold-dim);vertical-align:middle}
+.hos-sub{color:var(--ink-dim);font-size:13px;font-style:italic}
+.stamps{padding:7px 16px;background:var(--bg2);border-bottom:1px solid var(--line);text-align:center;font-family:'Courier New',monospace}
+.stamps span{display:inline-block;border:1px solid var(--gold-dim);color:var(--gold);font-size:9px;letter-spacing:2px;padding:2px 7px;margin:0 2px;text-transform:uppercase}
+.stamps span.fid{color:var(--gold-bright);border-color:var(--gold);background:rgba(201,162,39,0.05)}
+.stamps span.dam{color:var(--red);border-color:var(--red-dark);background:rgba(200,16,46,0.05)}
+.stamps span.cre{color:var(--accent);border-color:var(--accent);background:rgba(212,154,58,0.05)}
+nav.main{padding:8px 18px;background:var(--panel);border-bottom:1px solid var(--line);font-size:12px;text-align:center}
+nav.main a{color:var(--gold);margin:0 6px;letter-spacing:1px;padding:3px 6px}
+.toolbar{display:flex;justify-content:center;gap:6px;flex-wrap:wrap;margin:14px 0 8px;padding:8px;background:var(--panel);border:1px solid var(--line);font-family:'Courier New',monospace}
+.toolbar button{background:transparent;border:1px solid var(--gold-dim);color:var(--gold);padding:5px 11px;font-size:10px;letter-spacing:1px;cursor:pointer;font-family:inherit;text-transform:uppercase}
+.toolbar button:hover{background:var(--gold);color:var(--bg)}
+.meta{color:var(--ink-dim);font-size:11px;font-style:italic;padding:6px 16px;text-align:center;font-family:'Courier New',monospace;letter-spacing:1px}
+.meta b{color:var(--gold);font-style:normal;font-family:Georgia,serif}
+.chap{background:linear-gradient(90deg,var(--red-dark),transparent);color:var(--gold-bright);font-size:.85rem;letter-spacing:.2em;padding:9px 16px;border-bottom:1px solid var(--red-dark);border-top:1px solid var(--red-dark);font-family:'Courier New',monospace;text-transform:uppercase;margin-top:12px}
+main{max-width:1300px;margin:0 auto;padding:0 12px 40px}
+.row{display:grid;grid-template-columns:3rem 1fr 1.1fr;border-bottom:1px solid var(--grid);align-items:start;transition:background 0.15s}
+.row:hover{background:#15110b}
+.num{grid-column:1;color:var(--gold);font-size:12px;padding:10px 4px;text-align:right;font-family:'Courier New',monospace;font-weight:bold;align-self:start}
+.orig,.ar,.gr,.he,.grc,.sk,.dev,.av,.zh,.sa{grid-column:2;padding:10px 12px;font-size:1rem;line-height:1.7;color:var(--orig);background:rgba(201,162,39,0.025);border-right:1px solid var(--gold-dim);border-left:3px solid var(--gold-dim);font-style:italic}
+.ar{direction:rtl;text-align:right;font-family:'Amiri','Scheherazade New','Traditional Arabic',serif;font-size:1.25rem;line-height:1.85}
+.gr,.grc{direction:ltr;font-family:'SBL Greek','Palatino Linotype',Georgia,serif}
+.he{direction:rtl;text-align:right;font-family:'SBL Hebrew','Times New Roman',serif;font-size:1.1rem}
+.sk,.dev{direction:ltr;font-family:'Noto Sans Devanagari','Sanskrit Text',serif;font-size:1.05rem}
+.zh{font-family:'Noto Serif CJK SC','SimSun',serif}
+.ru,.rus{grid-column:3;padding:10px 12px;font-size:.95rem;line-height:1.65;text-align:justify;color:var(--ink)}
+.bismillah{text-align:center;padding:1.5rem 1rem;font-family:'Amiri','Scheherazade New','Traditional Arabic',serif;font-size:1.8rem;color:var(--gold);direction:rtl;background:linear-gradient(180deg,#1a1410,#0a0a0c);border-bottom:1px solid var(--red-dark);letter-spacing:0;margin:14px 16px;border:1px solid var(--red-dark)}
+.bismillah .label{display:block;font-family:'Courier New',monospace;font-size:.7rem;letter-spacing:.25em;color:var(--ink-dim);text-transform:uppercase;direction:ltr;margin-bottom:8px}
+footer{padding:18px;text-align:center;color:var(--ink-dim);font-size:10px;border-top:1px solid var(--line);font-family:'Courier New',monospace;letter-spacing:2px;background:var(--bg2)}
+footer .red{color:var(--red)} footer .gold{color:var(--gold)}
+
+  .hos-sub{font-size:12px}
+  .hos-strip{font-size:9px;letter-spacing:1px;padding:4px 8px}
+  .stamps span{font-size:8px;letter-spacing:1px;padding:2px 5px;margin:0 1px}
+  
+  /* Stack verse vertically on mobile */
+  .verse,.row{grid-template-columns:1fr !important;display:block !important;padding:8px 10px;margin-bottom:8px;border:1px solid var(--line);background:var(--bg2)}
+  .verse .num,.row .num{display:inline-block;background:rgba(0,0,0,0.5);padding:2px 8px;margin-bottom:6px;width:auto;text-align:left;font-size:11px;border:1px solid var(--gold-dim);border-radius:2px}
+  
+  /* Original language - full width */
+  .verse .av,.verse .sk,.verse .he,.verse .grc,.verse .zh,.verse .sa,.verse .ar,.verse .dev,.verse .en,.verse .gr,.verse .egy,.verse .csl,.verse .fa,.verse .ak,.verse .bo,.verse .tib,
+  .row .av,.row .sk,.row .he,.row .grc,.row .zh,.row .sa,.row .ar,.row .dev,.row .en,.row .gr,.row .csl,.row .fa,.row .ak,.row .bo,.row .tib{font-size:1.05rem;line-height:1.7;padding:8px 10px;border-left:3px solid var(--gold-dim);margin:6px 0;background:rgba(201,162,39,0.04);font-style:italic;width:auto !important;display:block}
+  
+  /* Russian - full width */
+  .verse .ru,.row .ru{font-size:.95rem;line-height:1.6;padding:8px 10px;border-left:3px solid var(--red);background:rgba(200,16,46,0.04);margin:6px 0;width:auto !important;display:block;grid-column:1}
+  
+  /* Toolbar */
+  .toolbar{display:flex;flex-wrap:wrap;gap:4px;padding:6px;margin:8px 0}
+  .toolbar button{font-size:10px;padding:5px 8px;letter-spacing:0;flex:1 1 30%;min-width:60px}
+  
+  /* Container */
+  main{padding:0 8px}
+  nav.main{padding:6px 10px;font-size:11px}
+  nav.main a{margin:0 3px;padding:2px 4px}
+  
+  /* Book cards */
+  .book-grid{grid-template-columns:1fr;gap:6px}
+  .book-card{font-size:13px;padding:8px 10px;line-height:1.4}
+  
+  /* Note */
+  .note{font-size:14px;line-height:1.7;padding:14px 18px;margin:14px;color:var(--red);background:rgba(201,162,39,0.04);border:1px solid var(--gold-dim);border-left:4px solid var(--gold)}
+
+  
+  /* Footer */
+  footer{font-size:11px;padding:8px 10px}
+}
+  .row{grid-template-columns:2rem 1fr 1.1fr}
+  .num{font-size:.7rem;padding:.5rem .3rem}
+  .ar{font-size:1.1rem;line-height:1.7;padding:.5rem .4rem}
+  .ru{font-size:.85rem;line-height:1.4;padding:.5rem .4rem}
+}
+
+/* Q20 EGYPTIAN additions */
+.verse .egy{grid-column:1;font-family:'Papyrus','Segoe UI Historic',serif;font-size:1.05rem;line-height:1.8;direction:ltr;text-align:left;color:#e8b84a;background:rgba(232,184,74,0.04);border-right:3px solid var(--gold-dim);padding:12px 14px;font-style:italic}
+.verse .ru{grid-column:2;font-size:0.98rem;line-height:1.75;color:var(--ink);background:rgba(201,162,39,0.025);border-left:1px solid var(--gold-dim);padding:12px 14px}
+.verse .transl-note{grid-column:1/-1;padding:6px 14px;font-size:0.78rem;color:var(--ink-dim);font-style:italic;text-align:right;background:rgba(0,0,0,0.15);border-top:1px solid var(--line)}
+.verse .num,.verse .transl-note{color:var(--gold-bright)}
+
+.verse .av,.verse .sk,.verse .he,.verse .grc,.verse .zh,.verse .sa,.verse .ar,.verse .dev,.verse .en,.verse .gr,.verse .csl,.verse .fa,.verse .ak,.verse .bo,.verse .tib{font-family:'Times New Roman',Georgia,serif;font-size:1.05rem;line-height:1.7;color:var(--orig);background:rgba(201,162,39,0.04);border-right:3px solid var(--gold-dim);padding:12px 14px;direction:ltr;text-align:left;font-style:italic}
+.row .av,.row .sk,.row .he,.row .grc,.row .zh,.row .sa,.row .ar,.row .dev,.row .en,.row .gr,.row .csl,.row .fa,.row .ak,.row .bo,.row .tib{font-family:'Times New Roman',Georgia,serif;font-size:1.05rem;line-height:1.7;color:var(--orig);background:rgba(201,162,39,0.04);padding:10px 12px;direction:ltr;text-align:left}
+.verse{display:grid;grid-template-columns:3.2rem 1fr 1.1fr;border-bottom:1px solid var(--grid);align-items:start;transition:background 0.15s}
+.row{display:grid;grid-template-columns:3.2rem 1fr 1.1fr 1fr;border-bottom:1px solid var(--grid);align-items:start;transition:background 0.15s}
+.num{font-family:'Courier New',monospace;font-size:11px;color:var(--gold);text-align:center;padding:12px 4px;background:rgba(0,0,0,0.3);border-right:1px solid var(--line);font-weight:bold;align-self:start}
+.ru{font-size:.92rem;line-height:1.6;color:var(--ink);padding:10px 12px;background:rgba(255,255,255,0.01);border-left:1px solid var(--line);align-self:start;grid-column:3}
+
+/* ARCHIVUM HAERETICUM — Original script fonts */
+
+
+
+
+
+
+
+@font-face{font-family:'Noto Sans Cuneiform';font-style:normal;font-weight:400;font-display:block;src:url('/archivum-haereticum/fonts/noto-cuneiform.ttf') format('truetype')}
+@font-face{font-family:'Noto Sans Egyptian Hieroglyphs';font-style:normal;font-weight:400;font-display:block;src:url('/archivum-haereticum/fonts/noto-hieroglyphs.ttf') format('truetype')}
+@font-face{font-family:'Noto Sans Coptic';font-style:normal;font-weight:400;font-display:block;src:url('/archivum-haereticum/fonts/noto-coptic.ttf') format('truetype')}
+@font-face{font-family:'Noto Serif JP';font-style:normal;font-weight:400;font-display:swap;src:local('Noto Serif JP'),local('NotoSerifJP-Regular')}
+@font-face{font-family:'Noto Sans Devanagari';font-style:normal;font-weight:400;font-display:swap;src:local('Noto Sans Devanagari'),local('NotoSansDevanagari-Regular')}
+@font-face{font-family:'Noto Sans Tibetan';font-style:normal;font-weight:400;font-display:swap;src:local('Noto Sans Tibetan'),local('NotoSansTibetan-Regular')}
+@font-face{font-family:'SBL Greek';font-style:normal;font-weight:400;font-display:swap;src:local('SBL Greek'),local('SBLGreek')}@media(max-width:760px){
+.verse,.row{grid-template-columns:1fr !important;display:block !important;padding:12px 14px;margin:8px 0;border:1px solid var(--line);background:var(--bg2);width:100% !important;max-width:100% !important;overflow:hidden;box-sizing:border-box}
+.verse .num,.row .num{display:inline-block;background:rgba(0,0,0,0.5);padding:3px 10px;margin-bottom:8px;width:auto;text-align:left;font-size:11px;border:1px solid var(--gold-dim);border-radius:2px;font-family:'Courier New',monospace;min-width:0 !important}
+.verse .on,.verse .ru,.verse .csl,.verse .sk,.verse .he,.verse .grc,.verse .zh,.verse .ar,.verse .fa,.verse .bo,.verse .ak,.verse .cop,.verse .pali,.verse .sk-deva,.verse .eg-hiero,.verse .ak-cun,.verse .cop-uni,.verse .ja,.verse .pali-deva,.verse .qu,.verse .av,.verse .egy,.verse .csl,.verse .gr,.verse .on-r,
+.row .on,.row .ru,.row .csl,.row .sk,.row .he,.row .grc,.row .zh,.row .ar,.row .fa,.row .bo,.row .ak,.row .cop,.row .pali,.row .sk-deva,.row .eg-hiero,.row .ak-cun,.row .cop-uni,.row .ja,.row .pali-deva,.row .qu,.row .av,.row .egy,.row .csl,.row .gr{font-size:1.05rem !important;line-height:1.65 !important;padding:10px 12px !important;border-left:3px solid var(--gold-dim);margin:6px 0;background:rgba(201,162,39,0.04);width:auto !important;display:block !important;min-width:0 !important;word-wrap:break-word;overflow-wrap:break-word;max-width:100% !important;box-sizing:border-box}
+.verse .ru,.row .ru{border-left:3px solid var(--red);background:rgba(200,16,46,0.04)}
+.hos-h1{font-size:1.2rem;letter-spacing:.05em;line-height:1.3}
+.hos-sub{font-size:12px}
+.hos-strip{font-size:9px;letter-spacing:1px;padding:4px 8px}
+.stamps span{font-size:8px;letter-spacing:1px;padding:2px 5px;margin:0 1px}
+main{padding:0 8px;width:100% !important;max-width:100% !important;box-sizing:border-box}
+nav.main{padding:6px 10px;font-size:11px}
+nav.main a{margin:0 3px;padding:2px 4px}
+.toolbar button{font-size:10px;padding:5px 8px;letter-spacing:0;flex:1 1 30%;min-width:60px}
+.book-grid{grid-template-columns:1fr;gap:6px}
+.book-card{font-size:13px;padding:8px 10px;line-height:1.4}
+.note{font-size:14px;line-height:1.7;padding:14px 18px;margin:14px;color:var(--ink);background:rgba(201,162,39,0.04);border:1px solid var(--gold-dim);border-left:4px solid var(--gold)}
+footer{font-size:11px;padding:8px 10px}
+}
+</style>
+</head><body>
+<header class="hos">
+<div class="hos-strip"><span class="l">ARCHIVUM HAERETICUM — CORPUS DIVINUS</span><span class="r">Q12 — LUNYU</span></div>
+<div class="hos-body">
+<h1 class="hos-h1"><span class="q">Q12</span>乡党 — Лунь Юй</h1>
+<div class="hos-sub">Сян Дан · 20 книг</div>
+</div>
+</header>
+<div class="stamps">
+<span class="fid">◆ FIDELIS</span>
+<span class="cre">✚ MYSTICA</span>
+<span class="dam">✠ CONFUCIANA</span>
+</div>
+<nav class="main">
+<a href="../index.html">◀ CORPUS DIVINUS</a>
+<a href="index.html">○ ОБЗОР</a>
+</nav>
+<main>
+<div class="toolbar">
+<button onclick="toggleAll(true)">РАЗВЕРНУТЬ</button>
+<button onclick="toggleAll(false)">СВЕРНУТЬ</button>
+<button onclick="toggleOrig()">☀ ОРИГИНАЛ</button>
+<button onclick="toggleRu()">☾ ПЕРЕВОД</button>
+<button onclick="resetView()">◉ ОБА</button>
+</div>
+<div class="meta">◆ СВЯЩЕННЫЙ ТЕКСТ ◆</div>
+
+<div class="verse">
+<div class="num">1</div>
+<div class="zh"><i>(китайский отсутствует в источнике)</i></div>
+<div class="ru">В родном дане Кун-цзы не был многословным, хотя и казался простодушным, а в главном храме [государя] и при дворе был красноречив, хотя и краток.</div>
+</div>
+<div class="verse">
+<div class="num">2</div>
+<div class="zh"><i>(китайский отсутствует в источнике)</i></div>
+<div class="ru">[Кун-цзы] при дворе [в ожидании выхода правителя], если разговаривал с низшими сановниками, был мягок и любезен, а если беседовал с высшими сановниками — вежлив и прям. Когда правитель выходил, он выказывал благоговение, но держался с достоинством.</div>
+</div>
+<div class="verse">
+<div class="num">3</div>
+<div class="zh"><i>(китайский отсутствует в источнике)</i></div>
+<div class="ru">Когда государь поручал ему принимать гостей из других царств, то лицо его как будто преображалось и походка менялась. Когда он в знак приветствия подавал руки стоящим слева и справа, то платье его спереди и сзади казалось расправленным. Когда он спешил навстречу [гостям], то был похож на птицу с распростертыми крыльями. Когда посланники удалялись, он докладывал всегда правителю: «Посланники ушли и назад не оглядывались». Конфуций: «Лунь юй»</div>
+</div>
+<div class="verse">
+<div class="num">4</div>
+<div class="zh"><i>(китайский отсутствует в источнике)</i></div>
+<div class="ru">Когда [Кун-цзы] входил в дворцовые ворота, то пригибался, будто боялся, что не пройдет. Посредине ворот не останавливался и проходил, не наступая на порог. Когда подходил к престолу правителя, лицо его преображалось, колени подгибались и слов ему будто не хватало. Поднимался в зал, подбирая полы одежды, пригнувшись и затаив дыхание, словно не дышал. А когда выходил из зала и спускался на одну ступень, на вид был уже ровным и спокойным. Спускался вниз быстро, как на крыльях. Когда возвращался на свое место, казался умиротворенным.</div>
+</div>
+<div class="verse">
+<div class="num">5</div>
+<div class="zh"><i>(китайский отсутствует в источнике)</i></div>
+<div class="ru">[Кун-цзы] нес нефритовую табличку1 так, будто кланялся, будто не мог удержать ее. То поднимал ее высоко, словно приветствовал, то опускал вниз, словно делал подношение. Выражение лица его постоянно менялось, он шел мелкими шажками, не отрывая ног от пола. При поднесении подарков он был сдержан, после церемонии в частной беседе был весел.</div>
+</div>
+<div class="verse">
+<div class="num">6</div>
+<div class="zh"><i>(китайский отсутствует в источнике)</i></div>
+<div class="ru">Конфуций не оторачивал своего воротника темно-красной или коричневой материей. Не употреблял на домашнее платье материи красного или фиолетового цветов [как цветов промежуточных, более идущих женскому полу]. В летние жары у него был однорядный халат из тонкого или грубого травяного полотна, который при выходе из дому он непременно накидывал поверх исподнего платья, [чтобы не просвечивало тело]. Поверх нагольной шубы из черного барана он надевал однорядку, поверх пыжиковой — белую, а поверх лисьей — желтую. Меховой халат длинный (для теплоты), с коротким правым рукавом (для удобства в работе). Во время поста он непременно имел спальное платье длиною в 1 1/2 роста [для прикрытия ног]. В домашней жизни он употреблял пушистые лисьи и енотовые меха. По окончании траура он носил [на поясе] всевозможные привески. Если это было не парадное платье [для представления ко двору и жертвоприношений, которое делалось из прямых полотнищ с оборками вокруг поясницы — юпка], то оно непременно скашивалось вверху. Барашковая шуба и черная шапка не употреблялись при визитах с выражением соболезнования. Первого числа каждого месяца он непременно одевался в парадное платье и являлся ко двору.</div>
+</div>
+<div class="verse">
+<div class="num">7</div>
+<div class="zh"><i>(китайский отсутствует в источнике)</i></div>
+<div class="ru">Во время поста [Кун-цзы] всегда надевал чистое платье из простого полотна, ел другую пищу1, всегда покидал комнату2, где обычно спал. 1 «Ел другую пищу» — досл. «менял обычную пищу». Во время поста рекомендовалось воздерживаться от употребления вина, имбиря, лука и чеснока, т.е. всего, что вызывает резкий запах [Хуан]. 2 «всегда покидал комнату, где обычно спал» — в тексте: «менял место», т.е. покидал комнату, дабы не находиться вместе с женой [Ян Боцзюнь]. Конфуций: «Лунь юй»</div>
+</div>
+<div class="verse">
+<div class="num">8</div>
+<div class="zh"><i>(китайский отсутствует в источнике)</i></div>
+<div class="ru">Если каша была не из отборного обрушенного зерна, если мясо было нарезано не достаточно мелко, если каша от долгого хранения прогоркла, ничего этого он не ел. Испортившуюся рыбу и протухшее мясо не ел. Продукты, имевшие дурной вид и запах, не ел. Плохо сваренное не ел, несвежее не ел. Неправильно разделанное мясо не ел. Если не было соответствующей приправы, не ел. Хотя бы мяса было и много, не ел его больше, чем риса. Только в вине не ограничивал себя, но не пил допьяна. Вина и мяса, купленного на рынке, не употреблял. От имбиря никогда не отказывался. [Обычно] ел немного. При жертвоприношениях в храме правителя не допускал, чтобы жертвенное мясо [главного животного] оставалось на второй день. Жертвенное мясо [других животных] не должно было лежать более трех дней. Еслионо пролежало три дня, то не ел. Во время еды он не вступал в беседу, во время сна не говорил. Хотя бы пища его состояла из простой каши или овощного супа, он непременно отделял немного для жертвоприношений и делал это с большим благоговением.</div>
+</div>
+<div class="verse">
+<div class="num">9</div>
+<div class="zh"><i>(китайский отсутствует в источнике)</i></div>
+<div class="ru">Если циновка была постлана неправильно, он не садился. Конфуций: «Лунь юй»</div>
+</div>
+<div class="verse">
+<div class="num">10</div>
+<div class="zh"><i>(китайский отсутствует в источнике)</i></div>
+<div class="ru">Когда жители [его] общины1 собирались на церемонию распития вина, он вставал лишь после того, как выйдут старики. Когда жители [его] общины изгоняли злых духов 2, то он в парадной одежде стоял на восточной части крыльца.</div>
+</div>
+<div class="verse">
+<div class="num">11</div>
+<div class="zh"><i>(китайский отсутствует в источнике)</i></div>
+<div class="ru">Если он посылал кого-либо в другое царство с поручением, то дважды кланялся посланнику3 и лишь потом отпускал его. Когда Канцзы4 преподнес лекарство, [Учитель] с поклоном принял его, сказав: «Я еще не разобрался, что это за лекарство, поэтому не смею опробовать».</div>
+</div>
+<div class="verse">
+<div class="num">12</div>
+<div class="zh"><i>(китайский отсутствует в источнике)</i></div>
+<div class="ru">Сгорела конюшня. [Учитель], только что вернувшийся из дворца, спросил: — Люди не пострадали? И не спросил о лошадях. 1 «жители общины» — в тексте: сян жэнь, досл. «жители сяна». сян — наименование одного из типов общины. Хуан Цичун трактует сян в его современном значении «уезд», отсюда сян жэнь — «правитель уезда»: «When the prefecture minister was hosting the drinking ceremony...» [Хуан]. «Церемония распития вина» совершалась в связи с совершеннолетием членов общины и одновременно наиболее уважаемых ее членов. Обычно отличалась обильным возлиянием. 2 «изгоняли злых духов» — П. С. Попов переводит этот обряд как «обряд отогнания поветрия»: «Обряд отогнания поветрия совершался волхвом, который накидывал на себя медвежью шкуру с четырьмя золотыми глазами, одет был в черный камзол и красную юбку с копьем в одной и щитом в другой руке и в этом наряде, в сопровождении народа, отправлялся по комнатам искать духов заразы и изгонял их. Несмотря на то что этот древний обычай близок к забаве, тем не менее при совершении его присутствовали в парадном одеянии из почтения, а по другим, потому, что, опасаясь потревожить духов предков и демонов, хотели, чтобы они, благодаря заступничеству своих потомков, оставались покойными» [Попов]. Обряд совершался в третьем лунном месяце каждого года [Хуан]. 3 «дважды кланялся посланнику» — поклоны предназначались тому, к кому направлялся посланник [Хуан].</div>
+</div>
+<div class="verse">
+<div class="num">13</div>
+<div class="zh"><i>(китайский отсутствует в источнике)</i></div>
+<div class="ru">Когда правитель жаловал его кушаньем, то он всегда сначала pacnpaвлял циновку и тотчас отведывал его. Когда правитель жаловал сырым мясом, то всегда отваривал его и прежде подносил предкам. Когда правитель жаловал живой скот, то всегда откармливал его. На трапезе у правителя, дождавшись, когда тот принесет жертву предкам, первым начинал есть.1 [Кун-цзы] заболел, и правитель пришел проведать его. [Кун-цзы] отвернул голову от востока2, накрылся парадной одеждой и поверх перекинул пояс. Когда правитель повелевал прибыть [во дворец], Кун-цзы, не дожидаясь, пока заложат повозку, отправлялся пешком.</div>
+</div>
+<div class="verse">
+<div class="num">14</div>
+<div class="zh"><i>(китайский отсутствует в источнике)</i></div>
+<div class="ru">Войдя в Великий храм, он расспрашивал о каждой мелочи.</div>
+</div>
+<div class="verse">
+<div class="num">15</div>
+<div class="zh"><i>(китайский отсутствует в источнике)</i></div>
+<div class="ru">Когда умер друг и некому было похоронить его, он сказал: — Я похороню. Принимая подарки друзей, будь то повозка или лошади, но не жертвенное мясо, сам не кланялся. 1 «первым начинал есть» — согласно ритуалу, сановники должны были первыми опробовать кушанья. Ян Боцзюнь отмечает, что такой обычай не распространялся на овощные блюда. 2 «отвернул голову от востока» — согласно ритуалу, правитель, навещая кого-либо, сидел в западном углу комнаты, поэтому Конфуцию следовало повернуться к нему лицом [Хуан]. Конфуций: «Лунь юй»</div>
+</div>
+<div class="verse">
+<div class="num">16</div>
+<div class="zh"><i>(китайский отсутствует в источнике)</i></div>
+<div class="ru">Когда он спал, то не лежал, как мертвый; когда был дома, то не сидел, как при гостях. Когда [Кун-цзы] встречал человека в траурном одеянии, хотя бы и давнего знакомца, он всегда принимал [скорбный] вид. Когда встречал кого-либо в церемониальной шапке или слепого, как бы часто ни видел их, всякий раз был почтителен. Когда сидя в повозке, встречал одетого в траур, то отвешивал поклон, опершись на поручни. Когда встречал людей, несущих государственные подворные списки населения, был так же почтителен к ним. Когда видел щедро накрытый стол, всегда вставал с выражением почтения на лице. Во время грозы и бури он всегда менялся в лице.</div>
+</div>
+<div class="verse">
+<div class="num">17</div>
+<div class="zh"><i>(китайский отсутствует в источнике)</i></div>
+<div class="ru">[Кун-цзы] поднимался на повозку, держа прямо спину и ухватившись за веревочные поручни. Сидя в повозке, назад не смотрел, быстро не говорил и распоряжений не давал.</div>
+</div>
+<div class="verse">
+<div class="num">18</div>
+<div class="zh"><i>(китайский отсутствует в источнике)</i></div>
+<div class="ru">Поднимаясь как-то в повозке по горной дороге, увидел фазанов. [Кун-цзы] изменился в лице. Фазаны взлетели, сделали круг и сели вместе. [Кун-цзы] сказал: — Эти фазаны знают свое время, знают свое время! Цзы Лу хлопнул в ладоши, они поднялись и улетели.1</div>
+</div>
+
+</main>
+<footer>ARCHIVUM HAERETICUM · Q12 · <span class="red">◆</span> SIGILLUM VERITATIS · <span class="gold">DATUM 160.M3</span> · FIDELIS</footer>
+<script>
+function toggleAll(open){
+  document.querySelectorAll('details').forEach(d=>d.open=open);
+  document.querySelectorAll('.verse,.row').forEach(r=>{r.style.display=open?'grid':'none';});
+}
+function toggleOrig(){
+  document.querySelectorAll('.verse,.row').forEach(r=>{r.style.display='grid';});
+  document.querySelectorAll('.verse .ru,.row .ru').forEach(e=>e.style.display='none');
+  document.querySelectorAll('.verse .av,.verse .sk,.verse .he,.verse .grc,.verse .zh,.verse .sa,.verse .ar,.verse .dev,.verse .en,.verse .gr,.verse .egy,.verse .csl,.verse .fa,.verse .ak,.verse .bo,.verse .tib').forEach(e=>e.style.display='');
+}
+function toggleRu(){
+  document.querySelectorAll('.verse .ru,.row .ru').forEach(e=>e.style.display='');
+  document.querySelectorAll('.verse .av,.verse .sk,.verse .he,.verse .grc,.verse .zh,.verse .sa,.verse .ar,.verse .dev,.verse .en,.verse .gr,.verse .egy,.verse .csl,.verse .fa,.verse .ak,.verse .bo,.verse .tib').forEach(e=>e.style.display='none');
+}
+function resetView(){
+  document.querySelectorAll('.verse,.row').forEach(r=>{r.style.display='grid';});
+  document.querySelectorAll('.verse .av,.verse .sk,.verse .he,.verse .grc,.verse .zh,.verse .sa,.verse .ar,.verse .dev,.verse .en,.verse .gr,.verse .egy,.verse .csl,.verse .fa,.verse .ak,.verse .bo,.verse .tib,.verse .ru,.row .ru').forEach(e=>e.style.display='');
+}
+</script>
+</body></html>

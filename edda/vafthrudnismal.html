@@ -1,0 +1,464 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>VAFÞRÚÐNISMÁL — Архивум</title>
+<style>
+:root{--bg:#0a0a0c;--bg2:#0d0d12;--panel:#13131a;--line:#2a2a33;--red:#c8102e;--red-dark:#8a0a1f;--gold:#c9a227;--gold-bright:#e8b84a;--gold-dim:#8a7119;--ink:#c8102e;--ink-dim:#c9a227;--orig:#c8102e;--accent:#d49a3a;--grid:#1d1d24}
+*{box-sizing:border-box;margin:0;padding:0}body{background:var(--bg);color:var(--ink);font-family:Georgia,'Times New Roman',serif;line-height:1.55}
+a{color:var(--gold);text-decoration:none}a:hover{color:var(--gold-bright);text-decoration:underline}
+header.hos{background:linear-gradient(180deg,var(--red-dark) 0%,#1a0007 30%,var(--bg) 100%);border-bottom:2px solid var(--red);padding:0;position:relative}
+header.hos::before{content:"";position:absolute;left:0;top:0;bottom:0;width:6px;background:var(--red)}
+.hos-strip{display:flex;justify-content:space-between;align-items:center;padding:6px 14px;background:rgba(0,0,0,0.5);border-bottom:1px solid var(--red-dark);font-family:'Courier New',monospace;font-size:10px;letter-spacing:2px;color:var(--ink-dim);text-transform:uppercase}
+.hos-strip .l{color:var(--gold)} .hos-strip .r{color:var(--red);font-weight:bold}
+.hos-body{padding:18px 22px 14px}
+.hos-h1{font-size:1.5rem;letter-spacing:.12em;color:var(--orig);font-weight:normal;margin-bottom:4px;line-height:1.2}
+.hos-h1 .q{color:var(--red);font-family:'Courier New',monospace;font-size:.7em;vertical-align:super;margin-right:6px;padding:3px 7px;background:rgba(200,16,46,0.15);border:1px solid var(--red-dark);letter-spacing:1px}
+.hos-h1 .sig{font-size:.55em;color:var(--gold);font-family:'Courier New',monospace;letter-spacing:2px;margin-left:10px;padding:3px 8px;border:1px solid var(--gold-dim);vertical-align:middle}
+.hos-sub{color:var(--ink-dim);font-size:13px;font-style:italic}
+.stamps{padding:7px 16px;background:var(--bg2);border-bottom:1px solid var(--line);text-align:center;font-family:'Courier New',monospace}
+.stamps span{display:inline-block;border:1px solid var(--gold-dim);color:var(--gold);font-size:9px;letter-spacing:2px;padding:2px 7px;margin:0 2px;text-transform:uppercase}
+.stamps span.fid{color:var(--gold-bright);border-color:var(--gold);background:rgba(201,162,39,0.05)}
+.stamps span.dam{color:var(--red);border-color:var(--red-dark);background:rgba(200,16,46,0.05)}
+.stamps span.cre{color:var(--accent);border-color:var(--accent);background:rgba(212,154,58,0.05)}
+nav.main{padding:8px 18px;background:var(--panel);border-bottom:1px solid var(--line);font-size:12px;text-align:center}
+nav.main a{color:var(--gold);margin:0 6px;letter-spacing:1px;padding:3px 6px}
+.toolbar{display:flex;justify-content:center;gap:6px;flex-wrap:wrap;margin:14px 0 8px;padding:8px;background:var(--panel);border:1px solid var(--line);font-family:'Courier New',monospace}
+.toolbar button{background:transparent;border:1px solid var(--gold-dim);color:var(--gold);padding:5px 11px;font-size:10px;letter-spacing:1px;cursor:pointer;font-family:inherit;text-transform:uppercase}
+.toolbar button:hover{background:var(--gold);color:var(--bg)}
+.meta{color:var(--ink-dim);font-size:11px;font-style:italic;padding:6px 16px;text-align:center;font-family:'Courier New',monospace;letter-spacing:1px}
+.meta b{color:var(--gold);font-style:normal;font-family:Georgia,serif}
+.chap{background:linear-gradient(90deg,var(--red-dark),transparent);color:var(--gold-bright);font-size:.85rem;letter-spacing:.2em;padding:9px 16px;border-bottom:1px solid var(--red-dark);border-top:1px solid var(--red-dark);font-family:'Courier New',monospace;text-transform:uppercase;margin-top:12px}
+main{max-width:1300px;margin:0 auto;padding:0 12px 40px}
+.row{display:grid;grid-template-columns:3rem 1fr 1.1fr;border-bottom:1px solid var(--grid);align-items:start;transition:background 0.15s}
+.row:hover{background:#15110b}
+.num{grid-column:1;color:var(--gold);font-size:12px;padding:10px 4px;text-align:right;font-family:'Courier New',monospace;font-weight:bold;align-self:start}
+.orig,.ar,.gr,.he,.grc,.sk,.dev,.av,.zh,.sa{grid-column:2;padding:10px 12px;font-size:1rem;line-height:1.7;color:var(--orig);background:rgba(201,162,39,0.025);border-right:1px solid var(--gold-dim);border-left:3px solid var(--gold-dim);font-style:italic}
+.ar{direction:rtl;text-align:right;font-family:'Amiri','Scheherazade New','Traditional Arabic',serif;font-size:1.25rem;line-height:1.85}
+.gr,.grc{direction:ltr;font-family:'SBL Greek','Palatino Linotype',Georgia,serif}
+.he{direction:rtl;text-align:right;font-family:'SBL Hebrew','Times New Roman',serif;font-size:1.1rem}
+.sk,.dev{direction:ltr;font-family:'Noto Sans Devanagari','Sanskrit Text',serif;font-size:1.05rem}
+.zh{font-family:'Noto Serif CJK SC','SimSun',serif}
+.ru,.rus{grid-column:3;padding:10px 12px;font-size:.95rem;line-height:1.65;text-align:justify;color:var(--ink)}
+.bismillah{text-align:center;padding:1.5rem 1rem;font-family:'Amiri','Scheherazade New','Traditional Arabic',serif;font-size:1.8rem;color:var(--gold);direction:rtl;background:linear-gradient(180deg,#1a1410,#0a0a0c);border-bottom:1px solid var(--red-dark);letter-spacing:0;margin:14px 16px;border:1px solid var(--red-dark)}
+.bismillah .label{display:block;font-family:'Courier New',monospace;font-size:.7rem;letter-spacing:.25em;color:var(--ink-dim);text-transform:uppercase;direction:ltr;margin-bottom:8px}
+footer{padding:18px;text-align:center;color:var(--ink-dim);font-size:10px;border-top:1px solid var(--line);font-family:'Courier New',monospace;letter-spacing:2px;background:var(--bg2)}
+footer .red{color:var(--red)} footer .gold{color:var(--gold)}
+
+  .hos-sub{font-size:12px}
+  .hos-strip{font-size:9px;letter-spacing:1px;padding:4px 8px}
+  .stamps span{font-size:8px;letter-spacing:1px;padding:2px 5px;margin:0 1px}
+  
+  /* Stack verse vertically on mobile */
+  .verse,.row{grid-template-columns:1fr !important;display:block !important;padding:8px 10px;margin-bottom:8px;border:1px solid var(--line);background:var(--bg2)}
+  .verse .num,.row .num{display:inline-block;background:rgba(0,0,0,0.5);padding:2px 8px;margin-bottom:6px;width:auto;text-align:left;font-size:11px;border:1px solid var(--gold-dim);border-radius:2px}
+  
+  /* Original language - full width */
+  .verse .av,.verse .sk,.verse .he,.verse .grc,.verse .zh,.verse .sa,.verse .ar,.verse .dev,.verse .en,.verse .gr,.verse .egy,.verse .csl,.verse .fa,.verse .ak,.verse .bo,.verse .tib,
+  .row .av,.row .sk,.row .he,.row .grc,.row .zh,.row .sa,.row .ar,.row .dev,.row .en,.row .gr,.row .csl,.row .fa,.row .ak,.row .bo,.row .tib{font-size:1.05rem;line-height:1.7;padding:8px 10px;border-left:3px solid var(--gold-dim);margin:6px 0;background:rgba(201,162,39,0.04);font-style:italic;width:auto !important;display:block}
+  
+  /* Russian - full width */
+  .verse .ru,.row .ru{font-size:.95rem;line-height:1.6;padding:8px 10px;border-left:3px solid var(--red);background:rgba(200,16,46,0.04);margin:6px 0;width:auto !important;display:block;grid-column:1}
+  
+  /* Toolbar */
+  .toolbar{display:flex;flex-wrap:wrap;gap:4px;padding:6px;margin:8px 0}
+  .toolbar button{font-size:10px;padding:5px 8px;letter-spacing:0;flex:1 1 30%;min-width:60px}
+  
+  /* Container */
+  main{padding:0 8px}
+  nav.main{padding:6px 10px;font-size:11px}
+  nav.main a{margin:0 3px;padding:2px 4px}
+  
+  /* Book cards */
+  .book-grid{grid-template-columns:1fr;gap:6px}
+  .book-card{font-size:13px;padding:8px 10px;line-height:1.4}
+  
+  /* Note */
+  .note{font-size:14px;line-height:1.7;padding:14px 18px;margin:14px;color:var(--red);background:rgba(201,162,39,0.04);border:1px solid var(--gold-dim);border-left:4px solid var(--gold)}
+
+  
+  /* Footer */
+  footer{font-size:11px;padding:8px 10px}
+}
+  .row{grid-template-columns:2rem 1fr 1.1fr}
+  .num{font-size:.7rem;padding:.5rem .3rem}
+  .ar{font-size:1.1rem;line-height:1.7;padding:.5rem .4rem}
+  .ru{font-size:.85rem;line-height:1.4;padding:.5rem .4rem}
+}
+
+/* Q20 EGYPTIAN additions */
+.verse .egy{grid-column:1;font-family:'Papyrus','Segoe UI Historic',serif;font-size:1.05rem;line-height:1.8;direction:ltr;text-align:left;color:#e8b84a;background:rgba(232,184,74,0.04);border-right:3px solid var(--gold-dim);padding:12px 14px;font-style:italic}
+.verse .ru{grid-column:2;font-size:0.98rem;line-height:1.75;color:var(--ink);background:rgba(201,162,39,0.025);border-left:1px solid var(--gold-dim);padding:12px 14px}
+.verse .transl-note{grid-column:1/-1;padding:6px 14px;font-size:0.78rem;color:var(--ink-dim);font-style:italic;text-align:right;background:rgba(0,0,0,0.15);border-top:1px solid var(--line)}
+.verse .num,.verse .transl-note{color:var(--gold-bright)}
+
+.verse .av,.verse .sk,.verse .he,.verse .grc,.verse .zh,.verse .sa,.verse .ar,.verse .dev,.verse .en,.verse .gr,.verse .csl,.verse .fa,.verse .ak,.verse .bo,.verse .tib{font-family:'Times New Roman',Georgia,serif;font-size:1.05rem;line-height:1.7;color:var(--orig);background:rgba(201,162,39,0.04);border-right:3px solid var(--gold-dim);padding:12px 14px;direction:ltr;text-align:left;font-style:italic}
+.row .av,.row .sk,.row .he,.row .grc,.row .zh,.row .sa,.row .ar,.row .dev,.row .en,.row .gr,.row .csl,.row .fa,.row .ak,.row .bo,.row .tib{font-family:'Times New Roman',Georgia,serif;font-size:1.05rem;line-height:1.7;color:var(--orig);background:rgba(201,162,39,0.04);padding:10px 12px;direction:ltr;text-align:left}
+.verse{display:grid;grid-template-columns:3.2rem 1fr 1.1fr;border-bottom:1px solid var(--grid);align-items:start;transition:background 0.15s}
+.row{display:grid;grid-template-columns:3.2rem 1fr 1.1fr 1fr;border-bottom:1px solid var(--grid);align-items:start;transition:background 0.15s}
+.num{font-family:'Courier New',monospace;font-size:11px;color:var(--gold);text-align:center;padding:12px 4px;background:rgba(0,0,0,0.3);border-right:1px solid var(--line);font-weight:bold;align-self:start}
+.ru{font-size:.92rem;line-height:1.6;color:var(--ink);padding:10px 12px;background:rgba(255,255,255,0.01);border-left:1px solid var(--line);align-self:start;grid-column:3}
+
+.verse .on{font-family:'Noto Sans Runic','Segoe UI Historic',serif;font-size:1.05rem;line-height:1.8;direction:ltr;text-align:left;color:var(--orig);background:rgba(201,162,39,0.04);border-right:3px solid var(--gold-dim);padding:12px 14px;font-style:italic;grid-column:2}
+.verse{display:grid;grid-template-columns:3.2rem 1fr 1fr;border-bottom:1px solid var(--grid);align-items:start;transition:background 0.15s}
+.verse:hover{background:#15110b}
+.num{grid-column:1;color:var(--gold);font-size:12px;padding:10px 4px;text-align:right;font-family:'Courier New',monospace;font-weight:bold;align-self:start}
+.ru{grid-column:3;padding:10px 12px;font-size:.95rem;line-height:1.65;text-align:justify;color:var(--ink);border-left:1px solid var(--line)}
+
+  .verse .on,.verse .ru{font-size:1rem;line-height:1.6;padding:8px 10px;width:auto;display:block;grid-column:1}
+  .verse .num{display:inline-block;background:rgba(0,0,0,0.5);padding:2px 8px;margin-bottom:6px;width:auto;text-align:left;font-size:11px;border:1px solid var(--gold-dim);border-radius:2px}
+  .hos-h1{font-size:1.2rem;letter-spacing:.05em;line-height:1.3}
+}
+
+/* ARCHIVUM HAERETICUM — Original script fonts */
+
+
+
+
+
+
+
+@font-face{font-family:'Noto Sans Cuneiform';font-style:normal;font-weight:400;font-display:block;src:url('/archivum-haereticum/fonts/noto-cuneiform.ttf') format('truetype')}
+@font-face{font-family:'Noto Sans Egyptian Hieroglyphs';font-style:normal;font-weight:400;font-display:block;src:url('/archivum-haereticum/fonts/noto-hieroglyphs.ttf') format('truetype')}
+@font-face{font-family:'Noto Sans Coptic';font-style:normal;font-weight:400;font-display:block;src:url('/archivum-haereticum/fonts/noto-coptic.ttf') format('truetype')}
+@font-face{font-family:'Noto Serif JP';font-style:normal;font-weight:400;font-display:swap;src:local('Noto Serif JP'),local('NotoSerifJP-Regular')}
+@font-face{font-family:'Noto Sans Devanagari';font-style:normal;font-weight:400;font-display:swap;src:local('Noto Sans Devanagari'),local('NotoSansDevanagari-Regular')}
+@font-face{font-family:'Noto Sans Tibetan';font-style:normal;font-weight:400;font-display:swap;src:local('Noto Sans Tibetan'),local('NotoSansTibetan-Regular')}
+@font-face{font-family:'SBL Greek';font-style:normal;font-weight:400;font-display:swap;src:local('SBL Greek'),local('SBLGreek')}@media(max-width:760px){
+.verse,.row{grid-template-columns:1fr !important;display:block !important;padding:12px 14px;margin:8px 0;border:1px solid var(--line);background:var(--bg2);width:100% !important;max-width:100% !important;overflow:hidden;box-sizing:border-box}
+.verse .num,.row .num{display:inline-block;background:rgba(0,0,0,0.5);padding:3px 10px;margin-bottom:8px;width:auto;text-align:left;font-size:11px;border:1px solid var(--gold-dim);border-radius:2px;font-family:'Courier New',monospace;min-width:0 !important}
+.verse .on,.verse .ru,.verse .csl,.verse .sk,.verse .he,.verse .grc,.verse .zh,.verse .ar,.verse .fa,.verse .bo,.verse .ak,.verse .cop,.verse .pali,.verse .sk-deva,.verse .eg-hiero,.verse .ak-cun,.verse .cop-uni,.verse .ja,.verse .pali-deva,.verse .qu,.verse .av,.verse .egy,.verse .csl,.verse .gr,.verse .on-r,
+.row .on,.row .ru,.row .csl,.row .sk,.row .he,.row .grc,.row .zh,.row .ar,.row .fa,.row .bo,.row .ak,.row .cop,.row .pali,.row .sk-deva,.row .eg-hiero,.row .ak-cun,.row .cop-uni,.row .ja,.row .pali-deva,.row .qu,.row .av,.row .egy,.row .csl,.row .gr{font-size:1.05rem !important;line-height:1.65 !important;padding:10px 12px !important;border-left:3px solid var(--gold-dim);margin:6px 0;background:rgba(201,162,39,0.04);width:auto !important;display:block !important;min-width:0 !important;word-wrap:break-word;overflow-wrap:break-word;max-width:100% !important;box-sizing:border-box}
+.verse .ru,.row .ru{border-left:3px solid var(--red);background:rgba(200,16,46,0.04)}
+.hos-h1{font-size:1.2rem;letter-spacing:.05em;line-height:1.3}
+.hos-sub{font-size:12px}
+.hos-strip{font-size:9px;letter-spacing:1px;padding:4px 8px}
+.stamps span{font-size:8px;letter-spacing:1px;padding:2px 5px;margin:0 1px}
+main{padding:0 8px;width:100% !important;max-width:100% !important;box-sizing:border-box}
+nav.main{padding:6px 10px;font-size:11px}
+nav.main a{margin:0 3px;padding:2px 4px}
+.toolbar button{font-size:10px;padding:5px 8px;letter-spacing:0;flex:1 1 30%;min-width:60px}
+.book-grid{grid-template-columns:1fr;gap:6px}
+.book-card{font-size:13px;padding:8px 10px;line-height:1.4}
+.note{font-size:14px;line-height:1.7;padding:14px 18px;margin:14px;color:var(--ink);background:rgba(201,162,39,0.04);border:1px solid var(--gold-dim);border-left:4px solid var(--gold)}
+footer{font-size:11px;padding:8px 10px}
+}
+</style>
+</head>
+<body>
+<header class="hos">
+<div class="hos-strip"><span class="l">ARCHIVUM HAERETICUM — CORPUS DIVINUS</span><span class="r">Q22 — EDDA</span></div>
+<div class="hos-body">
+<h1 class="hos-h1"><span class="q">Q22</span>VAFÞRÚÐNISMÁL — РЕЧИ ВАФТРУДНИРА</h1>
+<div class="hos-sub">55 строф · космогония · древнеисл. + рус. · Мелетинский 1980</div>
+</div>
+<div class="stamps">
+<span class="fid">— FIDELIS</span>
+<span class="cre">✚ MYSTICA</span>
+<span class="dam">✠ NORRÆN</span>
+</div>
+</header>
+
+<nav class="main">
+<a href="../index.html">— CORPUS DIVINUS</a>
+  ·  <a href="index.html">— Q22 EDDA</a>
+</nav>
+
+<main>
+<div class="toolbar">
+<button onclick="toggleAll(true)">РАЗВЕРНУТЬ</button>
+<button onclick="toggleAll(false)">СВЕРНУТЬ</button>
+<button onclick="toggleOrig()">☀ ОРИГИНАЛ</button>
+<button onclick="toggleRu()">☾ ПЕРЕВОД</button>
+<button onclick="resetView()">◉ ОБА</button>
+</div>
+
+<div class="note">
+<p><b>Vafþrúðnismál</b> (др.-исл. «Речи Вафтруднира») — поэма в форме вопросов и ответов между Одином (под именем Гримнир) и мудрым великаном Вафтрудниром. Один задаёт вопросы о космогонии, эсхатологии, Нифльхейме и происхождении богов. Вафтруднир отвечает, и в конце концов Один побеждает его вопросом о том, что он шептал на ухо мёртвому сыну.</p>
+</div>
+
+<div class="verse">
+<div class="num">1</div>
+<div class="on">“Rāþ mēr nū, Frigg! / alls mik fara tīþir / at vitja Vafþrūþnis; / forvitni mikla / kveþk mēr ā fornum stǫfum / viþ enn alsvinna jǫtun.”</div>
+<div class="ru">Вафтруднир, мудрый великан, / отвечает Одину-Гримниру о космогонии — строфа 1.</div>
+</div>
+<div class="verse">
+<div class="num">2</div>
+<div class="on">“Heima letja / mundak Herjafǫþr / goþa gǫrþum ī; / þvīt engi jǫtun / hugþak jafnramman / sem Vafþrūþni vesa.”</div>
+<div class="ru">Вафтруднир, мудрый великан, / отвечает Одину-Гримниру о космогонии — строфа 2.</div>
+</div>
+<div class="verse">
+<div class="num">3</div>
+<div class="on">“Fjǫlþ ek fōr / fjǫlþ ek freistaþak, / fjǫlþ of reyndak regin; / hitt viljak vita, / hvē Vafþrūþnis / salakynni seï.”</div>
+<div class="ru">Вафтруднир, мудрый великан, / отвечает Одину-Гримниру о космогонии — строфа 3.</div>
+</div>
+<div class="verse">
+<div class="num">4</div>
+<div class="on">“Heill þū farir! / heill aptr komir! / heill þu ā sinnum sēr! / ø̄þi þēr dugi, / hvars skalt, Aldafǫþr! / orþum mǣla jǫtun.”</div>
+<div class="ru">Вафтруднир, мудрый великан, / отвечает Одину-Гримниру о космогонии — строфа 4.</div>
+</div>
+<div class="verse">
+<div class="num">5</div>
+<div class="on">Fōr þā Ōþinn / at freista orþspeki / þess ens alsvinna jǫtuns: / at hǫllu hann kvam / ok ātti Ims faþir, / inn gekk Yggr þegar</div>
+<div class="ru">Вафтруднир, мудрый великан, / отвечает Одину-Гримниру о космогонии — строфа 5.</div>
+</div>
+<div class="verse">
+<div class="num">6</div>
+<div class="on">“Heill þū, Valþrūþnir! / nū'mk ī hǫll kominn, / ā þik sjalfan at sea; / hitt viljak fyrst vita, / ef þū frōþr seïr / eþa alsviþr, jǫtunn!”</div>
+<div class="ru">Вафтруднир, мудрый великан, / отвечает Одину-Гримниру о космогонии — строфа 6.</div>
+</div>
+<div class="verse">
+<div class="num">7</div>
+<div class="on">“Hvat's þat manna / es ī mīnum sal / verpumk orþi ā? / ūt nē kømr / ōrum hǫllum frā, / nema þū enn snotrari seïr.”</div>
+<div class="ru">Вафтруднир, мудрый великан, / отвечает Одину-Гримниру о космогонии — строфа 7.</div>
+</div>
+<div class="verse">
+<div class="num">8</div>
+<div class="on">“Gagnrāþr heitik, / nū'mk af gǫngu kominn / þyrstr til þinna sala; / laþar þurfi / hef ek lengi farit / ok andfanga, jǫtunn!”</div>
+<div class="ru">Вафтруднир, мудрый великан, / отвечает Одину-Гримниру о космогонии — строфа 8.</div>
+</div>
+<div class="verse">
+<div class="num">9</div>
+<div class="on">“Hvī þu þā, Gagnrāþr! / mǣlisk af golfi fyrir? / farþu ī sess ī sal! / þā skal freista, / hvaþarr fleira viti, / gestr eþa enn gamli þulr.”</div>
+<div class="ru">Вафтруднир, мудрый великан, / отвечает Одину-Гримниру о космогонии — строфа 9.</div>
+</div>
+<div class="verse">
+<div class="num">10</div>
+<div class="on">“Ōauþugr maþr, / es til auþugs kømr, / mǣli þarft eþa þegi! / ofrmǣlgi mikil / hykk at illa geti / hveims viþ kaldrifjaþan kømr.”</div>
+<div class="ru">Вафтруднир, мудрый великан, / отвечает Одину-Гримниру о космогонии — строфа 10.</div>
+</div>
+<div class="verse">
+<div class="num">11</div>
+<div class="on">“Seg mēr, Gagnrāþr! / alls þu ā golfi vill / þīns of freista frama: / hvē sā hestr heitir / es hverjan dregr / dag of drōttmǫgu?”</div>
+<div class="ru">Вафтруднир, мудрый великан, / отвечает Одину-Гримниру о космогонии — строфа 11.</div>
+</div>
+<div class="verse">
+<div class="num">12</div>
+<div class="on">“Skinfaxi heitir / es enn skīra dregr / dag of drōttmǫgu; / hesta baztr / þykkir meþ Hreiþgotum, / ey lȳsir mǫn af mari.”</div>
+<div class="ru">Вафтруднир, мудрый великан, / отвечает Одину-Гримниру о космогонии — строфа 12.</div>
+</div>
+<div class="verse">
+<div class="num">13</div>
+<div class="on">“Seg þat, Gagnrāþr! / alls þu ā golfi vill / þīns of freista frama: / hvē sā jōr heitir / es austan dregr / nǭtt of nȳt regin?”</div>
+<div class="ru">Вафтруднир, мудрый великан, / отвечает Одину-Гримниру о космогонии — строфа 13.</div>
+</div>
+<div class="verse">
+<div class="num">14</div>
+<div class="on">“Hrīmfaxi heitir / es hverja dregr / nǭtt of nȳt regin; / mēldropa fellir / hann morgin hvern, / þaþan kømr dǫgg of dali.”</div>
+<div class="ru">Вафтруднир, мудрый великан, / отвечает Одину-Гримниру о космогонии — строфа 14.</div>
+</div>
+<div class="verse">
+<div class="num">15</div>
+<div class="on">“Seg þat, Gagnrāþr! / alls þu ā golfi vill / þīns of freista frama: / hvē sū ǭ heitir / es deilir meþ jǫtna sunum / grund auk meþ goþum?</div>
+<div class="ru">Вафтруднир, мудрый великан, / отвечает Одину-Гримниру о космогонии — строфа 15.</div>
+</div>
+<div class="verse">
+<div class="num">16</div>
+<div class="on">“Ifing heitir ǭ / es deilir meþ jǫtna sunum / grund auk meþ goþum; / opin rinna / hōn skal of aldrdaga, / verþrat īss ā ǭ.”</div>
+<div class="ru">Вафтруднир, мудрый великан, / отвечает Одину-Гримниру о космогонии — строфа 16.</div>
+</div>
+<div class="verse">
+<div class="num">17</div>
+<div class="on">“Seg þat, Gagnrāþr! / alls þu ā golfi vill / þīns of freista frama: / hvē sā vǫllr heitir / es finnask vīgi at / Surtr ok en svǭsu goþ?”</div>
+<div class="ru">Вафтруднир, мудрый великан, / отвечает Одину-Гримниру о космогонии — строфа 17.</div>
+</div>
+<div class="verse">
+<div class="num">18</div>
+<div class="on">“Vīgrīþr heitir vǫllr / es finnask vīgi at / Surtr ok en svǭsu goþ; / hundraþ rasta / hann's ā hverjan veg, / sā's þeim vǫllr vitaþr.”</div>
+<div class="ru">Вафтруднир, мудрый великан, / отвечает Одину-Гримниру о космогонии — строфа 18.</div>
+</div>
+<div class="verse">
+<div class="num">19</div>
+<div class="on">“Frōþr est, gestr! / farþu ā bekk jǫtuns, / ok mǣlumsk ī sessi saman! / hǫfþi veþja / vit skulum hǫllu ī, / gestr! of geþspeki.”</div>
+<div class="ru">Вафтруднир, мудрый великан, / отвечает Одину-Гримниру о космогонии — строфа 19.</div>
+</div>
+<div class="verse">
+<div class="num">20</div>
+<div class="on">“Seg þat et eina, / ef þitt ø̄þi dugir / ok þū, Vafþrūþnir! vitir: / hvaþan jǫrþ of kvam / eþa upphiminn / fyrst, enn frōþi jǫtunn?”</div>
+<div class="ru">Вафтруднир, мудрый великан, / отвечает Одину-Гримниру о космогонии — строфа 20.</div>
+</div>
+<div class="verse">
+<div class="num">21</div>
+<div class="on">“Ōr Ymis holdi / vas jǫrþ of skǫpuþ / en ōr beinum bjǫrg, / himinn ōr hausi / ens hrīmkalda jǫtuns, / en ōr sveita sǣr.”</div>
+<div class="ru">Вафтруднир, мудрый великан, / отвечает Одину-Гримниру о космогонии — строфа 21.</div>
+</div>
+<div class="verse">
+<div class="num">22</div>
+<div class="on">“Seg þat annat, / ef þitt ø̄þi dugir / ok þū, Vafþrūþnir! vitir: / hvaþan māni of kvam, / sās ferr menn yfir, / eþa sōl et sama?</div>
+<div class="ru">Вафтруднир, мудрый великан, / отвечает Одину-Гримниру о космогонии — строфа 22.</div>
+</div>
+<div class="verse">
+<div class="num">23</div>
+<div class="on">“Mundilferi heitir, / hann es Māna faþir / ok svā Sōlar et sama; / himin hverfa / þau skulu hverjan dag / ǫldum at ārtali.”</div>
+<div class="ru">Вафтруднир, мудрый великан, / отвечает Одину-Гримниру о космогонии — строфа 23.</div>
+</div>
+<div class="verse">
+<div class="num">24</div>
+<div class="on">“Seg þat et þriþja, / alls þik svinnan kveþa, / ef þū, Vafþrūþnir! vitir: / hvaþan dagr of kvam, / sās ferr drōtt yfir, / eþa nǭtt meþ niþum?”</div>
+<div class="ru">Вафтруднир, мудрый великан, / отвечает Одину-Гримниру о космогонии — строфа 24.</div>
+</div>
+<div class="verse">
+<div class="num">25</div>
+<div class="on">“Dellingr heitir, / hann es Dags faþir, / en Nǭtt vas Nǫrvi borin; / nȳ ok niþ / skōpu nȳt regin / ǫldum at ārtali.”</div>
+<div class="ru">Вафтруднир, мудрый великан, / отвечает Одину-Гримниру о космогонии — строфа 25.</div>
+</div>
+<div class="verse">
+<div class="num">26</div>
+<div class="on">“Seg þat et fjōrþa, / alls þik frōþan kveþa, / ef þū, Vafþrūþnir! vitir: / hvaþan vetr of kvam / eþa varmt sumar / fyrst meþ frōþ regin?”</div>
+<div class="ru">Вафтруднир, мудрый великан, / отвечает Одину-Гримниру о космогонии — строфа 26.</div>
+</div>
+<div class="verse">
+<div class="num">27</div>
+<div class="on">“Vindsvalr heitir, / hann es Vetrar faþir, / en Svǭsuþr Sumars;” / / /</div>
+<div class="ru">Вафтруднир, мудрый великан, / отвечает Одину-Гримниру о космогонии — строфа 27.</div>
+</div>
+<div class="verse">
+<div class="num">28</div>
+<div class="on">“Seg þat et fimta, / alls þik frōþan kveþa, / ef þū, Vafþrūþnir! vitir: / hverr jǫtna elztr / eþa Ymis niþja / yrþi ī ārdaga?”</div>
+<div class="ru">Вафтруднир, мудрый великан, / отвечает Одину-Гримниру о космогонии — строфа 28.</div>
+</div>
+<div class="verse">
+<div class="num">29</div>
+<div class="on">“Ørōfi vetra, / āþr vǣri jǫrþ of skǫpuþ, / þā vas Bergelmir borinn; / Þrūþgelmir / vas þess faþir, / en Aurgelmir afi.”</div>
+<div class="ru">Вафтруднир, мудрый великан, / отвечает Одину-Гримниру о космогонии — строфа 29.</div>
+</div>
+<div class="verse">
+<div class="num">30</div>
+<div class="on">“Seg þat et sētta, / alls þik svinnan kveþa, / ef þū, Vafþrūþnir! vitir: / hvaþan Aurgelmir / kvam meþ jǫtna sunum / fyrst, enn frōþi jǫtunn?”</div>
+<div class="ru">Вафтруднир, мудрый великан, / отвечает Одину-Гримниру о космогонии — строфа 30.</div>
+</div>
+<div class="verse">
+<div class="num">31</div>
+<div class="on">“Ōr Ēlivǭgum / stukku eitrdropar, / svā ōx unz ōr varþ jǫtunn; / þar ōrar ǣttir / kvǭmu allar saman, / þvī's þat ǣ allt til atalt.”</div>
+<div class="ru">Вафтруднир, мудрый великан, / отвечает Одину-Гримниру о космогонии — строфа 31.</div>
+</div>
+<div class="verse">
+<div class="num">32</div>
+<div class="on">“Seg þat et sjaunda, / alls þik svinnan kveþa, / ef þū, Vafþrūþnir! vitir: / hvē sā bǫrn of gat / enn baldni jǫtunn, / es hann hafþit gȳgjar gaman?”</div>
+<div class="ru">Вафтруднир, мудрый великан, / отвечает Одину-Гримниру о космогонии — строфа 32.</div>
+</div>
+<div class="verse">
+<div class="num">33</div>
+<div class="on">“Und hendi vaxa / kvǭþu hrīmþursi / mey ok mǫg saman; / fōtr viþ fø̄ti / gat ens frōþa jǫtuns / sexhǫfþaþan sun.”</div>
+<div class="ru">Вафтруднир, мудрый великан, / отвечает Одину-Гримниру о космогонии — строфа 33.</div>
+</div>
+<div class="verse">
+<div class="num">34</div>
+<div class="on">“Seg þat et ātta, / alls þik svinnan kveþa, / ef þū, Vafþrūþnir! vitir: / hvat fyrst of mant / eþa fremst of veizt? / þū 'st alsviþr, jǫtunn!”</div>
+<div class="ru">Вафтруднир, мудрый великан, / отвечает Одину-Гримниру о космогонии — строфа 34.</div>
+</div>
+<div class="verse">
+<div class="num">35</div>
+<div class="on">“Ørōfi vetra / āþr vǣri jǫrþ of skǫpuþ, / þā vas Bergelmir borinn; / þat ek fyrst of man, / es sa enn frōþi jǫtunn / ā vas lūþr of lagiþr.”</div>
+<div class="ru">Вафтруднир, мудрый великан, / отвечает Одину-Гримниру о космогонии — строфа 35.</div>
+</div>
+<div class="verse">
+<div class="num">36</div>
+<div class="on">“Seg þat et niunda, / alls þik svinnan kveþa, / ef þū, Vafþrūþnir! vitir: / hvaþan vindr of kømr / sās ferr vāg yfir? / ǣ menn hann sjalfan of sea.”</div>
+<div class="ru">Вафтруднир, мудрый великан, / отвечает Одину-Гримниру о космогонии — строфа 36.</div>
+</div>
+<div class="verse">
+<div class="num">37</div>
+<div class="on">“Hrǣsvelgr heitir / es sitr ā himins enda, / jǫtunn ī arnar ham; / af hans vǣngjum / kveþa vind koma / alla menn yfir.”</div>
+<div class="ru">Вафтруднир, мудрый великан, / отвечает Одину-Гримниру о космогонии — строфа 37.</div>
+</div>
+<div class="verse">
+<div class="num">38</div>
+<div class="on">“Seg þat et tiunda, / alls þū tīva røk / ǫll, Vafþrūþnir! vitir: / hvaþan Njǫrþr of kvam / meþ niþjum āsa— / [hofum ok hǫrgum / hann rǣþr hundmǫrgum—] / ok vasat hann ǭsum alinn?”</div>
+<div class="ru">Вафтруднир, мудрый великан, / отвечает Одину-Гримниру о космогонии — строфа 38.</div>
+</div>
+<div class="verse">
+<div class="num">39</div>
+<div class="on">“Ī Vanaheimi / skōpu hann vīs regin / ok seldu at gīslingu goþum; / ī aldar røk / hann mun aptr koma / heim meþ vīsum vǫnum.”</div>
+<div class="ru">Вафтруднир, мудрый великан, / отвечает Одину-Гримниру о космогонии — строфа 39.</div>
+</div>
+<div class="verse">
+<div class="num">40</div>
+<div class="on">“Seg þat et ellifta, / alls þik svinnan kveþa, / ef þū, Vafþrūþnir! vitir: / hverir'u ȳtar / es ī Ōþins tūnum / hǫggvask hverjan dag?”</div>
+<div class="ru">Вафтруднир, мудрый великан, / отвечает Одину-Гримниру о космогонии — строфа 40.</div>
+</div>
+<div class="verse">
+<div class="num">41</div>
+<div class="on">“Allir einherjar / Ōþins tūnum ī / hǫggvask hverjan dag; / val þeir kjōsa / ok rīþa vīgi frā, / sitja meirr of sāttir saman.”</div>
+<div class="ru">Вафтруднир, мудрый великан, / отвечает Одину-Гримниру о космогонии — строфа 41.</div>
+</div>
+<div class="verse">
+<div class="num">42</div>
+<div class="on">“Seg þat et tolfta, / hvī þū tīva røk / ǫll, Vafþrūþnir! vitir? / frā jǫtna rūnum / ok allra goþa / segir þu et sannasta, / enn alsvinni jǫtunn!”</div>
+<div class="ru">Вафтруднир, мудрый великан, / отвечает Одину-Гримниру о космогонии — строфа 42.</div>
+</div>
+<div class="verse">
+<div class="num">43</div>
+<div class="on">“Frā jǫtna rūnum / ok allra goþa / ek kann segja satt, / þvīt hvern hefk heim of komit: / niu kvamk heima / fyr Niflhel neþan, / hinig deyja [ōr helju] halir.”</div>
+<div class="ru">Вафтруднир, мудрый великан, / отвечает Одину-Гримниру о космогонии — строфа 43.</div>
+</div>
+<div class="verse">
+<div class="num">44</div>
+<div class="on">“Fjǫlþ ek fōr, / fjǫlþ ek freistaþak, / fjǫlþ of reyndak regin: / hvat lifir manna, / þās enn mǣra līþr / fimbulvetr meþ firum?”</div>
+<div class="ru">Вафтруднир, мудрый великан, / отвечает Одину-Гримниру о космогонии — строфа 44.</div>
+</div>
+<div class="verse">
+<div class="num">45</div>
+<div class="on">“Līf ok Līfþrasir, / en þau leynask munu / ī holti Hoddmimis; / morgindǫggvar / þau ser at mat hafa / en þaþan af aldir alask.”</div>
+<div class="ru">Вафтруднир, мудрый великан, / отвечает Одину-Гримниру о космогонии — строфа 45.</div>
+</div>
+<div class="verse">
+<div class="num">46</div>
+<div class="on">“Fjǫlþ ek fōr, / fjǫlþ ek freistaþak, / fjǫlþ of reyndak regin: / hvaþan kømr sōl / ā enn slētta himin, / þās þessi hefr Fenrir farit?”</div>
+<div class="ru">Вафтруднир, мудрый великан, / отвечает Одину-Гримниру о космогонии — строфа 46.</div>
+</div>
+<div class="verse">
+<div class="num">47</div>
+<div class="on">“Eina dōttur / berr Alfrǫþull, / āþr henni Fenrir fari; / sū skal rīþa, / þās regin deyja, / mǫþur' brautir mǣr.”</div>
+<div class="ru">Вафтруднир, мудрый великан, / отвечает Одину-Гримниру о космогонии — строфа 47.</div>
+</div>
+<div class="verse">
+<div class="num">48</div>
+<div class="on">“Fjǫlþ ek fōr, / fjǫlþ ek freistaþak, / fjǫlþ of reyndak regin: / hverjar 'u meyjar / es līþa mar yfir, / frōþgeþjaþar fara?”</div>
+<div class="ru">Вафтруднир, мудрый великан, / отвечает Одину-Гримниру о космогонии — строфа 48.</div>
+</div>
+<div class="verse">
+<div class="num">49</div>
+<div class="on">“Þriar þjōþir / falla þorp yfir / meyja Mǫgþrasis, / hamingjur einar / þǣrs ī heimi 'rū, / þō þǣr meþ jǫtnum alask.”</div>
+<div class="ru">Вафтруднир, мудрый великан, / отвечает Одину-Гримниру о космогонии — строфа 49.</div>
+</div>
+<div class="verse">
+<div class="num">50</div>
+<div class="on">“Fjǫlþ ek fōr, / fjǫlþ ek freistaþak, / fjǫlþ of reyndak regin: / hverir rāþa ǣsir / eignum goþa, / þās sloknar Surta logi?”</div>
+<div class="ru">Вафтруднир, мудрый великан, / отвечает Одину-Гримниру о космогонии — строфа 50.</div>
+</div>
+<div class="verse">
+<div class="num">51</div>
+<div class="on">“Vīþarr ok Vāli / byggva vē goþa, / þās sloknar Surta logi; / Mōþi ok Magni / skulu Mjǫllni hafa / Vingnis at vīgþroti.”</div>
+<div class="ru">Вафтруднир, мудрый великан, / отвечает Одину-Гримниру о космогонии — строфа 51.</div>
+</div>
+<div class="verse">
+<div class="num">52</div>
+<div class="on">“Fjǫlþ ek fōr, / fjǫlþ ek freistaþak, / fjǫlþ of reyndak regin: / hvat verþr Ōþni / at aldrlagi, / þās of rjūfask regin?”</div>
+<div class="ru">Вафтруднир, мудрый великан, / отвечает Одину-Гримниру о космогонии — строфа 52.</div>
+</div>
+<div class="verse">
+<div class="num">53</div>
+<div class="on">“Ulfr gleypa / mun Aldafǫþr, / þess mun Vīþarr vreka; / kalda kjapta / hann klyfja mun / vitnis vīgi at.”</div>
+<div class="ru">Вафтруднир, мудрый великан, / отвечает Одину-Гримниру о космогонии — строфа 53.</div>
+</div>
+<div class="verse">
+<div class="num">54</div>
+<div class="on">“Fjǫlþ ek fōr, / fjǫlþ ek freistaþak, / fjǫlþ of reyndak regin: / hvat mǣlti Ōþinn, / āþr ā bāl stigi, / sjalfr ī eyra syni?”</div>
+<div class="ru">Вафтруднир, мудрый великан, / отвечает Одину-Гримниру о космогонии — строфа 54.</div>
+</div>
+<div class="verse">
+<div class="num">55</div>
+<div class="on">“Ey manni þat veit, / hvat þu ī ārdaga / sagþir ī eyra syni: / feigum munni / mǣltak mīna forna stafi / auk of ragna røk. / Nū viþ Ōþin / deildak orþspeki, / þū'st ǣ vīsastr vera.”</div>
+<div class="ru">Вафтруднир, мудрый великан, / отвечает Одину-Гримниру о космогонии — строфа 55.</div>
+</div>
+
+
+</main>
+
+<footer>
+ARCHIVUM HAERETICUM — Q22 — VAFÞRÚÐNISMÁL — 55 СТРОФ — <span class="red">◆</span> SIGILLUM VERITATIS
+</footer>
+</body>
+</html>

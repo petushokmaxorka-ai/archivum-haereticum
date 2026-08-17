@@ -1,0 +1,362 @@
+<!DOCTYPE html><html lang="ru"><head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Глава 5. Karma Sanyāsa Yoga — Бхагавадгита</title>
+<style>
+:root{--bg:#0a0a0c;--bg2:#0d0d12;--panel:#13131a;--line:#2a2a33;--red:#c8102e;--red-dark:#8a0a1f;--gold:#c9a227;--gold-bright:#e8b84a;--gold-dim:#8a7119;--ink:#c8102e;--ink-dim:#c9a227;--orig:#c8102e;--accent:#d49a3a;--grid:#1d1d24}
+*{box-sizing:border-box;margin:0;padding:0}body{background:var(--bg);color:var(--ink);font-family:Georgia,'Times New Roman',serif;line-height:1.55}
+a{color:var(--gold);text-decoration:none}a:hover{color:var(--gold-bright);text-decoration:underline}
+header.hos{background:linear-gradient(180deg,var(--red-dark) 0%,#1a0007 30%,var(--bg) 100%);border-bottom:2px solid var(--red);padding:0;position:relative}
+header.hos::before{content:"";position:absolute;left:0;top:0;bottom:0;width:6px;background:var(--red)}
+.hos-strip{display:flex;justify-content:space-between;align-items:center;padding:6px 14px;background:rgba(0,0,0,0.5);border-bottom:1px solid var(--red-dark);font-family:'Courier New',monospace;font-size:10px;letter-spacing:2px;color:var(--ink-dim);text-transform:uppercase}
+.hos-strip .l{color:var(--gold)} .hos-strip .r{color:var(--red);font-weight:bold}
+.hos-body{padding:18px 22px 14px}
+.hos-h1{font-size:1.5rem;letter-spacing:.12em;color:var(--orig);font-weight:normal;margin-bottom:4px;line-height:1.2}
+.hos-h1 .q{color:var(--red);font-family:'Courier New',monospace;font-size:.7em;vertical-align:super;margin-right:6px;padding:3px 7px;background:rgba(200,16,46,0.15);border:1px solid var(--red-dark);letter-spacing:1px}
+.hos-h1 .sig{font-size:.55em;color:var(--gold);font-family:'Courier New',monospace;letter-spacing:2px;margin-left:10px;padding:3px 8px;border:1px solid var(--gold-dim);vertical-align:middle}
+.hos-sub{color:var(--ink-dim);font-size:13px;font-style:italic}
+.stamps{padding:7px 16px;background:var(--bg2);border-bottom:1px solid var(--line);text-align:center;font-family:'Courier New',monospace}
+.stamps span{display:inline-block;border:1px solid var(--gold-dim);color:var(--gold);font-size:9px;letter-spacing:2px;padding:2px 7px;margin:0 2px;text-transform:uppercase}
+.stamps span.fid{color:var(--gold-bright);border-color:var(--gold);background:rgba(201,162,39,0.05)}
+.stamps span.dam{color:var(--red);border-color:var(--red-dark);background:rgba(200,16,46,0.05)}
+.stamps span.cre{color:var(--accent);border-color:var(--accent);background:rgba(212,154,58,0.05)}
+nav.main{padding:8px 18px;background:var(--panel);border-bottom:1px solid var(--line);font-size:12px;text-align:center}
+nav.main a{color:var(--gold);margin:0 6px;letter-spacing:1px;padding:3px 6px}
+.toolbar{display:flex;justify-content:center;gap:6px;flex-wrap:wrap;margin:14px 0 8px;padding:8px;background:var(--panel);border:1px solid var(--line);font-family:'Courier New',monospace}
+.toolbar button{background:transparent;border:1px solid var(--gold-dim);color:var(--gold);padding:5px 11px;font-size:10px;letter-spacing:1px;cursor:pointer;font-family:inherit;text-transform:uppercase}
+.toolbar button:hover{background:var(--gold);color:var(--bg)}
+.meta{color:var(--ink-dim);font-size:11px;font-style:italic;padding:6px 16px;text-align:center;font-family:'Courier New',monospace;letter-spacing:1px}
+.meta b{color:var(--gold);font-style:normal;font-family:Georgia,serif}
+.chap{background:linear-gradient(90deg,var(--red-dark),transparent);color:var(--gold-bright);font-size:.85rem;letter-spacing:.2em;padding:9px 16px;border-bottom:1px solid var(--red-dark);border-top:1px solid var(--red-dark);font-family:'Courier New',monospace;text-transform:uppercase;margin-top:12px}
+main{max-width:1300px;margin:0 auto;padding:0 12px 40px}
+.row{display:grid;grid-template-columns:3rem 1fr 1.1fr;border-bottom:1px solid var(--grid);align-items:start;transition:background 0.15s}
+.row:hover{background:#15110b}
+.num{grid-column:1;color:var(--gold);font-size:12px;padding:10px 4px;text-align:right;font-family:'Courier New',monospace;font-weight:bold;align-self:start}
+.orig,.ar,.gr,.he,.grc,.sk,.dev,.av,.zh,.sa{grid-column:2;padding:10px 12px;font-size:1rem;line-height:1.7;color:var(--orig);background:rgba(201,162,39,0.025);border-right:1px solid var(--gold-dim);border-left:3px solid var(--gold-dim);font-style:italic}
+.ar{direction:rtl;text-align:right;font-family:'Amiri','Scheherazade New','Traditional Arabic',serif;font-size:1.25rem;line-height:1.85}
+.gr,.grc{direction:ltr;font-family:'SBL Greek','Palatino Linotype',Georgia,serif}
+.he{direction:rtl;text-align:right;font-family:'SBL Hebrew','Times New Roman',serif;font-size:1.1rem}
+.sk,.dev{direction:ltr;font-family:'Noto Sans Devanagari','Sanskrit Text',serif;font-size:1.05rem}
+.zh{font-family:'Noto Serif CJK SC','SimSun',serif}
+.ru,.rus{grid-column:3;padding:10px 12px;font-size:.95rem;line-height:1.65;text-align:justify;color:var(--ink)}
+.bismillah{text-align:center;padding:1.5rem 1rem;font-family:'Amiri','Scheherazade New','Traditional Arabic',serif;font-size:1.8rem;color:var(--gold);direction:rtl;background:linear-gradient(180deg,#1a1410,#0a0a0c);border-bottom:1px solid var(--red-dark);letter-spacing:0;margin:14px 16px;border:1px solid var(--red-dark)}
+.bismillah .label{display:block;font-family:'Courier New',monospace;font-size:.7rem;letter-spacing:.25em;color:var(--ink-dim);text-transform:uppercase;direction:ltr;margin-bottom:8px}
+footer{padding:18px;text-align:center;color:var(--ink-dim);font-size:10px;border-top:1px solid var(--line);font-family:'Courier New',monospace;letter-spacing:2px;background:var(--bg2)}
+footer .red{color:var(--red)} footer .gold{color:var(--gold)}
+
+  .hos-sub{font-size:12px}
+  .hos-strip{font-size:9px;letter-spacing:1px;padding:4px 8px}
+  .stamps span{font-size:8px;letter-spacing:1px;padding:2px 5px;margin:0 1px}
+  
+  /* Stack verse vertically on mobile */
+  .verse,.row{grid-template-columns:1fr !important;display:block !important;padding:8px 10px;margin-bottom:8px;border:1px solid var(--line);background:var(--bg2)}
+  .verse .num,.row .num{display:inline-block;background:rgba(0,0,0,0.5);padding:2px 8px;margin-bottom:6px;width:auto;text-align:left;font-size:11px;border:1px solid var(--gold-dim);border-radius:2px}
+  
+  /* Original language - full width */
+  .verse .av,.verse .sk,.verse .he,.verse .grc,.verse .zh,.verse .sa,.verse .ar,.verse .dev,.verse .en,.verse .gr,.verse .egy,.verse .csl,.verse .fa,.verse .ak,.verse .bo,.verse .tib,
+  .row .av,.row .sk,.row .he,.row .grc,.row .zh,.row .sa,.row .ar,.row .dev,.row .en,.row .gr,.row .csl,.row .fa,.row .ak,.row .bo,.row .tib{font-size:1.05rem;line-height:1.7;padding:8px 10px;border-left:3px solid var(--gold-dim);margin:6px 0;background:rgba(201,162,39,0.04);font-style:italic;width:auto !important;display:block}
+  
+  /* Russian - full width */
+  .verse .ru,.row .ru{font-size:.95rem;line-height:1.6;padding:8px 10px;border-left:3px solid var(--red);background:rgba(200,16,46,0.04);margin:6px 0;width:auto !important;display:block;grid-column:1}
+  
+  /* Toolbar */
+  .toolbar{display:flex;flex-wrap:wrap;gap:4px;padding:6px;margin:8px 0}
+  .toolbar button{font-size:10px;padding:5px 8px;letter-spacing:0;flex:1 1 30%;min-width:60px}
+  
+  /* Container */
+  main{padding:0 8px}
+  nav.main{padding:6px 10px;font-size:11px}
+  nav.main a{margin:0 3px;padding:2px 4px}
+  
+  /* Book cards */
+  .book-grid{grid-template-columns:1fr;gap:6px}
+  .book-card{font-size:13px;padding:8px 10px;line-height:1.4}
+  
+  /* Note */
+  .note{font-size:14px;line-height:1.7;padding:14px 18px;margin:14px;color:var(--red);background:rgba(201,162,39,0.04);border:1px solid var(--gold-dim);border-left:4px solid var(--gold)}
+
+  
+  /* Footer */
+  footer{font-size:11px;padding:8px 10px}
+}
+  .row{grid-template-columns:2rem 1fr 1.1fr}
+  .num{font-size:.7rem;padding:.5rem .3rem}
+  .ar{font-size:1.1rem;line-height:1.7;padding:.5rem .4rem}
+  .ru{font-size:.85rem;line-height:1.4;padding:.5rem .4rem}
+}
+
+/* Q20 EGYPTIAN additions */
+.verse .egy{grid-column:1;font-family:'Papyrus','Segoe UI Historic',serif;font-size:1.05rem;line-height:1.8;direction:ltr;text-align:left;color:#e8b84a;background:rgba(232,184,74,0.04);border-right:3px solid var(--gold-dim);padding:12px 14px;font-style:italic}
+.verse .ru{grid-column:2;font-size:0.98rem;line-height:1.75;color:var(--ink);background:rgba(201,162,39,0.025);border-left:1px solid var(--gold-dim);padding:12px 14px}
+.verse .transl-note{grid-column:1/-1;padding:6px 14px;font-size:0.78rem;color:var(--ink-dim);font-style:italic;text-align:right;background:rgba(0,0,0,0.15);border-top:1px solid var(--line)}
+.verse .num,.verse .transl-note{color:var(--gold-bright)}
+
+.verse .av,.verse .sk,.verse .he,.verse .grc,.verse .zh,.verse .sa,.verse .ar,.verse .dev,.verse .en,.verse .gr,.verse .csl,.verse .fa,.verse .ak,.verse .bo,.verse .tib{font-family:'Times New Roman',Georgia,serif;font-size:1.05rem;line-height:1.7;color:var(--orig);background:rgba(201,162,39,0.04);border-right:3px solid var(--gold-dim);padding:12px 14px;direction:ltr;text-align:left;font-style:italic}
+.row .av,.row .sk,.row .he,.row .grc,.row .zh,.row .sa,.row .ar,.row .dev,.row .en,.row .gr,.row .csl,.row .fa,.row .ak,.row .bo,.row .tib{font-family:'Times New Roman',Georgia,serif;font-size:1.05rem;line-height:1.7;color:var(--orig);background:rgba(201,162,39,0.04);padding:10px 12px;direction:ltr;text-align:left}
+.verse{display:grid;grid-template-columns:3.2rem 1fr 1.1fr;border-bottom:1px solid var(--grid);align-items:start;transition:background 0.15s}
+.row{display:grid;grid-template-columns:3.2rem 1fr 1.1fr 1fr;border-bottom:1px solid var(--grid);align-items:start;transition:background 0.15s}
+.num{font-family:'Courier New',monospace;font-size:11px;color:var(--gold);text-align:center;padding:12px 4px;background:rgba(0,0,0,0.3);border-right:1px solid var(--line);font-weight:bold;align-self:start}
+.ru{font-size:.92rem;line-height:1.6;color:var(--ink);padding:10px 12px;background:rgba(255,255,255,0.01);border-left:1px solid var(--line);align-self:start;grid-column:3}
+
+/* ARCHIVUM HAERETICUM — Original script fonts */
+
+
+
+
+
+
+
+@font-face{font-family:'Noto Sans Cuneiform';font-style:normal;font-weight:400;font-display:block;src:url('/archivum-haereticum/fonts/noto-cuneiform.ttf') format('truetype')}
+@font-face{font-family:'Noto Sans Egyptian Hieroglyphs';font-style:normal;font-weight:400;font-display:block;src:url('/archivum-haereticum/fonts/noto-hieroglyphs.ttf') format('truetype')}
+@font-face{font-family:'Noto Sans Coptic';font-style:normal;font-weight:400;font-display:block;src:url('/archivum-haereticum/fonts/noto-coptic.ttf') format('truetype')}
+@font-face{font-family:'Noto Serif JP';font-style:normal;font-weight:400;font-display:swap;src:local('Noto Serif JP'),local('NotoSerifJP-Regular')}
+@font-face{font-family:'Noto Sans Devanagari';font-style:normal;font-weight:400;font-display:swap;src:local('Noto Sans Devanagari'),local('NotoSansDevanagari-Regular')}
+@font-face{font-family:'Noto Sans Tibetan';font-style:normal;font-weight:400;font-display:swap;src:local('Noto Sans Tibetan'),local('NotoSansTibetan-Regular')}
+@font-face{font-family:'SBL Greek';font-style:normal;font-weight:400;font-display:swap;src:local('SBL Greek'),local('SBLGreek')}@media(max-width:760px){
+.verse,.row{grid-template-columns:1fr !important;display:block !important;padding:12px 14px;margin:8px 0;border:1px solid var(--line);background:var(--bg2);width:100% !important;max-width:100% !important;overflow:hidden;box-sizing:border-box}
+.verse .num,.row .num{display:inline-block;background:rgba(0,0,0,0.5);padding:3px 10px;margin-bottom:8px;width:auto;text-align:left;font-size:11px;border:1px solid var(--gold-dim);border-radius:2px;font-family:'Courier New',monospace;min-width:0 !important}
+.verse .on,.verse .ru,.verse .csl,.verse .sk,.verse .he,.verse .grc,.verse .zh,.verse .ar,.verse .fa,.verse .bo,.verse .ak,.verse .cop,.verse .pali,.verse .sk-deva,.verse .eg-hiero,.verse .ak-cun,.verse .cop-uni,.verse .ja,.verse .pali-deva,.verse .qu,.verse .av,.verse .egy,.verse .csl,.verse .gr,.verse .on-r,
+.row .on,.row .ru,.row .csl,.row .sk,.row .he,.row .grc,.row .zh,.row .ar,.row .fa,.row .bo,.row .ak,.row .cop,.row .pali,.row .sk-deva,.row .eg-hiero,.row .ak-cun,.row .cop-uni,.row .ja,.row .pali-deva,.row .qu,.row .av,.row .egy,.row .csl,.row .gr{font-size:1.05rem !important;line-height:1.65 !important;padding:10px 12px !important;border-left:3px solid var(--gold-dim);margin:6px 0;background:rgba(201,162,39,0.04);width:auto !important;display:block !important;min-width:0 !important;word-wrap:break-word;overflow-wrap:break-word;max-width:100% !important;box-sizing:border-box}
+.verse .ru,.row .ru{border-left:3px solid var(--red);background:rgba(200,16,46,0.04)}
+.hos-h1{font-size:1.2rem;letter-spacing:.05em;line-height:1.3}
+.hos-sub{font-size:12px}
+.hos-strip{font-size:9px;letter-spacing:1px;padding:4px 8px}
+.stamps span{font-size:8px;letter-spacing:1px;padding:2px 5px;margin:0 1px}
+main{padding:0 8px;width:100% !important;max-width:100% !important;box-sizing:border-box}
+nav.main{padding:6px 10px;font-size:11px}
+nav.main a{margin:0 3px;padding:2px 4px}
+.toolbar button{font-size:10px;padding:5px 8px;letter-spacing:0;flex:1 1 30%;min-width:60px}
+.book-grid{grid-template-columns:1fr;gap:6px}
+.book-card{font-size:13px;padding:8px 10px;line-height:1.4}
+.note{font-size:14px;line-height:1.7;padding:14px 18px;margin:14px;color:var(--ink);background:rgba(201,162,39,0.04);border:1px solid var(--gold-dim);border-left:4px solid var(--gold)}
+footer{font-size:11px;padding:8px 10px}
+}
+</style>
+</head><body>
+<header class="hos">
+<div class="hos-strip"><span class="l">ARCHIVUM HAERETICUM — CORPUS DIVINUS</span><span class="r">Q10 — BHAGAVADGITA</span></div>
+<div class="hos-body">
+<h1 class="hos-h1"><span class="q">Q10</span>Глава 5. Karma Sanyāsa Yoga — Бхагавадгита</h1>
+<div class="hos-sub">Карма-санньяса Йога — Отречение от действий · 29 стихов</div>
+</div>
+</header>
+<div class="stamps">
+<span class="fid">◆ FIDELIS</span>
+<span class="cre">✚ MYSTICA</span>
+<span class="dam">✠ GITICA</span>
+</div>
+<nav class="main">
+<a href="../index.html">◀ CORPUS DIVINUS</a>
+<a href="index.html">○ ОБЗОР</a>
+</nav>
+<main>
+<div class="toolbar">
+<button onclick="toggleAll(true)">РАЗВЕРНУТЬ</button>
+<button onclick="toggleAll(false)">СВЕРНУТЬ</button>
+<button onclick="toggleOrig()">☀ ОРИГИНАЛ</button>
+<button onclick="toggleRu()">☾ ПЕРЕВОД</button>
+<button onclick="resetView()">◉ ОБА</button>
+</div>
+<div class="meta">◆ СВЯЩЕННЫЙ ТЕКСТ ◆</div>
+
+<div class="verse">
+<div class="num">1</div>
+<div class="sk">अर्जुन उवाच<br>संन्यासं कर्मणां कृष्ण पुनर्योगं च शंससि।<br>यच्छ्रेय एतयोरेकं तन्मे ब्रूहि सुनिश्िचतम्।।5.1।।<span class="translit">arjuna uvācha
+sannyāsaṁ karmaṇāṁ kṛiṣhṇa punar yogaṁ cha śhansasi
+yach chhreya etayor ekaṁ tan me brūhi su-niśhchitam</span></div>
+<div class="ru">Карма-йогу ты восхваляешь, а затем - прекращение действий. Что же лучше из них - то иль это? Дай ответ, уничтожив сомненье. Благой Господь сказал:</div>
+</div>
+<div class="verse">
+<div class="num">2</div>
+<div class="sk">श्री भगवानुवाच<br>संन्यासः कर्मयोगश्च निःश्रेयसकरावुभौ।<br>तयोस्तु कर्मसंन्यासात्कर्मयोगो विशिष्यते।।5.2।।<span class="translit">śhrī bhagavān uvācha
+sannyāsaḥ karma-yogaśh cha niḥśhreyasa-karāvubhau
+tayos tu karma-sannyāsāt karma-yogo viśhiṣhyate</span></div>
+<div class="ru">Карма-йога и дел недеянье приведут тебя к высшему благу, карма-йога, однако, лучше отреченья от внешних действий.</div>
+</div>
+<div class="verse">
+<div class="num">3</div>
+<div class="sk">ज्ञेयः स नित्यसंन्यासी यो न द्वेष्टि न काङ्क्षति।<br>निर्द्वन्द्वो हि महाबाहो सुखं बन्धात्प्रमुच्यते।।5.3।।<span class="translit">jñeyaḥ sa nitya-sannyāsī yo na dveṣhṭi na kāṅkṣhati
+nirdvandvo hi mahā-bāho sukhaṁ bandhāt pramuchyate</span></div>
+<div class="ru">Называй того отрешенным, кто лишен вожделенья и злобы; ведь кто двойственностью не скован, узы действий легко разрушает.</div>
+</div>
+<div class="verse">
+<div class="num">4</div>
+<div class="sk">सांख्ययोगौ पृथग्बालाः प्रवदन्ति न पण्डिताः।<br>एकमप्यास्थितः सम्यगुभयोर्विन्दते फलम्।।5.4।।<span class="translit">sānkhya-yogau pṛithag bālāḥ pravadanti na paṇḍitāḥ
+ekamapyāsthitaḥ samyag ubhayor vindate phalam</span></div>
+<div class="ru">Лишь глупцы утверждают: путь санкхьи от пути карма-йоги отличен. Кто одним лишь путем стремится, тот в конце плод обоих получит.</div>
+</div>
+<div class="verse">
+<div class="num">5</div>
+<div class="sk">यत्सांख्यैः प्राप्यते स्थानं तद्योगैरपि गम्यते।<br>एकं सांख्यं च योगं च यः पश्यति स पश्यति।।5.5।।<span class="translit">yat sānkhyaiḥ prāpyate sthānaṁ tad yogair api gamyate
+ekaṁ sānkhyaṁ cha yogaṁ cha yaḥ paśhyati sa paśhyati</span></div>
+<div class="ru">Цели, к которой приводит санкхья, ты достигнешь и средствами йоги; кто в них видит одно и то же, тот поистине видит, сын Притхи.</div>
+</div>
+<div class="verse">
+<div class="num">6</div>
+<div class="sk">संन्यासस्तु महाबाहो दुःखमाप्तुमयोगतः।<br>योगयुक्तो मुनिर्ब्रह्म नचिरेणाधिगच्छति।।5.6।।<span class="translit">sannyāsas tu mahā-bāho duḥkham āptum ayogataḥ
+yoga-yukto munir brahma na chireṇādhigachchhati</span></div>
+<div class="ru">Ведь без йоги ты, могучерукий, отрешенности вряд ли достигнешь, но, коль в йоге мудрец безупречен, он приходит к Брахману вскоре.</div>
+</div>
+<div class="verse">
+<div class="num">7</div>
+<div class="sk">योगयुक्तो विशुद्धात्मा विजितात्मा जितेन्द्रियः।<br>सर्वभूतात्मभूतात्मा कुर्वन्नपि न लिप्यते।।5.7।।<span class="translit">yoga-yukto viśhuddhātmā vijitātmā jitendriyaḥ
+sarva-bhūtātma-bhūtātmā kurvann api na lipyate</span></div>
+<div class="ru">Стойкий в йоге, очистивший сердце, победив свою душу и чувства, душу сливший с душой всякой твари, даже действуя, он не связан. 8. &quot;Не свершаю я действий&quot; - пусть йогин, суть познав, так всегда помышляет - обоняя, дыша, ощущая, испражняясь, ходя, засыпая.</div>
+</div>
+<div class="verse">
+<div class="num">8</div>
+<div class="sk">नैव किंचित्करोमीति युक्तो मन्येत तत्त्ववित्।<br>पश्यन् श्रृणवन्स्पृशञ्जिघ्रन्नश्नन्गच्छन्स्वपन् श्वसन्।।5.8।।<span class="translit">naiva kiñchit karomīti yukto manyeta tattva-vit
+paśhyañ śhṛiṇvan spṛiśhañjighrann aśhnangachchhan svapañśhvasan
+ pralapan visṛijan gṛihṇann unmiṣhan nimiṣhann api
+indriyāṇīndriyārtheṣhu vartanta iti dhārayan</span></div>
+<div class="ru pali-only"><i>(в распарсенном Семенцове отсутствует)</i></div>
+</div>
+<div class="verse">
+<div class="num">9</div>
+<div class="sk">प्रलपन्विसृजन्गृह्णन्नुन्मिषन्निमिषन्नपि।<br>इन्द्रियाणीन्द्रियार्थेषु वर्तन्त इति धारयन्।।5.9।।<span class="translit">pralapan visṛjan gṛhṇann unmiṣan nimiṣann api indriyāṇīndriyārtheṣu vartanta iti dhārayan</span></div>
+<div class="ru">Говоря иль хватая рукою, видя, слыша, глазами моргая, он во всех этих действиях видит лишь вращение чувств в предметах.</div>
+</div>
+<div class="verse">
+<div class="num">10</div>
+<div class="sk">ब्रह्मण्याधाय कर्माणि सङ्गं त्यक्त्वा करोति यः।<br>लिप्यते न स पापेन पद्मपत्रमिवाम्भसा।।5.10।।<span class="translit">brahmaṇyādhāya karmāṇi saṅgaṁ tyaktvā karoti yaḥ
+lipyate na sa pāpena padma-patram ivāmbhasā</span></div>
+<div class="ru">Тот, кто сердцем не связан, деянья лишь на Брахмана возлагает, тот грехом не пятнается, Партха, словно лотоса лист - водою.</div>
+</div>
+<div class="verse">
+<div class="num">11</div>
+<div class="sk">कायेन मनसा बुद्ध्या केवलैरिन्द्रियैरपि।<br>योगिनः कर्म कुर्वन्ति सङ्गं त्यक्त्वाऽऽत्मशुद्धये।।5.11।।<span class="translit">kāyena manasā buddhyā kevalair indriyair api
+yoginaḥ karma kurvanti saṅgaṁ tyaktvātma-śhuddhaye</span></div>
+<div class="ru">Непривязанный, для очищенья совершает все действия йогин, напрягая свое лишь тело, сердце, органы чувств иль мысли.</div>
+</div>
+<div class="verse">
+<div class="num">12</div>
+<div class="sk">युक्तः कर्मफलं त्यक्त्वा शान्तिमाप्नोति नैष्ठिकीम्।<br>अयुक्तः कामकारेण फले सक्तो निबध्यते।।5.12।।<span class="translit">yuktaḥ karma-phalaṁ tyaktvā śhāntim āpnoti naiṣhṭhikīm
+ayuktaḥ kāma-kāreṇa phale sakto nibadhyate</span></div>
+<div class="ru">Йогин, действий плоды покидая, обретает умиротворенье; кто вне йоги - к плодам устремляясь, вожделеньем опутан бывает.</div>
+</div>
+<div class="verse">
+<div class="num">13</div>
+<div class="sk">सर्वकर्माणि मनसा संन्यस्यास्ते सुखं वशी।<br>नवद्वारे पुरे देही नैव कुर्वन्न कारयन्।।5.13।।<span class="translit">sarva-karmāṇi manasā sannyasyāste sukhaṁ vaśhī
+nava-dvāre pure dehī naiva kurvan na kārayan</span></div>
+<div class="ru">Отрешившись от дел, беспечален станет дух в граде девятивратном: сам обузданный, дел не творит он и к делам никого не толкает.</div>
+</div>
+<div class="verse">
+<div class="num">14</div>
+<div class="sk">न कर्तृत्वं न कर्माणि लोकस्य सृजति प्रभुः।<br>न कर्मफलसंयोगं स्वभावस्तु प्रवर्तते।।5.14।।<span class="translit">na kartṛitvaṁ na karmāṇi lokasya sṛijati prabhuḥ
+na karma-phala-saṅyogaṁ svabhāvas tu pravartate</span></div>
+<div class="ru">Не рождает Господь ни действий, ни свершителей их, Арджуна; не творит Он привязанность к плоду: лишь природа в делах пребывает.</div>
+</div>
+<div class="verse">
+<div class="num">15</div>
+<div class="sk">नादत्ते कस्यचित्पापं न चैव सुकृतं विभुः।<br>अज्ञानेनावृतं ज्ञानं तेन मुह्यन्ति जन्तवः।।5.15।।<span class="translit">nādatte kasyachit pāpaṁ na chaiva sukṛitaṁ vibhuḥ
+ajñānenāvṛitaṁ jñānaṁ tena muhyanti jantavaḥ</span></div>
+<div class="ru">Властелин на себя не приемлет ни благого, ни злого деянья; в ослепленье бывают лишь люди, чье незнанием знание скрыто.</div>
+</div>
+<div class="verse">
+<div class="num">16</div>
+<div class="sk">ज्ञानेन तु तदज्ञानं येषां नाशितमात्मनः।<br>तेषामादित्यवज्ज्ञानं प्रकाशयति तत्परम्।।5.16।।<span class="translit">jñānena tu tad ajñānaṁ yeṣhāṁ nāśhitam ātmanaḥ
+teṣhām āditya-vaj jñānaṁ prakāśhayati tat param</span></div>
+<div class="ru">Но кто Атмана видит, Партха, тот незнанье свое уничтожил: его знание, словно солнце, это Высшее здесь освещает.</div>
+</div>
+<div class="verse">
+<div class="num">17</div>
+<div class="sk">तद्बुद्धयस्तदात्मानस्तन्निष्ठास्तत्परायणाः।<br>गच्छन्त्यपुनरावृत्तिं ज्ञाननिर्धूतकल्मषाः।।5.17।।<span class="translit">tad-buddhayas tad-ātmānas tan-niṣhṭhās tat-parāyaṇāḥ
+gachchhantyapunar-āvṛittiṁ jñāna-nirdhūta-kalmaṣhāḥ</span></div>
+<div class="ru">Утвердив на нем сердце и мысли, всей душой лишь к нему устремившись, тот, кто знаньем грехи уничтожил, устремляется к невозвращенью.</div>
+</div>
+<div class="verse">
+<div class="num">18</div>
+<div class="sk">विद्याविनयसंपन्ने ब्राह्मणे गवि हस्तिनि।<br>शुनि चैव श्वपाके च पण्डिताः समदर्शिनः।।5.18।।<span class="translit">vidyā-vinaya-sampanne brāhmaṇe gavi hastini
+śhuni chaiva śhva-pāke cha paṇḍitāḥ sama-darśhinaḥ</span></div>
+<div class="ru">Тот, кто знает, - не видит различий между праведным брахманом, Партха, и коровой, слоном, собакой или тем, кто собаку съедает.</div>
+</div>
+<div class="verse">
+<div class="num">19</div>
+<div class="sk">इहैव तैर्जितः सर्गो येषां साम्ये स्थितं मनः।<br>निर्दोषं हि समं ब्रह्म तस्माद्ब्रह्मणि ते स्थिताः।।5.19।।<span class="translit">ihaiva tair jitaḥ sargo yeṣhāṁ sāmye sthitaṁ manaḥ
+nirdoṣhaṁ hi samaṁ brahma tasmād brahmaṇi te sthitāḥ</span></div>
+<div class="ru">Те, кто тождества сердцем достигли, уже здесь победили сансару; чист ведь Брахман и самотождествен: значит, в Брахмане их обитанье.</div>
+</div>
+<div class="verse">
+<div class="num">20</div>
+<div class="sk">न प्रहृष्येत्प्रियं प्राप्य नोद्विजेत्प्राप्य चाप्रियम्।<br>स्थिरबुद्धिरसम्मूढो ब्रह्मविद्ब्रह्मणि स्थितः।।5.20।।<span class="translit">na prahṛiṣhyet priyaṁ prāpya nodvijet prāpya chāpriyam
+sthira-buddhir asammūḍho brahma-vid brahmaṇi sthitaḥ</span></div>
+<div class="ru">Пусть он сладостью не усладится, пусть от горечи он не горюет; несмущаемый, мыслью твердый, зная Брахмана, в нем живет он.</div>
+</div>
+<div class="verse">
+<div class="num">21</div>
+<div class="sk">बाह्यस्पर्शेष्वसक्तात्मा विन्दत्यात्मनि यत्सुखम्।<br>स ब्रह्मयोगयुक्तात्मा सुखमक्षयमश्नुते।।5.21।।<span class="translit">bāhya-sparśheṣhvasaktātmā vindatyātmani yat sukham
+sa brahma-yoga-yuktātmā sukham akṣhayam aśhnute</span></div>
+<div class="ru">Кто находит лишь в атмане радость, не привязан к миру предметов - тот вкушает нетленное счастье, йогой Брахмана сердце очистив.</div>
+</div>
+<div class="verse">
+<div class="num">22</div>
+<div class="sk">ये हि संस्पर्शजा भोगा दुःखयोनय एव ते।<br>आद्यन्तवन्तः कौन्तेय न तेषु रमते बुधः।।5.22।।<span class="translit">ye hi sansparśha-jā bhogā duḥkha-yonaya eva te
+ādyantavantaḥ kaunteya na teṣhu ramate budhaḥ</span></div>
+<div class="ru">Ибо внешнего мира услады за собою приводят страданья; в них отрады не ищет мудрый: ведь приходят они и уходят.</div>
+</div>
+<div class="verse">
+<div class="num">23</div>
+<div class="sk">शक्नोतीहैव यः सोढुं प्राक्शरीरविमोक्षणात्।<br>कामक्रोधोद्भवं वेगं स युक्तः स सुखी नरः।।5.23।।<span class="translit">śhaknotīhaiva yaḥ soḍhuṁ prāk śharīra-vimokṣhaṇāt
+kāma-krodhodbhavaṁ vegaṁ sa yuktaḥ sa sukhī naraḥ</span></div>
+<div class="ru">Еще здесь, в этом смертном теле, кто претерпит невозмутимо вожделенье иль злобы ярость - счастлив тот человек, он - йогин.</div>
+</div>
+<div class="verse">
+<div class="num">24</div>
+<div class="sk">योऽन्तःसुखोऽन्तरारामस्तथान्तर्ज्योतिरेव यः।<br>स योगी ब्रह्मनिर्वाणं ब्रह्मभूतोऽधिगच्छति।।5.24।।<span class="translit">yo &#x27;ntaḥ-sukho &#x27;ntar-ārāmas tathāntar-jyotir eva yaḥ
+sa yogī brahma-nirvāṇaṁ brahma-bhūto &#x27;dhigachchhati</span></div>
+<div class="ru">Кто внутри обретает радость, кто внутри видит свет и счастье - этот Брахманом ставший йогин достигает Брахманирваны.</div>
+</div>
+<div class="verse">
+<div class="num">25</div>
+<div class="sk">लभन्ते ब्रह्मनिर्वाणमृषयः क्षीणकल्मषाः।<br>छिन्नद्वैधा यतात्मानः सर्वभूतहिते रताः।।5.25।।<span class="translit">labhante brahma-nirvāṇam ṛiṣhayaḥ kṣhīṇa-kalmaṣhāḥ
+chhinna-dvaidhā yatātmānaḥ sarva-bhūta-hite ratāḥ</span></div>
+<div class="ru">Кто обуздан, без двойственных качеств, кто во благе существ видит радость - тот, лишенный греха провидец, этой Брахманирваны достигнет.</div>
+</div>
+<div class="verse">
+<div class="num">26</div>
+<div class="sk">कामक्रोधवियुक्तानां यतीनां यतचेतसाम्।<br>अभितो ब्रह्मनिर्वाणं वर्तते विदितात्मनाम्।।5.26।।<span class="translit">kāma-krodha-viyuktānāṁ yatīnāṁ yata-chetasām
+abhito brahma-nirvāṇaṁ vartate viditātmanām</span></div>
+<div class="ru">Путь недолог до Брахманирваны для аскетов, себя победивших, для лишенных желаний и гнева, обладающих атмана знаньем.</div>
+</div>
+<div class="verse">
+<div class="num">27</div>
+<div class="sk">स्पर्शान्कृत्वा बहिर्बाह्यांश्चक्षुश्चैवान्तरे भ्रुवोः।<br>प्राणापानौ समौ कृत्वा नासाभ्यन्तरचारिणौ।।5.27।।<span class="translit">sparśhān kṛitvā bahir bāhyānśh chakṣhuśh chaivāntare bhruvoḥ
+prāṇāpānau samau kṛitvā nāsābhyantara-chāriṇau
+ yatendriya-mano-buddhir munir mokṣha-parāyaṇaḥ
+vigatechchhā-bhaya-krodho yaḥ sadā mukta eva saḥ</span></div>
+<div class="ru">Отвратившись от внешних предметов, меж бровями свой взор уставив, уравняв внутри носа дыханья, что зовутся апана и прана, 28. кто без страсти, без страха, без злобы, обуздавший мысль, чувства и сердце, устремленный лишь к освобожденью, - тот молчальник всегда свободен.</div>
+</div>
+<div class="verse">
+<div class="num">28</div>
+<div class="sk">यतेन्द्रियमनोबुद्धिर्मुनिर्मोक्षपरायणः।<br>विगतेच्छाभयक्रोधो यः सदा मुक्त एव सः।।5.28।।<span class="translit">yatendriya-mano-buddhir  munir   mokṣa-parāyaṇaḥ vigatecchā-bhaya-krodho yaḥ sadā    mukta   eva saḥ</span></div>
+<div class="ru pali-only"><i>(в распарсенном Семенцове отсутствует)</i></div>
+</div>
+<div class="verse">
+<div class="num">29</div>
+<div class="sk">भोक्तारं यज्ञतपसां सर्वलोकमहेश्वरम्।<br>सुहृदं सर्वभूतानां ज्ञात्वा मां शान्तिमृच्छति।।5.29।।<span class="translit">bhoktāraṁ yajña-tapasāṁ sarva-loka-maheśhvaram
+suhṛidaṁ sarva-bhūtānāṁ jñātvā māṁ śhāntim ṛichchhati</span></div>
+<div class="ru">Жертв и подвигов всех вкусителя, всех миров божество и Владыку, кто Меня, всех существ друга, знает - тот достигнет умиротворенья. Om namah shivaya Оглавление Предыдущая глава Следующая глава Используются технологии uCoz</div>
+</div>
+
+</main>
+<footer>ARCHIVUM HAERETICUM · Q10 · <span class="red">◆</span> SIGILLUM VERITATIS · <span class="gold">DATUM 160.M3</span> · FIDELIS</footer>
+<script>
+function toggleAll(open){
+  document.querySelectorAll('details').forEach(d=>d.open=open);
+  document.querySelectorAll('.verse,.row').forEach(r=>{r.style.display=open?'grid':'none';});
+}
+function toggleOrig(){
+  document.querySelectorAll('.verse,.row').forEach(r=>{r.style.display='grid';});
+  document.querySelectorAll('.verse .ru,.row .ru').forEach(e=>e.style.display='none');
+  document.querySelectorAll('.verse .av,.verse .sk,.verse .he,.verse .grc,.verse .zh,.verse .sa,.verse .ar,.verse .dev,.verse .en,.verse .gr,.verse .egy,.verse .csl,.verse .fa,.verse .ak,.verse .bo,.verse .tib').forEach(e=>e.style.display='');
+}
+function toggleRu(){
+  document.querySelectorAll('.verse .ru,.row .ru').forEach(e=>e.style.display='');
+  document.querySelectorAll('.verse .av,.verse .sk,.verse .he,.verse .grc,.verse .zh,.verse .sa,.verse .ar,.verse .dev,.verse .en,.verse .gr,.verse .egy,.verse .csl,.verse .fa,.verse .ak,.verse .bo,.verse .tib').forEach(e=>e.style.display='none');
+}
+function resetView(){
+  document.querySelectorAll('.verse,.row').forEach(r=>{r.style.display='grid';});
+  document.querySelectorAll('.verse .av,.verse .sk,.verse .he,.verse .grc,.verse .zh,.verse .sa,.verse .ar,.verse .dev,.verse .en,.verse .gr,.verse .egy,.verse .csl,.verse .fa,.verse .ak,.verse .bo,.verse .tib,.verse .ru,.row .ru').forEach(e=>e.style.display='');
+}
+</script>
+</body></html>

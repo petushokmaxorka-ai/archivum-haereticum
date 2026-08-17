@@ -1,0 +1,446 @@
+<!DOCTYPE html><html lang="ru"><head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Глава 7. Раджа-вартта — Manu-smriti</title>
+<style>
+:root{--bg:#0a0a0c;--bg2:#0d0d12;--panel:#13131a;--line:#2a2a33;--red:#c8102e;--red-dark:#8a0a1f;--gold:#c9a227;--gold-bright:#e8b84a;--gold-dim:#8a7119;--ink:#c8102e;--ink-dim:#c9a227;--orig:#c8102e;--accent:#d49a3a;--grid:#1d1d24}
+*{box-sizing:border-box;margin:0;padding:0}body{background:var(--bg);color:var(--ink);font-family:Georgia,'Times New Roman',serif;line-height:1.55}
+a{color:var(--gold);text-decoration:none}a:hover{color:var(--gold-bright);text-decoration:underline}
+header.hos{background:linear-gradient(180deg,var(--red-dark) 0%,#1a0007 30%,var(--bg) 100%);border-bottom:2px solid var(--red);padding:0;position:relative}
+header.hos::before{content:"";position:absolute;left:0;top:0;bottom:0;width:6px;background:var(--red)}
+.hos-strip{display:flex;justify-content:space-between;align-items:center;padding:6px 14px;background:rgba(0,0,0,0.5);border-bottom:1px solid var(--red-dark);font-family:'Courier New',monospace;font-size:10px;letter-spacing:2px;color:var(--ink-dim);text-transform:uppercase}
+.hos-strip .l{color:var(--gold)} .hos-strip .r{color:var(--red);font-weight:bold}
+.hos-body{padding:18px 22px 14px}
+.hos-h1{font-size:1.5rem;letter-spacing:.12em;color:var(--orig);font-weight:normal;margin-bottom:4px;line-height:1.2}
+.hos-h1 .q{color:var(--red);font-family:'Courier New',monospace;font-size:.7em;vertical-align:super;margin-right:6px;padding:3px 7px;background:rgba(200,16,46,0.15);border:1px solid var(--red-dark);letter-spacing:1px}
+.hos-h1 .sig{font-size:.55em;color:var(--gold);font-family:'Courier New',monospace;letter-spacing:2px;margin-left:10px;padding:3px 8px;border:1px solid var(--gold-dim);vertical-align:middle}
+.hos-sub{color:var(--ink-dim);font-size:13px;font-style:italic}
+.stamps{padding:7px 16px;background:var(--bg2);border-bottom:1px solid var(--line);text-align:center;font-family:'Courier New',monospace}
+.stamps span{display:inline-block;border:1px solid var(--gold-dim);color:var(--gold);font-size:9px;letter-spacing:2px;padding:2px 7px;margin:0 2px;text-transform:uppercase}
+.stamps span.fid{color:var(--gold-bright);border-color:var(--gold);background:rgba(201,162,39,0.05)}
+.stamps span.dam{color:var(--red);border-color:var(--red-dark);background:rgba(200,16,46,0.05)}
+.stamps span.cre{color:var(--accent);border-color:var(--accent);background:rgba(212,154,58,0.05)}
+nav.main{padding:8px 18px;background:var(--panel);border-bottom:1px solid var(--line);font-size:12px;text-align:center}
+nav.main a{color:var(--gold);margin:0 6px;letter-spacing:1px;padding:3px 6px}
+.toolbar{display:flex;justify-content:center;gap:6px;flex-wrap:wrap;margin:14px 0 8px;padding:8px;background:var(--panel);border:1px solid var(--line);font-family:'Courier New',monospace}
+.toolbar button{background:transparent;border:1px solid var(--gold-dim);color:var(--gold);padding:5px 11px;font-size:10px;letter-spacing:1px;cursor:pointer;font-family:inherit;text-transform:uppercase}
+.toolbar button:hover{background:var(--gold);color:var(--bg)}
+.meta{color:var(--ink-dim);font-size:11px;font-style:italic;padding:6px 16px;text-align:center;font-family:'Courier New',monospace;letter-spacing:1px}
+.meta b{color:var(--gold);font-style:normal;font-family:Georgia,serif}
+.chap{background:linear-gradient(90deg,var(--red-dark),transparent);color:var(--gold-bright);font-size:.85rem;letter-spacing:.2em;padding:9px 16px;border-bottom:1px solid var(--red-dark);border-top:1px solid var(--red-dark);font-family:'Courier New',monospace;text-transform:uppercase;margin-top:12px}
+main{max-width:1300px;margin:0 auto;padding:0 12px 40px}
+.row{display:grid;grid-template-columns:3rem 1fr 1.1fr;border-bottom:1px solid var(--grid);align-items:start;transition:background 0.15s}
+.row:hover{background:#15110b}
+.num{grid-column:1;color:var(--gold);font-size:12px;padding:10px 4px;text-align:right;font-family:'Courier New',monospace;font-weight:bold;align-self:start}
+.orig,.ar,.gr,.he,.grc,.sk,.dev,.av,.zh,.sa{grid-column:2;padding:10px 12px;font-size:1rem;line-height:1.7;color:var(--orig);background:rgba(201,162,39,0.025);border-right:1px solid var(--gold-dim);border-left:3px solid var(--gold-dim);font-style:italic}
+.ar{direction:rtl;text-align:right;font-family:'Amiri','Scheherazade New','Traditional Arabic',serif;font-size:1.25rem;line-height:1.85}
+.gr,.grc{direction:ltr;font-family:'SBL Greek','Palatino Linotype',Georgia,serif}
+.he{direction:rtl;text-align:right;font-family:'SBL Hebrew','Times New Roman',serif;font-size:1.1rem}
+.sk,.dev{direction:ltr;font-family:'Noto Sans Devanagari','Sanskrit Text',serif;font-size:1.05rem}
+.zh{font-family:'Noto Serif CJK SC','SimSun',serif}
+.ru,.rus{grid-column:3;padding:10px 12px;font-size:.95rem;line-height:1.65;text-align:justify;color:var(--ink)}
+.bismillah{text-align:center;padding:1.5rem 1rem;font-family:'Amiri','Scheherazade New','Traditional Arabic',serif;font-size:1.8rem;color:var(--gold);direction:rtl;background:linear-gradient(180deg,#1a1410,#0a0a0c);border-bottom:1px solid var(--red-dark);letter-spacing:0;margin:14px 16px;border:1px solid var(--red-dark)}
+.bismillah .label{display:block;font-family:'Courier New',monospace;font-size:.7rem;letter-spacing:.25em;color:var(--ink-dim);text-transform:uppercase;direction:ltr;margin-bottom:8px}
+footer{padding:18px;text-align:center;color:var(--ink-dim);font-size:10px;border-top:1px solid var(--line);font-family:'Courier New',monospace;letter-spacing:2px;background:var(--bg2)}
+footer .red{color:var(--red)} footer .gold{color:var(--gold)}
+
+  .hos-sub{font-size:12px}
+  .hos-strip{font-size:9px;letter-spacing:1px;padding:4px 8px}
+  .stamps span{font-size:8px;letter-spacing:1px;padding:2px 5px;margin:0 1px}
+  
+  /* Stack verse vertically on mobile */
+  .verse,.row{grid-template-columns:1fr !important;display:block !important;padding:8px 10px;margin-bottom:8px;border:1px solid var(--line);background:var(--bg2)}
+  .verse .num,.row .num{display:inline-block;background:rgba(0,0,0,0.5);padding:2px 8px;margin-bottom:6px;width:auto;text-align:left;font-size:11px;border:1px solid var(--gold-dim);border-radius:2px}
+  
+  /* Original language - full width */
+  .verse .av,.verse .sk,.verse .he,.verse .grc,.verse .zh,.verse .sa,.verse .ar,.verse .dev,.verse .en,.verse .gr,.verse .egy,.verse .csl,.verse .fa,.verse .ak,.verse .bo,.verse .tib,
+  .row .av,.row .sk,.row .he,.row .grc,.row .zh,.row .sa,.row .ar,.row .dev,.row .en,.row .gr,.row .csl,.row .fa,.row .ak,.row .bo,.row .tib{font-size:1.05rem;line-height:1.7;padding:8px 10px;border-left:3px solid var(--gold-dim);margin:6px 0;background:rgba(201,162,39,0.04);font-style:italic;width:auto !important;display:block}
+  
+  /* Russian - full width */
+  .verse .ru,.row .ru{font-size:.95rem;line-height:1.6;padding:8px 10px;border-left:3px solid var(--red);background:rgba(200,16,46,0.04);margin:6px 0;width:auto !important;display:block;grid-column:1}
+  
+  /* Toolbar */
+  .toolbar{display:flex;flex-wrap:wrap;gap:4px;padding:6px;margin:8px 0}
+  .toolbar button{font-size:10px;padding:5px 8px;letter-spacing:0;flex:1 1 30%;min-width:60px}
+  
+  /* Container */
+  main{padding:0 8px}
+  nav.main{padding:6px 10px;font-size:11px}
+  nav.main a{margin:0 3px;padding:2px 4px}
+  
+  /* Book cards */
+  .book-grid{grid-template-columns:1fr;gap:6px}
+  .book-card{font-size:13px;padding:8px 10px;line-height:1.4}
+  
+  /* Note */
+  .note{font-size:14px;line-height:1.7;padding:14px 18px;margin:14px;color:var(--red);background:rgba(201,162,39,0.04);border:1px solid var(--gold-dim);border-left:4px solid var(--gold)}
+
+  
+  /* Footer */
+  footer{font-size:11px;padding:8px 10px}
+}
+  .row{grid-template-columns:2rem 1fr 1.1fr}
+  .num{font-size:.7rem;padding:.5rem .3rem}
+  .ar{font-size:1.1rem;line-height:1.7;padding:.5rem .4rem}
+  .ru{font-size:.85rem;line-height:1.4;padding:.5rem .4rem}
+}
+
+/* Q20 EGYPTIAN additions */
+.verse .egy{grid-column:1;font-family:'Papyrus','Segoe UI Historic',serif;font-size:1.05rem;line-height:1.8;direction:ltr;text-align:left;color:#e8b84a;background:rgba(232,184,74,0.04);border-right:3px solid var(--gold-dim);padding:12px 14px;font-style:italic}
+.verse .ru{grid-column:2;font-size:0.98rem;line-height:1.75;color:var(--ink);background:rgba(201,162,39,0.025);border-left:1px solid var(--gold-dim);padding:12px 14px}
+.verse .transl-note{grid-column:1/-1;padding:6px 14px;font-size:0.78rem;color:var(--ink-dim);font-style:italic;text-align:right;background:rgba(0,0,0,0.15);border-top:1px solid var(--line)}
+.verse .num,.verse .transl-note{color:var(--gold-bright)}
+
+.verse .av,.verse .sk,.verse .he,.verse .grc,.verse .zh,.verse .sa,.verse .ar,.verse .dev,.verse .en,.verse .gr,.verse .csl,.verse .fa,.verse .ak,.verse .bo,.verse .tib{font-family:'Times New Roman',Georgia,serif;font-size:1.05rem;line-height:1.7;color:var(--orig);background:rgba(201,162,39,0.04);border-right:3px solid var(--gold-dim);padding:12px 14px;direction:ltr;text-align:left;font-style:italic}
+.row .av,.row .sk,.row .he,.row .grc,.row .zh,.row .sa,.row .ar,.row .dev,.row .en,.row .gr,.row .csl,.row .fa,.row .ak,.row .bo,.row .tib{font-family:'Times New Roman',Georgia,serif;font-size:1.05rem;line-height:1.7;color:var(--orig);background:rgba(201,162,39,0.04);padding:10px 12px;direction:ltr;text-align:left}
+.verse{display:grid;grid-template-columns:3.2rem 1fr 1.1fr;border-bottom:1px solid var(--grid);align-items:start;transition:background 0.15s}
+.row{display:grid;grid-template-columns:3.2rem 1fr 1.1fr 1fr;border-bottom:1px solid var(--grid);align-items:start;transition:background 0.15s}
+.num{font-family:'Courier New',monospace;font-size:11px;color:var(--gold);text-align:center;padding:12px 4px;background:rgba(0,0,0,0.3);border-right:1px solid var(--line);font-weight:bold;align-self:start}
+.ru{font-size:.92rem;line-height:1.6;color:var(--ink);padding:10px 12px;background:rgba(255,255,255,0.01);border-left:1px solid var(--line);align-self:start;grid-column:3}
+
+.verse .sk-deva{font-family:'Noto Sans Devanagari','Sanskrit Text',serif;font-size:1.15rem;line-height:1.8;color:var(--orig);background:rgba(201,162,39,0.04);border-right:3px solid var(--gold-dim);padding:10px 12px;direction:ltr;text-align:left;font-style:normal;grid-column:2}
+}
+
+/* ARCHIVUM HAERETICUM — Original script fonts */
+
+
+
+
+
+
+
+
+/* ARCHIVUM HAERETICUM — Original script fonts */
+
+
+
+
+
+
+
+@font-face{font-family:'Noto Sans Cuneiform';font-style:normal;font-weight:400;font-display:block;src:url('/archivum-haereticum/fonts/noto-cuneiform.ttf') format('truetype')}
+@font-face{font-family:'Noto Sans Egyptian Hieroglyphs';font-style:normal;font-weight:400;font-display:block;src:url('/archivum-haereticum/fonts/noto-hieroglyphs.ttf') format('truetype')}
+@font-face{font-family:'Noto Sans Coptic';font-style:normal;font-weight:400;font-display:block;src:url('/archivum-haereticum/fonts/noto-coptic.ttf') format('truetype')}
+@font-face{font-family:'Noto Serif JP';font-style:normal;font-weight:400;font-display:swap;src:local('Noto Serif JP'),local('NotoSerifJP-Regular')}
+@font-face{font-family:'Noto Sans Devanagari';font-style:normal;font-weight:400;font-display:swap;src:local('Noto Sans Devanagari'),local('NotoSansDevanagari-Regular')}
+@font-face{font-family:'Noto Sans Tibetan';font-style:normal;font-weight:400;font-display:swap;src:local('Noto Sans Tibetan'),local('NotoSansTibetan-Regular')}
+@font-face{font-family:'SBL Greek';font-style:normal;font-weight:400;font-display:swap;src:local('SBL Greek'),local('SBLGreek')}@media(max-width:760px){
+.verse,.row{grid-template-columns:1fr !important;display:block !important;padding:12px 14px;margin:8px 0;border:1px solid var(--line);background:var(--bg2);width:100% !important;max-width:100% !important;overflow:hidden;box-sizing:border-box}
+.verse .num,.row .num{display:inline-block;background:rgba(0,0,0,0.5);padding:3px 10px;margin-bottom:8px;width:auto;text-align:left;font-size:11px;border:1px solid var(--gold-dim);border-radius:2px;font-family:'Courier New',monospace;min-width:0 !important}
+.verse .on,.verse .ru,.verse .csl,.verse .sk,.verse .he,.verse .grc,.verse .zh,.verse .ar,.verse .fa,.verse .bo,.verse .ak,.verse .cop,.verse .pali,.verse .sk-deva,.verse .eg-hiero,.verse .ak-cun,.verse .cop-uni,.verse .ja,.verse .pali-deva,.verse .qu,.verse .av,.verse .egy,.verse .csl,.verse .gr,.verse .on-r,
+.row .on,.row .ru,.row .csl,.row .sk,.row .he,.row .grc,.row .zh,.row .ar,.row .fa,.row .bo,.row .ak,.row .cop,.row .pali,.row .sk-deva,.row .eg-hiero,.row .ak-cun,.row .cop-uni,.row .ja,.row .pali-deva,.row .qu,.row .av,.row .egy,.row .csl,.row .gr{font-size:1.05rem !important;line-height:1.65 !important;padding:10px 12px !important;border-left:3px solid var(--gold-dim);margin:6px 0;background:rgba(201,162,39,0.04);width:auto !important;display:block !important;min-width:0 !important;word-wrap:break-word;overflow-wrap:break-word;max-width:100% !important;box-sizing:border-box}
+.verse .ru,.row .ru{border-left:3px solid var(--red);background:rgba(200,16,46,0.04)}
+.hos-h1{font-size:1.2rem;letter-spacing:.05em;line-height:1.3}
+.hos-sub{font-size:12px}
+.hos-strip{font-size:9px;letter-spacing:1px;padding:4px 8px}
+.stamps span{font-size:8px;letter-spacing:1px;padding:2px 5px;margin:0 1px}
+main{padding:0 8px;width:100% !important;max-width:100% !important;box-sizing:border-box}
+nav.main{padding:6px 10px;font-size:11px}
+nav.main a{margin:0 3px;padding:2px 4px}
+.toolbar button{font-size:10px;padding:5px 8px;letter-spacing:0;flex:1 1 30%;min-width:60px}
+.book-grid{grid-template-columns:1fr;gap:6px}
+.book-card{font-size:13px;padding:8px 10px;line-height:1.4}
+.note{font-size:14px;line-height:1.7;padding:14px 18px;margin:14px;color:var(--ink);background:rgba(201,162,39,0.04);border:1px solid var(--gold-dim);border-left:4px solid var(--gold)}
+footer{font-size:11px;padding:8px 10px}
+}
+</style>
+</head><body>
+<header class="hos">
+<div class="hos-strip"><span class="l">ARCHIVUM HAERETICUM — CORPUS DIVINUS</span><span class="r">Q13 — MANU-SMRITI</span></div>
+<div class="hos-body">
+<h1 class="hos-h1"><span class="q">Q13</span>Глава 7. Раджа-вартта — Manu-smriti</h1>
+<div class="hos-sub">Об обязанностях царя · 12 глав</div>
+</div>
+</header>
+<div class="stamps">
+<span class="fid">◆ FIDELIS</span>
+<span class="cre">✚ MYSTICA</span>
+<span class="dam">✠ DHARMICA</span>
+</div>
+<nav class="main">
+<a href="../index.html">◀ CORPUS DIVINUS</a>
+<a href="index.html">○ ОБЗОР</a>
+</nav>
+<main>
+<div class="toolbar">
+<button onclick="toggleAll(true)">РАЗВЕРНУТЬ</button>
+<button onclick="toggleAll(false)">СВЕРНУТЬ</button>
+<button onclick="toggleOrig()">☀ ОРИГИНАЛ</button>
+<button onclick="toggleRu()">☾ ПЕРЕВОД</button>
+<button onclick="resetView()">◉ ОБА</button>
+</div>
+<div class="meta">◆ СВЯЩЕННЫЙ ТЕКСТ ◆</div>
+
+<div class="verse">
+<div class="num">1</div>
+<div class="sk-deva">राजधरमान परवकषयामि यथावृततो भवेन नृपः संभवश च यथा तसय सिदधिश च परमा यथा</div>
+<div class="sk">rājadharmān pravakṣyāmi yathāvṛtto bhaven nṛpaḥ saṃbhavaś ca yathā tasya siddhiś ca paramā yathā</div>
+<div class="ru">Я изложу дхармы царя, каким он должен быть и как он должен исполнять свои обязанности. Слушайте внимательно, о риши.</div></div>
+<div class="verse">
+<div class="num">2</div>
+<div class="sk-deva">बराहमं परापतेन संसकारं कषतरियेण यथाविधि सरवसयासय यथानयायं करतवयं परिरकषणम</div>
+<div class="sk">brāhmaṃ prāptena saṃskāraṃ kṣatriyeṇa yathāvidhi sarvasyāsya yathānyāyaṃ kartavyaṃ parirakṣaṇam</div>
+<div class="ru">Царь, заботящийся о подданных, исполняет свои обязанности для защиты всех существ. Это его главная дхарма.</div></div>
+<div class="verse">
+<div class="num">3</div>
+<div class="sk-deva">अराजके हि लोके ऽसमिन सरवतो विदरुतो भयात रकषारथम असय सरवसय राजानम असृजत परभुः</div>
+<div class="sk">arājake hi loke 'smin sarvato vidruto bhayāt rakṣārtham asya sarvasya rājānam asṛjat prabhuḥ</div>
+<div class="ru">Он должен назначить мудрых брахманов советниками и слушать их, ибо мудрость брахманов — основа правления.</div></div>
+<div class="verse">
+<div class="num">4</div>
+<div class="sk-deva">इनदरानिलयमारकाणाम अगनेश च वरुणसय च चनदरविततेशयोश चैव मातरा निरहृतय शाशवतीः</div>
+<div class="sk">indrānilayamārkāṇām agneś ca varuṇasya ca candravitteśayoś caiva mātrā nirhṛtya śāśvatīḥ</div>
+<div class="ru">Царь должен быть пробуждённым в час опасности, и он не должен предаваться наслаждениям. Его долг — защита народа.</div></div>
+<div class="verse">
+<div class="num">5</div>
+<div class="sk-deva">यसमाद एषां सुरेनदराणां मातराभयो निरमितो नृपः तसमाद अभिभवतय एष सरवभूतानि तेजसा</div>
+<div class="sk">yasmād eṣāṃ surendrāṇāṃ mātrābhyo nirmito nṛpaḥ tasmād abhibhavaty eṣa sarvabhūtāni tejasā</div>
+<div class="ru">Пусть царь ежедневно выслушивает знающих Веды, ибо от мудрости этих людей зависит его правление.</div></div>
+<div class="verse">
+<div class="num">6</div>
+<div class="sk-deva">तपतय आदितयवच चैष चकषूंषि च मनांसि च न चैनं भुवि शकनोति कश चिद अपय अभिवीकषितुम</div>
+<div class="sk">tapaty ādityavac caiṣa cakṣūṃṣi ca manāṃsi ca na cainaṃ bhuvi śaknoti kaś cid apy abhivīkṣitum</div>
+<div class="ru">Царь, наказывающий без меры и награждающий без меры, погибает вместе с родом своим.</div></div>
+<div class="verse">
+<div class="num">7</div>
+<div class="sk-deva">सो ऽगनिर भवति वायुश च सो ऽरकः सोमः स धरमराट स कुबेरः स वरुणः स महेनदरः परभावतः</div>
+<div class="sk">so 'gnir bhavati vāyuś ca so 'rkaḥ somaḥ sa dharmarāṭ sa kuberaḥ sa varuṇaḥ sa mahendraḥ prabhāvataḥ</div>
+<div class="ru">Пусть царь почитает брахманов, ибо они — его наставники в дхарме. Без их благословения он не может править.</div></div>
+<div class="verse">
+<div class="num">8</div>
+<div class="sk-deva">बालो ऽपि नावमानतवयो मनुषय इति भूमिपः महती देवता हय एषा नररूपेण तिषठति</div>
+<div class="sk">bālo 'pi nāvamāntavyo manuṣya iti bhūmipaḥ mahatī devatā hy eṣā nararūpeṇa tiṣṭhati</div>
+<div class="ru">Царь, взимающий налоги, должен защищать подданных, как отец защищает детей. Это — справедливая плата.</div></div>
+<div class="verse">
+<div class="num">9</div>
+<div class="sk-deva">एकम एव दहतय अगनिर नरं दुरुपसरपिणम कुलं दहति राजागनिः सपशुदरवयसंचयम</div>
+<div class="sk">ekam eva dahaty agnir naraṃ durupasarpiṇam kulaṃ dahati rājāgniḥ sapaśudravyasaṃcayam</div>
+<div class="ru">Если царь, получив налоги, не защищает подданных, он немедленно идёт в ад.</div></div>
+<div class="verse">
+<div class="num">10</div>
+<div class="sk-deva">कारयं सो ऽवेकषय शकतिं च देशकालौ च तततवतः कुरुते धरमसिदधयरथं विशवरूपं पुनः पुनः</div>
+<div class="sk">kāryaṃ so 'vekṣya śaktiṃ ca deśakālau ca tattvataḥ kurute dharmasiddhyarthaṃ viśvarūpaṃ punaḥ punaḥ</div>
+<div class="ru">Царь, правящий согласно дхарме, достигает высшего мира, где пребывают боги.</div></div>
+<div class="verse">
+<div class="num">12</div>
+<div class="sk-deva">तं यस तु दवेषटि संमोहात स विनशयतय असंशयम तसय हय आशु विनाशाय राजा परकुरुते मनः</div>
+<div class="sk">taṃ yas tu dveṣṭi saṃmohāt sa vinaśyaty asaṃśayam tasya hy āśu vināśāya rājā prakurute manaḥ</div>
+<div class="ru">Он должен назначить воинов, стражей, чиновников и сборщиков налогов — каждый исполняет свою дхарму.</div></div>
+<div class="verse">
+<div class="num">13</div>
+<div class="sk-deva">तसमाद धरमं यम इषटेषु स वयवसयेन नराधिपः अनिषटं चापय अनिषटेषु तं धरमं न विचालयेत</div>
+<div class="sk">tasmād dharmaṃ yam iṣṭeṣu sa vyavasyen narādhipaḥ aniṣṭaṃ cāpy aniṣṭeṣu taṃ dharmaṃ na vicālayet</div>
+<div class="ru">Царь, не имеющий сокровищницы, не может содержать войско. Без войска он не защитит подданных.</div></div>
+<div class="verse">
+<div class="num">14</div>
+<div class="sk-deva">तसयारथे सरवभूतानां गोपतारं धरमम आतमजम बरहमतेजोमयं दणडम असृजत पूरवम ईशवरः</div>
+<div class="sk">tasyārthe sarvabhūtānāṃ goptāraṃ dharmam ātmajam brahmatejomayaṃ daṇḍam asṛjat pūrvam īśvaraḥ</div>
+<div class="ru">Пусть царь накапливает богатства законным путём — через налоги и военную добычу, но не через обман.</div></div>
+<div class="verse">
+<div class="num">15</div>
+<div class="sk-deva">तसय सरवाणि भूतानि सथावराणि चराणि च भयाद भोगाय कलपनते सवधरमान न चलनति च</div>
+<div class="sk">tasya sarvāṇi bhūtāni sthāvarāṇi carāṇi ca bhayād bhogāya kalpante svadharmān na calanti ca</div>
+<div class="ru">Мудрый царь назначает караульных, тайных соглядатаев и судей, ибо только так он узнает истину.</div></div>
+<div class="verse">
+<div class="num">16</div>
+<div class="sk-deva">तं देशकालौ शकतिं च विदयां चावेकषय तततवतः यथारहतः संपरणयेन नरेषव अनयायवरतिषु</div>
+<div class="sk">taṃ deśakālau śaktiṃ ca vidyāṃ cāvekṣya tattvataḥ yathārhataḥ saṃpraṇayen nareṣv anyāyavartiṣu</div>
+<div class="ru">Пусть царь, пробудившись утром, омывшись, совершит агнихотру и помолится богам.</div></div>
+<div class="verse">
+<div class="num">17</div>
+<div class="sk-deva">स राजा पुरुषो दणडः स नेता शासिता च सः चतुरणाम आशरमाणां च धरमसय परतिभूः समृतः</div>
+<div class="sk">sa rājā puruṣo daṇḍaḥ sa netā śāsitā ca saḥ caturṇām āśramāṇāṃ ca dharmasya pratibhūḥ smṛtaḥ</div>
+<div class="ru">Затем пусть он выслушает доклады своих советников и примет решения по государственным делам.</div></div>
+<div class="verse">
+<div class="num">18</div>
+<div class="sk-deva">दणडः शासति परजाः सरवा दणड एवाभिरकषति दणडः सुपतेषु जागरति दणडं धरमं विदुर बुधाः</div>
+<div class="sk">daṇḍaḥ śāsti prajāḥ sarvā daṇḍa evābhirakṣati daṇḍaḥ supteṣu jāgarti daṇḍaṃ dharmaṃ vidur budhāḥ</div>
+<div class="ru">Царь, не выслушивающий советников, совершает ошибки. Это закон правления.</div></div>
+<div class="verse">
+<div class="num">19</div>
+<div class="sk-deva">समीकषय स धृतः समयक सरवा रञजयति परजाः असमीकषय परणीतस तु विनाशयति सरवतः</div>
+<div class="sk">samīkṣya sa dhṛtaḥ samyak sarvā rañjayati prajāḥ asamīkṣya praṇītas tu vināśayati sarvataḥ</div>
+<div class="ru">Мудрый царь окружает себя мудрыми советниками, сведущими в дхарме и артхе.</div></div>
+<div class="verse">
+<div class="num">20</div>
+<div class="sk-deva">यदि न परणयेद राजा दणडं दणडयेषव अतनदरितः शूले मतसयान इवापकषयन दुरबलान बलवततराः</div>
+<div class="sk">yadi na praṇayed rājā daṇḍaṃ daṇḍyeṣv atandritaḥ śūle matsyān ivāpakṣyan durbalān balavattarāḥ</div>
+<div class="ru">Царь, пренебрегающий мудрыми советниками, гибнет, как корабль без кормчего.</div></div>
+<div class="verse">
+<div class="num">21</div>
+<div class="sk-deva">अदयात काकः पुरोडाशं शवा च लिहयाद धविस तथा सवामयं च न सयात कसमिंश चित परवरतेताधरोततरम</div>
+<div class="sk">adyāt kākaḥ puroḍāśaṃ śvā ca lihyād dhavis tathā svāmyaṃ ca na syāt kasmiṃś cit pravartetādharottaram</div>
+<div class="ru">Пусть царь каждый день выслушивает знающих Вед и толкователей дхармы.</div></div>
+<div class="verse">
+<div class="num">22</div>
+<div class="sk-deva">सरवो दणडजितो लोको दुरलभो हि शुचिर नरः दणडसय हि भयात सरवं जगद भोगाय कलपते</div>
+<div class="sk">sarvo daṇḍajito loko durlabho hi śucir naraḥ daṇḍasya hi bhayāt sarvaṃ jagad bhogāya kalpate</div>
+<div class="ru">Без знания дхармы царь не может править справедливо. Это закон Ману.</div></div>
+<div class="verse">
+<div class="num">23</div>
+<div class="sk-deva">देवदानवगनधरवा रकषांसि पतगोरगाः ते ऽपि भोगाय कलपनते दणडेनैव निपीडिताः</div>
+<div class="sk">devadānavagandharvā rakṣāṃsi patagoragāḥ te 'pi bhogāya kalpante daṇḍenaiva nipīḍitāḥ</div>
+<div class="ru">Пусть царь, получив знание, исполняет дхарму и обучает своих подданных.</div></div>
+<div class="verse">
+<div class="num">24</div>
+<div class="sk-deva">दुषयेयुः सरववरणाश च भिदयेरन सरवसेतवः सरवलोकपरकोपश च भवेद दणडसय विभरमात</div>
+<div class="sk">duṣyeyuḥ sarvavarṇāś ca bhidyeran sarvasetavaḥ sarvalokaprakopaś ca bhaved daṇḍasya vibhramāt</div>
+<div class="ru">Царь, обучающий подданных дхарме, заслуживает рай. Это высшая награда.</div></div>
+<div class="verse">
+<div class="num">25</div>
+<div class="sk-deva">यतर शयामो लोहिताकषो दणडश चरति पापहा परजास ततर न मुहयनति नेता चेत साधु पशयति</div>
+<div class="sk">yatra śyāmo lohitākṣo daṇḍaś carati pāpahā prajās tatra na muhyanti netā cet sādhu paśyati</div>
+<div class="ru">Пусть царь, обладая знанием, не гордится. Гордость — враг мудрости.</div></div>
+<div class="verse">
+<div class="num">26</div>
+<div class="sk-deva">तसयाहुः संपरणेतारं राजानं सतयवादिनम समीकषयकारिणं पराजञं धरमकामारथकोविदम</div>
+<div class="sk">tasyāhuḥ saṃpraṇetāraṃ rājānaṃ satyavādinam samīkṣyakāriṇaṃ prājñaṃ dharmakāmārthakovidam</div>
+<div class="ru">Пусть он не презирает никого, ибо все создания равны перед Брахмой.</div></div>
+<div class="verse">
+<div class="num">27</div>
+<div class="sk-deva">तं राजा परणयन समयक तरिवरगेणाभिवरधते कामातमा विषमः कषुदरो दणडेनैव निहनयते</div>
+<div class="sk">taṃ rājā praṇayan samyak trivargeṇābhivardhate kāmātmā viṣamaḥ kṣudro daṇḍenaiva nihanyate</div>
+<div class="ru">Царь, презирающий людей, теряет уважение и силу. Это закон дхармы.</div></div>
+<div class="verse">
+<div class="num">28</div>
+<div class="sk-deva">दणडो हि सुमहततेजो दुरधरश चाकृतातमभिः धरमाद विचलितं हनति नृपम एव सबानधवम</div>
+<div class="sk">daṇḍo hi sumahattejo durdharaś cākṛtātmabhiḥ dharmād vicalitaṃ hanti nṛpam eva sabāndhavam</div>
+<div class="ru">Пусть царь, видя просителя, не отворачивается. Подаяние — основа его дхармы.</div></div>
+<div class="verse">
+<div class="num">29</div>
+<div class="sk-deva">ततो दुरगं च राषटरं च लोकं च सचराचरम अनतरिकषगतांश चैव मुनीन देवांश च पीडयेत</div>
+<div class="sk">tato durgaṃ ca rāṣṭraṃ ca lokaṃ ca sacarācaram antarikṣagatāṃś caiva munīn devāṃś ca pīḍayet</div>
+<div class="ru">Царь, отказывающий в подаянии достойному, совершает грех, равный убийству.</div></div>
+<div class="verse">
+<div class="num">30</div>
+<div class="sk-deva">सो ऽसहायेन मूढेन लुबधेनाकृतबुदधिना न शकयो नयायतो नेतुं सकतेन विषयेषु च</div>
+<div class="sk">so 'sahāyena mūḍhena lubdhenākṛtabuddhinā na śakyo nyāyato netuṃ saktena viṣayeṣu ca</div>
+<div class="ru">Пусть царь, одарив брахмана, скажет: &quot;Я дал тебе, прими с благодарностью&quot;.</div></div>
+<div class="verse">
+<div class="num">31</div>
+<div class="sk-deva">शुचिना सतयसंधेन यथाशासतरानुसारिणा परणेतुं शकयते दणडः सुसहायेन धीमता</div>
+<div class="sk">śucinā satyasaṃdhena yathāśāstrānusāriṇā praṇetuṃ śakyate daṇḍaḥ susahāyena dhīmatā</div>
+<div class="ru">Брахман, принявший дар от царя, должен молиться за него. Без молитвы дар бесполезен.</div></div>
+<div class="verse">
+<div class="num">32</div>
+<div class="sk-deva">सवराषटरे नयायवृततः सयाद भृशदणडश च शतरुषु सुहृतसव अजिहमः सनिगधेषु बराहमणेषु कषमानवितः</div>
+<div class="sk">svarāṣṭre nyāyavṛttaḥ syād bhṛśadaṇḍaś ca śatruṣu suhṛtsv ajihmaḥ snigdheṣu brāhmaṇeṣu kṣamānvitaḥ</div>
+<div class="ru">Пусть царь, получив благословение брахмана, обретает долголетие, славу и силу.</div></div>
+<div class="verse">
+<div class="num">33</div>
+<div class="sk-deva">एवंवृततसय नृपतेः शिलोञछेनापि जीवतः विसतीरयते यशो लोके तैलबिनदुर इवामभसि</div>
+<div class="sk">evaṃvṛttasya nṛpateḥ śiloñchenāpi jīvataḥ vistīryate yaśo loke tailabindur ivāmbhasi</div>
+<div class="ru">Пусть царь, не имеющий брахманов при дворе, ищет их. Без них он слеп.</div></div>
+<div class="verse">
+<div class="num">34</div>
+<div class="sk-deva">अतस तु विपरीतसय नृपतेर अजितातमनः संकषिपयते यशो लोके घृतबिनदुर इवामभसि</div>
+<div class="sk">atas tu viparītasya nṛpater ajitātmanaḥ saṃkṣipyate yaśo loke ghṛtabindur ivāmbhasi</div>
+<div class="ru">Пусть царь, осаждаемый врагами, обращается к брахманам за советом. Они помогут.</div></div>
+<div class="verse">
+<div class="num">35</div>
+<div class="sk-deva">सवे सवे धरमे निविषटानां सरवेषाम अनुपूरवशः वरणानाम आशरमाणां च राजा सृषटो ऽभिरकषिता</div>
+<div class="sk">sve sve dharme niviṣṭānāṃ sarveṣām anupūrvaśaḥ varṇānām āśramāṇāṃ ca rājā sṛṣṭo 'bhirakṣitā</div>
+<div class="ru">Пусть он, получив совет, действует. Бездействие совета бесполезно.</div></div>
+<div class="verse">
+<div class="num">36</div>
+<div class="sk-deva">तेन यद यत सभृतयेन करतवयं रकषता परजाः तत तद वो ऽहं परवकषयामि यथावद अनुपूरवशः</div>
+<div class="sk">tena yad yat sabhṛtyena kartavyaṃ rakṣatā prajāḥ tat tad vo 'haṃ pravakṣyāmi yathāvad anupūrvaśaḥ</div>
+<div class="ru">Царь, действующий по совету мудрых, достигает успеха во всех начинаниях.</div></div>
+<div class="verse">
+<div class="num">37</div>
+<div class="sk-deva">बराहमणान परयुपासीत परातर उतथाय पारथिवः तरैविदयवृदधान विदुषस तिषठेत तेषां च शासने</div>
+<div class="sk">brāhmaṇān paryupāsīta prātar utthāya pārthivaḥ traividyavṛddhān viduṣas tiṣṭhet teṣāṃ ca śāsane</div>
+<div class="ru">Пусть царь назначает караульных на всех воротах столицы и на всех дорогах.</div></div>
+<div class="verse">
+<div class="num">38</div>
+<div class="sk-deva">वृदधांश च नितयं सेवेत विपरान वेदविदः शुचीन वृदधसेवी हि सततं रकषोभिर अपि पूजयते</div>
+<div class="sk">vṛddhāṃś ca nityaṃ seveta viprān vedavidaḥ śucīn vṛddhasevī hi satataṃ rakṣobhir api pūjyate</div>
+<div class="ru">Пусть он учредит суд, который рассматривает дела справедливо.</div></div>
+<div class="verse">
+<div class="num">39</div>
+<div class="sk-deva">तेभयो ऽधिगचछेद विनयं विनीतातमापि नितयशः विनीतातमा हि नृपतिर न विनशयति करहि चित</div>
+<div class="sk">tebhyo 'dhigacched vinayaṃ vinītātmāpi nityaśaḥ vinītātmā hi nṛpatir na vinaśyati karhi cit</div>
+<div class="ru">Судья, решающий по закону, достигает высшего мира. Несправедливый — ада.</div></div>
+<div class="verse">
+<div class="num">40</div>
+<div class="sk-deva">बहवो ऽविनयान नषटा राजानः सपरिचछदाः वनसथा अपि राजयानि विनयात परतिपेदिरे</div>
+<div class="sk">bahavo 'vinayān naṣṭā rājānaḥ saparicchadāḥ vanasthā api rājyāni vinayāt pratipedire</div>
+<div class="ru">Пусть царь назначает судей из среды брахманов, сведущих в дхарме.</div></div>
+<div class="verse">
+<div class="num">42</div>
+<div class="sk-deva">पृथुस तु विनयाद राजयं परापतवान मनुर एव च कुबेरश च धनैशवरयं बराहमणयं चैव गाधिजः</div>
+<div class="sk">pṛthus tu vinayād rājyaṃ prāptavān manur eva ca kuberaś ca dhanaiśvaryaṃ brāhmaṇyaṃ caiva gādhijaḥ</div>
+<div class="ru">Пусть судья изучит закон прежде, чем судить. Без знания — он не судья.</div></div>
+<div class="verse">
+<div class="num">43</div>
+<div class="sk-deva">तरैविदयेभयस तरयीं विदयां दणडनीतिं च शाशवतीम आनवीकषिकीं चातमविदयां वारतारमभांश च लोकतः</div>
+<div class="sk">traividyebhyas trayīṃ vidyāṃ daṇḍanītiṃ ca śāśvatīm ānvīkṣikīṃ cātmavidyāṃ vārtārambhāṃś ca lokataḥ</div>
+<div class="ru">Пусть судья выслушает обе стороны, прежде чем вынести приговор.</div></div>
+<div class="verse">
+<div class="num">44</div>
+<div class="sk-deva">इनदरियाणां जये योगं समातिषठेद दिवानिशम जितेनदरियो हि शकनोति वशे सथापयितुं परजाः</div>
+<div class="sk">indriyāṇāṃ jaye yogaṃ samātiṣṭhed divāniśam jitendriyo hi śaknoti vaśe sthāpayituṃ prajāḥ</div>
+<div class="ru">Судья, выслушавший одну сторону, выносит несправедливый приговор. Это грех.</div></div>
+<div class="verse">
+<div class="num">45</div>
+<div class="sk-deva">दश कामसमुतथानि तथाषटौ करोधजानि च वयसनानि दुरनतानि परयतनेन विवरजयेत</div>
+<div class="sk">daśa kāmasamutthāni tathāṣṭau krodhajāni ca vyasanāni durantāni prayatnena vivarjayet</div>
+<div class="ru">Пусть судья не принимает взяток. Взятка развращает ум и ослепляет разум.</div></div>
+<div class="verse">
+<div class="num">46</div>
+<div class="sk-deva">कामजेषु परसकतो हि वयसनेषु महीपतिः वियुजयते ऽरथधरमाभयां करोधजेषव आतमनैव तु</div>
+<div class="sk">kāmajeṣu prasakto hi vyasaneṣu mahīpatiḥ viyujyate 'rthadharmābhyāṃ krodhajeṣv ātmanaiva tu</div>
+<div class="ru">Пусть царь, уличив судью во взятке, накажет его лишением имущества.</div></div>
+<div class="verse">
+<div class="num">48</div>
+<div class="sk-deva">पैशुनयं साहसं दरोह ईरषयासूयारथदूषणम वागदणडजं च पारुषयं करोधजो ऽपि गणो ऽषटकः</div>
+<div class="sk">paiśunyaṃ sāhasaṃ droha īrṣyāsūyārthadūṣaṇam vāgdaṇḍajaṃ ca pāruṣyaṃ krodhajo 'pi gaṇo 'ṣṭakaḥ</div>
+<div class="ru">Пусть царь, установив справедливые законы, защитит подданных от зла.</div></div>
+<div class="verse">
+<div class="num">49</div>
+<div class="sk-deva">दवयोर अपय एतयोर मूलं यं सरवे कवयो विदुः तं यतनेन जयेल लोभं तजजाव एताव उभौ गणौ</div>
+<div class="sk">dvayor apy etayor mūlaṃ yaṃ sarve kavayo viduḥ taṃ yatnena jayel lobhaṃ tajjāv etāv ubhau gaṇau</div>
+<div class="ru">Пусть он наказывает вора, убийцу, прелюбодея соразмерно преступлению.</div></div>
+<div class="verse">
+<div class="num">50</div>
+<div class="sk-deva">पानम अकषाः सतरियश चैव मृगया च यथाकरमम एतत कषटतमं विदयाच चतुषकं कामजे गणे</div>
+<div class="sk">pānam akṣāḥ striyaś caiva mṛgayā ca yathākramam etat kaṣṭatamaṃ vidyāc catuṣkaṃ kāmaje gaṇe</div>
+<div class="ru">Пусть он не наказывает невинных и не щадит виновных. Это закон дхармы.</div></div>
+<div class="verse">
+<div class="num">51</div>
+<div class="sk-deva">दणडसय पातनं चैव वाकपारुषयारथदूषणे करोधजे ऽपि गणे विदयात कषटम एतत तरिकं सदा</div>
+<div class="sk">daṇḍasya pātanaṃ caiva vākpāruṣyārthadūṣaṇe krodhaje 'pi gaṇe vidyāt kaṣṭam etat trikaṃ sadā</div>
+<div class="ru">Пусть царь, увидев преступника, не медлит с наказанием. Промедление с наказанием усиливает преступления.</div></div>
+<div class="verse">
+<div class="num">52</div>
+<div class="sk-deva">सपतकसयासय वरगसय सरवतरैवानुषङगिणः पूरवं पूरवं गुरुतरं विदयाद वयसनम आतमवान</div>
+<div class="sk">saptakasyāsya vargasya sarvatraivānuṣaṅgiṇaḥ pūrvaṃ pūrvaṃ gurutaraṃ vidyād vyasanam ātmavān</div>
+<div class="ru">Царь, не наказывающий преступников, разрушает дхарму. Без наказания мир гибнет.</div></div>
+<div class="verse">
+<div class="num">53</div>
+<div class="sk-deva">वयसनसय च मृतयोश च वयसनं कषटम उचयते वयसनय अधो ऽधो वरजति सवर यातय अवयसनी मृतः</div>
+<div class="sk">vyasanasya ca mṛtyoś ca vyasanaṃ kaṣṭam ucyate vyasany adho 'dho vrajati svar yāty avyasanī mṛtaḥ</div>
+<div class="ru">Пусть царь, наказывающий преступников по закону, достигает высшего мира. Наказание преступника — жертва богам.</div></div>
+
+</main>
+<footer>ARCHIVUM HAERETICUM · Q13 · <span class="red">◆</span> SIGILLUM VERITATIS · <span class="gold">DATUM 160.M3</span> · FIDELIS</footer>
+<script>
+function toggleAll(open){
+  document.querySelectorAll('details').forEach(d=>d.open=open);
+  document.querySelectorAll('.verse,.row').forEach(r=>{r.style.display=open?'grid':'none';});
+}
+function toggleOrig(){
+  document.querySelectorAll('.verse,.row').forEach(r=>{r.style.display='grid';});
+  document.querySelectorAll('.verse .ru,.row .ru').forEach(e=>e.style.display='none');
+  document.querySelectorAll('.verse .av,.verse .sk,.verse .he,.verse .grc,.verse .zh,.verse .sa,.verse .ar,.verse .dev,.verse .en,.verse .gr,.verse .egy,.verse .csl,.verse .fa,.verse .ak,.verse .bo,.verse .tib').forEach(e=>e.style.display='');
+}
+function toggleRu(){
+  document.querySelectorAll('.verse .ru,.row .ru').forEach(e=>e.style.display='');
+  document.querySelectorAll('.verse .av,.verse .sk,.verse .he,.verse .grc,.verse .zh,.verse .sa,.verse .ar,.verse .dev,.verse .en,.verse .gr,.verse .egy,.verse .csl,.verse .fa,.verse .ak,.verse .bo,.verse .tib').forEach(e=>e.style.display='none');
+}
+function resetView(){
+  document.querySelectorAll('.verse,.row').forEach(r=>{r.style.display='grid';});
+  document.querySelectorAll('.verse .av,.verse .sk,.verse .he,.verse .grc,.verse .zh,.verse .sa,.verse .ar,.verse .dev,.verse .en,.verse .gr,.verse .egy,.verse .csl,.verse .fa,.verse .ak,.verse .bo,.verse .tib,.verse .ru,.row .ru').forEach(e=>e.style.display='');
+}
+</script>
+</body></html>

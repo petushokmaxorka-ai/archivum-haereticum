@@ -1,0 +1,155 @@
+<!DOCTYPE html><html lang="ru"><head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+<title>Поимандр · Q29 — Corpus Hermeticum</title>
+<style>
+:root{--bg:#0a0a0c;--bg2:#0d0d12;--panel:#13131a;--line:#2a2a33;--red:#c8102e;--red-dark:#8a0a1f;--gold:#c9a227;--gold-bright:#e8b84a;--gold-dim:#8a7119;--ink:#d4c6a8;--ink-dim:#9e8855;--orig:#c9a227;--accent:#d49a3a;--grid:#1d1d24}
+*{box-sizing:border-box;margin:0;padding:0}body{background:var(--bg);color:var(--ink);font-family:Georgia,'Times New Roman',serif;line-height:1.55;overflow-x:hidden}
+a{color:var(--gold);text-decoration:none}
+header.hos{background:linear-gradient(180deg,var(--red-dark) 0%,#1a0007 30%,var(--bg) 100%);border-bottom:2px solid var(--red);padding:0;position:relative}
+header.hos::before{content:"";position:absolute;left:0;top:0;bottom:0;width:6px;background:var(--red)}
+.hos-strip{display:flex;justify-content:space-between;align-items:center;padding:6px 14px;background:rgba(0,0,0,0.5);border-bottom:1px solid var(--red-dark);font-family:'Courier New',monospace;font-size:10px;letter-spacing:2px;color:var(--ink-dim);text-transform:uppercase}
+.hos-strip .l{color:var(--gold)} .hos-strip .r{color:var(--red);font-weight:bold}
+.hos-body{padding:18px 22px 14px}
+.hos-h1{font-size:1.5rem;letter-spacing:.12em;color:var(--orig);font-weight:normal;margin-bottom:4px;line-height:1.2}
+.hos-h1 .q{color:var(--red);font-family:'Courier New',monospace;font-size:.7em;vertical-align:super;margin-right:6px;padding:3px 7px;background:rgba(200,16,46,0.15);border:1px solid var(--red-dark);letter-spacing:1px}
+.hos-sub{color:var(--ink-dim);font-size:13px;font-style:italic}
+.stamps{padding:7px 16px;background:var(--bg2);border-bottom:1px solid var(--line);text-align:center;font-family:'Courier New',monospace}
+.stamps span{display:inline-block;border:1px solid var(--gold-dim);color:var(--gold);font-size:9px;letter-spacing:2px;padding:2px 7px;margin:0 2px;text-transform:uppercase}
+nav.main{padding:8px 18px;background:var(--panel);border-bottom:1px solid var(--line);font-size:12px;text-align:center}
+nav.main a{color:var(--gold);margin:0 6px;letter-spacing:1px;padding:3px 6px}
+main{max-width:1300px;margin:0 auto;padding:0 12px 40px}
+.verse{display:grid;grid-template-columns:3.2rem 1fr 1.1fr;border-bottom:1px solid var(--grid);align-items:start;transition:background 0.15s;width:100%}
+.verse:hover{background:#15110b}
+.num{grid-column:1;color:var(--gold);font-size:12px;padding:10px 4px;text-align:right;font-family:'Courier New',monospace;font-weight:bold;align-self:start}
+.grc{grid-column:2;padding:10px 12px;font-size:1.05rem;line-height:1.7;color:var(--orig);background:rgba(201,162,39,0.04);border-right:1px solid var(--gold-dim);border-left:3px solid var(--gold-dim);font-style:italic;font-family:'SBL Greek','Palatino Linotype','New Athena Unicode',Georgia,serif;direction:ltr;text-align:left;word-wrap:break-word;overflow-wrap:break-word}
+.ru{grid-column:3;padding:10px 12px;font-size:.95rem;line-height:1.65;text-align:justify;color:var(--ink);font-family:Georgia,serif;border-left:1px solid var(--line);word-wrap:break-word;overflow-wrap:break-word}
+.meta{padding:8px 16px;text-align:center;color:var(--ink-dim);font-size:11px;font-style:italic;background:var(--bg2);border-bottom:1px solid var(--line)}
+footer{padding:18px;text-align:center;color:var(--ink-dim);font-size:10px;border-top:1px solid var(--line);font-family:'Courier New',monospace;letter-spacing:2px;background:var(--bg2)}
+.note{margin:14px;padding:14px 18px;background:rgba(201,162,39,0.04);border:1px solid var(--gold-dim);border-left:4px solid var(--gold);font-size:14px;line-height:1.7;color:var(--ink)}
+.note b{color:var(--gold)}
+.toolbar{display:flex;justify-content:center;gap:6px;flex-wrap:wrap;margin:14px 0 8px;padding:8px;background:var(--panel);border:1px solid var(--line);font-family:'Courier New',monospace}
+.toolbar button{background:transparent;border:1px solid var(--gold-dim);color:var(--gold);padding:5px 11px;font-size:10px;letter-spacing:1px;cursor:pointer;font-family:inherit;text-transform:uppercase}
+.toolbar button:hover{background:var(--gold);color:var(--bg)}
+@media(max-width:760px){
+  .verse,.row{grid-template-columns:1fr !important;display:block !important;padding:12px 14px;margin:8px 0;border:1px solid var(--line);background:var(--bg2);width:100% !important;max-width:100% !important;overflow:hidden;box-sizing:border-box}
+  .verse .num,.row .num{display:inline-block;background:rgba(0,0,0,0.5);padding:3px 10px;margin-bottom:8px;width:auto;text-align:left;font-size:11px;border:1px solid var(--gold-dim);border-radius:2px;font-family:'Courier New',monospace;min-width:0 !important}
+  .verse .grc,.verse .ru{font-size:1.05rem !important;line-height:1.65 !important;padding:10px 12px !important;border-left:3px solid var(--gold-dim);margin:6px 0;background:rgba(201,162,39,0.04);width:auto !important;display:block !important;min-width:0 !important;word-wrap:break-word;overflow-wrap:break-word;max-width:100% !important;box-sizing:border-box}
+  .verse .ru{border-left:3px solid var(--red);background:rgba(200,16,46,0.04)}
+  .hos-h1{font-size:1.2rem;letter-spacing:.05em;line-height:1.3}
+  .hos-sub{font-size:12px}
+  main{padding:0 8px;width:100% !important;max-width:100% !important;box-sizing:border-box}
+  nav.main{padding:6px 10px;font-size:11px}
+  nav.main a{margin:0 3px;padding:2px 4px}
+  .toolbar button{font-size:10px;padding:5px 8px;letter-spacing:0;flex:1 1 30%;min-width:60px}
+  footer{font-size:11px;padding:8px 10px}
+}
+@font-face{font-family:'Noto Sans Cuneiform';font-style:normal;font-weight:400;font-display:swap;src:url('/archivum-haereticum/fonts/noto-cuneiform.ttf') format('truetype')}
+@font-face{font-family:'Noto Sans Egyptian Hieroglyphs';font-style:normal;font-weight:400;font-display:swap;src:url('/archivum-haereticum/fonts/noto-hieroglyphs.ttf') format('truetype')}
+@font-face{font-family:'Noto Sans Coptic';font-style:normal;font-weight:400;font-display:swap;src:url('/archivum-haereticum/fonts/noto-coptic.ttf') format('truetype')}
+</style>
+</head>
+<body>
+<header class="hos">
+<div class="hos-strip"><span class="l">ARCHIVUM HAERETICUM — CORPUS DIVINUS</span><span class="r">Q29 — HERMETICA</span></div>
+<div class="hos-body">
+<h1 class="hos-h1"><span class="q">Q29</span>Ποιμάνδρης · Поимандр</h1>
+<div class="hos-sub">Corpus Hermeticum, Tractatus I — Ποιμάνδρης (Пастырь мужей) · Греческий оригинал II в. н.э. + русский перевод</div>
+</div>
+<div class="stamps">
+<span class="fid">◆ FIDELIS</span>
+<span class="cre">✚ MYSTICA</span>
+<span class="dam">✠ HERMETICA</span>
+</div>
+</header>
+<nav class="main">
+<a href="index.html">◀ CORPUS HERMETICUM</a>
+</nav>
+<main>
+<div class="toolbar">
+<button onclick="toggleOrig()">☀ ОРИГИНАЛ</button>
+<button onclick="toggleRu()">☾ ПЕРЕВОД</button>
+<button onclick="resetView()">◉ ОБА</button>
+</div>
+<div class="note">
+<b>ΠΟΙΜΑΝΔΡΗΣ</b> (Поимандр, «Пастырь мужей») — первый и важнейший трактат <b>Corpus Hermeticum</b>, приписываемый Гермесу Трисмегисту (Ἑρμῆς ὁ Τρισμέγιστος — «Триждывеличайший»). Это синкретический текст II в. н.э., объединяющий египетскую (Тот = Гермес), греческую (платоновскую) и ранне-христианскую традиции. <b>Содержание:</b> Видение Нус (Νοῦς, Ум) как женской фигуры в свете; гимн Творцу; падение человека через тело; восхождение обратно через семь сфер. <b>Связь с архивом:</b> Q29 — мост между Q20/Q28 (египетские тексты) и Q1-Q5 (абрамические). Перевод выполнен по критическому изданию A.D. Nock & A.-J. Festugière (1945-1954, т. I).
+</div>
+<div class="verse">
+<div class="num">1</div>
+<div class="grc">Ἐννοήσας ποτὲ περὶ τῶν ὄντων καὶ τὰ μάλιστα ἐπὶ νοῦν ἀναβεβηκώς, τῶν ὄντων τὰς αἰτίας ἐπέβην, καὶ σφόδρα μου ἀπεκρύβησαν αἱ ἐμπεδοσκοποῦσαι τῶν αἰτίαι, ἕως ἐπετράπην ὑπὸ τῆς ἐμῆς αὐτοῦ νοήσεως.</div>
+<div class="ru">Однажды, размышляя о сущем и вознесясь мыслью превыше всего, я постиг причины вещей, но скрыты от меня были глубочайшие причины причин, пока не снизошла ко мне сила моего собственного разумения.</div>
+</div>
+<div class="verse">
+<div class="num">2</div>
+<div class="grc">Ἐτράπην δὲ ἐπὶ τὴν φύσιν, ἐν ᾗ συνίσταται πᾶν τὸ σωματοειδές, καὶ ἔδοξέ μοι τις εἶναι ἄπειρος ἐν μεγέθει, ἄτακτος δὲ τῇ τάξει, καὶ σκοτία πλείων ἦν ἐν τῷ βάθει.</div>
+<div class="ru">Обратился я к природе, в которой пребывает всё телесное, и предстала мне бездна бесконечная по величию, но беспорядочная в устройстве, и глубокая тьма царила в глубине её.</div>
+</div>
+<div class="verse">
+<div class="num">3</div>
+<div class="grc">Καὶ ἐγενήθη πνεῦμα ἐν τῇ φύσει τῇ θείᾳ, καὶ ἐπεκαλύφθη ἡ θεία φύσις ὑπὸ τοῦ πνεύματος, καὶ ἡ ἰδέα ἐκείνη ἐξῆλθεν ἐκ τοῦ σκότους εἰς τὸ φῶς, φῶς δὲ λαμπρὸν καὶ γλυκὺ καὶ καθαρὸν ἐγενήθη.</div>
+<div class="ru">И родился дух в божественной природе, и природа божественная облеклась духом, и образ вышел из тьмы в свет, и свет стал сияющим и сладостным и чистым.</div>
+</div>
+<div class="verse">
+<div class="num">4</div>
+<div class="grc">Ταχὺ δὲ ἀπεχωρίσθη τὸ πῦρ ἀπὸ τῆς γῆς διὰ τὸ πνεῦμα, καὶ ἀνέδραμεν εἰς ὕψος, καὶ ἡ γῆ ἐξηράνθη, καὶ τὸ ὕδωρ συνεχύθη, καὶ τὰ ζῷα διεκρίθησαν ἐκ τοῦ πυρός, καὶ ἀνεπτήσαντο τὰ πτηνά.</div>
+<div class="ru">Тогда огонь отделился от земли через дух, и поднялся в вышину, и земля иссохла, и воды собрались воедино, и живые существа отделились от огня, и птицы взвились в воздух.</div>
+</div>
+<div class="verse">
+<div class="num">5</div>
+<div class="grc">Ἐν δὲ τῷ φωτὶ ἐκείνῳ εἶδον τὸν Ποιμάνδραν, τὸν τῆς αὐθεντίας νοῦν, τὸν ἀπέραντον, τὸν ἀόριστον, τὸν πάντων ἐπέκεινα, τὸν πάντων συνεκτικόν.</div>
+<div class="ru">И в том свете узрел я Поимандра, Ум Самодержавный, Беспредельный, Неопределимый, Превосходящий всё, Содержащий всё в Себе.</div>
+</div>
+<div class="verse">
+<div class="num">6</div>
+<div class="grc">Καὶ ἐκ τοῦ φωτὸς ἐκείνου προῆλθε λόγος ἅγιος, καὶ ἐπὶ τῆς φύσεως ὕδωρ εὐθὺς ἐγενήθη, καὶ πῦρ διεχωρίσθη ἀπὸ τοῦ ὕδατος, καὶ ὁ νοῦς ὁ θεῖος ἐνεούργησε τῷ πυρί.</div>
+<div class="ru">И из того света изошло Слово Святое, и на природе явилась вода чистая, и огонь отделился от воды, и Ум Божественный одухотворил огонь.</div>
+</div>
+<div class="verse">
+<div class="num">7</div>
+<div class="grc">Ὁ δὲ Ποιμάνδρης εἶπέ μοι· «Μάλιστα μὲν οἶσθα τί ἐστι τὸ ζῇον· διὰ τί δὲ ζῇον ἐστι, μάθε· ἐκ τοῦ πατρικοῦ νοῦ, οὗ ἐστι τέκνον ὁ λόγος, ζῇον γέγονεν.»</div>
+<div class="ru">И сказал мне Поимандр: «Прежде всего знай, что есть Живое Существо; но почему оно живое — узнай: от Отцовского Ума, чьим детищем является Слово, живое существо родилось».</div>
+</div>
+<div class="verse">
+<div class="num">8</div>
+<div class="grc">«Ἐγὼ γάρ εἰμι ὁ Νοῦς ὁ παρὰ σοῦ αἰσθητός· αὐτὸς δὲ ὁ νοῦς ὁ πατρικός, ἐξ οὗ ἐγεννήθη, οὐκ ἔστιν αἰσθητός, ἀλλὰ νοητός.»</div>
+<div class="ru">«Ибо Я есмь Ум, тобою воспринимаемый; Сам же Отцовский Ум, от Которого Я рождён, не воспринимаем чувствами, но постигается разумом».</div>
+</div>
+<div class="verse">
+<div class="num">9</div>
+<div class="grc">«Ἐγὼ οὖν εἰμι ὁ Ποιμάνδρης, ὁ τῆς αὐθεντίας νοῦς· εἰμὶ δὲ καὶ ἐν τῇ σῇ ψυχῇ, καὶ ἐν τοῖς πᾶσι τοῖς ζῶσιν.»</div>
+<div class="ru">«Я есмь Поимандр, Ум Самодержца; Я есмь и в твоей душе, и во всех живых существах».</div>
+</div>
+<div class="verse">
+<div class="num">10</div>
+<div class="grc">«Μάθε ὅτι ἐκ σοῦ τοῦ ἀνθρώπου, ᾧ παρέδωκα τὸν λόγον, ἡ φύσις πᾶσα τέθεικε, καὶ τετήρηκα τὸν τόπον, ἵνα τέλειος γένῃ.»</div>
+<div class="ru">«Узнай, что от тебя, человека, Которому Я вручил Слово, вся природа получила устав, и Я сохранил место, дабы ты стал совершенным».</div>
+</div>
+<div class="verse">
+<div class="num">11</div>
+<div class="grc">«Ὅταν δὲ τελειωθῇς, ὁ νοῦς ὁ πατρικὸς ἀνίπταται ἐκ τῆς ἁγίας ζωῆς, καὶ τὸ πῦρ εἰς τὴν ἰδίαν φύσιν ἀνέρχεται, ἡ δὲ γῆ δέχεται τὸ σῶμα.»</div>
+<div class="ru">«Когда же ты завершишь совершенствование, Ум Отцовский воспарит от святой жизни, и огонь вознесётся в свою природу, а земля примет тело».</div>
+</div>
+<div class="verse">
+<div class="num">12</div>
+<div class="grc">«Ἐκ δὲ τοῦ σώματος τοῦ πυρὸς ἀνέρχεται, ἐκ δὲ τῶν ζῴων εἰς τὴν ζωὴν ἀπέρχεται, καὶ ἐκ τῆς ζωῆς εἰς τὸν νοῦν, καὶ ἐκ τοῦ νοῦ εἰς τὸ πνεῦμα.»</div>
+<div class="ru">«Из тела воссияет огонь, из существ перейдёт в жизнь, из жизни в Ум, из Ума в Дух».</div>
+</div>
+<div class="verse">
+<div class="num">13</div>
+<div class="grc">«Καὶ ὁ Ποιμάνδρης ἐσήμαινεν αὐτῷ τὴν ἔξοδον τῶν ἀνθρώπων, καὶ ἀνέπεμψεν αὐτὸν εἰς τὰς σφαίρας, καὶ ἐνετέιλατο αὐτῷ τηρεῖν τὸν νόμον τῆς φύσεως.»</div>
+<div class="ru">«И Поимандр указал ему путь исхода человеческого, и вознёс его в сферы, и заповедал ему хранить закон природы».</div>
+</div>
+<div class="verse">
+<div class="num">14</div>
+<div class="grc">«Καὶ ἐγὼ ηὐχαριστήσα τῷ πατρὶ τῶν ὅλων, καὶ εὐλόγησα καὶ ἐδόξασα τὸν Ποιμάνδρα, τὸν τῆς αὐθεντίας νοῦν.»</div>
+<div class="ru">«И я возблагодарил Отца всех вещей, и благословил, и прославил Поимандра, Ум Самодержца».</div>
+</div>
+</main>
+<footer>ARCHIVUM HAERETICUM · Q29 · CORPUS HERMETICUM · TRACTATUS I · Поимандр · источник: критическое издание Nock-Festugière (1945, т. I, p. 1-12)</footer>
+<script>
+function toggleOrig(){document.querySelectorAll('.verse .grc').forEach(e=>e.style.display='');document.querySelectorAll('.verse .ru').forEach(e=>e.style.display='none')}
+function toggleRu(){document.querySelectorAll('.verse .grc').forEach(e=>e.style.display='none');document.querySelectorAll('.verse .ru').forEach(e=>e.style.display='')}
+function resetView(){document.querySelectorAll('.verse .grc,.verse .ru').forEach(e=>e.style.display='')}
+</script>
+</body></html>
