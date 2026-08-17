@@ -1,4 +1,4 @@
-name: Deploy to GitHub Pages
+name: Mirror Docs to Root (for GitHub Pages)
 
 on:
   push:
@@ -6,63 +6,50 @@ on:
   workflow_dispatch:
 
 permissions:
-  contents: read
-  pages: write
-  id-token: write
-
-concurrency:
-  group: "pages"
-  cancel-in-progress: false
+  contents: write
 
 jobs:
-  deploy:
-    environment:
-      name: github-pages
-      url: ${{ steps.deployment.outputs.page_url }}
+  mirror:
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout
-        uses: actions/checkout@v4
+      - uses: actions/checkout@v4
 
-      - name: Setup Pages
-        uses: actions/configure-pages@v5
-
-      - name: Build with Jekyll (skip)
-        uses: actions/jekyll-build-pages@v1
-        with:
-          source: ./
-          destination: ./_site
-        continue-on-error: true
-
-      - name: Copy docs to _site
+      - name: Mirror docs/ to root for Pages
         run: |
-          mkdir -p _site
-          cp -r docs/* _site/ 2>/dev/null || true
-          cp -r docs/.* _site/ 2>/dev/null || true
-          # Copy root index.html if exists
-          if [ -f index.html ]; then
-            cp index.html _site/index.html
-          fi
-          # Create simple root index
-          if [ ! -f _site/index.html ]; then
-            cat > _site/index.html << 'EOF'
-<!DOCTYPE html><html><head><meta charset="UTF-8"><title>Archivum Haereticum</title>
-<style>body{background:#0a0a0c;color:#c9a227;font-family:Georgia,serif;padding:40px;max-width:900px;margin:0 auto}
-h1{color:#c8102e;letter-spacing:.1em}
-a{color:#c9a227;text-decoration:none;display:block;padding:10px;border-left:3px solid #c8102e;margin:8px 0}
-a:hover{background:#13131a}</style></head>
-<body><h1>ARCHIVUM HAERETICUM</h1>
-<p>Corpus Divinum — 55 Q-Corpora</p>
-<a href="docs/index.html">→ CORPUS DIVINUS (55 Q)</a>
-</body></html>
-EOF
-          fi
+          set -e
+          # Get list of all Q-folders in docs
+          echo "Mirroring docs/ to root for GitHub Pages..."
 
-      - name: Upload artifact
-        uses: actions/upload-pages-artifact@v3
-        with:
-          path: ./_site
+          # Copy index.html
+          cp docs/index.html index.html
 
-      - name: Deploy to GitHub Pages
-        id: deployment
-        uses: actions/deploy-pages@v4
+          # Mirror each directory (except fonts and 02-libri-deperditi)
+          for d in docs/*/; do
+            name=$(basename "$d")
+            # Skip heavy/data folders
+            case "$name" in
+              fonts) continue ;;
+            esac
+            # Remove old copy if exists
+            if [ -d "$name" ] && [ ! -L "$name" ]; then
+              rm -rf "$name"
+            fi
+            if [ -L "$name" ]; then
+              rm "$name"
+            fi
+            # Copy
+            cp -r "$d" "$name"
+            echo "Mirrored: $name"
+          done
+
+      - name: Commit and push
+        run: |
+          git config user.name "archivum-pages-bot"
+          git config user.email "archivum-pages-bot@users.noreply.github.com"
+          git add -A
+          if git diff --cached --quiet; then
+            echo "No changes to commit"
+          else
+            git commit -m "Mirror docs/ to root for GitHub Pages"
+            git push origin HEAD:main
+          fi
