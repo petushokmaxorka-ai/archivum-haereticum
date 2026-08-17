@@ -1,0 +1,68 @@
+name: Deploy to GitHub Pages
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: "pages"
+  cancel-in-progress: false
+
+jobs:
+  deploy:
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Pages
+        uses: actions/configure-pages@v5
+
+      - name: Build with Jekyll (skip)
+        uses: actions/jekyll-build-pages@v1
+        with:
+          source: ./
+          destination: ./_site
+        continue-on-error: true
+
+      - name: Copy docs to _site
+        run: |
+          mkdir -p _site
+          cp -r docs/* _site/ 2>/dev/null || true
+          cp -r docs/.* _site/ 2>/dev/null || true
+          # Copy root index.html if exists
+          if [ -f index.html ]; then
+            cp index.html _site/index.html
+          fi
+          # Create simple root index
+          if [ ! -f _site/index.html ]; then
+            cat > _site/index.html << 'EOF'
+<!DOCTYPE html><html><head><meta charset="UTF-8"><title>Archivum Haereticum</title>
+<style>body{background:#0a0a0c;color:#c9a227;font-family:Georgia,serif;padding:40px;max-width:900px;margin:0 auto}
+h1{color:#c8102e;letter-spacing:.1em}
+a{color:#c9a227;text-decoration:none;display:block;padding:10px;border-left:3px solid #c8102e;margin:8px 0}
+a:hover{background:#13131a}</style></head>
+<body><h1>ARCHIVUM HAERETICUM</h1>
+<p>Corpus Divinum — 55 Q-Corpora</p>
+<a href="docs/index.html">→ CORPUS DIVINUS (55 Q)</a>
+</body></html>
+EOF
+          fi
+
+      - name: Upload artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: ./_site
+
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
