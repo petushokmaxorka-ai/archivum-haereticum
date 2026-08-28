@@ -60,8 +60,19 @@ const NAMES={bytie:"Бытие",ishod:"Исход",levit:"Левит",chisla:"Ч
 const esc=s=>String(s).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;');
 const SRC_LBL={'Винокуров':'дословный пер. А. Винокурова с греческого LXX','Юнгеров':'дословный пер. П. А. Юнгерова с греческого LXX','АРХИВ':'◆ ПЕРЕВОД АРХИВА — дословный, с греческого LXX'};
 async function loadBook(slug){
- const r=await fetch('data/'+slug+'.txt');if(!r.ok)throw new Error('no data');
- const t=(await r.text()).replace(/\s+/g,'');
+ const parts=[];
+ for(let i=0;;i++){
+  const r=await fetch('data/'+slug+'/'+String(i).padStart(2,'0')+'.txt');
+  if(!r.ok)break;
+  parts.push(await r.text());
+ }
+ let t;
+ if(parts.length){t=parts.join('').replace(/\s+/g,'');}
+ else{
+  const r=await fetch('data/'+slug+'.txt');
+  if(!r.ok)throw new Error('no data');
+  t=(await r.text()).replace(/\s+/g,'');
+ }
  const bin=atob(t);const bytes=new Uint8Array(bin.length);
  for(let i=0;i<bin.length;i++)bytes[i]=bin.charCodeAt(i);
  const stream=new Blob([bytes]).stream().pipeThrough(new DecompressionStream('gzip'));
@@ -85,15 +96,15 @@ function render(d,slug){
  else if(rs){rusStamp='<span'+(isArch?' class="arch"':'')+'>'+(isArch?'◆ ПЕРЕВОД АРХИВА':'РУС · '+esc(rs.toUpperCase()))+'</span>';rusNote=' · русский слой: '+esc(slug==='ezdr2'?'◆ ПЕРЕВОД АРХИВА — дословный, со славянской редакции 1751 (греческий не сохранился)':(SRC_LBL[rs]||rs))}
  else{rusStamp='<span>РУС · ГОТОВИТСЯ</span>';rusNote=' · <i>русский слой готовится</i>'}
  document.getElementById('bkstamps').innerHTML='<span>◆ FIDELIS</span><span>LXX · РАЛЬФС 1935</span><span>Ц.-СЛАВ · 1751</span>'+rusStamp;
- let h='<div class="note">Книга <b>'+esc(name)+'</b> — <b>'+keys.length+'</b> стихов · ΓΡ '+ng+' · РУ '+nr+rusNote+'.</div>';
+ let h='<div class="note">Книга <b>'+esc(name)+'</b> — <b>'+keys.length+'</b> стихов · ГР '+ng+' · РУ '+nr+rusNote+'.</div>';
  h+='<div class="toc"><h4>ГЛАВЫ</h4>'+chs.map(c=>'<a href="#c'+c+'">'+c+'</a>').join(' ')+'</div>';
- h+='<div class="lh"><div>СТИХ</div><div>ΓΡΕΚ · LXX</div><div>Ц.-СЛАВ · 1751</div><div>РУС · ДОСЛОВНО С LXX</div></div>';
+ h+='<div class="lh"><div>СТИХ</div><div>ГРЕК · LXX</div><div>Ц.-СЛАВ · 1751</div><div>РУС · ДОСЛОВНО С LXX</div></div>';
  let cur=null;
  for(const k of keys){
   const [c,v]=k.split(':');const V=d.verses[k];
   if(c!==cur){cur=c;h+='<h2 class="chap" id="c'+c+'">Глава '+c+'</h2>'}
   h+='<div class="vr" id="v'+c+'-'+v+'"><div class="vn">'+c+':'+v+'</div>';
-  h+='<div class="col g"><span class="cl">ΓΡЕК</span>'+(V.g?esc(V.g):missG(slug))+'</div>';
+  h+='<div class="col g"><span class="cl">ГРЕК</span>'+(V.g?esc(V.g):missG(slug))+'</div>';
   h+='<div class="col c"><span class="cl">Ц.-СЛАВ</span>'+(V.c?esc(V.c):'<span class="miss">—</span>')+'</div>';
   h+='<div class="col r"><span class="cl">РУС</span>'+(V.r?esc(V.r):'<span class="miss">— перевод готовится</span>')+'</div></div>';
  }
