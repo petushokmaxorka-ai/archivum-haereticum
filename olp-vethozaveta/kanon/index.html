@@ -61,7 +61,7 @@ const esc=s=>String(s).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'
 const SRC_LBL={'Винокуров':'дословный пер. А. Винокурова с греческого LXX','Юнгеров':'дословный пер. П. А. Юнгерова с греческого LXX','АРХИВ':'◆ ПЕРЕВОД АРХИВА — дословный, с греческого LXX'};
 async function loadBook(slug){
  const r=await fetch('data/'+slug+'.txt');if(!r.ok)throw new Error('no data');
- const t=(await r.text()).trim();
+ const t=(await r.text()).replace(/\s+/g,'');
  const bin=atob(t);const bytes=new Uint8Array(bin.length);
  for(let i=0;i<bin.length;i++)bytes[i]=bin.charCodeAt(i);
  const stream=new Blob([bytes]).stream().pipeThrough(new DecompressionStream('gzip'));
