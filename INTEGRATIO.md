@@ -58,7 +58,7 @@ https://raw.githubusercontent.com/petushokmaxorka-ai/archivum-haereticum/main/RE
 `mcp/server.py` — FastMCP (stdio). Инструменты: `list_rami`, `get_ramus`, `get_timeline`, `get_pantheones`, `search_archivum`. Запуск:
 
 ```bash
-pip install mcp
+pip install -r mcp/requirements.txt   # mcp>=1.2,<2: в mcp 2.x нет mcp.server.fastmcp
 python mcp/server.py
 ```
 

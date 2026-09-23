@@ -17,7 +17,7 @@
       "servata": ["Сианьская стела 781.M2", "дуньхуанские сутры Цзинцзяо", "пехлеви-кресты Кералы", "переводческая школа Багдада (Дом Мудрости)"],
       "culmen": "VII–XIII вв.: митрополии от Самарканда до Пекина — крупнейшая география среди церквей эпохи",
       "classificatio": "FIDELIS",
-      "dossier": "03-rami-ecclesiae/ecclesia-orientis.md"
+      "dossier": "03-rami-ecclesiae/oriental-orthodox/ecclesia-orientis.md"
     },
     {
       "id": "aethiopia",
@@ -29,7 +29,7 @@
       "canon_libri": 81,
       "servata": ["1 Енох (канонична только здесь)", "Юбилеи", "Кебра Негаст", "претензия на Ковчег Завета (Аксум)"],
       "classificatio": "FIDELIS",
-      "dossier": "03-rami-ecclesiae/aethiopia.md"
+      "dossier": "03-rami-ecclesiae/oriental-orthodox/aethiopia.md"
     },
     {
       "id": "armenia",
@@ -40,7 +40,7 @@
       "strategia": "сопротивление — алфавит как сосуд, мгновенная портировка, хранение под огнём",
       "servata": ["алфавит Маштоца 405.M1", "Матенадаран (~17 тыс. рукописей)", "3-е Послание к Коринфянам в каноне", "армянские уникалии: Евсевий Хроникон, Ириней «Показание», часть Филона"],
       "classificatio": "FIDELIS",
-      "dossier": "03-rami-ecclesiae/armenia.md"
+      "dossier": "03-rami-ecclesiae/oriental-orthodox/armenia.md"
     },
     {
       "id": "slavia",
@@ -51,7 +51,7 @@
       "strategia": "копирование на новой почве — готовый пакет (Солунские братья), собственные тексты поверх",
       "servata": ["2 Енох — сохранилась только по-церковнославянски", "Голубиная книга и духовные стихи", "двоеверие как перераспределение портфелей (Перун→Илья, Велес→Власий)", "Септуагинта как Ветхий Завет"],
       "classificatio": "FIDELIS",
-      "dossier": "03-rami-ecclesiae/slavia.md"
+      "dossier": "03-rami-ecclesiae/east-european/slavia.md"
     },
     {
       "id": "hibernia",
@@ -62,7 +62,7 @@
       "strategia": "изоляция края карты + возврат долга: скриптории сохранили, миссионеры вернули",
       "servata": ["Келлская книга ~800.M1", "приватная исповедь (пенитенциалы)", "огонь Бригитты (портфель богини → аббатисе)", "иммрамы: Плавание Брендана"],
       "classificatio": "FIDELIS",
-      "dossier": "03-rami-ecclesiae/hibernia.md"
+      "dossier": "03-rami-ecclesiae/celtic-catholic/hibernia.md"
     },
     {
       "id": "persia-mazda",
@@ -73,7 +73,7 @@
       "strategia": "редакторский пакет — эсхатология экспортирована в иудаизм Второго Храма",
       "servata": ["Гаты", "пакет: воскресение, суд, дьявол, апокалипсис", "Кир — «мессия» (Ис 45:1)", "огонь Атеш-Бехрама в Йезде горит с 470.M1", "парсы Индии"],
       "classificatio": "FIDELIS (влияние на иудаизм — консенсус с оговорками)",
-      "dossier": "03-rami-ecclesiae/persia.md"
+      "dossier": "03-rami-ecclesiae/persian-bactrian/persia.md"
     },
     {
       "id": "bactria",
@@ -83,7 +83,7 @@
       "strategia": "перевод всего во всё: греческая форма × индийское содержание",
       "servata": ["Аполлон-Будда и Геракл-Ваджрапани (Гандхара)", "эдикты Ашоки по-гречески (Кандагар)", "монеты Канишки с пантеоном", "Бамиан (уничтожен 2001.M3)", "калаши — живая ветвь доныне"],
       "classificatio": "FIDELIS",
-      "dossier": "03-rami-ecclesiae/bactria.md"
+      "dossier": "03-rami-ecclesiae/persian-bactrian/bactria.md"
     },
     {
       "id": "al-andalus",
@@ -93,7 +93,7 @@
       "strategia": "общий рантайм трёх ветвей (конвивенсия) + экспортный слой перевода",
       "servata": ["Толедская школа переводчиков", "Ибн Хазм — первая сравнительная религиоведка", "харджа — древнейшая романская лирика внутри арабо-еврейских стихов", "мосарабский обряд (жив в Толедо)"],
       "classificatio": "FIDELIS",
-      "dossier": "03-rami-ecclesiae/al-andalus.md"
+      "dossier": "03-rami-ecclesiae/islamic/al-andalus.md"
     },
     {
       "id": "islam-sunni",
@@ -101,7 +101,7 @@
       "fork": "632.M1 — Сакифа: община выбирает",
       "strategia": "консенсус (иджма), четыре мазхаба, шесть сборников хадисов",
       "classificatio": "FIDELIS",
-      "dossier": "03-rami-ecclesiae/islam-rami.md"
+      "dossier": "03-rami-ecclesiae/islamic/islam-rami.md"
     },
     {
       "id": "islam-shia",
@@ -109,7 +109,7 @@
       "fork": "632.M1 — партия Али; идентичность зацементирована Кербелой 680.M1",
       "servata": ["имамат", "двунадесятники: 12-й имам в сокрытии с 874.M1", "исмаилиты → Фатимиды, аль-Азхар 970.M1"],
       "classificatio": "FIDELIS",
-      "dossier": "03-rami-ecclesiae/islam-rami.md"
+      "dossier": "03-rami-ecclesiae/islamic/islam-rami.md"
     },
     {
       "id": "islam-ibadi",
@@ -117,7 +117,7 @@
       "fork": "657.M1 — хариджитский выход из обоих лагерей",
       "strategia": "третий сохранившийся форк 632 года; не сунниты и не шииты",
       "classificatio": "FIDELIS",
-      "dossier": "03-rami-ecclesiae/islam-rami.md"
+      "dossier": "03-rami-ecclesiae/islamic/islam-rami.md"
     },
     {
       "id": "manichaea",

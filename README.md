@@ -113,7 +113,7 @@ graph LR
 |---|---|---|
 | `00-manuscriptum-principale/` | PROOEMIUM, hypothesа, concordantia, CREDO | PRINCIPIUM |
 | `01-eventus-babel/` | Вавилонский инцидент: башня, Втор 32, Смотрители | CODEX |
-| `02-libri-deperditi/` | Утраченные книги: 1 Енох, 2 Енох, Юбилеи, Кебра, Голубиная, Метатрон-Идрис, Наг-Хаммади | LIBER |
+| `docs/02-libri-deperditi/` | Утраченные книги: 1 Енох, 2 Енох, Юбилеи, Кебра, Голубиная, Метатрон-Идрис, Наг-Хаммади (зал перенесён в `docs/`, чтобы быть на сайте; копия в корне устарела) | LIBER |
 | `03-rami-ecclesiae/` | Ветви церквей: 9 досье (Эфиопия → Ислам) | CODEX |
 | `04-pantheones/` | Боги и культы ветвей: 62 досье | INQUISITIO |
 | `05-probatio/` | PROBATA и DAMNATA с протоколами (Велесова книга и др.) | INQUISITIO |
@@ -123,7 +123,7 @@ graph LR
 | **`09-gentes/`** | **Народы и судьбы: 20 досье** | CHRONICLE |
 | **`corpus/`** | **CORPUS DIVINUS: 6 корпусов (Коран, НЗ, ВЗ, 1 Енох, 2 Енох, Юбилеи)** | LIBER / NOOSPHERE |
 | `data/` | JSON-ядра: corpus.json, timeline.json, pantheones.json | CHRONICLE / NOOSPHERE |
-| `docs/` | Живой сайт (GitHub Pages) | MANUFACTORUM |
+| `docs/` | Живой сайт (GitHub Pages публикует `main` → `/docs`) | MANUFACTORUM |
 | `mcp/` | MCP-сервер архива (5 инструментов) | MACHINA |
 | `INTEGRATIO.md` | Инструкция встройки в Heretic OS | MANUFACTORUM |
 | `REPERTORIUM.md` | Полный реестр досье и корпуса | CATALOGUS |
@@ -171,6 +171,27 @@ graph LR
 - **Хотите полный реестр?** → `REPERTORIUM.md`
 - **Хотите видеть, как работает протокол?** → `05-probatio/velesova-kniga.md` (полный DAMNATA-протокол)
 - **Хотите увидеть самокритику Архива?** → `08-matrix-orthodoxa/DAMNATA-NOSTRA.md`
+
+### MANUFACTORUM — САЙТ, СБОРКА, MCP
+
+**Сайт.** GitHub Pages публикует ветку `main`, папку **`/docs`** (штатная сборка GitHub `pages-build-deployment`). Всё, что лежит в `docs/`, появляется на `petushokmaxorka-ai.github.io/archivum-haereticum/` через 1–2 минуты после push. Править страницы сайта нужно **в `docs/`**. Исключение — Scriptorium: его исходник `scriptorium/index.html` в корне, `build.yml` копирует его поверх `docs/scriptorium/index.html`, поэтому правки прямо в `docs/scriptorium/` будут перезаписаны. Остальные каталоги в корне с теми же именами, что в `docs/` (`quran/`, `nt/`, `tanakh/`, `olp-vethozaveta/` … и корневой `index.html`), — копии, оставшиеся от удалённого workflow зеркалирования; сайт их не использует.
+
+**Проверка корпуса Корана** (то же делает `.github/workflows/build.yml` при push в `main`, кроме push только в `docs/`; нужны `bash`, `curl`, Python 3):
+
+```bash
+bash corpus/tools/fetch_sources.sh      # Tanzil Uthmani + Крачковский → quran_*.txt в корне (в .gitignore)
+python3 corpus/tools/build_quran.py --src quran_uthmani.txt --ru quran_ru_krachkovsky.txt --out /tmp/build
+python3 corpus/tools/verify.py quran_uthmani.txt 6236
+```
+
+Сборщик пишет JSONL и черновые HTML в `/tmp/build`. Витрина `docs/quran/` ведётся отдельно и сборкой не перезаписывается. Workflow также копирует `scriptorium/index.html` → `docs/scriptorium/index.html` и коммитит изменения.
+
+**MCP-сервер** (Python ≥ 3.10):
+
+```bash
+pip install -r mcp/requirements.txt     # mcp>=1.2,<2 — в mcp 2.x нет FastMCP
+python mcp/server.py                    # stdio
+```
 
 ### 🔮 LISTS — ТРИ ВЕРХНЕУРОВНЕВЫХ СПИСКА
 

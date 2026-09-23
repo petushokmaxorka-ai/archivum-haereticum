@@ -3,7 +3,8 @@
 ARCHIVUM HAERETICUM — MCP-сервер Архива Империума Человечества.
 Отдаёт агентам ветви, хронологию, пантеоны и досье из репозитория.
 
-Запуск:  pip install mcp && python mcp/server.py  (stdio)
+Запуск:  pip install -r mcp/requirements.txt && python mcp/server.py  (stdio)
+         (нужен mcp 1.x: в mcp 2.x нет mcp.server.fastmcp)
 Данные:  ../data/*.json и досье ../  относительно этого файла.
 """
 
