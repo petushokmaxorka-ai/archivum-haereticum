@@ -1,0 +1,18 @@
+{
+ "id": "P-01",
+ "chapters": [
+  {
+   "slug": "mol_man",
+   "ch": "1",
+   "verses": 16,
+   "aligned": false
+  },
+  {
+   "slug": "navin",
+   "ch": "1",
+   "verses": 18,
+   "aligned": true
+  }
+ ],
+ "verses": 34
+}

@@ -1,0 +1,72 @@
+{
+ "id": "A-22",
+ "chapters": [
+  {
+   "slug": "makk2",
+   "ch": "12",
+   "verses": 45,
+   "aligned": false
+  },
+  {
+   "slug": "makk2",
+   "ch": "13",
+   "verses": 26,
+   "aligned": true
+  },
+  {
+   "slug": "makk2",
+   "ch": "14",
+   "verses": 46,
+   "aligned": true
+  },
+  {
+   "slug": "makk2",
+   "ch": "15",
+   "verses": 39,
+   "aligned": false
+  },
+  {
+   "slug": "makk3",
+   "ch": "1",
+   "verses": 29,
+   "aligned": false
+  },
+  {
+   "slug": "makk3",
+   "ch": "2",
+   "verses": 33,
+   "aligned": false
+  },
+  {
+   "slug": "makk3",
+   "ch": "3",
+   "verses": 30,
+   "aligned": false
+  },
+  {
+   "slug": "makk3",
+   "ch": "4",
+   "verses": 21,
+   "aligned": false
+  },
+  {
+   "slug": "makk3",
+   "ch": "5",
+   "verses": 51,
+   "aligned": false
+  },
+  {
+   "slug": "makk3",
+   "ch": "6",
+   "verses": 41,
+   "aligned": false
+  },
+  {
+   "slug": "makk3",
+   "ch": "7",
+   "verses": 23,
+   "aligned": false
+  }
+ ],
+ "verses": 384
+}

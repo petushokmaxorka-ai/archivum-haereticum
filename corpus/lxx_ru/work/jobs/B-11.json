@@ -1,0 +1,108 @@
+{
+ "id": "B-11",
+ "chapters": [
+  {
+   "slug": "vtor",
+   "ch": "1",
+   "verses": 46,
+   "aligned": true
+  },
+  {
+   "slug": "vtor",
+   "ch": "2",
+   "verses": 37,
+   "aligned": true
+  },
+  {
+   "slug": "vtor",
+   "ch": "3",
+   "verses": 29,
+   "aligned": true
+  },
+  {
+   "slug": "vtor",
+   "ch": "4",
+   "verses": 49,
+   "aligned": true
+  },
+  {
+   "slug": "vtor",
+   "ch": "5",
+   "verses": 33,
+   "aligned": true
+  },
+  {
+   "slug": "vtor",
+   "ch": "6",
+   "verses": 25,
+   "aligned": true
+  },
+  {
+   "slug": "vtor",
+   "ch": "7",
+   "verses": 26,
+   "aligned": true
+  },
+  {
+   "slug": "vtor",
+   "ch": "8",
+   "verses": 20,
+   "aligned": true
+  },
+  {
+   "slug": "vtor",
+   "ch": "9",
+   "verses": 29,
+   "aligned": true
+  },
+  {
+   "slug": "vtor",
+   "ch": "10",
+   "verses": 22,
+   "aligned": true
+  },
+  {
+   "slug": "vtor",
+   "ch": "11",
+   "verses": 32,
+   "aligned": true
+  },
+  {
+   "slug": "vtor",
+   "ch": "12",
+   "verses": 31,
+   "aligned": false
+  },
+  {
+   "slug": "vtor",
+   "ch": "13",
+   "verses": 19,
+   "aligned": false
+  },
+  {
+   "slug": "vtor",
+   "ch": "14",
+   "verses": 29,
+   "aligned": true
+  },
+  {
+   "slug": "vtor",
+   "ch": "15",
+   "verses": 23,
+   "aligned": true
+  },
+  {
+   "slug": "vtor",
+   "ch": "16",
+   "verses": 22,
+   "aligned": true
+  },
+  {
+   "slug": "vtor",
+   "ch": "17",
+   "verses": 20,
+   "aligned": true
+  }
+ ],
+ "verses": 492
+}

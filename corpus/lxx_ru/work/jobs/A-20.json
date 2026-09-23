@@ -1,0 +1,42 @@
+{
+ "id": "A-20",
+ "chapters": [
+  {
+   "slug": "makk1",
+   "ch": "11",
+   "verses": 74,
+   "aligned": true
+  },
+  {
+   "slug": "makk1",
+   "ch": "12",
+   "verses": 53,
+   "aligned": false
+  },
+  {
+   "slug": "makk1",
+   "ch": "13",
+   "verses": 53,
+   "aligned": true
+  },
+  {
+   "slug": "makk1",
+   "ch": "14",
+   "verses": 49,
+   "aligned": true
+  },
+  {
+   "slug": "makk1",
+   "ch": "15",
+   "verses": 41,
+   "aligned": true
+  },
+  {
+   "slug": "makk1",
+   "ch": "16",
+   "verses": 24,
+   "aligned": true
+  }
+ ],
+ "verses": 294
+}

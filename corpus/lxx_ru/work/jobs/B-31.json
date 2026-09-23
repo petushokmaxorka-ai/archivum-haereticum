@@ -1,0 +1,84 @@
+{
+ "id": "B-31",
+ "chapters": [
+  {
+   "slug": "ieremia",
+   "ch": "47",
+   "verses": 16,
+   "aligned": false
+  },
+  {
+   "slug": "ieremia",
+   "ch": "48",
+   "verses": 18,
+   "aligned": false
+  },
+  {
+   "slug": "ieremia",
+   "ch": "49",
+   "verses": 22,
+   "aligned": false
+  },
+  {
+   "slug": "ieremia",
+   "ch": "50",
+   "verses": 13,
+   "aligned": false
+  },
+  {
+   "slug": "ieremia",
+   "ch": "51",
+   "verses": 35,
+   "aligned": false
+  },
+  {
+   "slug": "ieremia",
+   "ch": "52",
+   "verses": 28,
+   "aligned": false
+  },
+  {
+   "slug": "plach",
+   "ch": "0",
+   "verses": 1,
+   "aligned": false
+  },
+  {
+   "slug": "plach",
+   "ch": "1",
+   "verses": 22,
+   "aligned": false
+  },
+  {
+   "slug": "plach",
+   "ch": "2",
+   "verses": 22,
+   "aligned": true
+  },
+  {
+   "slug": "plach",
+   "ch": "3",
+   "verses": 62,
+   "aligned": false
+  },
+  {
+   "slug": "plach",
+   "ch": "4",
+   "verses": 22,
+   "aligned": true
+  },
+  {
+   "slug": "plach",
+   "ch": "5",
+   "verses": 22,
+   "aligned": true
+  },
+  {
+   "slug": "posl_ier",
+   "ch": "1",
+   "verses": 73,
+   "aligned": false
+  }
+ ],
+ "verses": 356
+}

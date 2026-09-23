@@ -1,0 +1,126 @@
+{
+ "id": "B-16",
+ "chapters": [
+  {
+   "slug": "iov",
+   "ch": "10",
+   "verses": 22,
+   "aligned": true
+  },
+  {
+   "slug": "iov",
+   "ch": "11",
+   "verses": 20,
+   "aligned": true
+  },
+  {
+   "slug": "iov",
+   "ch": "12",
+   "verses": 25,
+   "aligned": true
+  },
+  {
+   "slug": "iov",
+   "ch": "13",
+   "verses": 28,
+   "aligned": true
+  },
+  {
+   "slug": "iov",
+   "ch": "14",
+   "verses": 22,
+   "aligned": true
+  },
+  {
+   "slug": "iov",
+   "ch": "15",
+   "verses": 35,
+   "aligned": true
+  },
+  {
+   "slug": "iov",
+   "ch": "16",
+   "verses": 22,
+   "aligned": true
+  },
+  {
+   "slug": "iov",
+   "ch": "17",
+   "verses": 16,
+   "aligned": true
+  },
+  {
+   "slug": "iov",
+   "ch": "18",
+   "verses": 21,
+   "aligned": true
+  },
+  {
+   "slug": "iov",
+   "ch": "19",
+   "verses": 29,
+   "aligned": true
+  },
+  {
+   "slug": "iov",
+   "ch": "20",
+   "verses": 29,
+   "aligned": true
+  },
+  {
+   "slug": "iov",
+   "ch": "21",
+   "verses": 34,
+   "aligned": true
+  },
+  {
+   "slug": "iov",
+   "ch": "22",
+   "verses": 30,
+   "aligned": true
+  },
+  {
+   "slug": "iov",
+   "ch": "23",
+   "verses": 16,
+   "aligned": false
+  },
+  {
+   "slug": "iov",
+   "ch": "24",
+   "verses": 25,
+   "aligned": true
+  },
+  {
+   "slug": "iov",
+   "ch": "25",
+   "verses": 6,
+   "aligned": true
+  },
+  {
+   "slug": "iov",
+   "ch": "26",
+   "verses": 14,
+   "aligned": true
+  },
+  {
+   "slug": "iov",
+   "ch": "27",
+   "verses": 23,
+   "aligned": true
+  },
+  {
+   "slug": "iov",
+   "ch": "28",
+   "verses": 28,
+   "aligned": true
+  },
+  {
+   "slug": "iov",
+   "ch": "29",
+   "verses": 25,
+   "aligned": true
+  }
+ ],
+ "verses": 470
+}

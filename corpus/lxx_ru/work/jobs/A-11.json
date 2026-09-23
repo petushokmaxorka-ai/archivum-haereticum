@@ -1,0 +1,72 @@
+{
+ "id": "A-11",
+ "chapters": [
+  {
+   "slug": "carstv4",
+   "ch": "15",
+   "verses": 38,
+   "aligned": true
+  },
+  {
+   "slug": "carstv4",
+   "ch": "16",
+   "verses": 20,
+   "aligned": true
+  },
+  {
+   "slug": "carstv4",
+   "ch": "17",
+   "verses": 41,
+   "aligned": true
+  },
+  {
+   "slug": "carstv4",
+   "ch": "18",
+   "verses": 37,
+   "aligned": true
+  },
+  {
+   "slug": "carstv4",
+   "ch": "19",
+   "verses": 37,
+   "aligned": true
+  },
+  {
+   "slug": "carstv4",
+   "ch": "20",
+   "verses": 21,
+   "aligned": true
+  },
+  {
+   "slug": "carstv4",
+   "ch": "21",
+   "verses": 26,
+   "aligned": true
+  },
+  {
+   "slug": "carstv4",
+   "ch": "22",
+   "verses": 20,
+   "aligned": true
+  },
+  {
+   "slug": "carstv4",
+   "ch": "23",
+   "verses": 37,
+   "aligned": true
+  },
+  {
+   "slug": "carstv4",
+   "ch": "24",
+   "verses": 20,
+   "aligned": true
+  },
+  {
+   "slug": "carstv4",
+   "ch": "25",
+   "verses": 30,
+   "aligned": true
+  }
+ ],
+ "verses": 327
+}

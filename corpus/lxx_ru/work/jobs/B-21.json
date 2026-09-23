@@ -1,0 +1,156 @@
+{
+ "id": "B-21",
+ "chapters": [
+  {
+   "slug": "psaltir",
+   "ch": "88",
+   "verses": 53,
+   "aligned": true
+  },
+  {
+   "slug": "psaltir",
+   "ch": "89",
+   "verses": 17,
+   "aligned": true
+  },
+  {
+   "slug": "psaltir",
+   "ch": "90",
+   "verses": 16,
+   "aligned": true
+  },
+  {
+   "slug": "psaltir",
+   "ch": "91",
+   "verses": 16,
+   "aligned": true
+  },
+  {
+   "slug": "psaltir",
+   "ch": "92",
+   "verses": 5,
+   "aligned": false
+  },
+  {
+   "slug": "psaltir",
+   "ch": "93",
+   "verses": 23,
+   "aligned": true
+  },
+  {
+   "slug": "psaltir",
+   "ch": "94",
+   "verses": 11,
+   "aligned": true
+  },
+  {
+   "slug": "psaltir",
+   "ch": "95",
+   "verses": 13,
+   "aligned": true
+  },
+  {
+   "slug": "psaltir",
+   "ch": "96",
+   "verses": 12,
+   "aligned": true
+  },
+  {
+   "slug": "psaltir",
+   "ch": "97",
+   "verses": 9,
+   "aligned": true
+  },
+  {
+   "slug": "psaltir",
+   "ch": "98",
+   "verses": 9,
+   "aligned": true
+  },
+  {
+   "slug": "psaltir",
+   "ch": "99",
+   "verses": 5,
+   "aligned": true
+  },
+  {
+   "slug": "psaltir",
+   "ch": "100",
+   "verses": 8,
+   "aligned": true
+  },
+  {
+   "slug": "psaltir",
+   "ch": "101",
+   "verses": 29,
+   "aligned": true
+  },
+  {
+   "slug": "psaltir",
+   "ch": "102",
+   "verses": 22,
+   "aligned": true
+  },
+  {
+   "slug": "psaltir",
+   "ch": "103",
+   "verses": 35,
+   "aligned": true
+  },
+  {
+   "slug": "psaltir",
+   "ch": "104",
+   "verses": 45,
+   "aligned": true
+  },
+  {
+   "slug": "psaltir",
+   "ch": "105",
+   "verses": 48,
+   "aligned": true
+  },
+  {
+   "slug": "psaltir",
+   "ch": "106",
+   "verses": 43,
+   "aligned": true
+  },
+  {
+   "slug": "psaltir",
+   "ch": "107",
+   "verses": 14,
+   "aligned": true
+  },
+  {
+   "slug": "psaltir",
+   "ch": "108",
+   "verses": 31,
+   "aligned": true
+  },
+  {
+   "slug": "psaltir",
+   "ch": "109",
+   "verses": 7,
+   "aligned": true
+  },
+  {
+   "slug": "psaltir",
+   "ch": "110",
+   "verses": 10,
+   "aligned": true
+  },
+  {
+   "slug": "psaltir",
+   "ch": "111",
+   "verses": 10,
+   "aligned": true
+  },
+  {
+   "slug": "psaltir",
+   "ch": "112",
+   "verses": 9,
+   "aligned": true
+  }
+ ],
+ "verses": 500
+}

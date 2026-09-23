@@ -1,0 +1,156 @@
+{
+ "id": "B-14",
+ "chapters": [
+  {
+   "slug": "esfir",
+   "ch": "1",
+   "verses": 22,
+   "aligned": true
+  },
+  {
+   "slug": "esfir",
+   "ch": "2",
+   "verses": 23,
+   "aligned": true
+  },
+  {
+   "slug": "esfir",
+   "ch": "3",
+   "verses": 15,
+   "aligned": true
+  },
+  {
+   "slug": "esfir",
+   "ch": "4",
+   "verses": 16,
+   "aligned": false
+  },
+  {
+   "slug": "esfir",
+   "ch": "5",
+   "verses": 14,
+   "aligned": true
+  },
+  {
+   "slug": "esfir",
+   "ch": "6",
+   "verses": 14,
+   "aligned": true
+  },
+  {
+   "slug": "esfir",
+   "ch": "7",
+   "verses": 10,
+   "aligned": true
+  },
+  {
+   "slug": "esfir",
+   "ch": "8",
+   "verses": 17,
+   "aligned": true
+  },
+  {
+   "slug": "esfir",
+   "ch": "9",
+   "verses": 30,
+   "aligned": false
+  },
+  {
+   "slug": "esfir",
+   "ch": "10",
+   "verses": 3,
+   "aligned": true
+  },
+  {
+   "slug": "iudif",
+   "ch": "1",
+   "verses": 16,
+   "aligned": true
+  },
+  {
+   "slug": "iudif",
+   "ch": "2",
+   "verses": 28,
+   "aligned": true
+  },
+  {
+   "slug": "iudif",
+   "ch": "3",
+   "verses": 10,
+   "aligned": true
+  },
+  {
+   "slug": "iudif",
+   "ch": "4",
+   "verses": 15,
+   "aligned": true
+  },
+  {
+   "slug": "iudif",
+   "ch": "5",
+   "verses": 24,
+   "aligned": true
+  },
+  {
+   "slug": "iudif",
+   "ch": "6",
+   "verses": 21,
+   "aligned": true
+  },
+  {
+   "slug": "iudif",
+   "ch": "7",
+   "verses": 32,
+   "aligned": true
+  },
+  {
+   "slug": "iudif",
+   "ch": "8",
+   "verses": 36,
+   "aligned": true
+  },
+  {
+   "slug": "iudif",
+   "ch": "9",
+   "verses": 14,
+   "aligned": true
+  },
+  {
+   "slug": "iudif",
+   "ch": "10",
+   "verses": 23,
+   "aligned": true
+  },
+  {
+   "slug": "iudif",
+   "ch": "11",
+   "verses": 23,
+   "aligned": true
+  },
+  {
+   "slug": "iudif",
+   "ch": "12",
+   "verses": 20,
+   "aligned": true
+  },
+  {
+   "slug": "iudif",
+   "ch": "13",
+   "verses": 20,
+   "aligned": true
+  },
+  {
+   "slug": "iudif",
+   "ch": "14",
+   "verses": 19,
+   "aligned": true
+  },
+  {
+   "slug": "iudif",
+   "ch": "15",
+   "verses": 14,
+   "aligned": true
+  }
+ ],
+ "verses": 479
+}

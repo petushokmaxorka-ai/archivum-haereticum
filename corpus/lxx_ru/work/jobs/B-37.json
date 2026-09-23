@@ -1,0 +1,186 @@
+{
+ "id": "B-37",
+ "chapters": [
+  {
+   "slug": "mihei",
+   "ch": "1",
+   "verses": 16,
+   "aligned": true
+  },
+  {
+   "slug": "mihei",
+   "ch": "2",
+   "verses": 13,
+   "aligned": true
+  },
+  {
+   "slug": "mihei",
+   "ch": "3",
+   "verses": 12,
+   "aligned": true
+  },
+  {
+   "slug": "mihei",
+   "ch": "4",
+   "verses": 14,
+   "aligned": false
+  },
+  {
+   "slug": "mihei",
+   "ch": "5",
+   "verses": 14,
+   "aligned": false
+  },
+  {
+   "slug": "mihei",
+   "ch": "6",
+   "verses": 16,
+   "aligned": true
+  },
+  {
+   "slug": "mihei",
+   "ch": "7",
+   "verses": 20,
+   "aligned": true
+  },
+  {
+   "slug": "avvakum",
+   "ch": "1",
+   "verses": 17,
+   "aligned": true
+  },
+  {
+   "slug": "avvakum",
+   "ch": "2",
+   "verses": 20,
+   "aligned": true
+  },
+  {
+   "slug": "avvakum",
+   "ch": "3",
+   "verses": 19,
+   "aligned": true
+  },
+  {
+   "slug": "sofonia",
+   "ch": "1",
+   "verses": 18,
+   "aligned": true
+  },
+  {
+   "slug": "sofonia",
+   "ch": "2",
+   "verses": 15,
+   "aligned": true
+  },
+  {
+   "slug": "sofonia",
+   "ch": "3",
+   "verses": 20,
+   "aligned": true
+  },
+  {
+   "slug": "zaharia",
+   "ch": "1",
+   "verses": 17,
+   "aligned": false
+  },
+  {
+   "slug": "zaharia",
+   "ch": "2",
+   "verses": 17,
+   "aligned": false
+  },
+  {
+   "slug": "zaharia",
+   "ch": "3",
+   "verses": 10,
+   "aligned": true
+  },
+  {
+   "slug": "zaharia",
+   "ch": "4",
+   "verses": 14,
+   "aligned": true
+  },
+  {
+   "slug": "zaharia",
+   "ch": "5",
+   "verses": 11,
+   "aligned": true
+  },
+  {
+   "slug": "zaharia",
+   "ch": "6",
+   "verses": 15,
+   "aligned": true
+  },
+  {
+   "slug": "zaharia",
+   "ch": "7",
+   "verses": 14,
+   "aligned": true
+  },
+  {
+   "slug": "zaharia",
+   "ch": "8",
+   "verses": 23,
+   "aligned": true
+  },
+  {
+   "slug": "zaharia",
+   "ch": "9",
+   "verses": 17,
+   "aligned": true
+  },
+  {
+   "slug": "zaharia",
+   "ch": "10",
+   "verses": 12,
+   "aligned": true
+  },
+  {
+   "slug": "zaharia",
+   "ch": "11",
+   "verses": 17,
+   "aligned": true
+  },
+  {
+   "slug": "zaharia",
+   "ch": "12",
+   "verses": 14,
+   "aligned": true
+  },
+  {
+   "slug": "zaharia",
+   "ch": "13",
+   "verses": 9,
+   "aligned": true
+  },
+  {
+   "slug": "zaharia",
+   "ch": "14",
+   "verses": 21,
+   "aligned": true
+  },
+  {
+   "slug": "malahia",
+   "ch": "1",
+   "verses": 14,
+   "aligned": true
+  },
+  {
+   "slug": "malahia",
+   "ch": "2",
+   "verses": 17,
+   "aligned": true
+  },
+  {
+   "slug": "malahia",
+   "ch": "3",
+   "verses": 24,
+   "aligned": false
+  }
+ ],
+ "verses": 480
+}

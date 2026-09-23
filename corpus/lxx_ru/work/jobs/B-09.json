@@ -1,0 +1,96 @@
+{
+ "id": "B-09",
+ "chapters": [
+  {
+   "slug": "chisla",
+   "ch": "9",
+   "verses": 23,
+   "aligned": true
+  },
+  {
+   "slug": "chisla",
+   "ch": "10",
+   "verses": 36,
+   "aligned": true
+  },
+  {
+   "slug": "chisla",
+   "ch": "11",
+   "verses": 35,
+   "aligned": true
+  },
+  {
+   "slug": "chisla",
+   "ch": "12",
+   "verses": 16,
+   "aligned": false
+  },
+  {
+   "slug": "chisla",
+   "ch": "13",
+   "verses": 33,
+   "aligned": false
+  },
+  {
+   "slug": "chisla",
+   "ch": "14",
+   "verses": 45,
+   "aligned": true
+  },
+  {
+   "slug": "chisla",
+   "ch": "15",
+   "verses": 41,
+   "aligned": true
+  },
+  {
+   "slug": "chisla",
+   "ch": "16",
+   "verses": 35,
+   "aligned": false
+  },
+  {
+   "slug": "chisla",
+   "ch": "17",
+   "verses": 28,
+   "aligned": false
+  },
+  {
+   "slug": "chisla",
+   "ch": "18",
+   "verses": 32,
+   "aligned": true
+  },
+  {
+   "slug": "chisla",
+   "ch": "19",
+   "verses": 22,
+   "aligned": true
+  },
+  {
+   "slug": "chisla",
+   "ch": "20",
+   "verses": 29,
+   "aligned": false
+  },
+  {
+   "slug": "chisla",
+   "ch": "21",
+   "verses": 35,
+   "aligned": true
+  },
+  {
+   "slug": "chisla",
+   "ch": "22",
+   "verses": 41,
+   "aligned": true
+  },
+  {
+   "slug": "chisla",
+   "ch": "23",
+   "verses": 30,
+   "aligned": true
+  }
+ ],
+ "verses": 481
+}

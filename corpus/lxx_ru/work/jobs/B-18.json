@@ -1,0 +1,204 @@
+{
+ "id": "B-18",
+ "chapters": [
+  {
+   "slug": "psaltir",
+   "ch": "1",
+   "verses": 6,
+   "aligned": true
+  },
+  {
+   "slug": "psaltir",
+   "ch": "2",
+   "verses": 12,
+   "aligned": true
+  },
+  {
+   "slug": "psaltir",
+   "ch": "3",
+   "verses": 9,
+   "aligned": true
+  },
+  {
+   "slug": "psaltir",
+   "ch": "4",
+   "verses": 9,
+   "aligned": true
+  },
+  {
+   "slug": "psaltir",
+   "ch": "5",
+   "verses": 13,
+   "aligned": true
+  },
+  {
+   "slug": "psaltir",
+   "ch": "6",
+   "verses": 11,
+   "aligned": true
+  },
+  {
+   "slug": "psaltir",
+   "ch": "7",
+   "verses": 18,
+   "aligned": true
+  },
+  {
+   "slug": "psaltir",
+   "ch": "8",
+   "verses": 10,
+   "aligned": true
+  },
+  {
+   "slug": "psaltir",
+   "ch": "9",
+   "verses": 39,
+   "aligned": true
+  },
+  {
+   "slug": "psaltir",
+   "ch": "10",
+   "verses": 7,
+   "aligned": true
+  },
+  {
+   "slug": "psaltir",
+   "ch": "11",
+   "verses": 9,
+   "aligned": true
+  },
+  {
+   "slug": "psaltir",
+   "ch": "12",
+   "verses": 6,
+   "aligned": false
+  },
+  {
+   "slug": "psaltir",
+   "ch": "13",
+   "verses": 7,
+   "aligned": false
+  },
+  {
+   "slug": "psaltir",
+   "ch": "14",
+   "verses": 5,
+   "aligned": true
+  },
+  {
+   "slug": "psaltir",
+   "ch": "15",
+   "verses": 11,
+   "aligned": true
+  },
+  {
+   "slug": "psaltir",
+   "ch": "16",
+   "verses": 15,
+   "aligned": true
+  },
+  {
+   "slug": "psaltir",
+   "ch": "17",
+   "verses": 51,
+   "aligned": true
+  },
+  {
+   "slug": "psaltir",
+   "ch": "18",
+   "verses": 15,
+   "aligned": true
+  },
+  {
+   "slug": "psaltir",
+   "ch": "19",
+   "verses": 10,
+   "aligned": true
+  },
+  {
+   "slug": "psaltir",
+   "ch": "20",
+   "verses": 14,
+   "aligned": true
+  },
+  {
+   "slug": "psaltir",
+   "ch": "21",
+   "verses": 32,
+   "aligned": true
+  },
+  {
+   "slug": "psaltir",
+   "ch": "22",
+   "verses": 6,
+   "aligned": true
+  },
+  {
+   "slug": "psaltir",
+   "ch": "23",
+   "verses": 10,
+   "aligned": true
+  },
+  {
+   "slug": "psaltir",
+   "ch": "24",
+   "verses": 22,
+   "aligned": true
+  },
+  {
+   "slug": "psaltir",
+   "ch": "25",
+   "verses": 12,
+   "aligned": true
+  },
+  {
+   "slug": "psaltir",
+   "ch": "26",
+   "verses": 14,
+   "aligned": true
+  },
+  {
+   "slug": "psaltir",
+   "ch": "27",
+   "verses": 9,
+   "aligned": true
+  },
+  {
+   "slug": "psaltir",
+   "ch": "28",
+   "verses": 11,
+   "aligned": true
+  },
+  {
+   "slug": "psaltir",
+   "ch": "29",
+   "verses": 13,
+   "aligned": true
+  },
+  {
+   "slug": "psaltir",
+   "ch": "30",
+   "verses": 25,
+   "aligned": true
+  },
+  {
+   "slug": "psaltir",
+   "ch": "31",
+   "verses": 11,
+   "aligned": true
+  },
+  {
+   "slug": "psaltir",
+   "ch": "32",
+   "verses": 22,
+   "aligned": true
+  },
+  {
+   "slug": "psaltir",
+   "ch": "33",
+   "verses": 23,
+   "aligned": true
+  }
+ ],
+ "verses": 487
+}

@@ -1,0 +1,72 @@
+{
+ "id": "B-08",
+ "chapters": [
+  {
+   "slug": "levit",
+   "ch": "25",
+   "verses": 55,
+   "aligned": true
+  },
+  {
+   "slug": "levit",
+   "ch": "26",
+   "verses": 46,
+   "aligned": true
+  },
+  {
+   "slug": "levit",
+   "ch": "27",
+   "verses": 34,
+   "aligned": true
+  },
+  {
+   "slug": "chisla",
+   "ch": "1",
+   "verses": 54,
+   "aligned": true
+  },
+  {
+   "slug": "chisla",
+   "ch": "2",
+   "verses": 34,
+   "aligned": true
+  },
+  {
+   "slug": "chisla",
+   "ch": "3",
+   "verses": 51,
+   "aligned": true
+  },
+  {
+   "slug": "chisla",
+   "ch": "4",
+   "verses": 49,
+   "aligned": true
+  },
+  {
+   "slug": "chisla",
+   "ch": "5",
+   "verses": 31,
+   "aligned": true
+  },
+  {
+   "slug": "chisla",
+   "ch": "6",
+   "verses": 26,
+   "aligned": false
+  },
+  {
+   "slug": "chisla",
+   "ch": "7",
+   "verses": 89,
+   "aligned": true
+  },
+  {
+   "slug": "chisla",
+   "ch": "8",
+   "verses": 26,
+   "aligned": true
+  }
+ ],
+ "verses": 495
+}

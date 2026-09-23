@@ -1,0 +1,90 @@
+{
+ "id": "A-03",
+ "chapters": [
+  {
+   "slug": "sudi",
+   "ch": "6",
+   "verses": 40,
+   "aligned": true
+  },
+  {
+   "slug": "sudi",
+   "ch": "7",
+   "verses": 25,
+   "aligned": true
+  },
+  {
+   "slug": "sudi",
+   "ch": "8",
+   "verses": 35,
+   "aligned": true
+  },
+  {
+   "slug": "sudi",
+   "ch": "9",
+   "verses": 57,
+   "aligned": true
+  },
+  {
+   "slug": "sudi",
+   "ch": "10",
+   "verses": 18,
+   "aligned": true
+  },
+  {
+   "slug": "sudi",
+   "ch": "11",
+   "verses": 39,
+   "aligned": false
+  },
+  {
+   "slug": "sudi",
+   "ch": "12",
+   "verses": 15,
+   "aligned": true
+  },
+  {
+   "slug": "sudi",
+   "ch": "13",
+   "verses": 25,
+   "aligned": true
+  },
+  {
+   "slug": "sudi",
+   "ch": "14",
+   "verses": 20,
+   "aligned": true
+  },
+  {
+   "slug": "sudi",
+   "ch": "15",
+   "verses": 20,
+   "aligned": true
+  },
+  {
+   "slug": "sudi",
+   "ch": "16",
+   "verses": 31,
+   "aligned": true
+  },
+  {
+   "slug": "sudi",
+   "ch": "17",
+   "verses": 13,
+   "aligned": true
+  },
+  {
+   "slug": "sudi",
+   "ch": "18",
+   "verses": 31,
+   "aligned": true
+  },
+  {
+   "slug": "sudi",
+   "ch": "19",
+   "verses": 30,
+   "aligned": true
+  }
+ ],
+ "verses": 399
+}
