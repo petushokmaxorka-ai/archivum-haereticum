@@ -25,11 +25,11 @@ archivum-haereticum/
 │
 ├── corpus/                        CORPUS DIVINUS (6 корпусов, JSONL)
 ├── data/                          JSON-ядра (corpus, pantheones, timeline)
-├── docs/                          Живой сайт (GitHub Pages)
-├── site/                          Собранный сайт (для Actions)
+├── docs/                          Живой сайт (GitHub Pages: main → /docs)
+├── site/                          Старый вывод сборщика (на сайте не публикуется)
 │
-├── mcp/server.py                  MCP-сервер для агентов
-├── scripts/                       Утилиты
+├── mcp/server.py                  MCP-сервер для агентов (+ requirements.txt)
+├── corpus/tools/                  Загрузка, сборка и проверка корпуса Корана
 │
 ├── LICENSE                        CC BY-SA 4.0
 ├── README.md                       Входная точка
@@ -205,12 +205,14 @@ python mcp/server.py
 
 ## IX. СБОРКА САЙТА
 
-Сайт автоматически собирается через GitHub Actions при push в main. Workflow в `.github/workflows/build.yml`:
-1. `corpus/tools/fetch_sources.sh` — загружает Tanzil (если нужен).
-2. `corpus/tools/build_quran.py` — собирает JSONL и HTML-страницы.
-3. `corpus/tools/verify.py` — проверяет sha256 + счётчики.
-4. `corpus/tools/assemble_site.sh` (если есть) — копирует Scriptorium и Concordantia.
-5. `git commit + push` (если есть изменения).
+**Публикация.** GitHub Pages настроен как «Deploy from a branch»: ветка `main`, папка `/docs`. Штатная сборка GitHub (`pages-build-deployment`, Jekyll) выкладывает содержимое `docs/` при каждом push. Страницы сайта правятся **в `docs/`**. Каталоги в корне, повторяющие имена из `docs/` (`quran/`, `nt/`, `index.html` и т.д.), — копии от прежнего workflow зеркалирования (удалён); сайт их не использует.
+
+**Проверка корпуса.** Workflow `.github/workflows/build.yml` запускается при push в main (кроме изменений только в `docs/`):
+1. `corpus/tools/fetch_sources.sh` — загружает Tanzil Uthmani и перевод Крачковского.
+2. `corpus/tools/build_quran.py --out /tmp/build` — собирает JSONL и черновые HTML (проверка, что источники полные: 6236 аятов в обоих слоях).
+3. `corpus/tools/verify.py` — sha256 + счётчик аятов.
+4. Копирует `scriptorium/index.html` → `docs/scriptorium/index.html`. Витрина `docs/quran/` ведётся вручную и сборкой **не** перезаписывается.
+5. `git commit + push` — только если в `docs/` что-то изменилось.
 
 ---
 
