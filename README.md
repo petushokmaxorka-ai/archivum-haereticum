@@ -174,7 +174,7 @@ graph LR
 
 ### MANUFACTORUM — САЙТ, СБОРКА, MCP
 
-**Сайт.** GitHub Pages публикует ветку `main`, папку **`/docs`** (штатная сборка GitHub `pages-build-deployment`). Всё, что лежит в `docs/`, появляется на `petushokmaxorka-ai.github.io/archivum-haereticum/` через 1–2 минуты после push. Править страницы сайта нужно **в `docs/`**. Каталоги в корне с теми же именами, что в `docs/` (`quran/`, `nt/`, `tanakh/`, `olp-vethozaveta/` … и корневой `index.html`), — копии, оставшиеся от удалённого workflow зеркалирования; сайт их не использует.
+**Сайт.** GitHub Pages публикует ветку `main`, папку **`/docs`** (штатная сборка GitHub `pages-build-deployment`). Всё, что лежит в `docs/`, появляется на `petushokmaxorka-ai.github.io/archivum-haereticum/` через 1–2 минуты после push. Править страницы сайта нужно **в `docs/`**. Исключение — Scriptorium: его исходник `scriptorium/index.html` в корне, `build.yml` копирует его поверх `docs/scriptorium/index.html`, поэтому правки прямо в `docs/scriptorium/` будут перезаписаны. Остальные каталоги в корне с теми же именами, что в `docs/` (`quran/`, `nt/`, `tanakh/`, `olp-vethozaveta/` … и корневой `index.html`), — копии, оставшиеся от удалённого workflow зеркалирования; сайт их не использует.
 
 **Проверка корпуса Корана** (то же делает `.github/workflows/build.yml` при push в `main`, кроме push только в `docs/`; нужны `bash`, `curl`, Python 3):
 

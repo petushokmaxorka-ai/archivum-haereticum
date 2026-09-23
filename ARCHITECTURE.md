@@ -205,11 +205,11 @@ python mcp/server.py
 
 ## IX. СБОРКА САЙТА
 
-**Публикация.** GitHub Pages настроен как «Deploy from a branch»: ветка `main`, папка `/docs`. Штатная сборка GitHub (`pages-build-deployment`, Jekyll) выкладывает содержимое `docs/` при каждом push. Страницы сайта правятся **в `docs/`**. Каталоги в корне, повторяющие имена из `docs/` (`quran/`, `nt/`, `index.html` и т.д.), — копии от прежнего workflow зеркалирования (удалён); сайт их не использует.
+**Публикация.** GitHub Pages настроен как «Deploy from a branch»: ветка `main`, папка `/docs`. Штатная сборка GitHub (`pages-build-deployment`, Jekyll) выкладывает содержимое `docs/` при каждом push. Страницы сайта правятся **в `docs/`**, кроме Scriptorium: его исходник — корневой `scriptorium/index.html` (см. шаг 4 ниже; правки прямо в `docs/scriptorium/` сборка перезапишет). Остальные каталоги в корне, повторяющие имена из `docs/` (`quran/`, `nt/`, `index.html` и т.д.), — копии от прежнего workflow зеркалирования (удалён); сайт их не использует.
 
 **Проверка корпуса.** Workflow `.github/workflows/build.yml` запускается при push в main (кроме изменений только в `docs/`):
 1. `corpus/tools/fetch_sources.sh` — загружает Tanzil Uthmani и перевод Крачковского.
-2. `corpus/tools/build_quran.py --out /tmp/build` — собирает JSONL и черновые HTML (проверка, что источники полные: 6236 аятов в обоих слоях).
+2. `corpus/tools/build_quran.py --out /tmp/build` — собирает JSONL и черновые HTML (заодно проверяет, что арабский текст полный: ровно 6236 аятов).
 3. `corpus/tools/verify.py` — sha256 + счётчик аятов.
 4. Копирует `scriptorium/index.html` → `docs/scriptorium/index.html`. Витрина `docs/quran/` ведётся вручную и сборкой **не** перезаписывается.
 5. `git commit + push` — только если в `docs/` что-то изменилось.
