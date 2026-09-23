@@ -31,3 +31,11 @@ Thumbs.db
 .env
 .env.local
 secrets.yaml
+
+# Sources downloaded by corpus/tools/fetch_sources.sh (build-corpus)
+/quran_uthmani.txt
+/quran_ru_krachkovsky.txt
+
+# Local Jekyll preview of docs/
+docs/_site/
+.jekyll-cache/
