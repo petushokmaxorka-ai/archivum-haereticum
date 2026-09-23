@@ -1,0 +1,96 @@
+{
+ "id": "A-25",
+ "chapters": [
+  {
+   "slug": "sir",
+   "ch": "16",
+   "verses": 28,
+   "aligned": false
+  },
+  {
+   "slug": "sir",
+   "ch": "17",
+   "verses": 27,
+   "aligned": false
+  },
+  {
+   "slug": "sir",
+   "ch": "18",
+   "verses": 32,
+   "aligned": false
+  },
+  {
+   "slug": "sir",
+   "ch": "19",
+   "verses": 27,
+   "aligned": false
+  },
+  {
+   "slug": "sir",
+   "ch": "20",
+   "verses": 31,
+   "aligned": true
+  },
+  {
+   "slug": "sir",
+   "ch": "21",
+   "verses": 28,
+   "aligned": false
+  },
+  {
+   "slug": "sir",
+   "ch": "22",
+   "verses": 25,
+   "aligned": false
+  },
+  {
+   "slug": "sir",
+   "ch": "23",
+   "verses": 27,
+   "aligned": false
+  },
+  {
+   "slug": "sir",
+   "ch": "24",
+   "verses": 32,
+   "aligned": false
+  },
+  {
+   "slug": "sir",
+   "ch": "25",
+   "verses": 25,
+   "aligned": false
+  },
+  {
+   "slug": "sir",
+   "ch": "26",
+   "verses": 20,
+   "aligned": false
+  },
+  {
+   "slug": "sir",
+   "ch": "27",
+   "verses": 30,
+   "aligned": false
+  },
+  {
+   "slug": "sir",
+   "ch": "28",
+   "verses": 26,
+   "aligned": false
+  },
+  {
+   "slug": "sir",
+   "ch": "29",
+   "verses": 28,
+   "aligned": false
+  },
+  {
+   "slug": "sir",
+   "ch": "30",
+   "verses": 25,
+   "aligned": false
+  }
+ ],
+ "verses": 411
+}

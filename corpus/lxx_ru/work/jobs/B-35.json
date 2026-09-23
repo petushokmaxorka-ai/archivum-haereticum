@@ -1,0 +1,84 @@
+{
+ "id": "B-35",
+ "chapters": [
+  {
+   "slug": "daniil",
+   "ch": "1",
+   "verses": 21,
+   "aligned": true
+  },
+  {
+   "slug": "daniil",
+   "ch": "2",
+   "verses": 49,
+   "aligned": true
+  },
+  {
+   "slug": "daniil",
+   "ch": "3",
+   "verses": 97,
+   "aligned": false
+  },
+  {
+   "slug": "daniil",
+   "ch": "4",
+   "verses": 37,
+   "aligned": false
+  },
+  {
+   "slug": "daniil",
+   "ch": "5",
+   "verses": 30,
+   "aligned": false
+  },
+  {
+   "slug": "daniil",
+   "ch": "6",
+   "verses": 29,
+   "aligned": false
+  },
+  {
+   "slug": "daniil",
+   "ch": "7",
+   "verses": 28,
+   "aligned": true
+  },
+  {
+   "slug": "daniil",
+   "ch": "8",
+   "verses": 27,
+   "aligned": true
+  },
+  {
+   "slug": "daniil",
+   "ch": "9",
+   "verses": 27,
+   "aligned": true
+  },
+  {
+   "slug": "daniil",
+   "ch": "10",
+   "verses": 21,
+   "aligned": true
+  },
+  {
+   "slug": "daniil",
+   "ch": "11",
+   "verses": 45,
+   "aligned": true
+  },
+  {
+   "slug": "daniil",
+   "ch": "12",
+   "verses": 13,
+   "aligned": true
+  },
+  {
+   "slug": "daniil",
+   "ch": "13",
+   "verses": 64,
+   "aligned": true
+  }
+ ],
+ "verses": 488
+}

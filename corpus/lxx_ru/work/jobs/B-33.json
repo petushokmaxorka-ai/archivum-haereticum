@@ -1,0 +1,108 @@
+{
+ "id": "B-33",
+ "chapters": [
+  {
+   "slug": "iezek",
+   "ch": "17",
+   "verses": 24,
+   "aligned": true
+  },
+  {
+   "slug": "iezek",
+   "ch": "18",
+   "verses": 32,
+   "aligned": true
+  },
+  {
+   "slug": "iezek",
+   "ch": "19",
+   "verses": 14,
+   "aligned": true
+  },
+  {
+   "slug": "iezek",
+   "ch": "20",
+   "verses": 44,
+   "aligned": false
+  },
+  {
+   "slug": "iezek",
+   "ch": "21",
+   "verses": 37,
+   "aligned": false
+  },
+  {
+   "slug": "iezek",
+   "ch": "22",
+   "verses": 31,
+   "aligned": true
+  },
+  {
+   "slug": "iezek",
+   "ch": "23",
+   "verses": 49,
+   "aligned": true
+  },
+  {
+   "slug": "iezek",
+   "ch": "24",
+   "verses": 27,
+   "aligned": true
+  },
+  {
+   "slug": "iezek",
+   "ch": "25",
+   "verses": 17,
+   "aligned": true
+  },
+  {
+   "slug": "iezek",
+   "ch": "26",
+   "verses": 21,
+   "aligned": true
+  },
+  {
+   "slug": "iezek",
+   "ch": "27",
+   "verses": 35,
+   "aligned": false
+  },
+  {
+   "slug": "iezek",
+   "ch": "28",
+   "verses": 26,
+   "aligned": true
+  },
+  {
+   "slug": "iezek",
+   "ch": "29",
+   "verses": 21,
+   "aligned": true
+  },
+  {
+   "slug": "iezek",
+   "ch": "30",
+   "verses": 26,
+   "aligned": true
+  },
+  {
+   "slug": "iezek",
+   "ch": "31",
+   "verses": 18,
+   "aligned": true
+  },
+  {
+   "slug": "iezek",
+   "ch": "32",
+   "verses": 31,
+   "aligned": false
+  },
+  {
+   "slug": "iezek",
+   "ch": "33",
+   "verses": 32,
+   "aligned": false
+  }
+ ],
+ "verses": 485
+}

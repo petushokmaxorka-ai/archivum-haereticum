@@ -1,0 +1,66 @@
+{
+ "id": "A-12",
+ "chapters": [
+  {
+   "slug": "par1",
+   "ch": "1",
+   "verses": 42,
+   "aligned": false
+  },
+  {
+   "slug": "par1",
+   "ch": "2",
+   "verses": 55,
+   "aligned": true
+  },
+  {
+   "slug": "par1",
+   "ch": "3",
+   "verses": 24,
+   "aligned": true
+  },
+  {
+   "slug": "par1",
+   "ch": "4",
+   "verses": 43,
+   "aligned": true
+  },
+  {
+   "slug": "par1",
+   "ch": "5",
+   "verses": 41,
+   "aligned": false
+  },
+  {
+   "slug": "par1",
+   "ch": "6",
+   "verses": 66,
+   "aligned": false
+  },
+  {
+   "slug": "par1",
+   "ch": "7",
+   "verses": 40,
+   "aligned": true
+  },
+  {
+   "slug": "par1",
+   "ch": "8",
+   "verses": 40,
+   "aligned": true
+  },
+  {
+   "slug": "par1",
+   "ch": "9",
+   "verses": 44,
+   "aligned": true
+  },
+  {
+   "slug": "par1",
+   "ch": "10",
+   "verses": 14,
+   "aligned": true
+  }
+ ],
+ "verses": 409
+}

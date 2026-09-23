@@ -1,0 +1,150 @@
+{
+ "id": "B-15",
+ "chapters": [
+  {
+   "slug": "iudif",
+   "ch": "16",
+   "verses": 25,
+   "aligned": true
+  },
+  {
+   "slug": "tovit",
+   "ch": "1",
+   "verses": 22,
+   "aligned": true
+  },
+  {
+   "slug": "tovit",
+   "ch": "2",
+   "verses": 14,
+   "aligned": true
+  },
+  {
+   "slug": "tovit",
+   "ch": "3",
+   "verses": 17,
+   "aligned": true
+  },
+  {
+   "slug": "tovit",
+   "ch": "4",
+   "verses": 21,
+   "aligned": true
+  },
+  {
+   "slug": "tovit",
+   "ch": "5",
+   "verses": 23,
+   "aligned": false
+  },
+  {
+   "slug": "tovit",
+   "ch": "6",
+   "verses": 19,
+   "aligned": false
+  },
+  {
+   "slug": "tovit",
+   "ch": "7",
+   "verses": 17,
+   "aligned": true
+  },
+  {
+   "slug": "tovit",
+   "ch": "8",
+   "verses": 21,
+   "aligned": true
+  },
+  {
+   "slug": "tovit",
+   "ch": "9",
+   "verses": 6,
+   "aligned": true
+  },
+  {
+   "slug": "tovit",
+   "ch": "10",
+   "verses": 14,
+   "aligned": false
+  },
+  {
+   "slug": "tovit",
+   "ch": "11",
+   "verses": 19,
+   "aligned": false
+  },
+  {
+   "slug": "tovit",
+   "ch": "12",
+   "verses": 22,
+   "aligned": true
+  },
+  {
+   "slug": "tovit",
+   "ch": "13",
+   "verses": 18,
+   "aligned": true
+  },
+  {
+   "slug": "tovit",
+   "ch": "14",
+   "verses": 15,
+   "aligned": true
+  },
+  {
+   "slug": "iov",
+   "ch": "1",
+   "verses": 22,
+   "aligned": true
+  },
+  {
+   "slug": "iov",
+   "ch": "2",
+   "verses": 13,
+   "aligned": true
+  },
+  {
+   "slug": "iov",
+   "ch": "3",
+   "verses": 26,
+   "aligned": true
+  },
+  {
+   "slug": "iov",
+   "ch": "4",
+   "verses": 21,
+   "aligned": true
+  },
+  {
+   "slug": "iov",
+   "ch": "5",
+   "verses": 27,
+   "aligned": true
+  },
+  {
+   "slug": "iov",
+   "ch": "6",
+   "verses": 30,
+   "aligned": true
+  },
+  {
+   "slug": "iov",
+   "ch": "7",
+   "verses": 21,
+   "aligned": true
+  },
+  {
+   "slug": "iov",
+   "ch": "8",
+   "verses": 22,
+   "aligned": true
+  },
+  {
+   "slug": "iov",
+   "ch": "9",
+   "verses": 35,
+   "aligned": true
+  }
+ ],
+ "verses": 490
+}

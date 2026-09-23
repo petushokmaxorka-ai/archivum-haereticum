@@ -1,0 +1,102 @@
+{
+ "id": "A-04",
+ "chapters": [
+  {
+   "slug": "sudi",
+   "ch": "20",
+   "verses": 48,
+   "aligned": true
+  },
+  {
+   "slug": "sudi",
+   "ch": "21",
+   "verses": 25,
+   "aligned": false
+  },
+  {
+   "slug": "carstv1",
+   "ch": "1",
+   "verses": 28,
+   "aligned": true
+  },
+  {
+   "slug": "carstv1",
+   "ch": "2",
+   "verses": 36,
+   "aligned": true
+  },
+  {
+   "slug": "carstv1",
+   "ch": "3",
+   "verses": 21,
+   "aligned": true
+  },
+  {
+   "slug": "carstv1",
+   "ch": "4",
+   "verses": 22,
+   "aligned": true
+  },
+  {
+   "slug": "carstv1",
+   "ch": "5",
+   "verses": 12,
+   "aligned": true
+  },
+  {
+   "slug": "carstv1",
+   "ch": "6",
+   "verses": 21,
+   "aligned": true
+  },
+  {
+   "slug": "carstv1",
+   "ch": "7",
+   "verses": 17,
+   "aligned": true
+  },
+  {
+   "slug": "carstv1",
+   "ch": "8",
+   "verses": 22,
+   "aligned": true
+  },
+  {
+   "slug": "carstv1",
+   "ch": "9",
+   "verses": 27,
+   "aligned": true
+  },
+  {
+   "slug": "carstv1",
+   "ch": "10",
+   "verses": 27,
+   "aligned": true
+  },
+  {
+   "slug": "carstv1",
+   "ch": "11",
+   "verses": 15,
+   "aligned": true
+  },
+  {
+   "slug": "carstv1",
+   "ch": "12",
+   "verses": 25,
+   "aligned": true
+  },
+  {
+   "slug": "carstv1",
+   "ch": "13",
+   "verses": 22,
+   "aligned": false
+  },
+  {
+   "slug": "carstv1",
+   "ch": "14",
+   "verses": 52,
+   "aligned": true
+  }
+ ],
+ "verses": 420
+}

@@ -1,0 +1,42 @@
+{
+ "id": "A-19",
+ "chapters": [
+  {
+   "slug": "makk1",
+   "ch": "5",
+   "verses": 68,
+   "aligned": true
+  },
+  {
+   "slug": "makk1",
+   "ch": "6",
+   "verses": 63,
+   "aligned": true
+  },
+  {
+   "slug": "makk1",
+   "ch": "7",
+   "verses": 50,
+   "aligned": true
+  },
+  {
+   "slug": "makk1",
+   "ch": "8",
+   "verses": 32,
+   "aligned": true
+  },
+  {
+   "slug": "makk1",
+   "ch": "9",
+   "verses": 73,
+   "aligned": true
+  },
+  {
+   "slug": "makk1",
+   "ch": "10",
+   "verses": 89,
+   "aligned": true
+  }
+ ],
+ "verses": 375
+}

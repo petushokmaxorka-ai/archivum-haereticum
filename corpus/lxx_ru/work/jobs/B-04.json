@@ -1,0 +1,108 @@
+{
+ "id": "B-04",
+ "chapters": [
+  {
+   "slug": "bytie",
+   "ch": "49",
+   "verses": 33,
+   "aligned": true
+  },
+  {
+   "slug": "bytie",
+   "ch": "50",
+   "verses": 26,
+   "aligned": true
+  },
+  {
+   "slug": "ishod",
+   "ch": "1",
+   "verses": 22,
+   "aligned": true
+  },
+  {
+   "slug": "ishod",
+   "ch": "2",
+   "verses": 25,
+   "aligned": true
+  },
+  {
+   "slug": "ishod",
+   "ch": "3",
+   "verses": 22,
+   "aligned": true
+  },
+  {
+   "slug": "ishod",
+   "ch": "4",
+   "verses": 31,
+   "aligned": true
+  },
+  {
+   "slug": "ishod",
+   "ch": "5",
+   "verses": 23,
+   "aligned": true
+  },
+  {
+   "slug": "ishod",
+   "ch": "6",
+   "verses": 30,
+   "aligned": true
+  },
+  {
+   "slug": "ishod",
+   "ch": "7",
+   "verses": 29,
+   "aligned": false
+  },
+  {
+   "slug": "ishod",
+   "ch": "8",
+   "verses": 28,
+   "aligned": false
+  },
+  {
+   "slug": "ishod",
+   "ch": "9",
+   "verses": 35,
+   "aligned": true
+  },
+  {
+   "slug": "ishod",
+   "ch": "10",
+   "verses": 29,
+   "aligned": true
+  },
+  {
+   "slug": "ishod",
+   "ch": "11",
+   "verses": 10,
+   "aligned": true
+  },
+  {
+   "slug": "ishod",
+   "ch": "12",
+   "verses": 51,
+   "aligned": true
+  },
+  {
+   "slug": "ishod",
+   "ch": "13",
+   "verses": 22,
+   "aligned": true
+  },
+  {
+   "slug": "ishod",
+   "ch": "14",
+   "verses": 31,
+   "aligned": false
+  },
+  {
+   "slug": "ishod",
+   "ch": "15",
+   "verses": 27,
+   "aligned": true
+  }
+ ],
+ "verses": 474
+}

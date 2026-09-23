@@ -1,0 +1,114 @@
+{
+ "id": "A-23",
+ "chapters": [
+  {
+   "slug": "prem",
+   "ch": "1",
+   "verses": 16,
+   "aligned": true
+  },
+  {
+   "slug": "prem",
+   "ch": "2",
+   "verses": 24,
+   "aligned": true
+  },
+  {
+   "slug": "prem",
+   "ch": "3",
+   "verses": 19,
+   "aligned": true
+  },
+  {
+   "slug": "prem",
+   "ch": "4",
+   "verses": 20,
+   "aligned": true
+  },
+  {
+   "slug": "prem",
+   "ch": "5",
+   "verses": 23,
+   "aligned": false
+  },
+  {
+   "slug": "prem",
+   "ch": "6",
+   "verses": 25,
+   "aligned": false
+  },
+  {
+   "slug": "prem",
+   "ch": "7",
+   "verses": 30,
+   "aligned": true
+  },
+  {
+   "slug": "prem",
+   "ch": "8",
+   "verses": 21,
+   "aligned": true
+  },
+  {
+   "slug": "prem",
+   "ch": "9",
+   "verses": 18,
+   "aligned": false
+  },
+  {
+   "slug": "prem",
+   "ch": "10",
+   "verses": 21,
+   "aligned": true
+  },
+  {
+   "slug": "prem",
+   "ch": "11",
+   "verses": 26,
+   "aligned": false
+  },
+  {
+   "slug": "prem",
+   "ch": "12",
+   "verses": 27,
+   "aligned": false
+  },
+  {
+   "slug": "prem",
+   "ch": "13",
+   "verses": 19,
+   "aligned": true
+  },
+  {
+   "slug": "prem",
+   "ch": "14",
+   "verses": 31,
+   "aligned": true
+  },
+  {
+   "slug": "prem",
+   "ch": "15",
+   "verses": 19,
+   "aligned": true
+  },
+  {
+   "slug": "prem",
+   "ch": "16",
+   "verses": 29,
+   "aligned": true
+  },
+  {
+   "slug": "prem",
+   "ch": "17",
+   "verses": 20,
+   "aligned": true
+  },
+  {
+   "slug": "prem",
+   "ch": "18",
+   "verses": 25,
+   "aligned": true
+  }
+ ],
+ "verses": 413
+}

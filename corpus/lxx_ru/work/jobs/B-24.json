@@ -1,0 +1,108 @@
+{
+ "id": "B-24",
+ "chapters": [
+  {
+   "slug": "pritchi",
+   "ch": "15",
+   "verses": 32,
+   "aligned": false
+  },
+  {
+   "slug": "pritchi",
+   "ch": "16",
+   "verses": 29,
+   "aligned": false
+  },
+  {
+   "slug": "pritchi",
+   "ch": "17",
+   "verses": 28,
+   "aligned": true
+  },
+  {
+   "slug": "pritchi",
+   "ch": "18",
+   "verses": 22,
+   "aligned": false
+  },
+  {
+   "slug": "pritchi",
+   "ch": "19",
+   "verses": 27,
+   "aligned": false
+  },
+  {
+   "slug": "pritchi",
+   "ch": "20",
+   "verses": 21,
+   "aligned": false
+  },
+  {
+   "slug": "pritchi",
+   "ch": "21",
+   "verses": 30,
+   "aligned": false
+  },
+  {
+   "slug": "pritchi",
+   "ch": "22",
+   "verses": 28,
+   "aligned": false
+  },
+  {
+   "slug": "pritchi",
+   "ch": "23",
+   "verses": 34,
+   "aligned": false
+  },
+  {
+   "slug": "pritchi",
+   "ch": "24",
+   "verses": 34,
+   "aligned": true
+  },
+  {
+   "slug": "pritchi",
+   "ch": "30",
+   "verses": 33,
+   "aligned": true
+  },
+  {
+   "slug": "pritchi",
+   "ch": "31",
+   "verses": 31,
+   "aligned": false
+  },
+  {
+   "slug": "pritchi",
+   "ch": "32",
+   "verses": 28,
+   "aligned": false
+  },
+  {
+   "slug": "pritchi",
+   "ch": "33",
+   "verses": 28,
+   "aligned": false
+  },
+  {
+   "slug": "pritchi",
+   "ch": "34",
+   "verses": 27,
+   "aligned": false
+  },
+  {
+   "slug": "pritchi",
+   "ch": "35",
+   "verses": 28,
+   "aligned": false
+  },
+  {
+   "slug": "pritchi",
+   "ch": "36",
+   "verses": 27,
+   "aligned": false
+  }
+ ],
+ "verses": 487
+}

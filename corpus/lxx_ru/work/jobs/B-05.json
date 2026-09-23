@@ -1,0 +1,102 @@
+{
+ "id": "B-05",
+ "chapters": [
+  {
+   "slug": "ishod",
+   "ch": "16",
+   "verses": 36,
+   "aligned": true
+  },
+  {
+   "slug": "ishod",
+   "ch": "17",
+   "verses": 16,
+   "aligned": true
+  },
+  {
+   "slug": "ishod",
+   "ch": "18",
+   "verses": 27,
+   "aligned": true
+  },
+  {
+   "slug": "ishod",
+   "ch": "19",
+   "verses": 25,
+   "aligned": true
+  },
+  {
+   "slug": "ishod",
+   "ch": "20",
+   "verses": 26,
+   "aligned": true
+  },
+  {
+   "slug": "ishod",
+   "ch": "21",
+   "verses": 37,
+   "aligned": false
+  },
+  {
+   "slug": "ishod",
+   "ch": "22",
+   "verses": 30,
+   "aligned": false
+  },
+  {
+   "slug": "ishod",
+   "ch": "23",
+   "verses": 33,
+   "aligned": true
+  },
+  {
+   "slug": "ishod",
+   "ch": "24",
+   "verses": 18,
+   "aligned": true
+  },
+  {
+   "slug": "ishod",
+   "ch": "25",
+   "verses": 39,
+   "aligned": false
+  },
+  {
+   "slug": "ishod",
+   "ch": "26",
+   "verses": 37,
+   "aligned": true
+  },
+  {
+   "slug": "ishod",
+   "ch": "27",
+   "verses": 21,
+   "aligned": true
+  },
+  {
+   "slug": "ishod",
+   "ch": "28",
+   "verses": 37,
+   "aligned": false
+  },
+  {
+   "slug": "ishod",
+   "ch": "29",
+   "verses": 46,
+   "aligned": true
+  },
+  {
+   "slug": "ishod",
+   "ch": "30",
+   "verses": 38,
+   "aligned": true
+  },
+  {
+   "slug": "ishod",
+   "ch": "31",
+   "verses": 18,
+   "aligned": true
+  }
+ ],
+ "verses": 484
+}

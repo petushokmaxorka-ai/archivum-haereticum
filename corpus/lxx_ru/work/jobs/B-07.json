@@ -1,0 +1,96 @@
+{
+ "id": "B-07",
+ "chapters": [
+  {
+   "slug": "levit",
+   "ch": "10",
+   "verses": 20,
+   "aligned": true
+  },
+  {
+   "slug": "levit",
+   "ch": "11",
+   "verses": 47,
+   "aligned": true
+  },
+  {
+   "slug": "levit",
+   "ch": "12",
+   "verses": 8,
+   "aligned": true
+  },
+  {
+   "slug": "levit",
+   "ch": "13",
+   "verses": 59,
+   "aligned": true
+  },
+  {
+   "slug": "levit",
+   "ch": "14",
+   "verses": 57,
+   "aligned": true
+  },
+  {
+   "slug": "levit",
+   "ch": "15",
+   "verses": 33,
+   "aligned": true
+  },
+  {
+   "slug": "levit",
+   "ch": "16",
+   "verses": 34,
+   "aligned": true
+  },
+  {
+   "slug": "levit",
+   "ch": "17",
+   "verses": 16,
+   "aligned": true
+  },
+  {
+   "slug": "levit",
+   "ch": "18",
+   "verses": 30,
+   "aligned": true
+  },
+  {
+   "slug": "levit",
+   "ch": "19",
+   "verses": 37,
+   "aligned": true
+  },
+  {
+   "slug": "levit",
+   "ch": "20",
+   "verses": 27,
+   "aligned": true
+  },
+  {
+   "slug": "levit",
+   "ch": "21",
+   "verses": 24,
+   "aligned": true
+  },
+  {
+   "slug": "levit",
+   "ch": "22",
+   "verses": 33,
+   "aligned": true
+  },
+  {
+   "slug": "levit",
+   "ch": "23",
+   "verses": 44,
+   "aligned": true
+  },
+  {
+   "slug": "levit",
+   "ch": "24",
+   "verses": 23,
+   "aligned": true
+  }
+ ],
+ "verses": 492
+}

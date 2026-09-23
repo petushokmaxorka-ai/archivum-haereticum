@@ -1,0 +1,54 @@
+{
+ "id": "A-18",
+ "chapters": [
+  {
+   "slug": "neem",
+   "ch": "10",
+   "verses": 40,
+   "aligned": false
+  },
+  {
+   "slug": "neem",
+   "ch": "11",
+   "verses": 27,
+   "aligned": false
+  },
+  {
+   "slug": "neem",
+   "ch": "12",
+   "verses": 44,
+   "aligned": false
+  },
+  {
+   "slug": "neem",
+   "ch": "13",
+   "verses": 31,
+   "aligned": true
+  },
+  {
+   "slug": "makk1",
+   "ch": "1",
+   "verses": 64,
+   "aligned": true
+  },
+  {
+   "slug": "makk1",
+   "ch": "2",
+   "verses": 70,
+   "aligned": true
+  },
+  {
+   "slug": "makk1",
+   "ch": "3",
+   "verses": 60,
+   "aligned": true
+  },
+  {
+   "slug": "makk1",
+   "ch": "4",
+   "verses": 61,
+   "aligned": true
+  }
+ ],
+ "verses": 397
+}

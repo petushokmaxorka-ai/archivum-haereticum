@@ -1,0 +1,114 @@
+{
+ "id": "A-15",
+ "chapters": [
+  {
+   "slug": "par2",
+   "ch": "15",
+   "verses": 19,
+   "aligned": true
+  },
+  {
+   "slug": "par2",
+   "ch": "16",
+   "verses": 14,
+   "aligned": true
+  },
+  {
+   "slug": "par2",
+   "ch": "17",
+   "verses": 19,
+   "aligned": true
+  },
+  {
+   "slug": "par2",
+   "ch": "18",
+   "verses": 34,
+   "aligned": true
+  },
+  {
+   "slug": "par2",
+   "ch": "19",
+   "verses": 11,
+   "aligned": true
+  },
+  {
+   "slug": "par2",
+   "ch": "20",
+   "verses": 37,
+   "aligned": true
+  },
+  {
+   "slug": "par2",
+   "ch": "21",
+   "verses": 20,
+   "aligned": true
+  },
+  {
+   "slug": "par2",
+   "ch": "22",
+   "verses": 12,
+   "aligned": true
+  },
+  {
+   "slug": "par2",
+   "ch": "23",
+   "verses": 21,
+   "aligned": true
+  },
+  {
+   "slug": "par2",
+   "ch": "24",
+   "verses": 27,
+   "aligned": true
+  },
+  {
+   "slug": "par2",
+   "ch": "25",
+   "verses": 28,
+   "aligned": true
+  },
+  {
+   "slug": "par2",
+   "ch": "26",
+   "verses": 23,
+   "aligned": true
+  },
+  {
+   "slug": "par2",
+   "ch": "27",
+   "verses": 8,
+   "aligned": false
+  },
+  {
+   "slug": "par2",
+   "ch": "28",
+   "verses": 27,
+   "aligned": true
+  },
+  {
+   "slug": "par2",
+   "ch": "29",
+   "verses": 36,
+   "aligned": true
+  },
+  {
+   "slug": "par2",
+   "ch": "30",
+   "verses": 27,
+   "aligned": true
+  },
+  {
+   "slug": "par2",
+   "ch": "31",
+   "verses": 21,
+   "aligned": true
+  },
+  {
+   "slug": "par2",
+   "ch": "32",
+   "verses": 33,
+   "aligned": true
+  }
+ ],
+ "verses": 417
+}

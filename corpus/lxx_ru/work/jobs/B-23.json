@@ -1,0 +1,138 @@
+{
+ "id": "B-23",
+ "chapters": [
+  {
+   "slug": "psaltir",
+   "ch": "144",
+   "verses": 21,
+   "aligned": true
+  },
+  {
+   "slug": "psaltir",
+   "ch": "145",
+   "verses": 10,
+   "aligned": true
+  },
+  {
+   "slug": "psaltir",
+   "ch": "146",
+   "verses": 11,
+   "aligned": true
+  },
+  {
+   "slug": "psaltir",
+   "ch": "147",
+   "verses": 9,
+   "aligned": true
+  },
+  {
+   "slug": "psaltir",
+   "ch": "148",
+   "verses": 14,
+   "aligned": true
+  },
+  {
+   "slug": "psaltir",
+   "ch": "149",
+   "verses": 9,
+   "aligned": true
+  },
+  {
+   "slug": "psaltir",
+   "ch": "150",
+   "verses": 6,
+   "aligned": true
+  },
+  {
+   "slug": "psaltir",
+   "ch": "151",
+   "verses": 7,
+   "aligned": false
+  },
+  {
+   "slug": "pritchi",
+   "ch": "1",
+   "verses": 33,
+   "aligned": true
+  },
+  {
+   "slug": "pritchi",
+   "ch": "2",
+   "verses": 22,
+   "aligned": true
+  },
+  {
+   "slug": "pritchi",
+   "ch": "3",
+   "verses": 35,
+   "aligned": true
+  },
+  {
+   "slug": "pritchi",
+   "ch": "4",
+   "verses": 26,
+   "aligned": false
+  },
+  {
+   "slug": "pritchi",
+   "ch": "5",
+   "verses": 23,
+   "aligned": true
+  },
+  {
+   "slug": "pritchi",
+   "ch": "6",
+   "verses": 35,
+   "aligned": true
+  },
+  {
+   "slug": "pritchi",
+   "ch": "7",
+   "verses": 27,
+   "aligned": true
+  },
+  {
+   "slug": "pritchi",
+   "ch": "8",
+   "verses": 35,
+   "aligned": false
+  },
+  {
+   "slug": "pritchi",
+   "ch": "9",
+   "verses": 18,
+   "aligned": true
+  },
+  {
+   "slug": "pritchi",
+   "ch": "10",
+   "verses": 32,
+   "aligned": true
+  },
+  {
+   "slug": "pritchi",
+   "ch": "11",
+   "verses": 30,
+   "aligned": false
+  },
+  {
+   "slug": "pritchi",
+   "ch": "12",
+   "verses": 28,
+   "aligned": true
+  },
+  {
+   "slug": "pritchi",
+   "ch": "13",
+   "verses": 25,
+   "aligned": false
+  },
+  {
+   "slug": "pritchi",
+   "ch": "14",
+   "verses": 35,
+   "aligned": true
+  }
+ ],
+ "verses": 491
+}

@@ -1,0 +1,144 @@
+{
+ "id": "B-20",
+ "chapters": [
+  {
+   "slug": "psaltir",
+   "ch": "65",
+   "verses": 20,
+   "aligned": true
+  },
+  {
+   "slug": "psaltir",
+   "ch": "66",
+   "verses": 8,
+   "aligned": true
+  },
+  {
+   "slug": "psaltir",
+   "ch": "67",
+   "verses": 36,
+   "aligned": true
+  },
+  {
+   "slug": "psaltir",
+   "ch": "68",
+   "verses": 37,
+   "aligned": true
+  },
+  {
+   "slug": "psaltir",
+   "ch": "69",
+   "verses": 6,
+   "aligned": true
+  },
+  {
+   "slug": "psaltir",
+   "ch": "70",
+   "verses": 24,
+   "aligned": true
+  },
+  {
+   "slug": "psaltir",
+   "ch": "71",
+   "verses": 20,
+   "aligned": false
+  },
+  {
+   "slug": "psaltir",
+   "ch": "72",
+   "verses": 28,
+   "aligned": true
+  },
+  {
+   "slug": "psaltir",
+   "ch": "73",
+   "verses": 23,
+   "aligned": true
+  },
+  {
+   "slug": "psaltir",
+   "ch": "74",
+   "verses": 11,
+   "aligned": true
+  },
+  {
+   "slug": "psaltir",
+   "ch": "75",
+   "verses": 13,
+   "aligned": true
+  },
+  {
+   "slug": "psaltir",
+   "ch": "76",
+   "verses": 21,
+   "aligned": true
+  },
+  {
+   "slug": "psaltir",
+   "ch": "77",
+   "verses": 72,
+   "aligned": true
+  },
+  {
+   "slug": "psaltir",
+   "ch": "78",
+   "verses": 13,
+   "aligned": true
+  },
+  {
+   "slug": "psaltir",
+   "ch": "79",
+   "verses": 20,
+   "aligned": true
+  },
+  {
+   "slug": "psaltir",
+   "ch": "80",
+   "verses": 17,
+   "aligned": true
+  },
+  {
+   "slug": "psaltir",
+   "ch": "81",
+   "verses": 8,
+   "aligned": true
+  },
+  {
+   "slug": "psaltir",
+   "ch": "82",
+   "verses": 19,
+   "aligned": true
+  },
+  {
+   "slug": "psaltir",
+   "ch": "83",
+   "verses": 13,
+   "aligned": true
+  },
+  {
+   "slug": "psaltir",
+   "ch": "84",
+   "verses": 14,
+   "aligned": true
+  },
+  {
+   "slug": "psaltir",
+   "ch": "85",
+   "verses": 17,
+   "aligned": true
+  },
+  {
+   "slug": "psaltir",
+   "ch": "86",
+   "verses": 7,
+   "aligned": true
+  },
+  {
+   "slug": "psaltir",
+   "ch": "87",
+   "verses": 19,
+   "aligned": true
+  }
+ ],
+ "verses": 466
+}

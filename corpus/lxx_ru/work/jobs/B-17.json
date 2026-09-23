@@ -1,0 +1,84 @@
+{
+ "id": "B-17",
+ "chapters": [
+  {
+   "slug": "iov",
+   "ch": "30",
+   "verses": 31,
+   "aligned": true
+  },
+  {
+   "slug": "iov",
+   "ch": "31",
+   "verses": 40,
+   "aligned": true
+  },
+  {
+   "slug": "iov",
+   "ch": "32",
+   "verses": 22,
+   "aligned": true
+  },
+  {
+   "slug": "iov",
+   "ch": "33",
+   "verses": 33,
+   "aligned": true
+  },
+  {
+   "slug": "iov",
+   "ch": "34",
+   "verses": 37,
+   "aligned": true
+  },
+  {
+   "slug": "iov",
+   "ch": "35",
+   "verses": 16,
+   "aligned": true
+  },
+  {
+   "slug": "iov",
+   "ch": "36",
+   "verses": 33,
+   "aligned": true
+  },
+  {
+   "slug": "iov",
+   "ch": "37",
+   "verses": 24,
+   "aligned": true
+  },
+  {
+   "slug": "iov",
+   "ch": "38",
+   "verses": 41,
+   "aligned": true
+  },
+  {
+   "slug": "iov",
+   "ch": "39",
+   "verses": 30,
+   "aligned": false
+  },
+  {
+   "slug": "iov",
+   "ch": "40",
+   "verses": 32,
+   "aligned": false
+  },
+  {
+   "slug": "iov",
+   "ch": "41",
+   "verses": 26,
+   "aligned": false
+  },
+  {
+   "slug": "iov",
+   "ch": "42",
+   "verses": 17,
+   "aligned": true
+  }
+ ],
+ "verses": 382
+}

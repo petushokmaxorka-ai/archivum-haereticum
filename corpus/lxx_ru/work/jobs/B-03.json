@@ -1,0 +1,96 @@
+{
+ "id": "B-03",
+ "chapters": [
+  {
+   "slug": "bytie",
+   "ch": "34",
+   "verses": 31,
+   "aligned": true
+  },
+  {
+   "slug": "bytie",
+   "ch": "35",
+   "verses": 28,
+   "aligned": false
+  },
+  {
+   "slug": "bytie",
+   "ch": "36",
+   "verses": 43,
+   "aligned": true
+  },
+  {
+   "slug": "bytie",
+   "ch": "37",
+   "verses": 36,
+   "aligned": true
+  },
+  {
+   "slug": "bytie",
+   "ch": "38",
+   "verses": 30,
+   "aligned": true
+  },
+  {
+   "slug": "bytie",
+   "ch": "39",
+   "verses": 23,
+   "aligned": true
+  },
+  {
+   "slug": "bytie",
+   "ch": "40",
+   "verses": 23,
+   "aligned": true
+  },
+  {
+   "slug": "bytie",
+   "ch": "41",
+   "verses": 57,
+   "aligned": true
+  },
+  {
+   "slug": "bytie",
+   "ch": "42",
+   "verses": 38,
+   "aligned": true
+  },
+  {
+   "slug": "bytie",
+   "ch": "43",
+   "verses": 34,
+   "aligned": true
+  },
+  {
+   "slug": "bytie",
+   "ch": "44",
+   "verses": 34,
+   "aligned": true
+  },
+  {
+   "slug": "bytie",
+   "ch": "45",
+   "verses": 28,
+   "aligned": true
+  },
+  {
+   "slug": "bytie",
+   "ch": "46",
+   "verses": 34,
+   "aligned": true
+  },
+  {
+   "slug": "bytie",
+   "ch": "47",
+   "verses": 31,
+   "aligned": true
+  },
+  {
+   "slug": "bytie",
+   "ch": "48",
+   "verses": 22,
+   "aligned": true
+  }
+ ],
+ "verses": 492
+}

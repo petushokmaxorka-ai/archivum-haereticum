@@ -1,0 +1,54 @@
+{
+ "id": "E-01",
+ "chapters": [
+  {
+   "slug": "ezdr2",
+   "ch": "1",
+   "verses": 40,
+   "aligned": true
+  },
+  {
+   "slug": "ezdr2",
+   "ch": "2",
+   "verses": 48,
+   "aligned": true
+  },
+  {
+   "slug": "ezdr2",
+   "ch": "3",
+   "verses": 36,
+   "aligned": true
+  },
+  {
+   "slug": "ezdr2",
+   "ch": "4",
+   "verses": 52,
+   "aligned": true
+  },
+  {
+   "slug": "ezdr2",
+   "ch": "5",
+   "verses": 56,
+   "aligned": true
+  },
+  {
+   "slug": "ezdr2",
+   "ch": "6",
+   "verses": 59,
+   "aligned": true
+  },
+  {
+   "slug": "ezdr2",
+   "ch": "7",
+   "verses": 70,
+   "aligned": true
+  },
+  {
+   "slug": "ezdr2",
+   "ch": "8",
+   "verses": 63,
+   "aligned": true
+  }
+ ],
+ "verses": 424
+}
