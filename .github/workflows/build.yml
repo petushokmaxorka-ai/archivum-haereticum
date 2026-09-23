@@ -36,6 +36,6 @@ jobs:
             echo "no changes"
           else
             git commit -m "AUTO: пересборка сайта корпуса"
-            git pull --rebase origin main
-            git push origin HEAD:main
+            git pull --rebase origin "$GITHUB_REF_NAME"
+            git push origin "HEAD:$GITHUB_REF_NAME"
           fi
