@@ -6,6 +6,9 @@ on:
   workflow_dispatch:
 permissions:
   contents: write
+concurrency:
+  group: build-corpus
+  cancel-in-progress: false
 jobs:
   build:
     runs-on: ubuntu-latest
@@ -18,10 +21,10 @@ jobs:
       - name: Verify integrity
         run: python3 corpus/tools/verify.py quran_uthmani.txt 6236
       - name: Assemble docs/
+        # docs/quran/ — выверенная витрина (свой шаблон + quran/index.html).
+        # Страницы из /tmp/build/site/quran сюда НЕ копируются: старый шаг
+        # "rm -rf docs/quran && cp -r ..." затирал вёрстку и удалял quran/index.html.
         run: |
-          mkdir -p docs
-          rm -rf docs/quran
-          cp -r /tmp/build/site/quran docs/quran
           mkdir -p docs/scriptorium
           cp scriptorium/index.html docs/scriptorium/index.html
       - name: Commit site
@@ -29,5 +32,10 @@ jobs:
           git config user.name "archivum-bot"
           git config user.email "archivum-bot@users.noreply.github.com"
           git add docs
-          git commit -m "AUTO: пересборка сайта корпуса" || echo "no changes"
-          git push
+          if git diff --cached --quiet; then
+            echo "no changes"
+          else
+            git commit -m "AUTO: пересборка сайта корпуса"
+            git pull --rebase origin main
+            git push origin HEAD:main
+          fi
