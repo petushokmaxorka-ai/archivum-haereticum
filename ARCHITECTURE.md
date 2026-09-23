@@ -149,7 +149,7 @@ Datum: 020.M3
 
 Запуск:
 ```bash
-pip install mcp
+pip install -r mcp/requirements.txt   # mcp>=1.2,<2: в mcp 2.x нет mcp.server.fastmcp
 python mcp/server.py
 ```
 
